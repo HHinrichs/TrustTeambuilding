@@ -6,10 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/sample/samplescene.unity
-    guid: cbfe36cfddfde964d9dfce63a355d5dd
+    path: Assets/Scenes/TrustGame.unity
+    guid: 65277beddb4ab5542895cc6547f922de
   m_configObjects:
-    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 504c918f50f94f445b66574b01b9bf5c,
+    Unity.XR.Oculus.Settings: {fileID: 11400000, guid: 9e532c9a76007b0499d698d4c3969ce7,
       type: 2}
-    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 2b94e085e8cc3b249a87d6e575e59a2d,
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 01c1fd8d893540844808bbb1e45a1cc7,
+      type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ebbc2af2784a29a4fa610e7d0a0635c6,
+      type: 2}
+    xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 53eb3e5823a2c5347918de2a3d429c24,
       type: 2}
