@@ -5,10 +5,9 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class XRRigNetworkable : XRRig
 {
-    // Start is called before the first frame update
-    protected override void Awake()
+    private void Start()
     {
+        
+    }
 
-    }
-    }
 }
