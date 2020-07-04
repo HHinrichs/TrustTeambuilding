@@ -9,7 +9,7 @@ namespace XRCollection.Handlers
 
         public ButtonHandler primaryAxisClickHandler = null;
         public AxisHandler2D primaryAxisHandler = null;
-        public AxisHandler triggerHandler = null;
+        public TriggerHandler triggerHandler = null;
 
         public void OnEnable()
         {

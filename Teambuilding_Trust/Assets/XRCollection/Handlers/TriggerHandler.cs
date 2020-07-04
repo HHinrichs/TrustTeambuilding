@@ -4,10 +4,10 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 namespace XRCollection.Handlers
 {
-    [CreateAssetMenu(fileName = "NewAxisHandler", menuName = "InputHelpers/NewAxisHandler")]
-    public class AxisHandler : InputHandler, ISerializationCallbackReceiver
+    [CreateAssetMenu(fileName = "NewTriggerHandler", menuName = "InputHelpers/NewTriggerHandler")]
+    public class TriggerHandler : InputHandler, ISerializationCallbackReceiver
     {
-        public enum Axis
+        public enum TriggerButton
         {
             None,
             Trigger,
@@ -17,14 +17,14 @@ namespace XRCollection.Handlers
         public delegate void ValueChange(XRController controller, float value);
         public event ValueChange OnValueChanged;
 
-        public Axis axis = Axis.None;
+        public TriggerButton chosenTrigger = TriggerButton.None;
 
         private InputFeatureUsage<float> inputFeature;
         private float previousValue = 0.0f;
 
         public void OnAfterDeserialize()
         {
-            inputFeature = new InputFeatureUsage<float>(axis.ToString());
+            inputFeature = new InputFeatureUsage<float>(chosenTrigger.ToString());
         }
 
         public void OnBeforeSerialize()
