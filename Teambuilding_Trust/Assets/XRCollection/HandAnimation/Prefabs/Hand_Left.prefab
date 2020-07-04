@@ -874,7 +874,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 0.1, y: 0.05, z: 0.15}
-  m_Center: {x: -0.035, y: 0.04, z: 0}
+  m_Center: {x: -0.035, y: 0.05, z: 0}
 --- !u!114 &4182509269058814166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea81bb7fc7c837e44b7008d340ddfa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmoothingAmount: 30
+  Target: {fileID: 0}
 --- !u!114 &292902089265657841
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -899,6 +901,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ba98eb35afcfc4da5ea0f2d9b3eefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSpeed: 5
+  gripHandler: {fileID: 11400000, guid: 69d5005e441f4f44db07aa283d119909, type: 2}
+  triggerHandler: {fileID: 11400000, guid: 42ce3f2013f887c43a7da0658a9f1cc5, type: 2}
 --- !u!1 &8220382583237586019
 GameObject:
   m_ObjectHideFlags: 0

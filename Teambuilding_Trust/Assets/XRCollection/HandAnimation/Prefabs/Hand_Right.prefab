@@ -872,6 +872,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5ba98eb35afcfc4da5ea0f2d9b3eefb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  animationSpeed: 5
+  gripHandler: {fileID: 11400000, guid: 5d47794184cc893429ed7255e324cc77, type: 2}
+  triggerHandler: {fileID: 11400000, guid: 598b4b126f8699b48a0f7c579fc6018d, type: 2}
 --- !u!114 &7594413019809209875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -884,6 +887,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea81bb7fc7c837e44b7008d340ddfa24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SmoothingAmount: 30
+  Target: {fileID: 0}
 --- !u!1 &573763192810725241
 GameObject:
   m_ObjectHideFlags: 0
