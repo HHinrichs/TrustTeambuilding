@@ -501,6 +501,7 @@ GameObject:
   m_Component:
   - component: {fileID: 422601059}
   - component: {fileID: 422601058}
+  - component: {fileID: 422601060}
   m_Layer: 0
   m_Name: DebugLogger
   m_TagString: Untagged
@@ -534,6 +535,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &422601060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 422601057}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307828ff404734e4f9b96382e14096b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &461209361 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4014403373869957548, guid: c187fda9d720e5345bac9cc25b89d5a5,
@@ -1563,6 +1576,50 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c187fda9d720e5345bac9cc25b89d5a5, type: 3}
+--- !u!1 &5672850583345916963 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2902893397051996863, guid: c187fda9d720e5345bac9cc25b89d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5672850583345916962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5672850583345916964 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7405350007557602429, guid: c187fda9d720e5345bac9cc25b89d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5672850583345916962}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5672850583345916965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672850583345916963}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a033327c392288b47b1a5b858c16ff8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allButtonHandlers:
+  - {fileID: 11400000, guid: ddbb6f9bb16ec4044a9dab81a57a957e, type: 2}
+  allAxisHandlers: []
+  allAxis2DHandlers: []
+--- !u!114 &5672850583345916966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5672850583345916964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a033327c392288b47b1a5b858c16ff8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allButtonHandlers:
+  - {fileID: 11400000, guid: 7e50ec4d296e8594abb051d759c9b6c2, type: 2}
+  allAxisHandlers: []
+  allAxis2DHandlers: []
 --- !u!4 &7161615751557832386 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6112841600913186943, guid: c187fda9d720e5345bac9cc25b89d5a5,
