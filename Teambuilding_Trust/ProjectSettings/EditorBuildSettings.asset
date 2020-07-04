@@ -13,6 +13,8 @@ EditorBuildSettings:
       type: 2}
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 01c1fd8d893540844808bbb1e45a1cc7,
       type: 2}
+    com.unity.xr.magicleap.magic_leap_settings: {fileID: 11400000, guid: ef48ff174a2a4c648a9ec33a975347f8,
+      type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ebbc2af2784a29a4fa610e7d0a0635c6,
       type: 2}
     xr.sdk.mock-hmd.settings: {fileID: 11400000, guid: 53eb3e5823a2c5347918de2a3d429c24,

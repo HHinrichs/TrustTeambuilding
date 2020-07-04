@@ -6,6 +6,6 @@ public class DebugLog : MonoBehaviour
 {
     public void ShowMessage()
     {
-        Debug.Log("<color=red> ----------------------- DEBUG LOG SCRIPT CALLED  -----------------------</color>");
+        Debug.Log("[DebugLog] " + gameObject.name + " called ");
     }
 }
