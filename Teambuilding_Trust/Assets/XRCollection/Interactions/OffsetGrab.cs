@@ -1,12 +1,38 @@
-﻿using UnityEngine;
+﻿using Normal.Realtime;
+using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
 namespace XRCollection.Interactions
 {
     public class OffsetGrab : XRGrabInteractable
     {
+        // Networking Stuff
+        [Header("Networking")]
+        [SerializeField] private bool enableNetworking = false;
+        RealtimeTransform realtimeTransform;
+
+        //
         private Vector3 interactorPosition = Vector3.zero;
         private Quaternion interactorRotation = Quaternion.identity;
+
+        protected override void Awake()
+        {
+            base.Awake();
+
+            if (enableNetworking)
+            {
+                realtimeTransform = GetComponent<RealtimeTransform>();
+                if(realtimeTransform == null)
+                {
+                    Debug.LogWarning("Network Transform is Null on " + gameObject.name);
+                    return;
+                }
+                onSelectEnter.AddListener(delegate { realtimeTransform.RequestOwnership(); }) ;
+                onHoverEnter.AddListener(delegate { realtimeTransform.RequestOwnership(); });
+                //onHoverExit.AddListener(delegate { realtimeTransform.ClearOwnership(); });
+            }
+
+        }
 
         protected override void OnSelectEnter(XRBaseInteractor interactor)
         {

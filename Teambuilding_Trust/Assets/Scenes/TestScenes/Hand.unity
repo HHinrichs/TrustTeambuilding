@@ -447,10 +447,20 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 179294228}
     m_Modifications:
+    - target: {fileID: 573763192060454923, guid: 11e0825e6f990584ca409d57ea28c04d,
+        type: 3}
+      propertyPath: m_IsKinematic
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 573763192728940802, guid: 11e0825e6f990584ca409d57ea28c04d,
         type: 3}
       propertyPath: m_Name
       value: Hand_Right
+      objectReference: {fileID: 0}
+    - target: {fileID: 573763192728940803, guid: 11e0825e6f990584ca409d57ea28c04d,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 573763192728940862, guid: 11e0825e6f990584ca409d57ea28c04d,
         type: 3}
@@ -1242,6 +1252,11 @@ PrefabInstance:
       propertyPath: Target
       value: 
       objectReference: {fileID: 1480360813}
+    - target: {fileID: 8220382583221551336, guid: 20f0b44aa7c4ad64d9960ab6ad2eb075,
+        type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8220382583221551337, guid: 20f0b44aa7c4ad64d9960ab6ad2eb075,
         type: 3}
       propertyPath: m_Name

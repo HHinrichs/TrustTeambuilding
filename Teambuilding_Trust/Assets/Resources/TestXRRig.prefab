@@ -261,6 +261,7 @@ GameObject:
   - component: {fileID: 3353179630312176607}
   - component: {fileID: 5924351943457368267}
   - component: {fileID: 6800193757974594962}
+  - component: {fileID: 8926469413730166003}
   m_Layer: 0
   m_Name: TestXRRig
   m_TagString: Untagged
@@ -298,11 +299,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _realtime: {fileID: 0}
-  _sceneViewUUID: 
+  _sceneViewUUID: 83f3c744a07a0542882e6688c9f7b181
   _sceneViewOwnedByCreatingClient: 1
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 1
+  _isRootPrefabView: 0
   _components:
   - componentID: 1
     component: {fileID: 5924351943457368267}
@@ -355,6 +356,19 @@ MonoBehaviour:
   _syncRotation: 1
   _syncScale: 1
   _extrapolation: 0
+--- !u!114 &8926469413730166003
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093563473661831190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc4b23704e39342a1268f6428b07dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  layersToRender: {fileID: 11400000, guid: 3efcdc693f2cc1f4ab2214a90b76d5b9, type: 2}
 --- !u!1001 &2294769332862531113
 PrefabInstance:
   m_ObjectHideFlags: 0
