@@ -801,7 +801,6 @@ GameObject:
   - component: {fileID: 652037762}
   - component: {fileID: 652037761}
   - component: {fileID: 1748298645}
-  - component: {fileID: 1748298646}
   m_Layer: 0
   m_Name: TrueButton
   m_TagString: Untagged
@@ -990,29 +989,13 @@ MonoBehaviour:
   _isRootPrefabView: 0
   _components:
   - componentID: 1
-    component: {fileID: 1748298646}
+    component: {fileID: 0}
     componentIDHasBeenUsed: 1
   - componentID: 2
     component: {fileID: 0}
     componentIDHasBeenUsed: 1
   _parentView: {fileID: 1720487534}
   _childViews: []
---- !u!114 &1748298646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652037759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9011f3ecfff6bca47b885e91ea7a6049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _extrapolation: 0
 --- !u!1 &684665474
 GameObject:
   m_ObjectHideFlags: 0

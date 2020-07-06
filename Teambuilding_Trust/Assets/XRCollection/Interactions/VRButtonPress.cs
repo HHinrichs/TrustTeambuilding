@@ -79,7 +79,7 @@ namespace XRCollection.Interactions
 
             // SOMEHOW THIS SEEMS TOTALLY UGLY, BUT IT IS MADE FOR LETTING THE UNREALIABLE 
             yield return null;
-            yield return new WaitForEndOfFrame();
+            yield return new WaitForSeconds((float)realtimeTransform.realtime.room.datastoreFrameDuration * 2f);
             realtimeTransform.ClearOwnership();
         }
 
