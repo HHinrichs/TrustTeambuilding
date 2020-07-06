@@ -76,7 +76,10 @@ namespace XRCollection.Interactions
 
         IEnumerator ClearOwnership()
         {
+
+            // SOMEHOW THIS SEEMS TOTALLY UGLY, BUT IT IS MADE FOR LETTING THE UNREALIABLE 
             yield return null;
+            yield return new WaitForEndOfFrame();
             realtimeTransform.ClearOwnership();
         }
 
