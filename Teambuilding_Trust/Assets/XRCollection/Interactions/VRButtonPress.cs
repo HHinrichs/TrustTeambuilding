@@ -64,12 +64,23 @@ namespace XRCollection.Interactions
             previousHandHeight = 0.0f;
 
             previousPressed = false;
+
             SetYPosition(yMax);
 
             // Networking sTuff
             if (realtimeTransform != null)
                 realtimeTransform.ClearOwnership();
-            //OnUpperPosition.Invoke();
+            
+
+            //if (realtimeTransform != null)
+            //    realtimeTransform.RequestOwnership();
+
+            //if (this.gameObject.GetComponent<TransformSync>() != null)
+            //    this.gameObject.GetComponent<TransformSync>().SetTransform(this.transform.position, this.transform.rotation.eulerAngles, this.transform.localScale);
+
+            //if (realtimeTransform != null)
+            //    realtimeTransform.ClearOwnership();
+            ////OnUpperPosition.Invoke();
         }
 
         private void Start()
