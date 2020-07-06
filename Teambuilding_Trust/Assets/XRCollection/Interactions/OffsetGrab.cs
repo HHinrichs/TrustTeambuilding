@@ -37,6 +37,9 @@ namespace XRCollection.Interactions
         protected override void OnSelectEnter(XRBaseInteractor interactor)
         {
             base.OnSelectEnter(interactor);
+
+            if (interactor.GetComponent<XRSocketInteractor>())
+                return;
             StoreInteractor(interactor);
             MatchAttachmentPoints(interactor);
         }

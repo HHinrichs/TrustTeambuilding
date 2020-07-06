@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Normal.Realtime;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
@@ -8,7 +9,16 @@ namespace XRCollection.Interactions
 {
     public class VRButtonPress : XRBaseInteractable
     {
+
+        // Networking Stuff
+        [Header("Networking")]
+        [SerializeField] private bool enableNetworking = false;
+        RealtimeTransform realtimeTransform;
+
+        //
+
         public UnityEvent OnPress = null;
+        //public UnityEvent OnUpperPosition = null;
 
         private float yMin = 0f;
         private float yMax = 0f;
@@ -21,6 +31,19 @@ namespace XRCollection.Interactions
             base.Awake();
             onHoverEnter.AddListener(StartPress);
             onHoverExit.AddListener(EndPress);
+
+            if (enableNetworking)
+            {
+                realtimeTransform = GetComponent<RealtimeTransform>();
+                if (realtimeTransform == null)
+                {
+                    Debug.LogWarning("Network Transform is Null on " + gameObject.name);
+                    return;
+                }
+                onHoverEnter.AddListener(delegate { realtimeTransform.RequestOwnership(); });
+                //onHoverExit.AddListener(delegate { realtimeTransform.ClearOwnership(); });
+            }
+
         }
         private void OnDestroy()
         {
@@ -41,7 +64,23 @@ namespace XRCollection.Interactions
             previousHandHeight = 0.0f;
 
             previousPressed = false;
+
             SetYPosition(yMax);
+
+            // Networking sTuff
+            if (realtimeTransform != null)
+                realtimeTransform.ClearOwnership();
+            
+
+            //if (realtimeTransform != null)
+            //    realtimeTransform.RequestOwnership();
+
+            //if (this.gameObject.GetComponent<TransformSync>() != null)
+            //    this.gameObject.GetComponent<TransformSync>().SetTransform(this.transform.position, this.transform.rotation.eulerAngles, this.transform.localScale);
+
+            //if (realtimeTransform != null)
+            //    realtimeTransform.ClearOwnership();
+            ////OnUpperPosition.Invoke();
         }
 
         private void Start()
