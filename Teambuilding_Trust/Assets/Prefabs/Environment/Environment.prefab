@@ -800,7 +800,6 @@ GameObject:
   - component: {fileID: 652037763}
   - component: {fileID: 652037762}
   - component: {fileID: 652037761}
-  - component: {fileID: 1748298645}
   m_Layer: 0
   m_Name: TrueButton
   m_TagString: Untagged
@@ -969,33 +968,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
---- !u!114 &1748298645
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 652037759}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1011e140c5c34458f64fd8ad5095b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _realtime: {fileID: 0}
-  _sceneViewUUID: 
-  _sceneViewOwnedByCreatingClient: 1
-  _sceneViewPreventOwnershipTakeover: 0
-  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 0
-  _components:
-  - componentID: 1
-    component: {fileID: 0}
-    componentIDHasBeenUsed: 1
-  - componentID: 2
-    component: {fileID: 0}
-    componentIDHasBeenUsed: 1
-  _parentView: {fileID: 1720487534}
-  _childViews: []
 --- !u!1 &684665474
 GameObject:
   m_ObjectHideFlags: 0
@@ -1263,8 +1235,6 @@ GameObject:
   - component: {fileID: 1358280352}
   - component: {fileID: 1358280351}
   - component: {fileID: 1358280350}
-  - component: {fileID: 1358280349}
-  - component: {fileID: 1358280348}
   m_Layer: 0
   m_Name: FalseButton
   m_TagString: Untagged
@@ -1433,49 +1403,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
---- !u!114 &1358280349
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358280346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1011e140c5c34458f64fd8ad5095b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _realtime: {fileID: 0}
-  _sceneViewUUID: 
-  _sceneViewOwnedByCreatingClient: 1
-  _sceneViewPreventOwnershipTakeover: 0
-  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 0
-  _components:
-  - componentID: 1
-    component: {fileID: 1358280348}
-    componentIDHasBeenUsed: 1
-  - componentID: 2
-    component: {fileID: 0}
-    componentIDHasBeenUsed: 1
-  _parentView: {fileID: 1720487534}
-  _childViews: []
---- !u!114 &1358280348
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1358280346}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9011f3ecfff6bca47b885e91ea7a6049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _extrapolation: 0
 --- !u!1 &1403682880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2221,13 +2148,13 @@ MonoBehaviour:
   _parentView: {fileID: 0}
   _childViews:
   - viewID: 1
-    view: {fileID: 1748298645}
+    view: {fileID: 0}
     viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 1748298645}
+    viewToUseIfMovedBack: {fileID: 0}
   - viewID: 2
-    view: {fileID: 1358280349}
+    view: {fileID: 0}
     viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 1358280349}
+    viewToUseIfMovedBack: {fileID: 0}
 --- !u!1 &1960563396
 GameObject:
   m_ObjectHideFlags: 0
