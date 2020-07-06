@@ -27,7 +27,6 @@ public class SWARMController : MonoBehaviour
 
         while (true) {
 
-            Debug.Log(Mathf.Lerp(minValue, maxValue, currentLerpTime));
             visualEffect.SetFloat("intensity", Mathf.Lerp(minValue, maxValue, currentLerpTime / lerpLength));
 
             currentLerpTime += Time.deltaTime;

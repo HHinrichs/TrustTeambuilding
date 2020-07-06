@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using Normal.Realtime;
+using UnityEngine.VFX;
 
 public class BoolSync : RealtimeComponent
 {
@@ -10,6 +11,19 @@ public class BoolSync : RealtimeComponent
 
     public delegate void BoolValueChanged();
     public event BoolValueChanged boolValueChanged;
+
+    public VisualEffect vfx;
+
+    public void ABCD()
+    {
+        vfx.enabled = boolValue;
+    }
+
+    public void Start()
+    {
+        vfx = GetComponent<VisualEffect>();
+        boolValueChanged += ABCD;
+    }
 
     private BoolSyncModel model
     {
@@ -39,6 +53,7 @@ public class BoolSync : RealtimeComponent
     private void UpdateBoolValue()
     {
         boolValue = _model.boolValue;
+        boolValueChanged?.Invoke();
     }
 
     public bool GetBoolValue { get { return boolValue; } }
@@ -46,6 +61,5 @@ public class BoolSync : RealtimeComponent
     public void SetBoolValue(bool value)
     {
         _model.boolValue = value;
-        boolValueChanged.Invoke();
     }
 }
