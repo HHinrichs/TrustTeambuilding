@@ -21,7 +21,7 @@ public class BoolSync : RealtimeComponent
 
     public void Start()
     {
-        vfx = GetComponent<VisualEffect>();
+        //vfx = GetComponent<VisualEffect>();
         boolValueChanged += ABCD;
     }
 
@@ -41,7 +41,6 @@ public class BoolSync : RealtimeComponent
                 UpdateBoolValue();
                 _model.boolValueDidChange += BoolValueDidChange;
             }
-            Debug.Log("MODEL SUCC SET");
         }
     }
 

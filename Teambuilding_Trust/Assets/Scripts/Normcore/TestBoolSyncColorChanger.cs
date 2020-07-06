@@ -24,7 +24,6 @@ public class TestBoolSyncColorChanger : MonoBehaviour
 
     private void UpdateMaterial()
     {
-        Debug.Log("Event FIRED");
         if (boolSync.GetBoolValue == true)
             meshRenderer.material = matTrue;
         else

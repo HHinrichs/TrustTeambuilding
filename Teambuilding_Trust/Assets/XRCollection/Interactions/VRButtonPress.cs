@@ -67,20 +67,17 @@ namespace XRCollection.Interactions
 
             SetYPosition(yMax);
 
-            // Networking sTuff
             if (realtimeTransform != null)
-                realtimeTransform.ClearOwnership();
-            
+            {
+                StartCoroutine(ClearOwnership());
+            }
 
-            //if (realtimeTransform != null)
-            //    realtimeTransform.RequestOwnership();
+        }
 
-            //if (this.gameObject.GetComponent<TransformSync>() != null)
-            //    this.gameObject.GetComponent<TransformSync>().SetTransform(this.transform.position, this.transform.rotation.eulerAngles, this.transform.localScale);
-
-            //if (realtimeTransform != null)
-            //    realtimeTransform.ClearOwnership();
-            ////OnUpperPosition.Invoke();
+        IEnumerator ClearOwnership()
+        {
+            yield return null;
+            realtimeTransform.ClearOwnership();
         }
 
         private void Start()
