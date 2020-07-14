@@ -353,6 +353,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 99dcaba2234393f4a829d0fd1fb4a608, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &926405109 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4014403373090277906, guid: c187fda9d720e5345bac9cc25b89d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 5672850583345916962}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1128371786
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -924,10 +930,50 @@ PrefabInstance:
       propertyPath: field of view
       value: 60
       objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957549, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_AllowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957549, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_OcclusionCulling
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4014403373869957552, guid: c187fda9d720e5345bac9cc25b89d5a5,
         type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957554, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_PoseSource
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957555, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: customRenderingSettings
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957555, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: fullscreenPassthrough
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957555, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: allowDynamicResolution
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957555, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: stopNaNs
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014403373869957555, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: dithering
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7379806614084478678, guid: c187fda9d720e5345bac9cc25b89d5a5,
         type: 3}
@@ -939,6 +985,21 @@ PrefabInstance:
       propertyPath: m_InteractionManager
       value: 
       objectReference: {fileID: 143800354}
+    - target: {fileID: 8842369322770657174, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_CameraFloorOffsetObject
+      value: 
+      objectReference: {fileID: 926405109}
+    - target: {fileID: 8842369322770657174, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_CameraYOffset
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8842369322770657174, guid: c187fda9d720e5345bac9cc25b89d5a5,
+        type: 3}
+      propertyPath: m_TrackingOriginMode
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 8842369322770657175, guid: c187fda9d720e5345bac9cc25b89d5a5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -947,7 +1008,7 @@ PrefabInstance:
     - target: {fileID: 8842369322770657175, guid: c187fda9d720e5345bac9cc25b89d5a5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.71
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8842369322770657175, guid: c187fda9d720e5345bac9cc25b89d5a5,
         type: 3}
