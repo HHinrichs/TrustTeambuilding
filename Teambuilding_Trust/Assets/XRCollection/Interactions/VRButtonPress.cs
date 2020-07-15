@@ -9,14 +9,7 @@ namespace XRCollection.Interactions
 {
     public class VRButtonPress : XRBaseInteractable
     {
-
-        // Networking Stuff
-        [Header("Networking")]
-        [SerializeField] private bool enableNetworking = false;
         RealtimeTransform realtimeTransform;
-
-        //
-
         public UnityEvent OnPress = null;
         //public UnityEvent OnUpperPosition = null;
 
@@ -32,17 +25,15 @@ namespace XRCollection.Interactions
             onHoverEnter.AddListener(StartPress);
             onHoverExit.AddListener(EndPress);
 
-            if (enableNetworking)
+            realtimeTransform = GetComponent<RealtimeTransform>();
+            if (realtimeTransform == null)
             {
-                realtimeTransform = GetComponent<RealtimeTransform>();
-                if (realtimeTransform == null)
-                {
-                    Debug.LogWarning("Network Transform is Null on " + gameObject.name);
-                    return;
-                }
-                onHoverEnter.AddListener(delegate { realtimeTransform.RequestOwnership(); });
-                //onHoverExit.AddListener(delegate { realtimeTransform.ClearOwnership(); });
+                Debug.LogWarning("Network Transform is Null on " + gameObject.name);
+                return;
             }
+            onHoverEnter.AddListener(delegate { realtimeTransform.RequestOwnership(); });
+            //onHoverExit.AddListener(delegate { realtimeTransform.ClearOwnership(); });
+            
 
         }
         private void OnDestroy()
