@@ -7,7 +7,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] ButtonScriptableObject buttonScriptableObject;
     [SerializeField] MeshRenderer MeshRendererP1;
     [SerializeField] MeshRenderer MeshRendererP2;
-    [SerializeField] Material DefaultMaterial;
+    private Material DefaultMaterial;
 
     public delegate void ButtonWasPressed(int buttonNumberID);
     public event ButtonWasPressed buttonPressed;

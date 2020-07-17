@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Security.Principal;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -22,6 +24,8 @@ public class GameManager : MonoBehaviour
     private bool readyForNextRound = false;
     private bool countdownToStartIsActive = false;
 
+    public UnityEvent unityEvent;
+
     //Getter Setter
     public int GetRound { get { return round; } }
     public int GetPlayerCount { get { return playerCount; } }
@@ -39,13 +43,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        StartGame();
+        //StartGame();
     }
 
     public void StartGame()
     {
         gameIsRunning = true;
-        round = 1;
+        round = 3;
         ChooseThisRoundsLeader();
         SetButtonStates();
         StartCoroutine(StartCountdownToStart());
@@ -83,10 +87,10 @@ public class GameManager : MonoBehaviour
 
     private void ChooseThisRoundsLeader()
     {
-        int randomNumber = Random.Range(0, NumbersOfParticipatingPlayers-1);
+        int randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
         while (currentLeader == randomNumber)
         {
-            randomNumber = Random.Range(0, NumbersOfParticipatingPlayers-1);
+            randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
         }
         currentLeader = randomNumber;
     }
@@ -173,12 +177,16 @@ public class GameManager : MonoBehaviour
 
         countdownToStartIsActive = true;
         float startTime = Time.time;
+        int countdown = 0;
         while (Time.time - startTime < CountDownToStartInSeconds)
         {
+             countdown = (int)(CountDownToStartInSeconds - (Time.time - startTime));
             //Debug.Log("StartCountdown " +(CountDownToStartInSeconds-(Time.time - startTime)));
             yield return null;
             // TODO : REF TO TMP
         }
+        countdown = 0;
+
         countdownToStartIsActive = false;
     }
    
