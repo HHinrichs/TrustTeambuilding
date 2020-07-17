@@ -51,9 +51,9 @@ public class GameManager : MonoBehaviour
         gameIsRunning = true;
         round = 3;
         ChooseThisRoundsLeader();
+        //StartCoroutine(StartCountdownToStart());
         SetButtonStates();
-        StartCoroutine(StartCountdownToStart());
-        StartCoroutine(GameTimeCounter());
+        //StartCoroutine(GameTimeCounter());
     }
 
     public void ResetAll()
@@ -94,7 +94,6 @@ public class GameManager : MonoBehaviour
         }
         currentLeader = randomNumber;
     }
-
     private void SetButtonStates()
     {
         // Sets the Button States of the Leader this Round and also fills the ButtonsToPress List
@@ -114,6 +113,7 @@ public class GameManager : MonoBehaviour
         }
 
         // Generates a List of Numbers to set the Button Values for the leaders podest
+
         List<int> buttonNumbersToPressP1 = new List<int>();
         List<int> buttonNumbersToPressP2 = new List<int>();
         int counterLoop = 0;
@@ -121,15 +121,27 @@ public class GameManager : MonoBehaviour
         {
             if(NumbersOfParticipatingPlayers > 1)
             {
-                buttonNumbersToPressP1.Add(
-                    Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount)
-                    );
+                int possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+
+                // Iterate as long as possible thru the list so that no 2 values are the same
+                while (buttonNumbersToPressP1.Contains(possibleButtonValue))
+                {
+                    possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                }
+                buttonNumbersToPressP1.Add(possibleButtonValue);
             }
             if (NumbersOfParticipatingPlayers > 2)
             {
-                buttonNumbersToPressP2.Add(
-               Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount)
-               );
+                int possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+
+                // Iterate as long as possible thru the list so that no 2 values are the same
+
+                while (buttonNumbersToPressP2.Contains(possibleButtonValue))
+                {
+                    possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                }
+
+                buttonNumbersToPressP2.Add(possibleButtonValue);
             }
             counterLoop++;
         }
