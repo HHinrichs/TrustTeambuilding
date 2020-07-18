@@ -11,7 +11,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
     [SerializeField] int CountDownToStartInSeconds;
-
+    [SerializeField] RoundRules RoundRule;
     private List<int> buttonsToPressThisRound = new List<int>();
 
     private int round = 0;
@@ -49,11 +49,11 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         gameIsRunning = true;
-        round = 3;
+        round = 1;
         ChooseThisRoundsLeader();
         //StartCoroutine(StartCountdownToStart());
-        SetButtonStates();
-        //StartCoroutine(GameTimeCounter());
+        SetButtonStates(RoundRule.GetRoundRules(round));
+        StartCoroutine(GameTimeCounter());
     }
 
     public void ResetAll()
@@ -61,21 +61,26 @@ public class GameManager : MonoBehaviour
         // Resets the Whole Game
         StopCoroutine(GameTimeCounter());
         StopCoroutine(StartCountdownToStart());
-
-        foreach (PodestManager podests in Podests)
-            podests.ResetAll();
-
+        ClearForNextRound();
+        currentLeader = 0;
         gameIsRunning = false;
         round = 0;
         timeSinceGameStart = 0f;
         // Kick() ??
     }
+    public void ClearForNextRound()
+    {
+        foreach (PodestManager podests in Podests)
+            podests.ResetAll();
+    }
 
     private void StartNextRound()
     {
-        round++;
+        ClearForNextRound();
         ChooseThisRoundsLeader();
-        SetButtonStates();
+        round++;
+        // Inject the RoundRules each Round to get the element Count
+        SetButtonStates(RoundRule.GetRoundRules(round));
         StartCoroutine(StartCountdownToStart());
         readyForNextRound = false;
     }
@@ -85,6 +90,7 @@ public class GameManager : MonoBehaviour
       
     }
 
+    // Do not Reset the current leader, because so it switches each Round
     private void ChooseThisRoundsLeader()
     {
         int randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
@@ -94,7 +100,7 @@ public class GameManager : MonoBehaviour
         }
         currentLeader = randomNumber;
     }
-    private void SetButtonStates()
+    private void SetButtonStates(int elementCount)
     {
         // Sets the Button States of the Leader this Round and also fills the ButtonsToPress List
 
@@ -111,13 +117,11 @@ public class GameManager : MonoBehaviour
                 Podests[i].IsCurrentLeader = false;
 
         }
-
         // Generates a List of Numbers to set the Button Values for the leaders podest
-
         List<int> buttonNumbersToPressP1 = new List<int>();
         List<int> buttonNumbersToPressP2 = new List<int>();
         int counterLoop = 0;
-        while(counterLoop < round)
+        while(counterLoop < elementCount)
         {
             if(NumbersOfParticipatingPlayers > 1)
             {

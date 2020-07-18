@@ -69,11 +69,20 @@ public class PodestManager : MonoBehaviour
         buttonValuesP2.Clear();
     }
 
+    public void ResetMaterial()
+    {
+        foreach (ButtonController buttonController in ButtonControllers)
+        {
+            buttonController.ResetMaterials(DefaultMaterial);
+        }
+    }
+
     public void ResetAll()
     {
         lastPressedValue = 99;
         isCurrentLeader = false;
         ResetButtonsValues();
+        ResetMaterial();
     }
 
     private void GetPressedValue(int buttonNumber)
@@ -82,5 +91,10 @@ public class PodestManager : MonoBehaviour
             return;
 
         lastPressedValue = buttonNumber;
+    }
+
+    private void CheckIfPressedValuesAreCorrect()
+    {
+
     }
 }

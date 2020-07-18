@@ -7,14 +7,34 @@ public class ButtonController : MonoBehaviour
     [SerializeField] ButtonScriptableObject buttonScriptableObject;
     [SerializeField] MeshRenderer MeshRendererP1;
     [SerializeField] MeshRenderer MeshRendererP2;
+    [SerializeField] MeshRenderer MeshRenderHighlight;
+    [SerializeField] Material HighlightMaterial;
+    [SerializeField] Material NonHighlightHighlightMaterial;
     private Material DefaultMaterial;
 
     public delegate void ButtonWasPressed(int buttonNumberID);
     public event ButtonWasPressed buttonPressed;
 
+    private void Start()
+    {
+        MeshRenderHighlight.material = NonHighlightHighlightMaterial;
+    }
     public void ButtonPressed()
     {
         buttonPressed.Invoke(buttonScriptableObject.buttonNumber);
+
+        // Switch Pressed State
+        if (buttonScriptableObject.isPressed == false)
+        {
+            buttonScriptableObject.isPressed = true;
+            MeshRenderHighlight.material = HighlightMaterial;
+        }
+        else
+        {
+            buttonScriptableObject.isPressed = false;
+            MeshRenderHighlight.material = NonHighlightHighlightMaterial;
+        }
+
     }
 
     public void ChangeMaterialP1(Material material)

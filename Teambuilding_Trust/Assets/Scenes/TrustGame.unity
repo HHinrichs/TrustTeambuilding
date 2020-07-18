@@ -10249,6 +10249,7 @@ MonoBehaviour:
   - {fileID: 207541732}
   - {fileID: 297772735}
   CountDownToStartInSeconds: 5
+  RoundRule: {fileID: 11400000, guid: b175cbc9c53451b4898bdb62450d565e, type: 2}
   unityEvent:
     m_PersistentCalls:
       m_Calls:
