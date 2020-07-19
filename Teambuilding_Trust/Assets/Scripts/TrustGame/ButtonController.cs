@@ -23,7 +23,13 @@ public class ButtonController : MonoBehaviour
     {
         buttonPressed.Invoke(buttonScriptableObject.buttonNumber);
 
-        // Switch Pressed State
+
+    }
+
+    public void HighlightButtonAndSetPressedState()
+    {
+
+        // Switch Pressed State and highlight material
         if (buttonScriptableObject.isPressed == false)
         {
             buttonScriptableObject.isPressed = true;
