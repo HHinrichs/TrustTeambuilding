@@ -16,7 +16,10 @@ public class GameManager : MonoBehaviour
     public int RoundNumberToStartWith;
     private int round = 0;
     private int playerCount = 0;
-    private int currentLeader = 0;
+    private int currentLeaderValue = 0;
+    private int lastLeaderValue = -99;
+
+    private List<int> lastLeaders = new List<int>();
 
     private bool currentLeaderSet = false;
     private bool player1Set = false;
@@ -75,7 +78,8 @@ public class GameManager : MonoBehaviour
         StopCoroutine(GameTimeCounter());
         StopCoroutine(StartCountdownToStart());
         ClearForNextRound();
-        currentLeader = 0;
+        currentLeaderValue = 0;
+        lastLeaderValue = -99;
         gameIsRunning = false;
         round = 0;
         timeSinceGameStart = 0f;
@@ -110,12 +114,19 @@ public class GameManager : MonoBehaviour
     // REFACTOR THIS WHOLE SHIT
     public void SetPlayerValues()
     {
+        // Cycles semi Random between the 3 Players
+        if (lastLeaders.Count == NumbersOfParticipatingPlayers)
+            lastLeaders.Clear();
+
         int randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
-        while (currentLeader == randomNumber)
+        while (lastLeaders.Contains(randomNumber) || randomNumber == lastLeaderValue)
         {
             randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
         }
-        currentLeader = randomNumber;
+        currentLeaderValue = randomNumber;
+        lastLeaderValue = randomNumber;
+        lastLeaders.Add(currentLeaderValue);
+
         Debug.Log("RDN :" + randomNumber);
         // Sets the Button States of the Leader this Round and also fills the ButtonsToPress List
 
@@ -126,7 +137,7 @@ public class GameManager : MonoBehaviour
             if (i == NumbersOfParticipatingPlayers)
                 break;
 
-            if (i == currentLeader)
+            if (i == currentLeaderValue)
             {
                 Podests[i].IsCurrentLeader = true;
                 currentLeaderSet = true;
@@ -173,24 +184,24 @@ public class GameManager : MonoBehaviour
         {
             if(NumbersOfParticipatingPlayers > 1)
             {
-                int possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                int possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
 
                 // Iterate as long as possible thru the list so that no 2 values are the same
                 while (buttonNumbersToPressP1.Contains(possibleButtonValue))
                 {
-                    possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                    possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
                 }
                 buttonNumbersToPressP1.Add(possibleButtonValue);
             }
             if (NumbersOfParticipatingPlayers > 2)
             {
-                int possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                int possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
 
                 // Iterate as long as possible thru the list so that no 2 values are the same
 
                 while (buttonNumbersToPressP2.Contains(possibleButtonValue))
                 {
-                    possibleButtonValue = Random.Range(0, Podests[currentLeader].ButtonsInChildrenCount);
+                    possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
                 }
 
                 buttonNumbersToPressP2.Add(possibleButtonValue);
@@ -199,10 +210,10 @@ public class GameManager : MonoBehaviour
         }
 
         if (NumbersOfParticipatingPlayers > 1)
-            Podests[currentLeader].SetButtonValues(buttonNumbersToPressP1);
+            Podests[currentLeaderValue].SetButtonValues(buttonNumbersToPressP1);
 
         if (NumbersOfParticipatingPlayers > 2)
-            Podests[currentLeader].SetButtonValues(buttonNumbersToPressP1, buttonNumbersToPressP2);
+            Podests[currentLeaderValue].SetButtonValues(buttonNumbersToPressP1, buttonNumbersToPressP2);
 
     }
     private void CheckIfPlayersFinishedButtonPress()
