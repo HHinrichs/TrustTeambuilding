@@ -13,7 +13,7 @@ public class RoundRules : ScriptableObject
     }
 
     public RoundValues[] roundValues;
-    public int GetRoundRules(int round)
+    public int GetElementCountThisRound(int round)
     {
         return roundValues[round].ElementCount;
     }

@@ -4,16 +4,18 @@ using UnityEngine;
 
 public class ButtonController : MonoBehaviour
 {
-    [SerializeField] ButtonScriptableObject buttonScriptableObject;
     [SerializeField] MeshRenderer MeshRendererP1;
     [SerializeField] MeshRenderer MeshRendererP2;
     [SerializeField] MeshRenderer MeshRenderHighlight;
     [SerializeField] Material HighlightMaterial;
     [SerializeField] Material NonHighlightHighlightMaterial;
     private Material DefaultMaterial;
-
+    public bool isPressed = false;
+    public int buttonNumber;
     public delegate void ButtonWasPressed(int buttonNumberID);
     public event ButtonWasPressed buttonPressed;
+
+    public bool IsPressed { get { return isPressed; } set { isPressed = value; } }
 
     private void Start()
     {
@@ -21,27 +23,32 @@ public class ButtonController : MonoBehaviour
     }
     public void ButtonPressed()
     {
-        buttonPressed.Invoke(buttonScriptableObject.buttonNumber);
-
-
+        buttonPressed.Invoke(buttonNumber);
     }
 
-    public void HighlightButtonAndSetPressedState()
+    public void SetNonHighlightMaterial()
     {
-
-        // Switch Pressed State and highlight material
-        if (buttonScriptableObject.isPressed == false)
-        {
-            buttonScriptableObject.isPressed = true;
-            MeshRenderHighlight.material = HighlightMaterial;
-        }
-        else
-        {
-            buttonScriptableObject.isPressed = false;
-            MeshRenderHighlight.material = NonHighlightHighlightMaterial;
-        }
-
+        MeshRenderHighlight.material = NonHighlightHighlightMaterial;
     }
+
+    public void DeselectButton()
+    {
+        if (!this.isPressed)
+            return;
+
+        IsPressed = false;
+        MeshRenderHighlight.material = NonHighlightHighlightMaterial;
+    }
+
+    public void SelectButton()
+    {
+        if (this.isPressed)
+            return;
+
+        IsPressed = true;
+        MeshRenderHighlight.material = HighlightMaterial;
+    }
+
 
     public void ChangeMaterialP1(Material material)
     {

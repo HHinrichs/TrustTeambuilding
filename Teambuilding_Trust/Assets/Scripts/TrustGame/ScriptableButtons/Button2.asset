@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Button2
   m_EditorClassIdentifier: 
   isPressed: 0
-  buttonNumber: 2
+  buttonNumber: 1

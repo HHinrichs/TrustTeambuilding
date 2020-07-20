@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Xml.Schema;
+using UnityEditorInternal;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,6 +17,8 @@ public class PodestManager : MonoBehaviour
     [SerializeField] Material PlayerColorMaterialBlack;
 
     private List<ButtonController> ButtonControllers = new List<ButtonController>();
+    private RoundRules roundRules;
+    private int currentRound = 0;
     private List<int> pressedButtonNumbers = new List<int>();
     private bool isCurrentLeader = false;
     private bool isPlayer1 = false;
@@ -29,7 +32,10 @@ public class PodestManager : MonoBehaviour
     public bool IsCurrentLeader { get { return isCurrentLeader; } set { isCurrentLeader = value; } }
     public bool IsPlayer1 { get { return isPlayer1; } set { isPlayer1 = value; } }
     public bool IsPlayer2 { get { return isPlayer2; } set { isPlayer2 = value; } }
+    public int SetCurrentRound { set { currentRound = value; } }
+    public RoundRules SetRoundRules { set { roundRules = value; } }
     public int ButtonsInChildrenCount { get { return buttonsInChildrenCount; } }
+
     private void Start()
     {
         ButtonController[] buttonControllertmp = GetComponentsInChildren<ButtonController>();
@@ -93,39 +99,50 @@ public class PodestManager : MonoBehaviour
 
     }
 
-    public void ResetButtonsValues()
+    public void ResetButtons()
     {
+        foreach (ButtonController button in ButtonControllers)
+        {
+            button.IsPressed = false;
+            button.ResetMaterials(DefaultSymbolMaterial);
+            button.SetNonHighlightMaterial();
+        }
+
         buttonValuesP1.Clear();
         buttonValuesP2.Clear();
-    }
-
-    public void ResetMaterial()
-    {
-        foreach (ButtonController buttonController in ButtonControllers)
-        {
-            buttonController.ResetMaterials(DefaultSymbolMaterial);
-        }
+        pressedButtonNumbers.Clear();
     }
 
     public void ResetAll()
     {
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
-        // Resets the pressed Button Numbers
-        pressedButtonNumbers.Clear();
+        SetCurrentRound = 0;
         lastPressedValue = 99;
         IsCurrentLeader = false;
         IsPlayer1 = false;
         IsPlayer2 = false;
-        ResetButtonsValues();
-        ResetMaterial();
+        ResetButtons();
     }
 
     private void GetPressedValue(int buttonNumber)
     {
         if (IsCurrentLeader == true)
             return;
+
+        // If the Button is Pressed twice, remove it from the List
+        if (ButtonControllers[buttonNumber].IsPressed)
+        {
+            ButtonControllers[buttonNumber].DeselectButton();
+            pressedButtonNumbers.Remove(buttonNumber);
+            return;
+        }
+
+        // Jump out if no button is deselected and the numbers of possible pressed buttons is received.
+        if (pressedButtonNumbers.Count == roundRules.GetElementCountThisRound(currentRound))
+            return;
+
         // Highlight the Material of the Button if the Pressed Values is received
-        ButtonControllers[buttonNumber].HighlightButtonAndSetPressedState();
+        ButtonControllers[buttonNumber].SelectButton();
         
         // Adds the Pressed Button Number to the buttons;
         pressedButtonNumbers.Add(buttonNumber);

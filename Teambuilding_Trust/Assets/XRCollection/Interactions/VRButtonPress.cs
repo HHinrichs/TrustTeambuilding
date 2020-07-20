@@ -60,7 +60,8 @@ namespace XRCollection.Interactions
 
             if (realtimeTransform != null)
             {
-                StartCoroutine(ClearOwnership());
+                if(FindObjectOfType<Realtime>().connected)
+                    StartCoroutine(ClearOwnership());
             }
 
         }
