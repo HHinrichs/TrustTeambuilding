@@ -4,6 +4,7 @@ using System.Security.Principal;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,19 +17,19 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
     [SerializeField] int CountDownToStartInSeconds;
+    [SerializeField] TextMeshPro GameStartTimerTMP;
     public RoundRules RoundRules;
-    private List<int> buttonsToPressThisRound = new List<int>();
     public int RoundNumberToStartWith;
+
     private int round = 0;
-    private int playerCount = 0;
-    private int currentLeaderValue = 0;
-    private int lastLeaderValue = -99;
+    private int currentLeaderValue = 99;
 
     private List<int> lastLeaders = new List<int>();
 
     private bool currentLeaderSet = false;
     private bool player1Set = false;
     private bool player2Set = false;
+
     private PodestManager Player1;
     private PodestManager Player2;
     private PodestManager CurrentLeader;
@@ -51,7 +52,6 @@ public class GameManager : MonoBehaviour
 
     //Getter Setter
     public int GetRound { get { return round; } }
-    public int GetPlayerCount { get { return playerCount; } }
     public float GetTimeSinceGameStart { get { return timeSinceGameStart; } }
 
     private void Awake()
@@ -70,19 +70,19 @@ public class GameManager : MonoBehaviour
         if (!gameIsRunning)
             return;
 
+        if (countdownToStartIsActive)
+            return;
+
         if (readyForNextRound)
             StartNextRound();
-
-    }
-
-    private void Start()
-    {
-        //StartGame();
     }
 
     public void StartGame()
     {
         ResetAll();
+
+        startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+
         SetGameRulesForPlayers();
         round = RoundNumberToStartWith;
 
@@ -92,11 +92,10 @@ public class GameManager : MonoBehaviour
             return;
         }
 
+        gameIsRunning = true;
+        gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
         InitializePlayers();
 
-        gameIsRunning = true;
-        //startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
-        gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
     }
 
     public void InitializePlayers()
@@ -119,11 +118,11 @@ public class GameManager : MonoBehaviour
             StopCoroutine(startCountdownToStartCoroutine);
         }
         ClearForNextRound();
-        currentLeaderValue = 0;
-        lastLeaderValue = -99;
+        currentLeaderValue = 99;
         gameIsRunning = false;
         round = 0;
         timeSinceGameStart = 0f;
+        currentLeaderValue = 99;
         // Kick() ??
     }
 
@@ -135,12 +134,21 @@ public class GameManager : MonoBehaviour
 
     public void ClearForNextRound()
     {
+        if (Player1 != null)
+            UnsubscribeToPlayerEvent(Player1);
+        if (Player2 != null)
+            UnsubscribeToPlayerEvent(Player2);
+
         currentLeaderSet = false;
         player1Set = false;
         player2Set = false;
+
         Player1 = null;
         Player2 = null;
         CurrentLeader = null;
+
+        currentLeaderValue = 99;
+
         foreach (PodestManager podests in Podests)
             podests.ResetAll();
     }
@@ -151,13 +159,31 @@ public class GameManager : MonoBehaviour
         InitializePlayers();
         round++;
         // Inject the RoundRules each Round to get the element Count
-        StartCoroutine(StartCountdownToStart());
+        startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
         readyForNextRound = false;
+    }
+
+    public void SubscribeToPlayerEvent(PodestManager player)
+    {
+        player.valueChanged += CheckIfValuesAreCorrect;
+    }
+    public void UnsubscribeToPlayerEvent(PodestManager player)
+    {
+        player.valueChanged -= CheckIfValuesAreCorrect;
+    }
+
+    private void CheckIfValuesAreCorrect()
+    {
+        Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
+        if (Player1.GetPressedValuesAreCorrect && Player2.GetPressedValuesAreCorrect)
+        {
+            readyForNextRound = true;
+        }
     }
 
     public void SetPlayerPositions()
     {
-      
+
     }
 
     // REFACTOR THIS WHOLE SHIT
@@ -174,31 +200,31 @@ public class GameManager : MonoBehaviour
 
             if (i == currentLeaderValue)
             {
-                Podests[i].IsCurrentLeader = true;
+                Podests[i].PlayerNumber = 0;
                 currentLeaderSet = true;
                 CurrentLeader = Podests[i];
             }
-            else
-                Podests[i].IsCurrentLeader = false;
 
-            if (Podests[i].IsCurrentLeader)
+            if (Podests[i].PlayerNumber == 0)
                 continue;
 
             // MAYBE REFACTOR 
             // Sets the Player 1 and 2 ; Podest1 is always green if you do it like this
-            if (!Podests[i].IsCurrentLeader && !player1Set)
+            if (Podests[i].PlayerNumber != 0 && !player1Set)
             {
-                Podests[i].IsPlayer1 = true;
+                Podests[i].PlayerNumber = 1;
                 player1Set = true;
                 Player1 = Podests[i];
+                SubscribeToPlayerEvent(Player1);
                 continue;
             }
             // Sets the Player 2 if possible
-            if (!Podests[i].IsCurrentLeader && !player2Set)
+            if (Podests[i].PlayerNumber != 0 && !player2Set)
             {
-                Podests[i].IsPlayer2 = true;
+                Podests[i].PlayerNumber = 2;
                 player2Set = true;
                 Player2 = Podests[i];
+                SubscribeToPlayerEvent(Player2);
                 continue;
             }
         }
@@ -211,12 +237,11 @@ public class GameManager : MonoBehaviour
             lastLeaders.Clear();
 
         int randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
-        while (lastLeaders.Contains(randomNumber) || randomNumber == lastLeaderValue)
+        while (lastLeaders.Contains(randomNumber) || randomNumber == currentLeaderValue)
         {
             randomNumber = Random.Range(0, NumbersOfParticipatingPlayers);
         }
         currentLeaderValue = randomNumber;
-        lastLeaderValue = randomNumber;
         lastLeaders.Add(currentLeaderValue);
     }
 
@@ -243,24 +268,24 @@ public class GameManager : MonoBehaviour
         {
             if(NumbersOfParticipatingPlayers > 1)
             {
-                int possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
+                int possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
 
                 // Iterate as long as possible thru the list so that no 2 values are the same
                 while (buttonNumbersToPressP1.Contains(possibleButtonValue))
                 {
-                    possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
+                    possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
                 }
                 buttonNumbersToPressP1.Add(possibleButtonValue);
             }
             if (NumbersOfParticipatingPlayers > 2)
             {
-                int possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
+                int possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
 
                 // Iterate as long as possible thru the list so that no 2 values are the same
 
                 while (buttonNumbersToPressP2.Contains(possibleButtonValue))
                 {
-                    possibleButtonValue = Random.Range(0, Podests[currentLeaderValue].ButtonsInChildrenCount);
+                    possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
                 }
 
                 buttonNumbersToPressP2.Add(possibleButtonValue);
@@ -269,10 +294,10 @@ public class GameManager : MonoBehaviour
         }
 
         if (NumbersOfParticipatingPlayers > 1)
-            Podests[currentLeaderValue].SetButtonValues(buttonNumbersToPressP1);
+            CurrentLeader.SetButtonValues(buttonNumbersToPressP1);
 
         if (NumbersOfParticipatingPlayers > 2)
-            Podests[currentLeaderValue].SetButtonValues(buttonNumbersToPressP1, buttonNumbersToPressP2);
+            CurrentLeader.SetButtonValues(buttonNumbersToPressP1, buttonNumbersToPressP2);
 
     }
     private void CheckIfPlayersFinishedButtonPress()
@@ -310,17 +335,19 @@ public class GameManager : MonoBehaviour
         // Starts an Countdown each Round
 
         countdownToStartIsActive = true;
+        GameStartTimerTMP.enabled = true;
         float startTime = Time.time;
         int countdown = 0;
         while (Time.time - startTime < CountDownToStartInSeconds)
         {
-             countdown = (int)(CountDownToStartInSeconds - (Time.time - startTime));
+            countdown = (int)(CountDownToStartInSeconds - (Time.time - startTime));
+            GameStartTimerTMP.text = countdown.ToString();
             //Debug.Log("StartCountdown " +(CountDownToStartInSeconds-(Time.time - startTime)));
             yield return null;
             // TODO : REF TO TMP
         }
         countdown = 0;
-
+        GameStartTimerTMP.enabled = false;
         countdownToStartIsActive = false;
     }
 

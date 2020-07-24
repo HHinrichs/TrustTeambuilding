@@ -20,9 +20,7 @@ public class PodestManager : MonoBehaviour
     private RoundRules roundRules;
     private int currentRound = 0;
     private List<int> pressedButtonNumbers = new List<int>();
-    private bool isCurrentLeader = false;
-    private bool isPlayer1 = false;
-    private bool isPlayer2 = false;
+
     private int playerNumber = 99;
 
     private int buttonsInChildrenCount = 0;
@@ -33,15 +31,15 @@ public class PodestManager : MonoBehaviour
     private bool pressedValuesAreCorrect = false;
 
     // Getter, Setter
-    public bool IsCurrentLeader { get { return isCurrentLeader; } set { isCurrentLeader = value; } }
-    public bool IsPlayer1 { get { return isPlayer1; } set { isPlayer1 = value; } }
-    public bool IsPlayer2 { get { return isPlayer2; } set { isPlayer2 = value; } }
     public int SetCurrentRound { set { currentRound = value; } }
     public RoundRules SetRoundRules { set { roundRules = value; } }
     public int ButtonsInChildrenCount { get { return buttonsInChildrenCount; } }
 
     public int PlayerNumber { get { return playerNumber; } set { playerNumber = value; } }
     public bool GetPressedValuesAreCorrect { get { return pressedValuesAreCorrect; } }
+
+    public delegate void PressedValueChanged();
+    public event PressedValueChanged valueChanged;
 
     private void Start()
     {
@@ -88,22 +86,18 @@ public class PodestManager : MonoBehaviour
 
     public void SetPlayerIndicators()
     {
-        if (isCurrentLeader)
+        switch (PlayerNumber)
         {
-            PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
-            return;
+            case 0:
+                PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
+                break;
+            case 1:
+                PlayerColorIndicatorPlane.material = PlayerColorMaterialGreen;
+                break;
+            case 2:
+                PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
+                break;
         }
-        if (isPlayer1)
-        {
-            PlayerColorIndicatorPlane.material = PlayerColorMaterialGreen;
-            return;
-        }
-        if (isPlayer2)
-        {
-            PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
-            return;
-        }
-
     }
 
     public void ResetButtons()
@@ -122,18 +116,16 @@ public class PodestManager : MonoBehaviour
 
     public void ResetAll()
     {
+        playerNumber = 99;
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
         lastPressedValue = 99;
-        IsCurrentLeader = false;
-        IsPlayer1 = false;
-        IsPlayer2 = false;
         ResetButtons();
     }
 
     private void GetPressedValue(int buttonNumber)
     {
-        if (IsCurrentLeader == true)
+        if (PlayerNumber == 0)
             return;
 
         // If the Button is Pressed twice, remove it from the List
@@ -157,26 +149,33 @@ public class PodestManager : MonoBehaviour
         lastPressedValue = buttonNumber;
 
         pressedValuesAreCorrect = CheckIfPressedValuesAreCorrect();
+
+        valueChanged.Invoke();
     }
 
     private bool CheckIfPressedValuesAreCorrect()
     {
-        if (isPlayer1)
+        switch (PlayerNumber)
         {
-            for (int i = 0; i < pressedButtonNumbers.Count; ++i)
-            {
-                if (!buttonValuesP1.Contains(pressedButtonNumbers[i]))
-                    return false;
-            }
+            case 1:
+
+                for (int i = 0; i < pressedButtonNumbers.Count; ++i)
+                {
+                    if (!buttonValuesP1.Contains(pressedButtonNumbers[i]))
+                        return false;
+                }
+                break;
+
+            case 2:
+
+                for (int i = 0; i < pressedButtonNumbers.Count; ++i)
+                {
+                    if (!buttonValuesP2.Contains(pressedButtonNumbers[i]))
+                        return false;
+                }
+                break;
         }
-        else if (isPlayer2)
-        {
-            for(int i = 0; i < pressedButtonNumbers.Count; ++i)
-            {
-                if (!buttonValuesP2.Contains(pressedButtonNumbers[i]))
-                    return false;
-            }
-        }
+
         return true;
     }
 }
