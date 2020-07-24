@@ -23,10 +23,14 @@ public class PodestManager : MonoBehaviour
     private bool isCurrentLeader = false;
     private bool isPlayer1 = false;
     private bool isPlayer2 = false;
+    private int playerNumber = 99;
+
     private int buttonsInChildrenCount = 0;
     private int lastPressedValue = 99;
     private List<int> buttonValuesP1 = new List<int>();
     private List<int> buttonValuesP2 = new List<int>();
+
+    private bool pressedValuesAreCorrect = false;
 
     // Getter, Setter
     public bool IsCurrentLeader { get { return isCurrentLeader; } set { isCurrentLeader = value; } }
@@ -35,6 +39,9 @@ public class PodestManager : MonoBehaviour
     public int SetCurrentRound { set { currentRound = value; } }
     public RoundRules SetRoundRules { set { roundRules = value; } }
     public int ButtonsInChildrenCount { get { return buttonsInChildrenCount; } }
+
+    public int PlayerNumber { get { return playerNumber; } set { playerNumber = value; } }
+    public bool GetPressedValuesAreCorrect { get { return pressedValuesAreCorrect; } }
 
     private void Start()
     {
@@ -148,10 +155,28 @@ public class PodestManager : MonoBehaviour
         pressedButtonNumbers.Add(buttonNumber);
 
         lastPressedValue = buttonNumber;
+
+        pressedValuesAreCorrect = CheckIfPressedValuesAreCorrect();
     }
 
-    private void CheckIfPressedValuesAreCorrect()
+    private bool CheckIfPressedValuesAreCorrect()
     {
-
+        if (isPlayer1)
+        {
+            for (int i = 0; i < pressedButtonNumbers.Count; ++i)
+            {
+                if (!buttonValuesP1.Contains(pressedButtonNumbers[i]))
+                    return false;
+            }
+        }
+        else if (isPlayer2)
+        {
+            for(int i = 0; i < pressedButtonNumbers.Count; ++i)
+            {
+                if (!buttonValuesP2.Contains(pressedButtonNumbers[i]))
+                    return false;
+            }
+        }
+        return true;
     }
 }

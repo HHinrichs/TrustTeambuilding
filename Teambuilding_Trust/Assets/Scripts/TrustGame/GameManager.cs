@@ -7,11 +7,16 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+
+    private static GameManager _Instance = null;
+
+    public static GameManager Instance { get { return _Instance; } }
+
     [SerializeField] int NumbersOfParticipatingPlayers;
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
     [SerializeField] int CountDownToStartInSeconds;
-    [SerializeField] RoundRules RoundRules;
+    public RoundRules RoundRules;
     private List<int> buttonsToPressThisRound = new List<int>();
     public int RoundNumberToStartWith;
     private int round = 0;
@@ -24,6 +29,12 @@ public class GameManager : MonoBehaviour
     private bool currentLeaderSet = false;
     private bool player1Set = false;
     private bool player2Set = false;
+    private PodestManager Player1;
+    private PodestManager Player2;
+    private PodestManager CurrentLeader;
+    public PodestManager GetPlayer1 { get { return Player1; } }
+    public PodestManager GetPlayer2 { get { return Player2; } }
+    public PodestManager GetCurrentLeader { get { return CurrentLeader; } }
 
     private List<int> ButtonsToPress = new List<int>();
 
@@ -32,6 +43,10 @@ public class GameManager : MonoBehaviour
     private bool readyForNextRound = false;
     private bool countdownToStartIsActive = false;
 
+    // Coroutines
+    private Coroutine gameTimeCounterCoroutine = null;
+    private Coroutine startCountdownToStartCoroutine = null;
+
     public UnityEvent unityEvent;
 
     //Getter Setter
@@ -39,6 +54,17 @@ public class GameManager : MonoBehaviour
     public int GetPlayerCount { get { return playerCount; } }
     public float GetTimeSinceGameStart { get { return timeSinceGameStart; } }
 
+    private void Awake()
+    {
+        if(_Instance != null && _Instance != this)
+        {
+            Destroy(_Instance);
+        }
+        else
+        {
+            _Instance = this;
+        }
+    }
     private void Update()
     {
         if (!gameIsRunning)
@@ -65,11 +91,12 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Round is Set to 0! This is not correct while starting the Game! Set round at least to 1!");
             return;
         }
+
         InitializePlayers();
 
         gameIsRunning = true;
-        //StartCoroutine(StartCountdownToStart());
-        StartCoroutine(GameTimeCounter());
+        //startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+        gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
     }
 
     public void InitializePlayers()
@@ -82,8 +109,15 @@ public class GameManager : MonoBehaviour
     public void ResetAll()
     {
         // Resets the Whole Game
-        StopCoroutine(GameTimeCounter());
-        StopCoroutine(StartCountdownToStart());
+        if(gameTimeCounterCoroutine != null)
+        {
+            StopCoroutine(gameTimeCounterCoroutine);
+            gameTimeCounterCoroutine = null;
+        }
+        if(startCountdownToStartCoroutine != null)
+        {
+            StopCoroutine(startCountdownToStartCoroutine);
+        }
         ClearForNextRound();
         currentLeaderValue = 0;
         lastLeaderValue = -99;
@@ -104,6 +138,9 @@ public class GameManager : MonoBehaviour
         currentLeaderSet = false;
         player1Set = false;
         player2Set = false;
+        Player1 = null;
+        Player2 = null;
+        CurrentLeader = null;
         foreach (PodestManager podests in Podests)
             podests.ResetAll();
     }
@@ -126,7 +163,7 @@ public class GameManager : MonoBehaviour
     // REFACTOR THIS WHOLE SHIT
     public void SetPlayerValues()
     {
-        SetPlayerNumbers();
+        SetCurrentLeader();
         SetCurrentRoundForPlayers(round);
         // Set currentLeader Flag
         for (int i = 0; i < Podests.Count; ++i)
@@ -139,6 +176,7 @@ public class GameManager : MonoBehaviour
             {
                 Podests[i].IsCurrentLeader = true;
                 currentLeaderSet = true;
+                CurrentLeader = Podests[i];
             }
             else
                 Podests[i].IsCurrentLeader = false;
@@ -152,6 +190,7 @@ public class GameManager : MonoBehaviour
             {
                 Podests[i].IsPlayer1 = true;
                 player1Set = true;
+                Player1 = Podests[i];
                 continue;
             }
             // Sets the Player 2 if possible
@@ -159,12 +198,13 @@ public class GameManager : MonoBehaviour
             {
                 Podests[i].IsPlayer2 = true;
                 player2Set = true;
+                Player2 = Podests[i];
                 continue;
             }
         }
     }
 
-    public void SetPlayerNumbers()
+    public void SetCurrentLeader()
     {
         // Cycles semi Random between the 3 Players
         if (lastLeaders.Count == NumbersOfParticipatingPlayers)
@@ -178,8 +218,6 @@ public class GameManager : MonoBehaviour
         currentLeaderValue = randomNumber;
         lastLeaderValue = randomNumber;
         lastLeaders.Add(currentLeaderValue);
-
-        Debug.Log("RDN :" + randomNumber);
     }
 
     public void SetCurrentRoundForPlayers(int round)
@@ -259,7 +297,7 @@ public class GameManager : MonoBehaviour
             while (gameIsRunning && !countdownToStartIsActive)
             {
                 timeSinceGameStart += Time.unscaledDeltaTime;
-                //Debug.Log("timeSinceGameStart" + timeSinceGameStart);
+                Debug.Log("timeSinceGameStart" + timeSinceGameStart);
                 yield return null;
             }
 
@@ -285,5 +323,14 @@ public class GameManager : MonoBehaviour
 
         countdownToStartIsActive = false;
     }
-   
+
+    public float Efficiency()
+    {
+        float effiziency = 0f;
+        if (GetRound == 0)
+            return effiziency;
+        effiziency = GetRound / GetTimeSinceGameStart;
+        return effiziency;
+    }
+
 }
