@@ -24,6 +24,9 @@ public class ButtonController : MonoBehaviour
     }
     public void ButtonPressed()
     {
+        if (!GameManager.Instance.gameIsRunning)
+            return;
+
         buttonPressed.Invoke(buttonNumber);
     }
 

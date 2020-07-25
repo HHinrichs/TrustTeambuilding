@@ -772,7 +772,6 @@ GameObject:
   m_Component:
   - component: {fileID: 3020940693190673256}
   - component: {fileID: 375434050739819925}
-  - component: {fileID: 1011157523093022155}
   - component: {fileID: 2955209979376724048}
   - component: {fileID: 5672850583345916967}
   - component: {fileID: 5672850583345916965}
@@ -823,19 +822,6 @@ MonoBehaviour:
   m_AnimateModel: 0
   m_ModelSelectTransition: 
   m_ModelDeSelectTransition: 
---- !u!135 &1011157523093022155
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2902893397051996863}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &2955209979376724048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1315,7 +1301,7 @@ SphereCollider:
   m_GameObject: {fileID: 7405350007557602429}
   m_Material: {fileID: 0}
   m_IsTrigger: 1
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Radius: 0.1
   m_Center: {x: 0, y: 0, z: 0}

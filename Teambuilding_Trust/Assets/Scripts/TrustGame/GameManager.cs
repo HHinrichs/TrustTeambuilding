@@ -39,9 +39,9 @@ public class GameManager : MonoBehaviour
     private List<int> ButtonsToPress = new List<int>();
 
     [Header("GameInformations")]
+    public bool gameIsRunning = false;
     [SerializeField] int round = 0;
     [SerializeField] float timeSinceGameStart = 0f;
-    [SerializeField] bool gameIsRunning = false;
     [SerializeField] bool readyForNextRound = false;
     [SerializeField] bool countdownToStartIsActive = false;
 
@@ -200,7 +200,7 @@ public class GameManager : MonoBehaviour
             {
                 readyForNextRound = true;
             }
-            Debug.Log("Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
+            Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct:" + Player2.GetPressedValuesAreCorrect);
         }
         Debug.Log("ReadyForNextRound = " + readyForNextRound);
     }

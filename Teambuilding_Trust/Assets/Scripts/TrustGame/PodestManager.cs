@@ -147,6 +147,9 @@ public class PodestManager : MonoBehaviour
 
     private void GetPressedValueFromPlayer(int buttonNumber)
     {
+        if (!GameManager.Instance.gameIsRunning)
+            return;
+
         if (PlayerNumber == 0)
             return;
 
