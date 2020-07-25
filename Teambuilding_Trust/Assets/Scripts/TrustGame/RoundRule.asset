@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: RoundRule
   m_EditorClassIdentifier: 
   roundValues:
+  - RoundNumber: 0
+    ElementCount: 0
   - RoundNumber: 1
     ElementCount: 1
   - RoundNumber: 2
@@ -30,6 +32,4 @@ MonoBehaviour:
   - RoundNumber: 8
     ElementCount: 4
   - RoundNumber: 9
-    ElementCount: 5
-  - RoundNumber: 10
     ElementCount: 5

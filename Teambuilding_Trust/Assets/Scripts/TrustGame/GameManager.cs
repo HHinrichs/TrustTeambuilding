@@ -21,7 +21,6 @@ public class GameManager : MonoBehaviour
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
 
-    private int round = 0;
     private int currentLeaderValue = 99;
 
     private List<int> lastLeaders = new List<int>();
@@ -39,10 +38,12 @@ public class GameManager : MonoBehaviour
 
     private List<int> ButtonsToPress = new List<int>();
 
-    private float timeSinceGameStart = 0f;
-    private bool gameIsRunning = false;
-    private bool readyForNextRound = false;
-    private bool countdownToStartIsActive = false;
+    [Header("GameInformations")]
+    [SerializeField] int round = 0;
+    [SerializeField] float timeSinceGameStart = 0f;
+    [SerializeField] bool gameIsRunning = false;
+    [SerializeField] bool readyForNextRound = false;
+    [SerializeField] bool countdownToStartIsActive = false;
 
     // Coroutines
     private Coroutine gameTimeCounterCoroutine = null;
@@ -79,11 +80,14 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        Debug.Log("StartCalled!");
         ResetAll();
         gameIsRunning = true;
         SetGameRulesForPlayers();
         round = RoundNumberToStartWith;
 
+        if (NumbersOfParticipatingPlayers == 1)
+            Debug.LogError("At least 2 and the most 3 players are required!");
         if(round == 0)
         {
             Debug.LogError("Round is Set to 0! This is not correct while starting the Game! Set round at least to 1!");
@@ -100,11 +104,16 @@ public class GameManager : MonoBehaviour
         gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
         InitializePlayers();
     }
-
+    IEnumerator SequencingStartNextRound()
+    {
+        yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+        InitializePlayers();
+    }
     public void InitializePlayers()
     {
         SetPlayerValues();
         SetIndicatorPlanes();
+        // Inject the RoundRules each Round to get the element Count
         SetButtonsToPress(RoundRules.GetElementCountThisRound(round));
     }
 
@@ -159,40 +168,41 @@ public class GameManager : MonoBehaviour
     private void StartNextRound()
     {
         ClearForNextRound();
-        InitializePlayers();
         round++;
-        // Inject the RoundRules each Round to get the element Count
-        startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+        StartCoroutine(SequencingStartNextRound());
         readyForNextRound = false;
     }
 
     public void SubscribeToPlayerEvent(PodestManager player)
     {
-        player.valueChanged += CheckIfValuesAreCorrect;
+        player.allButtonsHaveBeenPressed += CheckForNextRound;
     }
     public void UnsubscribeToPlayerEvent(PodestManager player)
     {
-        player.valueChanged -= CheckIfValuesAreCorrect;
+        player.allButtonsHaveBeenPressed -= CheckForNextRound;
     }
 
-    private void CheckIfValuesAreCorrect()
+    private void CheckForNextRound()
     {
-        //Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
-        if (NumbersOfParticipatingPlayers > 1 && Player1 != null)
+        Debug.Log("CheckIfValuesAreCorrect called!");
+        if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
         {
             if (Player1.GetPressedValuesAreCorrect)
             {
                 readyForNextRound = true;
             }
+            Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect);
         }
 
-        if (NumbersOfParticipatingPlayers > 2 && Player2 != null)
+        if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
         {
             if (Player1.GetPressedValuesAreCorrect && Player2.GetPressedValuesAreCorrect)
             {
                 readyForNextRound = true;
             }
+            Debug.Log("Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
         }
+        Debug.Log("ReadyForNextRound = " + readyForNextRound);
     }
     public void SetPlayerPositions()
     {
@@ -270,16 +280,20 @@ public class GameManager : MonoBehaviour
             podest.SetPlayerIndicators();
     }
 
+    List<int> buttonNumbersToPressP1;
+    List<int> buttonNumbersToPressP2;
     private void SetButtonsToPress(int elementCount)
     {
-       
-        // Generates a List of Numbers to set the Button Values for the leaders podest
-        List<int> buttonNumbersToPressP1 = new List<int>();
-        List<int> buttonNumbersToPressP2 = new List<int>();
+        //buttonNumbersToPressP1.Clear();
+        //buttonNumbersToPressP2.Clear();
+         // Generates a List of Numbers to set the Button Values for the leaders podest
+        buttonNumbersToPressP1 = new List<int>();
+        buttonNumbersToPressP2 = new List<int>();
         int counterLoop = 0;
         while(counterLoop < elementCount)
         {
-            if(NumbersOfParticipatingPlayers > 1)
+            // Mach dies ab 3 spielern , also größer gleich 2 spieler
+            if(NumbersOfParticipatingPlayers >= 2)
             {
                 int possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
 
@@ -290,7 +304,8 @@ public class GameManager : MonoBehaviour
                 }
                 buttonNumbersToPressP1.Add(possibleButtonValue);
             }
-            if (NumbersOfParticipatingPlayers > 2)
+            // Mach dies bei 3 Spielern, ansonsten nicht!
+            if (NumbersOfParticipatingPlayers == 3)
             {
                 int possibleButtonValue = Random.Range(0, CurrentLeader.ButtonsInChildrenCount);
 
@@ -306,11 +321,17 @@ public class GameManager : MonoBehaviour
             counterLoop++;
         }
 
-        if (NumbersOfParticipatingPlayers > 1)
+        if (NumbersOfParticipatingPlayers == 2) { 
             CurrentLeader.SetButtonValues(buttonNumbersToPressP1);
+            Player1.SetButtonValues(buttonNumbersToPressP1);
+        }
 
-        if (NumbersOfParticipatingPlayers > 2)
+        if (NumbersOfParticipatingPlayers == 3)
+        {
             CurrentLeader.SetButtonValues(buttonNumbersToPressP1, buttonNumbersToPressP2);
+            Player1.SetButtonValues(buttonNumbersToPressP1);
+            Player2.SetButtonValues(buttonNumbersToPressP2);
+        }
 
     }
     private void CheckIfPlayersFinishedButtonPress()

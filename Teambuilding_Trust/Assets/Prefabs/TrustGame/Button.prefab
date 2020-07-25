@@ -270,13 +270,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c186564a118d2984ca6d89eec1936790, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonScriptableObject: {fileID: 0}
   MeshRendererP1: {fileID: 3300597915506105744}
   MeshRendererP2: {fileID: 383129520057661568}
   MeshRenderHighlight: {fileID: 427107150676967360}
   HighlightMaterial: {fileID: 2100000, guid: 6ff524dd5a1d5244fa714dc442df05e3, type: 2}
   NonHighlightHighlightMaterial: {fileID: 2100000, guid: 55ac675f50e32d749b42b610a41d32c5,
     type: 2}
+  isPressed: 0
+  buttonNumber: 0
+  unityEvent:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 449115930742562609}
+        m_MethodName: ButtonPressed
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &2668567783366822213
 GameObject:
   m_ObjectHideFlags: 0

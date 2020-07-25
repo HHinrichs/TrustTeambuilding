@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 public class ButtonController : MonoBehaviour
 {
     [SerializeField] MeshRenderer MeshRendererP1;
@@ -15,6 +15,7 @@ public class ButtonController : MonoBehaviour
     public delegate void ButtonWasPressed(int buttonNumberID);
     public event ButtonWasPressed buttonPressed;
 
+    public UnityEvent unityEvent;
     public bool IsPressed { get { return isPressed; } set { isPressed = value; } }
 
     private void Start()

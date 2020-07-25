@@ -39,7 +39,7 @@ public class PodestManager : MonoBehaviour
     public bool GetPressedValuesAreCorrect { get { return pressedValuesAreCorrect; } }
 
     public delegate void PressedValueChanged();
-    public event PressedValueChanged valueChanged;
+    public event PressedValueChanged allButtonsHaveBeenPressed;
 
     private void Start()
     {
@@ -47,40 +47,58 @@ public class PodestManager : MonoBehaviour
         foreach(ButtonController child in buttonControllertmp)
         {
             ButtonControllers.Add(child);
-            child.buttonPressed += GetPressedValue;
+            child.buttonPressed += GetPressedValueFromPlayer;
             buttonsInChildrenCount++;
             child.ResetMaterials(DefaultSymbolMaterial);
         }
     }
 
-    public void SetButtonValues(List<int> buttonValuesP1)
+    public void SetButtonValues(List<int> buttonValues)
     {
-        this.buttonValuesP1 = buttonValuesP1;
-
-        for(int i = 0; i < ButtonControllers.Count; ++i)
+        switch (PlayerNumber)
         {
-            if (buttonValuesP1.Contains(i))
-            {
-                ButtonControllers[i].ChangeMaterialP1(P1SymbolMaterial);
-            }
+            case 0:
+                for (int i = 0; i < ButtonControllers.Count; ++i)
+                {
+                    if (buttonValues.Contains(i))
+                    {
+                        ButtonControllers[i].ChangeMaterialP1(P1SymbolMaterial);
+                    }
+                }
+                break;
+
+            case 1: this.buttonValuesP1 = buttonValues;
+                break;
+            case 2: this.buttonValuesP2 = buttonValues;
+                break;
         }
+
     }
 
     public void SetButtonValues(List<int> buttonValuesP1, List<int> buttonValuesP2)
     {
-        this.buttonValuesP1 = buttonValuesP1;
-        this.buttonValuesP2 = buttonValuesP2;
-
-        for (int i = 0; i < ButtonControllers.Count; ++i)
+        switch (PlayerNumber)
         {
-            if (buttonValuesP1.Contains(i))
-            {
-                ButtonControllers[i].ChangeMaterialP1(P1SymbolMaterial);
-            }
-            if (buttonValuesP2.Contains(i))
-            {
-                ButtonControllers[i].ChangeMaterialP2(P2SymbolMaterial);
-            }
+            case 0:
+                for (int i = 0; i < ButtonControllers.Count; ++i)
+                {
+                    if (buttonValuesP1.Contains(i))
+                    {
+                        ButtonControllers[i].ChangeMaterialP1(P1SymbolMaterial);
+                    }
+                    if (buttonValuesP2.Contains(i))
+                    {
+                        ButtonControllers[i].ChangeMaterialP2(P2SymbolMaterial);
+                    }
+                }
+                break;
+
+            case 1:
+                this.buttonValuesP1 = buttonValuesP1;
+                break;
+            case 2:
+                this.buttonValuesP2 = buttonValuesP2;
+                break;
         }
     }
 
@@ -92,10 +110,10 @@ public class PodestManager : MonoBehaviour
                 PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
                 break;
             case 1:
-                PlayerColorIndicatorPlane.material = PlayerColorMaterialGreen;
+                PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
                 break;
             case 2:
-                PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
+                PlayerColorIndicatorPlane.material = PlayerColorMaterialGreen;
                 break;
             default:
                 PlayerColorIndicatorPlane.enabled = false;
@@ -123,10 +141,11 @@ public class PodestManager : MonoBehaviour
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
         lastPressedValue = 99;
+        pressedValuesAreCorrect = false;
         ResetButtons();
     }
 
-    private void GetPressedValue(int buttonNumber)
+    private void GetPressedValueFromPlayer(int buttonNumber)
     {
         if (PlayerNumber == 0)
             return;
@@ -134,6 +153,7 @@ public class PodestManager : MonoBehaviour
         // If the Button is Pressed twice, remove it from the List
         if (ButtonControllers[buttonNumber].IsPressed)
         {
+            Debug.Log("Deselecting Button " + ButtonControllers[buttonNumber]);
             ButtonControllers[buttonNumber].DeselectButton();
             pressedButtonNumbers.Remove(buttonNumber);
             return;
@@ -151,34 +171,56 @@ public class PodestManager : MonoBehaviour
 
         lastPressedValue = buttonNumber;
 
-        pressedValuesAreCorrect = CheckIfPressedValuesAreCorrect();
+        // Jumps in and Checks if pressedValuesAreCorrect if all Buttons this Round have been pressed and notifys the Gamemanager about an status update
+        if (pressedButtonNumbers.Count == roundRules.GetElementCountThisRound(currentRound))
+        {
+            pressedValuesAreCorrect = CheckIfPressedValueFromPlayerIsCorrect();
+            allButtonsHaveBeenPressed.Invoke();
+        }
 
-        valueChanged.Invoke();
     }
 
-    private bool CheckIfPressedValuesAreCorrect()
+    private bool CheckIfPressedValueFromPlayerIsCorrect()
     {
+        bool isCorrectValue = true;
+        List<bool> pressedValueCheckerP1 = new List<bool>();
+        List<bool> pressedValueCheckerP2 = new List<bool>();
         switch (PlayerNumber)
         {
             case 1:
-
+                Debug.Log("Im in P1");
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
-                    if (!buttonValuesP1.Contains(pressedButtonNumbers[i]))
-                        return false;
+                    if (buttonValuesP1.Contains(pressedButtonNumbers[i]))
+                        pressedValueCheckerP1.Add(true);
+                    else
+                        pressedValueCheckerP1.Add(false);
+                }
+
+                for(int i = 0; i < pressedValueCheckerP1.Count; ++i)
+                {
+                    isCorrectValue &= pressedValueCheckerP1[i];
+                    Debug.Log("P1 "+ isCorrectValue);
                 }
                 break;
 
             case 2:
-
+                Debug.Log("Im in P2");
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
-                    if (!buttonValuesP2.Contains(pressedButtonNumbers[i]))
-                        return false;
+                    if (buttonValuesP2.Contains(pressedButtonNumbers[i]))
+                        pressedValueCheckerP2.Add(true);
+                    else
+                        pressedValueCheckerP2.Add(false);
+                }
+                for (int i = 0; i < pressedValueCheckerP2.Count; ++i)
+                {
+                    isCorrectValue &= pressedValueCheckerP2[i];
+                    Debug.Log("P2 " + isCorrectValue);
                 }
                 break;
         }
 
-        return true;
+        return isCorrectValue;
     }
 }
