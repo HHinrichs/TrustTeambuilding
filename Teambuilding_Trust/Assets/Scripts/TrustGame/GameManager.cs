@@ -80,9 +80,7 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         ResetAll();
-
-        startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
-
+        gameIsRunning = true;
         SetGameRulesForPlayers();
         round = RoundNumberToStartWith;
 
@@ -92,10 +90,15 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        gameIsRunning = true;
+        StartCoroutine(SequencingStart());
+
+    }
+
+    IEnumerator SequencingStart()
+    {
+        yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
         gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
         InitializePlayers();
-
     }
 
     public void InitializePlayers()
@@ -174,13 +177,23 @@ public class GameManager : MonoBehaviour
 
     private void CheckIfValuesAreCorrect()
     {
-        Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
-        if (Player1.GetPressedValuesAreCorrect && Player2.GetPressedValuesAreCorrect)
+        //Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct : " + Player2.GetPressedValuesAreCorrect);
+        if (NumbersOfParticipatingPlayers > 1 && Player1 != null)
         {
-            readyForNextRound = true;
+            if (Player1.GetPressedValuesAreCorrect)
+            {
+                readyForNextRound = true;
+            }
+        }
+
+        if (NumbersOfParticipatingPlayers > 2 && Player2 != null)
+        {
+            if (Player1.GetPressedValuesAreCorrect && Player2.GetPressedValuesAreCorrect)
+            {
+                readyForNextRound = true;
+            }
         }
     }
-
     public void SetPlayerPositions()
     {
 
@@ -322,7 +335,6 @@ public class GameManager : MonoBehaviour
             while (gameIsRunning && !countdownToStartIsActive)
             {
                 timeSinceGameStart += Time.unscaledDeltaTime;
-                Debug.Log("timeSinceGameStart" + timeSinceGameStart);
                 yield return null;
             }
 

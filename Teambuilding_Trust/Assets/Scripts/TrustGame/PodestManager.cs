@@ -97,6 +97,9 @@ public class PodestManager : MonoBehaviour
             case 2:
                 PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
                 break;
+            default:
+                PlayerColorIndicatorPlane.enabled = false;
+                break;
         }
     }
 
