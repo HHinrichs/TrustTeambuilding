@@ -73,7 +73,8 @@ public class GameManager : MonoBehaviour
     IEnumerator LateStart(float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        yield return new WaitUntil(() => GetComponent<Realtime>().connected == true);
+        yield return new WaitUntil(() => FindObjectOfType<Realtime>().connected == true);
+        Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
     }
@@ -200,20 +201,20 @@ public class GameManager : MonoBehaviour
         //Debug.Log("CheckIfValuesAreCorrect called!");
         if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
         {
-            if (Player1.GetPressedValuesAreCorrect)
+            if (Player1.boolSync.GetBoolValue)
             {
                 readyForNextRound = true;
             }
-            Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect);
+            Debug.Log("Player1 Pressed Values are correct : " + Player1.boolSync.GetBoolValue);
         }
 
         if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
         {
-            if (Player1.GetPressedValuesAreCorrect && Player2.GetPressedValuesAreCorrect)
+            if (Player1.boolSync.GetBoolValue && Player2.boolSync.GetBoolValue)
             {
                 readyForNextRound = true;
             }
-            Debug.Log("Player1 Pressed Values are correct : " + Player1.GetPressedValuesAreCorrect + "Player2 Pressed Values are correct:" + Player2.GetPressedValuesAreCorrect);
+            Debug.Log("Player1 Pressed Values are correct : " + Player1.boolSync.GetBoolValue + "Player2 Pressed Values are correct:" + Player2.boolSync.GetBoolValue);
         }
         //Debug.Log("ReadyForNextRound = " + readyForNextRound);
     }
