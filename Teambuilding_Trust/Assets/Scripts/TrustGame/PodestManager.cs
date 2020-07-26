@@ -39,8 +39,8 @@ public class PodestManager : MonoBehaviour
     public int PlayerNumber { get { return playerNumber; } set { playerNumber = value; } }
     public bool GetPressedValuesAreCorrect { get { return pressedValuesAreCorrect; } }
 
-    public delegate void PressedValueChanged();
-    public event PressedValueChanged allButtonsHaveBeenPressed;
+    //public delegate void PressedValueChanged();
+   // public event PressedValueChanged allButtonsHaveBeenPressed;
 
     private void Awake()
     {
@@ -187,7 +187,7 @@ public class PodestManager : MonoBehaviour
 
             // NETWORKING BOOL SYNC
             boolSync.SetBoolValue(pressedValuesAreCorrect);
-            allButtonsHaveBeenPressed.Invoke();
+            //allButtonsHaveBeenPressed.Invoke();
         }
 
     }

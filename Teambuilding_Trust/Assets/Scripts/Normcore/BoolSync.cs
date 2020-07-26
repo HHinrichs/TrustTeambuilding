@@ -48,4 +48,5 @@ public class BoolSync : RealtimeComponent
     {
         _model.boolValue = value;
     }
+
 }

@@ -147,10 +147,10 @@ public class GameManager : MonoBehaviour
 
     public void ClearForNextRound()
     {
-        if (Player1 != null)
-            UnsubscribeToPlayerEvent(Player1);
-        if (Player2 != null)
-            UnsubscribeToPlayerEvent(Player2);
+        //if (Player1 != null)
+        //    UnsubscribeToPlayerEvent(Player1);
+        //if (Player2 != null)
+        //    UnsubscribeToPlayerEvent(Player2);
 
         Player1 = null;
         Player2 = null;
@@ -168,14 +168,14 @@ public class GameManager : MonoBehaviour
         readyForNextRound = false;
     }
 
-    public void SubscribeToPlayerEvent(PodestManager player)
-    {
-        player.allButtonsHaveBeenPressed += CheckForNextRound;
-    }
-    public void UnsubscribeToPlayerEvent(PodestManager player)
-    {
-        player.allButtonsHaveBeenPressed -= CheckForNextRound;
-    }
+    //public void SubscribeToPlayerEvent(PodestManager player)
+    //{
+    //    player.allButtonsHaveBeenPressed += CheckForNextRound;
+    //}
+    //public void UnsubscribeToPlayerEvent(PodestManager player)
+    //{
+    //    player.allButtonsHaveBeenPressed -= CheckForNextRound;
+    //}
 
     private void CheckForNextRound()
     {
@@ -228,14 +228,14 @@ public class GameManager : MonoBehaviour
                 Debug.Log("IsPlayer1 "+RoundRules.GetWhoIsPlayer1(round));
                 Podests[i].PlayerNumber = 1;
                 Player1 = Podests[i];
-                SubscribeToPlayerEvent(Player1);
+                //SubscribeToPlayerEvent(Player1);
             }
             else if (RoundRules.GetWhoIsPlayer2(round) == i)
             {
                 Debug.Log("IsPlayer2 "+RoundRules.GetWhoIsPlayer2(round));
                 Podests[i].PlayerNumber = 2;
                 Player2 = Podests[i];
-                SubscribeToPlayerEvent(Player2);
+                //SubscribeToPlayerEvent(Player2);
             }
         }
 
