@@ -78,6 +78,8 @@ public class GameManager : MonoBehaviour
             StartNextRound();
     }
 
+    // Networking
+
     public void StartGame()
     {
         Debug.Log("StartCalled!");
