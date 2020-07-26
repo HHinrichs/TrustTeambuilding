@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using Normal.Realtime;
 
 public class GameManager : MonoBehaviour
 {
@@ -62,6 +63,17 @@ public class GameManager : MonoBehaviour
             _Instance = this;
         }
 
+    }
+
+    private void Start()
+    {
+        StartCoroutine(LateStart(5));
+    }
+
+    IEnumerator LateStart(float waitTime)
+    {
+        yield return new WaitForSeconds(waitTime);
+        yield return new WaitUntil(() => GetComponent<Realtime>().connected == true);
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
     }
