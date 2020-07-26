@@ -12,19 +12,6 @@ public class BoolSync : RealtimeComponent
     public delegate void BoolValueChanged();
     public event BoolValueChanged boolValueChanged;
 
-    public VisualEffect vfx;
-
-    public void ABCD()
-    {
-        vfx.enabled = boolValue;
-    }
-
-    public void Start()
-    {
-        //vfx = GetComponent<VisualEffect>();
-        boolValueChanged += ABCD;
-    }
-
     private BoolSyncModel model
     {
         set

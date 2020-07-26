@@ -30,6 +30,7 @@ public class PodestManager : MonoBehaviour
 
     private bool pressedValuesAreCorrect = false;
 
+    public BoolSync boolSync;
     // Getter, Setter
     public int SetCurrentRound { set { currentRound = value; } }
     public RoundRules SetRoundRules { set { roundRules = value; } }
@@ -41,6 +42,12 @@ public class PodestManager : MonoBehaviour
     public delegate void PressedValueChanged();
     public event PressedValueChanged allButtonsHaveBeenPressed;
 
+    private void Awake()
+    {
+        boolSync = GetComponent<BoolSync>();
+        if (boolSync == null)
+            Debug.LogWarning("BoolSync not found on " + gameObject.name);
+    }
     private void Start()
     {
         ButtonController[] buttonControllertmp = GetComponentsInChildren<ButtonController>();
@@ -137,11 +144,12 @@ public class PodestManager : MonoBehaviour
 
     public void ResetAll()
     {
-        playerNumber = 99;
+        PlayerNumber = 99;
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
-        lastPressedValue = 99;
         pressedValuesAreCorrect = false;
+        // RESET NETWORKING BOOL SYNC
+        boolSync.SetBoolValue(false);
         ResetButtons();
     }
 
@@ -172,12 +180,13 @@ public class PodestManager : MonoBehaviour
         // Adds the Pressed Button Number to the buttons;
         pressedButtonNumbers.Add(buttonNumber);
 
-        lastPressedValue = buttonNumber;
-
         // Jumps in and Checks if pressedValuesAreCorrect if all Buttons this Round have been pressed and notifys the Gamemanager about an status update
         if (pressedButtonNumbers.Count == roundRules.GetElementCountThisRound(currentRound))
         {
             pressedValuesAreCorrect = CheckIfPressedValueFromPlayerIsCorrect();
+
+            // NETWORKING BOOL SYNC
+            boolSync.SetBoolValue(pressedValuesAreCorrect);
             allButtonsHaveBeenPressed.Invoke();
         }
 
@@ -191,7 +200,6 @@ public class PodestManager : MonoBehaviour
         switch (PlayerNumber)
         {
             case 1:
-                Debug.Log("Im in P1");
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
                     if (buttonValuesP1.Contains(pressedButtonNumbers[i]))
@@ -204,11 +212,12 @@ public class PodestManager : MonoBehaviour
                 {
                     isCorrectValue &= pressedValueCheckerP1[i];
                     Debug.Log("P1 "+ isCorrectValue);
+                    if (!isCorrectValue)
+                        return isCorrectValue;
                 }
                 break;
 
             case 2:
-                Debug.Log("Im in P2");
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
                     if (buttonValuesP2.Contains(pressedButtonNumbers[i]))
@@ -220,10 +229,11 @@ public class PodestManager : MonoBehaviour
                 {
                     isCorrectValue &= pressedValueCheckerP2[i];
                     Debug.Log("P2 " + isCorrectValue);
+                    if (!isCorrectValue)
+                        return isCorrectValue;
                 }
                 break;
         }
-
         return isCorrectValue;
     }
 }
