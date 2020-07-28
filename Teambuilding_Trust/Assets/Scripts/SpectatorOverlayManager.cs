@@ -19,9 +19,9 @@ public class SpectatorOverlayManager : MonoBehaviour
         RoundNumber.text = GameManager.Instance.GetRound.ToString();
         Efficienzy.text = GameManager.Instance.Efficiency().ToString();
         if(GameManager.Instance.GetPlayer1 != null )
-            CurrentlyCorrectP1.text = GameManager.Instance.GetPlayer1.GetPressedValuesAreCorrect.ToString();
+            CurrentlyCorrectP1.text = GameManager.Instance.GetPlayer1.pressedValuesAreCorrectBoolSync.ToString();
         if (GameManager.Instance.GetPlayer2 != null) 
-            CurrentlyCorrectP2.text = GameManager.Instance.GetPlayer2.GetPressedValuesAreCorrect.ToString();
+            CurrentlyCorrectP2.text = GameManager.Instance.GetPlayer2.pressedValuesAreCorrectBoolSync.ToString();
         PossibleValues.text = GameManager.Instance.RoundRules.GetElementCountThisRound(GameManager.Instance.GetRound).ToString();
     }
 
