@@ -30,7 +30,7 @@ public class PodestManager : MonoBehaviour
 
     private bool pressedValuesAreCorrect = false;
 
-    public BoolSync boolSync;
+    public BoolSync pressedValuesAreCorrectBoolSync;
     // Getter, Setter
     public int SetCurrentRound { set { currentRound = value; } }
     public RoundRules SetRoundRules { set { roundRules = value; } }
@@ -44,8 +44,8 @@ public class PodestManager : MonoBehaviour
 
     private void Awake()
     {
-        boolSync = GetComponent<BoolSync>();
-        if (boolSync == null)
+        pressedValuesAreCorrectBoolSync = GetComponent<BoolSync>();
+        if (pressedValuesAreCorrectBoolSync == null)
             Debug.LogWarning("BoolSync not found on " + gameObject.name);
     }
     private void Start()
@@ -149,7 +149,7 @@ public class PodestManager : MonoBehaviour
         SetCurrentRound = 0;
         pressedValuesAreCorrect = false;
         // RESET NETWORKING BOOL SYNC
-        boolSync.SetBoolValue(false);
+        pressedValuesAreCorrectBoolSync.SetBoolValue(false);
         ResetButtons();
     }
 
@@ -186,7 +186,7 @@ public class PodestManager : MonoBehaviour
             pressedValuesAreCorrect = CheckIfPressedValueFromPlayerIsCorrect();
 
             // NETWORKING BOOL SYNC
-            boolSync.SetBoolValue(pressedValuesAreCorrect);
+            pressedValuesAreCorrectBoolSync.SetBoolValue(pressedValuesAreCorrect);
             //allButtonsHaveBeenPressed.Invoke();
         }
 

@@ -41,7 +41,7 @@ MonoBehaviour:
     WhoIsPlayer2: 1
     ButtonsToPressP1: 0700000008000000
     ButtonsToPressP2: 0400000007000000
-  - RoundNumber: 2
+  - RoundNumber: 4
     ElementCount: 2
     WhoIsLeader: 0
     WhoIsPlayer1: 1

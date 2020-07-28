@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
 
     public static GameManager Instance { get { return _Instance; } }
 
+    public bool isServer;
+    public bool isClient;
     [SerializeField] int NumbersOfParticipatingPlayers;
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
@@ -28,6 +30,8 @@ public class GameManager : MonoBehaviour
     public BoolSync StartBoolSync;
     public BoolSync RestartBoolSync;
 
+    public BoolSync readyForNextRoundBoolSync;
+
     private PodestManager Player1;
     private PodestManager Player2;
     private PodestManager CurrentLeader;
@@ -41,6 +45,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] float timeSinceGameStart = 0f;
     [SerializeField] bool readyForNextRound = false;
     [SerializeField] bool countdownToStartIsActive = false;
+    [SerializeField] bool nextRoundIsBootingUp = false;
 
     // Coroutines
     private Coroutine gameTimeCounterCoroutine = null;
@@ -78,6 +83,7 @@ public class GameManager : MonoBehaviour
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
     }
+
     private void Update()
     {
         if (!gameIsRunning)
@@ -88,7 +94,7 @@ public class GameManager : MonoBehaviour
 
         CheckForNextRound();
 
-        if (readyForNextRound)
+        if (readyForNextRound && !nextRoundIsBootingUp)
             StartNextRound();
     }
 
@@ -165,20 +171,48 @@ public class GameManager : MonoBehaviour
         //if (Player2 != null)
         //    UnsubscribeToPlayerEvent(Player2);
 
+
         Player1 = null;
         Player2 = null;
         CurrentLeader = null;
 
         foreach (PodestManager podests in Podests)
             podests.ResetAll();
+
+        if(isServer)
+            StartCoroutine(CheckForPlayerResetCoroutine());
     }
+
+    IEnumerator CheckForPlayerResetCoroutine()
+    {
+        if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
+        {
+            while (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue)
+            {
+                yield return null;
+            }
+            readyForNextRoundBoolSync.SetBoolValue(false);
+        }
+
+        if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
+        {
+            while (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue && Player2.pressedValuesAreCorrectBoolSync.GetBoolValue)
+            {
+                yield return null;
+            }
+          readyForNextRoundBoolSync.SetBoolValue(false);
+        }
+    }
+
 
     private void StartNextRound()
     {
+        nextRoundIsBootingUp = true;
         ClearForNextRound();
         round++;
         StartCoroutine(SequencingStartNextRound());
         readyForNextRound = false;
+        nextRoundIsBootingUp = false;
     }
 
     //public void SubscribeToPlayerEvent(PodestManager player)
@@ -192,31 +226,50 @@ public class GameManager : MonoBehaviour
 
     private void CheckForNextRound()
     {
-        if (Player1 == null || Player2 == null || CurrentLeader == null)
+        if (readyForNextRound)
             return;
 
-        if (!Player1.boolSync.GetBoolValue && !Player2.boolSync.GetBoolValue)
-            return;
-
-        //Debug.Log("CheckIfValuesAreCorrect called!");
-        if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
+        if (isServer)
         {
-            if (Player1.boolSync.GetBoolValue)
+            // IF TRUE, RETURN
+            if (readyForNextRoundBoolSync.GetBoolValue)
+                return;
+
+            if (Player1 == null || Player2 == null || CurrentLeader == null)
+                return;
+
+            if (!Player1.pressedValuesAreCorrectBoolSync.GetBoolValue && !Player2.pressedValuesAreCorrectBoolSync.GetBoolValue)
+                return;
+
+            //Debug.Log("CheckIfValuesAreCorrect called!");
+            if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
+            {
+                if (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue)
+                {
+                    readyForNextRoundBoolSync.SetBoolValue(true);
+                    readyForNextRound = true;
+                }
+                Debug.Log("Player1 Pressed Values are correct : " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue);
+            }
+
+            if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
+            {
+                if (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue && Player2.pressedValuesAreCorrectBoolSync.GetBoolValue)
+                {
+                    readyForNextRoundBoolSync.SetBoolValue(true);
+                    readyForNextRound = true;
+                }
+                Debug.Log("Player1 Pressed Values are correct : " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue + "Player2 Pressed Values are correct:" + Player2.pressedValuesAreCorrectBoolSync.GetBoolValue);
+            }
+            //Debug.Log("ReadyForNextRound = " + readyForNextRound);
+        }
+        if (isClient)
+        {
+            if (readyForNextRoundBoolSync.GetBoolValue)
             {
                 readyForNextRound = true;
             }
-            Debug.Log("Player1 Pressed Values are correct : " + Player1.boolSync.GetBoolValue);
         }
-
-        if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
-        {
-            if (Player1.boolSync.GetBoolValue && Player2.boolSync.GetBoolValue)
-            {
-                readyForNextRound = true;
-            }
-            Debug.Log("Player1 Pressed Values are correct : " + Player1.boolSync.GetBoolValue + "Player2 Pressed Values are correct:" + Player2.boolSync.GetBoolValue);
-        }
-        //Debug.Log("ReadyForNextRound = " + readyForNextRound);
     }
     public void SetPlayerPositions()
     {
