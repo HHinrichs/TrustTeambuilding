@@ -28,8 +28,6 @@ public class PodestManager : MonoBehaviour
     private List<int> buttonValuesP1 = new List<int>();
     private List<int> buttonValuesP2 = new List<int>();
 
-    private bool pressedValuesAreCorrect = false;
-
     public BoolSync pressedValuesAreCorrectBoolSync;
     // Getter, Setter
     public int SetCurrentRound { set { currentRound = value; } }
@@ -37,7 +35,6 @@ public class PodestManager : MonoBehaviour
     public int ButtonsInChildrenCount { get { return buttonsInChildrenCount; } }
 
     public int PlayerNumber { get { return playerNumber; } set { playerNumber = value; } }
-    public bool GetPressedValuesAreCorrect { get { return pressedValuesAreCorrect; } }
 
     //public delegate void PressedValueChanged();
    // public event PressedValueChanged allButtonsHaveBeenPressed;
@@ -148,7 +145,6 @@ public class PodestManager : MonoBehaviour
         PlayerNumber = 99;
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
-        pressedValuesAreCorrect = false;
         ResetButtons();
         // RESET NETWORKING BOOL SYNC
         pressedValuesAreCorrectBoolSync.SetBoolValue(false);
@@ -168,6 +164,7 @@ public class PodestManager : MonoBehaviour
             Debug.Log("Deselecting Button " + ButtonControllers[buttonNumber]);
             ButtonControllers[buttonNumber].DeselectButton();
             pressedButtonNumbers.Remove(buttonNumber);
+            pressedValuesAreCorrectBoolSync.SetBoolValue(CheckIfPressedValueFromPlayerIsCorrect());
             return;
         }
 
@@ -184,10 +181,8 @@ public class PodestManager : MonoBehaviour
         // Jumps in and Checks if pressedValuesAreCorrect if all Buttons this Round have been pressed and notifys the Gamemanager about an status update
         if (pressedButtonNumbers.Count == roundRules.GetElementCountThisRound(currentRound))
         {
-            pressedValuesAreCorrect = CheckIfPressedValueFromPlayerIsCorrect();
-
             // NETWORKING BOOL SYNC
-            pressedValuesAreCorrectBoolSync.SetBoolValue(pressedValuesAreCorrect);
+            pressedValuesAreCorrectBoolSync.SetBoolValue(CheckIfPressedValueFromPlayerIsCorrect());
             //allButtonsHaveBeenPressed.Invoke();
         }
 
