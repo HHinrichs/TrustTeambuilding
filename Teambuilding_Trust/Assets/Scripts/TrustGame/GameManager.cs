@@ -178,26 +178,28 @@ public class GameManager : MonoBehaviour
 
     public void ClearForNextRound()
     {
-        //if (Player1 != null)
-        //    UnsubscribeToPlayerEvent(Player1);
-        //if (Player2 != null)
-        //    UnsubscribeToPlayerEvent(Player2);
+        if(isServer)
+            StartCoroutine(CheckForPlayerResetCoroutine());
 
+        StartCoroutine(ClearForNextRoundCoroutine());
+    }
+    IEnumerator ClearForNextRoundCoroutine()
+    {
+        foreach (PodestManager podests in Podests)
+            podests.ResetAll();
+
+        yield return new WaitUntil(() => !readyForNextRoundBoolSync);
 
         Player1 = null;
         Player2 = null;
         CurrentLeader = null;
 
-        foreach (PodestManager podests in Podests)
-            podests.ResetAll();
-
-        if(isServer)
-            StartCoroutine(CheckForPlayerResetCoroutine());
     }
 
     IEnumerator CheckForPlayerResetCoroutine()
     {
         // WAIT TILL ALL PLAYERS HAVE SUCC RESETTED THEIR VALUES TILL IT GOES ON
+        yield return new WaitForSeconds(0.5f);
         if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
         {
             while (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue)
@@ -211,6 +213,7 @@ public class GameManager : MonoBehaviour
         {
             while (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue && Player2.pressedValuesAreCorrectBoolSync.GetBoolValue)
             {
+                Debug.Log("P1 bool Sync is still " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue + "/// P2 bool Sync is still " + Player2.pressedValuesAreCorrectBoolSync.GetBoolValue);
                 yield return null;
             }
           readyForNextRoundBoolSync.SetBoolValue(false);
