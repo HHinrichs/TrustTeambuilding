@@ -199,6 +199,9 @@ public class PodestManager : MonoBehaviour
         switch (PlayerNumber)
         {
             case 1:
+                if (pressedValueCheckerP1 == null)
+                    return false;
+                
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
                     if (buttonValuesP1.Contains(pressedButtonNumbers[i]))
@@ -214,9 +217,13 @@ public class PodestManager : MonoBehaviour
                     if (!isCorrectValue)
                         return isCorrectValue;
                 }
+
                 break;
 
             case 2:
+                if (pressedValueCheckerP2 == null)
+                    return false;
+                
                 for (int i = 0; i < pressedButtonNumbers.Count; ++i)
                 {
                     if (buttonValuesP2.Contains(pressedButtonNumbers[i]))
