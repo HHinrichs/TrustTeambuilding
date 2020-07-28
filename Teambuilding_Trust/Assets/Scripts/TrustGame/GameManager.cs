@@ -119,6 +119,14 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SequencingStart());
 
     }
+    private void StartNextRound()
+    {
+        Debug.Log("Booting up next round ....");
+        nextRoundIsBootingUp = true;
+        ClearForNextRound();
+        round++;
+        StartCoroutine(SequencingStartNextRound());
+    }
 
     IEnumerator SequencingStart()
     {
@@ -137,6 +145,10 @@ public class GameManager : MonoBehaviour
         SetIndicatorPlanes();
         // Inject the RoundRules each Round to get the element Count
         SetButtonsToPress(RoundRules.GetElementCountThisRound(round));
+
+        readyForNextRound = false;
+        nextRoundIsBootingUp = false;
+        Debug.Log("....Bootup next round finished");
     }
 
     public void ResetAll()
@@ -185,6 +197,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator CheckForPlayerResetCoroutine()
     {
+        // WAIT TILL ALL PLAYERS HAVE SUCC RESETTED THEIR VALUES TILL IT GOES ON
         if (NumbersOfParticipatingPlayers == 2 && Player1 != null)
         {
             while (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue)
@@ -205,15 +218,6 @@ public class GameManager : MonoBehaviour
     }
 
 
-    private void StartNextRound()
-    {
-        nextRoundIsBootingUp = true;
-        ClearForNextRound();
-        round++;
-        StartCoroutine(SequencingStartNextRound());
-        readyForNextRound = false;
-        nextRoundIsBootingUp = false;
-    }
 
     //public void SubscribeToPlayerEvent(PodestManager player)
     //{
@@ -231,10 +235,6 @@ public class GameManager : MonoBehaviour
 
         if (isServer)
         {
-            // IF TRUE, RETURN
-            if (readyForNextRoundBoolSync.GetBoolValue)
-                return;
-
             if (Player1 == null || Player2 == null || CurrentLeader == null)
                 return;
 
@@ -304,6 +304,8 @@ public class GameManager : MonoBehaviour
                 //SubscribeToPlayerEvent(Player2);
             }
         }
+
+        Debug.Log("IsLeader " + RoundRules.GetWhoIsLeader(round)+"/// IsPlayer1 "+ RoundRules.GetWhoIsPlayer1(round)+ "/// IsPlayer1 " + RoundRules.GetWhoIsPlayer2(round));
 
     }
 

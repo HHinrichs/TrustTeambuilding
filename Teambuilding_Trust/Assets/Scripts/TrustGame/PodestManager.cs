@@ -149,9 +149,9 @@ public class PodestManager : MonoBehaviour
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
         pressedValuesAreCorrect = false;
+        ResetButtons();
         // RESET NETWORKING BOOL SYNC
         pressedValuesAreCorrectBoolSync.SetBoolValue(false);
-        ResetButtons();
     }
 
     private void GetPressedValueFromPlayer(int buttonNumber)
@@ -193,6 +193,9 @@ public class PodestManager : MonoBehaviour
 
     }
 
+    // IN GENERAL I DONT NEED THIS BECAUSE THE SERVER CHECKS IF SOME VALUES ARE CORRECT AND THE CLIENT DOESNT KNOW A SH** ABOUT THAT
+    // BUT IN MY CASE HOW THE GAME IS SETUP ITS OK, BECAUSE I CAN BE P1 OR P2
+    // BUUUT I CAN ALSO DELETE THE p1 OR p2 VALUES BECAUSE IT GETS RESET ANYWAYS
     private bool CheckIfPressedValueFromPlayerIsCorrect()
     {
         bool isCorrectValue = true;
