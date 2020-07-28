@@ -9798,7 +9798,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2442
+  m_Name: pb_Mesh-2480
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -10196,7 +10196,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh19196
+  m_Name: pb_Mesh19204
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11717,7 +11717,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3114
+  m_Name: pb_Mesh-3176
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12999,6 +12999,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5e88da1d1a4a3841a0ea670553bf85d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isServer: 0
+  isClient: 0
   NumbersOfParticipatingPlayers: 3
   PlayerSpawnPositions: {fileID: 308111040}
   Podests:
@@ -13014,11 +13016,13 @@ MonoBehaviour:
   Podest3BoolSync: {fileID: 776962288}
   StartBoolSync: {fileID: 1863427087}
   RestartBoolSync: {fileID: 643885352}
+  readyForNextRoundBoolSync: {fileID: 1410114614}
   gameIsRunning: 0
   round: 0
   timeSinceGameStart: 0
   readyForNextRound: 0
   countdownToStartIsActive: 0
+  nextRoundIsBootingUp: 0
   unityEvent:
     m_PersistentCalls:
       m_Calls:
@@ -14000,6 +14004,74 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3eef40de82a009d4db8df09ed84ab8aa, type: 3}
+--- !u!1 &1410114612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1410114613}
+  - component: {fileID: 1410114615}
+  - component: {fileID: 1410114614}
+  m_Layer: 0
+  m_Name: ReadyForNextRoundBool
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1410114613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410114612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1879998991}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1410114614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410114612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0317387cb1fdea24fbeeb5cc05eaeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1410114615
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1410114612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1011e140c5c34458f64fd8ad5095b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 1045469409}
+  _sceneViewUUID: 1cfb1891a2ee9f4aa79eecffb93bc8e4
+  _sceneViewOwnedByCreatingClient: 0
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _isRootPrefabView: 0
+  _components:
+  - componentID: 1
+    component: {fileID: 1410114614}
+    componentIDHasBeenUsed: 1
+  _parentView: {fileID: 0}
+  _childViews: []
 --- !u!1 &1414819320
 GameObject:
   m_ObjectHideFlags: 0
@@ -15699,7 +15771,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1184
+  m_Name: pb_Mesh-1198
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -15884,6 +15956,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 133306338}
+  - {fileID: 1410114613}
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -17115,6 +17188,11 @@ PrefabInstance:
     - target: {fileID: 6850251156627030858, guid: 0fbec01955e927f40b5cfa531463df16,
         type: 3}
       propertyPath: _sceneViewOwnedByCreatingClient
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6850251156627030858, guid: 0fbec01955e927f40b5cfa531463df16,
+        type: 3}
+      propertyPath: _sceneViewUUID.Array.data[15]
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7141525710956423956, guid: 0fbec01955e927f40b5cfa531463df16,

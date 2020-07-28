@@ -44,7 +44,8 @@ public class PodestManager : MonoBehaviour
 
     private void Awake()
     {
-        pressedValuesAreCorrectBoolSync = GetComponent<BoolSync>();
+        if(pressedValuesAreCorrectBoolSync == null)
+            pressedValuesAreCorrectBoolSync = GetComponent<BoolSync>();
         if (pressedValuesAreCorrectBoolSync == null)
             Debug.LogWarning("BoolSync not found on " + gameObject.name);
     }

@@ -433,7 +433,7 @@ MonoBehaviour:
     type: 2}
   PlayerColorMaterialBlack: {fileID: 2100000, guid: c36309097bcf2184cabe6478ee1a4007,
     type: 2}
-  boolSync: {fileID: 0}
+  pressedValuesAreCorrectBoolSync: {fileID: 890279651120081222}
 --- !u!114 &6850251156627030858
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -447,7 +447,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _realtime: {fileID: 0}
-  _sceneViewUUID: a29978d82942884aaff4101c22796976
+  _sceneViewUUID: f2ac5732600c52488de20558a01bc565
   _sceneViewOwnedByCreatingClient: 1
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
