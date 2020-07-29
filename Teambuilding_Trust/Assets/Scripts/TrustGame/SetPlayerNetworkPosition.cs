@@ -34,7 +34,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
     {
         yield return new WaitUntil(() => realtime.connected);
 
-        if (gameManager.isClient && gameManager.GetNetworkPlayerPositionsInitialized)
+        if (gameManager.isClient)
         {
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
@@ -59,7 +59,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
         else
         {
             Debug.Log("It seems that you are the SERVER OR the server has not defined network positions yet... therefore there is no server availible!");
-            Debug.Log("gameManager.isClient == " + gameManager.isClient + "///gameManager.GetNetworkPlayerPositionsInitialized " + gameManager.GetNetworkPlayerPositionsInitialized);
+            Debug.Log("gameManager.isClient == " + gameManager.isClient);
         }
         yield return null;
     }
@@ -67,7 +67,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
     {
         yield return new WaitUntil(() => realtime.connected);
 
-        if (gameManager.isClient && gameManager.GetNetworkPlayerPositionsInitialized)
+        if (gameManager.isClient)
         {
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
@@ -92,7 +92,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
         else
         {
             Debug.Log("It seems that you are the SERVER OR the server has not defined network positions yet... therefore there is no server availible!");
-            Debug.Log("gameManager.isClient == " + gameManager.isClient + "///gameManager.GetNetworkPlayerPositionsInitialized " + gameManager.GetNetworkPlayerPositionsInitialized);
+            Debug.Log("gameManager.isClient == " + gameManager.isClient);
         }
         yield return null;
     }

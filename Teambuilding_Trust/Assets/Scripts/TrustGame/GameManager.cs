@@ -34,9 +34,6 @@ public class GameManager : MonoBehaviour
     public BoolSync RestartBoolSync;
     public IntSync NetworkPlayerPositions;
     public BoolSync readyForNextRoundBoolSync;
-
-    private bool networkPlayerPositionsInitialized = false;
-
     private PodestManager Player1;
     private PodestManager Player2;
     private PodestManager CurrentLeader;
@@ -63,8 +60,6 @@ public class GameManager : MonoBehaviour
     public float GetTimeSinceGameStart { get { return timeSinceGameStart; } }
 
     public int GetNumbersOfParticipatingPlayers { get { return NumbersOfParticipatingPlayers; } }
-
-    public bool GetNetworkPlayerPositionsInitialized { get { return networkPlayerPositionsInitialized; } }
 
     private void Awake()
     {
@@ -115,7 +110,6 @@ public class GameManager : MonoBehaviour
     // Networking
     public void SetPlayerNetworkPositions()
     {
-        networkPlayerPositionsInitialized = true;
         int playerNetworkPositionInt = 0;
         for(int i = 0; i < NumbersOfParticipatingPlayers; ++i)
         {
