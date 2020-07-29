@@ -5,15 +5,18 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.UI;
 using TMPro;
+using System;
 using Normal.Realtime;
+using JetBrains.Annotations;
 
 public class GameManager : MonoBehaviour
 {
-
     private static GameManager _Instance = null;
 
     public static GameManager Instance { get { return _Instance; } }
 
+    public delegate void ResetAllCalled();
+    public event ResetAllCalled resetAllCalled;
     public bool isServer;
     public bool isClient;
     [SerializeField] int NumbersOfParticipatingPlayers;
@@ -29,8 +32,10 @@ public class GameManager : MonoBehaviour
     public BoolSync Podest3BoolSync;
     public BoolSync StartBoolSync;
     public BoolSync RestartBoolSync;
-
+    public IntSync NetworkPlayerPositions;
     public BoolSync readyForNextRoundBoolSync;
+
+    private bool networkPlayerPositionsInitialized = false;
 
     private PodestManager Player1;
     private PodestManager Player2;
@@ -57,6 +62,10 @@ public class GameManager : MonoBehaviour
     public int GetRound { get { return round; } }
     public float GetTimeSinceGameStart { get { return timeSinceGameStart; } }
 
+    public int GetNumbersOfParticipatingPlayers { get { return NumbersOfParticipatingPlayers; } }
+
+    public bool GetNetworkPlayerPositionsInitialized { get { return networkPlayerPositionsInitialized; } }
+
     private void Awake()
     {
         if(_Instance != null && _Instance != this)
@@ -72,6 +81,11 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (isServer)
+        {
+            SetPlayerNetworkPositions();
+        }
+
         StartCoroutine(LateStart(5));
     }
 
@@ -99,6 +113,16 @@ public class GameManager : MonoBehaviour
     }
 
     // Networking
+    public void SetPlayerNetworkPositions()
+    {
+        networkPlayerPositionsInitialized = true;
+        int playerNetworkPositionInt = 0;
+        for(int i = 0; i < NumbersOfParticipatingPlayers; ++i)
+        {
+            playerNetworkPositionInt = IntToBoolean.SetBitTo1(playerNetworkPositionInt, i);
+        }
+        NetworkPlayerPositions.SetIntValue(playerNetworkPositionInt);
+    }
 
     public void StartGame()
     {
@@ -153,6 +177,8 @@ public class GameManager : MonoBehaviour
 
     public void ResetAll()
     {
+        if(isServer)
+            SetPlayerNetworkPositions();
         // Resets the Whole Game
         if(gameTimeCounterCoroutine != null)
         {
@@ -167,6 +193,7 @@ public class GameManager : MonoBehaviour
         gameIsRunning = false;
         round = 0;
         timeSinceGameStart = 0f;
+        resetAllCalled.Invoke();
         // Kick() ??
     }
 
@@ -399,5 +426,4 @@ public class GameManager : MonoBehaviour
         effiziency = (GetRound / GetTimeSinceGameStart)*100f;
         return effiziency;
     }
-
 }
