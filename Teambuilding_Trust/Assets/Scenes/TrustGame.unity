@@ -8029,7 +8029,7 @@ PrefabInstance:
     - target: {fileID: 7614011799473437320, guid: 0fbec01955e927f40b5cfa531463df16,
         type: 3}
       propertyPath: m_Name
-      value: Podest1 (1)
+      value: Podest2
       objectReference: {fileID: 0}
     - target: {fileID: 7614011799473437321, guid: 0fbec01955e927f40b5cfa531463df16,
         type: 3}
@@ -9798,7 +9798,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-2480
+  m_Name: pb_Mesh-2600
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -11717,7 +11717,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-3176
+  m_Name: pb_Mesh-3416
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -13155,7 +13155,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.25
+  m_fontSize: 38.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -14278,7 +14278,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 31.25
+  m_fontSize: 38.05
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15159,6 +15159,7 @@ GameObject:
   - component: {fileID: 1561816005}
   - component: {fileID: 1561816007}
   - component: {fileID: 1561816006}
+  - component: {fileID: 1561816008}
   m_Layer: 0
   m_Name: ConnectionStatus
   m_TagString: Untagged
@@ -15204,7 +15205,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: ConnectionStatus
+  m_text: 'IsConnected : false'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -15231,7 +15232,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27.8
+  m_fontSize: 25.6
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -15281,6 +15282,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561816004}
   m_CullTransparentMesh: 0
+--- !u!114 &1561816008
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1561816004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c96acf7344e57e4bb055ba343dd122c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1698166093
 GameObject:
   m_ObjectHideFlags: 0
@@ -17298,7 +17311,7 @@ PrefabInstance:
     - target: {fileID: 7614011799473437320, guid: 0fbec01955e927f40b5cfa531463df16,
         type: 3}
       propertyPath: m_Name
-      value: Podest1 (2)
+      value: Podest3
       objectReference: {fileID: 0}
     - target: {fileID: 7614011799473437321, guid: 0fbec01955e927f40b5cfa531463df16,
         type: 3}

@@ -391,12 +391,12 @@ public class GameManager : MonoBehaviour
         countdownToStartIsActive = false;
     }
 
-    public float Efficiency()
+    public float RoundEfficiency()
     {
         float effiziency = 0f;
         if (GetRound == 0)
             return effiziency;
-        effiziency = GetRound / GetTimeSinceGameStart;
+        effiziency = (GetRound / GetTimeSinceGameStart)*100f;
         return effiziency;
     }
 

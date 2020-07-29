@@ -17,7 +17,7 @@ public class SpectatorOverlayManager : MonoBehaviour
     {
         ElapsedTime.text = GameManager.Instance.GetTimeSinceGameStart.ToString();
         RoundNumber.text = GameManager.Instance.GetRound.ToString();
-        Efficienzy.text = GameManager.Instance.Efficiency().ToString();
+        Efficienzy.text = GameManager.Instance.RoundEfficiency().ToString();
         if(GameManager.Instance.GetPlayer1 != null )
             CurrentlyCorrectP1.text = GameManager.Instance.GetPlayer1.pressedValuesAreCorrectBoolSync.GetBoolValue.ToString();
         if (GameManager.Instance.GetPlayer2 != null) 

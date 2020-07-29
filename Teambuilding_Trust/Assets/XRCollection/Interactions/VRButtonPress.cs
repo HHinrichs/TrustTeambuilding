@@ -10,6 +10,8 @@ namespace XRCollection.Interactions
     public class VRButtonPress : XRBaseInteractable
     {
         RealtimeTransform realtimeTransform;
+        Realtime realtime;
+        public BoolSync boolSyncVRButtonPress;
         public UnityEvent OnPress = null;
         //public UnityEvent OnUpperPosition = null;
 
@@ -24,8 +26,9 @@ namespace XRCollection.Interactions
             base.Awake();
             onHoverEnter.AddListener(StartPress);
             onHoverExit.AddListener(EndPress);
-
+            realtime = FindObjectOfType<Realtime>();
             realtimeTransform = GetComponent<RealtimeTransform>();
+
             if (realtimeTransform == null)
             {
                 Debug.LogWarning("Network Transform is Null on " + gameObject.name);
@@ -60,15 +63,17 @@ namespace XRCollection.Interactions
 
             if (realtimeTransform != null)
             {
-                if(FindObjectOfType<Realtime>().connected)
+                if (FindObjectOfType<Realtime>().connected)
+                {
+                    boolSyncVRButtonPress.SetBoolValue(false);
                     StartCoroutine(ClearOwnership());
+                }
             }
 
         }
 
         IEnumerator ClearOwnership()
         {
-
             // SOMEHOW THIS SEEMS TOTALLY UGLY, BUT IT IS MADE FOR LETTING THE UNREALIABLE 
             yield return null;
             yield return new WaitForSeconds((float)realtimeTransform.realtime.room.datastoreFrameDuration * 2f);
@@ -120,7 +125,16 @@ namespace XRCollection.Interactions
             bool inPosition = InPosition();
 
             if (inPosition && inPosition != previousPressed)
+            {
+                if (realtimeTransform != null)
+                {
+                    if (realtime != null && realtime.connected)
+                    {
+                        boolSyncVRButtonPress.SetBoolValue(inPosition && inPosition != previousPressed);
+                    }
+                }
                 OnPress.Invoke();
+            }
 
             previousPressed = inPosition;
         }

@@ -49,6 +49,7 @@ GameObject:
   - component: {fileID: 449115930742562617}
   - component: {fileID: 449115930742562608}
   - component: {fileID: 449115930742562609}
+  - component: {fileID: 707294116154292194}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -172,6 +173,9 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 449115930742562618}
     componentIDHasBeenUsed: 1
+  - componentID: 2
+    component: {fileID: 707294116154292194}
+    componentIDHasBeenUsed: 1
   _parentView: {fileID: 0}
   _childViews: []
 --- !u!114 &449115930742562618
@@ -232,6 +236,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_CustomReticle: {fileID: 0}
+  boolSyncVRButtonPress: {fileID: 707294116154292194}
   OnPress:
     m_PersistentCalls:
       m_Calls:
@@ -293,6 +298,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &707294116154292194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 449115930742562567}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0317387cb1fdea24fbeeb5cc05eaeeda, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1214508651949323273
 GameObject:
   m_ObjectHideFlags: 0
