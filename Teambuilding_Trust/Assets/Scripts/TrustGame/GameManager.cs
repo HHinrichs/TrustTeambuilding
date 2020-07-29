@@ -81,18 +81,18 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        if (isServer)
-        {
-            SetPlayerNetworkPositions();
-        }
-
         StartCoroutine(LateStart(5));
     }
 
     IEnumerator LateStart(float waitTime)
     {
-        //yield return new WaitForSeconds(waitTime);
         yield return new WaitUntil(() => FindObjectOfType<Realtime>().connected == true);
+        
+        if (isServer)
+        {
+            SetPlayerNetworkPositions();
+        }
+        //yield return new WaitForSeconds(waitTime);
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
