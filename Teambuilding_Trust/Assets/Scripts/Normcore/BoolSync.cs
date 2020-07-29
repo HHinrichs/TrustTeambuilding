@@ -8,6 +8,7 @@ public class BoolSync : RealtimeComponent
 {
     private BoolSyncModel _model;
     private bool boolValue;
+    private bool toggleBoolValue;
 
     public delegate void BoolValueChanged();
     public event BoolValueChanged boolValueChanged;
@@ -47,6 +48,14 @@ public class BoolSync : RealtimeComponent
     public void SetBoolValue(bool value)
     {
         _model.boolValue = value;
+    }
+
+    public void ToggleBoolValue()
+    {
+        if (GetBoolValue == false)
+            SetBoolValue(true);
+        else
+            SetBoolValue(false);
     }
 
 }

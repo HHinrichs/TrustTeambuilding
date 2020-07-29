@@ -77,7 +77,7 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LateStart(float waitTime)
     {
-        yield return new WaitForSeconds(waitTime);
+        //yield return new WaitForSeconds(waitTime);
         yield return new WaitUntil(() => FindObjectOfType<Realtime>().connected == true);
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
@@ -188,6 +188,7 @@ public class GameManager : MonoBehaviour
         foreach (PodestManager podests in Podests)
             podests.ResetAll();
 
+        // SYNC POINT
         yield return new WaitUntil(() => !readyForNextRoundBoolSync);
 
         Player1 = null;
