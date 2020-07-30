@@ -23,12 +23,6 @@ namespace Normal.Realtime {
         public event AvatarCreatedDestroyed avatarCreated;
         public event AvatarCreatedDestroyed avatarDestroyed;
 
-        public delegate void NewAvatarJoined(int clientKeyValue);
-        public event NewAvatarJoined newAvatarJoined;
-
-        public delegate void AvatarDisconnected(int clientKeyValue);
-        public event AvatarDisconnected avatarDisconnected;
-
         private Realtime _realtime;
 
         void Awake() {
@@ -88,7 +82,6 @@ namespace Normal.Realtime {
                     Debug.LogException(exception);
                 }
             }
-            newAvatarJoined.Invoke(clientID);
         }
 
         public void _UnregisterAvatar(RealtimeAvatar avatar) {
@@ -98,8 +91,6 @@ namespace Normal.Realtime {
             foreach (KeyValuePair<int, RealtimeAvatar> matchingAvatar in matchingAvatars) {
                 int avatarClientID = matchingAvatar.Key;
                 avatars.Remove(avatarClientID);
-                
-                avatarDisconnected.Invoke(avatarClientID);
 
                 isLocalAvatar = isLocalAvatar || avatarClientID == _realtime.clientID;
             }

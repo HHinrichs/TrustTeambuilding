@@ -17,32 +17,32 @@ public class PlayerIndicator : MonoBehaviour
     private void Start()
     {
         realtimeAvatarManager = FindObjectOfType<RealtimeAvatarManager>();
-        realtimeAvatarManager.newAvatarJoined += PlayerConnected;
-        realtimeAvatarManager.avatarDisconnected += PlayerDisconnected;
+        realtimeAvatarManager.avatarCreated += PlayerConnected;
+        realtimeAvatarManager.avatarDestroyed += PlayerDisconnected;
     }
 
-    public void PlayerConnected(int clientKeyValue)
+    public void PlayerConnected(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
-        InstantiatePlayer(clientKeyValue);
+            InstantiatePlayer(avatar.realtimeView.ownerID);
     }
 
 
-    public void PlayerDisconnected(int clientKeyValue)
+    public void PlayerDisconnected(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
-        foreach(Player player in Players)
+        foreach (Player player in Players)
         {
-            if (player.PlayerNumber == clientKeyValue)
+            if (player.PlayerNumber == avatar.realtimeView.ownerID)
             {
                 Players.Remove(player);
                 Destroy(player.gameObject);
+                break;
             }
         }
     }
 
     public void InstantiatePlayer(int clientKeyValue)
     {
-        GameObject playerPrefab = Instantiate(playerIndicatorPrefab);
-        playerPrefab.transform.parent = this.transform;
+        GameObject playerPrefab = Instantiate(playerIndicatorPrefab,this.transform);
 
         Player player = playerPrefab.GetComponent<Player>();
 
