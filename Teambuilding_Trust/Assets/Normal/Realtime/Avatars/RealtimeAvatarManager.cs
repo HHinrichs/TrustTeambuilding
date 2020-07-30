@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR;
 using UnityEngine.Serialization;
+using UnityEngine.Rendering;
 
 namespace Normal.Realtime {
     [RequireComponent(typeof(Realtime))]
@@ -21,7 +22,13 @@ namespace Normal.Realtime {
         public delegate void AvatarCreatedDestroyed(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar);
         public event AvatarCreatedDestroyed avatarCreated;
         public event AvatarCreatedDestroyed avatarDestroyed;
-        
+
+        public delegate void NewAvatarJoined(int clientKeyValue);
+        public event NewAvatarJoined newAvatarJoined;
+
+        public delegate void AvatarDisconnected(int clientKeyValue);
+        public event AvatarDisconnected avatarDisconnected;
+
         private Realtime _realtime;
 
         void Awake() {
@@ -73,7 +80,6 @@ namespace Normal.Realtime {
                 Debug.LogError("RealtimeAvatar registered more than once for the same clientID (" + clientID + "). This is a bug!");
             }
             avatars[clientID] = avatar;
-            
             // Fire event
             if (avatarCreated != null) {
                 try {
@@ -82,6 +88,7 @@ namespace Normal.Realtime {
                     Debug.LogException(exception);
                 }
             }
+            newAvatarJoined.Invoke(clientID);
         }
 
         public void _UnregisterAvatar(RealtimeAvatar avatar) {
@@ -92,6 +99,8 @@ namespace Normal.Realtime {
                 int avatarClientID = matchingAvatar.Key;
                 avatars.Remove(avatarClientID);
                 
+                avatarDisconnected.Invoke(avatarClientID);
+
                 isLocalAvatar = isLocalAvatar || avatarClientID == _realtime.clientID;
             }
             
@@ -103,6 +112,7 @@ namespace Normal.Realtime {
                     Debug.LogException(exception);
                 }
             }
+
         }
         
         private void SetLocalAvatarPrefab(GameObject localAvatarPrefab) {

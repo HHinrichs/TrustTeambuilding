@@ -41,6 +41,7 @@ public class GameManager : MonoBehaviour
     public PodestManager GetPlayer2 { get { return Player2; } }
     public PodestManager GetCurrentLeader { get { return CurrentLeader; } }
 
+    public PlayerIndicator playerIndicator;
     [Header("GameInformations")]
     public bool gameIsRunning = false;
     [SerializeField] int round = 0;
@@ -75,6 +76,9 @@ public class GameManager : MonoBehaviour
         // DISABLE THE REALTIME AVATAR MANAGER FOR THE SERVER SO THAT IT DOES NOT SPAWN ANY AVATARAS
         if (isServer)
             FindObjectOfType<RealtimeAvatarManager>().localAvatarPrefab = null;
+        if (isClient)
+            playerIndicator.kickPlayerEvent += KickPlayer;
+
 
     }
 
@@ -111,6 +115,13 @@ public class GameManager : MonoBehaviour
             StartNextRound();
     }
 
+    public void KickPlayer()
+    {
+        Realtime realtime = FindObjectOfType<Realtime>();
+        if (realtime.clientID == playerIndicator.intSync.GetIntValue)
+            realtime.Disconnect();
+
+    }
     // Networking
     public void SetPlayerNetworkPositions()
     {
