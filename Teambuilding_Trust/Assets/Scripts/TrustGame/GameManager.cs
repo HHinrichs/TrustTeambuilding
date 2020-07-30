@@ -97,7 +97,7 @@ public class GameManager : MonoBehaviour
             SetPlayerNetworkPositions();
         }
         if (isClient)
-            GetComponent<Realtime>().room.rpcMessageReceived += KickPlayer;
+            realtime.room.rpcMessageReceived += KickPlayer;
         //yield return new WaitForSeconds(waitTime);
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;

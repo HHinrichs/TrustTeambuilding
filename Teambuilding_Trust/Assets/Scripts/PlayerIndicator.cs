@@ -8,7 +8,6 @@ using UnityEngine.Events;
 
 public class PlayerIndicator : MonoBehaviour
 {
-    public IntSync kickPlayerValueIntSync;
     public List<Player> Players;
 
     public GameObject playerIndicatorPrefab;
@@ -65,18 +64,7 @@ public class PlayerIndicator : MonoBehaviour
         message.AddRange(clientKeyValueByteArray);
 
         FindObjectOfType<Realtime>().room.SendRPCMessage(message.ToArray(), true);
-        //kickPlayerValueIntSync.SetIntValue(clientKeyValue);
-        //RealtimeAvatarManager rta = FindObjectOfType<RealtimeAvatarManager>();
 
-        //foreach (KeyValuePair<int, RealtimeAvatar> avatar in rta.avatars)
-        //{
-
-        //    if(avatar.Key == clientKeyValue)
-
-        //    Debug.Log(FindObjectOfType<Realtime>().clientID);
-
-        //    Debug.Log(avatar.Key);
-        //}
     }
 
 }
