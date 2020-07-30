@@ -7,11 +7,7 @@ using UnityEngine.Events;
 
 public class PlayerIndicator : MonoBehaviour
 {
-    public delegate void KickPlayerEvent();
-    public event KickPlayerEvent kickPlayerEvent;
-    public IntSync intSync;
-
-
+    public IntSync kickPlayerValueIntSync;
     public List<Player> Players;
 
     public GameObject playerIndicatorPrefab;
@@ -60,8 +56,7 @@ public class PlayerIndicator : MonoBehaviour
     }
     private void KickPlayer(int clientKeyValue)
     {
-        intSync.SetIntValue(clientKeyValue);
-        kickPlayerEvent.Invoke();
+        kickPlayerValueIntSync.SetIntValue(clientKeyValue);
         //RealtimeAvatarManager rta = FindObjectOfType<RealtimeAvatarManager>();
 
         //foreach (KeyValuePair<int, RealtimeAvatar> avatar in rta.avatars)
