@@ -8,6 +8,8 @@ using TMPro;
 using System;
 using Normal.Realtime;
 using JetBrains.Annotations;
+using System.Linq;
+using UnityEngine.UIElements;
 
 public class GameManager : MonoBehaviour
 {
@@ -93,7 +95,7 @@ public class GameManager : MonoBehaviour
             SetPlayerNetworkPositions();
         }
         if (isClient)
-            kickPlayerValue.intValueChanged += KickPlayer;
+            GetComponent<Realtime>().room.rpcMessageReceived += KickPlayer;
         //yield return new WaitForSeconds(waitTime);
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
@@ -114,13 +116,32 @@ public class GameManager : MonoBehaviour
             StartNextRound();
     }
 
-    public void KickPlayer()
+    public void KickPlayer(Room room, byte[] data, bool reliable)
     {
-        Realtime realtime = FindObjectOfType<Realtime>();
-        if (realtime.clientID == kickPlayerValue.GetIntValue)
-            realtime.Disconnect();
+        //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
+        int messageInt = BitConverter.ToInt32(data,0);
+        if (messageInt != 1000)
+            return;
+        int clientValueID = BitConverter.ToInt32(data, sizeof(int));
+
+        Realtime realtime = FindObjectOfType<Realtime>();
+        if (realtime.clientID == clientValueID)
+            realtime.Disconnect();     
     }
+
+    private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
+    {
+        byte[] subPart = new byte[length];
+        int index = 0;
+        for(int i = start; i < start+length; ++i)
+        {
+            subPart[index] = data[i];
+            index++;
+        }
+        return subPart;
+    }
+
     // Networking
     public void SetPlayerNetworkPositions()
     {

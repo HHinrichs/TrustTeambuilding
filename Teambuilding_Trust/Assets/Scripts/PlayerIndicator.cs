@@ -2,6 +2,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO.Ports;
 using UnityEngine;
 using UnityEngine.Events;
 
@@ -56,7 +57,15 @@ public class PlayerIndicator : MonoBehaviour
     }
     private void KickPlayer(int clientKeyValue)
     {
-        kickPlayerValueIntSync.SetIntValue(clientKeyValue);
+        int messageID = 1000;
+        byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
+        byte[] clientKeyValueByteArray = BitConverter.GetBytes(clientKeyValue);
+
+        List<byte> message = new List<byte>(messageIDByteArray);
+        message.AddRange(clientKeyValueByteArray);
+
+        GetComponent<Realtime>().room.SendRPCMessage(message.ToArray(), true);
+        //kickPlayerValueIntSync.SetIntValue(clientKeyValue);
         //RealtimeAvatarManager rta = FindObjectOfType<RealtimeAvatarManager>();
 
         //foreach (KeyValuePair<int, RealtimeAvatar> avatar in rta.avatars)
