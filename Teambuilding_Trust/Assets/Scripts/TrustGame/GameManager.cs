@@ -88,8 +88,10 @@ public class GameManager : MonoBehaviour
 
     IEnumerator LateStart(float waitTime)
     {
-        yield return new WaitUntil(() => FindObjectOfType<Realtime>().connected == true);
-        
+        Realtime realtime = FindObjectOfType<Realtime>();
+        yield return new WaitUntil(() => realtime.connected == true);
+        yield return new WaitUntil(() => realtime.room.connected == true);
+
         if (isServer)
         {
             SetPlayerNetworkPositions();
@@ -118,6 +120,7 @@ public class GameManager : MonoBehaviour
 
     public void KickPlayer(Room room, byte[] data, bool reliable)
     {
+        Debug.Log("Kick Message Received");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
         int messageInt = BitConverter.ToInt32(data,0);

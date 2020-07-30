@@ -64,7 +64,7 @@ public class PlayerIndicator : MonoBehaviour
         List<byte> message = new List<byte>(messageIDByteArray);
         message.AddRange(clientKeyValueByteArray);
 
-        GetComponent<Realtime>().room.SendRPCMessage(message.ToArray(), true);
+        FindObjectOfType<Realtime>().room.SendRPCMessage(message.ToArray(), true);
         //kickPlayerValueIntSync.SetIntValue(clientKeyValue);
         //RealtimeAvatarManager rta = FindObjectOfType<RealtimeAvatarManager>();
 
