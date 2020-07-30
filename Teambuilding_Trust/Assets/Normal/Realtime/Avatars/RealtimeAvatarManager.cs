@@ -91,7 +91,6 @@ namespace Normal.Realtime {
             foreach (KeyValuePair<int, RealtimeAvatar> matchingAvatar in matchingAvatars) {
                 int avatarClientID = matchingAvatar.Key;
                 avatars.Remove(avatarClientID);
-
                 isLocalAvatar = isLocalAvatar || avatarClientID == _realtime.clientID;
             }
             
