@@ -72,6 +72,10 @@ public class GameManager : MonoBehaviour
             _Instance = this;
         }
 
+        // DISABLE THE REALTIME AVATAR MANAGER FOR THE SERVER SO THAT IT DOES NOT SPAWN ANY AVATARAS
+        if (isServer)
+            FindObjectOfType<RealtimeAvatarManager>().localAvatarPrefab = null;
+
     }
 
     private void Start()
