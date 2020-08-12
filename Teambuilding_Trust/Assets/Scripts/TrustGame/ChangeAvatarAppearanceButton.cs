@@ -4,13 +4,8 @@ using UnityEngine;
 using Normal.Realtime;
 using System.Security.Policy;
 
-public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
+public class ChangeAvatarAppearanceButton : MonoBehaviour
 {
-    public GameObject Head;
-    public GameObject LeftHand;
-    public GameObject RightHand;
-    public GameObject AvatarMesh;
-
     private IntSync avatarAppearanceStateIntSync;
     private Room room;
     private RealtimeAvatarManager realtimeAvatarManager;
@@ -23,10 +18,6 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
             Debug.LogError("AvatarAppearanceState not found! This is a bug!");
         avatarAppearanceStateIntSync.intValueChanged += SetAvatarAppearances;
 
-        realtimeView = GetComponent<RealtimeView>();
-        if (realtimeView == null)
-            Debug.LogError("realtimeView not found! This is a bug!");
-
         // Create List of all Active avatars in scene;
         realtimeAvatarManager = FindObjectOfType<RealtimeAvatarManager>();
         realtimeAvatarManager.avatarCreated += PlayerConnected;
@@ -37,9 +28,22 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
         SetAvatarAppearances();
     }
 
+    public void SetAvatarAppearanceToZero()
+    {
+        // Zero is non Ik
+        avatarAppearanceStateIntSync.SetIntValue(0);
+    }
+
+    public void SetAvatarAppearanceToOne()
+    {
+        // One is IK
+        avatarAppearanceStateIntSync.SetIntValue(1);
+    }
+
     public void SetAvatarAppearances()
     {
-        if (realtimeView.isOwnedLocally || GameManager.Instance.isServer)
+        Debug.Log("AvatarAppearance Changed");
+        if (GameManager.Instance.isServer)
         {
             int avatarAppearanceValue = avatarAppearanceStateIntSync.GetIntValue;
             GameObject[] avatars = GameObject.FindGameObjectsWithTag("PlayerAvatar");
@@ -48,11 +52,11 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
             {
                 case 0:
 
-                    for(int i = 0; i < avatars.Length; ++i)
+                    for (int i = 0; i < avatars.Length; ++i)
                     {
                         avatars[i].GetComponent<SetLocalAvatarPrefabForPlayers>().SetNonIkValues();
                     }
-                    
+
                     break;
                 case 1:
                     for (int i = 0; i < avatars.Length; ++i)
@@ -63,21 +67,5 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
             }
         }
 
-    }
-
-    public void SetNonIkValues()
-    {
-        Head.SetActive(true);
-        LeftHand.SetActive(true);
-        RightHand.SetActive(true);
-        AvatarMesh.SetActive(false);
-    }
-
-    public void SetIkValues()
-    {
-        Head.SetActive(false);
-        LeftHand.SetActive(false);
-        RightHand.SetActive(false);
-        AvatarMesh.SetActive(true);
     }
 }

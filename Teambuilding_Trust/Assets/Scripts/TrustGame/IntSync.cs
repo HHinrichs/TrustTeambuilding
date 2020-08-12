@@ -42,7 +42,7 @@ public class IntSync : RealtimeComponent
         intValueChanged?.Invoke();
     }
 
-    public int GetIntValue { get { return intValue; } }
+    public int GetIntValue { get { return _model.intValue; } }
 
     public void SetIntValue(int value)
     {
