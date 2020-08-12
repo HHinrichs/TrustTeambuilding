@@ -16,8 +16,17 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
     private RealtimeAvatarManager realtimeAvatarManager;
     private RealtimeView realtimeView;
 
-    public void Start()
+    private void Start()
     {
+        StartCoroutine(LateStart());
+    }
+
+    IEnumerator LateStart()
+    {
+        Realtime realtime = FindObjectOfType<Realtime>();
+        yield return new WaitUntil(() => realtime.connected == true);
+        yield return new WaitUntil(() => realtime.room.connected == true);
+
         avatarAppearanceStateIntSync = GameObject.FindGameObjectWithTag("AvatarAppearanceState").GetComponent<IntSync>();
         if (avatarAppearanceStateIntSync == null)
             Debug.LogError("AvatarAppearanceState not found! This is a bug!");
@@ -32,7 +41,7 @@ public class SetLocalAvatarPrefabForPlayers : MonoBehaviour
         realtimeAvatarManager.avatarCreated += PlayerConnected;
     }
 
-    public void PlayerConnected(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
+        public void PlayerConnected(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
         SetAvatarAppearances();
     }
