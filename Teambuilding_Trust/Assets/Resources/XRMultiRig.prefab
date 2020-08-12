@@ -60,7 +60,7 @@ MonoBehaviour:
   - componentID: 2
     component: {fileID: 5519448380634755839}
     componentIDHasBeenUsed: 1
-  _parentView: {fileID: 3353179630312176607}
+  _parentView: {fileID: 3229179295679661031}
   _childViews: []
 --- !u!114 &5519080816249280973
 MonoBehaviour:
@@ -158,7 +158,7 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 5519197976028292323}
     componentIDHasBeenUsed: 1
-  _parentView: {fileID: 3353179630312176607}
+  _parentView: {fileID: 3229179295679661031}
   _childViews: []
 --- !u!114 &5519197976028292323
 MonoBehaviour:
@@ -231,7 +231,7 @@ MonoBehaviour:
   - componentID: 1
     component: {fileID: 5519635331695939679}
     componentIDHasBeenUsed: 1
-  _parentView: {fileID: 3353179630312176607}
+  _parentView: {fileID: 3229179295679661031}
   _childViews: []
 --- !u!114 &5519635331695939679
 MonoBehaviour:
@@ -1166,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7725138505852465877
 Transform:
   m_ObjectHideFlags: 0
@@ -1977,11 +1977,11 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8093563473661831188}
-  - component: {fileID: 3353179630312176607}
-  - component: {fileID: 5924351943457368267}
-  - component: {fileID: 6800193757974594962}
   - component: {fileID: 8926469413730166003}
   - component: {fileID: 1474777933311562868}
+  - component: {fileID: 3229179295679661031}
+  - component: {fileID: 6551273043854210159}
+  - component: {fileID: 2571642639523133361}
   m_Layer: 0
   m_Name: XRMultiRig
   m_TagString: PlayerAvatar
@@ -2007,84 +2007,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3353179630312176607
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093563473661831190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d1011e140c5c34458f64fd8ad5095b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _realtime: {fileID: 0}
-  _sceneViewUUID: 
-  _sceneViewOwnedByCreatingClient: 1
-  _sceneViewPreventOwnershipTakeover: 0
-  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 1
-  _components:
-  - componentID: 1
-    component: {fileID: 5924351943457368267}
-    componentIDHasBeenUsed: 1
-  - componentID: 2
-    component: {fileID: 6800193757974594962}
-    componentIDHasBeenUsed: 1
-  _parentView: {fileID: 0}
-  _childViews:
-  - viewID: 1
-    view: {fileID: 5519791243465839479}
-    viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 5519791243465839479}
-  - viewID: 2
-    view: {fileID: 5519676666744611555}
-    viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 5519676666744611555}
-  - viewID: 3
-    view: {fileID: 5519974385381715033}
-    viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 5519974385381715033}
-  - viewID: 4
-    view: {fileID: 0}
-    viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 0}
-  - viewID: 5
-    view: {fileID: 0}
-    viewIDHasBeenUsed: 1
-    viewToUseIfMovedBack: {fileID: 0}
---- !u!114 &5924351943457368267
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093563473661831190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08dff4fb3b027234c8a2562e96aa0846, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _head: {fileID: 5548769422994319625}
-  _leftHand: {fileID: 5548608805840183943}
-  _rightHand: {fileID: 5548499404340475725}
---- !u!114 &6800193757974594962
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8093563473661831190}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9011f3ecfff6bca47b885e91ea7a6049, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _syncPosition: 1
-  _syncRotation: 1
-  _syncScale: 1
-  _extrapolation: 0
 --- !u!114 &8926469413730166003
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2113,6 +2035,76 @@ MonoBehaviour:
   LeftHand: {fileID: 4162107087743292525}
   RightHand: {fileID: 2294769332862496905}
   AvatarMesh: {fileID: 7719733368372423097}
+--- !u!114 &3229179295679661031
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093563473661831190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5d1011e140c5c34458f64fd8ad5095b7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _realtime: {fileID: 0}
+  _sceneViewUUID: 
+  _sceneViewOwnedByCreatingClient: 1
+  _sceneViewPreventOwnershipTakeover: 0
+  _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
+  _isRootPrefabView: 1
+  _components:
+  - componentID: 1
+    component: {fileID: 6551273043854210159}
+    componentIDHasBeenUsed: 1
+  - componentID: 2
+    component: {fileID: 2571642639523133361}
+    componentIDHasBeenUsed: 1
+  _parentView: {fileID: 0}
+  _childViews:
+  - viewID: 1
+    view: {fileID: 5519676666744611555}
+    viewIDHasBeenUsed: 1
+    viewToUseIfMovedBack: {fileID: 5519676666744611555}
+  - viewID: 2
+    view: {fileID: 5519791243465839479}
+    viewIDHasBeenUsed: 1
+    viewToUseIfMovedBack: {fileID: 5519791243465839479}
+  - viewID: 3
+    view: {fileID: 5519974385381715033}
+    viewIDHasBeenUsed: 1
+    viewToUseIfMovedBack: {fileID: 5519974385381715033}
+--- !u!114 &6551273043854210159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093563473661831190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08dff4fb3b027234c8a2562e96aa0846, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _head: {fileID: 5548769422994319625}
+  _leftHand: {fileID: 5548608805840183943}
+  _rightHand: {fileID: 5548499404340475725}
+--- !u!114 &2571642639523133361
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8093563473661831190}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9011f3ecfff6bca47b885e91ea7a6049, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _syncPosition: 1
+  _syncRotation: 1
+  _syncScale: 1
+  _extrapolation: 0
 --- !u!1001 &2294769332862531113
 PrefabInstance:
   m_ObjectHideFlags: 0
