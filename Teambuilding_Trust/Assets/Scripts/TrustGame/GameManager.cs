@@ -19,31 +19,29 @@ public class GameManager : MonoBehaviour
 
     public delegate void ResetAllCalled();
     public event ResetAllCalled resetAllCalled;
+    [Header("Allgemeine Einstellungen")]
     public bool isServer;
     public bool isClient;
     [SerializeField] int NumbersOfParticipatingPlayers;
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
     [SerializeField] int CountDownToStartInSeconds;
+    [SerializeField] int timeToWaitTillCountdown;
     [SerializeField] TextMeshPro GameStartTimerTMP;
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
 
+    [Header("Networking Links")]
     public BoolSync Podest1BoolSync;
     public BoolSync Podest2BoolSync;
     public BoolSync Podest3BoolSync;
     public BoolSync StartBoolSync;
     public BoolSync RestartBoolSync;
     public IntSync NetworkPlayerPositions;
-    public BoolSync readyForNextRoundBoolSync;
-    public IntSync kickPlayerValue;
-
-    private PodestManager Player1;
-    private PodestManager Player2;
-    private PodestManager CurrentLeader;
-    public PodestManager GetPlayer1 { get { return Player1; } }
-    public PodestManager GetPlayer2 { get { return Player2; } }
-    public PodestManager GetCurrentLeader { get { return CurrentLeader; } }
+    public BoolSync ReadyForNextRoundBoolSync;
+    public IntSync RoundNumberToStartWithIntSync;
+    [Space(25)]
+    public ReadyNotReadyIndicatorSphere ReadyNotReadyIndicatorSphere;
 
     [Header("GameInformations")]
     public bool gameIsRunning = false;
@@ -53,6 +51,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] bool countdownToStartIsActive = false;
     [SerializeField] bool nextRoundIsBootingUp = false;
 
+    private PodestManager Player1;
+    private PodestManager Player2;
+    private PodestManager CurrentLeader;
     // Coroutines
     private Coroutine gameTimeCounterCoroutine = null;
     private Coroutine startCountdownToStartCoroutine = null;
@@ -60,6 +61,9 @@ public class GameManager : MonoBehaviour
     public UnityEvent unityEvent;
 
     //Getter Setter
+    public PodestManager GetPlayer1 { get { return Player1; } }
+    public PodestManager GetPlayer2 { get { return Player2; } }
+    public PodestManager GetCurrentLeader { get { return CurrentLeader; } }
     public int GetRound { get { return round; } }
     public float GetTimeSinceGameStart { get { return timeSinceGameStart; } }
 
@@ -159,10 +163,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         Debug.Log("StartCalled!");
-        ResetAll();
-        gameIsRunning = true;
-        SetGameRulesForPlayers();
-        round = RoundNumberToStartWith;
+
+        round = RoundNumberToStartWithIntSync.GetIntValue;
 
         if (NumbersOfParticipatingPlayers == 1)
             Debug.LogError("At least 2 and the most 3 players are required!");
@@ -171,6 +173,10 @@ public class GameManager : MonoBehaviour
             Debug.LogError("Round is Set to 0! This is not correct while starting the Game! Set round at least to 1!");
             return;
         }
+
+        ResetAll();
+        gameIsRunning = true;
+        SetGameRulesForPlayers();
 
         StartCoroutine(SequencingStart());
 
@@ -223,7 +229,7 @@ public class GameManager : MonoBehaviour
         }
         ClearForNextRound();
         gameIsRunning = false;
-        round = 0;
+        round = RoundNumberToStartWithIntSync.GetIntValue;
         timeSinceGameStart = 0f;
         resetAllCalled.Invoke();
         // Kick() ??
@@ -248,7 +254,7 @@ public class GameManager : MonoBehaviour
             podests.ResetAll();
 
         // SYNC POINT
-        yield return new WaitUntil(() => !readyForNextRoundBoolSync);
+        yield return new WaitUntil(() => !ReadyForNextRoundBoolSync);
 
         Player1 = null;
         Player2 = null;
@@ -266,7 +272,7 @@ public class GameManager : MonoBehaviour
             {
                 yield return null;
             }
-            readyForNextRoundBoolSync.SetBoolValue(false);
+            ReadyForNextRoundBoolSync.SetBoolValue(false);
         }
 
         if (NumbersOfParticipatingPlayers == 3 && Player1 != null && Player2 != null)
@@ -276,7 +282,7 @@ public class GameManager : MonoBehaviour
                 Debug.Log("P1 bool Sync is still " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue + "/// P2 bool Sync is still " + Player2.pressedValuesAreCorrectBoolSync.GetBoolValue);
                 yield return null;
             }
-          readyForNextRoundBoolSync.SetBoolValue(false);
+          ReadyForNextRoundBoolSync.SetBoolValue(false);
         }
     }
 
@@ -309,7 +315,7 @@ public class GameManager : MonoBehaviour
             {
                 if (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue)
                 {
-                    readyForNextRoundBoolSync.SetBoolValue(true);
+                    ReadyForNextRoundBoolSync.SetBoolValue(true);
                     readyForNextRound = true;
                 }
                 Debug.Log("Player1 Pressed Values are correct : " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue);
@@ -319,7 +325,7 @@ public class GameManager : MonoBehaviour
             {
                 if (Player1.pressedValuesAreCorrectBoolSync.GetBoolValue && Player2.pressedValuesAreCorrectBoolSync.GetBoolValue)
                 {
-                    readyForNextRoundBoolSync.SetBoolValue(true);
+                    ReadyForNextRoundBoolSync.SetBoolValue(true);
                     readyForNextRound = true;
                 }
                 Debug.Log("Player1 Pressed Values are correct : " + Player1.pressedValuesAreCorrectBoolSync.GetBoolValue + "Player2 Pressed Values are correct:" + Player2.pressedValuesAreCorrectBoolSync.GetBoolValue);
@@ -328,7 +334,7 @@ public class GameManager : MonoBehaviour
         }
         if (isClient)
         {
-            if (readyForNextRoundBoolSync.GetBoolValue)
+            if (ReadyForNextRoundBoolSync.GetBoolValue)
             {
                 readyForNextRound = true;
             }
@@ -431,6 +437,13 @@ public class GameManager : MonoBehaviour
 
     IEnumerator StartCountdownToStart()
     {
+
+        // Changes the ReadyNotReadyMaterial
+
+        ReadyNotReadyIndicatorSphere.SetReadyMaterial();
+        yield return new WaitForSeconds(timeToWaitTillCountdown);
+        ReadyNotReadyIndicatorSphere.SetNotReadyMaterial();
+
         // Starts an Countdown each Round
 
         countdownToStartIsActive = true;
