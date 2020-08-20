@@ -17635,6 +17635,20 @@ Light:
   m_UseBoundingSphereOverride: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &1840447443 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4014403373869957552, guid: c187fda9d720e5345bac9cc25b89d5a5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1501733753}
+  m_PrefabAsset: {fileID: 0}
+--- !u!81 &1840447447
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1840447443}
+  m_Enabled: 1
 --- !u!1 &1863427085
 GameObject:
   m_ObjectHideFlags: 0
