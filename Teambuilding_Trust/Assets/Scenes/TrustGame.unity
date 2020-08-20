@@ -12016,6 +12016,7 @@ GameObject:
   - component: {fileID: 855745121}
   - component: {fileID: 855745120}
   - component: {fileID: 855745124}
+  - component: {fileID: 855745125}
   m_Layer: 0
   m_Name: SpectatorCam
   m_TagString: Untagged
@@ -12243,6 +12244,14 @@ MonoBehaviour:
   CurrentlyCorrectP1: {fileID: 1327433470}
   CurrentlyCorrectP2: {fileID: 1076407744}
   PossibleValues: {fileID: 1199745867}
+--- !u!81 &855745125
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 855745119}
+  m_Enabled: 1
 --- !u!1 &874907389
 GameObject:
   m_ObjectHideFlags: 0
