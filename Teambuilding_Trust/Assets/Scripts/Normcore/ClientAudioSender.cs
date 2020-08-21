@@ -7,7 +7,7 @@ using Normal.Realtime;
 
 public class ClientAudioSender : MonoBehaviour
 {
-    public int sendRate = 10;
+    public int sendRate;
     public bool sending = true;
     private AudioClip mic;
     private int lastRecSample = 0;
@@ -18,7 +18,6 @@ public class ClientAudioSender : MonoBehaviour
 
     void Start()
     {
-        realtime = FindObjectOfType<Realtime>();
         int minFreq;
         int maxFreq;
         Microphone.GetDeviceCaps(null, out minFreq, out maxFreq);
@@ -31,7 +30,7 @@ public class ClientAudioSender : MonoBehaviour
 
     IEnumerator sendingCoroutine()
     {
-        Realtime realtime = FindObjectOfType<Realtime>();
+        realtime = FindObjectOfType<Realtime>();
         yield return new WaitUntil(() => realtime.connected == true);
         yield return new WaitUntil(() => realtime.room.connected == true);
 
@@ -60,16 +59,16 @@ public class ClientAudioSender : MonoBehaviour
 
     public void SendAudioViaNetwork(byte[] serialized)
     {
-        //int messageID = 2000;
-        //byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
-        //List<byte> message = new List<byte>(messageIDByteArray);
-        //message.AddRange(serialized);
-        //realtime.room.SendRPCMessage(message.ToArray(), false);
-        //Debug.Log("RCP Audio Message send via Network from Client!");
+        int messageID = 2000;
+        byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
+        List<byte> message = new List<byte>(messageIDByteArray);
+        message.AddRange(serialized);
+        realtime.room.SendRPCMessage(message.ToArray(), false);
+        Debug.Log("RCP Audio Message send via Network from Client!");
 
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
-        realtime.room.SendRPCMessage(serialized, false);
+        //realtime.room.SendRPCMessage(serialized, false);
         //Debug.Log("RCP Audio Message send via Network from Client!");
     }
 }

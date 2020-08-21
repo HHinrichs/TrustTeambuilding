@@ -33,6 +33,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] NetworkAudioReceiver NetworkAudioReceiver;
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
+    private Queue<Action> RawQueue = new Queue<Action>();
 
     [Header("Networking Links")]
     public BoolSync Podest1BoolSync;
@@ -89,7 +90,6 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(LateStart(5));
-        StartCoroutine(HandleAudioStream());
     }
 
     IEnumerator LateStart(float waitTime)
@@ -113,6 +113,12 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
+        //Handle RawQueue Inputs
+        while (RawQueue.Count > 0)
+        {
+            RawQueue.Dequeue().Invoke();
+        }
+
         if (!gameIsRunning)
             return;
 
@@ -147,46 +153,34 @@ public class GameManager : MonoBehaviour
 
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
-        //Debug.Log("ClientRCPMessageReceived");
+        Debug.Log("ClientRCPMessageReceived");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
-        RawQueue.Enqueue(() =>
-        {
-            if (NetworkAudioReceiver != null)
-            {
-                NetworkAudioReceiver.setAudioData(data);
-            }
-            else
-            {
-                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
-                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
-                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
-            }
-        });
-        //int messageInt = BitConverter.ToInt32(data, 0);
-        //switch (messageInt)
-        //{
-        //    //ClientAudioStreamReceived Message Received
-        //    case 2000:
-        //        Debug.Log("Audio Stream from Client Received!");
-        //        RawQueue.Enqueue(() =>
-        //        {
-        //            byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int) );
-        //            if (NetworkAudioReceiver != null)
-        //            {
-        //                NetworkAudioReceiver.setAudioData(rawMicrophoneData);
-        //            }
-        //            else
-        //            {
-        //                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
-        //                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
-        //                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
-        //            }
-        //        });
-        //        break;
 
-        //    default:
-        //        break;
-        //}
+        int messageInt = BitConverter.ToInt32(data, 0);
+        switch (messageInt)
+        {
+            //ClientAudioStreamReceived Message Received
+            case 2000:
+                Debug.Log("Audio Stream from Client Received!");
+                RawQueue.Enqueue(() =>
+                {
+                    byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
+                    if (NetworkAudioReceiver != null)
+                    {
+                        NetworkAudioReceiver.setAudioData(rawMicrophoneData);
+                    }
+                    else
+                    {
+                        GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                        NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+                        NetworkAudioReceiver = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                    }
+                });
+                break;
+
+            default:
+                break;
+        }
     }
 
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
@@ -201,19 +195,7 @@ public class GameManager : MonoBehaviour
         return subPart;
     }
 
-    public Queue<Action> RawQueue = new Queue<Action>();
-    IEnumerator HandleAudioStream()
-    {
-        while (true)
-        {
-            while (RawQueue.Count > 0)
-            {
-                RawQueue.Dequeue().Invoke();
-            }
 
-            yield return null;
-        }
-    }
 
     // Networking
     public void SetPlayerNetworkPositions()
