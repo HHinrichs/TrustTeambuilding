@@ -13,10 +13,12 @@ public class ClientAudioSender : MonoBehaviour
     private int lastRecSample = 0;
     private int pos;
     private int recFreq;
+    private Realtime realtime;
 
 
     void Start()
     {
+        realtime = FindObjectOfType<Realtime>();
         int minFreq;
         int maxFreq;
         Microphone.GetDeviceCaps(null, out minFreq, out maxFreq);
@@ -58,12 +60,16 @@ public class ClientAudioSender : MonoBehaviour
 
     public void SendAudioViaNetwork(byte[] serialized)
     {
-        int messageID = 2000;
-        byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
+        //int messageID = 2000;
+        //byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
+        //List<byte> message = new List<byte>(messageIDByteArray);
+        //message.AddRange(serialized);
+        //realtime.room.SendRPCMessage(message.ToArray(), false);
+        //Debug.Log("RCP Audio Message send via Network from Client!");
 
-        List<byte> message = new List<byte>(messageIDByteArray);
-        message.AddRange(serialized);
-
-        FindObjectOfType<Realtime>().room.SendRPCMessage(message.ToArray(), false);
+        //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
+        //List<byte> message = new List<byte>(messageIDByteArray);
+        realtime.room.SendRPCMessage(serialized, false);
+        Debug.Log("RCP Audio Message send via Network from Client!");
     }
 }

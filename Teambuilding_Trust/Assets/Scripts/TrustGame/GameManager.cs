@@ -149,32 +149,44 @@ public class GameManager : MonoBehaviour
     {
         Debug.Log("ClientRCPMessageReceived");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
-
-        int messageInt = BitConverter.ToInt32(data, 0);
-        switch (messageInt)
+        RawQueue.Enqueue(() =>
         {
-            //ClientAudioStreamReceived Message Received
-            case 2000:
-                Debug.Log("ClientRCPMessageReceived");
-                RawQueue.Enqueue(() =>
-                {
-                    byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int) );
-                    if (NetworkAudioReceiver != null)
-                    {
-                        NetworkAudioReceiver.setAudioData(rawMicrophoneData);
-                    }
-                    else
-                    {
-                        GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
-                        NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
-                        NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
-                    }
-                });
-                break;
+            if (NetworkAudioReceiver != null)
+            {
+                NetworkAudioReceiver.setAudioData(data);
+            }
+            else
+            {
+                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+            }
+        });
+        //int messageInt = BitConverter.ToInt32(data, 0);
+        //switch (messageInt)
+        //{
+        //    //ClientAudioStreamReceived Message Received
+        //    case 2000:
+        //        Debug.Log("Audio Stream from Client Received!");
+        //        RawQueue.Enqueue(() =>
+        //        {
+        //            byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int) );
+        //            if (NetworkAudioReceiver != null)
+        //            {
+        //                NetworkAudioReceiver.setAudioData(rawMicrophoneData);
+        //            }
+        //            else
+        //            {
+        //                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+        //                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+        //                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+        //            }
+        //        });
+        //        break;
 
-            default:
-                break;
-        }
+        //    default:
+        //        break;
+        //}
     }
 
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
