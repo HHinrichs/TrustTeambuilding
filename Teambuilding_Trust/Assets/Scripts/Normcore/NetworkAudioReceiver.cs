@@ -82,7 +82,10 @@ public class NetworkAudioReceiver : MonoBehaviour
                 aud.timeSamples = lastSamplePos;
             }
             if (!aud.isPlaying)
+            {
+                Debug.Log("BeginToPlayAudio!");
                 aud.Play();
+            }
 
             lastSamplePos += samples.Length;
             if (lastSamplePos >= clipLen)
