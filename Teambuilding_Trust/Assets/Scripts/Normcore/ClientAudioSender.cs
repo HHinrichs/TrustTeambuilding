@@ -66,6 +66,7 @@ public class ClientAudioSender : MonoBehaviour
         {
             using (BinaryWriter writer = new BinaryWriter(stream))
             {
+                writer.Write(rawData.Length);
                 writer.Write(rawData);
 
                 stream.Position = 0;
@@ -73,6 +74,7 @@ public class ClientAudioSender : MonoBehaviour
                 stream.Read(data, 0, data.Length);
             }
         }
+
         return data;
     }
 

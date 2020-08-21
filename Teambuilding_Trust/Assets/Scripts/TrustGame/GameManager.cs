@@ -11,6 +11,7 @@ using JetBrains.Annotations;
 using System.Linq;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
+using System.IO;
 
 public class GameManager : MonoBehaviour
 {
@@ -150,37 +151,52 @@ public class GameManager : MonoBehaviour
                 break;
         }
     }
-
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
         Debug.Log("ClientRCPMessageReceived");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
-        int messageInt = BitConverter.ToInt32(data, 0);
-        switch (messageInt)
-        {
-            //ClientAudioStreamReceived Message Received
-            case 2000:
-                Debug.Log("Audio Stream from Client Received!");
-                RawQueue.Enqueue(() =>
-                {
-                    byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
-                    if (NetworkAudioReceiver != null)
-                    {
-                        NetworkAudioReceiver.setAudioData(rawMicrophoneData);
-                    }
-                    else
-                    {
-                        GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
-                        NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
-                        NetworkAudioReceiver = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
-                    }
-                });
-                break;
+        //int messageInt = BitConverter.ToInt32(data, 0);
+        int messageID;
+        int byteCount;
+        byte[] messageBytes;
 
-            default:
-                break;
+        using (MemoryStream stream = new MemoryStream(data))
+        {
+            using (BinaryReader reader = new BinaryReader(stream))
+            {
+                messageID = reader.ReadInt32();
+                byteCount = reader.ReadInt32();
+                messageBytes = reader.ReadBytes(byteCount);
+                
+                switch (messageID)
+                {
+                    //ClientAudioStreamReceived Message Received
+                    case 2000:
+                        Debug.Log("Audio Stream from Client Received!");
+                        RawQueue.Enqueue(() =>
+                        {
+                            //byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
+
+                            if (NetworkAudioReceiver != null)
+                            {
+                                NetworkAudioReceiver.setAudioData(messageBytes);
+                            }
+                            else
+                            {
+                                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+                                NetworkAudioReceiver = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                            }
+                        });
+                        break;
+
+                    default:
+                        break;
+                }
+            }
         }
+
     }
 
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
