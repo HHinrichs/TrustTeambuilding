@@ -7,7 +7,7 @@ using Normal.Realtime;
 
 public class ClientAudioSender : MonoBehaviour
 {
-    public int sendRate;
+    public int sendRate = 15;
     public bool sending = true;
     private AudioClip mic;
     private int lastRecSample = 0;
@@ -19,20 +19,6 @@ public class ClientAudioSender : MonoBehaviour
     void Start()
     {
 
-        foreach (var device in Microphone.devices)
-        {
-            Debug.Log("Name: " + device);
-        }
-
-        int minFreq;
-        int maxFreq;
-        Microphone.GetDeviceCaps("Headset Microphone(Plantronics C520 - M)", out minFreq, out maxFreq);
-        if (minFreq == 0) 
-            recFreq = 16000;
-        else 
-            recFreq = minFreq;
-        mic = Microphone.Start(null, true, 60, recFreq);
-
         StartCoroutine(sendingCoroutine());
     }
 
@@ -42,6 +28,14 @@ public class ClientAudioSender : MonoBehaviour
         yield return new WaitUntil(() => realtime.connected == true);
         yield return new WaitUntil(() => realtime.room.connected == true);
 
+        int minFreq;
+        int maxFreq;
+        Microphone.GetDeviceCaps(null, out minFreq, out maxFreq);
+        if (minFreq == 0) 
+            recFreq = 16000;
+        else 
+            recFreq = minFreq;
+        mic = Microphone.Start(null, true, 10, recFreq);
         while (sending)
         {
             SendMicSamples();
@@ -93,7 +87,7 @@ public class ClientAudioSender : MonoBehaviour
         //List<byte> message = new List<byte>(messageIDByteArray);
         //message.AddRange(serialized);
         //realtime.room.SendRPCMessage(message.ToArray(), false);
-        //Debug.Log("RCP Audio Message send via Network from Client!");
+        Debug.Log("RCP Audio Message send via Network from Client!");
 
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
