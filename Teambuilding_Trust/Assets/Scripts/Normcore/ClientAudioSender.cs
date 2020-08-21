@@ -70,6 +70,6 @@ public class ClientAudioSender : MonoBehaviour
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
         realtime.room.SendRPCMessage(serialized, false);
-        Debug.Log("RCP Audio Message send via Network from Client!");
+        //Debug.Log("RCP Audio Message send via Network from Client!");
     }
 }

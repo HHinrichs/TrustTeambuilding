@@ -83,7 +83,7 @@ public class NetworkAudioReceiver : MonoBehaviour
             }
             if (!aud.isPlaying)
             {
-                Debug.Log("BeginToPlayAudio!");
+               // Debug.Log("BeginToPlayAudio!");
                 aud.Play();
             }
 

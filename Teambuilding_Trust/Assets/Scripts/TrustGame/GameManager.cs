@@ -147,7 +147,7 @@ public class GameManager : MonoBehaviour
 
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
-        Debug.Log("ClientRCPMessageReceived");
+        //Debug.Log("ClientRCPMessageReceived");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
         RawQueue.Enqueue(() =>
         {
