@@ -18,11 +18,19 @@ public class ClientAudioSender : MonoBehaviour
 
     void Start()
     {
+
+        foreach (var device in Microphone.devices)
+        {
+            Debug.Log("Name: " + device);
+        }
+
         int minFreq;
         int maxFreq;
-        Microphone.GetDeviceCaps(null, out minFreq, out maxFreq);
-        if (minFreq == 0) recFreq = 16000;
-        else recFreq = minFreq;
+        Microphone.GetDeviceCaps("Headset Microphone(Plantronics C520 - M)", out minFreq, out maxFreq);
+        if (minFreq == 0) 
+            recFreq = 16000;
+        else 
+            recFreq = minFreq;
         mic = Microphone.Start(null, true, 60, recFreq);
 
         StartCoroutine(sendingCoroutine());
@@ -53,19 +61,20 @@ public class ClientAudioSender : MonoBehaviour
             byte[] serialized = AudioSerializer.Serialize(samples, recFreq, mic.channels);
 
             
-            SendAudioViaNetwork(serializeData(serialized));
+            SendAudioViaNetwork(serializeData(2000,serialized));
             lastRecSample = pos;
         }
     }
 
 
-    private byte[] serializeData(byte[] rawData)
+    private byte[] serializeData(int messageID, byte[] rawData)
     {
         byte[] data = null;
         using (MemoryStream stream = new MemoryStream())
         {
             using (BinaryWriter writer = new BinaryWriter(stream))
             {
+                writer.Write(messageID);
                 writer.Write(rawData.Length);
                 writer.Write(rawData);
 
@@ -74,22 +83,23 @@ public class ClientAudioSender : MonoBehaviour
                 stream.Read(data, 0, data.Length);
             }
         }
-
         return data;
     }
 
     public void SendAudioViaNetwork(byte[] serialized)
     {
-        int messageID = 2000;
-        byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
-        List<byte> message = new List<byte>(messageIDByteArray);
-        message.AddRange(serialized);
-        realtime.room.SendRPCMessage(message.ToArray(), false);
-        Debug.Log("RCP Audio Message send via Network from Client!");
+        //int messageID = 2000;
+        //byte[] messageIDByteArray = BitConverter.GetBytes(messageID);
+        //List<byte> message = new List<byte>(messageIDByteArray);
+        //message.AddRange(serialized);
+        //realtime.room.SendRPCMessage(message.ToArray(), false);
+        //Debug.Log("RCP Audio Message send via Network from Client!");
 
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
         //realtime.room.SendRPCMessage(serialized, false);
         //Debug.Log("RCP Audio Message send via Network from Client!");
+
+        realtime.room.SendRPCMessage(serialized, false);
     }
 }
