@@ -52,9 +52,28 @@ public class ClientAudioSender : MonoBehaviour
             mic.GetData(samples, lastRecSample);
             byte[] serialized = AudioSerializer.Serialize(samples, recFreq, mic.channels);
 
-            SendAudioViaNetwork(serialized);
+            
+            SendAudioViaNetwork(serializeData(serialized));
             lastRecSample = pos;
         }
+    }
+
+
+    private byte[] serializeData(byte[] rawData)
+    {
+        byte[] data = null;
+        using (MemoryStream stream = new MemoryStream())
+        {
+            using (BinaryWriter writer = new BinaryWriter(stream))
+            {
+                writer.Write(rawData);
+
+                stream.Position = 0;
+                data = new byte[stream.Length];
+                stream.Read(data, 0, data.Length);
+            }
+        }
+        return data;
     }
 
     public void SendAudioViaNetwork(byte[] serialized)
