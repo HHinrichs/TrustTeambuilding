@@ -10,6 +10,7 @@ using Normal.Realtime;
 using JetBrains.Annotations;
 using System.Linq;
 using UnityEngine.UIElements;
+using UnityEngine.VFX;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,6 +29,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int CountDownToStartInSeconds;
     [SerializeField] int timeToWaitTillCountdown;
     [SerializeField] TextMeshPro GameStartTimerTMP;
+    [SerializeField] VisualEffect Sphere;
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
 
@@ -41,8 +43,6 @@ public class GameManager : MonoBehaviour
     public BoolSync ReadyForNextRoundBoolSync;
     public IntSync RoundNumberToStartWithIntSync;
     [Space(25)]
-    public ReadyNotReadyIndicatorSphere ReadyNotReadyIndicatorSphere;
-
     [Header("GameInformations")]
     public bool gameIsRunning = false;
     [SerializeField] int round = 0;
@@ -438,12 +438,15 @@ public class GameManager : MonoBehaviour
     IEnumerator StartCountdownToStart()
     {
 
-        // Changes the ReadyNotReadyMaterial
-
-        ReadyNotReadyIndicatorSphere.SetReadyMaterial();
-        yield return new WaitForSeconds(timeToWaitTillCountdown);
-        ReadyNotReadyIndicatorSphere.SetNotReadyMaterial();
-
+        // Changes the SphereMaterial
+        Sphere.SetInt("SpawnRate", 0);
+        Sphere.SetFloat("ForceRadius", 5f);
+        Sphere.SetInt("ColorSwitch0G1R", 0);
+        yield return new WaitForSeconds(1.5f);
+        Sphere.SetFloat("ForceRadius", 0.3f);
+        yield return new WaitForSeconds(1.5f);
+        Sphere.SetInt("SpawnRate", 100000);
+        Sphere.SetInt("ColorSwitch0G1R", 1);
         // Starts an Countdown each Round
 
         countdownToStartIsActive = true;

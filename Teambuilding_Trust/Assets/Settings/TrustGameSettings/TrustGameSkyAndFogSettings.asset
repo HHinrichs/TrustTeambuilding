@@ -50,7 +50,7 @@ MonoBehaviour:
     m_Value: 1000
     min: 0
   baseHeight:
-    m_OverrideState: 1
+    m_OverrideState: 0
     m_Value: 1
   maximumHeight:
     m_OverrideState: 0
@@ -63,7 +63,7 @@ MonoBehaviour:
     showEyeDropper: 1
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 200
+    m_Value: 250
     min: 1
   enableVolumetricFog:
     m_OverrideState: 1
@@ -160,11 +160,11 @@ MonoBehaviour:
     min: 0
   upperHemisphereLuxValue:
     m_OverrideState: 0
-    m_Value: 1.4074398
+    m_Value: 1.4074401
     min: 0
   upperHemisphereLuxColor:
     m_OverrideState: 0
-    m_Value: {x: 0.3450634, y: 0.4055317, z: 0.5}
+    m_Value: {x: 0.3450634, y: 0.4055318, z: 0.5}
   desiredLuxValue:
     m_OverrideState: 0
     m_Value: 20000
