@@ -30,6 +30,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] int timeToWaitTillCountdown;
     [SerializeField] TextMeshPro GameStartTimerTMP;
     [SerializeField] VisualEffect Sphere;
+    [SerializeField] NetworkAudioReceiver NetworkAudioReceiver;
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
 
@@ -88,6 +89,7 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         StartCoroutine(LateStart(5));
+        StartCoroutine(HandleAudioStream());
     }
 
     IEnumerator LateStart(float waitTime)
@@ -99,10 +101,11 @@ public class GameManager : MonoBehaviour
         if (isServer)
         {
             SetPlayerNetworkPositions();
+            realtime.room.rpcMessageReceived += ClientRCPMessageReceived;
         }
         if (isClient)
-            realtime.room.rpcMessageReceived += KickPlayer;
-        //yield return new WaitForSeconds(waitTime);
+            realtime.room.rpcMessageReceived += ServerRCPMessageReceived;
+
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
@@ -122,19 +125,56 @@ public class GameManager : MonoBehaviour
             StartNextRound();
     }
 
-    public void KickPlayer(Room room, byte[] data, bool reliable)
+    public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
-        Debug.Log("Kick Message Received");
+        Debug.Log("RCPMessageReceived");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
         int messageInt = BitConverter.ToInt32(data,0);
-        if (messageInt != 1000)
-            return;
-        int clientValueID = BitConverter.ToInt32(data, sizeof(int));
+        switch (messageInt)
+        {
+            //Kick Message Received
+            case 1000:
+                int clientValueID = BitConverter.ToInt32(data, sizeof(int));
+                Realtime realtime = FindObjectOfType<Realtime>();
+                if (realtime.clientID == clientValueID)
+                    realtime.Disconnect();
+                break;
+            default:
+                break;
+        }
+    }
 
-        Realtime realtime = FindObjectOfType<Realtime>();
-        if (realtime.clientID == clientValueID)
-            realtime.Disconnect();     
+    public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
+    {
+        Debug.Log("ClientRCPMessageReceived");
+        //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
+
+        int messageInt = BitConverter.ToInt32(data, 0);
+        switch (messageInt)
+        {
+            //ClientAudioStreamReceived Message Received
+            case 2000:
+                Debug.Log("ClientRCPMessageReceived");
+                RawQueue.Enqueue(() =>
+                {
+                    byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int) );
+                    if (NetworkAudioReceiver != null)
+                    {
+                        NetworkAudioReceiver.setAudioData(rawMicrophoneData);
+                    }
+                    else
+                    {
+                        GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                        NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+                        NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                    }
+                });
+                break;
+
+            default:
+                break;
+        }
     }
 
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
@@ -147,6 +187,20 @@ public class GameManager : MonoBehaviour
             index++;
         }
         return subPart;
+    }
+
+    public Queue<Action> RawQueue = new Queue<Action>();
+    IEnumerator HandleAudioStream()
+    {
+        while (true)
+        {
+            while (RawQueue.Count > 0)
+            {
+                RawQueue.Dequeue().Invoke();
+            }
+
+            yield return null;
+        }
     }
 
     // Networking
