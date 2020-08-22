@@ -8,7 +8,7 @@ using Normal.Realtime;
 public class NetworkAudioSender : MonoBehaviour
 {
     public int sendRate = 15;
-    public bool sending = true;
+    public bool mute = false;
     private AudioClip mic;
     private int lastRecSample = 0;
     private int pos;
@@ -37,10 +37,15 @@ public class NetworkAudioSender : MonoBehaviour
         else 
             recFreq = minFreq;
         mic = Microphone.Start(null, true, 10, recFreq);
-        while (sending)
+        while (true)
         {
-            SendMicSamples();
-            yield return new WaitForSecondsRealtime(1f / sendRate);
+            while (mute == false)
+            {
+                SendMicSamples();
+                yield return new WaitForSecondsRealtime(1f / sendRate);
+            }
+            yield return null;
+
         }
     }
 
