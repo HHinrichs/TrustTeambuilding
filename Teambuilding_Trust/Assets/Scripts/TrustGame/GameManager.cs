@@ -144,7 +144,7 @@ public class GameManager : MonoBehaviour
 
     public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
-        Debug.Log("RCPMessageReceived");
+        Debug.Log("RCPMessageReceived from Server");
         ////byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
         //int messageInt = BitConverter.ToInt32(data,0);
@@ -215,7 +215,7 @@ public class GameManager : MonoBehaviour
     }
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
-        Debug.Log("ClientRCPMessageReceived");
+        Debug.Log("RCP Message received from Client");
         //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
         //int messageInt = BitConverter.ToInt32(data, 0);
