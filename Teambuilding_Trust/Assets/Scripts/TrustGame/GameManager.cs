@@ -566,7 +566,7 @@ public class GameManager : MonoBehaviour
 
         // Changes the SphereMaterial
         Sphere.SetInt("SpawnRate", 0);
-        Sphere.SetFloat("ForceRadius", 5f);
+        Sphere.SetFloat("ForceRadius", 25f);
         Sphere.SetInt("ColorSwitch0G1R", 0);
         yield return new WaitForSeconds(1.5f);
         Sphere.SetFloat("ForceRadius", 0.3f);
