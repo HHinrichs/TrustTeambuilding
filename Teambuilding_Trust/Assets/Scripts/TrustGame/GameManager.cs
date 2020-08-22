@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
     private Queue<Action> RawQueue = new Queue<Action>();
-
+    private Queue<Action> ReliableQueue = new Queue<Action>();
     [Header("Networking Links")]
     public BoolSync Podest1BoolSync;
     public BoolSync Podest2BoolSync;
@@ -114,11 +114,7 @@ public class GameManager : MonoBehaviour
 
     private void Update()
     {
-        //Handle RawQueue Inputs
-        while (RawQueue.Count > 0)
-        {
-            RawQueue.Dequeue().Invoke();
-        }
+        HandleNetworkMessages();
 
         if (!gameIsRunning)
             return;
@@ -132,23 +128,89 @@ public class GameManager : MonoBehaviour
             StartNextRound();
     }
 
+    public void HandleNetworkMessages()
+    {
+        while (RawQueue.Count > 0)
+        {
+            RawQueue.Dequeue().Invoke();
+        }
+
+        //Handle ReliableRCP Messages
+        while (ReliableQueue.Count > 0)
+        {
+            ReliableQueue.Dequeue().Invoke();
+        }
+    }
+
     public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
         Debug.Log("RCPMessageReceived");
-        //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
+        ////byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
 
-        int messageInt = BitConverter.ToInt32(data,0);
-        switch (messageInt)
+        //int messageInt = BitConverter.ToInt32(data,0);
+        //switch (messageInt)
+        //{
+        //    //Kick Message Received
+        //    case 1000:
+        //        int clientValueID = BitConverter.ToInt32(data, sizeof(int));
+        //        Realtime realtime = FindObjectOfType<Realtime>();
+        //        if (realtime.clientID == clientValueID)
+        //            realtime.Disconnect();
+        //        break;
+        //    default:
+        //        break;
+        //}
+        int messageID;
+        int byteCount;
+        byte[] messageBytes;
+        using (MemoryStream stream = new MemoryStream(data))
         {
-            //Kick Message Received
-            case 1000:
-                int clientValueID = BitConverter.ToInt32(data, sizeof(int));
-                Realtime realtime = FindObjectOfType<Realtime>();
-                if (realtime.clientID == clientValueID)
-                    realtime.Disconnect();
-                break;
-            default:
-                break;
+            using (BinaryReader reader = new BinaryReader(stream))
+            {
+                messageID = reader.ReadInt32();
+                byteCount = reader.ReadInt32();
+                messageBytes = reader.ReadBytes(byteCount);
+
+                switch (messageID)
+                {
+                    // Kick Player Message
+                    case 1000:
+                        Debug.Log("Kick Message from Server received!");
+                        ReliableQueue.Enqueue(() =>
+                        {
+                            Realtime realtime = FindObjectOfType<Realtime>();
+                            if (realtime.clientID == BitConverter.ToInt32(messageBytes, 0))
+                            {
+                                realtime.Disconnect();
+                                Debug.Log("Player " + realtime.clientID + " kicked from the Server");
+                            }
+                        });
+                        break;
+
+                    //ClientAudioStreamReceived Message Received
+                    case 3000:
+                        Debug.Log("Audio Stream from Server Received!");
+                        RawQueue.Enqueue(() =>
+                        {
+                            //byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
+
+                            if (NetworkAudioReceiver != null)
+                            {
+                                NetworkAudioReceiver.setAudioData(messageBytes);
+                            }
+                            else
+                            {
+                                GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                                NewlyCreatedNetworkAudioReceiver.name = "NewlyCreatedNetworkAudioReceiver";
+                                NetworkAudioReceiver = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                            }
+                        });
+                        break;
+
+                    default:
+                        break;
+                }
+            }
         }
     }
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
@@ -196,8 +258,8 @@ public class GameManager : MonoBehaviour
                 }
             }
         }
-
     }
+
 
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
     {

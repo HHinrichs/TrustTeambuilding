@@ -5,7 +5,7 @@ using System.IO;
 using System;
 using Normal.Realtime;
 
-public class ClientAudioSender : MonoBehaviour
+public class NetworkAudioSender : MonoBehaviour
 {
     public int sendRate = 15;
     public bool sending = true;
@@ -14,11 +14,10 @@ public class ClientAudioSender : MonoBehaviour
     private int pos;
     private int recFreq;
     private Realtime realtime;
-
+    int messageID;
 
     void Start()
     {
-
         StartCoroutine(sendingCoroutine());
     }
 
@@ -27,6 +26,8 @@ public class ClientAudioSender : MonoBehaviour
         realtime = FindObjectOfType<Realtime>();
         yield return new WaitUntil(() => realtime.connected == true);
         yield return new WaitUntil(() => realtime.room.connected == true);
+
+        messageID = GameManager.Instance.isServer ? 3000 : 1000;
 
         int minFreq;
         int maxFreq;
@@ -55,7 +56,7 @@ public class ClientAudioSender : MonoBehaviour
             byte[] serialized = AudioSerializer.Serialize(samples, recFreq, mic.channels);
 
             
-            SendAudioViaNetwork(serializeData(2000,serialized));
+            SendAudioViaNetwork(serializeData(messageID,serialized));
             lastRecSample = pos;
         }
     }
