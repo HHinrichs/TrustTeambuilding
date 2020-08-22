@@ -27,7 +27,7 @@ public class NetworkAudioSender : MonoBehaviour
         yield return new WaitUntil(() => realtime.connected == true);
         yield return new WaitUntil(() => realtime.room.connected == true);
 
-        messageID = GameManager.Instance.isServer ? 3000 : 1000;
+        messageID = GameManager.Instance.isServer ? 3000 : 2000;
 
         int minFreq;
         int maxFreq;
@@ -93,8 +93,10 @@ public class NetworkAudioSender : MonoBehaviour
         //List<byte> message = new List<byte>(messageIDByteArray);
         //message.AddRange(serialized);
         //realtime.room.SendRPCMessage(message.ToArray(), false);
-        Debug.Log("RCP Audio Message send via Network from Client!");
-
+        if(messageID == 2000)
+            Debug.Log("RCP Audio Message send via Network from Client!");
+        if(messageID == 3000)
+            Debug.Log("RCP Audio Message send via Network from Client!");
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
         //realtime.room.SendRPCMessage(serialized, false);
