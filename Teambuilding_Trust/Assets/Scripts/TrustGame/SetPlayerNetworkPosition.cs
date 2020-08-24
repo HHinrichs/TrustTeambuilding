@@ -45,6 +45,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
                 {
                     playerRig.gameObject.transform.position = PlayerNetworkPositions[i].position;
                     playerRig.gameObject.transform.rotation = PlayerNetworkPositions[i].rotation;
+                    // Maybe Race Condition here!
                     playerNetworkPositionInt = IntToBoolean.SetBitTo0(playerNetworkPositionInt, i);
                     // Sets the corresponding FadeToBlackBoxCollider
                     playerRig.GetComponentInChildren<FadeToBlack>().SetCorrespondingBoxCollider = FadeToBlackBoxes[i];
