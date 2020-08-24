@@ -36,12 +36,15 @@ public class FadeToBlack : MonoBehaviour
 
             if (correspondingBoxCollider.bounds.Contains(mainCameraGameObject.transform.position))
             {
+                Debug.Log("FadeIn");
                 FadeIn();
             }
             else
             {
+                Debug.Log("FadeOut");
                 FadeOut();
             }
+            yield return null;
         }
     }
     public void FadeOut()
@@ -53,7 +56,7 @@ public class FadeToBlack : MonoBehaviour
         {
             if (fadeImage.color.a == 1)
                 return;
-            fadeOutCoroutine = StartCoroutine(FadeInCoroutine());
+            fadeOutCoroutine = StartCoroutine(FadeOutCoroutine());
         }
     }
 
@@ -66,7 +69,7 @@ public class FadeToBlack : MonoBehaviour
         {
             if (fadeImage.color.a == 0) 
                 return;
-            fadeInCoroutine = StartCoroutine(FadeOutCoroutine());
+            fadeInCoroutine = StartCoroutine(FadeInCoroutine());
         }
     }
 
@@ -76,14 +79,14 @@ public class FadeToBlack : MonoBehaviour
         float fadeAmount;
         while(fadeImage.color.a > 0)
         {
-            fadeAmount = fadeImage.color.a - (fadeSpeed + Time.deltaTime);
+            fadeAmount = fadeImage.color.a - (fadeSpeed * Time.deltaTime);
             objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
             fadeImage.color = objectColor;
             yield return null;
         }
         objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, 0f);
 
-        fadeOutCoroutine = null;
+        fadeInCoroutine = null;
     }
 
     IEnumerator FadeOutCoroutine()
@@ -92,12 +95,12 @@ public class FadeToBlack : MonoBehaviour
         float fadeAmount;
         while (fadeImage.color.a < 1)
         {
-            fadeAmount = fadeImage.color.a + (fadeSpeed + Time.deltaTime);
+            fadeAmount = fadeImage.color.a + (fadeSpeed * Time.deltaTime);
             objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, fadeAmount);
             fadeImage.color = objectColor;
             yield return null;
         }
         objectColor = new Color(objectColor.r, objectColor.g, objectColor.b, 1f);
-        fadeInCoroutine = null;
+        fadeOutCoroutine = null;
     }
 }
