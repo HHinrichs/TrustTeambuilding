@@ -167,14 +167,15 @@ public class GameManager : MonoBehaviour
         {
             using (BinaryReader reader = new BinaryReader(stream))
             {
-                messageID = reader.ReadInt32();
-                byteCount = reader.ReadInt32();
-                messageBytes = reader.ReadBytes(byteCount);
 
+                messageID = reader.ReadInt32();
                 switch (messageID)
                 {
                     // Kick Player Message
                     case 1000:
+                        byteCount = reader.ReadInt32();
+                        messageBytes = reader.ReadBytes(byteCount);
+
                         Debug.Log("Kick Message from Server received!");
                         ReliableQueue.Enqueue(() =>
                         {
@@ -189,6 +190,10 @@ public class GameManager : MonoBehaviour
 
                     //ClientAudioStreamReceived Message Received
                     case 3000:
+                        messageID = reader.ReadInt32();
+                        byteCount = reader.ReadInt32();
+                        messageBytes = reader.ReadBytes(byteCount);
+
                         Debug.Log("Audio Stream from Server Received!");
                         RawQueue.Enqueue(() =>
                         {
@@ -206,7 +211,16 @@ public class GameManager : MonoBehaviour
                             }
                         });
                         break;
-
+                    case 9999:
+                        Debug.Log("PlayerLeaderValueMessagReceived");
+                        ReliableQueue.Enqueue(() =>
+                        {
+                            leader = reader.ReadInt32();
+                            player1 = reader.ReadInt32();
+                            player2 = reader.ReadInt32();
+                            leaderAndPlayerValuesInitializedByServer = true;
+                        });
+                        break;
                     default:
                         break;
                 }
@@ -316,14 +330,96 @@ public class GameManager : MonoBehaviour
         StartCoroutine(SequencingStartNextRound());
     }
 
+    bool leaderAndPlayerValuesInitializedByServer = false;
+    List<int> lastLeaders = new List<int>();
+    int lastLeaderValue = -99;
+    int leader = -99;
+    int player1 = -99;
+    int player2 = -99;
+
+    public void ServerCalcRandomLeaderAndPlayerValues()
+    {
+        CalculateLeaderAndPlayerValues();
+        SendPlayerValues(serializePlayerLeaderData(9999,leader,player1,player2));
+        leaderAndPlayerValuesInitializedByServer = true;
+        Debug.Log("leader and Player Values set and send!");
+    }
+    private byte[] serializePlayerLeaderData(int messageID,int leader, int player1, int player2)
+    {
+        byte[] data = null;
+        using (MemoryStream stream = new MemoryStream())
+        {
+            using (BinaryWriter writer = new BinaryWriter(stream))
+            {
+                writer.Write(messageID);
+                writer.Write(BitConverter.GetBytes(leader));
+                writer.Write(BitConverter.GetBytes(player1));
+                writer.Write(BitConverter.GetBytes(player2));
+
+                stream.Position = 0;
+                data = new byte[stream.Length];
+                stream.Read(data, 0, data.Length);
+            }
+        }
+        return data;
+    }
+
+    public void SendPlayerValues(byte[] serialized)
+    {
+        FindObjectOfType<Realtime>().room.SendRPCMessage(serialized, false);
+    }
+
+    public void CalculateLeaderAndPlayerValues()
+    {
+        if (lastLeaders.Count == NumbersOfParticipatingPlayers)
+            lastLeaders.Clear();
+
+        int randomNumber = UnityEngine.Random.Range(0, NumbersOfParticipatingPlayers);
+        while (lastLeaders.Contains(randomNumber) || randomNumber == lastLeaderValue)
+        {
+            randomNumber = UnityEngine.Random.Range(0, NumbersOfParticipatingPlayers);
+        }
+        lastLeaderValue = randomNumber;
+        lastLeaders.Add(randomNumber);
+
+        int[] tmpPlayerValues = new int[2];
+        int count = 0;
+        for(int i = 0; i < NumbersOfParticipatingPlayers; ++i)
+        {
+            if (i == randomNumber)
+            {
+                continue;
+            }
+            tmpPlayerValues[count] = i;
+            count = count + 1;
+        }
+
+        leader = randomNumber;
+        player1 = tmpPlayerValues[0];
+        player2 = tmpPlayerValues[1];
+
+        Debug.Log("RDN :" + randomNumber);
+        // Sets the Button States of the Leader this Round and also fills the ButtonsToPress List
+    }
     IEnumerator SequencingStart()
     {
+        if (isServer)
+            ServerCalcRandomLeaderAndPlayerValues();
+        yield return new WaitUntil(() => leaderAndPlayerValuesInitializedByServer == true);
+        if(isClient)
+        Debug.Log("Leader and Player Values Succsessfully Initialized by Server!");
+
         yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
         gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
         InitializePlayers();
     }
     IEnumerator SequencingStartNextRound()
     {
+        if (isServer)
+            ServerCalcRandomLeaderAndPlayerValues();
+        yield return new WaitUntil(() => leaderAndPlayerValuesInitializedByServer == true);
+        if (isClient)
+            Debug.Log("Leader and Player Values Succsessfully Initialized by Server!");
         yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
         InitializePlayers();
     }
@@ -336,6 +432,7 @@ public class GameManager : MonoBehaviour
 
         readyForNextRound = false;
         nextRoundIsBootingUp = false;
+        leaderAndPlayerValuesInitializedByServer = false;
         Debug.Log("....Bootup next round finished");
     }
 
@@ -478,29 +575,29 @@ public class GameManager : MonoBehaviour
         
         for(int i = 0; i < Podests.Count; ++i)
         {
-            if (RoundRules.GetWhoIsLeader(round) == i)
+            if (leader == i)
             {
-                Debug.Log("IsLeader "+RoundRules.GetWhoIsLeader(round));
+                //Debug.Log("IsLeader "+RoundRules.GetWhoIsLeader(round));
                 Podests[i].PlayerNumber = 0;
                 CurrentLeader = Podests[i];
             }
-            else if(RoundRules.GetWhoIsPlayer1(round) == i)
+            else if(player1 == i)
             {
-                Debug.Log("IsPlayer1 "+RoundRules.GetWhoIsPlayer1(round));
+                //Debug.Log("IsPlayer1 "+RoundRules.GetWhoIsPlayer1(round));
                 Podests[i].PlayerNumber = 1;
                 Player1 = Podests[i];
                 //SubscribeToPlayerEvent(Player1);
             }
-            else if (RoundRules.GetWhoIsPlayer2(round) == i)
+            else if (player2 == i)
             {
-                Debug.Log("IsPlayer2 "+RoundRules.GetWhoIsPlayer2(round));
+                //Debug.Log("IsPlayer2 "+RoundRules.GetWhoIsPlayer2(round));
                 Podests[i].PlayerNumber = 2;
                 Player2 = Podests[i];
                 //SubscribeToPlayerEvent(Player2);
             }
         }
 
-        Debug.Log("IsLeader " + RoundRules.GetWhoIsLeader(round)+"/// IsPlayer1 "+ RoundRules.GetWhoIsPlayer1(round)+ "/// IsPlayer1 " + RoundRules.GetWhoIsPlayer2(round));
+        Debug.Log("IsLeader " + leader + "/// IsPlayer1 "+ player1 + "/// IsPlayer2 " + player2);
 
     }
 
