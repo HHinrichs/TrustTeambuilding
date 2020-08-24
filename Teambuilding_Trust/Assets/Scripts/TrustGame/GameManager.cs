@@ -190,7 +190,6 @@ public class GameManager : MonoBehaviour
 
                     //ClientAudioStreamReceived Message Received
                     case 3000:
-                        messageID = reader.ReadInt32();
                         byteCount = reader.ReadInt32();
                         messageBytes = reader.ReadBytes(byteCount);
 
@@ -213,11 +212,14 @@ public class GameManager : MonoBehaviour
                         break;
                     case 9999:
                         Debug.Log("PlayerLeaderValueMessagReceived");
+                        int leaderEnqueue = reader.ReadInt32();
+                        int player1Enqueue = reader.ReadInt32();
+                        int player2Enqueue = reader.ReadInt32();
                         ReliableQueue.Enqueue(() =>
                         {
-                            leader = reader.ReadInt32();
-                            player1 = reader.ReadInt32();
-                            player2 = reader.ReadInt32();
+                            leader = leaderEnqueue;
+                            player1 = player1Enqueue;
+                            player2 = player2Enqueue;
                             leaderAndPlayerValuesInitializedByServer = true;
                         });
                         break;
