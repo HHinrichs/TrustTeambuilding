@@ -11,6 +11,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
     private int playerNetworkPositionInt;
     private XRRig playerRig;
     private Realtime realtime;
+    public List<BoxCollider> FadeToBlackBoxes;
 
     private void Start()
     {
@@ -45,6 +46,8 @@ public class SetPlayerNetworkPosition : MonoBehaviour
                     playerRig.gameObject.transform.position = PlayerNetworkPositions[i].position;
                     playerRig.gameObject.transform.rotation = PlayerNetworkPositions[i].rotation;
                     playerNetworkPositionInt = IntToBoolean.SetBitTo0(playerNetworkPositionInt, i);
+                    // Sets the corresponding FadeToBlackBoxCollider
+                    playerRig.GetComponentInChildren<FadeToBlack>().SetCorrespondingBoxCollider = FadeToBlackBoxes[i];
                     // SETS THE UPDATED PLAYER POSITION VALUE FOR THIS PLAYER
                     gameManager.NetworkPlayerPositions.SetIntValue(IntToBoolean.SetBitTo0(playerNetworkPositionInt, i));
                     Debug.Log("PLAYER POSITION SET TO " + PlayerNetworkPositions[i]);
@@ -78,6 +81,8 @@ public class SetPlayerNetworkPosition : MonoBehaviour
                     playerRig.gameObject.transform.position = PlayerNetworkPositions[i].position;
                     playerRig.gameObject.transform.rotation = PlayerNetworkPositions[i].rotation;
                     playerNetworkPositionInt = IntToBoolean.SetBitTo0(playerNetworkPositionInt, i);
+                    // Sets the corresponding FadeToBlackBoxCollider
+                    playerRig.GetComponentInChildren<FadeToBlack>().SetCorrespondingBoxCollider = FadeToBlackBoxes[i];
                     // SETS THE UPDATED PLAYER POSITION VALUE FOR THIS PLAYER
                     gameManager.NetworkPlayerPositions.SetIntValue(IntToBoolean.SetBitTo0(playerNetworkPositionInt, i));
                     Debug.Log("PLAYER POSITION SET TO " + PlayerNetworkPositions[i]);
