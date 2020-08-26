@@ -39,7 +39,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
             {
                 gameManager.NetworkPlayerPositions.realtimeView.RequestOwnership();
                 // Waits one second to get Updated if the ownership is still mine!
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
             }
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
@@ -83,7 +83,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
             {
                 gameManager.NetworkPlayerPositions.realtimeView.RequestOwnership();
                 // Waits one second to get Updated if the ownership is still mine!
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
             }
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
