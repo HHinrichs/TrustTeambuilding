@@ -294,12 +294,25 @@ public class GameManager : MonoBehaviour
     // Networking
     public void SetPlayerNetworkPositions()
     {
+        StartCoroutine(SetPlayerNetworkPositionCoroutine());
+    }
+
+    IEnumerator SetPlayerNetworkPositionCoroutine()
+    {
+        while (!NetworkPlayerPositions.realtimeView.isOwnedLocally)
+        {
+            NetworkPlayerPositions.realtimeView.RequestOwnership();
+            // Waits one second to get Updated if the ownership is still mine!
+            yield return new WaitForSeconds(1f);
+        }
         int playerNetworkPositionInt = 0;
-        for(int i = 0; i < NumbersOfParticipatingPlayers; ++i)
+        for (int i = 0; i < NumbersOfParticipatingPlayers; ++i)
         {
             playerNetworkPositionInt = IntToBoolean.SetBitTo1(playerNetworkPositionInt, i);
         }
         NetworkPlayerPositions.SetIntValue(playerNetworkPositionInt);
+
+        NetworkPlayerPositions.realtimeView.ClearOwnership();
     }
 
     public void StartGame()
@@ -440,8 +453,6 @@ public class GameManager : MonoBehaviour
 
     public void ResetAll()
     {
-        if(isServer)
-            SetPlayerNetworkPositions();
         // Resets the Whole Game
         if(gameTimeCounterCoroutine != null)
         {
