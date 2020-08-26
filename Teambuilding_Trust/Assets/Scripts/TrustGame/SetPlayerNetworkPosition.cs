@@ -33,15 +33,13 @@ public class SetPlayerNetworkPosition : MonoBehaviour
 
     IEnumerator ChooseMyPositionAtConnectionCoroutine()
     {
-        //yield return new WaitUntil(() => realtime.connected);
-
         if (gameManager.isClient)
         {
             while (!gameManager.NetworkPlayerPositions.realtimeView.isOwnedLocally)
             {
                 gameManager.NetworkPlayerPositions.realtimeView.RequestOwnership();
-                Debug.Log(gameManager.NetworkPlayerPositions.realtimeView.isOwnedLocally);
-                yield return new WaitForSeconds(0.05f);
+                // Waits one second to get Updated if the ownership is still mine!
+                yield return new WaitForSeconds(1f);
             }
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
@@ -81,10 +79,11 @@ public class SetPlayerNetworkPosition : MonoBehaviour
 
         if (gameManager.isClient)
         {
-            while(!gameManager.NetworkPlayerPositions.realtimeView.isOwnedLocally)
+            while (!gameManager.NetworkPlayerPositions.realtimeView.isOwnedLocally)
             {
                 gameManager.NetworkPlayerPositions.realtimeView.RequestOwnership();
-                yield return new WaitForSeconds(0.05f);
+                // Waits one second to get Updated if the ownership is still mine!
+                yield return new WaitForSeconds(1f);
             }
             playerNetworkPositionInt = gameManager.NetworkPlayerPositions.GetIntValue;
 
