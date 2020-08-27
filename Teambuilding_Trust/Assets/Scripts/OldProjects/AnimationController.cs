@@ -1,10 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-
-
-
 public class AnimationController : MonoBehaviour
 {
 
@@ -17,12 +13,13 @@ public class AnimationController : MonoBehaviour
     public float yOffset = 2f;
 
     [Range(0.0f, 1f)]
-    public float zOffset = 0.3f;
+    public float zOffset = 0.0f;
 
     [Range(1f, 10f)]
     private float rotationSpeed = 3f;
     [Range(1f, 10f)]
     private float movementSpeed = 8f;
+    public bool ForceHandPosition = true;
     // Use this for initialization
 
     void Start()
@@ -36,12 +33,15 @@ public class AnimationController : MonoBehaviour
         anim.SetLookAtWeight(1f);
         anim.SetLookAtPosition(headEffector.position + headEffector.forward);
 
-
         anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
+        anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
         anim.SetIKPosition(AvatarIKGoal.RightHand, rightHand.position);
+        anim.SetIKRotation(AvatarIKGoal.RightHand, rightHand.rotation);
 
         anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
+        anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
         anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHand.position);
+        anim.SetIKRotation(AvatarIKGoal.LeftHand, leftHand.rotation);
 
 
     }
@@ -69,6 +69,15 @@ public class AnimationController : MonoBehaviour
             {
                 rotationAnimation = false;
             }
+        }
+        if (ForceHandPosition)
+        {
+            Transform leftHandTransform = anim.GetBoneTransform(HumanBodyBones.LeftHand);
+            leftHandTransform.position = leftHand.position;
+
+            Transform rightHandTransform = anim.GetBoneTransform(HumanBodyBones.RightHand);
+            rightHandTransform.position = rightHand.position;
+
         }
 
 
