@@ -10,6 +10,8 @@ public class PlayerConnectionAudio : MonoBehaviour
 
     [SerializeField] AudioClip ConnectionClip;
     [SerializeField] AudioClip DisconnectionClip;
+    [SerializeField] AudioClip Connected;
+    [SerializeField] AudioClip Disconnected;
 
     private void Awake()
     {
@@ -31,7 +33,10 @@ public class PlayerConnectionAudio : MonoBehaviour
     public void PlayConnectionSound(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
         if (isLocalAvatar)
+        {
+            audioSource.PlayOneShot(Connected);
             return;
+        }
 
         audioSource.PlayOneShot(ConnectionClip);
     }
@@ -39,7 +44,10 @@ public class PlayerConnectionAudio : MonoBehaviour
     public void PlayDisconnectionSound(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
         if (isLocalAvatar)
+        {
+            audioSource.PlayOneShot(Connected);
             return;
+        }
 
         audioSource.PlayOneShot(DisconnectionClip);
     }
