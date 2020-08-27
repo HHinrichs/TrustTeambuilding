@@ -36,12 +36,14 @@ public class AnimationController : MonoBehaviour
         anim.SetIKPositionWeight(AvatarIKGoal.RightHand, 1f);
         anim.SetIKRotationWeight(AvatarIKGoal.RightHand, 1f);
         anim.SetIKPosition(AvatarIKGoal.RightHand, rightHand.position);
-        anim.SetIKRotation(AvatarIKGoal.RightHand, rightHand.rotation);
+        Quaternion rotationRightHand = Quaternion.Euler(new Vector3(rightHand.rotation.x, rightHand.rotation.y, rightHand.rotation.z - 90f));
+        anim.SetIKRotation(AvatarIKGoal.RightHand, rotationRightHand);
 
         anim.SetIKPositionWeight(AvatarIKGoal.LeftHand, 1f);
         anim.SetIKRotationWeight(AvatarIKGoal.LeftHand, 1f);
         anim.SetIKPosition(AvatarIKGoal.LeftHand, leftHand.position);
-        anim.SetIKRotation(AvatarIKGoal.LeftHand, leftHand.rotation);
+        Quaternion rotationLeftHand = Quaternion.Euler(new Vector3(leftHand.rotation.x, leftHand.rotation.y, leftHand.rotation.z + 90f));
+        anim.SetIKRotation(AvatarIKGoal.RightHand, rotationLeftHand);
 
 
     }

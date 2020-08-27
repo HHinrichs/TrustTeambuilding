@@ -1166,7 +1166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &7725138505852465877
 Transform:
   m_ObjectHideFlags: 0
@@ -1629,6 +1629,7 @@ MonoBehaviour:
   leftHand: {fileID: 5548608805840183943}
   yOffset: 1.6
   zOffset: 0.098
+  ForceHandPosition: 1
 --- !u!1 &7719879474092094705
 GameObject:
   m_ObjectHideFlags: 0
@@ -2048,11 +2049,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _realtime: {fileID: 0}
-  _sceneViewUUID: 
+  _sceneViewUUID: 3eba02a4e389b44cb56ebafe6bf9369c
   _sceneViewOwnedByCreatingClient: 1
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 1
+  _isRootPrefabView: 0
   _components:
   - componentID: 1
     component: {fileID: 6551273043854210159}
