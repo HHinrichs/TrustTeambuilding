@@ -141,7 +141,7 @@ namespace XRCollection.Interactions
 
         private bool InPosition()
         {
-            float inRange = Mathf.Clamp(transform.localPosition.y, yMin, yMin + 0.01f);
+            float inRange = Mathf.Clamp(transform.localPosition.y, yMin, yMin + 0.04f);
             return transform.localPosition.y == inRange;
         }
     }
