@@ -1353,8 +1353,8 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 4294967295
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 36972b07c48e4e24a8d910bb0e933b30, type: 2}
-  - {fileID: 2100000, guid: 36972b07c48e4e24a8d910bb0e933b30, type: 2}
+  - {fileID: 2100000, guid: cd4d92dbe54dcbf41bd37179e8b8b19f, type: 3}
+  - {fileID: 2100000, guid: 1a498923013332d4689d120f69a8be33, type: 3}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2049,11 +2049,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _realtime: {fileID: 0}
-  _sceneViewUUID: 3eba02a4e389b44cb56ebafe6bf9369c
+  _sceneViewUUID: 
   _sceneViewOwnedByCreatingClient: 1
   _sceneViewPreventOwnershipTakeover: 0
   _sceneViewDestroyWhenOwnerOrLastClientLeaves: 1
-  _isRootPrefabView: 0
+  _isRootPrefabView: 1
   _components:
   - componentID: 1
     component: {fileID: 6551273043854210159}
@@ -2298,6 +2298,10 @@ PrefabInstance:
     - target: {fileID: 400000, guid: 1a498923013332d4689d120f69a8be33, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400002, guid: 1a498923013332d4689d120f69a8be33, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.45
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1a498923013332d4689d120f69a8be33, type: 3}
