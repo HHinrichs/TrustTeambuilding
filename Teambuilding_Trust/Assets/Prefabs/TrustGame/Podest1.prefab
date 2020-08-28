@@ -27,8 +27,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4817384268640613055}
   m_LocalRotation: {x: -0.70710677, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.509, y: 1.111, z: -0.505}
-  m_LocalScale: {x: 0.04795374, y: 0.04795374, z: 0.04795374}
+  m_LocalPosition: {x: 0.504, y: 1.111, z: -0.505}
+  m_LocalScale: {x: 0.07944496, y: 0.04795374, z: 0.057851393}
   m_Children: []
   m_Father: {fileID: 7614011799473437321}
   m_RootOrder: 1
@@ -424,7 +424,7 @@ MonoBehaviour:
   PodestNumber: 1
   P1SymbolMaterial: {fileID: 2100000, guid: a11c664fa8afe9a4cbb41cef9ec503a7, type: 2}
   P2SymbolMaterial: {fileID: 2100000, guid: adb21ecb9524cb647943e5a4a546473e, type: 2}
-  DefaultSymbolMaterial: {fileID: 2100000, guid: b579ed393cfdad04c9de3d365035f393,
+  DefaultSymbolMaterial: {fileID: 2100000, guid: 0f77d6c56392c74458c0ec4cfc3bf4a9,
     type: 2}
   PlayerColorIndicatorPlane: {fileID: 6929487886173178386}
   PlayerColorMaterialRed: {fileID: 2100000, guid: 67a70d82de90ed24eb6a9c567460b757,
