@@ -76,9 +76,11 @@ public class AnimationController : MonoBehaviour
         {
             Transform leftHandTransform = anim.GetBoneTransform(HumanBodyBones.LeftHand);
             leftHandTransform.position = leftHand.position;
+            leftHandTransform.rotation = Quaternion.Euler(new Vector3(leftHand.localRotation.x, leftHand.localRotation.y, leftHand.localRotation.z + 90f));
 
             Transform rightHandTransform = anim.GetBoneTransform(HumanBodyBones.RightHand);
             rightHandTransform.position = rightHand.position;
+            rightHandTransform.rotation = Quaternion.Euler(new Vector3(rightHand.localRotation.x, rightHand.localRotation.y, rightHand.localRotation.z - 90f));
 
         }
 
