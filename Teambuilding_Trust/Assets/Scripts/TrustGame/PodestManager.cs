@@ -14,6 +14,7 @@ public class PodestManager : MonoBehaviour
     [SerializeField] Material PlayerColorMaterialRed;
     [SerializeField] Material PlayerColorMaterialGreen;
     [SerializeField] Material PlayerColorMaterialBlack;
+    [SerializeField] MeshRenderer SphereIndicatorMesh;
 
     private List<ButtonController> ButtonControllers = new List<ButtonController>();
     private RoundRules roundRules;
@@ -112,15 +113,19 @@ public class PodestManager : MonoBehaviour
         {
             case 0:
                 PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
+                SphereIndicatorMesh.material = PlayerColorMaterialBlack;
                 break;
             case 1:
                 PlayerColorIndicatorPlane.material = PlayerColorMaterialRed;
+                SphereIndicatorMesh.material = PlayerColorMaterialRed;
                 break;
             case 2:
                 PlayerColorIndicatorPlane.material = PlayerColorMaterialGreen;
+                SphereIndicatorMesh.material = PlayerColorMaterialGreen;
                 break;
             default:
                 PlayerColorIndicatorPlane.enabled = false;
+                SphereIndicatorMesh.enabled = false;
                 break;
         }
     }
