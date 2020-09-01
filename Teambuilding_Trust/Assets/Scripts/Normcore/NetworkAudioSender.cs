@@ -121,7 +121,12 @@ public class NetworkAudioSender : MonoBehaviour
     IEnumerator DestroyAudioReceiverGameObjectCoroutine(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
     {
         yield return new WaitForSeconds(0.5f);
-        string NetworkAudioObjectName = "AudioObjectFor_" + avatar.realtimeView.ownerID;
-        Destroy(GameObject.Find(NetworkAudioObjectName));
+        //string NetworkAudioObjectName = "AudioObjectFor_" + avatar.realtimeView.ownerID;
+        int avatarClientID = avatar.realtimeView.ownerID;
+        if (GameManager.Instance.GetNetworkAudioDictionary.ContainsKey(avatarClientID))
+        {
+            Destroy(GameManager.Instance.GetNetworkAudioDictionary[avatarClientID]);
+            GameManager.Instance.GetNetworkAudioDictionary.Remove(avatarClientID);
+        }
     }
 }

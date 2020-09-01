@@ -64,6 +64,8 @@ public class GameManager : MonoBehaviour
     private Coroutine startCountdownToStartCoroutine = null;
 
     public UnityEvent unityEvent;
+    Dictionary<int, NetworkAudioReceiver> NetworkAudioDictionary = new Dictionary<int, NetworkAudioReceiver>();
+    public Dictionary<int, NetworkAudioReceiver> GetNetworkAudioDictionary { get { return NetworkAudioDictionary; } }
 
     //Getter Setter
     public PodestManager GetPlayer1 { get { return Player1; } }
@@ -204,25 +206,23 @@ public class GameManager : MonoBehaviour
                         
                         RawQueue.Enqueue(() =>
                         {
-                            //byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
-
-                            GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
-                            if (NetworkAudioObject != null)
+                            if (NetworkAudioDictionary.ContainsKey(clientID))
                             {
-                                NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
-                                if(NetworkAudioReceiver.aud == null)
+                                NetworkAudioReceiver NAR = NetworkAudioDictionary[clientID];
+                                if (NAR.aud == null)
                                 {
-                                    Debug.Log("Returning due to no AudioSource fetched!");
+                                    Debug.Log("Returing due to no AudioSource created yet!");
                                     return;
                                 }
-                                NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
+                                NAR.setAudioData(messageBytes);
                             }
                             else
                             {
                                 Debug.Log("No AudioSource found! Creating new one!");
                                 GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
                                 NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
-                                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                                NetworkAudioReceiver nar = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                                NetworkAudioDictionary.Add(clientID, nar);
                             }
                         });
                         break;
@@ -274,26 +274,45 @@ public class GameManager : MonoBehaviour
 
                         RawQueue.Enqueue(() =>
                         {
-                            //byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
-
-                            GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
-                            if (NetworkAudioObject != null)
+                            if (NetworkAudioDictionary.ContainsKey(clientID))
                             {
-                                NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
-                                if(NetworkAudioReceiver.aud == null)
+                                NetworkAudioReceiver NAR = NetworkAudioDictionary[clientID];
+                                if(NAR.aud == null)
                                 {
-                                    Debug.Log("Returning due to no AudioSource fetched!");
+                                    Debug.Log("Returing due to no AudioSource created yet!");
                                     return;
                                 }
-                                NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
+                                NAR.setAudioData(messageBytes);
                             }
                             else
                             {
                                 Debug.Log("No AudioSource found! Creating new one!");
                                 GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
                                 NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
-                                NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                                NetworkAudioReceiver nar = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                                NetworkAudioDictionary.Add(clientID, nar);
                             }
+
+                            ////byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
+
+                            //GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
+                            //if (NetworkAudioObject != null)
+                            //{
+                            //    NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
+                            //    if(NetworkAudioReceiver.aud == null)
+                            //    {
+                            //        Debug.Log("Returning due to no AudioSource fetched!");
+                            //        return;
+                            //    }
+                            //    NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
+                            //}
+                            //else
+                            //{
+                            //    Debug.Log("No AudioSource found! Creating new one!");
+                            //    GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
+                            //    NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
+                            //    NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
+                            //}
                         });
                         break;
 
@@ -692,12 +711,12 @@ public class GameManager : MonoBehaviour
             while (gameIsRunning && !countdownToStartIsActive)
             {
                 timeSinceGameStart += Time.unscaledDeltaTime;
+
+                if (isServer)
+                    if (timeSinceGameStart >= OverallGameTime)
+                        RestartBoolSync.ToggleBoolValue();
+
                 yield return null;
-            }
-            if (isServer)
-            {
-                if (timeSinceGameStart >= OverallGameTime)
-                    RestartBoolSync.ToggleBoolValue();
             }
             yield return null;
         }
