@@ -141,7 +141,6 @@ public class GameManager : MonoBehaviour
             ReliableQueue.Dequeue().Invoke();
         }
     }
-    List<NetworkAudioReceiver> NetworkAudioObjects = new List<NetworkAudioReceiver>();
     public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
         Debug.Log("RCPMessageReceived from Server");
@@ -254,8 +253,8 @@ public class GameManager : MonoBehaviour
                 {
                     //ClientAudioStreamReceived Message Received
                     case 2000:
-                        byteCount = reader.ReadInt32();
                         clientID = reader.ReadInt32();
+                        byteCount = reader.ReadInt32();
                         messageBytes = reader.ReadBytes(byteCount);
                         Debug.Log("Audio Stream from Client Received!");
                         string NetworkAudioObjectName = "AudioObjectFor_" + clientID;
