@@ -160,8 +160,8 @@ public class GameManager : MonoBehaviour
         //        break;
         //}
         int messageID;
-        int byteCount;
         int clientID;
+        int byteCount;
         byte[] messageBytes;
         using (MemoryStream stream = new MemoryStream(data))
         {
@@ -256,11 +256,14 @@ public class GameManager : MonoBehaviour
                         clientID = reader.ReadInt32();
                         byteCount = reader.ReadInt32();
                         messageBytes = reader.ReadBytes(byteCount);
+
                         Debug.Log("Audio Stream from Client Received!");
                         string NetworkAudioObjectName = "AudioObjectFor_" + clientID;
+
                         RawQueue.Enqueue(() =>
                         {
                             //byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
+
                             GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
                             if (NetworkAudioObject != null)
                             {
