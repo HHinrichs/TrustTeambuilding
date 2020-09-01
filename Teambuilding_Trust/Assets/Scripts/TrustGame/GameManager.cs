@@ -204,10 +204,17 @@ public class GameManager : MonoBehaviour
                             GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
                             if (NetworkAudioObject != null)
                             {
+                                NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
+                                if(NetworkAudioReceiver.aud == null)
+                                {
+                                    Debug.Log("Returning due to no AudioSource fetched!");
+                                    return;
+                                }
                                 NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
                             }
                             else
                             {
+                                Debug.Log("No AudioSource found! Creating new one!");
                                 GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
                                 NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
                                 NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
@@ -267,10 +274,17 @@ public class GameManager : MonoBehaviour
                             GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
                             if (NetworkAudioObject != null)
                             {
+                                NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
+                                if(NetworkAudioReceiver.aud == null)
+                                {
+                                    Debug.Log("Returning due to no AudioSource fetched!");
+                                    return;
+                                }
                                 NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
                             }
                             else
                             {
+                                Debug.Log("No AudioSource found! Creating new one!");
                                 GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
                                 NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
                                 NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();

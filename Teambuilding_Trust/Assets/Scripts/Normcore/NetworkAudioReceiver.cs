@@ -22,7 +22,7 @@ using UnityEngine;
 public class NetworkAudioReceiver : MonoBehaviour
 {
 
-    AudioSource aud;
+    public AudioSource aud;
     private int clipFreq = -1;
     private int clipChan = -1;
     private int clipLen = 441000;
