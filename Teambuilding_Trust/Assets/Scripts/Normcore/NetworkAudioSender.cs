@@ -17,6 +17,8 @@ public class NetworkAudioSender : MonoBehaviour
     int messageID;
     private int clientID;
 
+    private RealtimeAvatarManager realtimeAvatarManager;
+
     void Start()
     {
         StartCoroutine(sendingCoroutine());
@@ -27,6 +29,10 @@ public class NetworkAudioSender : MonoBehaviour
         realtime = FindObjectOfType<Realtime>();
         yield return new WaitUntil(() => realtime.connected == true);
         yield return new WaitUntil(() => realtime.room.connected == true);
+
+        realtimeAvatarManager = FindObjectOfType<RealtimeAvatarManager>();
+        realtimeAvatarManager.avatarDestroyed += DestroyAudioReceiverGameObject;
+
 
         messageID = GameManager.Instance.isServer ? 3000 : 2000;
         clientID = realtime.clientID;
@@ -105,5 +111,17 @@ public class NetworkAudioSender : MonoBehaviour
         //Debug.Log("RCP Audio Message send via Network from Client!");
 
         realtime.room.SendRPCMessage(serialized, false);
+    }
+
+    private void DestroyAudioReceiverGameObject(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
+    {
+        StartCoroutine(DestroyAudioReceiverGameObjectCoroutine(avatarManager, avatar, isLocalAvatar));
+    }
+
+    IEnumerator DestroyAudioReceiverGameObjectCoroutine(RealtimeAvatarManager avatarManager, RealtimeAvatar avatar, bool isLocalAvatar)
+    {
+        yield return new WaitForSeconds(0.5f);
+        string NetworkAudioObjectName = "AudioObjectFor_" + avatar.realtimeView.ownerID;
+        Destroy(GameObject.Find(NetworkAudioObjectName));
     }
 }
