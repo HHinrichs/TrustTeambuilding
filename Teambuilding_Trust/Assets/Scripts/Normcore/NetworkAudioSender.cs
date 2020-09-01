@@ -125,7 +125,7 @@ public class NetworkAudioSender : MonoBehaviour
         int avatarClientID = avatar.realtimeView.ownerID;
         if (GameManager.Instance.GetNetworkAudioDictionary.ContainsKey(avatarClientID))
         {
-            Destroy(GameManager.Instance.GetNetworkAudioDictionary[avatarClientID]);
+            Destroy(GameManager.Instance.GetNetworkAudioDictionary[avatarClientID].gameObject);
             GameManager.Instance.GetNetworkAudioDictionary.Remove(avatarClientID);
         }
     }
