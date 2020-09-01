@@ -15,6 +15,7 @@ public class NetworkAudioSender : MonoBehaviour
     private int recFreq;
     private Realtime realtime;
     int messageID;
+    private int clientID;
 
     void Start()
     {
@@ -28,7 +29,7 @@ public class NetworkAudioSender : MonoBehaviour
         yield return new WaitUntil(() => realtime.room.connected == true);
 
         messageID = GameManager.Instance.isServer ? 3000 : 2000;
-
+        clientID = realtime.clientID;
         int minFreq;
         int maxFreq;
         Microphone.GetDeviceCaps(null, out minFreq, out maxFreq);
@@ -61,13 +62,13 @@ public class NetworkAudioSender : MonoBehaviour
             byte[] serialized = AudioSerializer.Serialize(samples, recFreq, mic.channels);
 
             
-            SendAudioViaNetwork(serializeData(messageID,serialized));
+            SendAudioViaNetwork(serializeData(messageID,serialized, clientID));
             lastRecSample = pos;
         }
     }
 
 
-    private byte[] serializeData(int messageID, byte[] rawData)
+    private byte[] serializeData(int messageID, byte[] rawData, int clientID)
     {
         byte[] data = null;
         using (MemoryStream stream = new MemoryStream())
@@ -75,6 +76,7 @@ public class NetworkAudioSender : MonoBehaviour
             using (BinaryWriter writer = new BinaryWriter(stream))
             {
                 writer.Write(messageID);
+                writer.Write(clientID);
                 writer.Write(rawData.Length);
                 writer.Write(rawData);
 
