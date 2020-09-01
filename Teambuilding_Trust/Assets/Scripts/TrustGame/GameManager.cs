@@ -31,6 +31,8 @@ public class GameManager : MonoBehaviour
     [SerializeField] int timeToWaitTillCountdown;
     [SerializeField] TextMeshPro GameStartTimerTMP;
     [SerializeField] VisualEffect Sphere;
+    [Header("ServerSettings")]
+    public float OverallGameTime;
     //[SerializeField] NetworkAudioReceiver NetworkAudioReceiver;
     public RoundRules RoundRules;
     public int RoundNumberToStartWith;
@@ -101,6 +103,9 @@ public class GameManager : MonoBehaviour
 
         if (isServer)
         {
+            if (OverallGameTime == 0)
+                OverallGameTime = 600f;
+
             SetPlayerNetworkPositions();
             realtime.room.rpcMessageReceived += ClientRCPMessageReceived;
         }
@@ -689,7 +694,11 @@ public class GameManager : MonoBehaviour
                 timeSinceGameStart += Time.unscaledDeltaTime;
                 yield return null;
             }
-
+            if (isServer)
+            {
+                if (timeSinceGameStart >= OverallGameTime)
+                    RestartBoolSync.ToggleBoolValue();
+            }
             yield return null;
         }
     }
