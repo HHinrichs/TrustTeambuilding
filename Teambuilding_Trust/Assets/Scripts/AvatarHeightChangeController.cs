@@ -7,6 +7,11 @@ public class AvatarHeightChangeController : MonoBehaviour
     private Vector3 newTransformPosition;
     private float zValueChanged = 0f;
     private float xValueChanged = 0f;
+    private float yValue;
+    public float SetZValue { set { zValueChanged = value; } }
+    public float SetXValue { set { xValueChanged = value; } }
+
+    public float GetYValue { get { return yValue; } }
     private void Update()
     {
         if (Input.GetKeyDown("q"))
@@ -15,6 +20,7 @@ public class AvatarHeightChangeController : MonoBehaviour
             {
                 newTransformPosition =  new Vector3(transform.position.x, transform.position.y - 0.05f, transform.position.z);
                 transform.position = newTransformPosition;
+                yValue = transform.position.y;
             }
         }
         if (Input.GetKeyDown("e"))
@@ -23,6 +29,7 @@ public class AvatarHeightChangeController : MonoBehaviour
             {
                 newTransformPosition = new Vector3(transform.position.x, transform.position.y + 0.05f, transform.position.z);
                 transform.position = newTransformPosition;
+                yValue = transform.position.y;
             }
         }
 

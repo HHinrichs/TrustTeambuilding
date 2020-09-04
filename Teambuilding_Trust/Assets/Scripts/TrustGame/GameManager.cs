@@ -151,21 +151,6 @@ public class GameManager : MonoBehaviour
     public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
         Debug.Log("RCPMessageReceived from Server");
-        ////byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
-
-        //int messageInt = BitConverter.ToInt32(data,0);
-        //switch (messageInt)
-        //{
-        //    //Kick Message Received
-        //    case 1000:
-        //        int clientValueID = BitConverter.ToInt32(data, sizeof(int));
-        //        Realtime realtime = FindObjectOfType<Realtime>();
-        //        if (realtime.clientID == clientValueID)
-        //            realtime.Disconnect();
-        //        break;
-        //    default:
-        //        break;
-        //}
         int messageID;
         int clientID;
         int byteCount;
@@ -202,7 +187,7 @@ public class GameManager : MonoBehaviour
                         messageBytes = reader.ReadBytes(byteCount);
 
                         Debug.Log("Audio Stream from Server Received!");
-                        string NetworkAudioObjectName = "AudioObjectFor_" + clientID;
+                        string NetworkAudioObjectName = "SpectatorAudioSource" + clientID;
                         
                         RawQueue.Enqueue(() =>
                         {
@@ -248,9 +233,6 @@ public class GameManager : MonoBehaviour
     public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
     {
         Debug.Log("RCP Message received from Client");
-        //byte[] messageID = getSubPartOfByteArray(data,0,sizeof(int)) ;
-
-        //int messageInt = BitConverter.ToInt32(data, 0);
         int messageID;
         int clientID;
         int byteCount;
@@ -270,7 +252,7 @@ public class GameManager : MonoBehaviour
                         messageBytes = reader.ReadBytes(byteCount);
 
                         Debug.Log("Audio Stream from Client Received!");
-                        string NetworkAudioObjectName = "AudioObjectFor_" + clientID;
+                        string NetworkAudioObjectName = "ClientAudioSourceFor_" + clientID;
 
                         RawQueue.Enqueue(() =>
                         {
@@ -292,27 +274,6 @@ public class GameManager : MonoBehaviour
                                 NetworkAudioReceiver nar = NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
                                 NetworkAudioDictionary.Add(clientID, nar);
                             }
-
-                            ////byte[] rawMicrophoneData = getSubPartOfByteArray(data, sizeof(int), data.Length - sizeof(int));
-
-                            //GameObject NetworkAudioObject = GameObject.Find(NetworkAudioObjectName);
-                            //if (NetworkAudioObject != null)
-                            //{
-                            //    NetworkAudioReceiver NetworkAudioReceiver = NetworkAudioObject.GetComponent<NetworkAudioReceiver>();
-                            //    if(NetworkAudioReceiver.aud == null)
-                            //    {
-                            //        Debug.Log("Returning due to no AudioSource fetched!");
-                            //        return;
-                            //    }
-                            //    NetworkAudioObject.GetComponent<NetworkAudioReceiver>().setAudioData(messageBytes);
-                            //}
-                            //else
-                            //{
-                            //    Debug.Log("No AudioSource found! Creating new one!");
-                            //    GameObject NewlyCreatedNetworkAudioReceiver = new GameObject();
-                            //    NewlyCreatedNetworkAudioReceiver.name = NetworkAudioObjectName;
-                            //    NewlyCreatedNetworkAudioReceiver.AddComponent<NetworkAudioReceiver>();
-                            //}
                         });
                         break;
 

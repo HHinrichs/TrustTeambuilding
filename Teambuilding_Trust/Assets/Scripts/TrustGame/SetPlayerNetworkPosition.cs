@@ -10,6 +10,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
     private GameManager gameManager;
     private int playerNetworkPositionInt;
     private XRRig playerRig;
+    private AvatarHeightChangeController avatarHeightChangeController;
     private Realtime realtime;
     public List<BoxCollider> FadeToBlackBoxes;
 
@@ -17,6 +18,7 @@ public class SetPlayerNetworkPosition : MonoBehaviour
     {
         playerRig = FindObjectOfType<XRRig>();
         realtime = FindObjectOfType<Realtime>();
+        avatarHeightChangeController = FindObjectOfType<AvatarHeightChangeController>();
         gameManager = GameManager.Instance;
         realtime.didConnectToRoom += ChooseMyPositionAtConnection;
         gameManager.resetAllCalled += ChooseMyPositionAtReset;
@@ -47,8 +49,18 @@ public class SetPlayerNetworkPosition : MonoBehaviour
             {
                 if (IntToBoolean.IsBitSetTo1(playerNetworkPositionInt, i))
                 {
-                    playerRig.gameObject.transform.position = PlayerNetworkPositions[i].position;
+                    if(avatarHeightChangeController != null)
+                        playerRig.gameObject.transform.position = new Vector3(PlayerNetworkPositions[i].position.x, avatarHeightChangeController.GetYValue, PlayerNetworkPositions[i].position.z);
+                    else
+                        playerRig.gameObject.transform.position = PlayerNetworkPositions[i].position;
                     playerRig.gameObject.transform.rotation = PlayerNetworkPositions[i].rotation;
+
+                    // Resets the avatarHeightChangeController;
+                    if(avatarHeightChangeController != null)
+                    {
+                        avatarHeightChangeController.SetXValue = 0f;
+                        avatarHeightChangeController.SetZValue = 0f;
+                    }
                     // Maybe Race Condition here!
                     playerNetworkPositionInt = IntToBoolean.SetBitTo0(playerNetworkPositionInt, i);
                     // Sets the corresponding FadeToBlackBoxCollider
