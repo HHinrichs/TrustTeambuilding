@@ -1,3 +1,48 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: Masterarbeit_Hannes_Hinrichs.aux
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: Masterarbeit_Hannes_Hinrichs.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
+You've used 30 entries,
+            2921 wiz_defined-function locations,
+            814 strings with 10379 characters,
+and the built_in function-call counts, 152212 in all, are:
+= -- 25073
+> -- 2091
+< -- 1
++ -- 12173
+- -- 637
+* -- 13322
+:= -- 30231
+add.period$ -- 60
+call.type$ -- 30
+change.case$ -- 417
+chr.to.int$ -- 30
+cite$ -- 30
+duplicate$ -- 431
+empty$ -- 889
+format.name$ -- 758
+if$ -- 27368
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 33
+newline$ -- 123
+num.names$ -- 317
+pop$ -- 104
+preamble$ -- 1
+purify$ -- 450
+quote$ -- 0
+skip$ -- 398
+stack$ -- 0
+substring$ -- 35569
+swap$ -- 53
+text.length$ -- 421
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 114
+warning$ -- 0
+while$ -- 653
+width$ -- 0
+write$ -- 430
