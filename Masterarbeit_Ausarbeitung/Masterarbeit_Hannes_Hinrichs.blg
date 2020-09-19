@@ -5,44 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-You've used 30 entries,
+You've used 44 entries,
             2921 wiz_defined-function locations,
-            814 strings with 10379 characters,
-and the built_in function-call counts, 152212 in all, are:
-= -- 25073
-> -- 2091
+            889 strings with 12755 characters,
+and the built_in function-call counts, 206573 in all, are:
+= -- 33917
+> -- 2812
 < -- 1
-+ -- 12173
-- -- 637
-* -- 13322
-:= -- 30231
-add.period$ -- 60
-call.type$ -- 30
-change.case$ -- 417
-chr.to.int$ -- 30
-cite$ -- 30
-duplicate$ -- 431
-empty$ -- 889
-format.name$ -- 758
-if$ -- 27368
++ -- 16373
+- -- 854
+* -- 17971
+:= -- 41268
+add.period$ -- 88
+call.type$ -- 44
+change.case$ -- 611
+chr.to.int$ -- 44
+cite$ -- 44
+duplicate$ -- 625
+empty$ -- 1295
+format.name$ -- 1024
+if$ -- 37093
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 33
-newline$ -- 123
-num.names$ -- 317
-pop$ -- 104
+missing$ -- 49
+newline$ -- 180
+num.names$ -- 462
+pop$ -- 151
 preamble$ -- 1
-purify$ -- 450
+purify$ -- 660
 quote$ -- 0
-skip$ -- 398
+skip$ -- 576
 stack$ -- 0
-substring$ -- 35569
-swap$ -- 53
-text.length$ -- 421
+substring$ -- 47989
+swap$ -- 73
+text.length$ -- 617
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 114
+type$ -- 166
 warning$ -- 0
-while$ -- 653
+while$ -- 959
 width$ -- 0
-write$ -- 430
+write$ -- 621
