@@ -12,6 +12,8 @@ using System.Linq;
 using UnityEngine.UIElements;
 using UnityEngine.VFX;
 using System.IO;
+using CSVInteractions;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -28,7 +30,6 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
     [SerializeField] int CountDownToStartInSeconds;
-    [SerializeField] int timeToWaitTillCountdown;
     [SerializeField] TextMeshPro GameStartTimerTMP;
     [SerializeField] VisualEffect Sphere;
     [Header("ServerSettings")]
@@ -52,16 +53,21 @@ public class GameManager : MonoBehaviour
     public bool gameIsRunning = false;
     [SerializeField] int round = 0;
     [SerializeField] float timeSinceGameStart = 0f;
+    [SerializeField] float timeSinceRoundStarts = 0f;
     [SerializeField] bool readyForNextRound = false;
     [SerializeField] bool countdownToStartIsActive = false;
     [SerializeField] bool nextRoundIsBootingUp = false;
 
+    [SerializeField] string theTime;
+    [SerializeField] string theDate;
     private PodestManager Player1;
     private PodestManager Player2;
     private PodestManager CurrentLeader;
     // Coroutines
     private Coroutine gameTimeCounterCoroutine = null;
     private Coroutine startCountdownToStartCoroutine = null;
+    private Coroutine roundTimeCounterCoroutine = null;
+    bool isQuitting = false;
 
     public UnityEvent unityEvent;
     Dictionary<int, NetworkAudioReceiver> NetworkAudioDictionary = new Dictionary<int, NetworkAudioReceiver>();
@@ -92,11 +98,26 @@ public class GameManager : MonoBehaviour
             FindObjectOfType<RealtimeAvatarManager>().localAvatarPrefab = null;
     }
 
-    private void Start()
+    public void QuitGame()
     {
-        StartCoroutine(LateStart(5));
+        StartBoolSync.boolValueChanged -= StartGame;
+        RestartBoolSync.boolValueChanged -= ResetAll;
+        ChangeAvatarAppearanceButton.Instance.avatarAppearanceStateIntSync.intValueChanged -= ChangeAvatarAppearanceButton.Instance.SetAvatarAppearances;
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
     }
 
+    private void Start()
+    {
+        Application.wantsToQuit += ( ()=> isQuitting = true);
+        Application.quitting += (() => isQuitting = true);
+        EditorApplication.wantsToQuit += (() => isQuitting = true);
+        EditorApplication.quitting += (() => isQuitting = true);
+        StartCoroutine(LateStart(5));
+    }
     IEnumerator LateStart(float waitTime)
     {
         Realtime realtime = FindObjectOfType<Realtime>();
@@ -117,6 +138,22 @@ public class GameManager : MonoBehaviour
         Debug.Log("LateStartSuc!");
         StartBoolSync.boolValueChanged += StartGame;
         RestartBoolSync.boolValueChanged += ResetAll;
+
+    }
+
+    void OnApplicationQuit()
+    {
+        Debug.Log("Unsubscribing at OnApplicationQuit!()");
+        StartBoolSync.boolValueChanged -= StartGame;
+        RestartBoolSync.boolValueChanged -= ResetAll;
+    }
+
+    private void OnDestroy()
+    {
+        Debug.Log("Unsubscribing at OnDestroy!()");
+
+        StartBoolSync.boolValueChanged -= StartGame;
+        RestartBoolSync.boolValueChanged -= ResetAll;
     }
 
     private void Update()
@@ -283,8 +320,6 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-
-
     private byte[] getSubPartOfByteArray(byte[] data, int start, int length)
     {
         byte[] subPart = new byte[length];
@@ -296,8 +331,6 @@ public class GameManager : MonoBehaviour
         }
         return subPart;
     }
-
-
 
     // Networking
     public void SetPlayerNetworkPositions()
@@ -325,6 +358,9 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
+        if (isQuitting)
+            return;
+
         Debug.Log("StartCalled!");
 
         round = RoundNumberToStartWithIntSync.GetIntValue;
@@ -337,9 +373,17 @@ public class GameManager : MonoBehaviour
             return;
         }
 
-        ResetAll();
+        ResetAllFirstTime();
         gameIsRunning = true;
         SetGameRulesForPlayers();
+
+        // WRITE START DATA TO CSV
+        if (isServer)
+        {
+            theDate = System.DateTime.Now.ToString("MM/dd/yyyy");
+            theTime = System.DateTime.Now.ToString("hh:mm:ss"); 
+            CSVWriter.addStartRoundRecord();
+        }
 
         StartCoroutine(SequencingStart());
 
@@ -433,7 +477,14 @@ public class GameManager : MonoBehaviour
         Debug.Log("Leader and Player Values Succsessfully Initialized by Server!");
 
         yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+
+        //if (isServer)
+        //{
+        //    CSVWriter.addRecord(theDate, theTime, timeSinceGameStart, timeSinceRoundStarts, GetRound, RoundEfficiency(), ChangeAvatarAppearanceButton.Instance.AvatarIsIK, Podests[0].PlayerNumber, Podests[0].DeselectCount, Podests[1].PlayerNumber, Podests[1].DeselectCount, Podests[2].PlayerNumber, Podests[2].DeselectCount);
+        //}
+        nextRoundIsBootingUp = true;
         gameTimeCounterCoroutine = StartCoroutine(GameTimeCounter());
+        roundTimeCounterCoroutine = StartCoroutine(RoundTimerCounter());
         InitializePlayers();
     }
     IEnumerator SequencingStartNextRound()
@@ -443,7 +494,9 @@ public class GameManager : MonoBehaviour
         yield return new WaitUntil(() => leaderAndPlayerValuesInitializedByServer == true);
         if (isClient)
             Debug.Log("Leader and Player Values Succsessfully Initialized by Server!");
+        
         yield return startCountdownToStartCoroutine = StartCoroutine(StartCountdownToStart());
+
         InitializePlayers();
     }
     public void InitializePlayers()
@@ -453,16 +506,58 @@ public class GameManager : MonoBehaviour
         // Inject the RoundRules each Round to get the element Count
         SetButtonsToPress(RoundRules.GetElementCountThisRound(round));
 
+        if (isServer)
+        {
+            CSVWriter.addRecord(theDate, theTime, timeSinceGameStart, timeSinceRoundStarts, GetRound, RoundEfficiency(), ChangeAvatarAppearanceButton.Instance.AvatarIsIK, Podests[0].PlayerNumber, Podests[0].DeselectCount, Podests[1].PlayerNumber, Podests[1].DeselectCount, Podests[2].PlayerNumber, Podests[2].DeselectCount);
+        }
+        timeSinceRoundStarts = 0f;
         readyForNextRound = false;
         nextRoundIsBootingUp = false;
         leaderAndPlayerValuesInitializedByServer = false;
         Debug.Log("....Bootup next round finished");
     }
 
+    public void ResetAllFirstTime()
+    {
+        if (isQuitting)
+            return;
+
+        // Resets the Whole Game
+        if (gameTimeCounterCoroutine != null)
+        {
+            StopCoroutine(gameTimeCounterCoroutine);
+            gameTimeCounterCoroutine = null;
+        }
+        if (startCountdownToStartCoroutine != null)
+        {
+            StopCoroutine(startCountdownToStartCoroutine);
+        }
+        if (roundTimeCounterCoroutine != null)
+        {
+            StopCoroutine(roundTimeCounterCoroutine);
+        }
+        ClearForNextRound();
+        gameIsRunning = false;
+        round = RoundNumberToStartWithIntSync.GetIntValue;
+        timeSinceGameStart = 0f;
+        timeSinceRoundStarts = 0f;
+        resetAllCalled.Invoke();
+        // Kick() ??
+    }
+
     public void ResetAll()
     {
+        if (isQuitting)
+            return;
+
+        if (isServer)
+        {
+            CSVWriter.addRecord(theDate, theTime, timeSinceGameStart, timeSinceRoundStarts, GetRound, RoundEfficiency(), ChangeAvatarAppearanceButton.Instance.AvatarIsIK, Podests[0].PlayerNumber, Podests[0].DeselectCount, Podests[1].PlayerNumber, Podests[1].DeselectCount, Podests[2].PlayerNumber, Podests[2].DeselectCount);
+            CSVWriter.addEndRoundRecord();
+            Debug.Log("ResetAllLogsWritten");
+        }
         // Resets the Whole Game
-        if(gameTimeCounterCoroutine != null)
+        if (gameTimeCounterCoroutine != null)
         {
             StopCoroutine(gameTimeCounterCoroutine);
             gameTimeCounterCoroutine = null;
@@ -471,10 +566,15 @@ public class GameManager : MonoBehaviour
         {
             StopCoroutine(startCountdownToStartCoroutine);
         }
+        if(roundTimeCounterCoroutine != null)
+        {
+            StopCoroutine(roundTimeCounterCoroutine);
+        }
         ClearForNextRound();
         gameIsRunning = false;
         round = RoundNumberToStartWithIntSync.GetIntValue;
         timeSinceGameStart = 0f;
+        timeSinceRoundStarts = 0f;
         resetAllCalled.Invoke();
         // Kick() ??
     }
@@ -669,7 +769,7 @@ public class GameManager : MonoBehaviour
     {
         while (true)
         {
-            while (gameIsRunning && !countdownToStartIsActive)
+            while (gameIsRunning && !countdownToStartIsActive && !nextRoundIsBootingUp)
             {
                 timeSinceGameStart += Time.unscaledDeltaTime;
 
@@ -683,9 +783,22 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    IEnumerator RoundTimerCounter()
+    {
+        while (true)
+        {
+            while (gameIsRunning && !countdownToStartIsActive && !nextRoundIsBootingUp)
+            {
+                timeSinceRoundStarts += Time.unscaledDeltaTime;
+                yield return null;
+            }
+            yield return null;
+        }
+    }
+
     IEnumerator StartCountdownToStart()
     {
-
+        countdownToStartIsActive = true;
         // Changes the SphereMaterial
         Sphere.SetInt("SpawnRate", 0);
         Sphere.SetFloat("ForceRadius", 25f);
@@ -697,7 +810,6 @@ public class GameManager : MonoBehaviour
         Sphere.SetInt("ColorSwitch0G1R", 1);
         // Starts an Countdown each Round
 
-        countdownToStartIsActive = true;
         GameStartTimerTMP.enabled = true;
         float startTime = Time.time;
         int countdown = 0;
@@ -719,7 +831,28 @@ public class GameManager : MonoBehaviour
         float effiziency = 0f;
         if (GetRound == 0)
             return effiziency;
-        effiziency = (GetRound / GetTimeSinceGameStart)*100f;
+        effiziency = 1 - (timeSinceRoundStarts / OverallGameTime);
+        return effiziency;
+    }
+    // ROUND
+    // OVERALLGAMETIME
+    // ROUNDTIME
+    // GESAMTZEIT
+    public float SmallRoundEfficiency()
+    {
+        float effiziency = 0f;
+        if (GetRound == 0)
+            return effiziency;
+        effiziency = 1 - (GetRound / OverallGameTime);
+        return effiziency;
+    }
+
+    public float blabla()
+    {
+        float effiziency = 0f;
+        if (GetRound == 0)
+            return effiziency;
+        effiziency = 1 - (GetRound / timeSinceGameStart);
         return effiziency;
     }
 }

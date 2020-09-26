@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Normal.Realtime;
 using UnityEngine.VFX;
+using UnityEditor;
 
 public class IntSync : RealtimeComponent
 {
@@ -12,6 +13,10 @@ public class IntSync : RealtimeComponent
     public delegate void IntValueChanged();
     public event IntValueChanged intValueChanged;
 
+    private void OnDestroy()
+    {
+        _model.intValueDidChange -= IntValueDidChanged;
+    }
     private IntSyncModel model
     {
         set

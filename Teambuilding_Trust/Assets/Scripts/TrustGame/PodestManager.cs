@@ -27,9 +27,11 @@ public class PodestManager : MonoBehaviour
     private int lastPressedValue = 99;
     private List<int> buttonValuesP1 = new List<int>();
     private List<int> buttonValuesP2 = new List<int>();
-
+    private int deselectCount = 0;
     public BoolSync pressedValuesAreCorrectBoolSync;
     // Getter, Setter
+
+    public int DeselectCount => deselectCount;
     public int SetCurrentRound { set { currentRound = value; } }
     public RoundRules SetRoundRules { set { roundRules = value; } }
     public int ButtonsInChildrenCount { get { return buttonsInChildrenCount; } }
@@ -146,6 +148,7 @@ public class PodestManager : MonoBehaviour
 
     public void ResetAll()
     {
+        deselectCount = 0;
         PlayerNumber = 99;
         PlayerColorIndicatorPlane.material = PlayerColorMaterialBlack;
         SetCurrentRound = 0;
@@ -166,6 +169,7 @@ public class PodestManager : MonoBehaviour
         if (ButtonControllers[buttonNumber].IsPressed)
         {
             Debug.Log("Deselecting Button " + ButtonControllers[buttonNumber]);
+            deselectCount++;
             ButtonControllers[buttonNumber].DeselectButton();
             pressedButtonNumbers.Remove(buttonNumber);
             pressedValuesAreCorrectBoolSync.SetBoolValue(CheckIfPressedValueFromPlayerIsCorrect());

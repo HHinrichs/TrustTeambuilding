@@ -101,10 +101,10 @@ public class NetworkAudioSender : MonoBehaviour
         //List<byte> message = new List<byte>(messageIDByteArray);
         //message.AddRange(serialized);
         //realtime.room.SendRPCMessage(message.ToArray(), false);
-        if(messageID == 2000)
-            Debug.Log("RCP Audio Message send via Network from Client!");
-        if(messageID == 3000)
-            Debug.Log("RCP Audio Message send via Network from Server!");
+        //if(messageID == 2000)
+        //    Debug.Log("RCP Audio Message send via Network from Client!");
+        //if(messageID == 3000)
+        //    Debug.Log("RCP Audio Message send via Network from Server!");
         //byte[] messageIDByteArray = BitConverter.GetBytes(serialized);
         //List<byte> message = new List<byte>(messageIDByteArray);
         //realtime.room.SendRPCMessage(serialized, false);

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  19 SEP 2020 16:35
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  20 SEP 2020 20:44
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -483,125 +483,350 @@ Underfull \hbox (badness 10000) in paragraph at lines 138--147
 
  []
 
-[2] [3]
+[2]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.155 ...w.researchgate.net/publication/323594629_
+                                                  Trusting_Strangers_in_Imme...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.156 	
+       
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (258.41692pt too wide) in paragraph at lines 155--156
+\T1/cmss/m/n/10.95 https://www.researchgate.net/publication/323594629$[]\OML/cm
+m/m/it/10.95 rusting[]trangers[]n[]mmersive[]irtual[]eality=link=\OT1/cmr/m/n/1
+0.95 5\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d\OT1/cmr/m/
+n/10.95 981\OML/cmm/m/it/10.95 fa\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/10.95 fdcc\O
+T1/cmr/m/n/10.95 370\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 666\OML/cmm/m/it/10
+.95 bb\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 =download$ 
+ []
+
+[3]
+
+Package natbib Warning: Citation `sherman2018understanding' on page 4 undefined
+ on input line 161.
+
 Package acronym Info: Label `acro:ivr' newly defined as it shall be overridden
-although it is yet undefined on input line 169.
+although it is yet undefined on input line 172.
 LaTeX Font Info:    Trying to load font information for TS1+cmss on input line 
-173.
- (B:\MiKTeX\tex/latex/base\ts1cmss.fd
+176.
+(B:\MiKTeX\tex/latex/base\ts1cmss.fd
 File: ts1cmss.fd 2019/12/16 v2.5j Standard LaTeX font definitions
-) [4] [5] [6]
-<Abbildungen/Ten_Characteristics.JPG, id=523, 510.10574pt x 232.4685pt>
+) [4]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.202 ...w.researchgate.net/publication/323594629_
+                                                  Trusting_Strangers_in_Imme...
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.203 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (300.42094pt too wide) in paragraph at lines 201--203
+[]\T1/cmss/m/n/10.95 VON https://www.researchgate.net/publication/323594629$[]\
+OML/cmm/m/it/10.95 rusting[]trangers[]n[]mmersive[]irtual[]eality=link=\OT1/cmr
+/m/n/10.95 5\OML/cmm/m/it/10.95 d\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 d\OT1/
+cmr/m/n/10.95 981\OML/cmm/m/it/10.95 fa\OT1/cmr/m/n/10.95 6\OML/cmm/m/it/10.95 
+fdcc\OT1/cmr/m/n/10.95 370\OML/cmm/m/it/10.95 a\OT1/cmr/m/n/10.95 666\OML/cmm/m
+/it/10.95 bb\OT1/cmr/m/n/10.95 3\OML/cmm/m/it/10.95 =download$ 
+ []
+
+[5] [6] [7]
+<Abbildungen/Ten_Characteristics.JPG, id=530, 510.10574pt x 232.4685pt>
 File: Abbildungen/Ten_Characteristics.JPG Graphic file (type jpg)
 <use Abbildungen/Ten_Characteristics.JPG>
 Package pdftex.def Info: Abbildungen/Ten_Characteristics.JPG  used on input lin
-e 247.
+e 266.
 (pdftex.def)             Requested size: 459.09093pt x 209.21971pt.
 
-Overfull \hbox (32.29958pt too wide) in paragraph at lines 247--248
+Overfull \hbox (32.29958pt too wide) in paragraph at lines 266--267
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--248
+Underfull \hbox (badness 10000) in paragraph at lines 266--267
 
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7] [8 <./Abbildungen/Ten_Characteristics.JPG>] [9] [10]
-Overfull \hbox (1.92172pt too wide) in paragraph at lines 301--307
+[8] [9 <./Abbildungen/Ten_Characteristics.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 308--309
+
+ []
+
+[10]
+
+Package natbib Warning: Citation `johnson2005cognitive' on page 11 undefined on
+ input line 318.
+
+
+Package natbib Warning: Citation `cook1980new' on page 11 undefined on input li
+ne 318.
+
+
+Package natbib Warning: Citation `mcallister1995affect' on page 11 undefined on
+ input line 326.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 325--327
+
+ []
+
+
+Package natbib Warning: Citation `polzer2006extending' on page 11 undefined on 
+input line 329.
+
+
+Package natbib Warning: Citation `prichard2007effects' on page 11 undefined on 
+input line 330.
+
+
+Package natbib Warning: Citation `jones1998experience' on page 11 undefined on 
+input line 332.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 328--333
+
+ []
+
+
+Package natbib Warning: Citation `mcknight1998initial' on page 11 undefined on 
+input line 335.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 334--336
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 337--338
+
+ []
+
+
+Package natbib Warning: Citation `couch1996assessment' on page 11 undefined on 
+input line 339.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--340
+
+ []
+
+[11]
+Underfull \hbox (badness 10000) in paragraph at lines 341--343
+
+ []
+
+
+Package natbib Warning: Citation `mcallister1995affect' on page 12 undefined on
+ input line 345.
+
+
+Package natbib Warning: Citation `dirks2002trust' on page 12 undefined on input
+ line 345.
+
+
+Package natbib Warning: Citation `mcallister1995affect' on page 12 undefined on
+ input line 346.
+
+
+Package natbib Warning: Citation `mcallister1995affect' on page 12 undefined on
+ input line 347.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 345--348
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 349--350
+
+ []
+
+[12]
+Overfull \hbox (1.92172pt too wide) in paragraph at lines 360--366
 \T1/cmss/m/n/10.95 H2 : Ein Tor-so, Head und Hand ge-track-ter Avat-ar hat eine
 n po-si-ti-ven Ein-fluss auf den Cognitiven-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 301--307
+Underfull \hbox (badness 10000) in paragraph at lines 360--366
 
  []
 
-<Abbildungen/Versuchshypothesen.JPG, id=585, 1360.58313pt x 485.31313pt>
+<Abbildungen/Versuchshypothesen.JPG, id=602, 1360.58313pt x 485.31313pt>
 File: Abbildungen/Versuchshypothesen.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchshypothesen.JPG>
 Package pdftex.def Info: Abbildungen/Versuchshypothesen.JPG  used on input line
- 312.
+ 371.
 (pdftex.def)             Requested size: 408.17809pt x 145.59505pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 312--313
+Underfull \hbox (badness 10000) in paragraph at lines 371--372
 
  []
 
 Package acronym Info: Label `acro:HDM' newly defined as it shall be overridden
-although it is yet undefined on input line 324.
+although it is yet undefined on input line 383.
 
-Package acronym Warning: Acronym `HDM' is not defined on input line 324.
+Package acronym Warning: Acronym `HDM' is not defined on input line 383.
 
 
-Package acronym Warning: Acronym `HDM' is not defined on input line 324.
+Package acronym Warning: Acronym `HDM' is not defined on input line 383.
 
-[11 <./Abbildungen/Versuchshypothesen.JPG>]
-Underfull \hbox (badness 10000) in paragraph at lines 355--356
-
- []
-
-[12]
-Underfull \hbox (badness 10000) in paragraph at lines 356--357
+[13 <./Abbildungen/Versuchshypothesen.JPG>]
+Underfull \hbox (badness 10000) in paragraph at lines 414--415
 
  []
 
+[14]
+Underfull \hbox (badness 10000) in paragraph at lines 415--416
 
-Underfull \hbox (badness 10000) in paragraph at lines 357--358
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 416--417
 
  []
 
 Package acronym Info: Label `acro:SVE' newly defined as it shall be overridden
-although it is yet undefined on input line 369.
+although it is yet undefined on input line 428.
 
-Package acronym Warning: Acronym `SVE' is not defined on input line 369.
+Package acronym Warning: Acronym `SVE' is not defined on input line 428.
 
 
-Package acronym Warning: Acronym `SVE' is not defined on input line 369.
+Package acronym Warning: Acronym `SVE' is not defined on input line 428.
 
-[13] [14] [15] [16] [17] [18] (Masterarbeit_Hannes_Hinrichs.bbl [19] [20])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+[15] [16] [17] [18] [19] [20] (Masterarbeit_Hannes_Hinrichs.bbl [21] [22])
 
-[21]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
+Package natbib Warning: There were undefined citations.
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 460.
+[23]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 460.
  (Masterarbeit_Hannes_Hinrichs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
-Package rerunfilecheck Info: File `Masterarbeit_Hannes_Hinrichs.out' has not ch
-anged.
-(rerunfilecheck)             Checksum: DDB8E9EA70E1A6A637F68AEE85790914;4455.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 401.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 460.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 460.
+
+
+Package rerunfilecheck Warning: File `Masterarbeit_Hannes_Hinrichs.out' has cha
+nged.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Masterarbeit_Hannes_Hinrichs.out':
+(rerunfilecheck)             Before: DDB8E9EA70E1A6A637F68AEE85790914;4455
+(rerunfilecheck)             After:  6908F3CCC703548E19449BE47503A6F5;4514.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 460.
  ) 
 Here is how much of TeX's memory you used:
- 9895 strings out of 481199
- 150093 string characters out of 2921905
+ 9919 strings out of 481199
+ 150404 string characters out of 2921905
  444958 words of memory out of 3000000
- 25149 multiletter control sequences out of 15000+200000
+ 25150 multiletter control sequences out of 15000+200000
  550739 words of font info for 57 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,45p,753b,556s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss
-1000.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi60
-0\ecso1095.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec
-/dpi600\tcss1095.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknap
-pen/ec/dpi600\ecss0600.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour
-/jknappen/ec/dpi600\ecsx1200.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/
-ljfour/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fon
-ts/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\hanne\AppData\Local\MiKT
-eX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\hanne\AppData\Loca
-l\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\hanne\AppDat
-a\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\hanne\
-AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\
-hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\
-Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2074.pk
->
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (27 pages, 552187 bytes).
+pdfTeX warning (dest): name{section*.87} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.83} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.81} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.78} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.77} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.76} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.74} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.68} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.67} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.64} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.63} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.60} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.59} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.53} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.51} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.49} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsubsection.47} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{subsection.46} has been referenced but does not exi
+st, replaced by a fixed one
+
+pdfTeX warning (dest): name{section.45} has been referenced but does not exist,
+ replaced by a fixed one
+
+pdfTeX warning (dest): name{section.43} has been referenced but does not exist,
+ replaced by a fixed one
+
+ <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss10
+00.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\
+ecso1095.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/d
+pi600\tcss1095.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappe
+n/ec/dpi600\ecss0600.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/j
+knappen/ec/dpi600\ecsx1200.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/lj
+four/jknappen/ec/dpi600\ecss0800.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts
+/pk/ljfour/jknappen/ec/dpi600\ecsx0900.pk> <C:\Users\hanne\AppData\Local\MiKTeX
+\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1095.pk> <C:\Users\hanne\AppData\Local\
+MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsx1440.pk> <C:\Users\hanne\AppData\
+Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss0900.pk> <C:\Users\hanne\Ap
+pData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk> <C:\Users\ha
+nne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1095.pk> <C:\Us
+ers\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss2074.pk><
+B:/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><B:/MiKTeX/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><B:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (29 pages, 592699 bytes).
 PDF statistics:
- 1244 PDF objects out of 1440 (max. 8388607)
- 164 named destinations out of 1000 (max. 500000)
+ 1296 PDF objects out of 1440 (max. 8388607)
+ 187 named destinations out of 1000 (max. 500000)
  496 words of extra memory for PDF output out of 10000 (max. 10000000)
 

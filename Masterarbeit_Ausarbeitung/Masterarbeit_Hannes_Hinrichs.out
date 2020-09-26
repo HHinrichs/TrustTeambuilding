@@ -8,9 +8,9 @@
 \BOOKMARK [2][]{subsection.13}{0.4 Verwandte Arbeiten}{section*.5}% 8
 \BOOKMARK [1][]{section.14}{1 Grundlagen}{}% 9
 \BOOKMARK [2][]{subsection.15}{1.1 Virtual Reality}{section.14}% 10
-\BOOKMARK [3][]{subsubsection.16}{1.1.1 Nutzung von virtuellen 3D-Welten}{subsection.15}% 11
+\BOOKMARK [3][]{subsubsection.16}{1.1.1 Virtuelle 3D-Welten}{subsection.15}% 11
 \BOOKMARK [3][]{subsubsection.17}{1.1.2 Presence in Virtual Reality}{subsection.15}% 12
-\BOOKMARK [3][]{subsubsection.19}{1.1.3 ?Wahrnehmung von vollgetrackten Avataren}{subsection.15}% 13
+\BOOKMARK [3][]{subsubsection.19}{1.1.3 Vertrauen in Avatare}{subsection.15}% 13
 \BOOKMARK [3][]{subsubsection.21}{1.1.4 Presence und Teambuilding}{subsection.15}% 14
 \BOOKMARK [3][]{subsubsection.22}{1.1.5 Body-Tracking}{subsection.15}% 15
 \BOOKMARK [2][]{subsection.23}{1.2 Teambuilding}{section.14}% 16
@@ -22,39 +22,40 @@
 \BOOKMARK [3][]{subsubsection.35}{1.2.6 Virtual-Teambuilding}{subsection.23}% 22
 \BOOKMARK [3][]{subsubsection.38}{1.2.7 Vorteile/Nachteile von Teambuilding}{subsection.23}% 23
 \BOOKMARK [2][]{subsection.39}{1.3 Trust}{section.14}% 24
-\BOOKMARK [3][]{subsubsection.40}{1.3.1 Interpersonal Trust}{subsection.39}% 25
-\BOOKMARK [3][]{subsubsection.41}{1.3.2 Cognitive Trust}{subsection.39}% 26
-\BOOKMARK [3][]{subsubsection.42}{1.3.3 General-Trust}{subsection.39}% 27
-\BOOKMARK [1][]{section.43}{2 Versuchshypothesen}{}% 28
-\BOOKMARK [1][]{section.45}{3 Vorgehensweise}{}% 29
-\BOOKMARK [2][]{subsection.46}{3.1 Verwendete Technik}{section.45}% 30
-\BOOKMARK [3][]{subsubsection.47}{3.1.1 Verwendete Hardware}{subsection.46}% 31
-\BOOKMARK [3][]{subsubsection.48}{3.1.2 Verwendetes Framework}{subsection.46}% 32
-\BOOKMARK [2][]{subsection.49}{3.2 Zielgruppe}{section.45}% 33
-\BOOKMARK [2][]{subsection.51}{3.3 Untersuchungsmethode}{section.45}% 34
-\BOOKMARK [2][]{subsection.52}{3.4 Qualitative vs Quantitative Untersuchung}{section.45}% 35
-\BOOKMARK [3][]{subsubsection.53}{3.4.1 A/B Testing}{subsection.52}% 36
-\BOOKMARK [3][]{subsubsection.54}{3.4.2 Teilnehmerfindung}{subsection.52}% 37
-\BOOKMARK [3][]{subsubsection.55}{3.4.3 Datenerhebungsmethoden}{subsection.52}% 38
-\BOOKMARK [2][]{subsection.59}{3.5 Abh\344ngige Variablen}{section.45}% 39
-\BOOKMARK [3][]{subsubsection.60}{3.5.1 Generelles Vertrauen}{subsection.59}% 40
-\BOOKMARK [3][]{subsubsection.61}{3.5.2 Vertrauen in das Team}{subsection.59}% 41
-\BOOKMARK [3][]{subsubsection.62}{3.5.3 Team Effektivit\344t}{subsection.59}% 42
-\BOOKMARK [2][]{subsection.63}{3.6 Unabh\344ngige Variablen}{section.45}% 43
-\BOOKMARK [3][]{subsubsection.64}{3.6.1 Avatar embodiement}{subsection.63}% 44
-\BOOKMARK [2][]{subsection.67}{3.7 Residuen}{section.45}% 45
-\BOOKMARK [3][]{subsubsection.68}{3.7.1 Aufbau der Umgebung}{subsection.67}% 46
-\BOOKMARK [3][]{subsubsection.69}{3.7.2 Sozialpsychologische Einflussfaktoren}{subsection.67}% 47
-\BOOKMARK [2][]{subsection.74}{3.8 Beschreibung des Forschungsverlaufs}{section.45}% 48
-\BOOKMARK [2][]{subsection.76}{3.9 Der Versuchsaufbau}{section.45}% 49
-\BOOKMARK [1][]{section.77}{4 Ergebnisse}{}% 50
-\BOOKMARK [2][]{subsection.78}{4.1 Validit\344t und Reliabilit\344t}{section.77}% 51
-\BOOKMARK [2][]{subsection.79}{4.2 Gesammelte Daten}{section.77}% 52
-\BOOKMARK [2][]{subsection.80}{4.3 Analyse}{section.77}% 53
-\BOOKMARK [1][]{section.81}{5 Zusammenfassung}{}% 54
-\BOOKMARK [1][]{section.82}{6 Diskussion}{}% 55
-\BOOKMARK [2][]{subsection.83}{6.1 Diskussion der Ergebnisse}{section.82}% 56
-\BOOKMARK [2][]{subsection.84}{6.2 Diskussion der eingesetzten Methoden}{section.82}% 57
-\BOOKMARK [2][]{subsection.85}{6.3 Auswirkungen auf die Gegenwart}{section.82}% 58
-\BOOKMARK [2][]{subsection.86}{6.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.82}% 59
-\BOOKMARK [1][]{section*.87}{Anhang}{}% 60
+\BOOKMARK [3][]{subsubsection.40}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.39}% 25
+\BOOKMARK [3][]{subsubsection.41}{1.3.2 Vertrauen ins Team}{subsection.39}% 26
+\BOOKMARK [3][]{subsubsection.42}{1.3.3 Cognitive Trust}{subsection.39}% 27
+\BOOKMARK [3][]{subsubsection.43}{1.3.4 Affective-Trust}{subsection.39}% 28
+\BOOKMARK [1][]{section.44}{2 Versuchshypothesen}{}% 29
+\BOOKMARK [1][]{section.46}{3 Vorgehensweise}{}% 30
+\BOOKMARK [2][]{subsection.47}{3.1 Verwendete Technik}{section.46}% 31
+\BOOKMARK [3][]{subsubsection.48}{3.1.1 Verwendete Hardware}{subsection.47}% 32
+\BOOKMARK [3][]{subsubsection.49}{3.1.2 Verwendetes Framework}{subsection.47}% 33
+\BOOKMARK [2][]{subsection.50}{3.2 Zielgruppe}{section.46}% 34
+\BOOKMARK [2][]{subsection.52}{3.3 Untersuchungsmethode}{section.46}% 35
+\BOOKMARK [2][]{subsection.53}{3.4 Qualitative vs Quantitative Untersuchung}{section.46}% 36
+\BOOKMARK [3][]{subsubsection.54}{3.4.1 A/B Testing}{subsection.53}% 37
+\BOOKMARK [3][]{subsubsection.55}{3.4.2 Teilnehmerfindung}{subsection.53}% 38
+\BOOKMARK [3][]{subsubsection.56}{3.4.3 Datenerhebungsmethoden}{subsection.53}% 39
+\BOOKMARK [2][]{subsection.60}{3.5 Abh\344ngige Variablen}{section.46}% 40
+\BOOKMARK [3][]{subsubsection.61}{3.5.1 Generelles Vertrauen}{subsection.60}% 41
+\BOOKMARK [3][]{subsubsection.62}{3.5.2 Vertrauen in das Team}{subsection.60}% 42
+\BOOKMARK [3][]{subsubsection.63}{3.5.3 Team Effektivit\344t}{subsection.60}% 43
+\BOOKMARK [2][]{subsection.64}{3.6 Unabh\344ngige Variablen}{section.46}% 44
+\BOOKMARK [3][]{subsubsection.65}{3.6.1 Avatar embodiement}{subsection.64}% 45
+\BOOKMARK [2][]{subsection.68}{3.7 Residuen}{section.46}% 46
+\BOOKMARK [3][]{subsubsection.69}{3.7.1 Aufbau der Umgebung}{subsection.68}% 47
+\BOOKMARK [3][]{subsubsection.70}{3.7.2 Sozialpsychologische Einflussfaktoren}{subsection.68}% 48
+\BOOKMARK [2][]{subsection.75}{3.8 Beschreibung des Forschungsverlaufs}{section.46}% 49
+\BOOKMARK [2][]{subsection.77}{3.9 Der Versuchsaufbau}{section.46}% 50
+\BOOKMARK [1][]{section.78}{4 Ergebnisse}{}% 51
+\BOOKMARK [2][]{subsection.79}{4.1 Validit\344t und Reliabilit\344t}{section.78}% 52
+\BOOKMARK [2][]{subsection.80}{4.2 Gesammelte Daten}{section.78}% 53
+\BOOKMARK [2][]{subsection.81}{4.3 Analyse}{section.78}% 54
+\BOOKMARK [1][]{section.82}{5 Zusammenfassung}{}% 55
+\BOOKMARK [1][]{section.83}{6 Diskussion}{}% 56
+\BOOKMARK [2][]{subsection.84}{6.1 Diskussion der Ergebnisse}{section.83}% 57
+\BOOKMARK [2][]{subsection.85}{6.2 Diskussion der eingesetzten Methoden}{section.83}% 58
+\BOOKMARK [2][]{subsection.86}{6.3 Auswirkungen auf die Gegenwart}{section.83}% 59
+\BOOKMARK [2][]{subsection.87}{6.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.83}% 60
+\BOOKMARK [1][]{section*.88}{Anhang}{}% 61
