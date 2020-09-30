@@ -8,3 +8,16 @@ startDate, startTime, time, roundTime, round, efficiency, IKAvatar, podest0, pod
 09.26.2020,07:54:52,13.49,1.71,6,0.89,False,1,0,2,0,0,0
 09.26.2020,07:54:52,15.02,1.50,6,0.90,False,1,0,2,0,0,0
 -----------Game Ended------------------
+,,0.00,0.00,0,0.00,False,99,0,99,0,99,0
+-----------Game Ended------------------
+,,0.00,0.00,0,0.00,False,99,0,99,0,99,0
+-----------Game Ended------------------
+-----------NewGameStarted------------------
+startDate, startTime, time, roundTime, round, efficiency, IKAvatar, podest0, podest0Fails, podest1, podest1Fails, podest2, podest2Fails
+09.26.2020,08:23:38,0.00,0.00,1,1.00,False,0,0,1,0,2,0
+09.26.2020,08:23:38,600.00,599.98,1,0.00,False,0,0,1,0,2,0
+-----------Game Ended------------------
+09.26.2020,08:23:38,0.00,0.00,1,1.00,False,99,0,99,0,99,0
+-----------Game Ended------------------
+09.26.2020,08:23:38,0.00,0.00,0,0.00,False,99,0,99,0,99,0
+-----------Game Ended------------------
