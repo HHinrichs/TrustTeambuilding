@@ -1,79 +1,85 @@
 \babel@toc {ngerman}{}
 \contentsline {section}{Erklärung}{I}{section*.1}%
 \contentsline {section}{Kurzfassung/Abstract}{II}{section*.2}%
-\contentsline {section}{Abkürzungsverzeichnis}{V}{section*.4}%
-\contentsline {section}{Einleitung}{1}{section*.5}%
-\contentsline {subsection}{\numberline {0.1}Motivation}{1}{subsection.9}%
-\contentsline {subsection}{\numberline {0.2}Ziele der Arbeit}{2}{subsection.10}%
-\contentsline {subsection}{\numberline {0.3}Inhaltlicher Aufbau der Arbeit}{2}{subsection.12}%
-\contentsline {subsection}{\numberline {0.4}Verwandte Arbeiten}{3}{subsection.13}%
-\contentsline {section}{\numberline {1}Grundlagen}{4}{section.14}%
-\contentsline {subsection}{\numberline {1.1}Virtual Reality}{4}{subsection.15}%
-\contentsline {subsubsection}{\numberline {1.1.1}Virtuelle 3D-Welten}{4}{subsubsection.16}%
-\contentsline {subsubsection}{\numberline {1.1.2}Presence in Virtual Reality}{4}{subsubsection.17}%
-\contentsline {subsubsection}{\numberline {1.1.3}Vertrauen in Avatare}{5}{subsubsection.19}%
-\contentsline {paragraph}{Computer-Mediated Communication}{5}{section*.20}%
-\contentsline {subsubsection}{\numberline {1.1.4}Presence und Teambuilding}{6}{subsubsection.21}%
-\contentsline {subsubsection}{\numberline {1.1.5}Body-Tracking}{6}{subsubsection.22}%
-\contentsline {subsection}{\numberline {1.2}Teambuilding}{7}{subsection.23}%
-\contentsline {paragraph}{Definition}{7}{section*.24}%
-\contentsline {subsubsection}{\numberline {1.2.1}Teambuilding in virtuellen Teams}{7}{subsubsection.25}%
-\contentsline {subsubsection}{\numberline {1.2.2}Kooperativ vs Kompetitive}{8}{subsubsection.26}%
-\contentsline {subsubsection}{\numberline {1.2.3}Effektivität von Teambuildingmaßnahmen}{8}{subsubsection.27}%
-\contentsline {subsubsection}{\numberline {1.2.4}Teambuilding Komponenten}{8}{subsubsection.28}%
-\contentsline {paragraph}{Positive Atmosphere}{9}{section*.30}%
-\contentsline {paragraph}{Open and Clear Communication}{9}{section*.31}%
-\contentsline {paragraph}{Balanced Participation}{9}{section*.32}%
-\contentsline {paragraph}{Defined Roles}{9}{section*.33}%
-\contentsline {subsubsection}{\numberline {1.2.5}Team-Colloboraton}{10}{subsubsection.34}%
-\contentsline {subsubsection}{\numberline {1.2.6}Virtual-Teambuilding}{10}{subsubsection.35}%
-\contentsline {paragraph}{Allgemeines}{10}{section*.36}%
-\contentsline {paragraph}{Social Identity}{10}{section*.37}%
-\contentsline {subsubsection}{\numberline {1.2.7}Vorteile/Nachteile von Teambuilding}{10}{subsubsection.38}%
-\contentsline {subsection}{\numberline {1.3}Trust}{10}{subsection.39}%
-\contentsline {subsubsection}{\numberline {1.3.1}Zwischenmenschliches Vertrauen}{11}{subsubsection.40}%
-\contentsline {subsubsection}{\numberline {1.3.2}Vertrauen ins Team}{12}{subsubsection.41}%
-\contentsline {subsubsection}{\numberline {1.3.3}Cognitive Trust}{12}{subsubsection.42}%
-\contentsline {subsubsection}{\numberline {1.3.4}Affective-Trust}{12}{subsubsection.43}%
-\contentsline {section}{\numberline {2}Versuchshypothesen}{13}{section.44}%
-\contentsline {section}{\numberline {3}Vorgehensweise}{13}{section.46}%
-\contentsline {subsection}{\numberline {3.1}Verwendete Technik}{13}{subsection.47}%
-\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardware}{13}{subsubsection.48}%
-\contentsline {subsubsection}{\numberline {3.1.2}Verwendetes Framework}{13}{subsubsection.49}%
-\contentsline {subsection}{\numberline {3.2}Zielgruppe}{13}{subsection.50}%
-\contentsline {subsection}{\numberline {3.3}Untersuchungsmethode}{14}{subsection.52}%
-\contentsline {subsection}{\numberline {3.4}Qualitative vs Quantitative Untersuchung}{14}{subsection.53}%
-\contentsline {subsubsection}{\numberline {3.4.1}A/B Testing}{14}{subsubsection.54}%
-\contentsline {subsubsection}{\numberline {3.4.2}Teilnehmerfindung}{14}{subsubsection.55}%
-\contentsline {subsubsection}{\numberline {3.4.3}Datenerhebungsmethoden}{14}{subsubsection.56}%
-\contentsline {paragraph}{Fragenbogen}{14}{section*.57}%
-\contentsline {paragraph}{Beobachtung}{14}{section*.58}%
-\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{14}{section*.59}%
-\contentsline {subsection}{\numberline {3.5}Abhängige Variablen}{14}{subsection.60}%
-\contentsline {subsubsection}{\numberline {3.5.1}Generelles Vertrauen}{14}{subsubsection.61}%
-\contentsline {subsubsection}{\numberline {3.5.2}Vertrauen in das Team}{14}{subsubsection.62}%
-\contentsline {subsubsection}{\numberline {3.5.3}Team Effektivität}{14}{subsubsection.63}%
-\contentsline {subsection}{\numberline {3.6}Unabhängige Variablen}{14}{subsection.64}%
-\contentsline {subsubsection}{\numberline {3.6.1}Avatar embodiement}{14}{subsubsection.65}%
-\contentsline {paragraph}{Head- and Handtracking}{14}{section*.66}%
-\contentsline {paragraph}{Head-,Hand and Inversekinematic-Torso}{14}{section*.67}%
-\contentsline {subsection}{\numberline {3.7}Residuen}{15}{subsection.68}%
-\contentsline {subsubsection}{\numberline {3.7.1}Aufbau der Umgebung}{15}{subsubsection.69}%
-\contentsline {subsubsection}{\numberline {3.7.2}Sozialpsychologische Einflussfaktoren}{15}{subsubsection.70}%
-\contentsline {paragraph}{Gamification}{15}{section*.71}%
-\contentsline {paragraph}{Aussehen}{15}{section*.72}%
-\contentsline {paragraph}{Sprache}{15}{section*.73}%
-\contentsline {paragraph}{Bekanntheit}{15}{section*.74}%
-\contentsline {subsection}{\numberline {3.8}Beschreibung des Forschungsverlaufs}{15}{subsection.75}%
-\contentsline {subsection}{\numberline {3.9}Der Versuchsaufbau}{16}{subsection.77}%
-\contentsline {section}{\numberline {4}Ergebnisse}{17}{section.78}%
-\contentsline {subsection}{\numberline {4.1}Validität und Reliabilität}{17}{subsection.79}%
-\contentsline {subsection}{\numberline {4.2}Gesammelte Daten}{17}{subsection.80}%
-\contentsline {subsection}{\numberline {4.3}Analyse}{17}{subsection.81}%
-\contentsline {section}{\numberline {5}Zusammenfassung}{18}{section.82}%
-\contentsline {section}{\numberline {6}Diskussion}{19}{section.83}%
-\contentsline {subsection}{\numberline {6.1}Diskussion der Ergebnisse}{19}{subsection.84}%
-\contentsline {subsection}{\numberline {6.2}Diskussion der eingesetzten Methoden}{19}{subsection.85}%
-\contentsline {subsection}{\numberline {6.3}Auswirkungen auf die Gegenwart}{19}{subsection.86}%
-\contentsline {subsection}{\numberline {6.4}Vorschläge für zukünftige Untersuchungen}{19}{subsection.87}%
-\contentsline {section}{Anhang}{20}{section*.88}%
+\contentsline {paragraph}{Virtual-Reality, Vertrauen, Teambuilding, Avatar}{II}{section*.4}%
+\contentsline {section}{Abkürzungsverzeichnis}{V}{section*.6}%
+\contentsline {section}{Einleitung}{1}{section*.7}%
+\contentsline {subsection}{\numberline {0.1}Motivation}{1}{subsection.11}%
+\contentsline {subsection}{\numberline {0.2}Ziele der Arbeit}{2}{subsection.12}%
+\contentsline {subsection}{\numberline {0.3}Inhaltlicher Aufbau der Arbeit}{2}{subsection.13}%
+\contentsline {subsection}{\numberline {0.4}Verwandte Arbeiten}{3}{subsection.14}%
+\contentsline {section}{\numberline {1}Grundlagen}{4}{section.15}%
+\contentsline {subsection}{\numberline {1.1}Virtual Reality}{4}{subsection.16}%
+\contentsline {subsubsection}{\numberline {1.1.1}Wozu brauchen wir Virtual Reality?}{4}{subsubsection.17}%
+\contentsline {subsubsection}{\numberline {1.1.2}Virtuelle 3D-Welten}{4}{subsubsection.18}%
+\contentsline {subsubsection}{\numberline {1.1.3}Presence in Virtual Reality}{4}{subsubsection.19}%
+\contentsline {subsubsection}{\numberline {1.1.4}Vertrauen in Avatare}{6}{subsubsection.25}%
+\contentsline {paragraph}{Computer-Mediated Communication}{6}{section*.27}%
+\contentsline {subsubsection}{\numberline {1.1.5}Presence und Teambuilding}{7}{subsubsection.28}%
+\contentsline {subsubsection}{\numberline {1.1.6}Body-Tracking}{7}{subsubsection.29}%
+\contentsline {subsection}{\numberline {1.2}Teambuilding}{8}{subsection.30}%
+\contentsline {subsubsection}{\numberline {1.2.1}Wozu brauchen wir Teambuilding?}{8}{subsubsection.31}%
+\contentsline {paragraph}{Definition}{8}{section*.32}%
+\contentsline {subsubsection}{\numberline {1.2.2}Teambuilding in virtuellen Teams}{8}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {1.2.3}Kooperativ vs Kompetitive}{9}{subsubsection.34}%
+\contentsline {subsubsection}{\numberline {1.2.4}Effektivität von Teambuildingmaßnahmen}{9}{subsubsection.35}%
+\contentsline {subsubsection}{\numberline {1.2.5}Teambuilding Komponenten}{10}{subsubsection.36}%
+\contentsline {paragraph}{Positive Atmosphere}{10}{section*.38}%
+\contentsline {paragraph}{Open and Clear Communication}{10}{section*.39}%
+\contentsline {paragraph}{Balanced Participation}{11}{section*.40}%
+\contentsline {paragraph}{Defined Roles}{11}{section*.41}%
+\contentsline {subsubsection}{\numberline {1.2.6}Team-Colloboraton}{11}{subsubsection.42}%
+\contentsline {subsubsection}{\numberline {1.2.7}Virtual-Teambuilding}{11}{subsubsection.43}%
+\contentsline {paragraph}{Allgemeines}{11}{section*.44}%
+\contentsline {paragraph}{Social Identity}{11}{section*.45}%
+\contentsline {subsubsection}{\numberline {1.2.8}Vorteile/Nachteile von Teambuilding}{11}{subsubsection.46}%
+\contentsline {subsection}{\numberline {1.3}Trust}{11}{subsection.47}%
+\contentsline {subsubsection}{\numberline {1.3.1}Wozu brauchen wir Vertrauen im Allgemeinen?}{11}{subsubsection.48}%
+\contentsline {subsubsection}{\numberline {1.3.2}Zwischenmenschliches Vertrauen}{12}{subsubsection.49}%
+\contentsline {paragraph}{Affektives- und Kognitives Vertrauen}{12}{section*.50}%
+\contentsline {subsubsection}{\numberline {1.3.3}Vertrauen ins Team}{13}{subsubsection.51}%
+\contentsline {subsubsection}{\numberline {1.3.4}Cognitive Trust}{13}{subsubsection.52}%
+\contentsline {subsubsection}{\numberline {1.3.5}Affective-Trust}{13}{subsubsection.53}%
+\contentsline {section}{\numberline {2}Versuchshypothesen}{14}{section.54}%
+\contentsline {section}{\numberline {3}Vorgehensweise}{14}{section.56}%
+\contentsline {subsection}{\numberline {3.1}Verwendete Technik}{14}{subsection.57}%
+\contentsline {subsubsection}{\numberline {3.1.1}Verwendete Hardware}{14}{subsubsection.58}%
+\contentsline {subsubsection}{\numberline {3.1.2}Verwendetes Framework}{14}{subsubsection.59}%
+\contentsline {subsection}{\numberline {3.2}Fragebogen}{14}{subsection.60}%
+\contentsline {subsection}{\numberline {3.3}Zielgruppe}{14}{subsection.61}%
+\contentsline {subsection}{\numberline {3.4}Untersuchungsmethode}{15}{subsection.63}%
+\contentsline {subsection}{\numberline {3.5}Qualitative vs Quantitative Untersuchung}{15}{subsection.64}%
+\contentsline {subsubsection}{\numberline {3.5.1}A/B Testing}{15}{subsubsection.65}%
+\contentsline {subsubsection}{\numberline {3.5.2}Teilnehmerfindung}{15}{subsubsection.66}%
+\contentsline {subsubsection}{\numberline {3.5.3}Datenerhebungsmethoden}{15}{subsubsection.67}%
+\contentsline {paragraph}{Fragenbogen}{15}{section*.68}%
+\contentsline {paragraph}{Beobachtung}{15}{section*.69}%
+\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{15}{section*.70}%
+\contentsline {subsection}{\numberline {3.6}Abhängige Variablen}{15}{subsection.71}%
+\contentsline {subsubsection}{\numberline {3.6.1}Generelles Vertrauen}{15}{subsubsection.72}%
+\contentsline {subsubsection}{\numberline {3.6.2}Vertrauen in das Team}{16}{subsubsection.73}%
+\contentsline {subsubsection}{\numberline {3.6.3}Team Effektivität}{16}{subsubsection.74}%
+\contentsline {subsection}{\numberline {3.7}Unabhängige Variablen}{16}{subsection.75}%
+\contentsline {subsubsection}{\numberline {3.7.1}Avatar embodiement}{16}{subsubsection.76}%
+\contentsline {paragraph}{Head- and Handtracking}{16}{section*.77}%
+\contentsline {paragraph}{Head-,Hand and Inversekinematic-Torso}{16}{section*.78}%
+\contentsline {subsection}{\numberline {3.8}Residuen}{16}{subsection.79}%
+\contentsline {subsubsection}{\numberline {3.8.1}Aufbau der Umgebung}{16}{subsubsection.80}%
+\contentsline {subsubsection}{\numberline {3.8.2}Sozialpsychologische Einflussfaktoren}{16}{subsubsection.81}%
+\contentsline {paragraph}{Gamification}{16}{section*.82}%
+\contentsline {paragraph}{Aussehen}{16}{section*.83}%
+\contentsline {paragraph}{Sprache}{16}{section*.84}%
+\contentsline {paragraph}{Bekanntheit}{16}{section*.85}%
+\contentsline {subsection}{\numberline {3.9}Beschreibung des Forschungsverlaufs}{16}{subsection.86}%
+\contentsline {subsection}{\numberline {3.10}Der Versuchsaufbau}{17}{subsection.88}%
+\contentsline {section}{\numberline {4}Ergebnisse}{18}{section.89}%
+\contentsline {subsection}{\numberline {4.1}Validität und Reliabilität}{18}{subsection.90}%
+\contentsline {subsection}{\numberline {4.2}Gesammelte Daten}{18}{subsection.91}%
+\contentsline {subsection}{\numberline {4.3}Analyse}{18}{subsection.92}%
+\contentsline {section}{\numberline {5}Zusammenfassung}{19}{section.93}%
+\contentsline {section}{\numberline {6}Diskussion}{20}{section.94}%
+\contentsline {subsection}{\numberline {6.1}Diskussion der Ergebnisse}{20}{subsection.95}%
+\contentsline {subsection}{\numberline {6.2}Diskussion der eingesetzten Methoden}{20}{subsection.96}%
+\contentsline {subsection}{\numberline {6.3}Auswirkungen auf die Gegenwart}{20}{subsection.97}%
+\contentsline {subsection}{\numberline {6.4}Vorschläge für zukünftige Untersuchungen}{20}{subsection.98}%
+\contentsline {section}{Anhang}{21}{section*.99}%
