@@ -5,44 +5,53 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-You've used 44 entries,
+Repeated entry---line 563 of file bibfile.bib
+ : @article{polzer2006extending
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 585 of file bibfile.bib
+ : @article{mayer1995integrative
+ :                              ,
+I'm skipping whatever remains of this entry
+You've used 63 entries,
             2921 wiz_defined-function locations,
-            889 strings with 12755 characters,
-and the built_in function-call counts, 206573 in all, are:
-= -- 33917
-> -- 2812
+            997 strings with 16174 characters,
+and the built_in function-call counts, 284098 in all, are:
+= -- 46560
+> -- 3835
 < -- 1
-+ -- 16373
-- -- 854
-* -- 17971
-:= -- 41268
-add.period$ -- 88
-call.type$ -- 44
-change.case$ -- 611
-chr.to.int$ -- 44
-cite$ -- 44
-duplicate$ -- 625
-empty$ -- 1295
-format.name$ -- 1024
-if$ -- 37093
++ -- 22351
+- -- 1162
+* -- 24638
+:= -- 56881
+add.period$ -- 126
+call.type$ -- 63
+change.case$ -- 875
+chr.to.int$ -- 63
+cite$ -- 63
+duplicate$ -- 897
+empty$ -- 1904
+format.name$ -- 1405
+if$ -- 51021
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 49
-newline$ -- 180
-num.names$ -- 462
-pop$ -- 151
+missing$ -- 68
+newline$ -- 257
+num.names$ -- 659
+pop$ -- 216
 preamble$ -- 1
-purify$ -- 660
+purify$ -- 945
 quote$ -- 0
-skip$ -- 576
+skip$ -- 828
 stack$ -- 0
-substring$ -- 47989
-swap$ -- 73
-text.length$ -- 617
+substring$ -- 65769
+swap$ -- 113
+text.length$ -- 883
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 166
+type$ -- 238
 warning$ -- 0
-while$ -- 959
+while$ -- 1388
 width$ -- 0
-write$ -- 621
+write$ -- 883
+(There were 2 error messages)
