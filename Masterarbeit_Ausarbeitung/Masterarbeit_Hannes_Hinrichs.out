@@ -6,60 +6,61 @@
 \BOOKMARK [2][]{subsection.12}{0.2 Ziele der Arbeit}{section*.7}% 6
 \BOOKMARK [2][]{subsection.13}{0.3 Inhaltlicher Aufbau der Arbeit}{section*.7}% 7
 \BOOKMARK [2][]{subsection.14}{0.4 Verwandte Arbeiten}{section*.7}% 8
-\BOOKMARK [1][]{section.15}{1 Grundlagen}{}% 9
-\BOOKMARK [2][]{subsection.16}{1.1 Virtual Reality}{section.15}% 10
-\BOOKMARK [3][]{subsubsection.17}{1.1.1 Wozu brauchen wir Virtual Reality?}{subsection.16}% 11
-\BOOKMARK [3][]{subsubsection.18}{1.1.2 Virtuelle 3D-Welten}{subsection.16}% 12
-\BOOKMARK [3][]{subsubsection.19}{1.1.3 Presence in Virtual Reality}{subsection.16}% 13
-\BOOKMARK [3][]{subsubsection.25}{1.1.4 Vertrauen in Avatare}{subsection.16}% 14
-\BOOKMARK [3][]{subsubsection.28}{1.1.5 Presence und Teambuilding}{subsection.16}% 15
-\BOOKMARK [3][]{subsubsection.29}{1.1.6 Body-Tracking}{subsection.16}% 16
-\BOOKMARK [2][]{subsection.30}{1.2 Teambuilding}{section.15}% 17
-\BOOKMARK [3][]{subsubsection.31}{1.2.1 Wozu brauchen wir Teambuilding?}{subsection.30}% 18
-\BOOKMARK [3][]{subsubsection.33}{1.2.2 Teambuilding in virtuellen Teams}{subsection.30}% 19
-\BOOKMARK [3][]{subsubsection.34}{1.2.3 Kooperativ vs Kompetitive}{subsection.30}% 20
-\BOOKMARK [3][]{subsubsection.35}{1.2.4 Effektivit\344t von Teambuildingma\337nahmen}{subsection.30}% 21
-\BOOKMARK [3][]{subsubsection.36}{1.2.5 Teambuilding Komponenten}{subsection.30}% 22
-\BOOKMARK [3][]{subsubsection.42}{1.2.6 Team-Colloboraton}{subsection.30}% 23
-\BOOKMARK [3][]{subsubsection.43}{1.2.7 Virtual-Teambuilding}{subsection.30}% 24
-\BOOKMARK [3][]{subsubsection.46}{1.2.8 Vorteile/Nachteile von Teambuilding}{subsection.30}% 25
-\BOOKMARK [2][]{subsection.47}{1.3 Trust}{section.15}% 26
-\BOOKMARK [3][]{subsubsection.48}{1.3.1 Wozu brauchen wir Vertrauen im Allgemeinen?}{subsection.47}% 27
-\BOOKMARK [3][]{subsubsection.49}{1.3.2 Zwischenmenschliches Vertrauen}{subsection.47}% 28
-\BOOKMARK [3][]{subsubsection.51}{1.3.3 Vertrauen ins Team}{subsection.47}% 29
-\BOOKMARK [3][]{subsubsection.52}{1.3.4 Cognitive Trust}{subsection.47}% 30
-\BOOKMARK [3][]{subsubsection.53}{1.3.5 Affective-Trust}{subsection.47}% 31
-\BOOKMARK [1][]{section.54}{2 Versuchshypothesen}{}% 32
-\BOOKMARK [1][]{section.56}{3 Vorgehensweise}{}% 33
-\BOOKMARK [2][]{subsection.57}{3.1 Verwendete Technik}{section.56}% 34
-\BOOKMARK [3][]{subsubsection.58}{3.1.1 Verwendete Hardware}{subsection.57}% 35
-\BOOKMARK [3][]{subsubsection.59}{3.1.2 Verwendetes Framework}{subsection.57}% 36
-\BOOKMARK [2][]{subsection.60}{3.2 Fragebogen}{section.56}% 37
-\BOOKMARK [2][]{subsection.61}{3.3 Zielgruppe}{section.56}% 38
-\BOOKMARK [2][]{subsection.63}{3.4 Untersuchungsmethode}{section.56}% 39
-\BOOKMARK [2][]{subsection.64}{3.5 Qualitative vs Quantitative Untersuchung}{section.56}% 40
-\BOOKMARK [3][]{subsubsection.65}{3.5.1 A/B Testing}{subsection.64}% 41
-\BOOKMARK [3][]{subsubsection.66}{3.5.2 Teilnehmerfindung}{subsection.64}% 42
-\BOOKMARK [3][]{subsubsection.67}{3.5.3 Datenerhebungsmethoden}{subsection.64}% 43
-\BOOKMARK [2][]{subsection.71}{3.6 Abh\344ngige Variablen}{section.56}% 44
-\BOOKMARK [3][]{subsubsection.72}{3.6.1 Generelles Vertrauen}{subsection.71}% 45
-\BOOKMARK [3][]{subsubsection.73}{3.6.2 Vertrauen in das Team}{subsection.71}% 46
-\BOOKMARK [3][]{subsubsection.74}{3.6.3 Team Effektivit\344t}{subsection.71}% 47
-\BOOKMARK [2][]{subsection.75}{3.7 Unabh\344ngige Variablen}{section.56}% 48
-\BOOKMARK [3][]{subsubsection.76}{3.7.1 Avatar embodiement}{subsection.75}% 49
-\BOOKMARK [2][]{subsection.79}{3.8 Residuen}{section.56}% 50
-\BOOKMARK [3][]{subsubsection.80}{3.8.1 Aufbau der Umgebung}{subsection.79}% 51
-\BOOKMARK [3][]{subsubsection.81}{3.8.2 Sozialpsychologische Einflussfaktoren}{subsection.79}% 52
-\BOOKMARK [2][]{subsection.86}{3.9 Beschreibung des Forschungsverlaufs}{section.56}% 53
-\BOOKMARK [2][]{subsection.88}{3.10 Der Versuchsaufbau}{section.56}% 54
-\BOOKMARK [1][]{section.89}{4 Ergebnisse}{}% 55
-\BOOKMARK [2][]{subsection.90}{4.1 Validit\344t und Reliabilit\344t}{section.89}% 56
-\BOOKMARK [2][]{subsection.91}{4.2 Gesammelte Daten}{section.89}% 57
-\BOOKMARK [2][]{subsection.92}{4.3 Analyse}{section.89}% 58
-\BOOKMARK [1][]{section.93}{5 Zusammenfassung}{}% 59
-\BOOKMARK [1][]{section.94}{6 Diskussion}{}% 60
-\BOOKMARK [2][]{subsection.95}{6.1 Diskussion der Ergebnisse}{section.94}% 61
-\BOOKMARK [2][]{subsection.96}{6.2 Diskussion der eingesetzten Methoden}{section.94}% 62
-\BOOKMARK [2][]{subsection.97}{6.3 Auswirkungen auf die Gegenwart}{section.94}% 63
-\BOOKMARK [2][]{subsection.98}{6.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.94}% 64
-\BOOKMARK [1][]{section*.99}{Anhang}{}% 65
+\BOOKMARK [2][]{subsection.15}{0.5 Das Framework}{section*.7}% 9
+\BOOKMARK [1][]{section.17}{1 Grundlagen}{}% 10
+\BOOKMARK [2][]{subsection.18}{1.1 Virtual Reality}{section.17}% 11
+\BOOKMARK [3][]{subsubsection.19}{1.1.1 Wozu brauchen wir Virtual Reality?}{subsection.18}% 12
+\BOOKMARK [3][]{subsubsection.20}{1.1.2 Virtuelle 3D-Welten}{subsection.18}% 13
+\BOOKMARK [3][]{subsubsection.21}{1.1.3 Presence in Virtual Reality}{subsection.18}% 14
+\BOOKMARK [3][]{subsubsection.27}{1.1.4 Vertrauen in Avatare}{subsection.18}% 15
+\BOOKMARK [3][]{subsubsection.30}{1.1.5 Presence und Teambuilding}{subsection.18}% 16
+\BOOKMARK [3][]{subsubsection.31}{1.1.6 Body-Tracking}{subsection.18}% 17
+\BOOKMARK [2][]{subsection.32}{1.2 Teambuilding}{section.17}% 18
+\BOOKMARK [3][]{subsubsection.33}{1.2.1 Wozu brauchen wir Teambuilding?}{subsection.32}% 19
+\BOOKMARK [3][]{subsubsection.35}{1.2.2 Teambuilding in virtuellen Teams}{subsection.32}% 20
+\BOOKMARK [3][]{subsubsection.36}{1.2.3 Kooperativ vs Kompetitive}{subsection.32}% 21
+\BOOKMARK [3][]{subsubsection.37}{1.2.4 Effektivit\344t von Teambuildingma\337nahmen}{subsection.32}% 22
+\BOOKMARK [3][]{subsubsection.38}{1.2.5 Teambuilding Komponenten}{subsection.32}% 23
+\BOOKMARK [3][]{subsubsection.44}{1.2.6 Team-Colloboraton}{subsection.32}% 24
+\BOOKMARK [3][]{subsubsection.45}{1.2.7 Virtual-Teambuilding}{subsection.32}% 25
+\BOOKMARK [3][]{subsubsection.48}{1.2.8 Vorteile/Nachteile von Teambuilding}{subsection.32}% 26
+\BOOKMARK [2][]{subsection.49}{1.3 Trust}{section.17}% 27
+\BOOKMARK [3][]{subsubsection.50}{1.3.1 Wozu brauchen wir Vertrauen im Allgemeinen?}{subsection.49}% 28
+\BOOKMARK [3][]{subsubsection.51}{1.3.2 Zwischenmenschliches Vertrauen}{subsection.49}% 29
+\BOOKMARK [3][]{subsubsection.53}{1.3.3 Vertrauen ins Team}{subsection.49}% 30
+\BOOKMARK [3][]{subsubsection.54}{1.3.4 Cognitive Trust}{subsection.49}% 31
+\BOOKMARK [3][]{subsubsection.55}{1.3.5 Affective-Trust}{subsection.49}% 32
+\BOOKMARK [1][]{section.56}{2 Versuchshypothesen}{}% 33
+\BOOKMARK [1][]{section.58}{3 Vorgehensweise}{}% 34
+\BOOKMARK [2][]{subsection.59}{3.1 Verwendete Technik}{section.58}% 35
+\BOOKMARK [3][]{subsubsection.60}{3.1.1 Verwendete Hardware}{subsection.59}% 36
+\BOOKMARK [3][]{subsubsection.61}{3.1.2 Verwendetes Framework}{subsection.59}% 37
+\BOOKMARK [2][]{subsection.62}{3.2 Fragebogen}{section.58}% 38
+\BOOKMARK [2][]{subsection.63}{3.3 Zielgruppe}{section.58}% 39
+\BOOKMARK [2][]{subsection.65}{3.4 Untersuchungsmethode}{section.58}% 40
+\BOOKMARK [2][]{subsection.66}{3.5 Qualitative vs Quantitative Untersuchung}{section.58}% 41
+\BOOKMARK [3][]{subsubsection.67}{3.5.1 A/B Testing}{subsection.66}% 42
+\BOOKMARK [3][]{subsubsection.68}{3.5.2 Teilnehmerfindung}{subsection.66}% 43
+\BOOKMARK [3][]{subsubsection.69}{3.5.3 Datenerhebungsmethoden}{subsection.66}% 44
+\BOOKMARK [2][]{subsection.73}{3.6 Abh\344ngige Variablen}{section.58}% 45
+\BOOKMARK [3][]{subsubsection.74}{3.6.1 Generelles Vertrauen}{subsection.73}% 46
+\BOOKMARK [3][]{subsubsection.75}{3.6.2 Vertrauen in das Team}{subsection.73}% 47
+\BOOKMARK [3][]{subsubsection.76}{3.6.3 Team Effektivit\344t}{subsection.73}% 48
+\BOOKMARK [2][]{subsection.77}{3.7 Unabh\344ngige Variablen}{section.58}% 49
+\BOOKMARK [3][]{subsubsection.78}{3.7.1 Avatar embodiement}{subsection.77}% 50
+\BOOKMARK [2][]{subsection.81}{3.8 Residuen}{section.58}% 51
+\BOOKMARK [3][]{subsubsection.82}{3.8.1 Aufbau der Umgebung}{subsection.81}% 52
+\BOOKMARK [3][]{subsubsection.83}{3.8.2 Sozialpsychologische Einflussfaktoren}{subsection.81}% 53
+\BOOKMARK [2][]{subsection.88}{3.9 Beschreibung des Forschungsverlaufs}{section.58}% 54
+\BOOKMARK [2][]{subsection.90}{3.10 Der Versuchsaufbau}{section.58}% 55
+\BOOKMARK [1][]{section.91}{4 Ergebnisse}{}% 56
+\BOOKMARK [2][]{subsection.92}{4.1 Validit\344t und Reliabilit\344t}{section.91}% 57
+\BOOKMARK [2][]{subsection.93}{4.2 Gesammelte Daten}{section.91}% 58
+\BOOKMARK [2][]{subsection.94}{4.3 Analyse}{section.91}% 59
+\BOOKMARK [1][]{section.95}{5 Zusammenfassung}{}% 60
+\BOOKMARK [1][]{section.96}{6 Diskussion}{}% 61
+\BOOKMARK [2][]{subsection.97}{6.1 Diskussion der Ergebnisse}{section.96}% 62
+\BOOKMARK [2][]{subsection.98}{6.2 Diskussion der eingesetzten Methoden}{section.96}% 63
+\BOOKMARK [2][]{subsection.99}{6.3 Auswirkungen auf die Gegenwart}{section.96}% 64
+\BOOKMARK [2][]{subsection.100}{6.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.96}% 65
+\BOOKMARK [1][]{section*.101}{Anhang}{}% 66
