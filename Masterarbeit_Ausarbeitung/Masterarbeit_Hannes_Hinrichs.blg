@@ -5,53 +5,56 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-Repeated entry---line 563 of file bibfile.bib
+Repeated entry---line 598 of file bibfile.bib
  : @article{polzer2006extending
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 585 of file bibfile.bib
+Repeated entry---line 620 of file bibfile.bib
  : @article{mayer1995integrative
  :                              ,
 I'm skipping whatever remains of this entry
-You've used 63 entries,
+Warning--I didn't find a database entry for "]"
+Warning--I didn't find a database entry for "grammer1994human"
+Warning--I didn't find a database entry for "johansson1975visual"
+You've used 67 entries,
             2921 wiz_defined-function locations,
-            997 strings with 16174 characters,
-and the built_in function-call counts, 284098 in all, are:
-= -- 46560
-> -- 3835
-< -- 1
-+ -- 22351
-- -- 1162
-* -- 24638
-:= -- 56881
-add.period$ -- 126
-call.type$ -- 63
-change.case$ -- 875
-chr.to.int$ -- 63
-cite$ -- 63
-duplicate$ -- 897
-empty$ -- 1904
-format.name$ -- 1405
-if$ -- 51021
+            1019 strings with 16852 characters,
+and the built_in function-call counts, 299298 in all, are:
+= -- 49046
+> -- 4021
+< -- 2
++ -- 23525
+- -- 1218
+* -- 25922
+:= -- 59976
+add.period$ -- 134
+call.type$ -- 67
+change.case$ -- 930
+chr.to.int$ -- 67
+cite$ -- 67
+duplicate$ -- 948
+empty$ -- 2014
+format.name$ -- 1474
+if$ -- 53740
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 68
-newline$ -- 257
-num.names$ -- 659
-pop$ -- 216
+missing$ -- 72
+newline$ -- 273
+num.names$ -- 700
+pop$ -- 236
 preamble$ -- 1
-purify$ -- 945
+purify$ -- 1005
 quote$ -- 0
-skip$ -- 828
+skip$ -- 876
 stack$ -- 0
-substring$ -- 65769
-swap$ -- 113
-text.length$ -- 883
+substring$ -- 69258
+swap$ -- 118
+text.length$ -- 940
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 238
+type$ -- 252
 warning$ -- 0
-while$ -- 1388
+while$ -- 1474
 width$ -- 0
-write$ -- 883
+write$ -- 937
 (There were 2 error messages)
