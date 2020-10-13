@@ -26,6 +26,14 @@ public class GameManager : MonoBehaviour
     [Header("Allgemeine Einstellungen")]
     public bool isServer;
     public bool isClient;
+    [SerializeField]
+    public enum ControllerMode
+    {
+        Oculus,
+        HTC,
+        Both
+    }
+    public ControllerMode controllerMode = ControllerMode.Both;
     [SerializeField] int NumbersOfParticipatingPlayers;
     [SerializeField] GameObject PlayerSpawnPositions;
     [SerializeField] List<PodestManager> Podests;
@@ -82,6 +90,7 @@ public class GameManager : MonoBehaviour
 
     public int GetNumbersOfParticipatingPlayers { get { return NumbersOfParticipatingPlayers; } }
 
+    public ControllerMode GetControllerMode { get { return controllerMode; } }
     private void Awake()
     {
         if(_Instance != null && _Instance != this)
