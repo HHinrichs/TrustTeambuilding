@@ -121,10 +121,13 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        Application.wantsToQuit += ( ()=> isQuitting = true);
-        Application.quitting += (() => isQuitting = true);
+#if UNITY_EDITOR
         EditorApplication.wantsToQuit += (() => isQuitting = true);
         EditorApplication.quitting += (() => isQuitting = true);
+#else
+        Application.wantsToQuit += ( ()=> isQuitting = true);
+        Application.quitting += (() => isQuitting = true);
+#endif
         StartCoroutine(LateStart(5));
     }
     IEnumerator LateStart(float waitTime)
