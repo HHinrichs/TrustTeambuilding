@@ -9,7 +9,7 @@ namespace CSVInteractions{
     public static class CSVWriter
     {
 
-        static string filepath = "A:/GitRepos/TrustTeambuilding/Teambuilding_Trust/MasterarbeitCSVLog/teambuildingSpectatorLog.txt";
+        static string filepath = "/teambuildingSpectatorLog.txt";
 
         public static void addRecord(string startDate, string startTime, float gameTime, float roundTime, int round, float efficiency, bool IKAvatar, int podest0, int podest0Fails, int podest1, int podest1Fails, int podest2, int podest2Fails)
         {
