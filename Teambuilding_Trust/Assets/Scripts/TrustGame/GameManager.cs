@@ -197,7 +197,7 @@ public class GameManager : MonoBehaviour
             ReliableQueue.Dequeue().Invoke();
         }
     }
-    public void ServerRCPMessageReceived(Room room, byte[] data, bool reliable)
+    public void ServerRCPMessageReceived(Room room, int senderID, byte[] data, bool reliable)
     {
         Debug.Log("RCPMessageReceived from Server");
         int messageID;
@@ -279,7 +279,7 @@ public class GameManager : MonoBehaviour
             }
         }
     }
-    public void ClientRCPMessageReceived(Room room, byte[] data, bool reliable)
+    public void ClientRCPMessageReceived(Room room, int i,byte[] data, bool reliable)
     {
         Debug.Log("RCP Message received from Client");
         int messageID;

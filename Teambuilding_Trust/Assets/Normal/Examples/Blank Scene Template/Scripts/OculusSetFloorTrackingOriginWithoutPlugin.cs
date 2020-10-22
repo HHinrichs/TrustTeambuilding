@@ -27,7 +27,6 @@ namespace Normal.Realtime.Utility {
                 __stopTryingToSetTrackingOrigin = ovrp_SetTrackingOriginType(TrackingOrigin.FloorLevel) == Bool.True;
             } catch {
                 // Plugin probably doesn't exist. Give up.
-                Debug.LogError("OVR Plugin doesnt EXIST");
                 __stopTryingToSetTrackingOrigin = true;
             }
         }
