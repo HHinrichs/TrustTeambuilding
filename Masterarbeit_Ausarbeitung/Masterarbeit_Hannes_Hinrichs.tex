@@ -1,6 +1,5 @@
 \documentclass[a4paper,11pt]{article}%Schriftgröße
 \usepackage[T1]{fontenc} 
-\renewcommand{\familydefault}{\sfdefault}
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}%Veröffentlichungssprache
 \usepackage{graphicx}
@@ -9,29 +8,23 @@
 \usepackage{float}
 \usepackage{xcolor}	
 \usepackage[a4paper]{geometry}
-\geometry{left=3.5cm,right=2.5cm,top=2.4cm,bottom=2cm}%Seitenränder
+\usepackage{fancyhdr}
 \usepackage[onehalfspacing]{setspace}%Zeilenabstand
+\usepackage[onehalfspacing]{setspace}%Zeilenabstand
+\usepackage{fancyhdr}
+\usepackage[authoryear]{natbib}
+\usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,urlcolor = black,plainpages = false,hypertexnames = false,citecolor = black] {hyperref}
+\usepackage[printonlyused, withpage, smaller]{acronym}
 \renewcommand{\\}{\vspace*{0.5\baselineskip} \newline}
 \renewcommand*\MakeUppercase[1]{#1}	
-\usepackage{fancyhdr}
+\renewcommand{\familydefault}{\sfdefault}
+\geometry{left=3.5cm,right=2.5cm,top=2.4cm,bottom=2cm}%Seitenränder
 \pagestyle{fancy}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
 \fancyhead[R]{\footnotesize{\thepage}}
 \fancyhead[L]{\footnotesize{\leftmark}}
 \fancyfoot{}
-\usepackage[authoryear]{natbib}
-\usepackage[colorlinks,
-pdfpagelabels,
-pdfstartview = FitH,
-bookmarksopen = true,
-bookmarksnumbered = true,
-linkcolor = black,
-urlcolor = black,
-plainpages = false,
-hypertexnames = false,
-citecolor = black] {hyperref}
-\usepackage[printonlyused, withpage, smaller]{acronym}
 
 \begin{document}
 	\begin{titlepage}
@@ -40,6 +33,7 @@ citecolor = black] {hyperref}
 			\includegraphics[scale=1]{Abbildungen/TH.png}\\
 			\vspace*{1cm}
 		\end{flushleft}
+		
 		\begin{huge}
 			\noindent
 			%Vergleich des Teambuildingerfolgs mittels eines nicht-vollkörpergetracktem- und vollkörpergetracktem Avatars in einer Immersive Virtual Reality anhand einer Escape-Room-Artigen Umgebung. \\
@@ -49,10 +43,10 @@ citecolor = black] {hyperref}
 %			Auswirkung des Vertrauens auf die Effizienz in einer Teambuildingmaßnahme anhand eines Hand- und Kopfgetracktem und einem Hand-, Kopf und Inverskinematisch-simuliertem Torsos getracktem Avatar ein einem Shared Virtual Environment. //
 			
 %			Auswirkung von Vertrauen zu Avataren auf die \mbox{Effizienz} in einer Teambuildingmaßnahme in ein einem Shared Virtual Environment.
-Auswirkung des Vertrauens auf die Effizienz in einer Teambuildingmaßnahme anhand eines \flqq IK-Avatar\flqq und einem \flqq Non-IK-Avatar\frqq in einem Shared-Virtual-Environment. //
 
-			\\
+Auswirkung des Vertrauens auf die Effizienz in einer Teambuildingmaßnahme anhand eines \flqq IK-Avatar\flqq und einem \flqq Non-IK-Avatar\frqq in einem Shared-Virtual-Environment. \\
 		\end{huge}
+		
 		Masterarbeit zur Erlangung des Master-Grades \newline
 		\textit{Master of Science} im Studiengang Medientechnologie \newline
 		an der Fakultät für Informations-, Medien- und Elektrotechnik \newline
@@ -542,7 +536,7 @@ Im Vergleich wird das affektive Vertrauen im Team bei solchen Situationen nicht 
 	\newpage
 	\section{Versuchshypothesen}
 
-Folgende Hypothesen wurden aufgestellt :\\
+Folgende Hypothesen wurden aufgestellt :
 \begin{itemize}
 	\item{H1 : Probanten mit einem hohen General-Trust-Score erzielen auch einen hohen Cognitiven-Trust-Score.}
 	\item{H2 : Ein Torso, Head und Hand getrackter Avatar hat einen positiven Einfluss auf den Cognitiven-Trust-Score.}
@@ -571,6 +565,12 @@ Um an dem Experiment Teilnehmen zu können, benötigten die Probanten ein im vol
 Das \ac{sve} wurde mit Unity 2019.4.3f1 und der HD-Render-Pipeline programmiert. Um die Echtzeitkommunikation zwischen den einzelnen Clients zu gewährleisten, wurde das multiplayer Framework \flqq Normcore\frqq \footnote{www.Normcore.io} genutzt.
 Normcore unterstützt Network-Physics, automatische Realtime-Synchronisation, Voice-Chat, XR-Compitabilität sowie persistente multiplayer Räume.
 		\subsection{Fragebogen}
+Um die Erfahrungen und Eindrücke der Teilnehmenden Probanten zu Quantifizieren, wurden einige standartisierte Fragebögen verwendet.
+	
+\begin{itemize}
+\item{NASA-TLX} Der NASA-TLX misst die subjektiv wahrgenommene Arbeitsbelastung sowie Effektivität der Probanten innerhalb des \ac{sve}.
+\item{Igroup Presence Questionnaire(IPQ)} Der IPQ dient zu Messung des Präsenzgefühls in einer virtuellen Umgebung. Dabei misst der IPQ, inwieweit sich der Nutzer in der virtuellen Umgebung fühlt, inwieweit der Nutzer seine Aufmerksamkeit der virtuellen Umgebung schenkt und wie Real die virtuelle Umgebung dem Nutzer erschien.
+\end{itemize}
 		Hier dran Beispiel nehmen:
 		
 		%https://d1wqtxts1xzle7.cloudfront.net/30602859/Presence_202004_20-_20Valencia.pdf?1361179740=&response-content-disposition=inline%3B+filename%3DOn_the_importance_of_reliable_real_time.pdf&Expires=1600808306&Signature=PFz5w5T5Gm4ikI5rIBhqVy~LMmhEofYpGS1x2oQCR39owjNnPEW28~Hjl8oE6k3hNT4A9I1ekCpSu9JLim6ro8TF8zAxuxuDmzfjr8Y8RF864oG71-xhGSlyLJ5iklLURCTQJciuJPc2A-Avq633G2LZHcQmIHQAm0Tfwrw5vokvWxco5DYMQXK8W9KXPue9OR0gK4xvhKKdWg4DTUdoy1TTdHRvcaBWLYI2960-ijiH6Ox2Rl8B2xxuWQfpvsdS~Vkz7k7A1F5LpVV8-w2Dn5WimnycBIp7UCodkjAeUdT~--KiD4~bdo8w4vEb6fm2xQMMw6NBWuTIqSNjSbjzlg__&Key-Pair-Id=APKAJLOHF5GGSLRBV4ZA#page=54
@@ -590,7 +590,15 @@ Es wurden zwei Fragenbögen an die jeweiligen Studienteilnehmer verteilt. Der er
 				Durch die Beobachtung während des Experiments werden Kennzahlen zur Dauer des Versuchs zwischen den einzelnen Konditionen bestimmt. Anhand dieser kann im späterem Verlauf das  Teambuilding Potential sowie die subjektive Effektivität durch gesteigertem Swift-Trust analysiert werden.
 				\paragraph{Induktive Quantitative Forschungsmethodik}
 				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas "Vertrauen" wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet wurden.
-		\subsection{Abhängige Variablen}
+		
+\subsection{Unabhängige Variablen}
+Als unabhängige Variablen wurden der \flqq IK-Avatar\frqq sowie der \flqq Non-IK-Avatar\frqq gewählt. Durch diese  unabhängigen Variablen wurde im weiterem Versuchsverlauf versucht den Einfluss auf die abhängigen Variablen zu bestimmen.
+Insofern wird untersucht, wie der Einfluss von dem \flqq IK-Avatar\frqq sowie dem \flqq Non-IK-Avatar\frqq auf das Generelle-Vertrauen, das Vertrauen im Team sowie auf die Team-Effektivität ist.
+			\subsubsection{Avatar embodiement}
+				\paragraph{Head- and Handtracking}
+				\paragraph{Head-,Hand and Inversekinematic-Torso}
+	
+\subsection{Abhängige Variablen}
 			\subsubsection{Generelles Vertrauen}
 			Wie in \textbf{Abbildung \ref{ten_characteristics}} beschrieben \textbf{ABBILDUNG 1 BESCHREIBEN, TRUST z.B. UND EINZELNE PUNKTE}, ist die Positive Atmosphere in einem Team einer der Maßgeblichen Faktoren die zur Leistungsfähigkeit und zum \textit{\glqq wir-gefühl\grqq} beitragen.
 			Die Abhängige Variable Vertrauen ...	
@@ -601,11 +609,8 @@ Es wurden zwei Fragenbögen an die jeweiligen Studienteilnehmer verteilt. Der er
 			\subsubsection{Vertrauen in das Team}
 			\subsubsection{Team Effektivität}
 			%\subsubsection{Andere Faktoren}
-		\subsection{Unabhängige Variablen}
-			\subsubsection{Avatar embodiement}
-				\paragraph{Head- and Handtracking}
-				\paragraph{Head-,Hand and Inversekinematic-Torso}
-		\subsection{Residuen}
+			
+\subsection{Residuen}
 			\subsubsection{Aufbau der Umgebung}
 			\subsubsection{Farbe der Avatare}
 			\subsection{Geschlecht}
@@ -616,6 +621,7 @@ Es wurden zwei Fragenbögen an die jeweiligen Studienteilnehmer verteilt. Der er
 				\paragraph{Sprache} $~$ \\	
 				\paragraph{Bekanntheit}
 Um die gegenseitige Bekanntheit der Probanten auszuschließen, wurde jedem Probanten zu beginn des Versuchs ein Zufälliger anonymer Name zugeordnet.
+			
 		\subsection{Beschreibung des Forschungsverlaufs}
 		Insgesamt nahmen \textbf{ANZAHL DER TEILNEHMER} am Versuch teil.
 Jeder Probant bekam einen zufälligen Zeitslot sowie ein anonymen Namen zugeordnet mit dem dieser an dem Versuch teilnahm. Gemäß des A/B-Testings wurden jeweils drei Personen in einem Zeitslot untergebracht um ein "Team" zu bilden. Diesem "Team" wurde entweder die Kondition "Head- und Handtracking" oder "Head-, Hand mit Inversekinematisch-simulierten-Torso" zugeordnet. Somit nahmen drei Probanten, an einem Versuch zur selben Zeit mit der selben Kondition, teil. Die Probanten wurden nicht Face-To-Face vorgestellt und sahen sich während des gesamten Versuchs nur als Repräsentation eines Avatars in der Virtuellen Umgebung. Der Zeitslot von 30 Minuten teilte sich auf in
@@ -670,7 +676,7 @@ Das Ziel war es nun, so viele Symbole wie möglich gemeinsam korrekt zu bearbeit
 
 	\subsection{Die Avatare}
 Die Avatare im \ac{sve} wurden als \flqq IK-Avatar\frqq und \flqq Non-IK-Avatar\frqq implementiert.
-Für beide Avatararten wurde die neutrale Farbe Schwarz gewählt. Die Probanten hatten keinen Einfluss auf die Farbwahl ihres eigenen Avatars. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile des Mitspielers aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \flqq IK-Avatar\frqq oder \flqq Non-IK-Avatar \frqq bekam jeder Probant das Selbe aussehen des Avatars zugeordnet.
+Für beide Avatararten wurde die neutrale Farbe Schwarz gewählt. Die Probanten hatten keinen Einfluss auf die Farbwahl ihres eigenen Avatars. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile des Mitspielers aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \flqq IK-Avatar\frqq oder \flqq Non-IK-Avatar \frqq bekam jeder Probant das Selbe aussehen des Avatars zugeordnet. Der eigene Avatar ist nicht für die Mitspieler sichtbar. Zur besseren Interaktion mit den Knöpfen sowie zur höheren Immersion, wurde der eigene Avatar nicht sichtbar für den Probanten dargestellt. Jeder Probant, unabhängig der zugewiesenen Kondition sah somit nur eine Repräsentation von menschlich wirkenden Händen.
 
 	\begin{figure}[H]
 		\begin{footnotesize}
