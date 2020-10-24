@@ -9,8 +9,8 @@ namespace CSVInteractions{
     public static class CSVWriter
     {
 
-        static string filepath = "/teambuildingSpectatorLog.txt";
-
+        //static string filepath = Environment.SpecialFolder.MyDocuments+"/teambuildingSpectatorLog.txt";
+        static string filepath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "teambuildingSpectatorLog.txt");
         public static void addRecord(string startDate, string startTime, float gameTime, float roundTime, int round, float efficiency, bool IKAvatar, int podest0, int podest0Fails, int podest1, int podest1Fails, int podest2, int podest2Fails)
         {
             try
