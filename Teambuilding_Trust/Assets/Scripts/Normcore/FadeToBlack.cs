@@ -36,12 +36,12 @@ public class FadeToBlack : MonoBehaviour
 
             if (correspondingBoxCollider.bounds.Contains(mainCameraGameObject.transform.position))
             {
-                Debug.Log("FadeIn");
+                //Debug.Log("FadeIn");
                 FadeIn();
             }
             else
             {
-                Debug.Log("FadeOut");
+                //Debug.Log("FadeOut");
                 FadeOut();
             }
             yield return null;

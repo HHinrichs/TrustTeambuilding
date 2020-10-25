@@ -199,7 +199,7 @@ public class GameManager : MonoBehaviour
     }
     public void ServerRCPMessageReceived(Room room, int senderID, byte[] data, bool reliable)
     {
-        Debug.Log("RCPMessageReceived from Server");
+        //Debug.Log("RCPMessageReceived from Server");
         int messageID;
         int clientID;
         int byteCount;
@@ -235,7 +235,7 @@ public class GameManager : MonoBehaviour
                         byteCount = reader.ReadInt32();
                         messageBytes = reader.ReadBytes(byteCount);
 
-                        Debug.Log("Audio Stream from Server Received!");
+                        //Debug.Log("Audio Stream from Server Received!");
                         string NetworkAudioObjectName = "SpectatorAudioSource" + clientID;
                         
                         RawQueue.Enqueue(() =>
@@ -281,7 +281,7 @@ public class GameManager : MonoBehaviour
     }
     public void ClientRCPMessageReceived(Room room, int i,byte[] data, bool reliable)
     {
-        Debug.Log("RCP Message received from Client");
+        //Debug.Log("RCP Message received from Client");
         int messageID;
         int clientID;
         int byteCount;
@@ -300,7 +300,7 @@ public class GameManager : MonoBehaviour
                         byteCount = reader.ReadInt32();
                         messageBytes = reader.ReadBytes(byteCount);
 
-                        Debug.Log("Audio Stream from Client Received!");
+                        //Debug.Log("Audio Stream from Client Received!");
                         string NetworkAudioObjectName = "ClientAudioSourceFor_" + clientID;
 
                         RawQueue.Enqueue(() =>
