@@ -19,7 +19,7 @@ public class ConsoleToGUI : MonoBehaviour
         if (filename == "")
         {
             string d = System.Environment.GetFolderPath(
-               System.Environment.SpecialFolder.Desktop) + "/YOUR_LOGS";
+               System.Environment.SpecialFolder.Desktop) + "/Teambuilding_Trust_Logs";
             System.IO.Directory.CreateDirectory(d);
             string r = Random.Range(1000, 9999).ToString();
             filename = d + "/log-" + r + ".txt";
