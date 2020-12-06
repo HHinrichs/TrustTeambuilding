@@ -1,15 +1,57 @@
 ﻿* Encoding: UTF-8.
 
+
+*CHRONBACHS ALPHA FÜR GENERAL TRUST SCORE
+EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN.
+
+RELIABILITY
+  /VARIABLES=Ichneigedazuanderezuakzeptieren Ichakzeptiereanderesowiesiesind 
+    MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan IchbineinevertrauendePerson 
+    EsistbesseranderenLeuteersteinmalzuVertrauen DiemeistenMenschensindvertrauenswürdig 
+    IchfindeleichtneueFreunde Ichwürdeeingestehenmehralseinbisschenparanoidgegenüber 
+    Ichfindeesbesseranderefürdaszuakzeptierenwassiesage IchhabevielVertrauenindieMenschendieichkenne 
+    SelbstinschlechtenZeitendenkeichdassamEndeallesgutwi IchneigedazuanderebeimWortzunehmen 
+    WennesumPersonengehtdieichkenneglaubeichdiesen 
+    IchglaubedassichmichaufdiemeistenMenschenverlassenkan FastimmerglaubeichLeutenwassiemirerzählen
+  /SCALE('ALL VARIABLES') ALL
+  /MODEL=ALPHA
+  /STATISTICS=DESCRIPTIVE SCALE CORR
+  /SUMMARY=TOTAL.
+
+
+*CHRONBACHS ALPHA FÜR COGNITIVE TRUST SCORE
+EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN.
+
+RELIABILITY
+  /VARIABLES=DiesePersonGehtAnIhreArbeitMitProfessionalität 
+    AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen 
+    AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen 
+    DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde 
+    IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit
+  /SCALE('ALL VARIABLES') ALL
+  /MODEL=ALPHA
+  /STATISTICS=DESCRIPTIVE SCALE CORR
+  /SUMMARY=TOTAL.
+
 * GeneralTrustScore ------------------------------------------------------------------------------.
 DATASET ACTIVATE DataSet1.
-COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren to 
-    FastimmerglaubeichLeutenwassiemirerzählen).
+COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren, Ichakzeptiereanderesowiesiesind, 
+    MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan, IchbineinevertrauendePerson, 
+    EsistbesseranderenLeuteersteinmalzuVertrauen, DiemeistenMenschensindvertrauenswürdig, 
+    IchfindeleichtneueFreunde, Ichwürdeeingestehenmehralseinbisschenparanoidgegenüber, 
+    Ichfindeesbesseranderefürdaszuakzeptierenwassiesage, IchhabevielVertrauenindieMenschendieichkenne, 
+    SelbstinschlechtenZeitendenkeichdassamEndeallesgutwi, IchneigedazuanderebeimWortzunehmen, 
+    WennesumPersonengehtdieichkenneglaubeichdiesen, 
+    IchglaubedassichmichaufdiemeistenMenschenverlassenkan, FastimmerglaubeichLeutenwassiemirerzählen).
 VARIABLE LABELS  General_Trust 'General_Trust_Score'.
 EXECUTE.
 
-*GeneralTrustScore ------------------------------------------------------------------------------.
-COMPUTE Cognitive_Trust=Mean(IchwarmirsicherdassdieanderenTeilnehmerintelligenteEnt to 
-    IchhattesorgendassdieanderenTeilnehmeretwasfalschmache).
+*COGNITIVE TRUST SCORE ------------------------------------------------------------------------------.
+COMPUTE Cognitive_Trust=Mean(DiesePersonGehtAnIhreArbeitMitProfessionalität, 
+    AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen, 
+    AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen, 
+    DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde, 
+    IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit).
 VARIABLE LABELS  Cognitive_Trust 'Cognitive_Trust_Score'.
 EXECUTE.
 
@@ -128,3 +170,4 @@ CORRELATIONS
   /VARIABLES=General_Trust Cognitive_Trust
   /PRINT=TWOTAIL NOSIG
   /MISSING=PAIRWISE.
+
