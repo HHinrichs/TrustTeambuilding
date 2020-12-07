@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  7 DEC 2020 21:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  7 DEC 2020 21:12
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -1125,6 +1125,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 651--651
  []
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
+[]\T1/cmss/m/n/10.95 Teilauszug des
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
+\T1/cmss/m/n/10.95 Trust-Inventorys -
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 651--651
+\T1/cmss/m/it/10.95 Generalized-Trust-
+ []
+
+
 Package natbib Warning: Citation `couch1996assessment' on page 24 undefined on 
 input line 651.
 
@@ -1315,7 +1330,7 @@ Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecsi1095.pk
 > <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecss1
 095.pk> <C:\Users\hanne\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600
 \ecss2074.pk>
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (40 pages, 1413494 bytes).
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (40 pages, 1413523 bytes).
 PDF statistics:
  1425 PDF objects out of 1440 (max. 8388607)
  174 named destinations out of 1000 (max. 500000)
