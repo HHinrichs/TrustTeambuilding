@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<template SPSS-Version="1.4" date="2020-12-07" description="Demographie Berufliche Qualifikation" selectPath="87 2 3 30 5 10 72 73 74 75 76 93 12 17 18 25 " xmlns="http://www.ibm.com/software/analytics/spss/xml/visualization" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ibm.com/software/analytics/spss/xml/visualization http://www.ibm.com/software/analytics/spss/xml/visualization/vizml-template-3.5.xsd">
+	<setPieTranspose counterClockwise="false" startAngle="90"/>
+	<addFrame count="1" type="visualization">
+		<location bottom="500px" left="0px" right="850px" top="0px"/>
+		<style color="#ffffff" color2="transparent" coordinate="0" number="0" visible="true"/>
+		<style coordinate="1" font-family="SansSerif" font-size="8pt" number="1" pattern="0" stroke-linecap="butt" text-fit="true" visible="true"/>
+	</addFrame>
+	<addFrame count="1" type="graph">
+		<location bottom="99%" left="1%" right="75%" top="6%"/>
+		<style color="#ffffff" color2="transparent" visible="true"/>
+		<style color="#ffffff" color2="transparent" coordinate="2" number="2" visible="true"/>
+	</addFrame>
+	<addFrame count="1" type="title">
+		<location bottom="6%" left="0%" right="100%" top="1%"/>
+		<label><style color="#000000" color2="transparent" coordinate="0" font-size="12pt" font-weight="bold" number="0" visible="true"/>Berufliche Qualifikation</label>
+	</addFrame>
+	<addFrame count="1" type="container">
+		<location bottom="37%" left="75%" right="99%" top="6%"/>
+	</addFrame>
+	<setTranspose transpose="false"/>
+	<addDataLabels colorByMarker="false" connectingLines="true" hidden="false" showCollidingLabels="true">
+		<style color="#000000" font-size="12pt" font-style="regular" font-weight="regular" number="0" padding="2px" text-fit="true" visible="visible"/>
+		<style color="#ffffff" color2="#000000" coordinate="1" number="1" visible="true"/>
+		<labeling variable="percent"/>
+		<labeling variable="percent">
+			<format maximumFractionDigits="2" minimumFractionDigits="2" suffix="%" useGrouping="true"/>
+		</labeling>
+	</addDataLabels>
+	<addFrame count="1" type="legend">
+		<style color="transparent" color2="transparent" coordinate="0" number="0" visible="true"/>
+		<style color="#000000" color2="transparent" coordinate="1" font-size="12pt" font-weight="regular" number="1" text-fit="true" visible="true"/>
+	</addFrame>
+	<setStyle type="pie">
+		<style color2="#000000" stroke-linecap="round" stroke-width="0px" visible="true"/>
+	</setStyle>
+	<setStyle type="pie">
+		<style color2="#000000" stroke-linecap="round" stroke-width="0px" visible="true"/>
+	</setStyle>
+	<setStyle subtype="simple" type="pie">
+		<style color2="#000000" coordinate="0" stroke-linecap="round" stroke-width="0px" visible="true"/>
+	</setStyle>
+	<setStyle>
+		<style color="#000000" color2="#ffffff" font-size="12pt" text-fit="true" visible="true"/>
+	</setStyle>
+	<setStyleCycle id="styleCycleDefault" styleByNumber="1">
+		<cycle>
+			<style color="#5596e6" visible="true"/>
+			<style color="#d70033" visible="true"/>
+			<style color="#298626" visible="true"/>
+			<style color="#f3672a" visible="true"/>
+			<style color="#e3d710" visible="true"/>
+			<style color="#00b4a0" visible="true"/>
+			<style color="#ffc4e2" visible="true"/>
+			<style color="#ab49f3" visible="true"/>
+			<style color="#5fc338" visible="true"/>
+			<style color="#3f5aa8" visible="true"/>
+			<style color="#fe82b4" visible="true"/>
+			<style color="#d0ca8c" visible="true"/>
+			<style color="#cc863f" visible="true"/>
+			<style color="#77378f" visible="true"/>
+			<style color="#ece6d0" visible="true"/>
+			<style color="#454647" visible="true"/>
+			<style color="#5cca88" visible="true"/>
+			<style color="#d05334" visible="true"/>
+			<style color="#cc7fe4" visible="true"/>
+			<style color="#e1bc1d" visible="true"/>
+			<style color="#ed4b4b" visible="true"/>
+			<style color="#1ccdcd" visible="true"/>
+			<style color="#5c7148" visible="true"/>
+			<style color="#e18b0e" visible="true"/>
+			<style color="#092672" visible="true"/>
+			<style color="#5a645e" visible="true"/>
+			<style color="#9b0000" visible="true"/>
+			<style color="#cface3" visible="true"/>
+			<style color="#969191" visible="true"/>
+			<style color="#3feb7c" visible="true"/>
+		</cycle>
+	</setStyleCycle>
+</template>

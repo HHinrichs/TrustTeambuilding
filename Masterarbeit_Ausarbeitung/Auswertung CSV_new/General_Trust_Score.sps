@@ -1,5 +1,7 @@
 ﻿* Encoding: UTF-8.
 
+* DATEN WINSORIEREN ???? 
+https://statistikguru.de/spss/produkt-moment-korrelation/mit-ausreissern-umgehen-2.html .
 
 *CHRONBACHS ALPHA FÜR GENERAL TRUST SCORE
 EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN.
