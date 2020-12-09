@@ -1,47 +1,59 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Masterarbeit_Hannes_Hinrichs.aux
-I found no \bibdata command---while reading file Masterarbeit_Hannes_Hinrichs.aux
-I found no \bibstyle command---while reading file Masterarbeit_Hannes_Hinrichs.aux
-You've used 82 entries,
-            0 wiz_defined-function locations,
-            168 strings with 2054 characters,
-and the built_in function-call counts, 0 in all, are:
-= -- 0
-> -- 0
-< -- 0
-+ -- 0
-- -- 0
-* -- 0
-:= -- 0
-add.period$ -- 0
-call.type$ -- 0
-change.case$ -- 0
-chr.to.int$ -- 0
-cite$ -- 0
-duplicate$ -- 0
-empty$ -- 0
-format.name$ -- 0
-if$ -- 0
-int.to.chr$ -- 0
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: dcu.bst
+Reallocating 'name_of_file' (item size: 1) to 8 items.
+Database file #1: bibfile.bib
+Repeated entry---line 763 of file bibfile.bib
+ : @article{polzer2006extending
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 785 of file bibfile.bib
+ : @article{mayer1995integrative
+ :                              ,
+I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "]"
+Warning--can't use both volume and number fields in mehrabian1971silent
+You've used 84 entries,
+            2921 wiz_defined-function locations,
+            1110 strings with 19976 characters,
+and the built_in function-call counts, 370583 in all, are:
+= -- 60685
+> -- 4950
+< -- 4
++ -- 29025
+- -- 1498
+* -- 32030
+:= -- 74280
+add.period$ -- 168
+call.type$ -- 84
+change.case$ -- 1166
+chr.to.int$ -- 84
+cite$ -- 85
+duplicate$ -- 1220
+empty$ -- 2575
+format.name$ -- 1820
+if$ -- 66590
+int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 0
-newline$ -- 0
-num.names$ -- 0
-pop$ -- 0
-preamble$ -- 0
-purify$ -- 0
+missing$ -- 91
+newline$ -- 341
+num.names$ -- 876
+pop$ -- 297
+preamble$ -- 1
+purify$ -- 1260
 quote$ -- 0
-skip$ -- 0
+skip$ -- 1132
 stack$ -- 0
-substring$ -- 0
-swap$ -- 0
-text.length$ -- 0
+substring$ -- 85615
+swap$ -- 174
+text.length$ -- 1180
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 0
-warning$ -- 0
-while$ -- 0
+type$ -- 316
+warning$ -- 1
+while$ -- 1855
 width$ -- 0
-write$ -- 0
+write$ -- 1175
 (There were 2 error messages)

@@ -173,3 +173,35 @@ CORRELATIONS
   /PRINT=TWOTAIL NOSIG
   /MISSING=PAIRWISE.
 
+*FAKTORENANALSE FÜR GENERAL TRUST SCALE. ES WURDEN 3 FAKTOREN ENTDECKT
+EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN
+https://www.youtube.com/watch?v=S9BEit71OvI&ab_channel=DanielaKeller-StatistikundBeratun .
+DATASET ACTIVATE DataSet1.
+FACTOR
+  /VARIABLES MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan IchbineinevertrauendePerson 
+    EsistbesseranderenLeuteersteinmalzuVertrauen EsistbesserFremdenzumisstrauenbismansiebesserkennt 
+    IchfindeleichtneueFreunde IchhabeetwasSchwierigkeitenLeutenzuvertrauen 
+    IchhabekeinVertraueninanderePersonen MeineErfahrungenhabenmirzeigenmirdassesbesseristande 
+    WennesumPersonengehtdieichkenneglaubeichdiesen FastimmerglaubeichLeutenwassiemirerzählen
+  /MISSING LISTWISE 
+  /ANALYSIS MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan IchbineinevertrauendePerson 
+    EsistbesseranderenLeuteersteinmalzuVertrauen EsistbesserFremdenzumisstrauenbismansiebesserkennt 
+    IchfindeleichtneueFreunde IchhabeetwasSchwierigkeitenLeutenzuvertrauen 
+    IchhabekeinVertraueninanderePersonen MeineErfahrungenhabenmirzeigenmirdassesbesseristande 
+    WennesumPersonengehtdieichkenneglaubeichdiesen FastimmerglaubeichLeutenwassiemirerzählen
+  /PRINT UNIVARIATE INITIAL CORRELATION SIG KMO AIC EXTRACTION ROTATION
+  /FORMAT BLANK(0.3)
+  /PLOT EIGEN
+  /CRITERIA MINEIGEN(1) ITERATE(25)
+  /EXTRACTION PC
+  /CRITERIA ITERATE(25)
+  /ROTATION VARIMAX
+  /METHOD=CORRELATION.
+
+*T-TEST FÜR UNABHGÄNGIGE STICHPROBEN BEI COGNITIVE TRUST.. ES WIRD KEINE SIGNIFIKANZ FESTGESTELLT, COGNITIVE TRUST SCORE ÄNDERT SICH NICHT SIGNIFIKANT, OB IK ODER NON IK AVATAR GENUTZT WIRD
+ES WURDE WINSORIZING GENUTZT.
+
+T-TEST GROUPS=WiesahenihreMitspieleraus(2 1)
+  /MISSING=ANALYSIS
+  /VARIABLES=Cognitive_Trust_Winsorizing
+  /CRITERIA=CI(.95).
