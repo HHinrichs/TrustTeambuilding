@@ -5,55 +5,55 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-Repeated entry---line 763 of file bibfile.bib
+Repeated entry---line 777 of file bibfile.bib
  : @article{polzer2006extending
  :                             ,
 I'm skipping whatever remains of this entry
-Repeated entry---line 785 of file bibfile.bib
+Repeated entry---line 799 of file bibfile.bib
  : @article{mayer1995integrative
  :                              ,
 I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "]"
 Warning--can't use both volume and number fields in mehrabian1971silent
-You've used 84 entries,
+You've used 86 entries,
             2921 wiz_defined-function locations,
-            1110 strings with 19976 characters,
-and the built_in function-call counts, 370583 in all, are:
-= -- 60685
-> -- 4950
+            1121 strings with 20217 characters,
+and the built_in function-call counts, 374793 in all, are:
+= -- 61347
+> -- 4998
 < -- 4
-+ -- 29025
-- -- 1498
-* -- 32030
-:= -- 74280
-add.period$ -- 168
-call.type$ -- 84
-change.case$ -- 1166
-chr.to.int$ -- 84
-cite$ -- 85
-duplicate$ -- 1220
-empty$ -- 2575
-format.name$ -- 1820
-if$ -- 66590
++ -- 29315
+- -- 1512
+* -- 32346
+:= -- 75208
+add.period$ -- 172
+call.type$ -- 86
+change.case$ -- 1194
+chr.to.int$ -- 86
+cite$ -- 87
+duplicate$ -- 1238
+empty$ -- 2623
+format.name$ -- 1838
+if$ -- 67330
 int.to.chr$ -- 5
 int.to.str$ -- 0
 missing$ -- 91
-newline$ -- 341
-num.names$ -- 876
-pop$ -- 297
+newline$ -- 351
+num.names$ -- 896
+pop$ -- 312
 preamble$ -- 1
-purify$ -- 1260
+purify$ -- 1290
 quote$ -- 0
-skip$ -- 1132
+skip$ -- 1153
 stack$ -- 0
-substring$ -- 85615
+substring$ -- 86505
 swap$ -- 174
-text.length$ -- 1180
+text.length$ -- 1208
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 316
+type$ -- 324
 warning$ -- 1
-while$ -- 1855
+while$ -- 1897
 width$ -- 0
-write$ -- 1175
+write$ -- 1201
 (There were 2 error messages)

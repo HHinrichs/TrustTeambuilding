@@ -202,6 +202,11 @@ Handy, C.  \harvardyearleft 1995\harvardyearright .
 \newblock Trust and the virtual organization.
 \newline\harvardurl{https://hbr.org/1995/05/trust-and-the-virtual-organization}
 
+\harvarditem{Hart}{1980}{NASATLX}
+Hart, S.  \harvardyearleft 1980\harvardyearright .
+\newblock Nasa-tlx: Task load index.
+\newline\harvardurl{https://humansystems.arc.nasa.gov/groups/tlx/index.php}
+
 \harvarditem[Haslam et~al.]{Haslam, Haslam, Ellemers, Van~Knippenberg
   \harvardand\ Platow}{2003}{haslam2003social}
 Haslam, S.~A., Haslam, S.~A., Ellemers, N., Van~Knippenberg, D. \harvardand\
@@ -524,6 +529,11 @@ Witmer, B.~G. \harvardand\ Singer, M.~J.  \harvardyearleft
   1998\harvardyearright .
 \newblock Measuring presence in virtual environments: A presence questionnaire,
   {\em Presence} {\bf 7}(3):~225--240.
+
+\harvarditem{www.igroup.org}{n.d.}{IPQ}
+www.igroup.org  \harvardyearleft n.d.\harvardyearright .
+\newblock igroup presence questionnaire (ipq) overview.
+\newline\harvardurl{http://www.igroup.org/pq/ipq/index.php}
 
 \harvarditem[Zenun et~al.]{Zenun, Loureiro \harvardand\
   Araujo}{2007}{zenun2007effects}
