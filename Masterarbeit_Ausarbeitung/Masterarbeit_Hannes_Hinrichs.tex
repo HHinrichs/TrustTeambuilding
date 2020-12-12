@@ -1,5 +1,15 @@
 \documentclass[a4paper,11pt]{article}%Schriftgröße
 
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{rotating}
+\newcommand\tabrotate[1]{\begin{turn}{90}\rlap{#1}\end{turn}}
+\usepackage{varwidth}
+\newcommand\tabvarwidth[2][3cm]{\begin{varwidth}[b]{#1}\centering #2\end{varwidth}}
+
+
+\usepackage{amsmath}
+
 \usepackage[T1]{fontenc} 
 \usepackage[utf8]{inputenc}
 \usepackage[ngerman]{babel}%Veröffentlichungssprache
@@ -301,7 +311,7 @@ Bente, Rüggenberg und Krämer gehen davon aus, dass dies mit der Neuheit der Te
 			
 \subsubsection{Repräsentationen von Avataren}
 
-Das Menschliche Gehirn ist in der Lage, computergenerierte Darstellungen in \flqq Lebend und Nicht-Lebend \frqq zu kategorisieren. Einige Forschungen gehen davon aus, dass das menschliche Gehirn semantische Unterschiede im zusammenhang mit der Social-Presence feststellen kann. So kann eine menschenähnliche Form als biologisch oder nicht-Lebend erkannt werden. 
+Das Menschliche Gehirn ist in der Lage, computergenerierte Darstellungen in \flqq Lebend und Nicht-Lebend\frqq zu kategorisieren. Einige Forschungen gehen davon aus, dass das menschliche Gehirn semantische Unterschiede im zusammenhang mit der Social-Presence feststellen kann. So kann eine menschenähnliche Form als biologisch oder nicht-Lebend erkannt werden. 
 
 	\begin{figure}[H]
 		\begin{footnotesize}
@@ -613,7 +623,7 @@ Bevor der Versuch stattfinden konnte, mussten die Probanten einen Demographie-Fr
 
 			\paragraph{Generalized-Trust-Scale}
 Der Generalized-Trust-Scale entwickelt von Couch, Adams und Jones \citep{couch1996assessment} wurde eingesetzt um das generelle Vertrauen der einzelnen Probanten zu messen.
-Dieser Fragebogen besteht aus 20 Fragen. Diese sind Beispielsweise \flqq Ich neige dazu, andere zu akzeptieren \frqq oder \flqq Meine Beziehungen zu anderen werden durch Vertrauen und Akzeptanz charakterisiert \frqq und wurden auf einer 7-Point-Likert-Scale von \flqq 1: Ich stimme gar nicht zu \frqq bis zu \flqq 7 : Ich stimme voll zu \frqq gemessen. Der Generalized-Trust-Scale ist nur ein Teilauszug des \flqq Trust-Inventory von Couch \frqq, welches noch einen \flqq Partner-Trust-Scale \frqq beinhaltet. Dieser wurde für diese Forschung jedoch nicht benötigt. 
+Dieser Fragebogen besteht aus 20 Fragen. Diese sind Beispielsweise \flqq Ich neige dazu, andere zu akzeptieren \frqq oder\flqq Meine Beziehungen zu anderen werden durch Vertrauen und Akzeptanz charakterisiert \frqq und wurden auf einer 7-Point-Likert-Scale von \flqq 1: Ich stimme gar nicht zu\frqq bis zu \flqq 7 : Ich stimme voll zu\frqq gemessen. Der Generalized-Trust-Scale ist nur ein Teilauszug des \flqq Trust-Inventory von Couch\frqq, welches noch einen \flqq Partner-Trust-Scale \frqq beinhaltet. Dieser wurde für diese Forschung jedoch nicht benötigt. 
 \\Ein Auszug des Generalized-Trust-Scale befindet sich in \textbf{Anhang \ref{Post-Questionnaire - Generelles Vertrauen}}
 
 %			
@@ -628,7 +638,7 @@ Dieser Fragebogen besteht aus 20 Fragen. Diese sind Beispielsweise \flqq Ich nei
 %\citep{couch1996assessment}
 
 			\paragraph{Cognitive-Trust-Scale}
-Der Cognitive-Trust-Scale ist ein Teilauszug des von McAllister und Daniel J. (1995) \citep[p.37]{mcallister1995affect} entwickeltem Fragebogen. Der Cognitive-Trust-Scale dient dazu, herauszufinden, wie viel Cognitives Vertrauen die Probanten während der Teambuildingmaßnahme aufgebaut haben. Dieser Teilauszug des Fragebogens umfasst 5 Fragen. Diese sind Beispielsweise \flqq Diese Person geht an ihre Arbeit mit Professionalität und Hingabe heran \frqq oder \flqq Andere Personen, die mit diesen Personen interagieren müssen, halten ihn/sie für vertrauenswürdig \frqq und wurden mittels eines 5-Point-Likert-Scale gemessen. Die Antwortmöglichkeiten des Likert-Scale erstrecken sich von \flqq 1: Ich stimme gar nicht zu \frqq bis zu \flqq 5 : Ich stimme voll zu \frqq. 
+Der Cognitive-Trust-Scale ist ein Teilauszug des von McAllister und Daniel J. (1995) \citep[p.37]{mcallister1995affect} entwickeltem Fragebogen. Der Cognitive-Trust-Scale dient dazu, herauszufinden, wie viel Cognitives Vertrauen die Probanten während der Teambuildingmaßnahme aufgebaut haben. Dieser Teilauszug des Fragebogens umfasst 5 Fragen. Diese sind Beispielsweise \flqq Diese Person geht an ihre Arbeit mit Professionalität und Hingabe heran \frqq oder\flqq Andere Personen, die mit diesen Personen interagieren müssen, halten ihn/sie für vertrauenswürdig und wurden mittels eines 5-Point-Likert-Scale gemessen. Die Antwortmöglichkeiten des Likert-Scale erstrecken sich von \flqq 1: Ich stimme gar nicht zu \frqq bis zu\flqq 5 : Ich stimme voll zu. 
 \\Ein Auszug des Cognitive-Trust-Scale befindet sich in \textbf{Anhang \ref{Post-Questionnaire - Kognitives Vertrauen}}
 
   
@@ -637,7 +647,7 @@ Der Cognitive-Trust-Scale ist ein Teilauszug des von McAllister und Daniel J. (1
 %\citep{mcallister1995affect}
 
 			\paragraph{Communication-Scale}
-Gonzales-Rom, Vincente und Hernandez \citep[p.1049]{gonzalez2014climate}entwickelten 2004 einen Fragebogen um die Teamkommunikations Qualität zu messen. Dieser Fragebogen umfasst 5 Fragen und wurden mit einem 5-Point-Likert-Scale von \flqq 1:Gar nicht \frqq bis \flqq 5:Sehr \frqq. Die Fragen sind alle nach dem selben Prinzip aufgebaut und es wurde jeweils nur das Ende einer Frage abgeändert : \flqq In welchem Umfang war die Kommunikation zwischen Ihnen und Ihrem Team KLAR/EFFEKTIV/ABGESCHLOSSEN/FLÜSSIG/ZUM RICHTIGEN ZEITPUNKT/? \frqq 
+Gonzales-Rom, Vincente und Hernandez \citep[p.1049]{gonzalez2014climate}entwickelten 2004 einen Fragebogen um die Teamkommunikations Qualität zu messen. Dieser Fragebogen umfasst 5 Fragen und wurden mit einem 5-Point-Likert-Scale von \flqq 1:Gar nicht\frqq bis \flqq 5:Sehr\frqq. Die Fragen sind alle nach dem selben Prinzip aufgebaut und es wurde jeweils nur das Ende einer Frage abgeändert : \flqq In welchem Umfang war die Kommunikation zwischen Ihnen und Ihrem Team KLAR/EFFEKTIV/ABGESCHLOSSEN/FLÜSSIG/ZUM RICHTIGEN ZEITPUNKT/?\frqq 
 \\Ein Auszug des Communication-Scale befindet sich in \textbf{Anhang \ref{Post-Questionnaire - Teamkommunikation}}
 %			After the experimental portion was completed, participants completed another set of measures. First, participants completed the Communication Quality Scale developed by Gonzalez-Roma & Hernandez 2014. This scale contains 5 items that assess participants perceptions of their teams communication quality, rated on a 1 to 5 scale. The full measure is available in Appendix D
 %\citep[p.1049]{gonzalez2014climate}
@@ -674,7 +684,7 @@ Der Co-Präsenz-Fragebogen dient dazu die Selbst gemeldete Co-Präsenz, die wahr
 \clearpage
 
 \begin{table}
-\centering
+ \centering\footnotesize\setstretch{1}\linespread{1.5}\rmfamily
 \caption{Verwendete Metriken des Fragbogens}
 \begin{tabular}{ |p{3.5cm}|p{3.5cm}|p{3.5cm}|p{3.5cm}| }
 
@@ -702,10 +712,11 @@ Der Co-Präsenz-Fragebogen dient dazu die Selbst gemeldete Co-Präsenz, die wahr
 
 \hline
 \textbf{Räumliche Präsenz \newline \newline
-	Umschlossenheits-gefühl der \ac{vr} \newline \newline
+	Umschlossenheitsgefühl der \ac{vr} \newline \newline
 	Erfahrener Realismus 
 } & Der IPQ dient zu Messung des Präsenzgefühls in einer virtuellen Umgebung & \textit{Igroup Presence Questionnaire(IPQ)} &  \cite{IPQ}\\
 \hline
+
 
 \hline
 \textbf{Selbst gemeldete Co-Präsenz \newline \newline
@@ -727,6 +738,137 @@ Es wurden zwei Fragenbögen an die jeweiligen Studienteilnehmer verteilt. Der er
 				Durch die Beobachtung während des Experiments werden Kennzahlen zur Dauer des Versuchs zwischen den einzelnen Konditionen bestimmt. Anhand dieser kann im späterem Verlauf das  Teambuilding Potential sowie die subjektive Effektivität durch gesteigertem Swift-Trust analysiert werden.
 				\paragraph{Induktive Quantitative Forschungsmethodik}
 				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas "Vertrauen" wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet wurden.
+
+
+\begin{table}
+ \centering\footnotesize\setstretch{0.8}
+\caption{Verwendete Metriken des Fragbogens}
+\begin{tabular}{ p{3.5cm} p{3.5cm} p{3.5cm} }
+
+\underline{Fragebogen-Skala} &  & \underline{Werte}\\
+    
+    \hline
+\multirow{3}{3.5cm}{Generalized-Trust-Scale}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{Cognitive-Trust-Scale}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{Team-Kommunikation}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{Communication-Quality-Scale}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{NASA-TLX}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{Igroup Presence Questionnaire(IPQ)}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{Selbst gemeldete Co-Präsenz}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+    
+    \hline
+\multirow{3}{3.5cm}{die wahrgenommene Präsenz des \flqq anderen\frqq}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+
+    \hline
+\multirow{3}{3.5cm}{Telepräsenz}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+
+    \hline
+\multirow{3}{3.5cm}{Social-Präsenz}
+	&Anzahl der Fragen im original Fragebogen (Bereinigter Fragebogen) \newline & B\\
+    &\textit{n} \newline &Y\\
+    &$\alpha$ (bereinigtes $\alpha$) & Z\\
+
+\end{tabular}
+\end{table}
+
+\paragraph{Bereinigte Fragen}
+
+Generalized-Trust-Scale
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Cognitive-Trust-Scale
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Team-Kommunikation
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Communication-Quality-Scale
+\begin{itemize}
+	\item 
+\end{itemize}
+
+NASA-TLX
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Igroup Presence Questionnaire(IPQ)
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Selbst gemeldete Co-Präsenz
+\begin{itemize}
+	\item 
+\end{itemize}
+
+die wahrgenommene Präsenz des \flqq anderen\frqq
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Telepräsenz
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Social Präsenz
+\begin{itemize}
+	\item 
+\end{itemize}
+
+Generalized-Trust-Scale
+\begin{itemize}
+	\item 
+\end{itemize}
+
+
+
 		
 \subsection{Unabhängige Variablen}
 Als unabhängige Variablen wurden der \flqq IK-Avatar\frqq sowie der \flqq Non-IK-Avatar\frqq gewählt. Durch diese  unabhängigen Variablen wurde im weiterem Versuchsverlauf versucht den Einfluss auf die abhängigen Variablen zu bestimmen.
@@ -767,7 +909,7 @@ Jeder Probant bekam einen zufälligen Zeitslot sowie ein anonymen Namen zugeordn
 			\item 20 Minuten Versuchsdurchführung
 			\item 15 Minuten Post-Questionnaire
 		\end{itemize}
-		Jeder Teilnehmer bekam zu beginn seines Zeitslots einen Pre-Questionnaire ausgehändigt, den dieser selbstständig ausfüllen sollte. In diesem wurden Fragen über die \flqq Person\frqq, über eventuelle \flqq Gesundheitliche Beschwerden \frqq sowie schon vorhandene \flqq \ac{vr}-Erfahrung\frqq, gestellt.
+		Jeder Teilnehmer bekam zu beginn seines Zeitslots einen Pre-Questionnaire ausgehändigt, den dieser selbstständig ausfüllen sollte. In diesem wurden Fragen über die \flqq Person\frqq, über eventuelle \flqq Gesundheitliche Beschwerden\frqq sowie schon vorhandene \flqq \ac{vr}-Erfahrung\frqq, gestellt.
 		Dieser wurde von \textbf{ANZAHL DER PERSONEN} Personen ausgefüllt. \textbf{Da nicht alle Fragebögen vollständig ausgefüllt wurden, konnten nur X Ergebnisse in die Analyse mit eingezogen werden.}
 		Nachdem alle Probanten den Pre-Questionnaire ausgefüllt hatten, begann das Experiment. Dazu loggte sich das jeweilige Team in das \ac{sve} ein und spielten den Versuch durch.
 		Während der Versuchsdurchführung wurden Notizen zum Verhalten der einzelnen Personen gemacht um herauszufinden, ob beispielsweise ein Probant die Teamleaderrolle übernahm, in welchem Maß interpersonelle Kommunikation stattfand oder wie die Teilnehmer auf die jeweiligen Avatare reagierten.
@@ -813,7 +955,7 @@ Das Ziel war es nun, so viele Symbole wie möglich gemeinsam korrekt zu bearbeit
 
 	\subsection{Die Avatare}
 Die Avatare im \ac{sve} wurden als \flqq IK-Avatar\frqq und \flqq Non-IK-Avatar\frqq implementiert.
-Für beide Avatararten wurde die neutrale Farbe Schwarz gewählt. Die Probanten hatten keinen Einfluss auf die Farbwahl ihres eigenen Avatars. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile des Mitspielers aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \flqq IK-Avatar\frqq oder \flqq Non-IK-Avatar \frqq bekam jeder Probant das Selbe aussehen des Avatars zugeordnet. Der eigene Avatar ist nicht für die Mitspieler sichtbar. Zur besseren Interaktion mit den Knöpfen sowie zur höheren Immersion, wurde der eigene Avatar nicht sichtbar für den Probanten dargestellt. Jeder Probant, unabhängig der zugewiesenen Kondition sah somit nur eine Repräsentation von menschlich wirkenden Händen.
+Für beide Avatararten wurde die neutrale Farbe Schwarz gewählt. Die Probanten hatten keinen Einfluss auf die Farbwahl ihres eigenen Avatars. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile des Mitspielers aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \flqq IK-Avatar\frqq oder \flqq Non-IK-Avatar\frqq bekam jeder Probant das Selbe aussehen des Avatars zugeordnet. Der eigene Avatar ist nicht für die Mitspieler sichtbar. Zur besseren Interaktion mit den Knöpfen sowie zur höheren Immersion, wurde der eigene Avatar nicht sichtbar für den Probanten dargestellt. Jeder Probant, unabhängig der zugewiesenen Kondition sah somit nur eine Repräsentation von menschlich wirkenden Händen.
 
 	\begin{figure}[H]
 		\begin{footnotesize}
