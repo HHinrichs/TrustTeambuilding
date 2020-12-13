@@ -6,54 +6,32 @@ https://statistikguru.de/spss/produkt-moment-korrelation/mit-ausreissern-umgehen
 *CHRONBACHS ALPHA FÜR GENERAL TRUST SCORE
 EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN.
 
-RELIABILITY
-  /VARIABLES=Ichneigedazuanderezuakzeptieren Ichakzeptiereanderesowiesiesind 
-    MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan IchbineinevertrauendePerson 
-    EsistbesseranderenLeuteersteinmalzuVertrauen DiemeistenMenschensindvertrauenswürdig 
-    IchfindeleichtneueFreunde Ichwürdeeingestehenmehralseinbisschenparanoidgegenüber 
-    Ichfindeesbesseranderefürdaszuakzeptierenwassiesage IchhabevielVertrauenindieMenschendieichkenne 
-    SelbstinschlechtenZeitendenkeichdassamEndeallesgutwi IchneigedazuanderebeimWortzunehmen 
-    WennesumPersonengehtdieichkenneglaubeichdiesen 
-    IchglaubedassichmichaufdiemeistenMenschenverlassenkan FastimmerglaubeichLeutenwassiemirerzählen
-  /SCALE('ALL VARIABLES') ALL
-  /MODEL=ALPHA
-  /STATISTICS=DESCRIPTIVE SCALE CORR
-  /SUMMARY=TOTAL.
-
-
-*CHRONBACHS ALPHA FÜR COGNITIVE TRUST SCORE
-EINIGE ITEMS WURDEN NUN WEGGELASSEN UM DEN FRAGEBOGEN IN SICH KONSESTENZ ZU GESTALTEN. DIESE NENNEN.
-
-RELIABILITY
-  /VARIABLES=DiesePersonGehtAnIhreArbeitMitProfessionalität 
-    AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen 
-    AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen 
-    DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde 
-    IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit
-  /SCALE('ALL VARIABLES') ALL
-  /MODEL=ALPHA
-  /STATISTICS=DESCRIPTIVE SCALE CORR
-  /SUMMARY=TOTAL.
 
 * GeneralTrustScore ------------------------------------------------------------------------------.
 DATASET ACTIVATE DataSet1.
-COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren, Ichakzeptiereanderesowiesiesind, 
-    MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan, IchbineinevertrauendePerson, 
-    EsistbesseranderenLeuteersteinmalzuVertrauen, DiemeistenMenschensindvertrauenswürdig, 
-    IchfindeleichtneueFreunde, Ichwürdeeingestehenmehralseinbisschenparanoidgegenüber, 
-    Ichfindeesbesseranderefürdaszuakzeptierenwassiesage, IchhabevielVertrauenindieMenschendieichkenne, 
-    SelbstinschlechtenZeitendenkeichdassamEndeallesgutwi, IchneigedazuanderebeimWortzunehmen, 
-    WennesumPersonengehtdieichkenneglaubeichdiesen, 
-    IchglaubedassichmichaufdiemeistenMenschenverlassenkan, FastimmerglaubeichLeutenwassiemirerzählen).
+COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren ,
+  Ichakzeptiereanderesowiesiesind ,
+    MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan ,
+    IchbineinevertrauendePerson ,
+    EsistbesseranderenLeuteersteinmalzuVertrauen ,
+    DiemeistenMenschensindvertrauenswürdig ,
+    IchfindeleichtneueFreunde ,
+    Ichwürdeeingestehenmehralseinbisschenparanoidgegenüber  ,
+    Ichfindeesbesseranderefürdaszuakzeptierenwassiesage ,
+    IchhabevielVertrauenindieMenschendieichkenne  ,
+    WennesumPersonengehtdieichkenneglaubeichdiesen ,
+    IchglaubedassichmichaufdiemeistenMenschenverlassenkan ,
+    FastimmerglaubeichLeutenwassiemirerzählen).
 VARIABLE LABELS  General_Trust 'General_Trust_Score'.
 EXECUTE.
 
 *COGNITIVE TRUST SCORE ------------------------------------------------------------------------------.
-COMPUTE Cognitive_Trust=Mean(DiesePersonGehtAnIhreArbeitMitProfessionalität, 
-    AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen, 
-    AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen, 
-    DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde, 
-    IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit).
+DATASET ACTIVATE DataSet1.
+COMPUTE Cognitive_Trust=Mean(DiesePersonGehtAnIhreArbeitMitProfessionalität ,
+    AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen ,
+    AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen ,
+    DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde ,
+    IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit ).
 VARIABLE LABELS  Cognitive_Trust 'Cognitive_Trust_Score'.
 EXECUTE.
 
@@ -65,8 +43,10 @@ EXECUTE.
 
 *Team Effectiveness --------------------------------------------------------------------------.
 DATASET ACTIVATE DataSet1.
-COMPUTE TEAM_EFFECTIVENESS=Mean(MeinTeamhateinegeringeFehlerquote to 
-    MeinTeammussihreArbeitsqualitätverbessern).
+COMPUTE TEAM_EFFECTIVENESS=Mean(MeinTeamhateinegeringeFehlerquote,
+     MeinTeamproduziertdurchgehendhochwertigeErgebnisse,
+    MeinTeamhateinehoheQualität,
+     MeinTeamistdurchgehendfehlerfrei).
 EXECUTE.
 
 DESCRIPTIVES VARIABLES=TEAM_EFFECTIVENESS
@@ -82,22 +62,62 @@ EXECUTE.
 DESCRIPTIVES VARIABLES=TEAM_COMMUNICATION
  /STATISTICS=MEAN STDDEV MIN MAX.
 
+*NASA TLX---------------------------.
+DATASET ACTIVATE DataSet1.
+COMPUTE PRAESENZ=Mean(WievielgeistigeAnstrengungwarbeiderInformationsaufnahmeu,
+    WievielkörperlicheAktivitätwarerforderlichz.B.ZiehenDr,
+    WievielZeitdruckempfandenSiehinsichtlichderHäufigkeitode,
+    WiehartmusstensiearbeitenumIhrenGradanAufgabenerfüllun,
+    Wieunsicherentmutigtirritiertgestresstundverärgertver).
+EXECUTE.
 
 *PRÄSENZ ----------------------------------------------------------------------------------------------------
 Nowak and Biocca, 2003.
-COMPUTE PRÄSENZ=Mean(IchwolltekeineengereBeziehungmitmeinenInteraktionspartner to 
+COMPUTE COPRAESENZ=Mean(  
+    IchwolltedieKonversationvertrautermachen,
+    IchversuchteeinegewisseNähezwischenunszuerzeugen,
+    IchwardaraninteressiertmitmeinenInteraktionspartnernzur,
+    MeineInteraktionspartnerwarenstarkinunsererInteraktioninv,
+    MeineInteraktionspartnerfandendieInteraktionenanregend,
+    MeineInteraktionspartnerschienenlosgelöstwährendderInterak,
+    MeineInteraktionspartnerwarenunwilligpersönlicheInformation,
+    MeineInteraktionspartnermachtendenAnscheindassunsererKon,
+    MeinInteraktionspartnerschufeinegewisseDistanzzwischenuns,
+    MeineInteraktionspartnererstellteneinegewisseNähezwischen,
+    MeineInteraktionspartnerschienengelangweiltdurchunsereKonv,
+    MeineInteraktionspartnerwareninteressiertdaranmitmirzusp,
+    MeineInteraktionspartnerzeigtenBegeisterungwährendersiem,
+    WieintensivwardieErfahrung,
+    InwiefernfühltenSiesichalswärenSieinderdargestelltenU,
+    InwiefernfühltenSiesichindiedargestellteUmgebunghineinve,
+    InwiefernfühltenSiesichvonderdargestelltenUmgebungumschl,
+    InwiefernkonntenSieabschätzenwieIhrPartneraufdasreagie,
+    WiesehrkonntenSiedieReaktiondesGegenüberabschätzen,
+    WiesehrwardaseineBegegnungvonAngesichtzuAngesicht,
+    WiesehrhabenSiesichmitihremPartnerimselbenRaumgefühlt,
+    InwelchemAusmaßschienihrPartnerreal,
+    WiewahrscheinlichistesdassSiediesesInteraktionssystemnu,
     WiegutkönntenSiejemandenkennenlernendenSienurüberdas).
 EXECUTE.
 
- DESCRIPTIVES VARIABLES=PRÄSENZ
+ DESCRIPTIVES VARIABLES=COPRAESENZ
  /STATISTICS=MEAN STDDEV MIN MAX.
 
 
-*IPQ.EMMERSION -----------------------------------------------------------------------
+*IPQ.EMMERSION (PRESENCE) -----------------------------------------------------------------------
 *THE HIGHER THE MORE EMMERSIVE.
 DATASET ACTIVATE DataSet1.
-COMPUTE IPQ=Mean(IchhattenichtdasGefühlindemvirtuellenRaumzusein to 
-    IchachtetenochaufdierealeUmgebung).
+COMPUTE IPQ=Mean(IchhattenichtdasGefühlindemvirtuellenRaumzusein ,
+    WiesehrglichIhrErlebendervirtuellenUmgebungdemErlebene ,
+    IchhattedasGefühlindemvirtuellenRaumzuhandelnstattet  ,
+    IchhattedasGefühldassdievirtuelleUmgebunghintermirwei  ,
+    WiebewusstwarIhnendierealeWeltwährendSiesichdurchdie ,
+    MeineAufmerksamkeitwarvondervirtuellenWeltvölliginBann ,
+    DievirtuelleWelterschienmirwirklicheralsdierealeWelt ,
+    WierealerschienIhnendievirtuelleWelt ,
+    MeinerealeUmgebungwarmirnichtmehrbewusst ,
+    IndervomComputererzeugtenWelthatteichdenEindruckdort ,
+    IchfühltemichimvirtuellenRaumanwesend ).
 EXECUTE.
 
  DESCRIPTIVES VARIABLES=IPQ
