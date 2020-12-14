@@ -6,7 +6,7 @@
 \newcommand\tabrotate[1]{\begin{turn}{90}\rlap{#1}\end{turn}}
 \usepackage{varwidth}
 \newcommand\tabvarwidth[2][3cm]{\begin{varwidth}[b]{#1}\centering #2\end{varwidth}}
-
+\usepackage{tabularx}
 
 \usepackage{amsmath}
 
@@ -997,22 +997,30 @@ Mittels einer weiteren Likert-Skala von 1-7 (1 = wenig, 7= sehr viel) wurde dana
 		\subsection {Gesammelte Daten}
 	
 		\subsection{Analyse}
-		
-\newpage
-\begin{center}
 
-\begin{table}
+Die folgende Abbildung zeigt eine diskriptive Statistik der Hauptvariablen des Experiments.
+\newpage
+\begin{table}[htb]
 	\caption{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
 	\label{VariableBreakdown}
-	\begin{tabular}{l c c c r}
-		\underline{Was wurde gemessen?} & \underline{Variablenbeschreibung} & \underline{Mittelwert} & \underline{Std. Abweichung} & \underline{N} \\
+	\begin{tabularx}{\textwidth}{p{3cm} | p{3.5cm} p{1.5cm} p{2cm} p{2cm} p{2cm}} 
+		Was wurde gemessen? & Variablenbeschreibung & Min/Max &§ Mittelwert & Std. Abweichung & N \\
 		\hline \\
-		Genereller Hang zum Vertrauen &X & Y & Z & 1 \\ \\
-		Vertrauen in das Team &X & Y & Z & 1 \\
-	\end{tabular}
+		Genereller Hang zum Vertrauen &\ac{gt} & $1/5$ & $5,1795$ & $.70857$ & $30$ \\ \\
+		Kognitives Vertrauen &\ac{ct} & $1/5$ & $4,2467$ & $.61629$ & $30$ \\ \\
+		Kognitives Vertrauen - IK &\ac{cti} & $1/5$ & $4,0133$ & $.0,66533$ & $15$ \\ \\
+		Kognitives Vertrauen - NON IK &\ac{ctn} & $1/5$ & $4,48$ & $.47689$ & $15$ \\ \\
+		Team-Effektivität &\ac{te} & $1/7$ & $4,9583$ & $1,40056$ & $30$ \\ \\
+		Team-Effektivität - IK &\ac{tei} & $1/7$ & $4,6$ & $1,63881$ & $15$ \\ \\
+		Team-Effektivität - NON IK &\ac{ten} & $1/7$ & $5,3167$ & $1,04994$ & $15$ \\ \\
+		NASA-TLX &\ac{tlx} & $1/21$ & $7,16$ & $2,83203$ & $30$ \\ \\
+		IPQ &IPQ & $1/7$ & $4,43$ & $.98339$ & $30$ \\ \\
+		Co-Präsenz &\ac{cp} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
+		Co-Präsenz - IK &\ac{cpi} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
+		Co-Präsenz - NON IK &\ac{cpn} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\
+		
+	\end{tabularx}
 \end{table}
-
-\end{center}
 
 
 
