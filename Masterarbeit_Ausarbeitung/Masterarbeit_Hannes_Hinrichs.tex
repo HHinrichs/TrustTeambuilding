@@ -1062,15 +1062,28 @@ Um diese Hypothese auf dem Individuellem-Level zu überprüfen, wurde eine Pears
 \centering
 		\begin{footnotesize}
 			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/pearson_korrelation_general_cognitive}\\
-			\includegraphics[scale=0.5]{Abbildungen/Post_QuestionnaireStatistiks/diagramm_pearson_korrelation_general_cognitive}\\
 			\caption{Pearson-Korrelation}
-			\label{fig:boxplot_cognitive_trust_ausreißer}
+			\label{fig:pearson_korrelation}
 		\end{footnotesize}
 	\end{figure}	
 
-Es ist eine positive Korrelation zwischen \ac{gt} und \ac{ct} mit dem Pearson-Korrelationskoeffizient ($r = .452$) vorhanden. Weiterhin ist das eine 2-Seitige Signifikanz mit ($p = .012 < \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, unsere \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{(Hypothese 1 / H$_{1}$)} anzunehmen.
+Es ist eine Signifikant positive Korrelation mittlerem Effektes mit dem Pearson-Korrelationskoeffizient ($r = .452$) zwischen \ac{gt} und \ac{ct} vorhanden. Weiterhin ist das eine 2-Seitige Signifikanz mit ($p = .012 < \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, unsere \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{(Hypothese 1 / H$_{1}$)} anzunehmen.
 
-\textbf{Hier noch Regressionsanalyse durchführen!}
+Um nun die gerichtete Annahme der positiven Auswirkung des \ac{gt} auf den \ac{ct} zu bestätigen, wurde eine Regressionsanalyse durchgeführt.
+
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/regression_gt_ct_modell}\\
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/regression_gt_ct_anova}\\
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/regression_gt_ct_koeffizienten}\\
+			\includegraphics[scale=0.5]{Abbildungen/Post_QuestionnaireStatistiks/diagramm_regression_gt_ct}\\
+			\caption{Pearson-Korrelation}
+			\label{fig:regressionsanalyse}
+		\end{footnotesize}
+	\end{figure}	
+
+Es ist zu erkennen, dass ($R-Quadrat = .205$) beträgt. Somit lassen sich $20,5\%$ unserer \ac{ct} durch den \ac{gt} erklären. Weiterhin ist das Ergebnis der ANOVA ($p = .012 < \alpha = 0.05$) und es lässt sich \textit{(Hypothese 1 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) verwerfen.
 \newpage
 \paragraph{Hypothese 2}
 H$_{0}$ : Ein Torso, Head und Hand getrackter Avatar (IK) hat \textbf{keinen Einfluss} auf den Cognitiven-Trust-Score.\\
@@ -1111,7 +1124,7 @@ Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer
 	\caption{Kognitive-Vertrauenswerte - Individuell und pro Team zusammengefasst}
 	\label{VariableBreakdown}
 	\begin{tabularx}{\textwidth}{r | p{2cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} } 
-		ID & Individueller-Kognitiver Vertrauenswert & Kondition & Rounds Done & Neue ID & Summe Ind.Kog.Vert.\\
+		ID & Individueller-Kognitiver Vertrauenswert & Kondition & Erfolgreich abgeschlossene Runden & Team ID & Summe \ac{ct}\\
 		\hline 
 		1 & $2,00$ & 1 & 4 & Team 1 & $11,00$\\
 		2 & $4,60$ & 1 & 4 & &\\
@@ -1155,15 +1168,117 @@ Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer
 	\end{tabularx}
 \end{table}
 
+Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen Kognitiven Vertrauenswerte des Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .161 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .109 > \alpha = 0.05$) Normalverteilt.
+
+Nun wird eine Pearson-Korrelation zwischen den kognitiven Vertrauenswerten des Teams und den erfolgreich abgeschlossenen Runden durchgeführt und in die unabhängigen Variablen \ac{ik} und \ac{nik} aufgeteilt.
+
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/H3_IK_Korrelation_Pearson}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/H3_NIK_Korrelation_Pearson}
+			\caption{Pearson-Korrelation zwischen den einzelnen Teams und dem \ac{te}}
+			\label{fig:Pearson_ik_nik_h3}
+		\end{footnotesize}
+	\end{figure}	
+
+Es ist eine Korrelation mittlerem Effektes ($r = .268$) zwischen \ac{cti} und \ac{tei} mit dem Merkmal \ac{ik} vorhanden. Diese Korrelation ist nicht statistisch Signifikant ($p = .286 > \alpha = 0.05$)
+Es ist eine Korrelation starken Effektes ($r = .801$) zwischen \ac{ctn} und \ac{ten} mit dem Merkmal \ac{nik} vorhanden. Diese Korrelation ist ebenfalls nicht statistisch Signifikant ($p = .103 > \alpha = 0.05$).
+Die Hypothese \textit{(Hypothese 3 / H$_{1}$)} kann somit nicht angenommen werden.
 
 \newpage
 \paragraph{Hypothese 4}
 H$_{0}$ : Ein Torso, Head und Hand getrackter Avatar hat \textbf{keinen Einfluss} auf die Team-Effektivität.\\
+Wie in \textit{Hypothese 3} beschrieben, sind Team-Effektivität der einzelnen Gruppen Normalverteilt.
+Um die Hypothese 4 auszuwerten, wird ein T-Test bei unabhängigen Stichproben mit den unabhängigen Variablen \ac{ik} sowie \ac{nik} durchgeführt.
+
+Der T-Test zeigt in der Gruppenstatistik keine Abweichung vom Mittelwert ($\bar{x} = 9$)für die unabhängigen Variablen \ac{ik} sowie \ac{nik}. Dies Spiegelt sich ebenfalls im T-Wert ($T = .000$) wieder. Die Varianzen sind mit ($\sigma^{2} = .126$) und damit unterschiedlich. Das Ergebnis ist jedoch statistisch nicht Signifikant. ($ T = .000 ; p = .286 > \alpha = 0.05$) und Alternativhypothese $H_{1}$ kann nicht angenommen werden.
+
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h4_ttest}
+			\includegraphics[scale=0.5]{Abbildungen/Post_QuestionnaireStatistiks/h4_ttest2}
+			\caption{T-Test für unabhängige Stichproben der Team-Effektivität mit den unabhängigen Variablen \ac{ik} sowie \ac{nik}}
+			\label{fig:h4_ttest}
+		\end{footnotesize}
+	\end{figure}	
+	
 
 \newpage
 \paragraph{Hypothese 5}
-H$_{0}$ : Teams, mit einem General-Trust-Score erzielen \textbf{keine höhere Team-Effektivität} als die mit einem niedrigen General-Trust-Score.\\
+H$_{0}$ : Teams, mit einem hohem General-Trust-Score erzielen \textbf{keine höhere Team-Effektivität} als die mit einem niedrigen General-Trust-Score.\\
+Um die Hypothese 5 auszuwerten, wird wie in Hypothese eine Korrelation durchgeführt. Jedoch wird der 
+zusammenhang zwischen \ac{gti} sowie \ac{gtn} und \ac{tei} sowie \ac{ten} analysiert. Dafür muss wieder eine Tabelle aufgestellt werden, welche die Summe der individuellen Personen im Team zu einem generellen Vertrauenswert des Teams zusammenfasst.
 
+\begin{table}[H]
+	\caption{Kognitive-Vertrauenswerte - Individuell und pro Team zusammengefasst}
+	\label{VariableBreakdown}
+	\begin{tabularx}{\textwidth}{r | p{2cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} } 
+		ID & Individueller genereller Vertrauenswert & Kondition & Erfolgreich abgeschlossene Runden & Team ID & Summe \ac{gt}\\
+		\hline 
+		1 & $4,92$ & 1 & 4 & Team 1 & $15,84$\\
+		2 & $4,77$ & 1 & 4 & &\\
+		3 & $6,15$ & 1 & 4 & & \\
+		\hline 
+		4 & $5,62$ & 1 & 10 & Team 2 & $14,62$\\
+		5 & $3,46$ & 1 & 10 & &\\
+		6 & $5,54$ & 1 & 10 & &\\
+		\hline 
+		7 & $5,92$ & 1 & 7 & Team 3 & $15,46$\\
+		8 & $4,31$ & 1 & 7 & & \\
+		9 & $5,23$ & 1 & 7 & & \\
+		\hline 
+		10 & $5,46$ & 1 & 11 & Team 4 & $14,84$ \\
+		11 & $4,46$ & 1 & 11 & & \\
+		12 & $4,92$ & 1 & 11 & & \\
+		\hline 
+		13 & $4,85$ & 1 & 13 & Team 5 & $14,23$ \\
+		14 & $5,46$ & 1 & 13 & & \\
+		15 & $3,92$ & 1 & 13 & & \\
+		\hline 
+		16 & $5,77$ & 2 & 9 & Team 6 & $17,00$ \\
+		17 & $5,85$ & 2 & 9 & &\\
+		18 & $5,38$ & 2 & 9 & &\\
+		\hline 
+		19 & $4,46$ & 2 & 12 & Team 7 & $15,46$ \\
+		20 & $4,77$ & 2 & 12 & & \\
+		21 & $6,23$ & 2 & 12 & & \\
+		\hline 
+		22 & $5,46$ & 2 & 8 & Team 8 & $15,23$ \\
+		23 & $4,62$ & 2 & 8 & & \\
+		24 & $5,15$ & 2 & 8 & & \\
+		\hline 
+		25 & $4,69$ & 2 & 7 & Team 9 & $16,92$ \\
+		26 & $6,08$ & 2 & 7 & & \\
+		27 & $6,15$ & 2 & 7 & & \\
+		\hline 
+		28 & $6,00$ & 2 & 9 & Team 10 & $15,76$ \\
+		29 & $5,38$ & 2 & 9 & &\\
+		30 & $4,38$ & 2 & 9 & & \\	
+	\end{tabularx}
+\end{table}
+
+Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der generellen Kognitiven Vertrauenswerte des Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .200 > \alpha = 0.05$) sowie die Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .161 > \alpha = 0.05$) Normalverteilt.
+
+Nun wird eine Pearson-Korrelation zwischen den generellen Vertrauenswerten des Teams und den erfolgreich abgeschlossenen Runden durchgeführt und in die unabhängigen Variablen \ac{ik} und \ac{nik} aufgeteilt.
+
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_gt_te_ik}
+			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_gt_te_nik}
+			\caption{Pearson-Korrelation zwischen den einzelnen Teams und dem \ac{te}}
+			\label{fig:Pearson_ik_nik_h3}
+		\end{footnotesize}
+	\end{figure}	
+
+Es ist eine negative Korrelation sehr starkem Effekt ($r = -.971$) zwischen \ac{gti} und \ac{tei} mit dem Merkmal \ac{ik} vorhanden. Diese Korrelation ist statistisch Signifikant ($p = .006 < \alpha = 0.05$)
+Es ist eine negative Korrelation mittlerem Effekt ($r = -.433$) zwischen \ac{gtn} und \ac{ten} mit dem Merkmal \ac{nik} vorhanden. Diese Korrelation ist nicht statistisch Signifikant ($p = .467 > \alpha = 0.05$).
+Die Hypothese \textit{(Hypothese 3 / H$_{1}$)} kann somit nicht angenommen werden.
+
+\section{Berechnung der Werte für die Auswertung}
+Bspw. Wie wurde CT oder GT etc. berechnet?
 \newpage
 
 \clearpage

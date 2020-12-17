@@ -1,0 +1,9 @@
+﻿* Encoding: UTF-8.
+DATASET ACTIVATE DataSet1.
+SPLIT FILE OFF.
+
+T-TEST GROUPS=Merkmal(1 2)
+  /MISSING=ANALYSIS
+  /VARIABLES=RoundsDone
+  /CRITERIA=CI(.95).
+
