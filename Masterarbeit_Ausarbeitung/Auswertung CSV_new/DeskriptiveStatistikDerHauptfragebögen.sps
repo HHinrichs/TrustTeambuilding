@@ -5,7 +5,7 @@
 ----------------------------------------------------------------------.
 
 DATASET ACTIVATE DataSet1.
-COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren ,
+COMPUTE GENERAL_TRUST_SCORE=Mean(Ichneigedazuanderezuakzeptieren ,
   Ichakzeptiereanderesowiesiesind ,
     MeineBeziehungenzuanderenwerdendurchVertrauenundAkzeptan ,
     IchbineinevertrauendePerson ,
@@ -18,13 +18,13 @@ COMPUTE General_Trust=Mean(Ichneigedazuanderezuakzeptieren ,
     WennesumPersonengehtdieichkenneglaubeichdiesen ,
     IchglaubedassichmichaufdiemeistenMenschenverlassenkan ,
     FastimmerglaubeichLeutenwassiemirerzählen).
-VARIABLE LABELS  General_Trust 'General_Trust_Score'.
+VARIABLE LABELS  GENERAL_TRUST_SCORE 'GENERAL_TRUST_SCORE'.
 EXECUTE.
 
 DATASET ACTIVATE DataSet1.
 SPLIT FILE OFF.
 
-DESCRIPTIVES VARIABLES=General_Trust
+DESCRIPTIVES VARIABLES=GENERAL_TRUST_SCORE
   /STATISTICS=MEAN STDDEV MIN MAX.
 
 *COGNITIVE TRUST SCORE MIT DESKRIPTIVER STATISTIK ----------------------------------------------------------------------
@@ -33,24 +33,24 @@ DESCRIPTIVES VARIABLES=General_Trust
 ----------------------------------------------------------------------.
 
 DATASET ACTIVATE DataSet1.
-COMPUTE Cognitive_Trust=Mean(DiesePersonGehtAnIhreArbeitMitProfessionalität ,
+COMPUTE COGNITIVE_TRUST_SCORE=Mean(DiesePersonGehtAnIhreArbeitMitProfessionalität ,
     AndereMitarbeiterDieMitDiesenPersonenInteragierenMüssen ,
     AngesichtsDerErfolgsbilanzDieserPersonSeheIchKeinen ,
     DieMeistenMenschenAuchDiejenigenDieKeineEndenFreunde ,
     IchKannMichDaraufVerlassenDassDiesePerosnenMeineArbeit ).
-VARIABLE LABELS  Cognitive_Trust 'Cognitive_Trust_Score'.
+VARIABLE LABELS  COGNITIVE_TRUST_SCORE 'COGNITIVE_TRUST_SCORE'.
 EXECUTE.
 
 DATASET ACTIVATE DataSet1.
 SPLIT FILE OFF.
 
-DESCRIPTIVES VARIABLES=Cognitive_Trust
+DESCRIPTIVES VARIABLES=COGNITIVE_TRUST_SCORE
   /STATISTICS=MEAN STDDEV MIN MAX.
 
 SORT CASES  BY WiesahenihreMitspieleraus.
 SPLIT FILE SEPARATE BY WiesahenihreMitspieleraus.
 
-DESCRIPTIVES VARIABLES=Cognitive_Trust
+DESCRIPTIVES VARIABLES=COGNITIVE_TRUST_SCORE
   /STATISTICS=MEAN STDDEV MIN MAX.
 
 *TEAM KOMMUNICATION MIT DESKRIPTIVER STATISTIK  ----------------------------------------------------------------------
@@ -60,10 +60,10 @@ DESCRIPTIVES VARIABLES=Cognitive_Trust
 *THE HIGHER THE BETTER.
 
 DATASET ACTIVATE DataSet1.
-COMPUTE TEAM_COMMUNICATION=Mean(InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_D
-    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_C
-    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_B
-    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_A
+COMPUTE TEAM_COMMUNICATION=Mean(InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_D,
+    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_C,
+    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_B,
+    InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem_A,
     InwelchemUmfangwardieKommunikationzwischenIhnenundIhrem).
 EXECUTE.
 
@@ -109,7 +109,7 @@ DESCRIPTIVES VARIABLES=TEAM_EFFECTIVENESS
 ----------------------------------------------------------------------.
 
 DATASET ACTIVATE DataSet1.
-COMPUTE ANFORDERUNG=Mean(WievielgeistigeAnstrengungwarbeiderInformationsaufnahmeu,
+COMPUTE NASA_TLX=Mean(WievielgeistigeAnstrengungwarbeiderInformationsaufnahmeu,
     WievielkörperlicheAktivitätwarerforderlichz.B.ZiehenDr,
     WievielZeitdruckempfandenSiehinsichtlichderHäufigkeitode,
     WiehartmusstensiearbeitenumIhrenGradanAufgabenerfüllun,
@@ -119,13 +119,13 @@ EXECUTE.
 DATASET ACTIVATE DataSet1.
 SPLIT FILE OFF.
 
- DESCRIPTIVES VARIABLES=ANFORDERUNG
+ DESCRIPTIVES VARIABLES=NASA_TLX
  /STATISTICS=MEAN STDDEV MIN MAX.
 
 SORT CASES  BY WiesahenihreMitspieleraus.
 SPLIT FILE SEPARATE BY WiesahenihreMitspieleraus.
 
-DESCRIPTIVES VARIABLES=ANFORDERUNG
+DESCRIPTIVES VARIABLES=NASA_TLX
   /STATISTICS=MEAN STDDEV MIN MAX.
   
 *PRESENCE MIT DISKRIPTIVER STATISTIK ----------------------------------------------------------------------
