@@ -1037,13 +1037,13 @@ Die folgende Abbildung zeigt eine diskriptive Statistik der Hauptvariablen des E
 
 Einige Variablen wurden in dieser Studie auf dem Teamlevel und andere auf dem individuellem Level gemessen. Alle Variablen, die auf dem individuellem Level gemessen wurden, haben eine Stichprobengröße $N = 30$, während die Variablen, die auf dem Teamlevel gemessen wurden eine Stichprobengröße von $ N = 50$.
 
-			\paragraph{Normalverteilung Prüfen}
+	\subsection{Test auf Normalverteilung der Daten}
 Für viele Tests ist eine Voraussetzung, dass die Stichproben Normalverteilt sind. Zur Überprüfung auf Normalverteilung wurde der \textit{Kolmogoroff-Smirnov-Test} genutzt. Die Null-Hypothese dieses Tests besagt, dass eine Normalverteilung der Variablen vorliegt. Wenn ($p < \alpha = 0.05$), muss H0 verworfen werden und angenommen werden, dass die Daten nicht Normalverteilt sind.
 
 Auf dem individuellem Level konnten mit dem Kolmogoroff-Smirnoff-Test alle Daten auf Normalverteilung mit ($p>0.05$) nachgewiesen werden. Siehe \textbf{\autoref{fig:KolSmirInd}} \\
 Auf dem Teamlevel konnte bei \ac{tci} mit ($p = .039 < \alpha = 0.05$) keine Normalverteilung nachgewiesen werden. Siehe \textbf{\autoref{fig:KolSmirIndIK}} \\ Weiterhin konnte bei \ac{cpn} mit ($p = .044 < \alpha = 0.05$) keine Normalverteilung nachgewiesen werden. Siehe \textbf{\autoref{fig:KolSmirIndNONIK}}
 \newpage
-		\subsubsection{Analyse Hypothese 1}
+	\subsection{Analyse Hypothese 1}
 H0 : Ein hoher General-Trust-Score wirkt sich \textbf{nicht positiv} auf den Cognitiven-Trust-Score aus.\\
 \ac{gt} sowie \ac{ct} wurden im vorhinein auf Ausreißer überprüft. 
 
@@ -1056,8 +1056,11 @@ H0 : Ein hoher General-Trust-Score wirkt sich \textbf{nicht positiv} auf den Cog
 		\end{footnotesize}
 	\end{figure}	
 
+		\subsubsection{Test auf Ausreißer}
 Es sind bei \ac{ct} Ausreißer vorhanden. Um diesen zu entfernen, wurde \ac{ct} im vorhinein Winsorisiert. Siehe \textbf{\autoref{fig:boxplot_cognitive_trust_winsorisiert}}. 
 Insgesamt haben ($N=30$) Personen an dem Versuch teilgenommen. \ac{gt} ist unabhängig vom \ac{gt} der einzelnen Testperson. Daher muss eine Korrelation auf Individuallevel durchgeführt werden, bei der die einzelnen Teams und Teamzusammensetzung ignoriert wird. 
+
+		\subsubsection{Pearson-Korrelationsanalyse}
 Um diese Hypothese zu überprüfen, wurde eine Pearson-Korrelationsanalyse durchgeführt. 
 
 \begin{figure}[H]
@@ -1068,8 +1071,9 @@ Um diese Hypothese zu überprüfen, wurde eine Pearson-Korrelationsanalyse durch
 			\label{fig:pearson_korrelation}
 		\end{footnotesize}
 	\end{figure}	
-Es ist eine Signifikant positive Korrelation mittlerem Effektes mit dem Pearson-Korrelationskoeffizient ($r = .452$) zwischen \ac{gt} und \ac{ct} vorhanden. Weiterhin ist das eine 2-Seitige Signifikanz mit ($p = .012 < \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, unsere \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{(Hypothese 1 / H$_{1}$)} anzunehmen.
+Es ist eine Signifikant positive Korrelation mittlerem Effektes mit dem Pearson-Korrelationskoeffizient ($r = .452$) zwischen \ac{gt} und \ac{ct} vorhanden. Weiterhin ist eine Signifikanz mit ($p = .012 < \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, unsere \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{(Hypothese 1 / H$_{1}$)} anzunehmen.
 
+		\subsubsection{Regressionsanalyse}
 Um nun die gerichtete Annahme der positiven Auswirkung des \ac{gt} auf den \ac{ct} zu bestätigen, wurde eine Regressionsanalyse durchgeführt. Wobei wurde als unabhängige Variable \ac{gt} und als abhängige Variable \ac{ct} gewählt.
 
 \begin{figure}[H]
@@ -1085,16 +1089,17 @@ Um nun die gerichtete Annahme der positiven Auswirkung des \ac{gt} auf den \ac{c
 	\end{figure}	
 
 Das Bestimmtheitsmaß ($R^{2} = .205$) deutet laut \citep{cohen2013statistical} auf eine geringe bis mittlere Varianzaufklärung des \ac{ct} durch \ac{gt} hin. Somit lassen sich $20,5\%$ der Varianzen unseres \ac{ct} durch den \ac{gt} erklären. \\
-Der Regressionskoeffizient der Variable \ac{gt} beträgt ($r = .452$) und signifikant ($t(28) = 2,684; p = .012 < \alpha = 0.05$). \\
+Der Regressionskoeffizient der Variable \ac{gt} beträgt ($r = .452$) und ist signifikant ($t(28) = 2,684; p = .012 < \alpha = 0.05$). \\
 Weiterhin ist das Ergebnis der ANOVA ($F(1,28) = 7,202; p = .012 < \alpha = 0.05$) und es lässt sich \textit{(Hypothese 1 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) verwerfen. \\
 Der \ac{gt} eignet sich als Prädiktor für \ac{ct}. Die geschätzte Zunahme an \ac{ct} beläuft sich auf $0.456$ Punkte \ac{ct} pro \ac{gt} ($\beta = 0.456; t(28) = 2,684; p = .012 < \alpha = 0.05$). \\
 Der \ac{gt} erklärt ebenso einen signifikanten Anteil der Varianz von \ac{ct} ($R^{2} = .205; F(1,28) = 7,202; p = .012 < \alpha = 0.05$)
 \newpage
-		\subsubsection{Analyse Hypothese 2}
+	\subsection{Analyse Hypothese 2}
 H$_{0}$ : Ein Torso, Head und Hand getrackter Avatar (IK) hat \textbf{keinen Einfluss} auf den Cognitiven-Trust-Score.\\
 Es wird der Zusammenhang zwischen den unabhängigen Variablen \ac{ik} und \ac{nik} sowie \ac{cti} und \ac{ctn} auf Teamlevel analysiert. Dazu wird ein T-Test durchgeführt. Die Gruppierungsvariablen sind dabei als \ac{ik} und \ac{nik} definiert.
-\ac{ctn} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit. \ac{cti} ist ebenfalls laut Kolmogoroff-Smirnov-Test mit ($p = .059 > \alpha = 0.05$) Normalverteilt. Siehe \textbf{\autoref{fig:KolSmirIndNONIK}} und \textbf{\autoref{fig:KolSmirIndIK}}
 
+			\paragraph{Voraussetzungen für den T-Test}
+\ac{ctn} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit. \ac{cti} ist ebenfalls laut Kolmogoroff-Smirnov-Test mit ($p = .059 > \alpha = 0.05$) Normalverteilt. Siehe \textbf{\autoref{fig:KolSmirIndNONIK}} und \textbf{\autoref{fig:KolSmirIndIK}}
 Als nächstes wurde auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine Varianzgleichheit zwischen \ac{cti} und \ac{ctn} von ($L = .392 < \alpha = 0.05$). Damit können wir davon ausgehen, dass die Gruppen gleiche Varianzen haben.
 
 \begin{figure}[H]
@@ -1105,12 +1110,9 @@ Als nächstes wurde auf Varianzgleichheit überprüft. Der Levene-Test zeigt ein
 			\label{fig:Varianzgleichheit_Levene_gt_ct}
 		\end{footnotesize}
 	\end{figure}	
-
-Der T-Wert ist kleiner Null ($T = -1,685 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{ct} von \ac{ik} und \ac{nik} zeigt. Der Mittelwert $\bar(x)$ der Kondition \ac{ik} ist kleiner als der Mittelwert der Kondition \ac{nik}.
-Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,3067; \sigma = .45898$) und \ac{nik} ($\bar(x) = 45733; \sigma =.40614$) jedoch keine Signifikanz ($t(28) = -1,685; p = .103 > \alpha = 0.05$).
-Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
-
-\begin{figure}[H]
+	
+		\subsubsection{T-Test}
+	\begin{figure}[H]
 \centering
 		\begin{footnotesize}
 			\includegraphics[width=\textwidth]{Abbildungen/Post_QuestionnaireStatistiks/h2_ttest_gruppenstatistik}
@@ -1120,12 +1122,20 @@ Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
 		\end{footnotesize}
 	\end{figure}	
 
+Der T-Wert ist kleiner Null ($T = -1,685 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{ct} von \ac{ik} und \ac{nik} zeigt. Der Mittelwert $\bar(x)$ der Kondition \ac{ik} ist kleiner als der Mittelwert der Kondition \ac{nik}.
+Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,3067; \sigma = .45898$) und \ac{nik} ($\bar(x) = 45733; \sigma =.40614$) jedoch keine Signifikanz ($t(28) = -1,685; p = .103 > \alpha = 0.05$).
+Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
+
+
+
 \newpage
-		\subsubsection{Analyse Hypothese 3}
-H$_{0}$ : Ein hoher Cognitiver-Trust-Score hat \textbf{keinen Einfluss} auf die Team-Effektivität.\\
+\subsection{Analyse Hypothese 3}
+H$_{0}$ : Ein hoher Cognitiver-Trust-Score hat \textbf{keinen Einfluss} auf die Team-Effektivität.
+
+		\subsubsection{Aufstellen der kognitiven Vertrauenstabelle pro Team}
 Es wird der Zusammenhang zwischen \ac{cti} sowie \ac{ctn} und \ac{tei} sowie \ac{ten} analysiert.
 Jeweils 3 Teammitglieder besitzen die selbe Teameffektivität. Daher wurden die Teams zu jeweils einer Variable Zusammengefasst. Für jedes Team wird eine gemeinsamer Kognitiver-Vertrauenswert berechnet. Dieser sagt aus, wie viel Kognitives Vertrauen das gesamte Team untereinander besitzt. Dieser Kognitive Vertrauenswert ergibt sich aus der Summe der Kognitiven-Vertrauensangaben der einzelnen Personen eines Teams.
-Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer \flqq ID 1\frqq ignoriert und die Kognitiven Vertrauenswerte müssen nicht winsorisiert werden. Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen.
+Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer \flqq ID 1\frqq ignoriert und die Kognitiven Vertrauenswerte müssen nicht winsorisiert werden. Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Für diesen Vergleich wurde eine Pearson-Korrelationsanalyse durchgeführt.
 
 \begin{table}[H]
 	\caption{Kognitive-Vertrauenswerte - Individuell und pro Team zusammengefasst}
@@ -1177,6 +1187,7 @@ Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer
 
 Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen Kognitiven Vertrauenswerte des Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .161 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .109 > \alpha = 0.05$) Normalverteilt.
 
+		\subsubsection{Pearson-Korrelationsanalyse}
 Nun wird eine Pearson-Korrelation zwischen den kognitiven Vertrauenswerten des Teams und den erfolgreich abgeschlossenen Runden durchgeführt.
 
 \begin{figure}[H]
@@ -1192,35 +1203,48 @@ Nun wird eine Pearson-Korrelation zwischen den kognitiven Vertrauenswerten des T
 Es ist eine Korrelation mittlerem Effektes ($r = .268$) zwischen \ac{cti} und \ac{tei} mit dem Merkmal \ac{ik} vorhanden. Diese Korrelation ist nicht statistisch Signifikant ($p = .286 > \alpha = 0.05$)
 Es ist eine positive Korrelation starken Effektes ($r = .801$) zwischen \ac{ctn} und \ac{ten} mit dem Merkmal \ac{nik} vorhanden. Diese Korrelation ist ebenfalls nicht statistisch Signifikant ($p = .103 > \alpha = 0.05$).
 
+		\subsubsection{Regressionsanalyse}
 Um die nicht statistische Signifikanz zu bestätigen, wird zusätzlich eine Regressionsanalyse durchgeführt, bei der angenommen wird, dass \ac{ct} einen \underline{positiven Einfluss} auf \ac{te} hat.
 \ac{ct} wird wurde als unabhängige und \ac{te} als abhängige Variable definiert.
 
-\paragraph{Kondition \ac{ik}}
+				\paragraph{Kondition \ac{ik}}
 Das Bestimmtheitsmaß ($R^{2} = .082$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tei} durch \ac{cti} hin. Somit lassen sich $8,2\%$ der Varianzen unserer \ac{tei} durch den \ac{ctn} erklären. \\
 Der Regressionskoeffizient der Variable \ac{cti} beträgt ($r = .286$) und statistisch nicht signifikant ($t(3) = .516; p = .641 > \alpha = 0.05$). \\
 Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .267; p = .641 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{ik} nicht verwerfen. \\
 Der \ac{cti} eignet sich nicht als Prädiktor für die \ac{tei}.
 Siehe \textbf{\autoref{fig:h3_regression}}
 
-\paragraph{Kondition \ac{nik}}
+				\paragraph{Kondition \ac{nik}}
 Das Bestimmtheitsmaß ($R^{2} = .0,801$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{ten} durch \ac{ctn} hin. Somit lassen sich $80,1\%$ der Varianzen unserer \ac{ten} durch den \ac{ctn} erklären. \\
 Der Regressionskoeffizient der Variable \ac{ctn} beträgt ($r = .801$) und statistisch nicht signifikant ($t(3) = 2,316; p = .106 > \alpha = 0.05$). \\
 Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 5,363; p = .103 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht für die Kondition \ac{nik} verwerfen. \\
 Der \ac{ctn} eignet sich nicht als Prädiktor für die \ac{ten}.
-\textbf{\autoref{fig:h3_regression}}
-
+\textbf{\autoref{fig:h3_regression}}\\
 Die Hypothese \textit{(Hypothese 3 / H$_{1}$)} kann somit nicht angenommen werden.
 
+	\subsubsection{Korrektur der Analyse}
+Da die Daten mit ledigtlich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Regressionsanalyse zwischen \ac{cti} sowie \ac{ik} und \ac{ctn} sowie \ac{nik} zu wenig sind, wurde Zusätzlich noch eine Korrelationsanalyse sowie Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt.
+
+			\paragraph{Pearson-Korrelationsanalyse}
+Es ist eine unsignifikante positive Korrelation mittlerem Effektes mit dem Pearson-Korrelationskoeffizient ($r = .361$) zwischen \ac{ct} und \ac{te} vorhanden. Weiterhin ist keine Signifikanz ($p = .306 > \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, dass die \textit{(Hypothese 3 / H$_{0}$)} nicht verworfen werden kann. Siehe \textbf{\autoref{fig:h3_both}}
+			
+			\paragraph{Regressionsanalyse}
+Das Bestimmtheitsmaß ($R^{2} = .130$) deutet laut \citep{cohen2013statistical} auf eine mittlere Varianzaufklärung der \ac{te} durch \ac{ct} hin. Somit lassen sich $13,0\%$ der Varianzen unserer \ac{te} durch den \ac{ct} erklären. \\
+Der Regressionskoeffizient der Variable \ac{ct} beträgt ($r = .361$) und ist statistisch nicht signifikant ($t(8) = 1,095; p = .306 > \alpha = 0.05$). \\
+Weiterhin ist das Ergebnis der ANOVA ($F(1,8) = 1,198; p = .306 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht verwerfen. \\
+Der \ac{ct} eignet sich nicht als Prädiktor für die \ac{te}.
+Siehe \textbf{\autoref{fig:h3_both}}
+
 \newpage
-		\subsubsection{Analyse Hypothese 4}
+	\subsection{Analyse Hypothese 4}
 H$_{0}$ : Ein Torso, Head und Hand getrackter Avatar hat \textbf{keinen Einfluss} auf die Team-Effektivität.\\
 Wie in \textit{Hypothese 3} beschrieben, sind Team-Effektivität der einzelnen Gruppen Normalverteilt.
-Um die Hypothese 4 auszuwerten, wird ein T-Test bei unabhängigen Stichproben für \ac{te} durchgeführt. Die Gruppierungsvariablen sind dabei \ac{ik} sowie \ac{nik}.
+Um die  \textit{Hypothese 4} auszuwerten, wird ein T-Test bei unabhängigen Stichproben für \ac{te} durchgeführt. Die Gruppierungsvariablen sind dabei \ac{ik} sowie \ac{nik}.
 
-
+		\subsubsection{T-Test}
 Der T-Wert ist gleich Null ($T = .000 = 0$), was auf keinen Mittelwertsunterschied zwischen \ac{ik} und \ac{nik} hinweist.
 Die Varianzen sind mit ($\sigma^{2} = .126$) unterschiedlich.
-Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{tei} bei der Kondition \ac{ik} ($\bar(x) = 9; \sigma = 3,535553$) und \ac{nik} ($\bar(x) = 1,87083; \sigma = 1,87083$) keine Signifikanz ($t(8) = .000; p = 1 > \alpha = 0.05$).
+Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{tei} bei der Kondition \ac{ik} ($\bar(x) = 9; \sigma = 3,535553$) und \ac{nik} ($\bar(x) = 1,87083; \sigma = 1,87083$) keine Signifikanz ($t(8) = .000; p = 1 > \alpha = 0.05$).\\
 Somit kann \textit{(Hypothese 4 / H$_{0}$)} für \ac{ik} und \ac{nik} nicht verworfen werden.
 
 \begin{figure}[H]
@@ -1235,10 +1259,11 @@ Somit kann \textit{(Hypothese 4 / H$_{0}$)} für \ac{ik} und \ac{nik} nicht verw
 	
 
 \newpage
-		\subsubsection{Analyse Hypothese 5}
+	\subsection{Analyse Hypothese 5}
 H$_{0}$ : Teams, mit einem hohem General-Trust-Score erzielen \textbf{keine höhere Team-Effektivität} als die mit einem niedrigen General-Trust-Score.\\
-Um die Hypothese 5 auszuwerten, wird wie in Hypothese eine Korrelation durchgeführt. Anschließend wird eine Regressionsanalyse zwischen \ac{gti} sowie \ac{gtn} und \ac{tei} sowie \ac{ten} durchgeführt um eine Richtung des Zusammenhangs darzustellen. Dafür muss wieder eine Tabelle aufgestellt werden, welche die Summe der individuellen Personen im Team zu einem generellen Vertrauenswert des Teams zusammenfasst.
+Um die Hypothese 5 auszuwerten, wird wie in \textit{Hypothese 3} eine Korrelation durchgeführt. Anschließend wird eine Regressionsanalyse zwischen \ac{gti} sowie \ac{gtn} und \ac{tei} sowie \ac{ten} durchgeführt um eine Richtung des Zusammenhangs darzustellen. Dafür muss wieder eine Tabelle aufgestellt werden, welche die Summe der individuellen Personen im Team zu einem generellen Vertrauenswert des Teams zusammenfasst.
 
+		\subsubsection{Aufstellen der generellen Vertrauenstabelle pro Team}
 \begin{table}[H]
 	\caption{Kognitive-Vertrauenswerte - Individuell und pro Team zusammengefasst}
 	\label{VariableBreakdown}
@@ -1289,6 +1314,7 @@ Um die Hypothese 5 auszuwerten, wird wie in Hypothese eine Korrelation durchgef�
 
 Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der generellen Kognitiven Vertrauenswerte des Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .200 > \alpha = 0.05$) sowie die Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{ik} $p = .200 > \alpha = 0.05$), (\ac{nik} $p = .161 > \alpha = 0.05$) Normalverteilt.
 
+		\subsubsection{Pearson-Korrelationsanalyse}
 Nun wird eine Pearson-Korrelation zwischen den generellen Vertrauenswerten des Teams und den erfolgreich abgeschlossenen Runden durchgeführt und in die unabhängigen Variablen \ac{ik} und \ac{nik} aufgeteilt.
 
 \begin{figure}[H]
@@ -1304,29 +1330,49 @@ Nun wird eine Pearson-Korrelation zwischen den generellen Vertrauenswerten des T
 Es ist eine negative Korrelation sehr starkem Effekt ($r = -.971$) zwischen \ac{gti} und \ac{tei} mit dem Merkmal \ac{ik} vorhanden. Diese Korrelation ist statistisch Signifikant ($p = .006 < \alpha = 0.05$)
 Es ist eine negative Korrelation mittlerem Effekt ($r = -.433$) zwischen \ac{gtn} und \ac{ten} mit dem Merkmal \ac{nik} vorhanden. Diese Korrelation ist nicht statistisch Signifikant ($p = .467 > \alpha = 0.05$).
 
+		\subsubsection{Regressionsanalyse}
 Um die statistische Signifikanz des Zusammenhangs der Kondition \ac{ik} zwischen \ac{gti} und \ac{tei} und die nicht statistische Signifikanz des Zusammenhangs der Kondition \ac{nik} zwischen \ac{gtn} und \ac{ten} zu bestätigen, wird zusätzlich eine Regressionsanalyse durchgeführt.
 \ac{gt} wird wurde als unabhängige und \ac{te} als abhängige Variable definiert.
 
 \paragraph{Kondition \ac{ik}}
-Das Bestimmtheitsmaß ($R^{2} = .082$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tei} durch \ac{cti} hin. Somit lassen sich $8,2\%$ der Varianzen unserer \ac{tei} durch den \ac{ctn} erklären. \\
-Der Regressionskoeffizient der Variable \ac{cti} beträgt ($r = .286$) und statistisch nicht signifikant ($t(3) = .516; p = .641 > \alpha = 0.05$). \\
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .267; p = .641 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{ik} nicht verwerfen. \\
-Der \ac{cti} eignet sich nicht als Prädiktor für die \ac{tei}.
+Das Bestimmtheitsmaß ($R^{2} = .971$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{tei} durch \ac{gti} hin. Somit lassen sich $97,1\%$ der Varianzen unserer \ac{tei} durch den \ac{gtn} erklären. \\
+Der Regressionskoeffizient der Variable \ac{cti} beträgt ($r = -.971$) und ist statistisch signifikant ($t(3) = -7,040; p = .006 < \alpha = 0.01$). \\
+Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 49,568; p = .006 < \alpha = 0.01$) und es lässt sich \textit{(Hypothese 5 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.01$) für die Kondition \ac{ik} nicht verwerfe. \\
+Der \ac{gti} eignet sich als Prädiktor für \ac{tei}. Die geschätzte Abnahme an \ac{tei} beläuft sich auf $-.971$ Punkte \ac{tei} pro \ac{gti} ($\beta = -.971; t(3) = -7,040; p = .006 < \alpha = 0.01$). \\
 Siehe \textbf{\autoref{fig:h5_regression}}
 
 \paragraph{Kondition \ac{nik}}
-Das Bestimmtheitsmaß ($R^{2} = .0,801$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{ten} durch \ac{ctn} hin. Somit lassen sich $80,1\%$ der Varianzen unserer \ac{ten} durch den \ac{ctn} erklären. \\
-Der Regressionskoeffizient der Variable \ac{ctn} beträgt ($r = .801$) und statistisch nicht signifikant ($t(3) = 2,316; p = .106 > \alpha = 0.05$). \\
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 5,363; p = .103 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht für die Kondition \ac{nik} verwerfen. \\
-Der \ac{ctn} eignet sich nicht als Prädiktor für die \ac{ten}.
+Das Bestimmtheitsmaß ($R^{2} = .187$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{ten} durch \ac{gtn} hin. Somit lassen sich $18,7\%$ der Varianzen unserer \ac{ten} durch den \ac{gtn} erklären. \\
+Der Regressionskoeffizient der Variable \ac{gtn} beträgt ($r = -.433$) und ist statistisch nicht signifikant ($t(3) = -.831; p = .467 > \alpha = 0.05$). \\
+Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .691; p = .467 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 5 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht für die Kondition \ac{nik} verwerfen. \\
+Der \ac{gtn} eignet sich nicht als Prädiktor für die \ac{ten}.\\
 \textbf{\autoref{fig:h5_regression}}
 
-Die Hypothese \textit{(Hypothese 3 / H$_{1}$)} kann somit nicht angenommen werden.
+Die Hypothese \textit{(Hypothese 5 / H$_{0}$)} kann somit nicht angenommen werden, da ein abnehmender Effekt auf die \ac{te} pro Team durch die Konditionen \ac{ik} und \ac{nik} festgestellt wurde.
 
-		\subsubsection{Analyse Hypothese 5}
+\subsubsection{Korrektur der Analyse}
+Da die Daten mit ledigtlich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Regressionsanalyse zwischen \ac{gti} sowie \ac{ik} und \ac{gtn} sowie \ac{nik} zu wenig sind, wurde zusätzlich noch eine Korrelationsanalyse sowie Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt.
+
+			\paragraph{Pearson-Korrelationsanalyse}
+Es ist eine unsignifikante negative Korrelation mittlerem Effektes mit dem Pearson-Korrelationskoeffizient ($r = -.535$) zwischen \ac{gt} und \ac{te} vorhanden. Weiterhin ist keine Signifikanz ($p = .111 > \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, dass die \textit{(Hypothese 5 / H$_{0}$)} nicht verworfen werden kann. Siehe \textbf{\autoref{fig:h5_both}}
+			
+			\paragraph{Regressionsanalyse}
+Das Bestimmtheitsmaß ($R^{2} = .286$) deutet laut \citep{cohen2013statistical} auf eine hohe Varianzaufklärung der \ac{te} durch \ac{gt} hin. Somit lassen sich $28,6\%$ der Varianzen unserer \ac{te} durch den \ac{gt} erklären. \\
+Der Regressionskoeffizient der Variable \ac{gt} beträgt ($r = -.535$) und ist statistisch nicht signifikant ($t(8) = -1,791; p = .111 > \alpha = 0.05$). \\
+Weiterhin ist das Ergebnis der ANOVA ($F(1,8) = 3,206; p = .111 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 5 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht verwerfen. \\
+Der \ac{gt} eignet sich nicht als Prädiktor für die \ac{te}.\\
+Siehe \textbf{\autoref{fig:h5_both}}
+
+
+\subsection{Analyse Hypothese 6}
 
 Auch interessant : T-Test zwischen "COPRÄSENZ" und "WieSahenIhreMitspielerAus"
-\section{Berechnung der Werte für die Auswertung}
+
+\subsection{Analyse Hypothese 7}
+
+Auch interessant : Wie wirkt sich GT und CT gemeinsam auf TE aus?
+
+\subsection{Berechnung der Werte für die Auswertung}
 Bspw. Wie wurde CT oder GT etc. berechnet?
 \newpage
 
@@ -1391,6 +1437,39 @@ Bspw. Wie wurde CT oder GT etc. berechnet?
 			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_regression_nik}
 			\caption{Regressionsergebnisse der Regressionen \ac{cti} und \ac{tei} sowie \ac{ctn} und \ac{ten} }
 			\label{fig:h3_regression}
+		\end{footnotesize}
+	\end{figure}	
+	
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_both_korrelation}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_both_diagramm_korr}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_both_regression}
+			\caption{Regressionsergebnisse der Regressionen \ac{ct} und \ac{te} }
+			\label{fig:h3_both}
+		\end{footnotesize}
+	\end{figure}	
+	
+	
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h5_both_korrelation}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h5_both_diagramm_korr}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h5_both_regression}
+			\caption{Regressionsergebnisse der Regressionen \ac{gt} und \ac{te} }
+			\label{fig:h5_both}
+		\end{footnotesize}
+	\end{figure}	
+
+\begin{figure}[H]
+\centering
+		\begin{footnotesize}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_regression_ik}
+			\includegraphics[scale=0.6]{Abbildungen/Post_QuestionnaireStatistiks/h3_regression_nik}
+			\caption{Regressionsergebnisse der Regressionen \ac{gti} und \ac{tei} sowie \ac{gtn} und \ac{ten} }
+			\label{fig:h5_regression}
 		\end{footnotesize}
 	\end{figure}	
 
