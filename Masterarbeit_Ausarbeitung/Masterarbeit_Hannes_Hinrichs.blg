@@ -5,55 +5,48 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-Repeated entry---line 777 of file bibfile.bib
- : @article{polzer2006extending
- :                             ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 799 of file bibfile.bib
- : @article{mayer1995integrative
- :                              ,
-I'm skipping whatever remains of this entry
 Warning--I didn't find a database entry for "]"
+Warning--I didn't find a database entry for "martins2004virtual"
 Warning--can't use both volume and number fields in mehrabian1971silent
-You've used 86 entries,
+You've used 94 entries,
             2921 wiz_defined-function locations,
-            1121 strings with 20217 characters,
-and the built_in function-call counts, 374793 in all, are:
-= -- 61347
-> -- 4998
+            1164 strings with 21408 characters,
+and the built_in function-call counts, 404458 in all, are:
+= -- 66137
+> -- 5418
 < -- 4
-+ -- 29315
-- -- 1512
-* -- 32346
-:= -- 75208
-add.period$ -- 172
-call.type$ -- 86
-change.case$ -- 1194
-chr.to.int$ -- 86
-cite$ -- 87
-duplicate$ -- 1238
-empty$ -- 2623
-format.name$ -- 1838
-if$ -- 67330
++ -- 31557
+- -- 1638
+* -- 34890
+:= -- 81244
+add.period$ -- 188
+call.type$ -- 94
+change.case$ -- 1305
+chr.to.int$ -- 94
+cite$ -- 95
+duplicate$ -- 1351
+empty$ -- 2880
+format.name$ -- 1995
+if$ -- 72649
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 91
-newline$ -- 351
-num.names$ -- 896
-pop$ -- 312
+missing$ -- 100
+newline$ -- 383
+num.names$ -- 979
+pop$ -- 331
 preamble$ -- 1
-purify$ -- 1290
+purify$ -- 1410
 quote$ -- 0
-skip$ -- 1153
+skip$ -- 1256
 stack$ -- 0
-substring$ -- 86505
-swap$ -- 174
-text.length$ -- 1208
+substring$ -- 93202
+swap$ -- 189
+text.length$ -- 1320
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 324
+type$ -- 354
 warning$ -- 1
-while$ -- 1897
+while$ -- 2077
 width$ -- 0
-write$ -- 1201
-(There were 2 error messages)
+write$ -- 1311
+(There were 3 warnings)
