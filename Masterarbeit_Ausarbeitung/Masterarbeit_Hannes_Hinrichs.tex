@@ -11,6 +11,7 @@
 %Auf Verwendung von nicht parametrische Tests achten.
 %
 %Leseprobe senden!
+%Auswertungen nicht als Screenshot sondern als Tabelle
 \documentclass[a4paper,11pt]{article}%Schriftgröße
 
 \usepackage{booktabs}
@@ -826,7 +827,7 @@ Die maximale Versuchsdauer nach Start der Anwendung betrug exakt 10 Minuten (600
 		\end{footnotesize}
 	\end{figure}
 
-Jeder Probant benötigte (neben einem funktionsfähigen Computer), um an dem Versuch teilnehmen zu können, entweder ein Oculus oder HTC-Vive \ac{hmd}, sowie zwei funktionsfähige Controller.
+Jeder Probant benötigte (neben einem funktionsfähigen Computer), um an dem Versuch teilnehmen zu können, entweder ein Oculus, HTC-Vive oder Windows Mixed-Reality\ac{hmd}, sowie zwei funktionsfähige Controller.
 
 Dem Versuchsleiter war es während der gesamten Anwendung möglich, die 3 Probanten durch einen eigenen Client zu betreuen. Alle Probanten konnten durch Ihre Anwendung durch das integrierte Mikrofon im \ac{hmd} zu dem Versuchsleiter Sprechen und diesen hören. Während die Probanten sprachen, konnten die anderen zwei Probanten diese jedoch nicht hören. Die Sprachkommunikation eines Probanten war somit nur Richtung Versuchsleiter möglich. Dies dient zur Vermeidung von einigen Störvariablen und zum Erhalt der Integrität der Anonymität.
 Während der Versuchsleiter sprach, konnten jedoch alle Probanten den Versuchsleiter hören. Dies diente dazu, eventuelle offene Fragen an alle Versuchsteilnehmer weiterzugeben und den Beginn sowie das Ende der Anwendung zu kommunizieren. Der Versuchsleiter gab jedoch während des gesamten Versuchs keine Hilfestellung.
@@ -872,20 +873,46 @@ Der Non-IK-Avatar besteht aus einem Kreis mit Mund sowie einer Repräsentation d
 	\newpage
 	
 	\subsection{Entwicklung der Versuchsumgebung}
-	Kein Teleport
+Um den Versuch durchzuführen, wurde ein \ac{sve} entwickelt in dem Sich die 3 Teammitglieder gegenseitig Sehen und miteinander interagieren konnten. 
+Das \ac{sve} wurde mit Unity 2019.4.3f1 und der HD-Render-Pipeline programmiert. Um die Echtzeitkommunikation zwischen den einzelnen Clients zu gewährleisten, wurde das multiplayer Framework \flqq Normcore v2.0\frqq \footnote{www.Normcore.io} genutzt.
+Normcore unterstützt Network-Physics, automatische Realtime-Synchronisation, Voice-Chat, XR-Compitabilität sowie persistente multiplayer Räume.	
+
+	\subsubsection{Aussehen der Umgebung}
+Der Raum, in dem die Spieler sich befinden ist ein Rechteckiger Raum mit 4 Fenstern vor denen einige Low-Poly Bäume stehen. Durch die 4 Fenster und den davor plazierten Bäumen sollte eine gewisse Offenheit erzeugt werden, damit die Probanten sich nicht in der \ac{vr} eingeschlossen fühlten. Weiterhin wurde der Raum schlicht in einer gräulichen Farbe gehalten um  nicht all zu viel Ablenkung in der \ac{vr} zu erzeugen. Die Spieler sollten sich so gut es geht nur auf den eigentlichen Versuch konzentrieren. 
 	\subsubsection{Raumerschaffung in Normcore}
 	\subsubsection{Sync Mechanisms}
-	\subsubsection{Aussehen der Umgebung}
-	Geschlossener Raum, Gras, Lichtstrahlen, Neutrale Kacheln etc.
-	\subsubsection{Spectator}
+	\subsubsection{Spectator und Client}
+\paragraph{VR-Client}
+Jeder Versuchsteilnehmer bekam eine Client Version der Umgebung. Die Client Version gab es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangte der Probant in das \ac{sve} und verband sich automatisch mit dem Server(Raum).
+Der Client sah seine beiden Hände und keine der beiden Avatarkonditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
+\paragraph{Spectator}
+Der Spectator besaß ein eigenen Client, dieser eigene Client hatte keine eigene Repräsentation des Körpers und benötigte daher auch kein \ac{hmd} um an der Session teilzunehmen. Den Spectator war es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
+Der Spectator besaß die Möglichkeit das Spiel zu starten, die zu beginnende Rundennummer einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen oder nicht, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
+Je nachdem, wie viele Spieler in dem entsprechendem Raum waren, wurden diese dem Spectator angezeigt. So wurde "Player 1" bis "Player 3" bei einem vollem Team angezeigt. Der Spectator besaß außerdem die Möglichkeit Spieler herauszuwerfen, um die Session aufzuräumen und für die nächsten Teams vorzubereiten.
+Weiterhin hatte der Spectator noch einige Funktionen um sich Informationen über das aktuelle Spielgeschehen zu machen. So bekam dieser die gesamte Vergangene Zeit angezeigt, in welcher Runde sich die Mitspieler aktuell befinden, die aktuelle Effizienz des Teams, ob der "Grüne" oder "Rote" Spieler aktuell mit ihrer Eingabe korrekt sind und wie viele verschiedene Symbole der "Schwarze" Spieler aktuell erklären muss.
 	Kein Avatar zugeordnet
-	\subsubsection{Client}
 	XRMultiRig
 	\subsubsection{Rundenschwierigkeit}
-	Wie wurden die Runden schwieriger? -> Da auf die ScriptableObjects der Runden eingehen
+Es wurden ein ScriptableObject mit dem Namen "RoundRules" angelegt. Dieses "RoundRules" ScriptableObject beinhaltet alle Abläufe des gesamten Spiels. So bekam jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um Konsistenz zu gewährleisten. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
+Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt.
 	\subsubsection{Avatarkonditionen}
-	Unsichtbare Avatare, RPC Calls um diese zu tauschen
+Nachdem ein Probant das \ac{sve} betrat, bekam dieser nur seine eigenen, menschenähnlichen Hände zu sehen. Falls schon ein weiterer Spieler im \ac{sve} anwesend war oder zu einem späterem Zeitpunkt hinzukam, war dieser als jeweilig vom Spectator ausgewählte Avatarkondition zu sehen. Der eigene Körper wurde während  der gesamten dauer \textit{nicht} selbst gerendert. Es wurde nur die jeweilige Avatarkondition bei den Mitspielern gesehen. Man selbst sah sich also nicht mit der Kondition \ac{ik} oder \ac{nik}.
+
 	\subsubsection{GameManager und PodestManager}
+Der GameManager übernimmt alle wichtigen Funktionalitäten in der Anwendung.
+Diese sind unter anderem :
+\begin{itemize}
+\item Steuerung und Entscheidungslogik über Spectator oder Spieler
+\item Auswahl des Entsprechenden \ac{hmd}'s
+\item Netzwerkmanagement und RCP-Call Handling
+\item Start, Reset, Steuerung und Überprüfungsmechanismen sowie Zeitmessungen der einzelnen Runden
+\item Interaktionen mit globalen Datastore-Variablen
+\item Verwalten der CSV-Logs
+\end{itemize}
+
+Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Einer der wichtigsten Punkte ist jedoch das Netzwerkmanagement und RCP-Call Handling. 
+Der GameManager steht in Verbindung mit den einzelnen Podesten der Spielers. Ein Podestmanager verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
+Drückt nun ein Spieler ein entsprechenden Knopf mit Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager. Dieser Überprüft, ob die zur Zeit gedrückten Knöpfe mit den zu drücktenden Knöpfen der Runde übereinstimmen. Falls diese das tun, wird eine bool-Variable im globalen Datastore umgeschaltet, der die restlichen Clients (inklusive Spectator) darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler (Rot und Grün) die korrekten Knöpfe gedrückt und dadurch eine Flag im Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
 	\subsubsection{Gametimer funktionsweise und immer zum Spieler gedreht}
 	\subsubsection{Audioübertragung}
 	\subsubsection{FADE TO Black}
@@ -899,16 +926,11 @@ Der Non-IK-Avatar besteht aus einem Kreis mit Mund sowie einer Repräsentation d
 	\subsubsection{PlayerHeight/Position Change WASDQE}
 	\subsubsection{GlowingBall Animation, HandFingeranimation}
 	\subsubsection{Automatic Position Set when Spectator Pressed Start}
-	\subsubsection{2 Versions -> OVR and HTC Version}
 	\subsubsection{SOUNDS}
 	Player Connect, Disconnect, Button Click, Spectator Audio
 	\subsubsection{UML Diagramme der Funktionsweise}
 			\subsubsection{Verwendete Hardware}
 Um an dem Experiment Teilnehmen zu können, benötigten die Probanten ein im vollem Umfang funktionierendes HTC-Vive, HTC-Vive2 oder ein Oculus-Rift S \ac{hmd} mit funktionsfähigen Controllern sowie einen Leistungsstarken \ac{vr}-Fähigen PC. Der Spectator, der das Experiment Remote steuern und verwaltet, benötigt einen Leistungsstarken PC auf dem die Anwendung ausführbar ist.
-
-			\subsubsection{Verwendete Software}
-Das \ac{sve} wurde mit Unity 2019.4.3f1 und der HD-Render-Pipeline programmiert. Um die Echtzeitkommunikation zwischen den einzelnen Clients zu gewährleisten, wurde das multiplayer Framework \flqq Normcore v2.0\frqq \footnote{www.Normcore.io} genutzt.
-Normcore unterstützt Network-Physics, automatische Realtime-Synchronisation, Voice-Chat, XR-Compitabilität sowie persistente multiplayer Räume.	
 	
 	\subsection{Untersuchungsmethode}
 	\subsection{Qualitative vs Quantitative Untersuchung}
