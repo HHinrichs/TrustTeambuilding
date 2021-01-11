@@ -898,6 +898,8 @@ Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symb
 	\subsubsection{Avatarkonditionen}
 Nachdem ein Probant das \ac{sve} betrat, bekam dieser nur seine eigenen, menschenähnlichen Hände zu sehen. Falls schon ein weiterer Spieler im \ac{sve} anwesend war oder zu einem späterem Zeitpunkt hinzukam, war dieser als jeweilig vom Spectator ausgewählte Avatarkondition zu sehen. Der eigene Körper wurde während  der gesamten dauer \textit{nicht} selbst gerendert. Es wurde nur die jeweilige Avatarkondition bei den Mitspielern gesehen. Man selbst sah sich also nicht mit der Kondition \ac{ik} oder \ac{nik}.
 
+\subsubsection{Globaler Datastore}
+
 	\subsubsection{GameManager und PodestManager}
 Der GameManager übernimmt alle wichtigen Funktionalitäten in der Anwendung.
 Diese sind unter anderem :
@@ -910,12 +912,19 @@ Diese sind unter anderem :
 \item Verwalten der CSV-Logs
 \end{itemize}
 
-Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Einer der wichtigsten Punkte ist jedoch das Netzwerkmanagement und RCP-Call Handling. 
-Der GameManager steht in Verbindung mit den einzelnen Podesten der Spielers. Ein Podestmanager verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
-Drückt nun ein Spieler ein entsprechenden Knopf mit Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager. Dieser Überprüft, ob die zur Zeit gedrückten Knöpfe mit den zu drücktenden Knöpfen der Runde übereinstimmen. Falls diese das tun, wird eine bool-Variable im globalen Datastore umgeschaltet, der die restlichen Clients (inklusive Spectator) darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler (Rot und Grün) die korrekten Knöpfe gedrückt und dadurch eine Flag im Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
+Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Der Spectator sowie die Clients besitzen den GameManager mit unterschiedlichen Funktionalitäten. 
+Der GameManager des Clients übernimmt das gesamte RCP-basierte Netzwerkhandling sowie das lauschen auf Änderungen von relevanten Variablen im globalen Datastore.
+Eine wesentliche Aufgabe ist es zu überprüfen, ob eine Runde vom GameManager des Spectators als beendet markiert wurde und leitet gegebenenfalls die Initialisierung einer neuen Runde ein.
+Der GameManager des Spectators gibt Hauptsächlich die Information über den Start, Stop oder den Reset der einzelnen Runden an die GameManager der Clients weiter. Weiterhin regelt dieser aufgrund seiner besonderen Rolle über die Steuerung der gesamten Anwendung noch die Netzwerkinteraktionen wie die Audioübertragung, Kickmechanismen, Rundenauswahl sowie das Aussehen der Avatare der Spieler.
+
+Somit besitzt jeder Client einen GameManager. Dieser steht in Verbindung mit den einzelnen Podesten der Spielers. Der Podestmanager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
+Drückt nun ein Spieler ein entsprechenden Knopf mit einem Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe die richtigen sind, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler \flqq Rot und Grün\frqq die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
 	\subsubsection{Gametimer funktionsweise und immer zum Spieler gedreht}
 	\subsubsection{Audioübertragung}
-	\subsubsection{FADE TO Black}
+	\subsubsection{F2B und Positionsmanagement}
+\paragraph{Spieler Positionen}
+Da alle Mitspieler sich in einem \ac{sve} befinden in dem diese sich frei bewegen können, müssen diese beim Start des Spiels auf ein für diese definiertes Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes byte, wobei die bits des bytes als boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler wurden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
+Damit es dem Roten sowie dem grünen Spieler nicht einfach möglich ist auf die markierten Symbole des schwarzen Spielers zu schauen indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus eingefügt. Entfernt sich ein Spieler einen gewissen Radius um sein ihm zugewiesenem Podest, wird sein Bild schwarz, bis dieser wieder seine ursprüngliche Position erreicht.
 	\subsubsection{"Quasi"-Randomisierung des Leaders }
 	Wurde das nun eigentlich implementiert? Oder wurde das auch durch die SCObjects abgedeckt?
 	\subsubsection{CSV-Logwriting}
