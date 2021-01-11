@@ -871,36 +871,36 @@ Um eine Möglichst realistische Bewegung zu erzielen, wurde die Handbewegung, di
 		\paragraph{Non-IK-Avatar}
 Der Non-IK-Avatar besteht aus einem Kreis mit Mund sowie einer Repräsentation der Linken sowie der Rechten Hand. Er Besitzt keine Augen, Haare, Beine, Hals, Torso sowie Ober- und Unterarm. Der Mund dieses Avatars ist als unauffälliger Orientierungspunkt des Kopfes erhalten geblieben. Der Mund des Non-IK-Avatars bewegt sich jedoch nicht. 
 	\newpage
-	
+
 	\subsection{Entwicklung der Versuchsumgebung}
 Um den Versuch durchzuführen, wurde ein \ac{sve} entwickelt in dem Sich die 3 Teammitglieder gegenseitig Sehen und miteinander interagieren konnten. 
 Das \ac{sve} wurde mit Unity 2019.4.3f1 und der HD-Render-Pipeline programmiert. Um die Echtzeitkommunikation zwischen den einzelnen Clients zu gewährleisten, wurde das multiplayer Framework \flqq Normcore v2.0\frqq \footnote{www.Normcore.io} genutzt.
 Normcore unterstützt Network-Physics, automatische Realtime-Synchronisation, Voice-Chat, XR-Compitabilität sowie persistente multiplayer Räume.	
+\paragraph{Normcore Datastore / Sync Mechanismus}
+Normcore besitzt das konzept eines globalen Datastore.  Alle Zustände, egal ob die Position eines Spielers, einzelne bool, integer oder float Variablen, werden in einem globalen Datastore gespeichert. Werden Objekte in der Anwendung bewegt, synchronisiert Normcore diese Änderung der Position und/oder Rotation mit allen anderen Mitspielern automatisch.
 
-	\subsubsection{Aussehen der Umgebung}
+\paragraph{Aussehen der Umgebung}
 Der Raum, in dem die Spieler sich befinden ist ein Rechteckiger Raum mit 4 Fenstern vor denen einige Low-Poly Bäume stehen. Durch die 4 Fenster und den davor plazierten Bäumen sollte eine gewisse Offenheit erzeugt werden, damit die Probanten sich nicht in der \ac{vr} eingeschlossen fühlten. Weiterhin wurde der Raum schlicht in einer gräulichen Farbe gehalten um  nicht all zu viel Ablenkung in der \ac{vr} zu erzeugen. Die Spieler sollten sich so gut es geht nur auf den eigentlichen Versuch konzentrieren. 
-	\subsubsection{Raumerschaffung in Normcore}
-	\subsubsection{Sync Mechanisms}
-	\subsubsection{Spectator und Client}
+\paragraph{Raumerschaffung in Normcore}
+\paragraph{Spectator und Client}
 \paragraph{VR-Client}
-Jeder Versuchsteilnehmer bekam eine Client Version der Umgebung. Die Client Version gab es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangte der Probant in das \ac{sve} und verband sich automatisch mit dem Server(Raum).
-Der Client sah seine beiden Hände und keine der beiden Avatarkonditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
+Jeder Versuchsteilnehmer benötigt eine Client Version der Umgebung um an dem Versuch teilzunehmen. Die Client Version gibt es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangt der Probant in das \ac{sve} und verbindet sich automatisch mit dem Server (Normcore-Raum).
+Der Client sieht seine beiden Hände, jedoch keine der beiden Avatarkonditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
 \paragraph{Spectator}
-Der Spectator besaß ein eigenen Client, dieser eigene Client hatte keine eigene Repräsentation des Körpers und benötigte daher auch kein \ac{hmd} um an der Session teilzunehmen. Den Spectator war es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
-Der Spectator besaß die Möglichkeit das Spiel zu starten, die zu beginnende Rundennummer einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen oder nicht, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
-Je nachdem, wie viele Spieler in dem entsprechendem Raum waren, wurden diese dem Spectator angezeigt. So wurde "Player 1" bis "Player 3" bei einem vollem Team angezeigt. Der Spectator besaß außerdem die Möglichkeit Spieler herauszuwerfen, um die Session aufzuräumen und für die nächsten Teams vorzubereiten.
-Weiterhin hatte der Spectator noch einige Funktionen um sich Informationen über das aktuelle Spielgeschehen zu machen. So bekam dieser die gesamte Vergangene Zeit angezeigt, in welcher Runde sich die Mitspieler aktuell befinden, die aktuelle Effizienz des Teams, ob der "Grüne" oder "Rote" Spieler aktuell mit ihrer Eingabe korrekt sind und wie viele verschiedene Symbole der "Schwarze" Spieler aktuell erklären muss.
-	Kein Avatar zugeordnet
-	XRMultiRig
-	\subsubsection{Rundenschwierigkeit}
-Es wurden ein ScriptableObject mit dem Namen "RoundRules" angelegt. Dieses "RoundRules" ScriptableObject beinhaltet alle Abläufe des gesamten Spiels. So bekam jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um Konsistenz zu gewährleisten. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
+Der Spectator besitzt ein eigenen Client, dieser eigene Client hat keine eigene Repräsentation des Körpers und benötigt daher auch kein \ac{hmd} um an der Session teilzunehmen. Dem Spectator ist es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
+Der Spectator besitzt die Möglichkeit das Spiel zu starten, die Nummer der zu beginnenden Runde einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen und herauszuwerfen, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
+Je nachdem, wie viele Spieler in dem entsprechendem Raum sind, werden diese dem Spectator angezeigt. So sieht der Spectator "Player 1" bis "Player 3" bei einem vollem Team auf seinem Bildschirm. Der Spectator besitzt außerdem die Möglichkeit Spieler herauszuwerfen, um die Session aufzuräumen und für die nächsten Teams vorzubereiten.
+Weiterhin besitzt der Spectator noch einige Funktionen um sich Informationen über das aktuelle Spielgeschehen zu machen. So bekommt dieser die gesamte vergangene Zeit angezeigt, in welcher Runde sich die Mitspieler aktuell befinden, die aktuelle Effizienz des Teams, ob der "Grüne" oder "Rote" Spieler aktuell mit ihrer Eingabe korrekt sind und wie viele verschiedene Symbole der "Schwarze" Spieler aktuell erklären muss.
+
+\paragraph{Rundenschwierigkeit}
+Ein Scriptable Object namens "RoundRules" beinhaltet die Regeln sowie den Ablauf der einzelnen Runden. 
+Durch diese Sammlung von Regeln und Abläufen, bekommt jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um Konsistenz zu gewährleisten. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
 Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt.
-	\subsubsection{Avatarkonditionen}
-Nachdem ein Probant das \ac{sve} betrat, bekam dieser nur seine eigenen, menschenähnlichen Hände zu sehen. Falls schon ein weiterer Spieler im \ac{sve} anwesend war oder zu einem späterem Zeitpunkt hinzukam, war dieser als jeweilig vom Spectator ausgewählte Avatarkondition zu sehen. Der eigene Körper wurde während  der gesamten dauer \textit{nicht} selbst gerendert. Es wurde nur die jeweilige Avatarkondition bei den Mitspielern gesehen. Man selbst sah sich also nicht mit der Kondition \ac{ik} oder \ac{nik}.
+\paragraph{Avatarkonditionen}
+Betritt ein Versuchsteilnehmer das \ac{sve}, bekommt dieser als Selbstrepräsentation seine eigenen, menschenähnlichen Hände zu sehen. Die Versuchsteilnehmer sehen nicht ihre eigene Repräsentation der Konditionen \ac{ik} oder \ac{nik}. Es wird nur die jeweilige Avatarkondition der Mitspieler gesehen.
+Falls schon ein anderer Spieler im \ac{sve} anwesend ist oder zu einem späterem Zeitpunkt hinzukommt, ist dieser als die vom Spectator jeweilig ausgewählte Avatarkondition zu sehen. 
 
-\subsubsection{Globaler Datastore}
-
-	\subsubsection{GameManager und PodestManager}
+\paragraph{GameManager und PodestManager}
 Der GameManager übernimmt alle wichtigen Funktionalitäten in der Anwendung.
 Diese sind unter anderem :
 \begin{itemize}
@@ -912,19 +912,14 @@ Diese sind unter anderem :
 \item Verwalten der CSV-Logs
 \end{itemize}
 
-Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Der Spectator sowie die Clients besitzen den GameManager mit unterschiedlichen Funktionalitäten. 
-Der GameManager des Clients übernimmt das gesamte RCP-basierte Netzwerkhandling sowie das lauschen auf Änderungen von relevanten Variablen im globalen Datastore.
-Eine wesentliche Aufgabe ist es zu überprüfen, ob eine Runde vom GameManager des Spectators als beendet markiert wurde und leitet gegebenenfalls die Initialisierung einer neuen Runde ein.
-Der GameManager des Spectators gibt Hauptsächlich die Information über den Start, Stop oder den Reset der einzelnen Runden an die GameManager der Clients weiter. Weiterhin regelt dieser aufgrund seiner besonderen Rolle über die Steuerung der gesamten Anwendung noch die Netzwerkinteraktionen wie die Audioübertragung, Kickmechanismen, Rundenauswahl sowie das Aussehen der Avatare der Spieler.
-
-Somit besitzt jeder Client einen GameManager. Dieser steht in Verbindung mit den einzelnen Podesten der Spielers. Der Podestmanager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
-Drückt nun ein Spieler ein entsprechenden Knopf mit einem Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe die richtigen sind, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler \flqq Rot und Grün\frqq die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
-	\subsubsection{Gametimer funktionsweise und immer zum Spieler gedreht}
-	\subsubsection{Audioübertragung}
-	\subsubsection{F2B und Positionsmanagement}
-\paragraph{Spieler Positionen}
-Da alle Mitspieler sich in einem \ac{sve} befinden in dem diese sich frei bewegen können, müssen diese beim Start des Spiels auf ein für diese definiertes Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes byte, wobei die bits des bytes als boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler wurden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
-Damit es dem Roten sowie dem grünen Spieler nicht einfach möglich ist auf die markierten Symbole des schwarzen Spielers zu schauen indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus eingefügt. Entfernt sich ein Spieler einen gewissen Radius um sein ihm zugewiesenem Podest, wird sein Bild schwarz, bis dieser wieder seine ursprüngliche Position erreicht.
+Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Einer der wichtigsten Punkte ist jedoch das Netzwerkmanagement und RCP-Call Handling. 
+Der GameManager steht in Verbindung mit den einzelnen Podesten der Spielers. Ein Podestmanager verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
+Drückt nun ein Spieler ein entsprechenden Knopf mit Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager. Dieser Überprüft, ob die zur Zeit gedrückten Knöpfe mit den zu drücktenden Knöpfen der Runde übereinstimmen. Falls diese das tun, wird eine bool-Variable im globalen Datastore umgeschaltet, der die restlichen Clients (inklusive Spectator) darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler (Rot und Grün) die korrekten Knöpfe gedrückt und dadurch eine Flag im Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
+\paragraph{Gametimer funktionsweise und immer zum Spieler gedreht}
+Die jeweiligen Teams haben 600 Sekunden Zeit um so viele Symbole wie möglich richtig zu erkennen. Startet eine runde, zählt ein Timer von 10 herunter. Anschließend beginnt die Runde. Dieser Spieletimer ist von jedem Mitspieler zwischen den drei Podesten gut sichtbar und immer zu den einzelnen Versuchsteilnehmer hingedreht. Die 10 Sekunden zwischen den einzelnen Runden, werden nicht zur 600 Sekunden Gesamtzeit hinzugezählt. Schaffen die Versuchsteilnehmer 10 Runden in 600 Sekunden zu absolvieren, dauerte der Versuch somit insgesamt \\
+$600 Sekunden Gesamtzeit + 10 Runden * 10 Sekunden Wartezeit = 700 Sekunden$.
+\subsubsection{Audioübertragung}
+	\subsubsection{FADE TO Black}
 	\subsubsection{"Quasi"-Randomisierung des Leaders }
 	Wurde das nun eigentlich implementiert? Oder wurde das auch durch die SCObjects abgedeckt?
 	\subsubsection{CSV-Logwriting}
