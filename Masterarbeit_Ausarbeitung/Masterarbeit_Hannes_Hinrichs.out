@@ -38,79 +38,71 @@
 \BOOKMARK [2][]{subsection.60}{4.3 Der Versuch}{section.56}% 38
 \BOOKMARK [2][]{subsection.61}{4.4 Die Avatare}{section.56}% 39
 \BOOKMARK [2][]{subsection.65}{4.5 Entwicklung der Versuchsumgebung}{section.56}% 40
-\BOOKMARK [3][]{subsubsection.77}{4.5.1 Audio\374bertragung}{subsection.65}% 41
-\BOOKMARK [3][]{subsubsection.78}{4.5.2 FADE TO Black}{subsection.65}% 42
-\BOOKMARK [3][]{subsubsection.79}{4.5.3 "QuasiRandomisierung des Leaders }{subsection.65}% 43
-\BOOKMARK [3][]{subsubsection.80}{4.5.4 CSV-Logwriting}{subsection.65}% 44
-\BOOKMARK [3][]{subsubsection.81}{4.5.5 Physical Handmodel, eigener Avatar war unsichtbar}{subsection.65}% 45
-\BOOKMARK [3][]{subsubsection.82}{4.5.6 PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}{subsection.65}% 46
-\BOOKMARK [3][]{subsubsection.83}{4.5.7 Symbole und Podest, Dr\374ckmechanismus, Colliderplatzierung}{subsection.65}% 47
-\BOOKMARK [3][]{subsubsection.84}{4.5.8 PlayerHeight/Position Change WASDQE}{subsection.65}% 48
-\BOOKMARK [3][]{subsubsection.85}{4.5.9 GlowingBall Animation, HandFingeranimation}{subsection.65}% 49
-\BOOKMARK [3][]{subsubsection.86}{4.5.10 Automatic Position Set when Spectator Pressed Start}{subsection.65}% 50
-\BOOKMARK [3][]{subsubsection.87}{4.5.11 SOUNDS}{subsection.65}% 51
-\BOOKMARK [3][]{subsubsection.88}{4.5.12 UML Diagramme der Funktionsweise}{subsection.65}% 52
-\BOOKMARK [3][]{subsubsection.89}{4.5.13 Verwendete Hardware}{subsection.65}% 53
-\BOOKMARK [2][]{subsection.90}{4.6 Untersuchungsmethode}{section.56}% 54
-\BOOKMARK [2][]{subsection.91}{4.7 Qualitative vs Quantitative Untersuchung}{section.56}% 55
-\BOOKMARK [3][]{subsubsection.92}{4.7.1 A/B Testing}{subsection.91}% 56
-\BOOKMARK [2][]{subsection.93}{4.8 Teilnehmerfindung}{section.56}% 57
-\BOOKMARK [2][]{subsection.94}{4.9 Unabh\344ngige Variablen}{section.56}% 58
-\BOOKMARK [3][]{subsubsection.95}{4.9.1 Avatar embodiement}{subsection.94}% 59
-\BOOKMARK [2][]{subsection.98}{4.10 Abh\344ngige Variablen}{section.56}% 60
-\BOOKMARK [3][]{subsubsection.99}{4.10.1 Hang zum Vertrauen}{subsection.98}% 61
-\BOOKMARK [3][]{subsubsection.100}{4.10.2 Kognitives Vertrauen}{subsection.98}% 62
-\BOOKMARK [3][]{subsubsection.101}{4.10.3 Vertrauen in das Team}{subsection.98}% 63
-\BOOKMARK [3][]{subsubsection.102}{4.10.4 Team Effektivit\344t}{subsection.98}% 64
-\BOOKMARK [2][]{subsection.103}{4.11 Residuen}{section.56}% 65
-\BOOKMARK [3][]{subsubsection.104}{4.11.1 Aufbau der Umgebung}{subsection.103}% 66
-\BOOKMARK [3][]{subsubsection.105}{4.11.2 Farbe der Avatare}{subsection.103}% 67
-\BOOKMARK [2][]{subsection.106}{4.12 Geschlecht}{section.56}% 68
-\BOOKMARK [3][]{subsubsection.107}{4.12.1 Sozialpsychologische Einflussfaktoren}{subsection.106}% 69
-\BOOKMARK [2][]{subsection.112}{4.13 Datenerhebungsmethoden}{section.56}% 70
-\BOOKMARK [1][]{section.127}{5 Auswertung/Ergebnisse}{}% 71
-\BOOKMARK [2][]{subsection.128}{5.1 Teilnehmer und Demografie}{section.127}% 72
-\BOOKMARK [2][]{subsection.129}{5.2 Validit\344t und Reliabilit\344t}{section.127}% 73
-\BOOKMARK [2][]{subsection.130}{5.3 Gesammelte Daten}{section.127}% 74
-\BOOKMARK [2][]{subsection.131}{5.4 Analyse}{section.127}% 75
-\BOOKMARK [2][]{subsection.146}{5.5 Test auf Normalverteilung der Daten}{section.127}% 76
-\BOOKMARK [2][]{subsection.147}{5.6 Analyse Hypothese 1}{section.127}% 77
-\BOOKMARK [3][]{subsubsection.149}{5.6.1 Test auf Ausrei\337er}{subsection.147}% 78
-\BOOKMARK [3][]{subsubsection.150}{5.6.2 Pearson-Korrelationsanalyse}{subsection.147}% 79
-\BOOKMARK [3][]{subsubsection.152}{5.6.3 Regressionsanalyse}{subsection.147}% 80
-\BOOKMARK [2][]{subsection.154}{5.7 Analyse Hypothese 2}{section.127}% 81
-\BOOKMARK [3][]{subsubsection.157}{5.7.1 T-Test}{subsection.154}% 82
-\BOOKMARK [2][]{subsection.159}{5.8 Analyse Hypothese 3}{section.127}% 83
-\BOOKMARK [3][]{subsubsection.160}{5.8.1 Aufstellen der kognitiven Vertrauenstabelle pro Team}{subsection.159}% 84
-\BOOKMARK [3][]{subsubsection.162}{5.8.2 Pearson-Korrelationsanalyse}{subsection.159}% 85
-\BOOKMARK [3][]{subsubsection.164}{5.8.3 Regressionsanalyse}{subsection.159}% 86
-\BOOKMARK [3][]{subsubsection.167}{5.8.4 Korrektur der Analyse}{subsection.159}% 87
-\BOOKMARK [2][]{subsection.170}{5.9 Analyse Hypothese 4}{section.127}% 88
-\BOOKMARK [3][]{subsubsection.171}{5.9.1 T-Test}{subsection.170}% 89
-\BOOKMARK [2][]{subsection.173}{5.10 Analyse Hypothese 5}{section.127}% 90
-\BOOKMARK [3][]{subsubsection.176}{5.10.1 Aufstellen der generellen Vertrauenstabelle pro Team}{subsection.173}% 91
-\BOOKMARK [3][]{subsubsection.178}{5.10.2 Pearson-Korrelationsanalyse}{subsection.173}% 92
-\BOOKMARK [3][]{subsubsection.180}{5.10.3 Regressionsanalyse}{subsection.173}% 93
-\BOOKMARK [3][]{subsubsection.183}{5.10.4 Korrektur der Analyse}{subsection.173}% 94
-\BOOKMARK [2][]{subsection.186}{5.11 Analyse Hypothese 6}{section.127}% 95
-\BOOKMARK [2][]{subsection.187}{5.12 Analyse Hypothese 7}{section.127}% 96
-\BOOKMARK [2][]{subsection.188}{5.13 Berechnung der Werte f\374r die Auswertung}{section.127}% 97
-\BOOKMARK [1][]{section.189}{6 Zusammenfassung}{}% 98
-\BOOKMARK [1][]{section.190}{7 Diskussion}{}% 99
-\BOOKMARK [2][]{subsection.191}{7.1 Diskussion der Ergebnisse}{section.190}% 100
-\BOOKMARK [2][]{subsection.192}{7.2 Diskussion der eingesetzten Methoden}{section.190}% 101
-\BOOKMARK [2][]{subsection.193}{7.3 Auswirkungen auf die Gegenwart}{section.190}% 102
-\BOOKMARK [2][]{subsection.194}{7.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.190}% 103
-\BOOKMARK [1][]{section*.195}{Anhang}{}% 104
-\BOOKMARK [1][]{appendix.196}{A Auswertungsergebnisse}{}% 105
-\BOOKMARK [1][]{appendix.205}{B Demografieauswertung}{}% 106
-\BOOKMARK [1][]{appendix.213}{C Pre-Questionnaire}{}% 107
-\BOOKMARK [1][]{appendix.220}{D Post-Questionnaire - Konditionsabfrage}{}% 108
-\BOOKMARK [1][]{appendix.222}{E Post-Questionnaire - Generelles Vertrauen}{}% 109
-\BOOKMARK [1][]{appendix.227}{F Post-Questionnaire - Kognitives Vertrauen}{}% 110
-\BOOKMARK [1][]{appendix.230}{G Post-Questionnaire - Teamkommunikation}{}% 111
-\BOOKMARK [1][]{appendix.232}{H Post-Questionnaire - Team-Effektivit\344t}{}% 112
-\BOOKMARK [1][]{appendix.234}{I Post-Questionnaire - NASA-TLX}{}% 113
-\BOOKMARK [1][]{appendix.241}{J Post-Questionnaire - IPQ}{}% 114
-\BOOKMARK [1][]{appendix.245}{K Post-Questionnaire - Co-Pr\344senz}{}% 115
-\BOOKMARK [1][]{appendix.252}{L Other}{}% 116
+\BOOKMARK [3][]{subsubsection.80}{4.5.1 Physical Handmodel, eigener Avatar war unsichtbar}{subsection.65}% 41
+\BOOKMARK [3][]{subsubsection.81}{4.5.2 PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}{subsection.65}% 42
+\BOOKMARK [3][]{subsubsection.82}{4.5.3 Symbole und Podest, Dr\374ckmechanismus, Colliderplatzierung}{subsection.65}% 43
+\BOOKMARK [3][]{subsubsection.86}{4.5.4 UML Diagramme der Funktionsweise}{subsection.65}% 44
+\BOOKMARK [3][]{subsubsection.87}{4.5.5 Verwendete Hardware}{subsection.65}% 45
+\BOOKMARK [2][]{subsection.88}{4.6 Untersuchungsmethode}{section.56}% 46
+\BOOKMARK [2][]{subsection.89}{4.7 Qualitative vs Quantitative Untersuchung}{section.56}% 47
+\BOOKMARK [3][]{subsubsection.90}{4.7.1 A/B Testing}{subsection.89}% 48
+\BOOKMARK [2][]{subsection.91}{4.8 Teilnehmerfindung}{section.56}% 49
+\BOOKMARK [2][]{subsection.92}{4.9 Unabh\344ngige Variablen}{section.56}% 50
+\BOOKMARK [3][]{subsubsection.93}{4.9.1 Avatar embodiement}{subsection.92}% 51
+\BOOKMARK [2][]{subsection.96}{4.10 Abh\344ngige Variablen}{section.56}% 52
+\BOOKMARK [3][]{subsubsection.97}{4.10.1 Hang zum Vertrauen}{subsection.96}% 53
+\BOOKMARK [3][]{subsubsection.98}{4.10.2 Kognitives Vertrauen}{subsection.96}% 54
+\BOOKMARK [3][]{subsubsection.99}{4.10.3 Vertrauen in das Team}{subsection.96}% 55
+\BOOKMARK [3][]{subsubsection.100}{4.10.4 Team Effektivit\344t}{subsection.96}% 56
+\BOOKMARK [2][]{subsection.101}{4.11 Residuen}{section.56}% 57
+\BOOKMARK [3][]{subsubsection.102}{4.11.1 Aufbau der Umgebung}{subsection.101}% 58
+\BOOKMARK [3][]{subsubsection.103}{4.11.2 Farbe der Avatare}{subsection.101}% 59
+\BOOKMARK [2][]{subsection.104}{4.12 Geschlecht}{section.56}% 60
+\BOOKMARK [3][]{subsubsection.105}{4.12.1 Sozialpsychologische Einflussfaktoren}{subsection.104}% 61
+\BOOKMARK [2][]{subsection.110}{4.13 Datenerhebungsmethoden}{section.56}% 62
+\BOOKMARK [1][]{section.125}{5 Auswertung/Ergebnisse}{}% 63
+\BOOKMARK [2][]{subsection.126}{5.1 Teilnehmer und Demografie}{section.125}% 64
+\BOOKMARK [2][]{subsection.127}{5.2 Validit\344t und Reliabilit\344t}{section.125}% 65
+\BOOKMARK [2][]{subsection.128}{5.3 Gesammelte Daten}{section.125}% 66
+\BOOKMARK [2][]{subsection.129}{5.4 Analyse}{section.125}% 67
+\BOOKMARK [2][]{subsection.144}{5.5 Test auf Normalverteilung der Daten}{section.125}% 68
+\BOOKMARK [2][]{subsection.145}{5.6 Analyse Hypothese 1}{section.125}% 69
+\BOOKMARK [3][]{subsubsection.147}{5.6.1 Test auf Ausrei\337er}{subsection.145}% 70
+\BOOKMARK [3][]{subsubsection.148}{5.6.2 Pearson-Korrelationsanalyse}{subsection.145}% 71
+\BOOKMARK [3][]{subsubsection.150}{5.6.3 Regressionsanalyse}{subsection.145}% 72
+\BOOKMARK [2][]{subsection.152}{5.7 Analyse Hypothese 2}{section.125}% 73
+\BOOKMARK [3][]{subsubsection.155}{5.7.1 T-Test}{subsection.152}% 74
+\BOOKMARK [2][]{subsection.157}{5.8 Analyse Hypothese 3}{section.125}% 75
+\BOOKMARK [3][]{subsubsection.158}{5.8.1 Aufstellen der kognitiven Vertrauenstabelle pro Team}{subsection.157}% 76
+\BOOKMARK [3][]{subsubsection.160}{5.8.2 Pearson-Korrelationsanalyse}{subsection.157}% 77
+\BOOKMARK [3][]{subsubsection.162}{5.8.3 Regressionsanalyse}{subsection.157}% 78
+\BOOKMARK [3][]{subsubsection.165}{5.8.4 Korrektur der Analyse}{subsection.157}% 79
+\BOOKMARK [2][]{subsection.168}{5.9 Analyse Hypothese 4}{section.125}% 80
+\BOOKMARK [3][]{subsubsection.169}{5.9.1 T-Test}{subsection.168}% 81
+\BOOKMARK [2][]{subsection.171}{5.10 Analyse Hypothese 5}{section.125}% 82
+\BOOKMARK [3][]{subsubsection.174}{5.10.1 Aufstellen der generellen Vertrauenstabelle pro Team}{subsection.171}% 83
+\BOOKMARK [3][]{subsubsection.176}{5.10.2 Pearson-Korrelationsanalyse}{subsection.171}% 84
+\BOOKMARK [3][]{subsubsection.178}{5.10.3 Regressionsanalyse}{subsection.171}% 85
+\BOOKMARK [3][]{subsubsection.181}{5.10.4 Korrektur der Analyse}{subsection.171}% 86
+\BOOKMARK [2][]{subsection.184}{5.11 Analyse Hypothese 6}{section.125}% 87
+\BOOKMARK [2][]{subsection.185}{5.12 Analyse Hypothese 7}{section.125}% 88
+\BOOKMARK [2][]{subsection.186}{5.13 Berechnung der Werte f\374r die Auswertung}{section.125}% 89
+\BOOKMARK [1][]{section.187}{6 Zusammenfassung}{}% 90
+\BOOKMARK [1][]{section.188}{7 Diskussion}{}% 91
+\BOOKMARK [2][]{subsection.189}{7.1 Diskussion der Ergebnisse}{section.188}% 92
+\BOOKMARK [2][]{subsection.190}{7.2 Diskussion der eingesetzten Methoden}{section.188}% 93
+\BOOKMARK [2][]{subsection.191}{7.3 Auswirkungen auf die Gegenwart}{section.188}% 94
+\BOOKMARK [2][]{subsection.192}{7.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.188}% 95
+\BOOKMARK [1][]{section*.193}{Anhang}{}% 96
+\BOOKMARK [1][]{appendix.194}{A Auswertungsergebnisse}{}% 97
+\BOOKMARK [1][]{appendix.203}{B Demografieauswertung}{}% 98
+\BOOKMARK [1][]{appendix.211}{C Pre-Questionnaire}{}% 99
+\BOOKMARK [1][]{appendix.218}{D Post-Questionnaire - Konditionsabfrage}{}% 100
+\BOOKMARK [1][]{appendix.220}{E Post-Questionnaire - Generelles Vertrauen}{}% 101
+\BOOKMARK [1][]{appendix.225}{F Post-Questionnaire - Kognitives Vertrauen}{}% 102
+\BOOKMARK [1][]{appendix.228}{G Post-Questionnaire - Teamkommunikation}{}% 103
+\BOOKMARK [1][]{appendix.230}{H Post-Questionnaire - Team-Effektivit\344t}{}% 104
+\BOOKMARK [1][]{appendix.232}{I Post-Questionnaire - NASA-TLX}{}% 105
+\BOOKMARK [1][]{appendix.239}{J Post-Questionnaire - IPQ}{}% 106
+\BOOKMARK [1][]{appendix.243}{K Post-Questionnaire - Co-Pr\344senz}{}% 107
+\BOOKMARK [1][]{appendix.250}{L Other}{}% 108

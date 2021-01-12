@@ -886,6 +886,7 @@ Der Raum, in dem die Spieler sich befinden ist ein Rechteckiger Raum mit 4 Fenst
 \paragraph{VR-Client}
 Jeder Versuchsteilnehmer benötigt eine Client Version der Umgebung um an dem Versuch teilzunehmen. Die Client Version gibt es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangt der Probant in das \ac{sve} und verbindet sich automatisch mit dem Server (Normcore-Raum).
 Der Client sieht seine beiden Hände, jedoch keine der beiden Avatarkonditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
+
 \paragraph{Spectator}
 Der Spectator besitzt ein eigenen Client, dieser eigene Client hat keine eigene Repräsentation des Körpers und benötigt daher auch kein \ac{hmd} um an der Session teilzunehmen. Dem Spectator ist es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
 Der Spectator besitzt die Möglichkeit das Spiel zu starten, die Nummer der zu beginnenden Runde einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen und herauszuwerfen, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
@@ -896,6 +897,7 @@ Weiterhin besitzt der Spectator noch einige Funktionen um sich Informationen üb
 Ein Scriptable Object namens "RoundRules" beinhaltet die Regeln sowie den Ablauf der einzelnen Runden. 
 Durch diese Sammlung von Regeln und Abläufen, bekommt jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um Konsistenz zu gewährleisten. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
 Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt.
+
 \paragraph{Avatarkonditionen}
 Betritt ein Versuchsteilnehmer das \ac{sve}, bekommt dieser als Selbstrepräsentation seine eigenen, menschenähnlichen Hände zu sehen. Die Versuchsteilnehmer sehen nicht ihre eigene Repräsentation der Konditionen \ac{ik} oder \ac{nik}. Es wird nur die jeweilige Avatarkondition der Mitspieler gesehen.
 Falls schon ein anderer Spieler im \ac{sve} anwesend ist oder zu einem späterem Zeitpunkt hinzukommt, ist dieser als die vom Spectator jeweilig ausgewählte Avatarkondition zu sehen. 
@@ -906,32 +908,52 @@ Diese sind unter anderem :
 \begin{itemize}
 \item Steuerung und Entscheidungslogik über Spectator oder Spieler
 \item Auswahl des Entsprechenden \ac{hmd}'s
-\item Netzwerkmanagement und RCP-Call Handling
+\item Netzwerkmanagement und RPC Handling
 \item Start, Reset, Steuerung und Überprüfungsmechanismen sowie Zeitmessungen der einzelnen Runden
 \item Interaktionen mit globalen Datastore-Variablen
 \item Verwalten der CSV-Logs
 \end{itemize}
 
-Die Hauptaufgabe des GameManagers ist somit die gesamte Verwaltung der Anwendung. Einer der wichtigsten Punkte ist jedoch das Netzwerkmanagement und RCP-Call Handling. 
-Der GameManager steht in Verbindung mit den einzelnen Podesten der Spielers. Ein Podestmanager verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
-Drückt nun ein Spieler ein entsprechenden Knopf mit Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager. Dieser Überprüft, ob die zur Zeit gedrückten Knöpfe mit den zu drücktenden Knöpfen der Runde übereinstimmen. Falls diese das tun, wird eine bool-Variable im globalen Datastore umgeschaltet, der die restlichen Clients (inklusive Spectator) darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler (Rot und Grün) die korrekten Knöpfe gedrückt und dadurch eine Flag im Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
+Die Hauptaufgabe des GameManagers ist die gesamte Verwaltung der Anwendung. Der GameManager des Spectator sowie des Clients besitzt unterschiedlichen Funktionalitäten. 
+Der GameManager des Clients übernimmt das für den Clienten relevante RPC-basierte Netzwerkhandling sowie das lauschen auf Änderungen von relevanten Variablen im globalen Datastore.
+Eine wesentliche Aufgabe ist es zu überprüfen, ob eine Runde vom GameManager des Spectators als beendet markiert wurde und leitet gegebenenfalls die Initialisierung einer neuen Runde ein.
+Der GameManager des Spectators gibt Hauptsächlich die Information über den Start, Stop oder den Reset der einzelnen Runden an die GameManager der Clients weiter. Weiterhin steuert dieser aufgrund seiner besonderen Rolle noch die Spectator-to-Client Netzwerkinteraktionen wie die Audioübertragung, Kickmechanismen, Rundenauswahl sowie das Aussehen der Avatare der Spieler.
+
+Jeder Client besitzt einen GameManager. Dieser steht in Verbindung mit den einzelnen Podesten der Spielers. Der Podestmanager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
+Drückt nun ein Spieler ein entsprechenden Knopf mit einem Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe die richtigen sind, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler \flqq Rot und Grün\frqq die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
 \paragraph{Gametimer funktionsweise und immer zum Spieler gedreht}
 Die jeweiligen Teams haben 600 Sekunden Zeit um so viele Symbole wie möglich richtig zu erkennen. Startet eine runde, zählt ein Timer von 10 herunter. Anschließend beginnt die Runde. Dieser Spieletimer ist von jedem Mitspieler zwischen den drei Podesten gut sichtbar und immer zu den einzelnen Versuchsteilnehmer hingedreht. Die 10 Sekunden zwischen den einzelnen Runden, werden nicht zur 600 Sekunden Gesamtzeit hinzugezählt. Schaffen die Versuchsteilnehmer 10 Runden in 600 Sekunden zu absolvieren, dauerte der Versuch somit insgesamt \\
 $600 Sekunden Gesamtzeit + 10 Runden * 10 Sekunden Wartezeit = 700 Sekunden$.
-\subsubsection{Audioübertragung}
-	\subsubsection{FADE TO Black}
-	\subsubsection{"Quasi"-Randomisierung des Leaders }
-	Wurde das nun eigentlich implementiert? Oder wurde das auch durch die SCObjects abgedeckt?
-	\subsubsection{CSV-Logwriting}
+
+\paragraph{Audioübertragung}
+Die Audioübertragung wird von den GameManagern des Clients sowie des Spectators übernommen. Sobald der Teilnehmer zu der Anwendung verbunden ist, wird das Mikrofon des \ac{hmd}'s aktiviert. Es werden unterschiedliche MessageID's für Spectator und Client für die Netzwerkpakete festgelegt. Die serialisierten Audiodaten werden mittels RPCMessage an alle verbundenen Teilnehmer gesendet. Der Spectator ließt nur die Netzwerknachrichten mit der MessageID der Clients und der Client ließt nur die Netzwerknachrichten mit der MessageID des Spectators.
+
+\paragraph{Fade-to-Black und Positionsmanagement}
+	Da alle Mitspieler sich in einem \ac{sve} befinden in dem diese sich frei bewegen können, müssen diese beim Start des Spiels vor ein Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes byte, wobei die bits des bytes als boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler werden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
+Damit es dem roten sowie dem grünen Spieler nicht einfach möglich ist auf die markierten Symbole des schwarzen Spielers zu schauen indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus implementiert. Entfernt sich ein Spieler einen gewissen Radius um sein ihm zugewiesenem Podest, wird sein Bild schwarz, bis dieser wieder seine ursprüngliche Position erreicht.
+
+\paragraph{CSV-Logwriting}
+Der GameManager des Spectator sammelt alle relevanten Daten über die Clients während die einzelnen Runden von den Teilnehmern durchgeführt werden. Es wird inkrementell ein CSV-Log pro Durchgang fortgeschrieben. Dieses Log umfasst unter anderem das Startdatum, die Startzeit, die Zeit wie lange die Mitspieler aktuell Spielen, die Rundenzeit, die Rundennummer %einen Effizienzwert berechnet durch $1-\frac{timeSinceGameStarts}{OverallGameTime}$ ( welcher jedoch nicht verwendet wurde ),
+sowie welche Avatarkondition diesen Durchlauf verwendet wurde.
 	\subsubsection{Physical Handmodel, eigener Avatar war unsichtbar}
 	\subsubsection{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}
 	\subsubsection{Symbole und Podest, Drückmechanismus, Colliderplatzierung}
 	Eingeloggt ist Gelb umrandet etc auch erklären, Ausloggen etc. Depth of button
-	\subsubsection{PlayerHeight/Position Change WASDQE}
-	\subsubsection{GlowingBall Animation, HandFingeranimation}
-	\subsubsection{Automatic Position Set when Spectator Pressed Start}
-	\subsubsection{SOUNDS}
-	Player Connect, Disconnect, Button Click, Spectator Audio
+\paragraph{PlayerHeight/Position Change WASDQE}
+Da unterschiedliche Teilnehmer unterschiedliche Körpergrößen und unterschiedliche Zimmergrößen besitzen, muss dieses berücksichtigt werden. 
+Falls eine Person zu klein oder zu groß für das Podest ist, kann dieser seine Spielerkamera inklusive Avatar mit den Tasten Q und E bis zu einem bestimmten Schwellwert höher oder niedriger stellen. Durch diesen Mechanismus können ebenfalls sitzende Personen an dem Versuch teilnehmen.
+Falls der Raum zu klein oder aus sonstigen gründen im realem Raum nicht genügend Platz vorhanden ist um die Knöpfe mit Symbolen auf dem Podest zu betätigen, können sich die Spieler mit den Tasten W, A, S und D vorwärts, links, rechts und rückwärts in Blickrichtung bewegen.
+
+	\paragraph{Animationen, Shadergraph und VFX-Graph}
+Die Teilnehmer können in dem \ac{sve} ledigtlich virtuelle Hände ihrer eigenen Körperrepräsentation sehen. Da die Hauptinteraktionen das drücken der Knöpfe eines Podests darstellt, soll dies für die Teilnehmer so einfach wie möglich gestaltet sein. Der Teilnehmer soll sofort verstehen, wie er mit seinem Avatar einen Knopf drückt. Die virtuellen Hände besitzen das Aussehen wie echte Hände mit einem Grau-Hellgrauem Karo-Muster Überzug. Drückt ein Spieler den Triggerbutton seines Controllers, schließen sich alle Finger zu einer Faust.
+
+Drückt ein Spieler einen Knopf mit Symbolen, bekommt dieser durch eine gelbe Umrandung des Knopfes die Bestätigung, dass dieser den Knopf eingeloggt hat. Drückt dieser diesen erneut, verschwindet die gelbe Umrandung. Diese Umrandungen Leuchten im Ping-Pong-Effekt auf und wurden mit Unity Shader-Graph erstellt.
+
+Ist eine Runde noch nicht abgeschlossen, sehen die Teilnehmer zwischen den Podesten einen leuchtenden Ball, welcher aus Unitys VFX-Graph Partikelsystem besteht. Wird eine Runde beendet, wechselt die Farbe des Partikelsystems von Rot auf Grün und es wirkt eine Kraft im Zentrum des Partikelsystems auf die einzelnen Partikel ein und schleudert diese auseinander.
+	\paragraph{Sounds}
+Ist ein Teilnehmer den Raum beigetreten, wurde ein selbstaufgenommener Sound "Player Connected" abgespielt. Hat ein Disconnect eines Teilnehmers stattgefunden, wurde der Sound "Player Disconnected" abgespielt.
+Um ein Feedback bei erfolgreichen Buttonklicks bereitzustellen, wurde ein "Klick" sound beim drücken eines Buttons abgespielt.
+Alle Clients konnten mit dem Spectator sprechen. Dieser konnte alle Clients hören und zu allen auf einmal sprechen. Clients konnten keine Clients hören oder zu diesen Sprechen.
 	\subsubsection{UML Diagramme der Funktionsweise}
 			\subsubsection{Verwendete Hardware}
 Um an dem Experiment Teilnehmen zu können, benötigten die Probanten ein im vollem Umfang funktionierendes HTC-Vive, HTC-Vive2 oder ein Oculus-Rift S \ac{hmd} mit funktionsfähigen Controllern sowie einen Leistungsstarken \ac{vr}-Fähigen PC. Der Spectator, der das Experiment Remote steuern und verwaltet, benötigt einen Leistungsstarken PC auf dem die Anwendung ausführbar ist.
