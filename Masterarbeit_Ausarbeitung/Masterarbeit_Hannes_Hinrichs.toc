@@ -2,7 +2,7 @@
 \contentsline {section}{Erklärung}{I}{section*.3}%
 \contentsline {section}{Kurzfassung/Abstract}{II}{section*.4}%
 \contentsline {paragraph}{Virtual-Reality, Vertrauen, Teambuilding, Avatar}{II}{section*.6}%
-\contentsline {section}{Abkürzungsverzeichnis}{VII}{section*.8}%
+\contentsline {section}{Abkürzungsverzeichnis}{VI}{section*.8}%
 \contentsline {section}{\numberline {1}Abgrenzung zu anderen Studien}{1}{section.9}%
 \contentsline {section}{Einleitung}{1}{section*.10}%
 \contentsline {subsection}{\numberline {1.1}Motivation}{3}{subsection.13}%
@@ -37,122 +37,111 @@
 \contentsline {subsubsection}{\numberline {2.6.3}Virtuelle Teams und Teambuilding}{21}{subsubsection.52}%
 \contentsline {subsubsection}{\numberline {2.6.4}Teameffektivität}{22}{subsubsection.53}%
 \contentsline {section}{\numberline {3}Versuchshypothesen}{24}{section.54}%
-\contentsline {section}{\numberline {4}Vorgehensweise}{25}{section.56}%
-\contentsline {subsection}{\numberline {4.1}Beschreibung des Forschungsverlaufs}{25}{subsection.57}%
-\contentsline {subsection}{\numberline {4.2}Allgemeiner Versuchsaufbau}{27}{subsection.58}%
-\contentsline {subsection}{\numberline {4.3}Der Versuch}{28}{subsection.60}%
-\contentsline {subsection}{\numberline {4.4}Die Avatare}{28}{subsection.61}%
-\contentsline {paragraph}{IK-Avatar}{29}{section*.63}%
-\contentsline {paragraph}{Non-IK-Avatar}{29}{section*.64}%
-\contentsline {subsection}{\numberline {4.5}Entwicklung der Versuchsumgebung}{30}{subsection.65}%
-\contentsline {paragraph}{Normcore Datastore / Sync Mechanismus}{30}{section*.67}%
-\contentsline {paragraph}{Aussehen der Umgebung}{30}{section*.68}%
-\contentsline {paragraph}{Raumerschaffung in Normcore}{30}{section*.69}%
-\contentsline {paragraph}{Spectator und Client}{30}{section*.70}%
-\contentsline {paragraph}{VR-Client}{30}{section*.71}%
-\contentsline {paragraph}{Spectator}{30}{section*.72}%
-\contentsline {paragraph}{Rundenschwierigkeit}{31}{section*.73}%
-\contentsline {paragraph}{Avatarkonditionen}{31}{section*.74}%
-\contentsline {paragraph}{GameManager und PodestManager}{31}{section*.75}%
-\contentsline {paragraph}{Gametimer funktionsweise und immer zum Spieler gedreht}{32}{section*.76}%
-\contentsline {paragraph}{Audioübertragung}{32}{section*.77}%
-\contentsline {paragraph}{F2B und Positionsmanagement}{32}{section*.78}%
-\contentsline {paragraph}{CSV-Logwriting}{33}{section*.79}%
-\contentsline {subsubsection}{\numberline {4.5.1}Physical Handmodel, eigener Avatar war unsichtbar}{33}{subsubsection.80}%
-\contentsline {subsubsection}{\numberline {4.5.2}PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}{33}{subsubsection.81}%
-\contentsline {subsubsection}{\numberline {4.5.3}Symbole und Podest, Drückmechanismus, Colliderplatzierung}{33}{subsubsection.82}%
-\contentsline {paragraph}{PlayerHeight/Position Change WASDQE}{33}{section*.83}%
-\contentsline {paragraph}{Animationen, Shadergraph und VFX-Graph}{33}{section*.84}%
-\contentsline {paragraph}{Sounds}{33}{section*.85}%
-\contentsline {subsubsection}{\numberline {4.5.4}UML Diagramme der Funktionsweise}{34}{subsubsection.86}%
-\contentsline {subsubsection}{\numberline {4.5.5}Verwendete Hardware}{34}{subsubsection.87}%
-\contentsline {subsection}{\numberline {4.6}Untersuchungsmethode}{34}{subsection.88}%
-\contentsline {subsection}{\numberline {4.7}Qualitative vs Quantitative Untersuchung}{34}{subsection.89}%
-\contentsline {subsubsection}{\numberline {4.7.1}A/B Testing}{34}{subsubsection.90}%
-\contentsline {subsection}{\numberline {4.8}Teilnehmerfindung}{34}{subsection.91}%
-\contentsline {subsection}{\numberline {4.9}Unabhängige Variablen}{34}{subsection.92}%
-\contentsline {subsubsection}{\numberline {4.9.1}Avatar embodiement}{35}{subsubsection.93}%
-\contentsline {paragraph}{Head- and Handtracking - \ac {nik}}{35}{section*.94}%
-\contentsline {paragraph}{Head-,Hand and Inversekinematic-Torso - \ac {ik}}{35}{section*.95}%
-\contentsline {subsection}{\numberline {4.10}Abhängige Variablen}{35}{subsection.96}%
-\contentsline {subsubsection}{\numberline {4.10.1}Hang zum Vertrauen}{35}{subsubsection.97}%
-\contentsline {subsubsection}{\numberline {4.10.2}Kognitives Vertrauen}{35}{subsubsection.98}%
-\contentsline {subsubsection}{\numberline {4.10.3}Vertrauen in das Team}{35}{subsubsection.99}%
-\contentsline {subsubsection}{\numberline {4.10.4}Team Effektivität}{35}{subsubsection.100}%
-\contentsline {subsection}{\numberline {4.11}Residuen}{35}{subsection.101}%
-\contentsline {subsubsection}{\numberline {4.11.1}Aufbau der Umgebung}{35}{subsubsection.102}%
-\contentsline {subsubsection}{\numberline {4.11.2}Farbe der Avatare}{35}{subsubsection.103}%
-\contentsline {subsection}{\numberline {4.12}Geschlecht}{35}{subsection.104}%
-\contentsline {subsubsection}{\numberline {4.12.1}Sozialpsychologische Einflussfaktoren}{35}{subsubsection.105}%
-\contentsline {paragraph}{Gamification}{35}{section*.106}%
-\contentsline {paragraph}{Aussehen}{35}{section*.107}%
-\contentsline {paragraph}{Sprache}{36}{section*.108}%
-\contentsline {paragraph}{Bekanntheit}{36}{section*.109}%
-\contentsline {subsection}{\numberline {4.13}Datenerhebungsmethoden}{36}{subsection.110}%
-\contentsline {paragraph}{Demografie-Fragebogen}{36}{section*.111}%
-\contentsline {paragraph}{Generalized-Trust-Scale}{36}{section*.112}%
-\contentsline {paragraph}{Cognitive-Trust-Scale}{37}{section*.113}%
-\contentsline {paragraph}{Communication-Scale}{37}{section*.114}%
-\contentsline {paragraph}{Team-Effectivness-Scale}{37}{section*.115}%
-\contentsline {paragraph}{NASA-TLX}{37}{section*.116}%
-\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{38}{section*.117}%
-\contentsline {paragraph}{Co-Präsenz-Questionnaire}{38}{section*.118}%
-\contentsline {paragraph}{Fragenbogen}{40}{section*.120}%
-\contentsline {paragraph}{Beobachtung}{40}{section*.121}%
-\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{40}{section*.122}%
-\contentsline {paragraph}{Bereinigte Fragen}{40}{section*.123}%
-\contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{43}{section.125}%
-\contentsline {subsection}{\numberline {5.1}Teilnehmer und Demografie}{43}{subsection.126}%
-\contentsline {subsection}{\numberline {5.2}Validität und Reliabilität}{43}{subsection.127}%
-\contentsline {subsection}{\numberline {5.3}Gesammelte Daten}{44}{subsection.128}%
-\contentsline {subsection}{\numberline {5.4}Analyse}{44}{subsection.129}%
-\contentsline {subsection}{\numberline {5.5}Test auf Normalverteilung der Daten}{46}{subsection.144}%
-\contentsline {subsection}{\numberline {5.6}Analyse Hypothese 1}{47}{subsection.145}%
-\contentsline {subsubsection}{\numberline {5.6.1}Test auf Ausreißer}{47}{subsubsection.147}%
-\contentsline {subsubsection}{\numberline {5.6.2}Pearson-Korrelationsanalyse}{47}{subsubsection.148}%
-\contentsline {subsubsection}{\numberline {5.6.3}Regressionsanalyse}{48}{subsubsection.150}%
-\contentsline {subsection}{\numberline {5.7}Analyse Hypothese 2}{50}{subsection.152}%
-\contentsline {paragraph}{Voraussetzungen für den T-Test}{50}{section*.153}%
-\contentsline {subsubsection}{\numberline {5.7.1}T-Test}{50}{subsubsection.155}%
-\contentsline {subsection}{\numberline {5.8}Analyse Hypothese 3}{52}{subsection.157}%
-\contentsline {subsubsection}{\numberline {5.8.1}Aufstellen der kognitiven Vertrauenstabelle pro Team}{52}{subsubsection.158}%
-\contentsline {subsubsection}{\numberline {5.8.2}Pearson-Korrelationsanalyse}{53}{subsubsection.160}%
-\contentsline {subsubsection}{\numberline {5.8.3}Regressionsanalyse}{54}{subsubsection.162}%
-\contentsline {paragraph}{Kondition \ac {ik}}{54}{section*.163}%
-\contentsline {paragraph}{Kondition \ac {nik}}{55}{section*.164}%
-\contentsline {subsubsection}{\numberline {5.8.4}Korrektur der Analyse}{55}{subsubsection.165}%
-\contentsline {paragraph}{Pearson-Korrelationsanalyse}{55}{section*.166}%
-\contentsline {paragraph}{Regressionsanalyse}{55}{section*.167}%
-\contentsline {subsection}{\numberline {5.9}Analyse Hypothese 4}{56}{subsection.168}%
-\contentsline {subsubsection}{\numberline {5.9.1}T-Test}{56}{subsubsection.169}%
-\contentsline {subsection}{\numberline {5.10}Analyse Hypothese 5}{57}{subsection.171}%
-\contentsline {subsubsection}{\numberline {5.10.1}Aufstellen der generellen Vertrauenstabelle pro Team}{57}{subsubsection.174}%
-\contentsline {subsubsection}{\numberline {5.10.2}Pearson-Korrelationsanalyse}{58}{subsubsection.176}%
-\contentsline {subsubsection}{\numberline {5.10.3}Regressionsanalyse}{58}{subsubsection.178}%
-\contentsline {paragraph}{Kondition \ac {ik}}{59}{section*.179}%
-\contentsline {paragraph}{Kondition \ac {nik}}{59}{section*.180}%
-\contentsline {subsubsection}{\numberline {5.10.4}Korrektur der Analyse}{59}{subsubsection.181}%
-\contentsline {paragraph}{Pearson-Korrelationsanalyse}{59}{section*.182}%
-\contentsline {paragraph}{Regressionsanalyse}{59}{section*.183}%
-\contentsline {subsection}{\numberline {5.11}Analyse Hypothese 6}{60}{subsection.184}%
-\contentsline {subsection}{\numberline {5.12}Analyse Hypothese 7}{60}{subsection.185}%
-\contentsline {subsection}{\numberline {5.13}Berechnung der Werte für die Auswertung}{60}{subsection.186}%
-\contentsline {section}{\numberline {6}Zusammenfassung}{61}{section.187}%
-\contentsline {section}{\numberline {7}Diskussion}{62}{section.188}%
-\contentsline {subsection}{\numberline {7.1}Diskussion der Ergebnisse}{62}{subsection.189}%
-\contentsline {subsection}{\numberline {7.2}Diskussion der eingesetzten Methoden}{62}{subsection.190}%
-\contentsline {subsection}{\numberline {7.3}Auswirkungen auf die Gegenwart}{62}{subsection.191}%
-\contentsline {subsection}{\numberline {7.4}Vorschläge für zukünftige Untersuchungen}{62}{subsection.192}%
-\contentsline {section}{Anhang}{63}{section*.193}%
-\contentsline {section}{\numberline {A}Auswertungsergebnisse}{63}{appendix.194}%
-\contentsline {section}{\numberline {B}Demografieauswertung}{69}{appendix.203}%
-\contentsline {section}{\numberline {C}Pre-Questionnaire}{74}{appendix.211}%
-\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{79}{appendix.218}%
-\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{80}{appendix.220}%
-\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{84}{appendix.225}%
-\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{85}{appendix.228}%
-\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{86}{appendix.230}%
-\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{87}{appendix.232}%
-\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{93}{appendix.239}%
-\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Präsenz}{96}{appendix.243}%
-\contentsline {section}{\numberline {L}Other}{102}{appendix.250}%
+\contentsline {section}{\numberline {4}Vorgehensweise}{25}{section.63}%
+\contentsline {subsection}{\numberline {4.1}Der Versuch}{25}{subsection.64}%
+\contentsline {subsubsection}{\numberline {4.1.1}Beschreibung des Forschungsverlaufs}{25}{subsubsection.65}%
+\contentsline {subsubsection}{\numberline {4.1.2}Allgemeiner Versuchsaufbau}{27}{subsubsection.66}%
+\contentsline {subsubsection}{\numberline {4.1.3}Detaillierter Versuchsablauf}{28}{subsubsection.68}%
+\contentsline {subsubsection}{\numberline {4.1.4}Die Avatare}{28}{subsubsection.69}%
+\contentsline {paragraph}{IK-Avatar}{29}{section*.71}%
+\contentsline {paragraph}{Non-IK-Avatar}{29}{section*.72}%
+\contentsline {subsection}{\numberline {4.2}Entwicklung der Versuchsumgebung}{30}{subsection.73}%
+\contentsline {paragraph}{Normcore Datastore / Sync Mechanismus}{30}{section*.75}%
+\contentsline {paragraph}{Verwendete Hardware}{30}{section*.76}%
+\contentsline {paragraph}{Aussehen der Umgebung}{30}{section*.77}%
+\contentsline {paragraph}{Raumerschaffung in Normcore}{30}{section*.78}%
+\contentsline {paragraph}{Spectator und Client}{30}{section*.79}%
+\contentsline {paragraph}{VR-Client}{30}{section*.80}%
+\contentsline {paragraph}{Spectator}{30}{section*.81}%
+\contentsline {paragraph}{Rundenschwierigkeit}{31}{section*.82}%
+\contentsline {paragraph}{Avatarkonditionen}{31}{section*.83}%
+\contentsline {paragraph}{GameManager und PodestManager}{31}{section*.84}%
+\contentsline {paragraph}{Gametimer funktionsweise und immer zum Spieler gedreht}{32}{section*.85}%
+\contentsline {paragraph}{Audioübertragung}{32}{section*.86}%
+\contentsline {paragraph}{Fade-to-Black und Positionsmanagement}{33}{section*.87}%
+\contentsline {paragraph}{CSV-Logwriting}{33}{section*.88}%
+\contentsline {paragraph}{Physical Handmodel, eigener Avatar war unsichtbar}{33}{section*.89}%
+\contentsline {paragraph}{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}{33}{section*.90}%
+\contentsline {paragraph}{Symbole und Podest, Drückmechanismus, Colliderplatzierung}{33}{section*.91}%
+\contentsline {paragraph}{PlayerHeight/Position Change WASDQE}{33}{section*.92}%
+\contentsline {paragraph}{Animationen, Shadergraph und VFX-Graph}{33}{section*.93}%
+\contentsline {paragraph}{Sounds}{34}{section*.94}%
+\contentsline {paragraph}{UML Diagramme der Funktionsweise}{34}{section*.95}%
+\contentsline {subsection}{\numberline {4.3}Methodik}{34}{subsection.96}%
+\contentsline {subsubsection}{\numberline {4.3.1}Untersuchungsmethode}{34}{subsubsection.97}%
+\contentsline {subsubsection}{\numberline {4.3.2}Teilnehmerfindung}{34}{subsubsection.98}%
+\contentsline {subsubsection}{\numberline {4.3.3}Unabhängige Variablen}{34}{subsubsection.99}%
+\contentsline {subsection}{\numberline {4.4}Abhängige Variablen}{35}{subsection.100}%
+\contentsline {subsubsection}{\numberline {4.4.1}Hang zum Vertrauen}{35}{subsubsection.101}%
+\contentsline {subsubsection}{\numberline {4.4.2}Kognitives Vertrauen}{35}{subsubsection.102}%
+\contentsline {subsubsection}{\numberline {4.4.3}Vertrauen in das Team}{35}{subsubsection.103}%
+\contentsline {subsubsection}{\numberline {4.4.4}Team Effektivität}{35}{subsubsection.104}%
+\contentsline {subsection}{\numberline {4.5}Residuen}{35}{subsection.105}%
+\contentsline {paragraph}{Sprache}{35}{section*.106}%
+\contentsline {paragraph}{Bekanntheit}{36}{section*.107}%
+\contentsline {subsection}{\numberline {4.6}Datenerhebungsmethoden}{36}{subsection.108}%
+\contentsline {paragraph}{Demografie-Fragebogen}{36}{section*.109}%
+\contentsline {paragraph}{Generalized-Trust-Scale}{36}{section*.110}%
+\contentsline {paragraph}{Cognitive-Trust-Scale}{37}{section*.111}%
+\contentsline {paragraph}{Communication-Scale}{37}{section*.112}%
+\contentsline {paragraph}{Team-Effectivness-Scale}{37}{section*.113}%
+\contentsline {paragraph}{NASA-TLX}{37}{section*.114}%
+\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{38}{section*.115}%
+\contentsline {paragraph}{Co-Präsenz-Questionnaire}{38}{section*.116}%
+\contentsline {paragraph}{Fragenbogen}{40}{section*.118}%
+\contentsline {paragraph}{Beobachtung}{40}{section*.119}%
+\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{40}{section*.120}%
+\contentsline {paragraph}{Bereinigte Fragen}{40}{section*.121}%
+\contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{43}{section.123}%
+\contentsline {subsection}{\numberline {5.1}Teilnehmer und Demografie}{44}{subsection.128}%
+\contentsline {subsection}{\numberline {5.2}Analyse}{45}{subsection.129}%
+\contentsline {subsection}{\numberline {5.3}Test auf Normalverteilung der Daten}{47}{subsection.140}%
+\contentsline {subsection}{\numberline {5.4}Analyse Hypothese 1}{48}{subsection.141}%
+\contentsline {subsubsection}{\numberline {5.4.1}Test auf Ausreißer}{48}{subsubsection.143}%
+\contentsline {subsubsection}{\numberline {5.4.2}Pearson-Korrelationsanalyse}{48}{subsubsection.144}%
+\contentsline {subsubsection}{\numberline {5.4.3}Regressionsanalyse}{49}{subsubsection.146}%
+\contentsline {subsection}{\numberline {5.5}Analyse Hypothese 2}{51}{subsection.148}%
+\contentsline {paragraph}{Voraussetzungen für den T-Test}{51}{section*.149}%
+\contentsline {subsubsection}{\numberline {5.5.1}T-Test}{51}{subsubsection.151}%
+\contentsline {subsection}{\numberline {5.6}Analyse Hypothese 3}{53}{subsection.153}%
+\contentsline {subsubsection}{\numberline {5.6.1}Aufstellen der kognitiven Vertrauenstabelle pro Team}{53}{subsubsection.154}%
+\contentsline {subsubsection}{\numberline {5.6.2}Spearman-Korrelationsanalyse}{54}{subsubsection.156}%
+\contentsline {subsubsection}{\numberline {5.6.3}Regressionsanalyse}{55}{subsubsection.158}%
+\contentsline {paragraph}{Kondition \ac {ik}}{55}{section*.160}%
+\contentsline {paragraph}{Kondition \ac {nik}}{56}{section*.161}%
+\contentsline {subsubsection}{\numberline {5.6.4}Hypothese 3a : Analyse ohne \ac {ik} und \ac {nik} }{56}{subsubsection.162}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{56}{section*.163}%
+\contentsline {paragraph}{Regressionsanalyse}{56}{section*.164}%
+\contentsline {subsection}{\numberline {5.7}Analyse Hypothese 4}{57}{subsection.165}%
+\contentsline {subsubsection}{\numberline {5.7.1}T-Test}{57}{subsubsection.166}%
+\contentsline {subsection}{\numberline {5.8}Analyse Hypothese 5}{58}{subsection.168}%
+\contentsline {subsubsection}{\numberline {5.8.1}Aufstellen der generellen Vertrauenstabelle pro Team}{58}{subsubsection.171}%
+\contentsline {subsubsection}{\numberline {5.8.2}Pearson-Korrelationsanalyse}{59}{subsubsection.173}%
+\contentsline {subsubsection}{\numberline {5.8.3}Regressionsanalyse}{59}{subsubsection.175}%
+\contentsline {paragraph}{Kondition \ac {ik}}{60}{section*.176}%
+\contentsline {paragraph}{Kondition \ac {nik}}{60}{section*.177}%
+\contentsline {subsubsection}{\numberline {5.8.4}Korrektur der Analyse}{60}{subsubsection.178}%
+\contentsline {paragraph}{Pearson-Korrelationsanalyse}{60}{section*.179}%
+\contentsline {paragraph}{Regressionsanalyse}{60}{section*.180}%
+\contentsline {subsection}{\numberline {5.9}Analyse Hypothese 6}{61}{subsection.181}%
+\contentsline {subsection}{\numberline {5.10}Analyse Hypothese 7}{61}{subsection.182}%
+\contentsline {subsection}{\numberline {5.11}Berechnung der Werte für die Auswertung}{61}{subsection.183}%
+\contentsline {section}{\numberline {6}Zusammenfassung}{62}{section.184}%
+\contentsline {section}{\numberline {7}Diskussion}{63}{section.185}%
+\contentsline {subsection}{\numberline {7.1}Diskussion der Ergebnisse}{63}{subsection.186}%
+\contentsline {subsection}{\numberline {7.2}Diskussion der eingesetzten Methoden}{63}{subsection.187}%
+\contentsline {subsection}{\numberline {7.3}Auswirkungen auf die Gegenwart}{63}{subsection.188}%
+\contentsline {subsection}{\numberline {7.4}Vorschläge für zukünftige Untersuchungen}{63}{subsection.189}%
+\contentsline {section}{Anhang}{64}{section*.190}%
+\contentsline {section}{\numberline {A}Auswertungsergebnisse}{64}{appendix.191}%
+\contentsline {section}{\numberline {B}Demografieauswertung}{70}{appendix.200}%
+\contentsline {section}{\numberline {C}Pre-Questionnaire}{75}{appendix.208}%
+\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{80}{appendix.215}%
+\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{81}{appendix.217}%
+\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{85}{appendix.222}%
+\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{86}{appendix.225}%
+\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{87}{appendix.227}%
+\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{88}{appendix.229}%
+\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{94}{appendix.236}%
+\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Präsenz}{97}{appendix.240}%
+\contentsline {section}{\numberline {L}Other}{103}{appendix.247}%
