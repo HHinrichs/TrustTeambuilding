@@ -93,55 +93,66 @@
 \contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{40}{section*.120}%
 \contentsline {paragraph}{Bereinigte Fragen}{40}{section*.121}%
 \contentsline {section}{\numberline {5}Auswertung/Ergebnisse}{43}{section.123}%
-\contentsline {subsection}{\numberline {5.1}Teilnehmer und Demografie}{44}{subsection.128}%
-\contentsline {subsection}{\numberline {5.2}Analyse}{45}{subsection.129}%
-\contentsline {subsection}{\numberline {5.3}Test auf Normalverteilung der Daten}{47}{subsection.140}%
-\contentsline {subsection}{\numberline {5.4}Analyse Hypothese 1}{48}{subsection.141}%
-\contentsline {subsubsection}{\numberline {5.4.1}Test auf Ausreißer}{48}{subsubsection.143}%
-\contentsline {subsubsection}{\numberline {5.4.2}Pearson-Korrelationsanalyse}{48}{subsubsection.144}%
-\contentsline {subsubsection}{\numberline {5.4.3}Regressionsanalyse}{49}{subsubsection.146}%
-\contentsline {subsection}{\numberline {5.5}Analyse Hypothese 2}{51}{subsection.148}%
-\contentsline {paragraph}{Voraussetzungen für den T-Test}{51}{section*.149}%
-\contentsline {subsubsection}{\numberline {5.5.1}T-Test}{51}{subsubsection.151}%
-\contentsline {subsection}{\numberline {5.6}Analyse Hypothese 3}{53}{subsection.153}%
-\contentsline {subsubsection}{\numberline {5.6.1}Aufstellen der kognitiven Vertrauenstabelle pro Team}{53}{subsubsection.154}%
-\contentsline {subsubsection}{\numberline {5.6.2}Spearman-Korrelationsanalyse}{54}{subsubsection.156}%
-\contentsline {subsubsection}{\numberline {5.6.3}Regressionsanalyse}{55}{subsubsection.158}%
-\contentsline {paragraph}{Kondition \ac {ik}}{55}{section*.160}%
-\contentsline {paragraph}{Kondition \ac {nik}}{56}{section*.161}%
-\contentsline {subsubsection}{\numberline {5.6.4}Hypothese 3a : Analyse ohne \ac {ik} und \ac {nik} }{56}{subsubsection.162}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{56}{section*.163}%
-\contentsline {paragraph}{Regressionsanalyse}{56}{section*.164}%
-\contentsline {subsection}{\numberline {5.7}Analyse Hypothese 4}{57}{subsection.165}%
-\contentsline {subsubsection}{\numberline {5.7.1}T-Test}{57}{subsubsection.166}%
-\contentsline {subsection}{\numberline {5.8}Analyse Hypothese 5}{58}{subsection.168}%
-\contentsline {subsubsection}{\numberline {5.8.1}Aufstellen der generellen Vertrauenstabelle pro Team}{58}{subsubsection.171}%
-\contentsline {subsubsection}{\numberline {5.8.2}Pearson-Korrelationsanalyse}{59}{subsubsection.173}%
-\contentsline {subsubsection}{\numberline {5.8.3}Regressionsanalyse}{59}{subsubsection.175}%
-\contentsline {paragraph}{Kondition \ac {ik}}{60}{section*.176}%
-\contentsline {paragraph}{Kondition \ac {nik}}{60}{section*.177}%
-\contentsline {subsubsection}{\numberline {5.8.4}Korrektur der Analyse}{60}{subsubsection.178}%
-\contentsline {paragraph}{Pearson-Korrelationsanalyse}{60}{section*.179}%
-\contentsline {paragraph}{Regressionsanalyse}{60}{section*.180}%
-\contentsline {subsection}{\numberline {5.9}Analyse Hypothese 6}{61}{subsection.181}%
-\contentsline {subsection}{\numberline {5.10}Analyse Hypothese 7}{61}{subsection.182}%
-\contentsline {subsection}{\numberline {5.11}Berechnung der Werte für die Auswertung}{61}{subsection.183}%
-\contentsline {section}{\numberline {6}Zusammenfassung}{62}{section.184}%
-\contentsline {section}{\numberline {7}Diskussion}{63}{section.185}%
-\contentsline {subsection}{\numberline {7.1}Diskussion der Ergebnisse}{63}{subsection.186}%
-\contentsline {subsection}{\numberline {7.2}Diskussion der eingesetzten Methoden}{63}{subsection.187}%
-\contentsline {subsection}{\numberline {7.3}Auswirkungen auf die Gegenwart}{63}{subsection.188}%
-\contentsline {subsection}{\numberline {7.4}Vorschläge für zukünftige Untersuchungen}{63}{subsection.189}%
-\contentsline {section}{Anhang}{64}{section*.190}%
-\contentsline {section}{\numberline {A}Auswertungsergebnisse}{64}{appendix.191}%
-\contentsline {section}{\numberline {B}Demografieauswertung}{70}{appendix.200}%
-\contentsline {section}{\numberline {C}Pre-Questionnaire}{75}{appendix.208}%
-\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{80}{appendix.215}%
-\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{81}{appendix.217}%
-\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{85}{appendix.222}%
-\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{86}{appendix.225}%
-\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{87}{appendix.227}%
-\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{88}{appendix.229}%
-\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{94}{appendix.236}%
-\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Präsenz}{97}{appendix.240}%
-\contentsline {section}{\numberline {L}Other}{103}{appendix.247}%
+\contentsline {subsection}{\numberline {5.1}Teilnehmer und Demografie}{46}{subsection.133}%
+\contentsline {subsection}{\numberline {5.2}Analyse}{48}{subsection.134}%
+\contentsline {subsection}{\numberline {5.3}Voraussetzungen}{49}{subsection.145}%
+\contentsline {paragraph}{Test auf Normalverteilung der Daten}{49}{section*.146}%
+\contentsline {paragraph}{T-Test}{49}{section*.147}%
+\contentsline {paragraph}{Mann-Whitney-U-Test}{49}{section*.148}%
+\contentsline {subsection}{\numberline {5.4}Analyse Hypothese 1}{50}{subsection.149}%
+\contentsline {paragraph}{Ausreißer}{50}{section*.150}%
+\contentsline {paragraph}{Normalverteilung}{50}{section*.151}%
+\contentsline {paragraph}{Pearson-Korrelationsanalyse}{50}{section*.152}%
+\contentsline {paragraph}{Regressionsanalyse}{50}{section*.153}%
+\contentsline {subsection}{\numberline {5.5}Analyse Hypothese 2}{51}{subsection.154}%
+\contentsline {paragraph}{Normalverteilung}{51}{section*.155}%
+\contentsline {paragraph}{Varianzgleichheit}{51}{section*.156}%
+\contentsline {paragraph}{Mittelswerte und Standardabweichungen}{51}{section*.157}%
+\contentsline {paragraph}{t-Test}{51}{section*.158}%
+\contentsline {paragraph}{Mann-Whitney-U-Test}{51}{section*.159}%
+\contentsline {subsection}{\numberline {5.6}Analyse Hypothese 3}{52}{subsection.160}%
+\contentsline {paragraph}{Vertrauenstabelle pro Team}{52}{section*.161}%
+\contentsline {paragraph}{Normalverteilung}{53}{section*.163}%
+\contentsline {paragraph}{Mittelwerte und Standardabweichungen}{53}{section*.164}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{54}{section*.165}%
+\contentsline {paragraph}{Regressionsanalyse}{54}{section*.166}%
+\contentsline {paragraph}{Kondition \ac {ik}}{54}{section*.167}%
+\contentsline {paragraph}{Kondition \ac {nik}}{54}{section*.168}%
+\contentsline {paragraph}{Hypothese 3a : Analyse ohne die Aufteilung in \ac {ik} und \ac {nik} }{55}{section*.169}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{55}{section*.170}%
+\contentsline {paragraph}{Regressionsanalyse}{55}{section*.171}%
+\contentsline {subsection}{\numberline {5.7}Analyse Hypothese 4}{56}{subsection.172}%
+\contentsline {subsubsection}{\numberline {5.7.1}T-Test}{56}{subsubsection.174}%
+\contentsline {subsubsection}{\numberline {5.7.2}Mann-Whitney-U-Test}{56}{subsubsection.175}%
+\contentsline {subsection}{\numberline {5.8}Analyse Hypothese 5}{57}{subsection.176}%
+\contentsline {subsubsection}{\numberline {5.8.1}Aufstellen der generellen Vertrauenstabelle pro Team}{58}{subsubsection.177}%
+\contentsline {subsubsection}{\numberline {5.8.2}Spearman-Korrelationsanalyse}{59}{subsubsection.179}%
+\contentsline {subsubsection}{\numberline {5.8.3}Regressionsanalyse}{59}{subsubsection.180}%
+\contentsline {paragraph}{Kondition \ac {ik}}{59}{section*.181}%
+\contentsline {paragraph}{Kondition \ac {nik}}{59}{section*.182}%
+\contentsline {subsubsection}{\numberline {5.8.4}Hypothese 5a :Analyse ohne die Aufteilung in \ac {ik} und \ac {nik}}{60}{subsubsection.183}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{60}{section*.184}%
+\contentsline {paragraph}{Regressionsanalyse}{60}{section*.185}%
+\contentsline {subsection}{\numberline {5.9}Analyse weiterer Variablen}{61}{subsection.186}%
+\contentsline {paragraph}{Signifikante unterschiede des Medians}{61}{section*.187}%
+\contentsline {paragraph}{Signifikante Korrelationen}{61}{section*.189}%
+\contentsline {subsection}{\numberline {5.10}Berechnung der Werte für die Auswertung}{61}{subsection.190}%
+\contentsline {section}{\numberline {6}Zusammenfassung}{62}{section.191}%
+\contentsline {section}{\numberline {7}Diskussion}{63}{section.192}%
+\contentsline {subsection}{\numberline {7.1}Diskussion der Ergebnisse}{63}{subsection.193}%
+\contentsline {subsection}{\numberline {7.2}Diskussion der eingesetzten Methoden}{63}{subsection.194}%
+\contentsline {subsection}{\numberline {7.3}Auswirkungen auf die Gegenwart}{63}{subsection.195}%
+\contentsline {subsection}{\numberline {7.4}Vorschläge für zukünftige Untersuchungen}{63}{subsection.196}%
+\contentsline {section}{Anhang}{64}{section*.197}%
+\contentsline {section}{\numberline {A}Auswertungsergebnisse}{64}{appendix.198}%
+\contentsline {section}{\numberline {B}Demografieauswertung}{70}{appendix.209}%
+\contentsline {section}{\numberline {C}Pre-Questionnaire}{75}{appendix.217}%
+\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{80}{appendix.224}%
+\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{81}{appendix.226}%
+\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{85}{appendix.231}%
+\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{86}{appendix.234}%
+\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{87}{appendix.236}%
+\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{88}{appendix.238}%
+\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{94}{appendix.245}%
+\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Präsenz}{97}{appendix.249}%
+\contentsline {section}{\numberline {L}Other}{103}{appendix.256}%
