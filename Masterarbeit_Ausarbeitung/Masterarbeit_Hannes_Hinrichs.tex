@@ -38,8 +38,9 @@
 \usepackage[onehalfspacing]{setspace}%Zeilenabstand
 \usepackage{fancyhdr}
 \usepackage[authoryear]{natbib}
-\usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,urlcolor = black,plainpages = false,hypertexnames = false,citecolor = black] {hyperref}
-\usepackage[printonlyused, withpage, smaller]{acronym}
+\usepackage{relsize}
+\usepackage[printonlyused, smaller, footnote]{acronym}
+%\usepackage[printonlyused, withpage, smaller, footnote]{acronym}
 \renewcommand{\\}{\vspace*{0.5\baselineskip} \newline}
 \renewcommand*\MakeUppercase[1]{#1}	
 \renewcommand{\familydefault}{\sfdefault}
@@ -50,6 +51,7 @@
 \fancyhead[R]{\footnotesize{\thepage}}
 \fancyhead[L]{\footnotesize{\leftmark}}
 \fancyfoot{}
+\usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,urlcolor = black,plainpages = false,hypertexnames = false,citecolor = black] {hyperref}
 
 \begin{document}
 	\begin{titlepage}
@@ -77,33 +79,7 @@
 
 %Auswirkung von Vertrauen auf die Anfangsphase einer virtuellen Teamgrün
 
-
-
-
-
-
-
-
-
-
-Einfluss der Vertrauensbildung zwischen \ac{ik} und \ac{nik} Avataren auf die Team-Effektivität in einem kurzzeitig zusammenarbeitendem virtuellem Team.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Einfluss der Vertrauensbildung zwischen \ac{ik} und \ac{nik} Avataren auf die Team-Effektivität in einem kurzzeitig zusammenarbeitendem virtuellem Team.\\
 		\end{huge}
 		
 		Masterarbeit zur Erlangung des Master-Grades \newline
@@ -381,27 +357,28 @@ Somit reicht das gesamte Kontinuum der Präsenz von der räumlichen Komponente b
 
 	\subsection{Vertrauen}
 	
-Der Begriff Vertrauen ist in viele Bereiche des alltäglichen Lebens eingezogen. Es ist ein Psychiologischen Konzept, dass jeden Menschen ständig begleitet.
-Ein Politiker wirbt um das Vertrauen seiner wähler, Unternehmer beschreiben sich selbst als Geschäftspartner des Vertrauens, man empfiehlt den Arzt des Vertrauens etc..
+Der Begriff \textbf{Vertrauen} ist in viele Bereiche des alltäglichen Lebens eingezogen. Es beschreibt ein Psychiologischen Konzept, dass jeden Menschen ständig begleitet.
+Ein Politiker wirbt um das Vertrauen seiner Wähler, Unternehmer beschreiben sich selbst als Geschäftspartner des Vertrauens, es wird der Arzt des Vertrauens empfohlen etc..
 
-Vertrauen in die \ac{vr} kann auf zwei weisen Betrachtet werden. Das Vertrauen in die Akzeptanz von \ac{vr} sowie das zwischenmenschliche Vertrauen, welches in der \ac{vr} zwischen 2 oder mehreren Personen gebildet wird.
+Vertrauen in die \ac{vr} kann auf zwei unterschiedliche Art und Weisen Betrachtet werden. Das Vertrauen in die Technologie \ac{vr} sowie das zwischenmenschliche Vertrauen, das in der \ac{vr} zwischen 2 oder mehreren Personen gebildet wird.
 Mangelndes Vertrauen in eine Technologie, kann Nutzer dran hindern, diese zu Nutzen. \citep{trustInVRTechnology}
 
 Da diese Arbeit sich mit dem zwischenmenschlichem Vertrauen beschäftigt, wird das Vertrauen in die Akzeptanz der \ac{vr} nicht weiter behandelt.
 Vertrauen wird in dieser Ausarbeitung als bilaterales Konstrukt zwischen einer vertrauenden Person und einer zu vertrauenden Person definiert.
 % https://sci-hub.ren/10.4337/9781847202819.00008
 % https://sci-hub.ren/10.4337/9781847202819.00008
-Aufgrund der Vielseitigkeit von Vertrauen, gibt es unterschiedliche Definitionen. Die erste Definition von Vertrauen wurde 1967 von Rotter aufgestellt. Er definiert Vertrauen als \\ \dq die Erwartung eines Individuums oder einer Gruppe, dass man sich auf das Wort, das Versprechen, die mündliche oder schriftliche Aussage eines anderen Individuums oder einer Gruppe verlassen kann\dq{}. \citep[p.651]{rotter1967new}.\\
-Die meist verbreitetste und akzeptierteste definition kommt jedoch von Meyer.\citep[p.712]{mayer1995integrative} So definiert er Vertrauen als : \\\dq die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{}\\
+Aufgrund der Vielseitigkeit von Vertrauen, gibt es unterschiedliche Definitionen. \newline
+Die erste Definition von Vertrauen wurde 1967 von Rotter aufgestellt. Er definiert Vertrauen als \\ \dq die Erwartung eines Individuums oder einer Gruppe, dass man sich auf das Wort, das Versprechen, die mündliche oder schriftliche Aussage eines anderen Individuums oder einer Gruppe verlassen kann\dq{}. \citep[p.651]{rotter1967new}\\
+Die jedoch meist verbreitetste und akzeptierteste Definition kommt von Meyer.\citep[p.712]{mayer1995integrative} So definiert er Vertrauen als \\\dq die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{}\\
 Jede zwischenmenschliche Beziehung beginnt mit einer frühen Phase der Vertrauensbildung. Diese frühen Phase kann mit Unsicherheiten und Zweifel charakterisiert werden. Das gegenseitige Vertrauen, dass man sich anschließend schenkt, muss erst einmal ausgelotet werden. 
 %\citep[p.166-168]{meyerson1996swift}
 
 Während der frühen Phase der Vertrauensbildung entscheidet sich, ob eine Beziehung aufrecht erhalten wird oder nicht. Unterbewusst bildet sich ein Gefühl von Zuversicht und Sicherheit oder ein Gefühl von Spannung, Zweifel und Skepsis dem Interaktionspartner gegenüber. 
-Dabei ist es egal, ob sich dafür entschieden wird jemandem zu Vertrauen oder nicht. Auf jeden Fall beeinflusst die Stärke des positiven oder negativen Vertrauensgefühl die Effektivität der Zusammenarbeit. Vertrauen kann es einfach oder schwierig machen mit einer anderen Person zu arbeiten und ziele in einer Gruppe oder einem Team zu erreichen.
+Dabei ist es egal, ob sich dafür entschieden wird jemandem zu Vertrauen oder nicht. Auf jeden Fall beeinflusst die Stärke des positiven oder negativen Vertrauensgefühl die Effektivität der Zusammenarbeit. Vertrauen kann es einfach oder schwierig machen mit einer anderen Person zu arbeiten und Ziele in einer Gruppe oder einem Team zu erreichen.
 Früher Vertrauensaufbau ist daher der Schlüssel zur erfolgreichen Zusammenarbeit. \citep[p.405-406]{bigley1998straining}
 Die initiale Phase der Vertrauensbildung wirkt sich auf das Kognitive und das Affektive Vertrauen aus, welche einen starken Einfluss auf das sich entwickelnde Vertrauensmodell zu einer Person hat. In dieser Phase sind diese beiden Vertrauensarten anfällig für Veränderungen. \citep[p.461-462]{baldwin1992relational}
 
-Meinungen und Annahmen, die sich frühzeitig bilden, prägen sich somit stark auch auf die eigene zukünftige Meinung über der zu vertrauenden Person aus.
+Meinungen und Annahmen, die sich frühzeitig bilden, prägen sich somit stark auch auf die zukünftige Meinung über der zu vertrauenden Person aus.
 
 Auch im Unternehmertum muss sich mit dem Konzept des Vertrauens beschäftigt werden um Erfolgreich arbeiten zu können. Ohne Vertrauen in ein Team oder in Unterschiedliche Personen, fällt es schwer Risiken einzugehen. Ist Vertrauen vorhanden, wird man nicht mit der Angst konfrontiert, dass andere Personen einen ausnutzen könnten. \citep[p.1152]{breuer2016does}.
 
@@ -435,7 +412,6 @@ Daraus lässt sich schließen, dass das Grundvertrauen einer Person, sich auch i
 %Diese Annahme wird auch von Brown citep[p.121]{brown2004interpersonal} bestätigt und weitet diese Annahme ebenfalls auf das Vertrauen in virtuelle Teams aus.
 \\
 \textbf{Hypothese 1}:Ein hoher General-Trust-Score wirkt sich \textbf{positiv} auf den Cognitiven-Trust-Score aus.
-\\
 	\subsubsection{Vertrauen als Zustand - Kognitives und Affektives Vertrauen \newline}
 
 Wird Vertrauen als \dq Zustand\dq{} betrachtet, so kann sich dieses Vertrauen auch im Laufe der Zeit, z.B. durch Interaktion mit einer anderen Person, ändern. Dieser \dq Zustand\dq{} des Vertrauens, spiegelt sich auch in Meyers \citep[p.712]{mayer1995integrative} vorherig erwähnter Definition von Vertrauen wieder :\\ "die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren."
@@ -629,20 +605,18 @@ Virtuelle Teams sind :
 \item Asynchron. Virtuelle Teams arbeiten zu unterschiedlichen Zeiten/Zeitzonen oder in der selben Zeitzone in unterschiedlichen Schichten.
 \end{itemize}
 
-Die vollständige Liste von Schweizer findet sich in \textbf{Abbildung} \autoref{criteriaForVirtualTeams}
+Die vollständige Liste von Schweizer findet sich in \textbf{\autoref{criteriaForVirtualTeams}}
 
-Einige Authoren nehmen in ihre Definition eines virtuellen Teams den Aspekt der zeitlichen Limitierung oder der kulturellen Diversität mit auf. So ist ein virtuelles Team für Jarvenpaa \citep[p.1-2]{jarvenpaa1999communication} nur für einen bestimmten Zeitraum aufgebaut und das Team ist kulturell divers. 
+Einige Authoren nehmen in ihre Definition eines virtuellen Teams den Aspekt der zeitlichen Limitierung oder der kulturellen Diversität mit auf. So ist ein virtuelles Team für Jarvenpaa \citep[p.1-2]{jarvenpaa1999communication} nur für einen bestimmten Zeitraum aufgebaut und das Team ist zusätzlich kulturell divers. 
 
-Wird jedoch logisch über die Definition von Schweizer oder Jarvenpaa nachgedacht, muss ein virtuelles Team nicht zwangsläufig aus verschiedenen Organisationen bestehen oder asynchron arbeiten. So können Beispielsweise in einem Unternehmen in der selben Zeitzone ein virtuelles Team zusammenarbeiten. Ebenso ist es virtuell, wenn es nicht kulturell Divers oder zeitlich Limitiert ist.
-Somit bleibt nur noch die Komponente des zustandekommens aufgrund von Kommunikationstechnologie sowie der räumlichen Getrenntheit.
+Wird jedoch aus heutiger Sicht über die Definition von Schweizer oder Jarvenpaa nachgedacht, muss ein virtuelles Team nicht zwangsläufig aus verschiedenen Organisationen bestehen oder asynchron arbeiten. In vielen Unternehmen ist es auch möglich, dass ein virtuelles Team in der Selben Zeitzone und ohne kulturelle Diversität oder Zeitliche Limitierung zusammen arbeitet.
+Somit bleibt nur noch die Komponente des zustande kommen aufgrund von Kommunikationstechnologie sowie der räumlichen Getrenntheit.
 
-Wird nun die Definition von Zenun \citep[p.2]{zenun2007effects} eines Teams herangezogen, und die virtuelle Komponente in diese mit eingebracht, kann ein virtuelles Team als
-
-\flqq eine kleine, auf Kommunikationstechnolgie basierende, räumlich getrennte Gruppe, von Menschen mit gleichartigen Fähigkeiten, welche sich in gleicher Weise für das gleiche Ziel und gleiche Arbeitsweisen einsetzen und dies verfolgen.\frqq 
-
+Wird nun die Definition von Zenun \citep[p.2]{zenun2007effects} eines Teams herangezogen, und die virtuelle Komponente in diese mit eingebracht, kann ein virtuelles Team als \\
+\flqq eine kleine, auf Kommunikationstechnolgie basierende, räumlich getrennte Gruppe, von Menschen mit gleichartigen Fähigkeiten, welche sich in gleicher Weise für das gleiche Ziel und gleiche Arbeitsweisen einsetzen und dies verfolgen.\frqq \\
 definiert werden.
 
-Laut der obrigen Definition eines virtuellem Team ist jedes Team ein virtuelles Team. Nur selten arbeiten Team während der gesamten Lebensdauer nach vorheriger Definition. Es wird daher davon ausgegangen, dass Virtualität als Kontinuum gesehen werden kann, bei dem jedes Team einen gewissen Grad an Virtualität besitzt und das sich stetig ändern kann. Dieses Kontinuum reicht von Face-to-Face bis zur vollständigen nur über Kommunikationstechnologie stattfindende Kommunikation \cite{martins2004virtual}.
+Laut obriger Definition eines virtuellem Team, ist jedes Team ein virtuelles Team. Nur selten arbeiten Team während der gesamten Lebensdauer nach vorheriger Definition. Es wird daher davon ausgegangen, dass Virtualität als Kontinuum gesehen werden kann, bei dem jedes Team einen gewissen Grad an Virtualität besitzt und dieser sich ständig ändern kann. Dieses Kontinuum reicht von Face-to-Face bis zur vollständigen, nur über Kommunikationstechnologie stattfindende Kommunikation. \cite{martins2004virtual}
 
 
 		\subsubsection{Virtuelle Teams und Teambuilding}
@@ -650,11 +624,11 @@ Laut der obrigen Definition eines virtuellem Team ist jedes Team ein virtuelles 
 
 Seit einigen Jahren wurde die Wichtigkeit von effektiven Teambuildingmaßnahmen in der strategischen Organisationsentwicklung erkannt. Dabei spielt der Wandel hin zu einer globalen, auf Wissen basierten Wirtschaft eine zentrale Rolle. \citep{belbin2011management} \citep[p.7]{katzenbach2015wisdom}
 Wirtschaftlicher Erfolg korreliert direkt mit der Fähigkeit eines Unternehmens Teams organisieren, strukturieren und managen zu können. \citep{pasmore1993designing}
-Der Erfolg eines virtuelle Teams ist somit als Nebenprodukt der oranisatorischen Fähigkeiten eines Unternehmens zu verstehen. \citep[Chapter.5]{kling1994social}
+Der Erfolg eines virtuelle Teams ist somit als Nebenprodukt der organisatorischen Fähigkeiten eines Unternehmens zu verstehen. \citep[Chapter.5]{kling1994social}
 
-Erfolgreiches Teambuilding können die Effektivität eines virtuellen Teams steigern und dazu führen, dass Personen sich mehr mit dem Team identifizieren. \citep{kaiser2000student}
+Erfolgreiches Teambuilding kann die Effektivität eines virtuellen Teams steigern und dazu führen, dass Personen sich mehr mit dem Team identifizieren. \citep{kaiser2000student}
 
-Virtuelle Teams werden häufig gebildet um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben, mittels computergestützter Kommunikation, im Team koordinieren können. \citep[p. 117-119]{peters2007identifying} \citep[p. 1-2]{cascio2003leadership}
+Virtuelle Teams werden häufig gebildet, um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben, mittels computergestützter Kommunikation, im Team koordinieren können. \citep[p. 117-119]{peters2007identifying} \citep[p. 1-2]{cascio2003leadership}
 Diese jedoch zu gründen, stellt nicht die Herausforderung dar. Die eigentliche Herausforderung ergibt sich aus den Unterschiedlichen Kulturen, Entfernungen und Zeitzonen, die ein Virtuelles Team mitbringt. Wird es geschafft, Vertrauen in das virtuelle Team zu bringen, kann der eigentliche Nachteil der verschiedenen Kulturen, Entfernungen und der Zeitzonen auch zum Vorteil werden. Es wird die Kulturelle Diversität gefordert und neue Verhaltensmuster erworben, wodurch neue, kreative Sichtweisen gefördert werden. Durch diese Faktoren ist es letztendlich möglich Innovativer zu Arbeiten und zu denken. \citep{dyer1995team} \citep[p.405-416]{milliken1996searching}
 
 Die Arbeit kann Länderübergreifend stattfinden, was ein größeres Innovationspotential für Unternehmen zur folge hat.	
@@ -944,35 +918,35 @@ Der GameManager des Spectators gibt Hauptsächlich die Information über den Sta
 Jeder Client besitzt einen GameManager. Dieser steht in Verbindung mit den einzelnen Podesten der Spielers. Der Podestmanager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
 Drückt nun ein Spieler ein entsprechenden Knopf mit einem Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe die richtigen sind, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler \flqq Rot und Grün\frqq die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
 
-\paragraph{Gametimer funktionsweise und immer zum Spieler gedreht}
-Die jeweiligen Teams haben 600 Sekunden Zeit um so viele Symbole wie möglich richtig zu erkennen. Startet eine runde, zählt ein Timer von 10 herunter. Anschließend beginnt die Runde. Dieser Spieletimer ist von jedem Mitspieler zwischen den drei Podesten gut sichtbar und immer zu den einzelnen Versuchsteilnehmer hingedreht. Die 10 Sekunden zwischen den einzelnen Runden, werden nicht zur 600 Sekunden Gesamtzeit hinzugezählt. Schaffen die Versuchsteilnehmer 10 Runden in 600 Sekunden zu absolvieren, dauerte der Versuch somit insgesamt \\
-$600 Sekunden Gesamtzeit + 10 Runden * 10 Sekunden Wartezeit = 700 Sekunden$.
-
 \paragraph{Audioübertragung}
 Die Audioübertragung wird von den GameManagern des Clients sowie des Spectators übernommen. Sobald der Teilnehmer zu der Anwendung verbunden ist, wird das Mikrofon des \ac{hmd}'s aktiviert. Es werden unterschiedliche MessageID's für Spectator und Client für die Netzwerkpakete festgelegt. Die serialisierten Audiodaten werden mittels RPCMessage an alle verbundenen Teilnehmer gesendet. Der Spectator ließt nur die Netzwerknachrichten mit der MessageID der Clients und der Client ließt nur die Netzwerknachrichten mit der MessageID des Spectators.
-
+\newpage
 \paragraph{Fade-to-Black und Positionsmanagement}
-	Da alle Mitspieler sich in einem \ac{sve} befinden in dem diese sich frei bewegen können, müssen diese beim Start des Spiels vor ein Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes byte, wobei die bits des bytes als boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler werden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
-Damit es dem roten sowie dem grünen Spieler nicht einfach möglich ist auf die markierten Symbole des schwarzen Spielers zu schauen indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus implementiert. Entfernt sich ein Spieler einen gewissen Radius um sein ihm zugewiesenem Podest, wird sein Bild schwarz, bis dieser wieder seine ursprüngliche Position erreicht.
+	Da alle Mitspieler sich in dem \ac{sve} frei bewegen können, müssen diese beim Start des Spiels vor ein Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes byte, wobei die bits des bytes als boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler werden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
+Damit es dem roten sowie dem grünen Spieler nicht einfach möglich ist auf die markierten Symbole des schwarzen Spielers zu schauen, indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus implementiert. Entfernt sich ein Spieler einen bestimmten Radius um sein ihm zugewiesenem Podest, wird sein Bild ab diesem Zeitpunkt zunehmend Schwärzer je weiter der Spieler sich entfernt. Die Schwärze verschwindet, desto näher der Spieler sich dem maximal erlaubtem Radius wieder nähert.
 
 \paragraph{CSV-Logwriting}
 Der GameManager des Spectator sammelt alle relevanten Daten über die Clients während die einzelnen Runden von den Teilnehmern durchgeführt werden. Es wird inkrementell ein CSV-Log pro Durchgang fortgeschrieben. Dieses Log umfasst unter anderem das Startdatum, die Startzeit, die Zeit wie lange die Mitspieler aktuell Spielen, die Rundenzeit, die Rundennummer %einen Effizienzwert berechnet durch $1-\frac{timeSinceGameStarts}{OverallGameTime}$ ( welcher jedoch nicht verwendet wurde ),
 sowie welche Avatarkondition diesen Durchlauf verwendet wurde.
 
-\paragraph{Physical Handmodel, eigener Avatar war unsichtbar}
+%\paragraph{Physical Handmodel, eigener Avatar war unsichtbar}
+%
+%\paragraph{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}
+%
+%\paragraph{Symbole und Podest, Drückmechanismus, Colliderplatzierung}
+%Eingeloggt ist Gelb umrandet etc auch erklären, Ausloggen etc. Depth of button
 
-\paragraph{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}
+\paragraph{Gametimer funktionsweise}
+Die jeweiligen Teams haben 600 Sekunden Zeit um so viele Symbole wie möglich richtig zu erkennen. Um sich auf die startende Runde vorzubereiten, zählt ein Timer von 10 herunter. Anschließend beginnt die Runde. Dieser Spieletimer ist von jedem Mitspieler zwischen den drei Podesten gut sichtbar und immer zu den einzelnen Versuchsteilnehmer hingedreht. Die 10 Sekunden zwischen den einzelnen Runden, werden nicht zur 600 Sekunden Gesamtzeit hinzugezählt. Schaffen die Versuchsteilnehmer 10 Runden in 600 Sekunden zu absolvieren, dauerte der Versuch somit insgesamt \\
+$600 Sekunden Gesamtzeit + 10 Runden * 10 Sekunden Wartezeit = 700 Sekunden$.
 
-\paragraph{Symbole und Podest, Drückmechanismus, Colliderplatzierung}
-Eingeloggt ist Gelb umrandet etc auch erklären, Ausloggen etc. Depth of button
-
-\paragraph{PlayerHeight/Position Change WASDQE}
-Da unterschiedliche Teilnehmer unterschiedliche Körpergrößen und unterschiedliche Zimmergrößen besitzen, muss dieses berücksichtigt werden. 
-Falls eine Person zu klein oder zu groß für das Podest ist, kann dieser seine Spielerkamera inklusive Avatar mit den Tasten Q und E bis zu einem bestimmten Schwellwert höher oder niedriger stellen. Durch diesen Mechanismus können ebenfalls sitzende Personen an dem Versuch teilnehmen.
+\paragraph{PlayerHeight/Position Change}
+Die unterschiedlichen Körpergrößen und unterschiedlichen Zimmergrößen der Versuchsteilnehmer muss berücksichtigt werden.
+Falls eine Person zu klein oder zu groß für das Podest ist, kann dieser seine Spielerkamera inklusive Avatar mit den Tasten Q und E bis zu einem bestimmten Schwellenwert höher oder niedriger stellen. Durch diesen Mechanismus ist es auch sitzenden Personen möglich, an dem Versuch teilzunehmen.
 Falls der Raum zu klein oder aus sonstigen gründen im realem Raum nicht genügend Platz vorhanden ist um die Knöpfe mit Symbolen auf dem Podest zu betätigen, können sich die Spieler mit den Tasten W, A, S und D vorwärts, links, rechts und rückwärts in Blickrichtung bewegen.
 
 \paragraph{Animationen, Shadergraph und VFX-Graph}
-Die Teilnehmer können in dem \ac{sve} ledigtlich virtuelle Hände ihrer eigenen Körperrepräsentation sehen. Da die Hauptinteraktionen das drücken der Knöpfe eines Podests darstellt, soll dies für die Teilnehmer so einfach wie möglich gestaltet sein. Der Teilnehmer soll sofort verstehen, wie er mit seinem Avatar einen Knopf drückt. Die virtuellen Hände besitzen das Aussehen wie echte Hände mit einem Grau-Hellgrauem Karo-Muster Überzug. Drückt ein Spieler den Triggerbutton seines Controllers, schließen sich alle Finger zu einer Faust.
+Die Teilnehmer können in dem \ac{sve} lediglich virtuelle Hände ihrer eigenen Körperrepräsentation sehen. Da die Hauptinteraktionen das drücken der Knöpfe eines Podests darstellt, soll dies für die Teilnehmer so einfach wie möglich gestaltet sein. Der Teilnehmer soll sofort verstehen, wie er mit seinem Avatar einen Knopf drückt. Die virtuellen Hände besitzen das Aussehen echter Hände mit einem Grau-Hellgrauem Karo-Muster Überzug. Drückt ein Spieler den Triggerbutton seines Controllers, schließen sich alle Finger zu einer Faust.
 
 Drückt ein Spieler einen Knopf mit Symbolen, bekommt dieser durch eine gelbe Umrandung des Knopfes die Bestätigung, dass dieser den Knopf eingeloggt hat. Drückt dieser diesen erneut, verschwindet die gelbe Umrandung. Diese Umrandungen Leuchten im Ping-Pong-Effekt auf und wurden mit Unity Shader-Graph erstellt.
 
@@ -1679,8 +1653,8 @@ Es sind bei \ac{ct} Ausreißer vorhanden. Um diesen zu entfernen, wurde \ac{ct} 
 \paragraph{Normalverteilung}
 \ac{gt} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit. 
 \ac{ct} ist ebenfalls laut Kolmogoroff-Smirnov-Test mit ($p = .59 > \alpha = 0.05$) Normalverteilt. 
-Für \ac{gt} ist $ z_{Skewness} = -0,985 $ und $z_{Kurtosis} = -.416$. Somit ist \ac{gt} Normalverteilt.
-Für \ac{ct} ist $ z_{Skewness} = -.257 $ und $z_{Kurtosis} = -1,764$. Somit ist \ac{ct} Normalverteilt.
+Für \ac{gt} ist $ z_{Skewness} = -0,985 $ und $z_{Kurtosis} = -.416$ und somit ist \ac{gt} Normalverteilt.
+Für \ac{ct} ist $ z_{Skewness} = -.257 $ und $z_{Kurtosis} = -1,764$ und somit ist \ac{ct} Normalverteilt.
 
 
 \paragraph{Pearson-Korrelationsanalyse}
@@ -2058,32 +2032,32 @@ Es wurde durch den Mann-Whitney-U-Test überprüft, ob sich \ac{tc} nach Konditi
 
 \paragraph{Signifikante Korrelationen}
 Es wurden signifikante Zusammenhänge mittels Spearman-Rho-Korrelation auf \underline{Individualebene} zwischen folgenden Variablen gefunden :\newline
-\ac{te} und \ac{tc} mit ($r = .695, p = .000 < \alpha = 0.05$)\newline
-\ac{te} und \ac{ct} mit ($r = .588, p = .001 < \alpha = 0.05$)\newline
-\ac{te} und \ac{cp} mit ($r = -.369, p = .045 < \alpha = 0.05$)\newline
-\ac{tc} und \ac{ct} mit ($r = .436, p = .016 < \alpha = 0.05$)\newline
-\ac{scp} und \ac{ipq} mit ($r = .585, p = .001 < \alpha = 0.05$)\newline
-\ac{tp} und \ac{ipq} mit ($r = .723, p = .000 < \alpha = 0.05$)\newline
-\ac{sp} und \ac{cp} mit ($r = .869, p = .000 < \alpha = 0.05$)\newline
+\acs{te} und \acs{tc} mit ($r = .695, p = .000 < \alpha = 0.05$)\newline
+\acs{te} und \acs{ct} mit ($r = .588, p = .001 < \alpha = 0.05$)\newline
+\acs{te} und \acs{cp} mit ($r = -.369, p = .045 < \alpha = 0.05$)\newline
+\acs{tc} und \acs{ct} mit ($r = .436, p = .016 < \alpha = 0.05$)\newline
+\acs{scp} und \acs{ipq} mit ($r = .585, p = .001 < \alpha = 0.05$)\newline
+\acs{tp} und \acs{ipq} mit ($r = .723, p = .000 < \alpha = 0.05$)\newline
+\acs{sp} und \acs{cp} mit ($r = .869, p = .000 < \alpha = 0.05$)\newline
 
 Es wurden signifikante Zusammenhänge mittels Spearman-Rho-Korrelation auf \underline{Konditionsebene} zwischen folgenden Variablen gefunden :\\
 \underline{\ac{ik}} :\newline
-\ac{tei} und \ac{tci} mit ($r = .767, p = .001 < \alpha = 0.05$)\newline
-\ac{scpi} und \ac{ipqi} mit ($r = .515, p = .050 < \alpha = 0.05$)\newline
-\ac{tpi} und \ac{ipqi} mit ($r = .747, p = .001 < \alpha = 0.05$)\newline
-\ac{spi} und \ac{cpi} mit ($r = .884, p = .000 < \alpha = 0.05$)\newline
-\ac{tlxi} und \ac{cpi} mit ($r = .574, p = .048 < \alpha = 0.05$)\newline
-\ac{tlxi} und \ac{tci} mit ($r = .652, p = .008 < \alpha = 0.05$)\newline
-\ac{tlxi} und \ac{tei} mit ($r = .555, p = .032 < \alpha = 0.05$)\newline
+\acs{tei} und \ac{tci} mit ($r = .767, p = .001 < \alpha = 0.05$)\newline
+\acs{scpi} und \acs{ipqi} mit ($r = .515, p = .050 < \alpha = 0.05$)\newline
+\acs{tpi} und \acs{ipqi} mit ($r = .747, p = .001 < \alpha = 0.05$)\newline
+\acs{spi} und \acs{cpi} mit ($r = .884, p = .000 < \alpha = 0.05$)\newline
+\acs{tlxi} und \acs{cpi} mit ($r = .574, p = .048 < \alpha = 0.05$)\newline
+\acs{tlxi} und \acs{tci} mit ($r = .652, p = .008 < \alpha = 0.05$)\newline
+\acs{tlxi} und \acs{tei} mit ($r = .555, p = .032 < \alpha = 0.05$)\newline
 \newline
 \underline{\ac{nik}} :\newline
-\ac{ten} und \ac{tcn} mit ($r = .635, p = .011 < \alpha = 0.05$)\newline
-\ac{ten} und \ac{ctn} mit ($r = .767, p = .001 < \alpha = 0.05$)\newline
-\ac{ten} und \ac{cpn} mit ($r = -.647, p = .009 < \alpha = 0.05$)\newline
-\ac{tcn} und \ac{ctn} mit ($r = .630, p = .012 < \alpha = 0.05$)\newline
-\ac{scpn} und \ac{ipqn} mit ($r = .681, p = .005 < \alpha = 0.05$)\newline
-\ac{tpn} und \ac{ipqn} mit ($r = .583, p = .022 < \alpha = 0.05$)\newline
-\ac{spn} und \ac{cpn} mit ($r = .884, p = .000 < \alpha = 0.05$)\newline
+\acs{ten} und \acs{tcn} mit ($r = .635, p = .011 < \alpha = 0.05$)\newline
+\acs{ten} und \acs{ctn} mit ($r = .767, p = .001 < \alpha = 0.05$)\newline
+\acs{ten} und \acs{cpn} mit ($r = -.647, p = .009 < \alpha = 0.05$)\newline
+\acs{tcn} und \acs{ctn} mit ($r = .630, p = .012 < \alpha = 0.05$)\newline
+\acs{scpn} und \acs{ipqn} mit ($r = .681, p = .005 < \alpha = 0.05$)\newline
+\acs{tpn} und \acs{ipqn} mit ($r = .583, p = .022 < \alpha = 0.05$)\newline
+\acs{spn} und \acs{cpn} mit ($r = .884, p = .000 < \alpha = 0.05$)\newline
 %
 %\subsection{Analyse Hypothese 7}
 %
