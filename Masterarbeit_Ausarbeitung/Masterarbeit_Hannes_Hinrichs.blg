@@ -5,52 +5,52 @@ Reallocating 'name_of_file' (item size: 1) to 4 items.
 The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
-"{" immediately follows a field name---line 11 of file bibfile.bib
+"{" immediately follows a field name---line 28 of file bibfile.bib
  :   pages
  :        {184},
 I'm skipping whatever remains of this entry
 Warning--empty publisher in eid2017statistik
 Warning--empty publisher in field2013discovering
 Warning--can't use both volume and number fields in mehrabian1971silent
-You've used 107 entries,
+You've used 105 entries,
             2921 wiz_defined-function locations,
-            1224 strings with 23614 characters,
-and the built_in function-call counts, 477300 in all, are:
-= -- 78122
-> -- 6440
+            1211 strings with 23225 characters,
+and the built_in function-call counts, 464274 in all, are:
+= -- 75962
+> -- 6262
 < -- 4
-+ -- 37403
-- -- 1953
-* -- 41352
-:= -- 95582
-add.period$ -- 214
-call.type$ -- 107
-change.case$ -- 1485
-chr.to.int$ -- 107
-cite$ -- 110
-duplicate$ -- 1544
-empty$ -- 3314
-format.name$ -- 2349
-if$ -- 85751
++ -- 36344
+- -- 1897
+* -- 40176
+:= -- 93043
+add.period$ -- 210
+call.type$ -- 105
+change.case$ -- 1457
+chr.to.int$ -- 105
+cite$ -- 108
+duplicate$ -- 1516
+empty$ -- 3245
+format.name$ -- 2281
+if$ -- 83406
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 115
-newline$ -- 435
-num.names$ -- 1118
-pop$ -- 368
+missing$ -- 113
+newline$ -- 427
+num.names$ -- 1098
+pop$ -- 364
 preamble$ -- 1
-purify$ -- 1605
+purify$ -- 1575
 quote$ -- 0
-skip$ -- 1436
+skip$ -- 1410
 stack$ -- 0
-substring$ -- 110385
-swap$ -- 219
-text.length$ -- 1502
+substring$ -- 107276
+swap$ -- 215
+text.length$ -- 1474
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 402
+type$ -- 394
 warning$ -- 3
-while$ -- 2371
+while$ -- 2326
 width$ -- 0
-write$ -- 1498
+write$ -- 1472
 (There was 1 error message)
