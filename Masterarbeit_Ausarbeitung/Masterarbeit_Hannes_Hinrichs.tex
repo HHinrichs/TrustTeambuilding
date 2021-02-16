@@ -23,7 +23,8 @@
 \newcommand\tabvarwidth[2][3cm]{\begin{varwidth}[b]{#1}\centering #2\end{varwidth}}
 \usepackage{tabularx}
 \usepackage{amsmath}
-
+\usepackage{subfig}
+\usepackage{enumitem}
 \usepackage{pslatex}
 \usepackage[T1]{fontenc} 
 \usepackage[utf8]{inputenc}
@@ -234,7 +235,7 @@ Es wird der Einfluss der verschiedenen Avatararten \ac{ik} und \ac{nik} auf das 
 Da die teilnehmenden Personen als Team arbeiten, sind einige Zusammenhänge auf Individualebene, einige auf Konditionsebene (\ac{ik} und \ac{nik}) sowie einige auf Teamebene zu betrachten.\\
 Die \textbf{Individualebene} sagt nur etwas über die einzelne Person aus. Es können alle teilnehmenden Personen individuell betrachtet werden. Die Betrachtung ist unabhängig vom Team oder den verschiedenen Avatarkonditionen. Wie viel Vertrauen bildet die einzelne Person während des Versuchs? Wie hoch ist die generelle Hang zum Vertrauen einzelner Personen? Wie immersiv ist die \ac{vr}-Erfahrung während des Experiments einer einzelnen Person?\\
 Die \textbf{Konditionsebene} unterscheidet zwischen den Konditionen \ac{ik} sowie \ac{nik}. Die Konditionsebene ordnet den einzelnen teilnehmenden Personen die Kondition zu, die diese in dem Versuch zugeteilt bekamen. Die Analyse der individuellen Personen kann im Bezug auf die verschiedenen erlebten Konditionen stattfinden und es ist möglich, zwei verschiedene Gruppen desselben Experiments miteinander zu vergleichen. Welche Kondition absolviert mehr Runden? Welche Kondition baut mehr kognitives Vertrauen auf? Welche Kondition schafft mehr Immersion?\\
-Die \textbf{ITeamebene} betrachtet das gesamte Team als Einheit. Ein Team besteht aus drei Teammitgliedern. Jedes Teammitglied besitzt dieselben Konditionen. Wird das Team auf Teamebene betrachtet, ist es möglich Aussagen über das Team zu treffen. Bildet ein Team einer Kondition besonders viel kognitives Vertrauen? Unterscheidet sich die Anzahl der abgeschlossenen Runden pro Team durch die verschiedenen Avatarkonditionen?\\
+Die \textbf{Teamebene} betrachtet das gesamte Team als Einheit. Ein Team besteht aus drei Teammitgliedern. Jedes Teammitglied besitzt dieselben Konditionen. Wird das Team auf Teamebene betrachtet, ist es möglich Aussagen über das Team zu treffen. Bildet ein Team einer Kondition besonders viel kognitives Vertrauen? Unterscheidet sich die Anzahl der abgeschlossenen Runden pro Team durch die verschiedenen Avatarkonditionen?\\
 \textit{Abbildung \ref{DifferentLevels}} zeigt die Hierarchie der verschiedenen Ebenen.
 
 
@@ -516,7 +517,7 @@ Um Vertrauen optimal aufbauen zu können, sollte das gesamte \ac{sve} so real wi
 Das Menschliche Gehirn ist in der Lage, computergenerierte Darstellungen in \dq{}Lebend und nicht Lebend\dq{} zu kategorisieren. Einige Forschungen gehen davon aus, dass das menschliche Gehirn semantische Unterschiede im Zusammenhang mit der \dq{}Social-Presence\dq{} feststellen kann. So kann eine menschenähnliche Form als biologisch oder nicht-Lebend erkannt werden. 
 Ein Avatar wird als eine Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt, definiert. \citep[p.1]{neustaedter2009presenting} In der \ac{vr} hilft dieser dabei, die andere Person in der zu Lokalisieren, diese Wahrzunehmen, zu Identifizieren und zu verstehen, mit wem oder was die Person aktuell interagiert. \citep[]{pan2017impact}
 
-	\begin{figure}[H]
+	\begin{figure}[b!]
 		\begin{footnotesize}
 		\centering
 			\includegraphics[scale= 0.3]{Abbildungen/Symmetry.JPG}
@@ -528,9 +529,8 @@ horizontal beings}
 	\end{figure}
 
 In \autoref{vertical_horizontal} ist zu erkennen, dass eine menschenähnliche vertikale, bilateral Symmetrische Repräsentation mehr \dq{}Co-Presence\dq{} erweckt als die horizontale bilateral Symmetrische Repräsentation. \citep[p.546-551]{thornhill1998relative}
-Bilateral-Vertikale Symmetrie wird mit der körperlichen Gesundheit eines Menschen in Verbindung gebracht. Sogar Weibchen verschiedener Spezies neigen dazu, Partner mit einem höheren Grad an bilateraler Symmetrie für die Fortpflanzung auszuwählen. \citep[p. 659–669]{rhodes1998facial} \citep{biocca2002defining} \citep[p.233–242]{grammer1994human} \ \\
-
-\begin{figure}[H]
+Bilateral-Vertikale Symmetrie wird mit der körperlichen Gesundheit eines Menschen in Verbindung gebracht. Sogar Weibchen verschiedener Spezies neigen dazu, Partner mit einem höheren Grad an bilateraler Symmetrie für die Fortpflanzung auszuwählen. \citep[p. 659–669]{rhodes1998facial} \citep{biocca2002defining} \citep[p.233–242]{grammer1994human} \\
+\begin{figure}[b!]
 		\begin{footnotesize}
 		\centering
 			\includegraphics[scale= 0.5]{Abbildungen/moving_dots.JPG}
@@ -580,6 +580,8 @@ Bente, Rüggenberg und Krämer \citep[p.54-59]{bente2004social} gehen davon aus,
 Da in dieser Studie lediglich die beiden Controller sowie das \ac{hmd} getrackt werden, wurde sich dazu entschieden, keine Darstellung eines Selbst-Avatars zu wählen. Somit wurde die Möglichkeit ausgeschlossen einen \ac{bip} durch falsche Avatardarstellungen zu erzeugen. Stattdessen sehen die Nutzer des \ac{sve} menschenähnliche Hände \underline{ohne} ihre Extremitäten.\\
 Die Avatare, die die \dq{}anderen\dq{} teilnehmenden Personen repräsentieren, können jedoch einen Körper besitzen.
 Welchen Einfluss in das Vertrauen in ein Team, das Aussehen der \dq{}anderen\dq{} Avatare auf eine Person im \ac{sve} besitzt, ist eine wesentliche Fragestellung dieser Arbeit. Auf das Aussehen und die Unterschiede der \dq{}anderen\dq{} Avatare wird im Kapitel \ref{IKNIK} genauer eingegangen.
+
+\subsection{Uncanny Valley}
 
 %Connected to My Avatar:
 %Effects of Avatar Embodiments on User Cognitions, Behaviors,
@@ -980,16 +982,15 @@ Ein Zeitslot von 30 Minuten teilte sich auf in
 			\item 15 Minuten Versuchsdurchführung
 			\item 15 Minuten Post-Questionnaire
 		\end{itemize}
-Jede teilnehmende Person bekam zu Beginn seines Zeitslots einen Pre-Questionnaire ausgehändigt, den dieser selbstständig ausfüllen sollte. In diesem wurde die Datenschutzerklärung ausgefüllt sowie Fragen über die \dq{}Person\dq{}, über eventuelle \dq{}Gesundheitliche Beschwerden\dq{} sowie schon vorhandene \dq{}\ac{vr}-Erfahrung\dq{}, gestellt.
+Jede teilnehmende Person bekam zu Beginn seines Zeitslots einen Pre-Questionnaire ausgehändigt, den dieser selbstständig ausfüllen sollte.
 Alle teilnehmende Personen mussten sich anschließend ein Erklärvideo über das Experiments anschauen, indem alle relevanten Mechaniken und Funktionsweisen sowie der grobe Spielablauf erklärt wurden. Durch das vorherige Erklärvideo wurde sichergestellt, dass alle teilnehmende Person den selben Informationsgehalt über die Art und Weise des Ablaufs des Experiments besaßen. Alle Mitglieder eines Teams starteten somit auf einheitlichen Wissensstand.
 Nachdem alle Personen das Videoerklärung angeschaut hatten, begann das Experiment. Dazu starteten die jeweiligen teilnehmenden Personen die Anwendung. Es wurde sich automatisch in das \ac{sve} eingeloggt. Die teilnehmenden Personen spielten gemeinsam den Versuch als Team durch.
-	Am Ende der Versuchsdurchführung, wurde ein Post-Questionnaire ausgeteilt. In diesem wurden Fragen über das \dq{}generelles Vertrauen\dq{}, das \dq{}kognitive Vertrauen\dq{} die \dq{}Kommunikations-Qualität\dq{}, die wahrgenommene \dq{}Team-Effektivität\dq{}, die \dq{}Beanspruchung\dq{} sowie die \dq{}Presence\dq{}, gestellt. Am Ende war es jeden Teilnehmer zusätzlich möglich, ein Feedback über die Erfahrung zu geben. Der Pre- sowie der Post-Questionnaire wurde insgesamt von 30 Personen ausgefüllt. 
-		
+	Am Ende der Versuchsdurchführung, wurde ein Post-Questionnaire ausgeteilt.  Am Ende war es jeden Teilnehmer zusätzlich möglich, ein Feedback über die Erfahrung zu geben. Der Pre- sowie der Post-Questionnaire wurde insgesamt von 30 Personen ausgefüllt. 
 Die maximale Versuchsdauer nach Start der Anwendung betrug exakt 10 Minuten (600 Sekunden). Es konnten maximal 15 Runden absolviert werden, wobei jede Runde inkrementell schwieriger wurde, da jede 3. Runde jeweils 1 Symbol, in den Pool der zu erratenden Symbole, hinzukam. 
 
-	\subsubsection{Allgemeiner Versuchsaufbau und technische }
+	\subsubsection{Allgemeiner Versuchsaufbau}
 
-\begin{figure}[H]
+\begin{figure}[h]
 		\begin{footnotesize}
 			\includegraphics[width=\textwidth]{Abbildungen/Podeste.JPG}\\
 			\caption[Abbildung 1]{Die Podeste der Teilnehmer}
@@ -1006,7 +1007,7 @@ Während der Versuchsleiter sprach, konnten jedoch alle teilnehmenden Personen d
 %
 %Da es den Probanten nicht möglich sein sollte, auf die Symbole der anderen teilnehmenden Probanten zu schauen, wurde ab einer gewissen Grenze Links und Rechts des Podest der Probanten ein \dq{}Fade-To-Black\dq{} Mechanismus eingebaut. Kamen die Probanten mit dem Kopf ihres Avatars in diesen Bereich, sahen diese nur noch die Farbe Schwarz und mussten sich zurückbewegen.
 
-Waren alle teilnehmenden Personen bereit, wurden diese vor ein für Sie eigenes Podest teleportiert und sahen einen Countdown zwischen den 3 Podesten herunter zählen. Durch diesen Countdown wurde der baldige beginn einer Runde eingeleitet.
+Waren alle teilnehmenden Personen bereit, wurden diese vor ein für Sie eigenes Podest (\textit{Abbildung \ref{Podeste}}) teleportiert und sahen einen Countdown zwischen den 3 Podesten herunter zählen. Durch diesen Countdown wurde der baldige beginn einer Runde eingeleitet.
 Wurde eine Runde gestartet, wurde das Podest jeder teilnehmenden Personen eindeutig durch die Farbe \dq{}Schwarz, Rot oder Grün\dq{} markiert. Die teilnehmenden Personen konnten Ihre und die Farbe der anderen Spieler an einem Viereck sowie einer runden Kugel in der jeweils zugeteilten Farbe, an den jeweiligen Podesten, erkennen. Die Farbe der einzelnen teilnehmenden Personen änderte sich jede Runde.
 
 	\subsubsection{Detaillierter Versuchsablauf}
@@ -1016,16 +1017,26 @@ Auf auf Podesten der andersfarbigen Spieler befinden sich ebenfalls Symbole, wel
 Der schwarz markierte Spieler versucht nun, mittels Hand und Armbewegung, den Rot und Grün markierten Spieler die Symbole, die in der jeweiligen Spielerfarbe vor Ihm markiert sind, zu erklären.
 Meint ein Spieler (Rot oder Grün), dem der schwarz markierte Spieler ein Symbol erklärt hat, ein Symbol erkannt zu haben, loggt dieser das Symbol durch herunterdrücken des Knopfes an seinem Podest, mit dem jeweiligen erkanntem Symbol, ein. Der schwarz markierte Spieler muss nichts einloggen oder klicken, sondern nur mittels Gestikulation die Symbole erklären.
 Hat ein Spieler sich während des einloggens der Symbole verklickt oder möchte seine Meinung zum erkanntem Symbol ändern, muss das Symbol vorher, durch erneutes klicken des Symbols vor ihm, ausgeloggt werden. Anschließend kann es erneut eingeloggt werden.
-Werden alle Symbole vom roten und grünem Spieler erkannt und eingeloggt, die der schwarz markierte Spieler gestikuliert hat, wird dies durch eine grüne Kugel, für alle Sichtbar zwischen den einzelnen Podesten, erkennbar gemacht und die Runde endet. Erscheint diese grüne Kugel nicht, ist noch ein Symbol falsch eingeloggt und der schwarz markierte Spieler muss noch einmal versuchen, die korrekten Symbole den jeweiligen Mitspielern aufzuzeigen.
+Werden alle Symbole vom roten und grünem Spieler erkannt und eingeloggt, die der schwarz markierte Spieler gestikuliert hat, wird dies durch eine grüne Kugel (\textit{Abbildung \ref{RoundFinished}}), für alle Sichtbar zwischen den einzelnen Podesten, erkennbar gemacht und die Runde endet. Erscheint diese grüne Kugel nicht, ist noch ein Symbol falsch eingeloggt und der schwarz markierte Spieler muss noch einmal versuchen, die korrekten Symbole den jeweiligen Mitspielern aufzuzeigen.
 In der nächsten Runde wird ein anderer Spieler eineindeutig mit Schwarz, Rot oder Grün markiert.
 Mit steigender Anzahl an erfolgreich bestandenen Runden müssen mehr Symbole erfolgreich erkannt werden.
 
 Das Ziel ist es nun, so viele Symbole wie möglich gemeinsam korrekt zu bearbeiten um dadurch in höhere Runden aufzusteigen.
+Für einen detaillierter grafischen Ablauf, siehe \textit{Abbildung \ref{DetaillierterVersuchsablauf}}.
+
+	\begin{figure}[h]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.30]{Abbildungen/DetaillierterVersuchsablauf.JPG}\\
+			\caption[Abbildung 1]{Auf dieser Grafik ist der detaillierte Versuchsablauf von links oben nach rechts unten dargestellt}
+			\label{DetaillierterVersuchsablauf}
+		\end{footnotesize}
+	\end{figure}
 
 	\subsubsection{Die Avatare}
 \label{IKNIK}
-Die Avatare im \ac{sve} sind als \dq{}IK-Avatar\dq{} und \dq{}Non-IK-Avatar\dq{} implementiert. Mehr zu Avataren befindet sich im Kapitel \ref{inverseKinematik}.
-Für beide Avatar arten wurde die Farbe Schwarz gewählt. Die teilnehmenden Personen hatten keinen Einfluss auf die Farbwahl der Avatare. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile der teilnehmenden Personen aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \dq{}IK-Avatar\dq{} oder \dq{}Non-IK-Avatar\dq{} bekam jede teilnehmenden Personen dasselbe aussehen des Avatars zugeordnet. Zur besseren Interaktion mit den Knöpfen sowie zur Vermeidung eines \ac{bip}, wurde der eigene Avatar nicht sichtbar für die teilnehmenden Personen dargestellt. Jeder teilnehmende Person, unabhängig der zugewiesenen Kondition,  sah somit nur eine Repräsentation von menschlich wirkenden Händen ohne einen Körper. Für die teilnehmenden Personen waren die unterschiedlichen Avatararten somit nur durch das Aussehen der \dq{}anderen\dq{} teilnehmenden Personen zu erkennen. Das Aussehen der Avatare ist in \textit{Abbildung \ref{AvatareAussehen}} zu sehen.
+Die Avatare sind als \dq{}IK-Avatar\dq{} und \dq{}Non-IK-Avatar\dq{} implementiert. Mehr zu Avataren befindet sich im Kapitel \ref{inverseKinematik}.
+Für beide Avatar arten wurde die Farbe Schwarz gewählt. Die teilnehmenden Personen hatten keinen Einfluss auf die Farbwahl der Avatare. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile der teilnehmenden Personen aufgrund der Farbe des Avatars, auszuschalten. Je nach Kondition \dq{}IK-Avatar\dq{} oder \dq{}Non-IK-Avatar\dq{} bekam jede teilnehmenden Personen dasselbe aussehen des Avatars zugeordnet. Zur besseren Interaktion mit den Knöpfen sowie zur Vermeidung eines \ac{bip}, wurde der eigene Avatar nicht sichtbar für die teilnehmenden Personen dargestellt. Jeder teilnehmende Person, unabhängig der zugewiesenen Kondition,  sah somit nur eine Repräsentation von menschlich wirkenden Händen ohne einen Körper. Für die teilnehmenden Personen waren die unterschiedlichen Avatararten somit nur durch das Aussehen der \dq{}anderen\dq{} teilnehmenden Personen zu erkennen. Das Aussehen der Avatare befindet sich in \textit{Abbildung \ref{AvatareAussehen} }.
 
 	\begin{figure}[H]
 		\begin{footnotesize}
@@ -1035,7 +1046,6 @@ Für beide Avatar arten wurde die Farbe Schwarz gewählt. Die teilnehmenden Pers
 			\label{AvatareAussehen}
 		\end{footnotesize}
 	\end{figure}
-
 		\paragraph{IK-Avatar}
 Der Invers-Kinematisch dargestellte Avatar besitzt ein androgynes Erscheinungsbild, um die Störvariable rund um Vorurteile aufgrund des Geschlechts der teilnehmenden Personen zu vermeiden. Der \ac{ik}-Avatar besitzt keine Augen, Mund, Haare oder Beine. Lediglich der Oberkörper mit Kopf ist zu sehen.
 Damit die gesamten Bewegung möglichst realistisch wirken, wurden die Handbewegungen, die Unterarmbewegungen, die Oberarmbewegungen sowie die Kopf-und Torsorotation der Avatare des \ac{ik}-Avatar simuliert.
@@ -1044,6 +1054,27 @@ Damit die gesamten Bewegung möglichst realistisch wirken, wurden die Handbewegu
 Der \ac{nik}-Avatar besteht aus einem Kreis mit Mund sowie einer Repräsentation der linken sowie der rechten Hand. Er besitzt keine Augen, Haare, Beine, Hals, Torso sowie Ober- und Unterarme. Der Mund dieses Avatar ist als unauffälliger Orientierungspunkt des Kopfes erhalten geblieben. Der Mund des Non-IK-Avatars bewegt sich jedoch nicht. 
 \newpage
 
+Die \textit{Abbildung \ref{AvatareImEinsatz}} zeigt beide Avatarkonditionen \ac{ik} (a) und \ac{nik} (b) während der Versuchsdurchführung im Spectatorview.
+
+\begin{figure}[h]
+  \centering
+  \subfloat[][]{\includegraphics[width=0.4\linewidth]{Abbildungen/Podeste_IK_Avatars.jpg}}
+  \qquad
+  \subfloat[][]{\includegraphics[width=0.4\linewidth]{Abbildungen/Podeste_Non_IK_Avatars.jpg}}
+  \caption{Avatarkonditionen während der Versuchsdurchführung im Spectatorview}
+  \label{AvatareImEinsatz}
+\end{figure}
+
+\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.2]{Abbildungen/RoundSuccsessful.JPG}\\
+			\caption[Abbildung 1]{Grüne Kugel bei erfolgreich abgeschlossener Runde}
+			\label{RoundFinished}
+		\end{footnotesize}
+	\end{figure}
+
+\newpage
 	\subsection{Anforderungen an die Versuchsumgebung}
 
 Das System besitzt einige \textbf{technische Anforderungen} die umgesetzt werden müssen :
@@ -1059,9 +1090,9 @@ Das System besitzt einige \textbf{technische Anforderungen} die umgesetzt werden
 Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
 
 \begin{itemize}
-\item \textbf{Inkrementelle Erhöhung der Schwierigkeit}
-\item \textbf{Teamfähigkeit}
-\item \textbf{Neutrale Avatare}
+\item \textbf{Teamfähigkeit} Das Team muss eine Aufgabe gemeinsam lösen. Jedes Teammitglied muss zu gleichen Teilen involviert sein. Fehlt ein Teammitglied, soll die Aufgabe nicht lösbar sein.
+\item \textbf{Inkrementelle Erhöhung der Schwierigkeit} Um einen Vergleich zwischen der Teameffektivität herzustellen, mussten die Runden inkrementell schwieriger werden. Dies wurde dadurch gelöst, dass die teilnehmenden Personen jede drei Runden ein Symbol mehr gestikulieren  oder erraten mussten.
+\item \textbf{Neutrale Avatare} Die Avatare sollen so neutral wie möglich gestaltet sein. 
 \item \textbf{Vermeidung von Bekanntheit} Um die gegenseitige Bekanntheit  teilnehmenden Personen auszuschließen, wurde jedem Teilnehmer zu beginn des Versuchs ein Zufälliger Name zugeordnet. Vor dem gesamten Versuch konnten sich die teilnehmenden Personen nicht sehen oder hören.
 Können die teilnehmenden Personen sich vor dem Versuch gesehen, würde sich ein Kognitives-Vertrauen oder Kognitives-Misstrauen zu der anderen Person aufbauen. 
 Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauensbildung in der \ac{vr} in Form von schon vorhandenem Affektiven-Vertrauen auf die Ergebnisse aus.
@@ -1073,14 +1104,7 @@ Mehrabian zeigt in seiner Forschung, dass nonverbale Kommunikation zu 55\% dafü
 Da 7\% des gesprochenen Wortes und 38\% der Tonhöhe zu Interpretation der nonverbalen Kommunikation beiträgt, musste diese Einflussgröße in dieser Studie ausgeschlossen werden.
 \end{itemize}
 
-\subsubsection{Online-Fähigkeit und Unterstützung mehrerer HMD's}
-\subsubsection{Geringe Latenz}
-\subsubsection{Steuerung und Verwaltung der Anwendung]}
-\subsubsection{Interaktionsmöglichkeiten}
-\subsubsection{Avatararten}
-
-\subsubsection{Entwicklung der Versuchsumgebung}
-
+\subsubsection{Technik der Versuchsumgebung}
 Um den Versuch durchzuführen, wurde ein \ac{sve} entwickelt, in dem sich die 3 Teammitglieder gegenseitig sehen und miteinander interagieren können. 
 Das \ac{sve} ist mit Unity 2019.4.3f1 und der HD-Render-Pipeline entwickelt worden. Um die Echtzeitkommunikation zwischen den einzelnen Clients zu gewährleisten, wurde das Multiplayer-Framework \dq{}Normcore v2.0\dq{} \footnote{www.Normcore.io} genutzt.
 Normcore unterstützt Network-Physics simulationen, automatische Realtime-Synchronisation, Voice-Chat, XR-Compitabilität sowie persistente multiplayer Räume.	
@@ -1091,6 +1115,85 @@ Normcore besitzt das Konzept eines globalen Datenspeicher.  Alle Zustände, egal
 \paragraph{Verwendete Hardware}
 Um an dem Experiment Teilnehmen zu können, benötigten die teilnehmenden Personen ein in vollem Umfang funktionierendes HTC-Vive, HTC-Vive2, Windows-Mixed-Reality oder ein Oculus-Rift S \ac{hmd} mit funktionsfähigen Controllern sowie einen Leistungsstarken \ac{vr}-fähigen PC. Der Spectator, der das Experiment von außerhalb steuert und verwaltet, benötigt einen Leistungsstarken PC auf dem die Anwendung ohne \ac{hmd} ausführbar ist.
 
+\paragraph{VR-Client}
+Jeder Versuchsteilnehmer benötigt eine Client Version der Umgebung um an dem Versuch teilzunehmen. Die Client Version gibt es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangt der Probant in das \ac{sve} und verbindet sich automatisch mit dem Server (Normcore-Raum).
+Der Client sieht seine beiden Hände, jedoch keine der beiden Avatar Konditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
+
+\paragraph{Spectator}
+Der Spectator besitzt ein eigenen Client, dieser eigene Client hat keine eigene Repräsentation des Körpers und benötigt daher auch kein \ac{hmd} um an der Session teilzunehmen. Dem Spectator ist es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
+Der Spectator besitzt die Möglichkeit das Spiel zu starten, die Nummer der zu beginnenden Runde einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen und herauszuwerfen, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
+Je nachdem, wie viele Spieler in dem entsprechendem Raum sind, werden diese dem Spectator angezeigt. So sieht der Spectator "Player 1" bis \dq{}Player 3\dq{} bei einem vollem Team auf seinem Bildschirm. Der Spectator besitzt außerdem die Möglichkeit Spieler herauszuwerfen, um die Session aufzuräumen und für die nächsten Teams vorzubereiten.
+Weiterhin besitzt der Spectator noch einige Funktionen um sich Informationen über das aktuelle Spielgeschehen zu machen. So bekommt dieser die gesamte vergangene Zeit angezeigt, in welcher Runde sich die Mitspieler aktuell befinden, die aktuelle Effizienz des Teams, ob der \dq{}Grüne\dq{} oder \dq{}Rote\dq{} Spieler aktuell mit ihrer Eingabe korrekt sind und wie viele verschiedene Symbole der "Schwarze" Spieler aktuell erklären muss. Der Spectator-Client kann in \textit{Abbildung \ref{SpectatorView}}  gesehen werden.
+
+\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/Versuchsumgebung/SpectatorView.JPG}\\
+			\caption[Abbildung 1]{Der Spectator-Client mit den verschiedenen Funktionen zum verwalten des laufenden Versuchs}
+			\label{SpectatorView}
+		\end{footnotesize}
+	\end{figure}
+	
+\paragraph{GameManager}
+Der GameManager übernimmt alle wichtigen zu Funktionalitäten zur Steuerung in der Anwendung und der Netzwerkkommunikation.
+Diese sind unter anderem :
+\begin{itemize}[itemsep=0cm]
+\item Steuerung und Entscheidungslogik der Runden
+\item Netzwerkmanagement und RPC Handling
+\item Start, Reset, Überprüfungsmechanismen sowie Zeitmessungen der einzelnen Runden
+\item Interaktionen und Verwaltung von globalen Datastore-Variablen
+\end{itemize}
+
+Die Netzwerkkommunikation zwischen den einzelnen Clients sowie dem Spectator wird vom GameManager verwaltet. Der Spectator sowie der Client besitzen GameManager mit unterschiedlichen funktionalitäten.
+Der GameManager des Clients übernimmt das für den Clienten relevante RPC-basierte Netzwerkhandling. Gleichzeitig lauscht dieser auf Änderungen von relevanten Variablen im globalen Datastore.
+Eine wesentliche Aufgabe ist es zu überprüfen, ob eine Runde vom GameManager des Spectators als beendet markiert wurde und leitet gegebenenfalls die Initialisierung einer neuen Runde ein.
+
+Der GameManager des Spectators gibt Hauptsächlich  Information über den Start, Stop oder den Reset der einzelnen Runden an die GameManager der Clienten weiter. Weiterhin steuert dieser aufgrund seiner besonderen Rolle ebenfalls die Spectator-to-Client Netzwerkinteraktionen wie die Audioübertragung, den Kickmechanismus, die Rundenauswahl sowie das Aussehen der Avatare der Spieler.
+In \textit{Abbildung \ref{GameManagerClientSpectator}} wird ein grober Überblick über die Zusammenhänge und Funktionalitäten des GameManagers im \ac{sve} gegeben.
+
+Die GameManager der Clients steht in Verbindung mit den einzelnen Podesten der Spieler. Der PodestManager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum  einzelne Knöpfe eines Podests verwalten. 
+Drückt ein Spieler ein Knopf mit einem Symbol ein- oder auszuloggen, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe mit den zu drückenden Knöpfen dieser Runde übereinstimmen, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe dieser Runde gedrückt hat. Haben der \dq{}Rote und Grüne\dq{} Spieler die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
+
+\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[width=\textwidth]{Abbildungen/GameManagerClientSpectator.jpg}\\
+			\caption[Abbildung 1]{Grober Überblick über die Zusammenhänge der Funktionalitäten der GameManager im \ac{sve}}
+			\label{GameManagerClientSpectator}
+		\end{footnotesize}
+	\end{figure}
+
+\paragraph{Audioübertragung}
+Die Audioübertragung wird von den GameManager des Clients sowie des Spectators verwaltet. Sobald der Teilnehmer mit dem mit dem Normcore-Netzwerk verbunden ist, wird das Mikrofon des \ac{hmd}'s aktiviert. Es werden unterschiedliche MessageID's für Spectator und Client für die Netzwerkpakete festgelegt. Die serialisierten Audiodaten werden mittels RCPMessage an alle verbundenen Teilnehmer gesendet. Der Spectator ließt nur die Netzwerknachrichten mit der MessageID der Clients und der Client ließt nur die Netzwerknachrichten mit der MessageID des Spectators.
+
+\textit{Abbildung \ref{ClientRCPMessageReceived}} zeigt Beispielhaft den Programmcode des Spectator für das eingehen einer RCP-Nachricht. Wird ein RCP-Paket erkannt, wird dieses entpackt und die MessageID in den ersten 32bits der RCP-Message ausgelesen. Je nach MessageID, dient das RCP-Paket einem anderen Zweck. Es kann eine Audio-Message, Kick-Message  oder eine Message über den aktuellen schwarz makierten Spieler sein. Da der Spectator nur Audiostreams des Clients empfängt, muss dieser nur RCP-Messages mit einer MessageID von \dq{}2000\dq{} verarbeiten. 
+Wird die RCP-Message entpackt und es befindet sich die MessageID für Audiostreams vom Client  in der Nachricht, wird dieser vom \dq{}NetworkAudioReceiver\dq{} des Spectator verarbeitet.  Falls kein \dq{}NetworkAudioReceiver\dq{} vorhanden, wird ein neuer \dq{}NetworkAudioReceiver\dq{} erstellt. Loggt sich ein neuer Client in das \ac{sve} ein und sendet einen Audiostream, wird für diesen Client ein neuer \dq{}NetworkAudioReceiver\dq{} erstellt.
+
+\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[width=\textwidth]{Abbildungen/ClientRCPMessageReceived.jpg}\\
+			\caption[Abbildung 1]{Programmcode zum empfangen von Client RCP-Messages des Spectator}
+			\label{ClientRCPMessageReceived}
+		\end{footnotesize}
+	\end{figure}
+	
+\paragraph{Normcore Variable-Sync}
+Um die variablen im globalen Datenspeicher zu ändern, muss für jeden Datentyp eine Sync-Klasse geschrieben werden. Diese Sync-Klasse informiert den globalen Datenspeicher (in \textit{Abbildung \ref{boolValueChanged} \dq{}Model\dq{} genannt}) darüber, dass eine Variable geändert wurde. Der globale Datenspeicher informiert alle auf diese Variable zugreifenden Systeme darüber, dass eine Variable im globalen Datenspeicher geändert wurde und diese sich updaten sollen.
+
+\begin{figure}[H]
+		\begin{footnotesize}
+			\includegraphics[scale=.75]{Abbildungen/boolValueChanged.jpg}\\
+			\caption[Abbildung 1]{Programmcode zum Update einer globalen Variable}
+			\label{boolSync}
+		\end{footnotesize}
+	\end{figure}
+
+\newpage	
+%\paragraph{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}	
+	%\paragraph{Symbole und Podest, Drückmechanismus, Colliderplatzierung}
+%Eingeloggt ist Gelb umrandet etc auch erklären, Ausloggen etc. Depth of button
+\subsubsection{Optik der Versuchsumgebung}
 \paragraph{Aussehen der Umgebung}
 Die teilnehmenden Personen befinden sich in einem rechteckigen Raum mit 4 Fenstern vor denen einige Low-Poly Bäume stehen. Durch die 4 Fenster und den davor platzierten Bäumen sollte eine gewisse Offenheit erzeugt werden, damit die teilnehmenden Personen sich nicht in der \ac{vr} eingeschlossen fühlen. Weiterhin wurde der Raum in einer schlichten gräulichen Farbe gehalten um nicht all zu viel Ablenkung in der zu erzeugen. Die Spieler sollten sich so gut es geht nur auf den eigentlichen Versuch konzentrieren können. Die gesamte Umgebung ist möglichst Performant entwickelt worden, um diese auf möglichst vielen System einzusetzen. Siehe für die Versuchsumgebung von Außen \textit{Siehe Abbildung \ref{Versuchsumgebung}} 
 
@@ -1103,71 +1206,32 @@ Die teilnehmenden Personen befinden sich in einem rechteckigen Raum mit 4 Fenste
 		\end{footnotesize}
 	\end{figure}
 
-\paragraph{VR-Client}
-Jeder Versuchsteilnehmer benötigt eine Client Version der Umgebung um an dem Versuch teilzunehmen. Die Client Version gibt es in drei verschiedenen Versionen. Diese verschiedene Versionen unterstützen die HTC-Vive \ac{hmd}'s, die Oculus Rift \ac{hmd}'s sowie die Windows Mixed-Reality \ac{hmd}'s. Beim Start des Clients gelangt der Probant in das \ac{sve} und verbindet sich automatisch mit dem Server (Normcore-Raum).
-Der Client sieht seine beiden Hände, jedoch keine der beiden Avatar Konditionen \ac{ik} oder \ac{nik}, sondern menschenähnliche Hände.
+\paragraph{Avatar Konditionen}
+Betritt ein Versuchsteilnehmer das \ac{sve}, bekommt dieser als Selbstrepräsentation seine eigenen, menschenähnlichen Hände zu sehen. Die Versuchsteilnehmer sehen nicht ihre eigene Repräsentation der Konditionen \ac{ik} oder \ac{nik}. Es wird nur die jeweilige Avatarkondition der Mitspieler gesehen.
+Falls schon ein anderer Spieler im \ac{sve} anwesend ist oder zu einem späterem Zeitpunkt hinzukommt, ist dieser als die vom Spectator jeweilig ausgewählte Avatarkondition zu sehen. 
 
-\paragraph{Spectator}
-Der Spectator besitzt ein eigenen Client, dieser eigene Client hat keine eigene Repräsentation des Körpers und benötigt daher auch kein \ac{hmd} um an der Session teilzunehmen. Dem Spectator ist es möglich sich frei mit der Kamera in der Umgebung zu bewegen.
-Der Spectator besitzt die Möglichkeit das Spiel zu starten, die Nummer der zu beginnenden Runde einzustellen, einen Restart durchzuführen, die verbundenen Spieler anzuzeigen und herauszuwerfen, die Avatarkondition der Clients zwischen \ac{ik} und \ac{nik} zu wechseln sowie das Spiel zu verlassen.
-Je nachdem, wie viele Spieler in dem entsprechendem Raum sind, werden diese dem Spectator angezeigt. So sieht der Spectator "Player 1" bis "Player 3" bei einem vollem Team auf seinem Bildschirm. Der Spectator besitzt außerdem die Möglichkeit Spieler herauszuwerfen, um die Session aufzuräumen und für die nächsten Teams vorzubereiten.
-Weiterhin besitzt der Spectator noch einige Funktionen um sich Informationen über das aktuelle Spielgeschehen zu machen. So bekommt dieser die gesamte vergangene Zeit angezeigt, in welcher Runde sich die Mitspieler aktuell befinden, die aktuelle Effizienz des Teams, ob der "Grüne" oder "Rote" Spieler aktuell mit ihrer Eingabe korrekt sind und wie viele verschiedene Symbole der "Schwarze" Spieler aktuell erklären muss. Der Spectator-Client kann in \textit{Abbildung \ref{SpectatorView}}  gesehen werden.
+\paragraph{Fade-to-Black und Positionsmanagement}
+	Da alle Mitspieler sich in dem \ac{sve} frei bewegen können, müssen diese beim Start des Spiels vor ein Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes Byte, wobei die Bits des Bytes als Boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler werden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
+Damit es dem roten sowie dem grünen Spieler nicht einfach möglich ist, auf die markierten Symbole des schwarzen Spielers zu schauen, indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus implementiert. Entfernt sich ein Spieler in einem bestimmten Radius von seinem Podest, wird sein Bild ab diesem Zeitpunkt zunehmend schwärzer, je weiter der Spieler sich entfernt. Die Schwärze verschwindet, desto näher der Spieler sich dem maximal erlaubtem Radius wieder nähert.
 
-\begin{figure}[H]
-		\begin{footnotesize}
-		\centering
-			\includegraphics[scale=0.3]{Abbildungen/Versuchsumgebung/SpectatorView.JPG}\\
-			\caption[Abbildung 1]{Der Spectator-Client mit den verschiedenen Funktionen zum verwalten des laufenden Versuchs}
-			\label{SpectatorView}
-		\end{footnotesize}
-	\end{figure}
+%\paragraph{Physical Handmodel, eigener Avatar war unsichtbar}
+\paragraph{Animationen, Shadergraph und VFX-Graph}
+Die teilnehmenden Personen können in dem \ac{sve} lediglich virtuelle Hände ihrer eigenen Körperrepräsentation sehen. Da die Hauptinteraktion das Drücken der Knöpfe des zugeteilten Podestes darstellt, soll dies für die teilnehmenden Personen so einfach wie möglich gestaltet sein. Die teilnehmende Person soll sofort verstehen, wie diese mit seinem Avatar einen Knopf drückt. Die virtuellen Hände besitzen das Aussehen echter Hände mit einem grau-hellgrauem Karo-Muster Überzug. Drückt eine teilnehmende Person den Triggerbutton seines Controllers, schließen sich alle Finger zu einer Faust.
+
+Drückt ein Spieler einen Knopf mit Symbolen, bekommt dieser durch eine gelbe Umrandung des Knopfes die Bestätigung, dass dieser den Knopf eingeloggt hat. Drückt dieser diesen erneut, verschwindet die gelbe Umrandung. Diese Umrandungen Leuchten im Ping-Pong-Effekt auf und wurden mit Unity Shader-Graph erstellt.
+
+Ist eine Runde noch nicht abgeschlossen, sehen die Teilnehmer zwischen den Podesten einen leuchtenden Ball, welcher aus Unitys VFX-Graph Partikelsystem besteht. Wird eine Runde beendet, wechselt die Farbe des Partikelsystems von Rot auf Grün und es wirkt eine Kraft im Zentrum des Partikelsystems auf die einzelnen Partikel ein und schleudert diese auseinander.
+
+\subsubsection{Allgemeines der Versuchsumgebung}
 
 \paragraph{Rundenschwierigkeit}
 Ein ScriptableObject beinhaltet die Regeln sowie den Ablauf der einzelnen Runden. 
 Durch diese Sammlung von Regeln und Abläufen, bekommt jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um ein Vergleich der einzelnen Teams zu ermöglichen. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
 Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt.
 
-\paragraph{Avatar Konditionen}
-Betritt ein Versuchsteilnehmer das \ac{sve}, bekommt dieser als Selbstrepräsentation seine eigenen, menschenähnlichen Hände zu sehen. Die Versuchsteilnehmer sehen nicht ihre eigene Repräsentation der Konditionen \ac{ik} oder \ac{nik}. Es wird nur die jeweilige Avatarkondition der Mitspieler gesehen.
-Falls schon ein anderer Spieler im \ac{sve} anwesend ist oder zu einem späterem Zeitpunkt hinzukommt, ist dieser als die vom Spectator jeweilig ausgewählte Avatarkondition zu sehen. 
-
-\paragraph{GameManager und PodestManager}
-Der GameManager übernimmt alle wichtigen Funktionalitäten in der Anwendung.
-Diese sind unter anderem :
-\begin{itemize}
-\item Steuerung und Entscheidungslogik über Spectator oder Spieler
-\item Auswahl des Entsprechenden \ac{hmd}'s
-\item Netzwerkmanagement und RPC Handling
-\item Start, Reset, Steuerung und Überprüfungsmechanismen sowie Zeitmessungen der einzelnen Runden
-\item Interaktionen mit globalen Datastore-Variablen
-\item Verwalten der CSV-Logs
-\end{itemize}
-
-Die Hauptaufgabe des GameManagers ist die gesamte Verwaltung der Anwendung. Der GameManager des Spectator sowie des Clients besitzt unterschiedlichen Funktionalitäten. 
-Der GameManager des Clients übernimmt das für den Clienten relevante RPC-basierte Netzwerkhandling sowie das lauschen auf Änderungen von relevanten Variablen im globalen Datastore.
-Eine wesentliche Aufgabe ist es zu überprüfen, ob eine Runde vom GameManager des Spectators als beendet markiert wurde und leitet gegebenenfalls die Initialisierung einer neuen Runde ein.
-Der GameManager des Spectators gibt Hauptsächlich die Information über den Start, Stop oder den Reset der einzelnen Runden an die GameManager der Clients weiter. Weiterhin steuert dieser aufgrund seiner besonderen Rolle noch die Spectator-to-Client Netzwerkinteraktionen wie die Audioübertragung, Kickmechanismen, Rundenauswahl sowie das Aussehen der Avatare der Spieler.
-
-Jeder Client besitzt einen GameManager. Dieser steht in Verbindung mit den einzelnen Podesten der Spielers. Der Podestmanager eines jeweiligen Clients verwaltet einzelne Podeste, welche wiederum die einzelnen Knöpfe auf den Podesten verwalten. 
-Drückt nun ein Spieler ein entsprechenden Knopf mit einem Symbol, sendet der Knopf eine Information über seinen Zustand an den Podestmanager des Clients. Dieser Überprüft wiederum, ob die zur Zeit gedrückten Knöpfe mit den zu drückenden Knöpfen der Runde übereinstimmen. Falls die gedrückten Knöpfe die richtigen sind, wird eine boolean-Variable in einem globalen Datastore umgeschaltet, der den GameManager des Spectators darüber informiert, dass ein Teilnehmer die korrekten Knöpfe gedrückt hat. Haben nun beide Spieler \dq{}Rot und Grün\dq{} die korrekten Knöpfe gedrückt und dadurch eine Flag im globalen Datastore über die jeweilige Korrektheit gesetzt, registriert der GameManager des Spectators dies und setzt ein Flag über das Erfolgreiche abschließen der Runde. Die Clients registrieren dies und leiten die Startsequenz der nächsten Runde ein. 
-
-\paragraph{Audioübertragung}
-Die Audioübertragung wird von den GameManagern des Clients sowie des Spectators übernommen. Sobald der Teilnehmer zu der Anwendung verbunden ist, wird das Mikrofon des \ac{hmd}'s aktiviert. Es werden unterschiedliche MessageID's für Spectator und Client für die Netzwerkpakete festgelegt. Die serialisierten Audiodaten werden mittels RPCMessage an alle verbundenen Teilnehmer gesendet. Der Spectator ließt nur die Netzwerknachrichten mit der MessageID der Clients und der Client ließt nur die Netzwerknachrichten mit der MessageID des Spectators.
-\newpage
-\paragraph{Fade-to-Black und Positionsmanagement}
-	Da alle Mitspieler sich in dem \ac{sve} frei bewegen können, müssen diese beim Start des Spiels vor ein Podest platziert werden. Startet der Spectator das Spiel, überprüft ein im globalen Datenspeicher liegendes Byte, wobei die Bits des Bytes als Boolean genutzt wurden, welche Podeste noch nicht belegt sind. Alle Mitspieler werden dementsprechend auf die freien Positionen vor den Podesten teleportiert.
-Damit es dem roten sowie dem grünen Spieler nicht einfach möglich ist, auf die markierten Symbole des schwarzen Spielers zu schauen, indem der jeweilige Spieler dort hin läuft, wurde ein Fade-To-Black Mechanismus implementiert. Entfernt sich ein Spieler in einem bestimmten Radius von seinem Podest, wird sein Bild ab diesem Zeitpunkt zunehmend schwärzer, je weiter der Spieler sich entfernt. Die Schwärze verschwindet, desto näher der Spieler sich dem maximal erlaubtem Radius wieder nähert.
-
 \paragraph{CSV-Logwriting}
 Der GameManager des Spectator sammelt alle relevanten Daten über die Clients, während die einzelnen Runden von den Teilnehmern durchgeführt werden. Es wird inkrementell ein CSV-Log pro Durchgang fortgeschrieben. Dieses Log umfasst unter anderem das Startdatum, die Startzeit, die Spielzeit, die Rundenzeit, die Rundennummer %einen Effizienzwert berechnet durch $1-\frac{timeSinceGameStarts}{OverallGameTime}$ ( welcher jedoch nicht verwendet wurde ),
 sowie welche Avatarkondition in diesen Durchlauf verwendet wurde.
-
-%\paragraph{Physical Handmodel, eigener Avatar war unsichtbar}
-%
-%\paragraph{PlayerDisconnection Handling, Player Kick Mechanism, Destroying of Network Audio Receiver}
-%
-%\paragraph{Symbole und Podest, Drückmechanismus, Colliderplatzierung}
-%Eingeloggt ist Gelb umrandet etc auch erklären, Ausloggen etc. Depth of button
 
 \paragraph{Gametimer Funktionsweise}
 Die jeweiligen Teams haben 600 Sekunden Zeit, um so viele Symbole wie möglich, richtig zu erkennen. Um sich auf die startende Runde vorzubereiten, zählt ein Timer von 10 herunter. Anschließend beginnt die Runde. Dieser Spiele-Timer ist von jedem Mitspieler zwischen den drei Podesten gut sichtbar und immer zu den einzelnen Versuchsteilnehmern hingedreht. Die 10 Sekunden zwischen den einzelnen Runden, werden nicht Gesamtzeit hinzugezählt. Schaffen die Versuchsteilnehmer 10 Runden in 600 Sekunden zu absolvieren, dauert der Versuch somit insgesamt \\
@@ -1178,60 +1242,13 @@ Die unterschiedlichen Körpergrößen und unterschiedlichen Zimmergrößen der V
 Falls eine Person zu klein oder zu groß für das Podest ist, kann dieser seine Spielerkamera inklusive Avatar mit den Tasten Q und E bis zu einem bestimmten Schwellenwert höher oder niedriger stellen. Durch diesen Mechanismus ist es auch sitzenden Personen möglich, an dem Versuch teilzunehmen.
 Falls der Raum zu klein oder aus anderen Gründen im realem Raum nicht genügend Platz vorhanden ist, um die Knöpfe auf dem Podest zu betätigen, können sich die Spieler mit den Tasten W, A, S und D vorwärts, links, rechts und rückwärts in Blickrichtung bewegen.
 
-\paragraph{Animationen, Shadergraph und VFX-Graph}
-Die teilnehmenden Personen können in dem \ac{sve} lediglich virtuelle Hände ihrer eigenen Körperrepräsentation sehen. Da die Hauptinteraktion das Drücken der Knöpfe des zugeteilten Podestes darstellt, soll dies für die teilnehmenden Personen so einfach wie möglich gestaltet sein. Die teilnehmende Person soll sofort verstehen, wie diese mit seinem Avatar einen Knopf drückt. Die virtuellen Hände besitzen das Aussehen echter Hände mit einem grau-hellgrauem Karo-Muster Überzug. Drückt eine teilnehmende Person den Triggerbutton seines Controllers, schließen sich alle Finger zu einer Faust.
-
-Drückt ein Spieler einen Knopf mit Symbolen, bekommt dieser durch eine gelbe Umrandung des Knopfes die Bestätigung, dass dieser den Knopf eingeloggt hat. Drückt dieser diesen erneut, verschwindet die gelbe Umrandung. Diese Umrandungen Leuchten im Ping-Pong-Effekt auf und wurden mit Unity Shader-Graph erstellt.
-
-Ist eine Runde noch nicht abgeschlossen, sehen die Teilnehmer zwischen den Podesten einen leuchtenden Ball, welcher aus Unitys VFX-Graph Partikelsystem besteht. Wird eine Runde beendet, wechselt die Farbe des Partikelsystems von Rot auf Grün und es wirkt eine Kraft im Zentrum des Partikelsystems auf die einzelnen Partikel ein und schleudert diese auseinander.
-
 \paragraph{Sounds}
 Ist ein Teilnehmer den Raum beigetreten, wurde ein selbstaufgenommener Sound "Player Connected" abgespielt. Hat ein Disconnect eines Teilnehmers stattgefunden, wurde der Sound "Player Disconnected" abgespielt.
 Um ein Feedback bei erfolgreichen Buttonklicks bereitzustellen, wurde ein "Klick" sound beim drücken eines Buttons abgespielt.
 Alle Clients konnten mit dem Spectator sprechen. Dieser konnte alle Clients hören und zu allen auf einmal sprechen. Clients konnten keine Clients hören oder zu diesen Sprechen.
-\paragraph{UML Diagramme der Funktionsweise}
-	
-Wirklich?
 	
 \subsection{Methodik}
-\subsubsection{Untersuchungsmethode}
-Um die beiden Unabhängigen Variablen \dq{}Non-IK-Avatar\dq{} und \dq{}IK-Avatar\dq{} innerhalb einer Teambuildingmaßnahme zu testen, wurde das A/B-Testing in kombination einer Quantitativen Forschung gewählt.
-Gruppe A bekam dabei die Kondition \dq{}Non-IK-Avata\dq{} zugeteilt, während Gruppe B die Konditiion \dq{}IK-Avatar\dq{} zugeteilt bekam. Diese Aufteilung, welcher Probant welche Kondition zugeteilt bekam, erfolgte nach dem Zufallsprinzip. 
 
-	\subsubsection{Teilnehmerfindung}
-Da das gesamte Experiment als Into-the-Wild Experiment aufgebaut wurde, wurde in verschiedenen Foren ( z.B. VRForum.de, Computerbase.de, Hardwareluxx.de, etc. ) durch eine Suchanfrage, in Form eines extra dafür angelegten Threads, Teilnehmer gesucht. Weiterhin wurden Teilnehmer durch verschiede Facebookgruppen mit einem Bezug zu \ac{vr}, sowie durch zufällige Whatsapp-Chatgruppen mit 50+ Mitgliedern, akquiriert. Da das gesamte Experiment, sowie die Versuchsanleitung auf deutscher Sprache erstellt wurde, fand die Teilnehmerfindung nur im deutschsprachigem Raum statt.
-Die Voraussetzung um an dem Versuch Teilzunehmen, ist es, ein \ac{hmd}, zwei Controller sowie ein Computer mit Internetzugang zu besitzen. Der gesamte Versuch ist als ein "Into the Wild" Versuch aufgebaut, welches bedeutet, dass die genaue Zielgruppe nicht genau definiert werden kann. Die einzigen Ristriktion an die Zielgruppe ist, dass diese die zu verwendete Hardware besitzen.\\
-		
-	\subsubsection{Unabhängige Variablen}
-Die unabhängigen Variablen sind der \dq{}\ac{ik}-Avatar\dq{} sowie der \dq{}\ac{ik}-IK-Avatar\dq{}. Durch diese beiden Variablen wurde im weiterem Versuchsverlauf versucht den Einfluss auf die abhängigen Variablen zu bestimmen.
-
-	\subsection{Abhängige Variablen}
-		\subsubsection{Hang zum  Vertrauen}
-Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die Probanten generell anderen Personen einen Vertrauensvorschuss geben.
-Es wird davon ausgegangen, dass Probanten, die einen höheren Hang zum Vertrauen besitzen, ebenfalls ein höheres Kognitives Vertrauen zu Tage legen. 
-%			Wie in \textbf{Abbildung \ref{ten_characteristics}} beschrieben \textbf{ABBILDUNG 1 BESCHREIBEN, TRUST z.B. UND EINZELNE PUNKTE}, ist die Positive Atmosphere in einem Team einer der Maßgeblichen Faktoren die zur Leistungsfähigkeit und zum \textit{\glqq wir-gefühl\grqq} beitragen.
-			Die Abhängige Variable Vertrauen ...	
-			%\paragraph{Swift-Trust}
-			\subsubsection{Kommunikation}
-			%\subsubsection{Team Zusammenhalt}
-\subsubsection{Kognitives Vertrauen}
-Das Kognitive Vertrauen bezieht sich in dieser Studie darauf, wie sehr die Probanten glauben, dass das Team die ihnen gestellte Aufgabe korrekt und mit Sorgfalt erledigen.
-\subsubsection{Anzahl der erledigten Aufgaben}
-\subsubsection{Empfundene Team-Effektivität}
-			
-	\subsection{Residuen}
-\begin{itemize}
-\item \textbf{Kommunikation mit dem Spectator} Spectator spricht ....
-\item \textbf{Farbe und Geschlecht der Avatare} Schwarz als neutrale Farbe, Möglichst "neutrales" avatar... auf Kristoffer Waldows Studie hinweisen
-\item \textbf{Grad der Gamification} Einige Spieler könnten das \ac{vr} als Spiel empfinden, was Einfluss auf den eigentilchen Versuch hat.
-\item \textbf{Kein Selbstavatar} Durch vorherige Studien sollte das eigentlich sein, aber möglicher bip verhindert dies. Selbstavatar wäre 
-\end{itemize}
-
-
-
-Es waren während des Versuchs einige Residuen vorhanden. Diese waren unter anderem der \textbf{Aufgabe der Umgebung}, die \textbf{Farbe der Avatare} und das \textbf{Geschlecht der Avatare}. Weiterhin gab es noch \textit{Sozialpsychiologische} Einflussfaktoren wie der Grad an \textbf{Gamification} der Anwendung, der Fakt, dass die eigenen Probanten \textbf{Keinen Selbst Avatar} besitzen sowie das \textbf{gesprochene Wort des Spectators}.
-Es wurde versucht diese Residuen so weit wie möglich auszuschließen. So wurde ein androgynes Aussehen der Avatare in der neutralen Farbe schwarz gewählt, die Umgebung gräulich gehalten und unnötige Interaktionen mit der Umwelt vermieden.
-		
 %			\
 %			\paragraph{Sprache} $~$ \\	
 %			
@@ -1261,7 +1278,32 @@ Es wurde versucht diese Residuen so weit wie möglich auszuschließen. So wurde 
 %	
 
 	\subsection{Datenerhebungsmethoden}
-			
+	
+				\paragraph{Fragenbogen}
+Es wurden zwei Fragenbögen an die teilnehmenden Personen verteilt. Der erste Fragenbogen wurde an die Probanten vor der eigentlichen Studie ausgefüllt. In diesem wurde die Datenschutzerklärung ausgefüllt sowie Fragen über die \dq{}Person\dq{}, über eventuelle \dq{}Gesundheitliche Beschwerden\dq{} sowie schon vorhandene \dq{}\ac{vr}-Erfahrung\dq{}, gestellt. Der Zweite Fragebogen wurde nach der Untersuchung ausgefüllt. In diesem wurden Fragen über das \dq{}generelles Vertrauen\dq{}, das \dq{}kognitive Vertrauen\dq{} die \dq{}Kommunikations-Qualität\dq{}, die wahrgenommene \dq{}Team-Effektivität\dq{}, die \dq{}Beanspruchung\dq{} sowie die \dq{}Presence\dq{}, gestellt, um die Effektivität der verschiedenen Konditionen der Untersuchung auf Erfolg oder Misserfolg untersuchen zu können.
+				Es wurden nur vollständig Ausgefüllte Fragebögen zur Datenanalyse herangezogen.
+%			\paragraph{Beobachtung}
+%				Durch die Beobachtung während des Experiments werden Kennzahlen zur Dauer des Versuchs zwischen den einzelnen Konditionen bestimmt. Anhand dieser kann im späterem Verlauf das  Teambuilding Potential sowie die subjektive Effektivität durch gesteigertem Swift-Trust analysiert werden.
+			\paragraph{Induktive Quantitative Forschungsmethodik}
+				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas "Vertrauen" wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet wurden.
+				
+			\subsubsection{Unabhängige Variablen}
+Die unabhängigen Variablen sind der \dq{}\ac{ik}-Avatar\dq{} sowie der \dq{}\ac{ik}-IK-Avatar\dq{}. Durch diese beiden Variablen wurde im weiterem Versuchsverlauf versucht den Einfluss auf die abhängigen Variablen zu bestimmen.
+
+	\subsection{Abhängige Variablen}
+		\paragraph{Hang zum  Vertrauen}
+Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die Probanten generell anderen Personen einen Vertrauensvorschuss geben.
+Es wird davon ausgegangen, dass Probanten, die einen höheren Hang zum Vertrauen besitzen, ebenfalls ein höheres Kognitives Vertrauen zu Tage legen. 
+%			Wie in \textbf{Abbildung \ref{ten_characteristics}} beschrieben \textbf{ABBILDUNG 1 BESCHREIBEN, TRUST z.B. UND EINZELNE PUNKTE}, ist die Positive Atmosphere in einem Team einer der Maßgeblichen Faktoren die zur Leistungsfähigkeit und zum \textit{\glqq wir-gefühl\grqq} beitragen.
+			Die Abhängige Variable Vertrauen ...	
+			%\paragraph{Swift-Trust}
+\paragraph{Kommunikation}
+			%\subsubsection{Team Zusammenhalt}
+\paragraph{Kognitives Vertrauen}
+Das Kognitive Vertrauen bezieht sich in dieser Studie darauf, wie sehr die Probanten glauben, dass das Team die ihnen gestellte Aufgabe korrekt und mit Sorgfalt erledigen.
+\paragraph{Anzahl der erledigten Aufgaben}
+\paragraph{Empfundene Team-Effektivität}		
+				
 		\paragraph{Demografie-Fragebogen}
 Bevor der Versuch stattfinden konnte, mussten die Probanten einen Demographie-Fragebogen ausfüllen. Dieser diente allgemeine demografische Merkmale wie z.B. Das Alter, Geschlecht und den Bildungsstand abzufragen. Weiterhin wurde der demografische Fragebogen dazu genutzt, um die bisher vorhandene \ac{vr}-Erfahrung, die PC- und Internetaffinität sowie die Videospielerfahrung der einzelnen Probanten besser einschätzen zu können.
 \\Ein Auszug des Demografie-Fragebogen befindet sich in \textbf{Anhang \ref{Pre-Questionnaire}}
@@ -1422,15 +1464,13 @@ Der Co-Presence-Fragebogen dient dazu die Selbst gemeldete Co-Presence, die wahr
 	\end{tabular}
 \end{table}
 \clearpage
-
-			\paragraph{Fragenbogen}
-Es wurden zwei Fragenbögen an die jeweiligen Studienteilnehmer verteilt. Der erste Fragenbogen wurde an die Probanten vor der eigentlichen Studie ausgefüllt. Ziel war es, die Einstellungen zu Teamarbeit sowie zu interpersonellem Vertrauen der Personen vor der eigentlichen Untersuchung festzustellen. Der Zweite Fragebogen wurde nach der Untersuchung ausgefüllt, um die Effektivität der verschiedenen Konditionen der Untersuchung auf Erfolg oder Misserfolg untersuchen zu können.
-				Es wurden nur vollständig Ausgefüllte Fragebögen zur Datenanalyse herangezogen. Konnte nicht ermittelt werden, welche Aussage angekreuzt wurde, wurde dieser ebenfalls nicht mit in die Datenanalyse aufgenommen. Eine Außnahme war dabei, falls ein Teilnehmer im Nachhinein nach die von Ihm gewünschte Antwort befragt werden konnte.
-			\paragraph{Beobachtung}
-				Durch die Beobachtung während des Experiments werden Kennzahlen zur Dauer des Versuchs zwischen den einzelnen Konditionen bestimmt. Anhand dieser kann im späterem Verlauf das  Teambuilding Potential sowie die subjektive Effektivität durch gesteigertem Swift-Trust analysiert werden.
-			\paragraph{Induktive Quantitative Forschungsmethodik}
-				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas "Vertrauen" wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet wurden.
-
+			
+	\subsection{Eventuelle Einflussfaktoren}
+\begin{itemize}
+\item \textbf{Kommunikation mit dem Spectator} Da die teilnehmenden Personen mit dem Spectator in Verbindung stehen, kann es sein, dass die teilnehmenden Personen durch eine plötzlich auftretende Stimme einen \ac{bip} erfahren.
+\item \textbf{Farbe und Geschlecht der Avatare} Personen verbinden mit verschiedenen Farben verschiedene Eigenschaften. Es wurde durch die Farbe schwarz so neutral wie möglich zu bleiben.
+\item \textbf{Grad der Gamification} Einige Spieler könnten das gesamte Experiment \ac{vr} als Spiel zur Unterhaltung empfinden, was das Ergebnis beeinflussen könnte. 
+\end{itemize}
 
 			\paragraph{Bereinigte Fragen}
 Um die interne Konsistenz der einzelnen Skalen zu verbessern, wurden einige Fragen aus dem Fragebogen bereinigt. Dabei wurde versucht, das Cronbachs-Alpha $\alpha$ optimalerweise auf ($\alpha > 0.8$), akzeptablerweise ($\alpha > 0.7$) und fragwürdigerweise auf ($\alpha > 0.6$) zu setzen. Dabei wurde während der Bereinigung darauf geachtet, dass nicht zu viele Fragen entfernt wurden und trotzdem eine interne Konsistenz aufrecht gehalten wurde. Eine Tabelle über die Anzahl der bereinigten Fragen im Fragebogen, die Anzahl der Teilnehmer sowie die Alphawerte befindet sich in \textbf{Tabelle \ref{alphavalues}} \\
@@ -2294,6 +2334,8 @@ Es wurden signifikante Zusammenhänge mittels Spearman-Rho-Korrelation auf \unde
 %
 %\subsection{Analyse Hypothese 7}
 %
+
+% WO IST MEHR WAHRGENOMENE TEAMEFFEKTIVITÄT VORHANDEN??
 
 %Unterschiedliche wahrgenommene Teameffektivität bei unterschiedlichen Avatar Konditionen.
 
