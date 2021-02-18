@@ -1,10 +1,10 @@
 \BOOKMARK [1][]{section*.5}{Erkl\344rung}{}% 1
 \BOOKMARK [1][]{section*.6}{Kurzfassung/Abstract}{}% 2
-\BOOKMARK [1][]{section*.14}{Abk\374rzungsverzeichnis}{}% 3
-\BOOKMARK [1][]{section*.15}{Einleitung}{}% 4
-\BOOKMARK [2][]{subsection.19}{0.1 Motivation}{section*.15}% 5
-\BOOKMARK [2][]{subsection.20}{0.2 Ziele der Arbeit}{section*.15}% 6
-\BOOKMARK [2][]{subsection.21}{0.3 Das Framework}{section*.15}% 7
+\BOOKMARK [1][]{section*.12}{Abk\374rzungsverzeichnis}{}% 3
+\BOOKMARK [1][]{section*.13}{Einleitung}{}% 4
+\BOOKMARK [2][]{subsection.19}{0.1 Motivation}{section*.13}% 5
+\BOOKMARK [2][]{subsection.20}{0.2 Ziele der Arbeit}{section*.13}% 6
+\BOOKMARK [2][]{subsection.21}{0.3 Das Framework}{section*.13}% 7
 \BOOKMARK [1][]{section.33}{1 Theoretischer Rahmen}{}% 8
 \BOOKMARK [2][]{subsection.36}{1.1 Virtual Reality}{section.33}% 9
 \BOOKMARK [3][]{subsubsection.37}{1.1.1 Virtuelle 3D-Welten}{subsection.36}% 10
@@ -15,63 +15,62 @@
 \BOOKMARK [2][]{subsection.46}{1.2 Avatare}{section.33}% 15
 \BOOKMARK [3][]{subsubsection.47}{1.2.1 Repr\344sentationen von Avataren}{subsection.46}% 16
 \BOOKMARK [3][]{subsubsection.50}{1.2.2 Selbst-Avatar und Nicht-Selbst-Avatare}{subsection.46}% 17
-\BOOKMARK [2][]{subsection.54}{1.3 Uncanny Valley}{section.33}% 18
-\BOOKMARK [2][]{subsection.55}{1.4 Vertrauen}{section.33}% 19
-\BOOKMARK [3][]{subsubsection.56}{1.4.1 Zwischenmenschliches Vertrauen}{subsection.55}% 20
-\BOOKMARK [3][]{subsubsection.57}{1.4.2 Vertrauen als Eigenschaft }{subsection.55}% 21
-\BOOKMARK [3][]{subsubsection.58}{1.4.3 Vertrauen als Zustand}{subsection.55}% 22
-\BOOKMARK [3][]{subsubsection.59}{1.4.4 Vertrauen und vts}{subsection.55}% 23
-\BOOKMARK [2][]{subsection.68}{1.5 Teams}{section.33}% 24
-\BOOKMARK [3][]{subsubsection.69}{1.5.1 Was ist ein Team?}{subsection.68}% 25
-\BOOKMARK [3][]{subsubsection.70}{1.5.2 Was ist ein virtuelles Team?}{subsection.68}% 26
-\BOOKMARK [3][]{subsubsection.71}{1.5.3 Virtuelle Teams und Teambuilding}{subsection.68}% 27
-\BOOKMARK [3][]{subsubsection.72}{1.5.4 Teameffektivit\344t}{subsection.68}% 28
-\BOOKMARK [1][]{section.73}{2 Versuchshypothesen}{}% 29
-\BOOKMARK [1][]{section.75}{3 Vorgehensweise}{}% 30
-\BOOKMARK [2][]{subsection.76}{3.1 Der Versuch}{section.75}% 31
-\BOOKMARK [3][]{subsubsection.77}{3.1.1 Untersuchungsmethode}{subsection.76}% 32
-\BOOKMARK [3][]{subsubsection.78}{3.1.2 Teilnehmerfindung}{subsection.76}% 33
-\BOOKMARK [3][]{subsubsection.79}{3.1.3 Versuchsablauf}{subsection.76}% 34
-\BOOKMARK [3][]{subsubsection.80}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.76}% 35
-\BOOKMARK [3][]{subsubsection.82}{3.1.5 Detaillierter Versuchsablauf}{subsection.76}% 36
-\BOOKMARK [3][]{subsubsection.84}{3.1.6 Die Avatare}{subsection.76}% 37
-\BOOKMARK [2][]{subsection.92}{3.2 Anforderungen an die Versuchsumgebung}{section.75}% 38
-\BOOKMARK [3][]{subsubsection.93}{3.2.1 Technik der Versuchsumgebung}{subsection.92}% 39
-\BOOKMARK [3][]{subsubsection.106}{3.2.2 Optik der Versuchsumgebung}{subsection.92}% 40
-\BOOKMARK [3][]{subsubsection.112}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.92}% 41
-\BOOKMARK [2][]{subsection.118}{3.3 Methodik}{section.75}% 42
-\BOOKMARK [2][]{subsection.119}{3.4 Datenerhebungsmethoden}{section.75}% 43
-\BOOKMARK [3][]{subsubsection.122}{3.4.1 Unabh\344ngige Variablen}{subsection.119}% 44
-\BOOKMARK [2][]{subsection.123}{3.5 Abh\344ngige Variablen}{section.75}% 45
-\BOOKMARK [2][]{subsection.138}{3.6 Eventuelle Einflussfaktoren}{section.75}% 46
-\BOOKMARK [1][]{section.141}{4 Auswertung \040Ergebnisse}{}% 47
-\BOOKMARK [2][]{subsection.152}{4.1 Teilnehmer und Demografie}{section.141}% 48
-\BOOKMARK [2][]{subsection.153}{4.2 Analyse}{section.141}% 49
-\BOOKMARK [2][]{subsection.164}{4.3 Voraussetzungen}{section.141}% 50
-\BOOKMARK [2][]{subsection.168}{4.4 Analyse Hypothese 1}{section.141}% 51
-\BOOKMARK [2][]{subsection.173}{4.5 Analyse Hypothese 2}{section.141}% 52
-\BOOKMARK [2][]{subsection.179}{4.6 Analyse Hypothese 3}{section.141}% 53
-\BOOKMARK [2][]{subsection.191}{4.7 Analyse Hypothese 4}{section.141}% 54
-\BOOKMARK [3][]{subsubsection.192}{4.7.1 T-Test}{subsection.191}% 55
-\BOOKMARK [3][]{subsubsection.193}{4.7.2 Mann-Whitney-U-Test}{subsection.191}% 56
-\BOOKMARK [2][]{subsection.194}{4.8 Analyse Hypothese 5}{section.141}% 57
-\BOOKMARK [2][]{subsection.209}{4.9 Berechnung der Werte f\374r die Auswertung}{section.141}% 58
-\BOOKMARK [1][]{section.210}{5 Diskussion}{}% 59
-\BOOKMARK [2][]{subsection.211}{5.1 Diskussion der Ergebnisse}{section.210}% 60
-\BOOKMARK [2][]{subsection.213}{5.2 Diskussion der eingesetzten Methoden}{section.210}% 61
-\BOOKMARK [2][]{subsection.214}{5.3 Auswirkungen auf die Gegenwart}{section.210}% 62
-\BOOKMARK [2][]{subsection.215}{5.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.210}% 63
-\BOOKMARK [1][]{section.216}{6 Fazit}{}% 64
-\BOOKMARK [1][]{section*.218}{Anhang}{}% 65
-\BOOKMARK [1][]{appendix.219}{A Auswertungsergebnisse}{}% 66
-\BOOKMARK [1][]{appendix.232}{B Demografieauswertung}{}% 67
-\BOOKMARK [1][]{appendix.240}{C Pre-Questionnaire}{}% 68
-\BOOKMARK [1][]{appendix.247}{D Post-Questionnaire - Konditionsabfrage}{}% 69
-\BOOKMARK [1][]{appendix.249}{E Post-Questionnaire - Generelles Vertrauen}{}% 70
-\BOOKMARK [1][]{appendix.254}{F Post-Questionnaire - Kognitives Vertrauen}{}% 71
-\BOOKMARK [1][]{appendix.257}{G Post-Questionnaire - Teamkommunikation}{}% 72
-\BOOKMARK [1][]{appendix.259}{H Post-Questionnaire - Team-Effektivit\344t}{}% 73
-\BOOKMARK [1][]{appendix.261}{I Post-Questionnaire - NASA-TLX}{}% 74
-\BOOKMARK [1][]{appendix.268}{J Post-Questionnaire - IPQ}{}% 75
-\BOOKMARK [1][]{appendix.272}{K Post-Questionnaire - Co-Presence}{}% 76
-\BOOKMARK [1][]{appendix.279}{L Other}{}% 77
+\BOOKMARK [2][]{subsection.54}{1.3 Vertrauen}{section.33}% 18
+\BOOKMARK [3][]{subsubsection.55}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.54}% 19
+\BOOKMARK [3][]{subsubsection.56}{1.3.2 Vertrauen als Eigenschaft }{subsection.54}% 20
+\BOOKMARK [3][]{subsubsection.57}{1.3.3 Vertrauen als Zustand}{subsection.54}% 21
+\BOOKMARK [3][]{subsubsection.58}{1.3.4 Vertrauen und virtuelle Teams}{subsection.54}% 22
+\BOOKMARK [2][]{subsection.59}{1.4 Teams}{section.33}% 23
+\BOOKMARK [3][]{subsubsection.60}{1.4.1 Was ist ein Team?}{subsection.59}% 24
+\BOOKMARK [3][]{subsubsection.61}{1.4.2 Was ist ein virtuelles Team?}{subsection.59}% 25
+\BOOKMARK [3][]{subsubsection.62}{1.4.3 Virtuelle Teams und Teambuilding}{subsection.59}% 26
+\BOOKMARK [3][]{subsubsection.63}{1.4.4 Teameffektivit\344t}{subsection.59}% 27
+\BOOKMARK [1][]{section.64}{2 Versuchshypothesen}{}% 28
+\BOOKMARK [1][]{section.81}{3 Vorgehensweise}{}% 29
+\BOOKMARK [2][]{subsection.82}{3.1 Der Versuch}{section.81}% 30
+\BOOKMARK [3][]{subsubsection.83}{3.1.1 Untersuchungsmethode}{subsection.82}% 31
+\BOOKMARK [3][]{subsubsection.84}{3.1.2 Teilnehmerfindung}{subsection.82}% 32
+\BOOKMARK [3][]{subsubsection.85}{3.1.3 Versuchsablauf}{subsection.82}% 33
+\BOOKMARK [3][]{subsubsection.86}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.82}% 34
+\BOOKMARK [3][]{subsubsection.88}{3.1.5 Detaillierter Versuchsablauf}{subsection.82}% 35
+\BOOKMARK [3][]{subsubsection.90}{3.1.6 Die Avatare}{subsection.82}% 36
+\BOOKMARK [2][]{subsection.98}{3.2 Anforderungen an die Versuchsumgebung}{section.81}% 37
+\BOOKMARK [3][]{subsubsection.99}{3.2.1 Technik der Versuchsumgebung}{subsection.98}% 38
+\BOOKMARK [3][]{subsubsection.112}{3.2.2 Optik der Versuchsumgebung}{subsection.98}% 39
+\BOOKMARK [3][]{subsubsection.118}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.98}% 40
+\BOOKMARK [2][]{subsection.124}{3.3 Methodik}{section.81}% 41
+\BOOKMARK [2][]{subsection.125}{3.4 Datenerhebungsmethoden}{section.81}% 42
+\BOOKMARK [3][]{subsubsection.128}{3.4.1 Unabh\344ngige Variablen}{subsection.125}% 43
+\BOOKMARK [2][]{subsection.129}{3.5 Abh\344ngige Variablen}{section.81}% 44
+\BOOKMARK [2][]{subsection.144}{3.6 Eventuelle Einflussfaktoren}{section.81}% 45
+\BOOKMARK [1][]{section.147}{4 Auswertung / Ergebnisse}{}% 46
+\BOOKMARK [2][]{subsection.148}{4.1 Teilnehmer und Demografie}{section.147}% 47
+\BOOKMARK [2][]{subsection.149}{4.2 Analyse}{section.147}% 48
+\BOOKMARK [2][]{subsection.162}{4.3 Voraussetzungen}{section.147}% 49
+\BOOKMARK [2][]{subsection.166}{4.4 Analyse Hypothese 1}{section.147}% 50
+\BOOKMARK [2][]{subsection.171}{4.5 Analyse Hypothese 2}{section.147}% 51
+\BOOKMARK [2][]{subsection.177}{4.6 Analyse Hypothese 3}{section.147}% 52
+\BOOKMARK [2][]{subsection.191}{4.7 Analyse Hypothese 4}{section.147}% 53
+\BOOKMARK [3][]{subsubsection.192}{4.7.1 T-Test}{subsection.191}% 54
+\BOOKMARK [3][]{subsubsection.193}{4.7.2 Mann-Whitney-U-Test}{subsection.191}% 55
+\BOOKMARK [2][]{subsection.194}{4.8 Analyse Hypothese 5}{section.147}% 56
+\BOOKMARK [2][]{subsection.219}{4.9 Berechnung der Werte f\374r die Auswertung}{section.147}% 57
+\BOOKMARK [1][]{section.220}{5 Diskussion}{}% 58
+\BOOKMARK [2][]{subsection.221}{5.1 Diskussion der Ergebnisse}{section.220}% 59
+\BOOKMARK [2][]{subsection.223}{5.2 Diskussion der eingesetzten Methoden}{section.220}% 60
+\BOOKMARK [2][]{subsection.224}{5.3 Auswirkungen auf die Gegenwart}{section.220}% 61
+\BOOKMARK [2][]{subsection.225}{5.4 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.220}% 62
+\BOOKMARK [1][]{section.226}{6 Fazit}{}% 63
+\BOOKMARK [1][]{section*.228}{Anhang}{}% 64
+\BOOKMARK [1][]{appendix.229}{A Auswertungsergebnisse}{}% 65
+\BOOKMARK [1][]{appendix.242}{B Demografieauswertung}{}% 66
+\BOOKMARK [1][]{appendix.250}{C Pre-Questionnaire}{}% 67
+\BOOKMARK [1][]{appendix.257}{D Post-Questionnaire - Konditionsabfrage}{}% 68
+\BOOKMARK [1][]{appendix.259}{E Post-Questionnaire - Generelles Vertrauen}{}% 69
+\BOOKMARK [1][]{appendix.264}{F Post-Questionnaire - Kognitives Vertrauen}{}% 70
+\BOOKMARK [1][]{appendix.267}{G Post-Questionnaire - Teamkommunikation}{}% 71
+\BOOKMARK [1][]{appendix.269}{H Post-Questionnaire - Team-Effektivit\344t}{}% 72
+\BOOKMARK [1][]{appendix.271}{I Post-Questionnaire - NASA-TLX}{}% 73
+\BOOKMARK [1][]{appendix.278}{J Post-Questionnaire - IPQ}{}% 74
+\BOOKMARK [1][]{appendix.282}{K Post-Questionnaire - Co-Presence}{}% 75
+\BOOKMARK [1][]{appendix.289}{L Other}{}% 76
