@@ -101,7 +101,7 @@
 \contentsline {paragraph}{Ausreißer}{51}{section*.167}%
 \contentsline {paragraph}{Normalverteilung}{51}{section*.168}%
 \contentsline {paragraph}{Pearson-Korrelationsanalyse}{51}{section*.169}%
-\contentsline {paragraph}{Regressionsanalyse}{51}{section*.170}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{51}{section*.170}%
 \contentsline {subsection}{\numberline {4.5}Analyse Hypothese 2}{52}{subsection.171}%
 \contentsline {paragraph}{Normalverteilung}{52}{section*.172}%
 \contentsline {paragraph}{Varianzgleichheit}{52}{section*.173}%
@@ -113,45 +113,46 @@
 \contentsline {paragraph}{Normalverteilung}{54}{section*.180}%
 \contentsline {paragraph}{Mittelwerte und Standardabweichungen}{54}{section*.181}%
 \contentsline {paragraph}{Spearman-Korrelationsanalyse}{55}{section*.182}%
-\contentsline {paragraph}{Regressionsanalyse}{55}{section*.183}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{55}{section*.183}%
 \contentsline {paragraph}{Kondition \ac {ik}}{55}{section*.186}%
 \contentsline {paragraph}{Kondition \ac {nik}}{55}{section*.187}%
 \contentsline {paragraph}{Hypothese 3a : Analyse ohne die Aufteilung in \ac {ik} und \ac {nik} }{55}{section*.188}%
 \contentsline {paragraph}{Spearman-Korrelationsanalyse}{56}{section*.189}%
-\contentsline {paragraph}{Regressionsanalyse}{56}{section*.190}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{56}{section*.190}%
 \contentsline {subsection}{\numberline {4.7}Analyse Hypothese 4}{57}{subsection.191}%
 \contentsline {subsubsection}{\numberline {4.7.1}T-Test}{57}{subsubsection.192}%
 \contentsline {subsubsection}{\numberline {4.7.2}Mann-Whitney-U-Test}{57}{subsubsection.193}%
 \contentsline {subsection}{\numberline {4.8}Analyse Hypothese 5}{58}{subsection.194}%
 \contentsline {paragraph}{Aufstellen der generellen Vertrauenstabelle pro Team}{59}{table.caption.198}%
 \contentsline {paragraph}{Spearman-Korrelationsanalyse}{60}{section*.203}%
-\contentsline {paragraph}{Regressionsanalyse}{60}{section*.204}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{60}{section*.204}%
 \contentsline {paragraph}{Kondition \ac {ik}}{60}{section*.205}%
 \contentsline {paragraph}{Kondition \ac {nik}}{60}{section*.206}%
-\contentsline {paragraph}{Hypothese 5a :Analyse ohne die Aufteilung in \ac {ik} und \ac {nik}}{61}{section*.207}%
+\contentsline {paragraph}{Hypothese 5a}{61}{section*.207}%
 \contentsline {paragraph}{Spearman-Korrelationsanalyse}{61}{section*.208}%
-\contentsline {paragraph}{Regressionsanalyse}{61}{section*.209}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{61}{section*.209}%
 \contentsline {paragraph}{Analyse weiterer Variablen}{62}{section*.210}%
 \contentsline {paragraph}{Signifikante unterschiede des Medians}{62}{section*.211}%
 \contentsline {paragraph}{Signifikante Korrelationen}{62}{section*.214}%
-\contentsline {subsection}{\numberline {4.9}Berechnung der Werte für die Auswertung}{66}{subsection.219}%
-\contentsline {section}{\numberline {5}Diskussion}{67}{section.220}%
-\contentsline {subsection}{\numberline {5.1}Diskussion der Ergebnisse}{67}{subsection.221}%
-\contentsline {paragraph}{IDEEN}{67}{section*.222}%
-\contentsline {subsection}{\numberline {5.2}Diskussion der eingesetzten Methoden}{67}{subsection.223}%
-\contentsline {subsection}{\numberline {5.3}Auswirkungen auf die Gegenwart}{67}{subsection.224}%
-\contentsline {subsection}{\numberline {5.4}Vorschläge für zukünftige Untersuchungen}{67}{subsection.225}%
-\contentsline {section}{\numberline {6}Fazit}{67}{section.226}%
-\contentsline {section}{Anhang}{75}{section*.228}%
-\contentsline {section}{\numberline {A}Auswertungsergebnisse}{75}{appendix.229}%
-\contentsline {section}{\numberline {B}Demografieauswertung}{81}{appendix.242}%
-\contentsline {section}{\numberline {C}Pre-Questionnaire}{86}{appendix.250}%
-\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{91}{appendix.257}%
-\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{92}{appendix.259}%
-\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{96}{appendix.264}%
-\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{97}{appendix.267}%
-\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{98}{appendix.269}%
-\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{99}{appendix.271}%
-\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{105}{appendix.278}%
-\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{108}{appendix.282}%
-\contentsline {section}{\numberline {L}Other}{114}{appendix.289}%
+\contentsline {subsection}{\numberline {4.9}Berechnung der Werte für die Auswertung}{65}{subsection.218}%
+\contentsline {section}{\numberline {5}Analyse}{66}{section.219}%
+\contentsline {section}{\numberline {6}Diskussion}{67}{section.221}%
+\contentsline {subsection}{\numberline {6.1}Diskussion der Ergebnisse}{67}{subsection.222}%
+\contentsline {paragraph}{IDEEN}{68}{section*.223}%
+\contentsline {subsection}{\numberline {6.2}Diskussion der eingesetzten Methoden}{68}{subsection.224}%
+\contentsline {subsection}{\numberline {6.3}Auswirkungen auf die Gegenwart}{68}{subsection.225}%
+\contentsline {subsection}{\numberline {6.4}Vorschläge für zukünftige Untersuchungen}{68}{subsection.226}%
+\contentsline {section}{\numberline {7}Fazit}{68}{section.227}%
+\contentsline {section}{Anhang}{76}{section*.229}%
+\contentsline {section}{\numberline {A}Auswertungsergebnisse}{76}{appendix.230}%
+\contentsline {section}{\numberline {B}Demografieauswertung}{82}{appendix.243}%
+\contentsline {section}{\numberline {C}Pre-Questionnaire}{87}{appendix.251}%
+\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{92}{appendix.258}%
+\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{93}{appendix.260}%
+\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{97}{appendix.265}%
+\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{98}{appendix.268}%
+\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{99}{appendix.270}%
+\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{100}{appendix.272}%
+\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{106}{appendix.279}%
+\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{109}{appendix.283}%
+\contentsline {section}{\numberline {L}Other}{115}{appendix.290}%
