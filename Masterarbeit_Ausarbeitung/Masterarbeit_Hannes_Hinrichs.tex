@@ -1479,27 +1479,36 @@ Die \textit{Tabelle \ref{MittelwerteUndCo}} zeigt eine Übersicht über die geme
 	\subsection{Analyse}
 Die \textit{Tabelle \ref{MittelwerteUndCo}} zeigt eine diskriptive Statistik der Hauptvariablen des Experiments.
 \begin{table}[H]
-	\centering\footnotesize\setstretch{1.2}
+	\centering\footnotesize\setstretch{1}
 	\caption{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
 	\label{MittelwerteUndCo}
 	\begin{tabularx}{\textwidth}{p{3cm} | p{3.5cm} p{1.5cm} p{2cm} p{2cm} p{2cm}} 
-		Was wurde gemessen? & Variablenbeschreibung & Min/Max & Mittelwert & Std. Abweichung & $N$ \\
+		Was wurde gemessen? & Abkürzung & Min/Max & Mittelwert & Std. Abweichung & $N$ \\
 		\hline \\
 		Genereller Hang zum Vertrauen &\ac{gt} & $1/7$ & $5,1795$ & $.70857$ & $30$ \\ \\
-		Kognitives Vertrauen &\ac{ct} & $1/5$ & $4,440$ & $.4469$ & $30$ \\ \\
-		Kognitives Vertrauen - IK &\ac{cti} & $1/5$ & $4,3067$ & $.4589$ & $15$ \\ \\
+		Kognitives Vertrauen &\ac{ct} & $1/5$ & $4,386$ & $.57997$ & $30$ \\ \\
+		Kognitives Vertrauen - IK &\ac{cti} & $1/5$ & $4,20$ & $.67612$ & $15$ \\ \\
 		Kognitives Vertrauen - NON IK &\ac{ctn} & $1/5$ & $4,5733$ & $.4061$ & $15$ \\ \\
 		Team-Kommunikation &\ac{tcn} & $1/5$ & $4,2467$ & $.61629$ & $30$ \\ \\
 		Team-Kommunikation - IK &\ac{tci} & $1/5$ & $4,0133$ & $.66533$ & $15$ \\ \\
 		Team-Kommunikation - NON IK &\ac{tcn} & $1/5$ & $4,48$ & $.47689$ & $15$ \\ \\
-		Team-Effektivität &\ac{te} & $1/7$ & $4,9583$ & $1,40056$ & $30$ \\ \\
-		Team-Effektivität - IK &\ac{tei} & $1/7$ & $4,6$ & $1,63881$ & $15$ \\ \\
-		Team-Effektivität - NON IK &\ac{ten} & $1/7$ & $5,3167$ & $1,04994$ & $15$ \\ \\
+		Wahrg.Team-Effektivität &\ac{te} & $1/7$ & $4,9583$ & $1,40056$ & $30$ \\ \\
+		Wahrg.Team-Effektivität - IK &\ac{tei} & $1/7$ & $4,6$ & $1,63881$ & $15$ \\ \\
+		Wahrg.Team-Effektivität - NON IK &\ac{ten} & $1/7$ & $5,3167$ & $1,04994$ & $15$ \\ \\
 		NASA-TLX &\ac{tlx} & $1/21$ & $7,16$ & $2,83203$ & $30$ \\ \\
 		IPQ &IPQ & $1/7$ & $4,43$ & $.98339$ & $30$ \\ \\
 		Co-Presence &\ac{cp} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
 		Co-Presence - IK &\ac{cpi} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
-		Co-Presence - NON IK &\ac{cpn} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\	
+		Co-Presence - NON IK &\ac{cpn} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\
+		Rounds Done &\ac{tRounds} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
+		Rounds Done IK &\ac{tRoundsIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
+		Rounds Done NON IK &\ac{tRoundsNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\	
+		Kognitives Vertrauen im Team &\ac{teamCog} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
+		Kognitives Vertrauen im Team - IK &\ac{teamCogIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
+		Kognitives Vertrauen im Team - NON IK &\ac{teamCogNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\
+		Generelles Vertrauen im Team &\ac{teamGen} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
+		Generelles Vertrauen im Team - IK &\ac{teamGenIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
+		Generelles Vertrauen im Team - NON IK &\ac{teamGenNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\
 	\end{tabularx}
 \end{table}
 \clearpage
@@ -1567,7 +1576,7 @@ Um diese Hypothese zu überprüfen, wurde eine Pearson- Korrelationsanalyse durc
 %		\end{footnotesize}
 %	\end{figure}	
 	
-Es ist eine \textbf{signifikant} ($p = .012 < \alpha = 0.05$) positive Korrelation mittleren Effektes mit dem Pearson- Korrelationskoeffizient ($r = .452$) zwischen \ac{gt} und \ac{ct} vorhanden. 
+Es ist eine \textbf{signifikant} ($p = .029 < \alpha = 0.05$) positive Korrelation mittleren Effektes mit dem Pearson- Korrelationskoeffizient ($r = .400$) zwischen \ac{gt} und \ac{ct} vorhanden. 
 Das generelle Vertrauen einer Person korreliert stark positiv (laut Cohen \cite{cohen2013statistical}) mit dem kognitiven Vertrauen der Personen.
 %Dies deutet darauf hin, die \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{Hypothese 1 / H$_{1}$} anzunehmen.
 
@@ -1588,11 +1597,11 @@ Um die vermutete gerichtete Annahme der neutralen Auswirkung des \ac{gt} auf den
 
 %Die Lineare-Regressionsanalyse ist mit \ac{ct} als abhängige und \ac{gt} als unabhängige Variable signifikant ($F(1,28) = 7,202; p = .012 < \alpha = 0.05$).
 
-Das Bestimmtheitsmaß ($R^{2} = .205$) deutet laut \citep{cohen2013statistical} auf eine geringe bis mittlere Varianzaufklärung des \ac{ct} durch \ac{gt} hin. Der \ac{gt} erklärt somit einen signifikanten Anteil der Varianz vom \ac{ct} ($R^{2} = .205; F(1,28) = 7,202; p = .012 < \alpha = 0.05$). Es lassen sich $20,5\%$ der Varianz unseres \ac{ct} durch den \ac{gt} erklären.
+Das Bestimmtheitsmaß ($R^{2} = .160$) deutet laut \citep{cohen2013statistical} auf eine geringe bis mittlere Varianzaufklärung des \ac{ct} durch \ac{gt} hin. Der \ac{gt} erklärt somit einen signifikanten Anteil der Varianz vom \ac{ct} ($R^{2} = .160; F(1,28) = 5,325; p = .029 < \alpha = 0.05$). Es lassen sich $16,0\%$ der Varianz unseres \ac{ct} durch den \ac{gt} erklären.
 
-Der Regressionskoeffizient der Variable \ac{gt} beträgt $\beta = .452$ und ist \textbf{signifikant} ($t(28) = 2,684; p = .012 < \alpha = 0.05$).
+Der Regressionskoeffizient der Variable \ac{gt} beträgt $\beta = .400$ und ist \textbf{signifikant} ($t(28) = 2,308; p = .029 < \alpha = 0.05$).
 
-Der \ac{gt} eignet sich als Prädiktor für den \ac{ct}. Die geschätzte Zunahme an \ac{ct} beläuft sich auf $0.456$ Punkte \ac{ct} pro \ac{gt} ($\beta = 0.456; t(28) = 2,684; p = .012 < \alpha = 0.05$).
+Der \ac{gt} eignet sich als Prädiktor für den \ac{ct}. Die geschätzte Zunahme an \ac{ct} beläuft sich auf $0.400$ Punkte \ac{ct} pro \ac{gt} ($\beta = 0.400; t(28) = 2,308; p = .029 < \alpha = 0.05$).
 
 Aufgrund der Zunahme des \ac{ct} durch den \ac{gt} lässt sich \textit{Hypothese 1 / H$_{0}$} zum Signifikanzniveau $\alpha = 0.05$ verwerfen.
 
@@ -1613,12 +1622,12 @@ Es wird der Zusammenhang zwischen den unabhängigen Variablen \ac{ik} und \ac{ni
 %	\end{figure}	
 %	
 \paragraph{Normalverteilung}
-\ac{ctn} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit. \ac{cti} ist ebenfalls laut Kolmogoroff-Smirnov-Test mit ($p = .061 > \alpha = 0.05$) Normalverteilt. 
+\ac{ctn} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit. \ac{cti} ist ebenfalls laut Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) Normalverteilt. 
 %\ac{ct} ist laut Kolmogoroff-Smirnov-Test mit ($p = .2 > \alpha = 0.05$) Normalverteit.
-Siehe \textbf{\autoref{fig:KolSmirIndNONIK}} und \textbf{\autoref{fig:KolSmirIndIK}}.
+%Siehe \textbf{\autoref{fig:KolSmirIndNONIK}} und \textbf{\autoref{fig:KolSmirIndIK}}.
 
 \paragraph{Varianzgleichheit}
-Als nächstes wird auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine Varianzgleichheit zwischen \ac{cti} und \ac{ctn} ($L = .756; p=0.392 > \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Gruppen gleiche Varianzen haben. 
+Als nächstes wird auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine Varianzgleichheit zwischen \ac{cti} und \ac{ctn} ($L = .1,370; p=0.252 > \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Gruppen gleiche Varianzen haben. 
 %	\begin{figure}[H]
 %\centering
 %		\begin{footnotesize}
@@ -1629,16 +1638,16 @@ Als nächstes wird auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine
 %		\end{footnotesize}
 %	\end{figure}	
 \paragraph{Mittelswerte und Standardabweichungen}
-Der Cognitive-Trust-Score (\ac{cti}) beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,306$) mit einer Standardabweichung von ($\sigma = .458$).\newline 
+Der Cognitive-Trust-Score (\ac{cti}) beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,200$) mit einer Standardabweichung von ($\sigma = .676$).\newline 
 Der Cognitive-Trust-Score (\ac{ctn}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 4,573$) mit einer Standardabweichung von ($\sigma = .406$).
 
 \paragraph{t-Test}
-Der T-Wert ist kleiner Null ($T = -1,685 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{cti} und \ac{ctn} hinweist. Der Mittelwert $\bar(x) = 4,306$ der Kondition \ac{ik} ist kleiner als der Mittelwert $\bar(x) = 4,573$ der Kondition \ac{nik}.
-Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,3067; \sigma = .45898$) und \ac{nik} ($\bar(x) = 4,5733; \sigma =.40614$) jedoch keine Signifikanz ($t(28) = -1,685; p = .103 > \alpha = 0.05$).
+Der T-Wert ist kleiner Null ($T = -1,833 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{cti} und \ac{ctn} hinweist. Der Mittelwert $\bar(x) = 4,200$ der Kondition \ac{ik} ist kleiner als der Mittelwert $\bar(x) = 4,573$ der Kondition \ac{nik}.
+Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,200; \sigma = .676$) und \ac{nik} ($\bar(x) = 4,5733; \sigma =.40614$) jedoch keine Signifikanz ($t(28) = -1,833; p = .077 > \alpha = 0.05$).
 
 \paragraph{Mann-Whitney-U-Test}
-Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .061 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
-Es wurde durch den Mann-Whitney-U-Test überprüft, ob sich der \ac{ct} nach Konditionen \ac{ik} oder \ac{nik} unterscheidet. Die Verteilungen der beiden Gruppen \ac{ik} und \ac{nik} unterscheiden sich  laut Kolmogorov-Smirnov ($p = 0.660 > \alpha = 0.05$) \textbf{nicht signifikant} von einander. Es gab keinen signifikanten Unterschied der Mediane des \ac{ct} zwischen ($\ac{ik} : \tilde x = 4.20$) und ($\ac{nik} : \tilde x = 4.60)$, ($U = 76.000, Z = -1.534, p = .127 > \alpha = 0.05, r =-0,280$).
+Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
+Es wurde durch den Mann-Whitney-U-Test überprüft, ob sich der \ac{ct} nach Konditionen \ac{ik} oder \ac{nik} unterscheidet. Die Verteilungen der beiden Gruppen \ac{ik} und \ac{nik} unterscheiden sich laut Kolmogorov-Smirnov ($p = 0.925 > \alpha = 0.05$) \textbf{nicht signifikant} voneinander. Es gab keinen signifikanten Unterschied der Mediane des \ac{ct} zwischen ($\ac{ik} : \tilde x = 4.20$) und ($\ac{nik} : \tilde x = 4.60)$, ($U = 74.000, Z = -1.615, p = .116 > \alpha = 0.05, r =-0,294$).
 
 Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
 
@@ -1649,7 +1658,7 @@ H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{team
 \paragraph{Vertrauenstabelle pro Team}
 Es wird der Zusammenhang zwischen \ac{cti} und \ac{tRoundIK} sowie \ac{ctn} und \ac{tRoundNIK} auf Teamebene analysiert.
 Jeweils 3 Teammitglieder besitzen die selbe Teameffektivität, da diese die selbe Anzahl an Runden abgeschließen. Die Anzahl der abgeschlossenen Runden pro Team pro Kondition wurde zu jeweils einer Variable zusammengefasst : \ac{tRoundIK} sowie \ac{tRoundNIK}. Für jedes Team wird eine gemeinsamer Kognitiver-Vertrauenswert berechnet. Dieser sagt aus, wie viel kognitives Vertrauen das gesamte Team untereinander besitzt. Dieser kognitive Vertrauenswert ergibt sich aus der Summe der kognitiven Vertrauensangaben der einzelnen Personen eines Teams. Die kognitiven Vertrauenswerte des Teams der unterschiedlichen Konditionen werden zu den Variablen \ac{teamCogIK} sowie \ac{teamCogNIK} zusammengefasst.
-Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer \dq{}ID 1\dq{} ignoriert und mit in die Berechnung eingezogen. Somit müssen die kognitiven Vertrauenswerte nicht winsorisiert werden. Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
+Somit müssen die kognitiven Vertrauenswerte nicht winsorisiert werden. Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
 
 \begin{table}[H]
 	\centering\footnotesize\setstretch{1.2}
@@ -1659,7 +1668,7 @@ Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer
 	\begin{tabularx}{\textwidth}{r | p{2cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} p{1.5cm} } 
 		ID & Individueller-Kognitiver Vertrauenswert & Kondition & Erfolgreich abgeschlossene Runden & Team ID & Summe \ac{ct}\\
 		\hline 
-		1 & $2,00$ & 1 & 4 & Team 1 & $11,00$\\
+		1 & $2,40$ & 1 & 4 & Team 1 & $11,40$\\
 		2 & $4,60$ & 1 & 4 & &\\
 		3 & $4,40$ & 1 & 4 & & \\
 		\hline 
@@ -1702,16 +1711,16 @@ Da die individuellen Vertrauenswerte zusammengefasst wurden, wird der Ausreißer
 \end{table}
 
 \paragraph{Normalverteilung}
-Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen kognitiven Vertrauenswerte des Teams (\ac{teamCogIK} $p = .200 > \alpha = 0.05$), (\ac{teamCogNIK} $p = .109 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{tRoundIK} $p = .200 > \alpha = 0.05$), (\ac{tRoundNIK} $p = .161 > \alpha = 0.05$) Normalverteilt.
+Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen kognitiven Vertrauenswerte des Teams (\ac{teamCogIK} $p = .149 > \alpha = 0.05$), (\ac{teamCogNIK} $p = .109 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{tRoundIK} $p = .200 > \alpha = 0.05$), (\ac{tRoundNIK} $p = .161 > \alpha = 0.05$) Normalverteilt.
 
 \paragraph{Mittelwerte und Standardabweichungen}
-Der Cognitive-Trust-Score pro Team (\ac{teamCogIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 12,520$) mit einer Standardabweichung von ($\sigma = 1,237$).\newline 
+Der Cognitive-Trust-Score pro Team (\ac{teamCogIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 12,6$) mit einer Standardabweichung von ($\sigma = 1,122$).\newline 
 Der Cognitive-Trust-Score pro Team (\ac{teamCogNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 13,72$) mit einer Standardabweichung von ($\sigma = .9011$). \newline 
 Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 3,535$).\newline 
  Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 1,870$). 
 
 \paragraph{Spearman-Korrelationsanalyse}
-Da eine Korrelation zwischen ($N=5$) Werten durchgeführt wird und kein linearer Zusammenhang zu erkennen ist, kommt eine Spearman-Korrelation zum Einsatz. Diese korreliert die kognitiven Vertrauenswerte des Teams und die erfolgreich abgeschlossenen Runden der Teams für beide Avatar Konditionen.
+Die Stichprobengröße von ($N=5$) ist sehr klein. Es ist kein linearer Zusammenhang zu erkennen. Es wird eine Spearman-Korrelationsanalyse durchgeführt. Diese korreliert die kognitiven Vertrauenswerte des Teams und die erfolgreich abgeschlossenen Runden der Teams für beide Konditionen.
 
 %\begin{figure}[H]
 %\centering
@@ -1723,33 +1732,36 @@ Da eine Korrelation zwischen ($N=5$) Werten durchgeführt wird und kein linearer
 %		\end{footnotesize}
 %	\end{figure}	
 
-Es ist eine Korrelation mittlerem Effektes ($r = .316$) zwischen \ac{teamCogIK} und \ac{tRoundIK} vorhanden. Diese Korrelation ist nicht statistisch \textbf{signifikant} ($p = .604 > \alpha = 0.05$)
+Es ist eine Korrelation mittlerem Effektes ($r = .316$) zwischen \ac{teamCogIK} und \ac{tRoundIK} vorhanden. Diese Korrelation ist statistisch \textbf{nicht signifikant} ($p = .604 > \alpha = 0.05$)
 Es ist eine positive Korrelation starken Effektes ($r = .947$) zwischen \ac{teamCogNIK} und \ac{tRoundNIK} vorhanden. Diese Korrelation ist statistisch \textbf{signifikant} ($p = .014 < \alpha = 0.05$). 
 
 \paragraph{Lineare-Regressionsanalyse}
-Um die nicht statistische Signifikanz zu bestätigen, wird zusätzlich eine Lineare-Regressionsanalyse durchgeführt, bei der angenommen wird, dass das \ac{teamCog} einen \underline{positiven Einfluss} auf die \ac{tRound} hat.
-\ac{teamCog} wird wurde als unabhängige und \ac{tRound} als abhängige Variable definiert.
+Um die Vermutung zu überprüfen, dass ein hoher Cognitiver-Trust-Score im Team  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden bei unterschiedlichen Avatarverkörperungen hat, wurde eine Lineare Regressionsanalyse durchgeführt.
+%Es wird angenommen, dass das \ac{teamCog} einen \underline{positiven Einfluss} auf die \ac{tRound} hat.
+\ac{teamCog} wird als unabhängige und \ac{tRound} als abhängige Variable definiert.
 
 \paragraph{Kondition \ac{ik}}
-Das Bestimmtheitsmaß ($R^{2} = .082$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRoundIK} durch \ac{teamCogIK} hin. Somit lassen sich $8,2\%$ der Varianzen unserer \ac{tRoundIK} durch den \ac{teamCogNIK} erklären.
+Die Lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = .111; p = .761 > \alpha = 0.05$)).
 
-Der Regressionskoeffizient der Variable \ac{teamCogIK} beträgt ($\beta = .286$) und statistisch \textbf{nicht signifikant} ($t(3) = .516; p = .641 > \alpha = 0.05$).
+Das Bestimmtheitsmaß ($R^{2} = .036$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRoundIK} durch \ac{teamCogIK} hin. Somit lassen sich $3,6\%$ der Varianzen unserer \ac{tRoundIK} durch den \ac{teamCogNIK} erklären.
 
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .267; p = .641 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{ik} nicht verwerfen.
+Der Regressionskoeffizient der Variable \ac{teamCogIK} beträgt ($\beta = .189$) und ist statistisch \textbf{nicht signifikant} ($t(3) = .333; p = .761 > \alpha = 0.05$).
 
 Der \ac{teamCogIK} eignet sich nicht als Prädiktor für die \ac{tRoundIK}.
-Siehe \textbf{\autoref{fig:h3_regression}}
+%Siehe \textbf{\autoref{fig:h3_regression}}
+
+\textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{ik} nicht verwerfen.
 
 \paragraph{Kondition \ac{nik}}
-Das Bestimmtheitsmaß ($R^{2} = .641$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{tRoundNIK} durch \ac{teamCogNIK} hin. Somit lassen sich $80,1\%$ der Varianzen unserer \ac{tRoundNIK} durch den \ac{teamCogNIK} erklären.
+Die Lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = 5,363; p = .103 > \alpha = 0.05$)).
 
-Der Regressionskoeffizient der Variable \ac{teamCogNIK} beträgt ($\beta = .801$) und statistisch \textbf{nicht signifikant} ($t(3) = 2,316; p = .103 > \alpha = 0.05$).
+Das Bestimmtheitsmaß ($R^{2} = .641$) deutet laut \citep{cohen2013statistical} auf eine starke Varianzaufklärung der \ac{tRoundNIK} durch \ac{teamCogNIK} hin. Somit lassen sich $64,1\%$ der Varianzen unserer \ac{tRoundNIK} durch den \ac{teamCogNIK} erklären.
 
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 5,363; p = .103 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3 / H$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{nik} nicht verwerfen.\\
+Der Regressionskoeffizient der Variable \ac{teamCogNIK} beträgt ($\beta = .801$) und ist statistisch \textbf{nicht signifikant} ($t(3) = 2,316; p = .103 > \alpha = 0.05$).
+
 Der \ac{teamCogNIK} eignet sich nicht als Prädiktor für die \ac{tRoundNIK}.
-\textbf{\autoref{fig:h3_regression}}
 
-Die Hypothese \textit{(Hypothese 3 / H$_{1}$)} kann somit nicht angenommen werden. Ein unterschiedlicher kognitiver Vertrauenswert hat keinen Einfluss auf die Team-Effektivität bei unterschiedlichen Konditionen.
+\textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{nik} nicht verwerfen.
 
 \paragraph{Hypothese 3a : Analyse ohne die Aufteilung in \ac{ik} und \ac{nik} }
 Da die Stichprobe mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse zwischen \ac{teamCogIK} und \ac{tRoundIK} sowie \ac{teamCogNIK} und \ac{tRoundNIK} zu klein ist, wurde zusätzlich eine Spearman-Korrelationsanalyse sowie Lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt und somit folgende Hypothese aufgestellt :
@@ -1758,22 +1770,23 @@ H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score des Teams, hat \textbf{keinen Einfl
 
 Laut Kolmogoroff-Smirnoff-Test sind, ohne die Aufteilung in die Konditionen \ac{ik} und \ac{nik}, sowohl die Summe der individuellen kognitiven Vertrauenswerte des Teams \ac{teamCog} ($p = .200 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams \ac{tRound} ($p = .200 > \alpha = 0.05$) Normalverteilt.
 
-Der Cognitive-Trust-Score der Teams (\ac{teamCog} beträgt im Mittel ($\tilde x = 13,12$) mit einer Standardabweichung von ($\sigma = 1,200$).
+Der Cognitive-Trust-Score der Teams (\ac{teamCog} beträgt im Mittel ($\tilde x = 13,16$) mit einer Standardabweichung von ($\sigma = 1,126$).
 Die Anzahl der Abgeschlossenen Runden (\ac{tRound} beträgt im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 2,666$). 
 
 			\paragraph{Spearman-Korrelationsanalyse}
-Es ist eine positive Korrelation mittlerem Effektes mit dem Spearman-Korrelationskoeffizient ($r = .265$) zwischen \ac{teamCog} und \ac{tRound} vorhanden. Weiterhin ist keine Signifikanz ($p = .460 > \alpha = 0.05$) zu erkennen. Dies deutet darauf hin, dass die \textit{(Hypothese 3a / H3a$_{0}$)} nicht verworfen werden kann. Siehe \textbf{\autoref{fig:h3_both}}
+Es ist eine positive Korrelation mittlerem Effektes mit dem Spearman-Korrelationskoeffizient ($r = .265$) zwischen \ac{teamCog} und \ac{tRound} vorhanden. Die Spearman-Korrelation ist statistisch \textbf{nicht signifikant} ($p = .460 > \alpha = 0.05$)
+%Dies deutet darauf hin, dass die \textit{(Hypothese 3a / H3a$_{0}$)} nicht verworfen werden kann. Siehe \textbf{\autoref{fig:h3_both}}
 			
 			\paragraph{Lineare-Regressionsanalyse}
-Das Bestimmtheitsmaß ($R^{2} = .130$) deutet laut \citep{cohen2013statistical} auf eine mittlere Varianzaufklärung der \ac{tRound} durch \ac{teamCog} hin. Somit lassen sich $13,0\%$ der Varianzen unserer \ac{tRound} durch den \ac{teamCog} erklären.
+Die Lineare-Regressionsanalyse ist mit \ac{teamCog} als unabhängige und \ac{tRound} als abhängige Variable statistisch \textbf{nicht signifikant} ($F(1,8) = .855; p = .382 > \alpha = 0.05$).
 
-Der Regressionskoeffizient der Variable \ac{teamCog} beträgt ($r = .361$) und ist statistisch \textbf{nicht signifikant} ($t(8) = 1,095; p = .306 > \alpha = 0.05$).
+Das Bestimmtheitsmaß ($R^{2} = .097$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRound} durch \ac{teamCog} hin. Somit lassen sich $9,7\%$ der Varianzen unserer \ac{tRound} durch den \ac{teamCog} erklären.
 
-Weiterhin ist das Ergebnis der ANOVA ($F(1,8) = 1,198; p = .306 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 3a / H3a$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht verwerfen.
+Der Regressionskoeffizient der Variable \ac{teamCog} beträgt ($\beta = .311$) und ist statistisch \textbf{nicht signifikant} ($t(8) = .924; p = .382 > \alpha = 0.05$).
 
 Der \ac{teamCog} eignet sich nicht als Prädiktor für die \ac{tRound}.
-Siehe \textbf{\autoref{fig:h3_both}}
 
+\textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$)  nicht verwerfen.
 \newpage
 	\subsection{Analyse Hypothese 4}
 H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.
