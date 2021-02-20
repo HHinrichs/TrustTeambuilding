@@ -1498,17 +1498,17 @@ Die \textit{Tabelle \ref{MittelwerteUndCo}} zeigt eine diskriptive Statistik der
 		NASA-TLX &\ac{tlx} & $1/21$ & $7,16$ & $2,83203$ & $30$ \\ \\
 		IPQ &IPQ & $1/7$ & $4,43$ & $.98339$ & $30$ \\ \\
 		Co-Presence &\ac{cp} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
-		Co-Presence - IK &\ac{cpi} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
+		Co-Presence - IK &\ac{cpi} & $1/5$ & $3,622$ & $.66805$ & $15$ \\ \\
 		Co-Presence - NON IK &\ac{cpn} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\
-		Rounds Done &\ac{tRounds} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
-		Rounds Done IK &\ac{tRoundsIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
-		Rounds Done NON IK &\ac{tRoundsNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\ \\	
-		Kognitives Vertrauen im Team &\ac{teamCog} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
-		Kognitives Vertrauen im Team - IK &\ac{teamCogIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
-		Kognitives Vertrauen im Team - NON IK &\ac{teamCogNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\
-		Generelles Vertrauen im Team &\ac{teamGen} & $1/5$ & $3,6583$ & $.60790$ & $30$ \\ \\
-		Generelles Vertrauen im Team - IK &\ac{teamGenIK} & $1/5$ & $3,622$ & $0,66805$ & $15$ \\ \\
-		Generelles Vertrauen im Team - NON IK &\ac{teamGenNIK} & $1/5$ & $3,6944$ & $.56248$ & $15$ \\
+		Rounds Done &\ac{tRound} & $4/13$ & $9$ & $2,666$ & $10$ \\ \\
+		Rounds Done IK &\ac{tRoundIK} & $4/13$ & $9$ & $3,5355$ & $5$ \\ \\
+		Rounds Done NON IK &\ac{tRoundNIK} & $7/12$ & $9$ & $1,8708$ & $5$ \\ \\	
+		Kognitives Vertrauen im Team &\ac{teamCog} & $11,40/14,80$ & $12,6$ & $1,1266$ & $10$ \\ \\
+		Kognitives Vertrauen im Team - IK &\ac{teamCogIK} & $11,40/13,8$ & $12,6$ & $1,1225$ & $5$ \\ \\
+		Kognitives Vertrauen im Team - NON IK &\ac{teamCogNIK} & $13,00/14,8$ & $13,72$ & $.9011$ & $5$ \\
+		Generelles Vertrauen im Team &\ac{teamGen} & $14,23/17$ & $15,53$ & $.9028$ & $10$ \\ \\
+		Generelles Vertrauen im Team - IK &\ac{teamGenIK} & $14,23/15,84$ & $14,998$ & $.6480$ & $5$ \\ \\
+		Generelles Vertrauen im Team - NON IK &\ac{teamGenNIK} & $15,23/17,00$ & $16,074$ & $.8308$ & $5$ \\
 	\end{tabularx}
 \end{table}
 \clearpage
@@ -1555,7 +1555,8 @@ H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cog
 
 \paragraph{Ausreißer}
 \ac{gt} sowie \ac{ct} wurden auf Ausreißer überprüft. 
-Es sind bei \ac{ct} ein Ausreißer vorhanden. Um diesen anzugleichen, wurde \ac{ct} im vorhinein winsorisiert. Siehe \textbf{\autoref{fig:boxplot_cognitive_trust_winsorisiert}}. 
+Es sind bei \ac{ct} ein Ausreißer vorhanden. Um die Integrität der Daten beizubehalten, wurden diese vollständig in die Berechnungen mit einbezogen. 
+%Siehe \textbf{\autoref{fig:boxplot_cognitive_trust_winsorisiert}}. 
 \ac{gt} ist unabhängig vom \ac{ct} der einzelnen Testperson. Daher muss eine Korrelation auf Individualebene mit $N=30$ Personen durchgeführt werden, bei der die einzelnen Teams und Teamzusammensetzungen sowie die Avatar Konditionen ignoriert werden. 
 
 \paragraph{Normalverteilung}
@@ -1658,7 +1659,8 @@ H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{team
 \paragraph{Vertrauenstabelle pro Team}
 Es wird der Zusammenhang zwischen \ac{cti} und \ac{tRoundIK} sowie \ac{ctn} und \ac{tRoundNIK} auf Teamebene analysiert.
 Jeweils 3 Teammitglieder besitzen die selbe Teameffektivität, da diese die selbe Anzahl an Runden abgeschließen. Die Anzahl der abgeschlossenen Runden pro Team pro Kondition wurde zu jeweils einer Variable zusammengefasst : \ac{tRoundIK} sowie \ac{tRoundNIK}. Für jedes Team wird eine gemeinsamer Kognitiver-Vertrauenswert berechnet. Dieser sagt aus, wie viel kognitives Vertrauen das gesamte Team untereinander besitzt. Dieser kognitive Vertrauenswert ergibt sich aus der Summe der kognitiven Vertrauensangaben der einzelnen Personen eines Teams. Die kognitiven Vertrauenswerte des Teams der unterschiedlichen Konditionen werden zu den Variablen \ac{teamCogIK} sowie \ac{teamCogNIK} zusammengefasst.
-Somit müssen die kognitiven Vertrauenswerte nicht winsorisiert werden. Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
+%Somit müssen die kognitiven Vertrauenswerte nicht winsorisiert werden. 
+Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
 
 \begin{table}[H]
 	\centering\footnotesize\setstretch{1.2}
@@ -2380,14 +2382,14 @@ Durch die Symbole ist das Experiment auch änderübergreifend einsetzbar gewesen
 	\end{figure}	
 	
 	
-\begin{figure}[H]
-\centering
-		\begin{footnotesize}
-			\includegraphics[scale=0.5]{Abbildungen/Post_QuestionnaireStatistiks/boxplot_cognitive_trust_winsorisiert}\\
-			\caption{Boxplot kognitives Vertrauen winsorisiert}
-			\label{fig:boxplot_cognitive_trust_winsorisiert}
-		\end{footnotesize}
-	\end{figure}	
+%\begin{figure}[H]
+%\centering
+%		\begin{footnotesize}
+%			\includegraphics[scale=0.5]{Abbildungen/Post_QuestionnaireStatistiks/boxplot_cognitive_trust_winsorisiert}\\
+%			\caption{Boxplot kognitives Vertrauen winsorisiert}
+%			\label{fig:boxplot_cognitive_trust_winsorisiert}
+%		\end{footnotesize}
+%	\end{figure}	
 
 \begin{figure}[H]
 \centering
