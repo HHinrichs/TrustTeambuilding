@@ -37,122 +37,118 @@
 \contentsline {paragraph}{Hypothese 1}{23}{section*.65}%
 \contentsline {paragraph}{Hypothese 2}{23}{section*.68}%
 \contentsline {paragraph}{Hypothese 3}{23}{section*.69}%
-\contentsline {paragraph}{Hypothese 4}{24}{section*.78}%
-\contentsline {paragraph}{Hypothese 5}{24}{section*.79}%
-\contentsline {section}{\numberline {3}Vorgehensweise}{26}{section.81}%
-\contentsline {subsection}{\numberline {3.1}Der Versuch}{26}{subsection.82}%
-\contentsline {subsubsection}{\numberline {3.1.1}Untersuchungsmethode}{26}{subsubsection.83}%
-\contentsline {subsubsection}{\numberline {3.1.2}Teilnehmerfindung}{26}{subsubsection.84}%
-\contentsline {subsubsection}{\numberline {3.1.3}Versuchsablauf}{26}{subsubsection.85}%
-\contentsline {subsubsection}{\numberline {3.1.4}Allgemeiner Versuchsaufbau}{27}{subsubsection.86}%
-\contentsline {subsubsection}{\numberline {3.1.5}Detaillierter Versuchsablauf}{28}{subsubsection.88}%
-\contentsline {subsubsection}{\numberline {3.1.6}Die Avatare}{29}{subsubsection.90}%
-\contentsline {paragraph}{IK-Avatar}{30}{section*.92}%
-\contentsline {paragraph}{Non-IK-Avatar}{30}{section*.93}%
-\contentsline {subsection}{\numberline {3.2}Anforderungen an die Versuchsumgebung}{32}{subsection.98}%
-\contentsline {subsubsection}{\numberline {3.2.1}Technik der Versuchsumgebung}{33}{subsubsection.99}%
-\contentsline {paragraph}{Normcore Datastore / Sync Mechanismus}{33}{section*.101}%
-\contentsline {paragraph}{Verwendete Hardware}{33}{section*.102}%
-\contentsline {paragraph}{VR-Client}{33}{section*.103}%
-\contentsline {paragraph}{Spectator}{34}{section*.104}%
-\contentsline {paragraph}{GameManager}{34}{section*.106}%
-\contentsline {paragraph}{Audioübertragung}{35}{section*.108}%
-\contentsline {paragraph}{Normcore Variable-Sync}{36}{section*.110}%
-\contentsline {subsubsection}{\numberline {3.2.2}Optik der Versuchsumgebung}{38}{subsubsection.112}%
-\contentsline {paragraph}{Aussehen der Umgebung}{38}{section*.113}%
-\contentsline {paragraph}{Avatar Konditionen}{38}{section*.115}%
-\contentsline {paragraph}{Fade-to-Black und Positionsmanagement}{38}{section*.116}%
-\contentsline {paragraph}{Animationen, Shadergraph und VFX-Graph}{39}{section*.117}%
-\contentsline {subsubsection}{\numberline {3.2.3}Allgemeines der Versuchsumgebung}{39}{subsubsection.118}%
-\contentsline {paragraph}{Rundenschwierigkeit}{39}{section*.119}%
-\contentsline {paragraph}{CSV-Logwriting}{39}{section*.120}%
-\contentsline {paragraph}{Gametimer Funktionsweise}{40}{section*.121}%
-\contentsline {paragraph}{PlayerHeight/Position Change}{40}{section*.122}%
-\contentsline {paragraph}{Sounds}{40}{section*.123}%
-\contentsline {subsection}{\numberline {3.3}Methodik}{40}{subsection.124}%
-\contentsline {subsection}{\numberline {3.4}Datenerhebungsmethoden}{40}{subsection.125}%
-\contentsline {paragraph}{Fragenbogen}{40}{section*.126}%
-\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{40}{section*.127}%
-\contentsline {subsubsection}{\numberline {3.4.1}Unabhängige Variablen}{41}{subsubsection.128}%
-\contentsline {subsection}{\numberline {3.5}Abhängige Variablen}{41}{subsection.129}%
-\contentsline {paragraph}{Hang zum Vertrauen}{41}{section*.130}%
-\contentsline {paragraph}{Kommunikation}{41}{section*.131}%
-\contentsline {paragraph}{Kognitives Vertrauen}{41}{section*.132}%
-\contentsline {paragraph}{Anzahl der erledigten Aufgaben}{41}{section*.133}%
-\contentsline {paragraph}{Empfundene Team-Effektivität}{41}{section*.134}%
-\contentsline {paragraph}{Demografie-Fragebogen}{41}{section*.135}%
-\contentsline {paragraph}{Generalized-Trust-Scale}{41}{section*.136}%
-\contentsline {paragraph}{Cognitive-Trust-Scale}{41}{section*.137}%
-\contentsline {paragraph}{Communication-Scale}{42}{section*.138}%
-\contentsline {paragraph}{Team-Effectivness-Scale}{42}{section*.139}%
-\contentsline {paragraph}{NASA-TLX}{42}{section*.140}%
-\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{42}{section*.141}%
-\contentsline {paragraph}{Co-Presence-Questionnaire}{42}{section*.142}%
-\contentsline {subsection}{\numberline {3.6}Eventuelle Einflussfaktoren}{45}{subsection.144}%
-\contentsline {paragraph}{Bereinigte Fragen}{45}{section*.145}%
-\contentsline {section}{\numberline {4}Auswertung / Ergebnisse}{48}{section.147}%
-\contentsline {subsection}{\numberline {4.1}Teilnehmer und Demografie}{48}{subsection.148}%
-\contentsline {subsection}{\numberline {4.2}Analyse}{49}{subsection.149}%
-\contentsline {subsection}{\numberline {4.3}Voraussetzungen}{51}{subsection.166}%
-\contentsline {paragraph}{Test auf Normalverteilung der Daten}{51}{section*.167}%
-\contentsline {paragraph}{T-Test}{51}{section*.168}%
-\contentsline {paragraph}{Mann-Whitney-U-Test}{51}{section*.169}%
-\contentsline {subsection}{\numberline {4.4}Analyse Hypothese 1}{52}{subsection.170}%
-\contentsline {paragraph}{Ausreißer}{52}{section*.171}%
-\contentsline {paragraph}{Normalverteilung}{52}{section*.172}%
-\contentsline {paragraph}{Pearson-Korrelationsanalyse}{52}{section*.173}%
-\contentsline {paragraph}{Lineare-Regressionsanalyse}{52}{section*.174}%
-\contentsline {subsection}{\numberline {4.5}Analyse Hypothese 2}{53}{subsection.175}%
-\contentsline {paragraph}{Normalverteilung}{53}{section*.176}%
-\contentsline {paragraph}{Varianzgleichheit}{53}{section*.177}%
-\contentsline {paragraph}{Mittelswerte und Standardabweichungen}{53}{section*.178}%
-\contentsline {paragraph}{t-Test}{53}{section*.179}%
-\contentsline {paragraph}{Mann-Whitney-U-Test}{53}{section*.180}%
-\contentsline {subsection}{\numberline {4.6}Analyse Hypothese 3}{54}{subsection.181}%
-\contentsline {paragraph}{Vertrauenstabelle pro Team}{54}{section*.182}%
-\contentsline {paragraph}{Normalverteilung}{55}{section*.184}%
-\contentsline {paragraph}{Mittelwerte und Standardabweichungen}{55}{section*.185}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{56}{section*.186}%
-\contentsline {paragraph}{Lineare-Regressionsanalyse}{56}{section*.187}%
-\contentsline {paragraph}{Kondition \ac {ik}}{56}{section*.188}%
-\contentsline {paragraph}{Kondition \ac {nik}}{56}{section*.189}%
-\contentsline {paragraph}{Hypothese 3a : Analyse ohne die Aufteilung in \ac {ik} und \ac {nik} }{56}{section*.190}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{57}{section*.191}%
-\contentsline {paragraph}{Lineare-Regressionsanalyse}{57}{section*.192}%
-\contentsline {subsection}{\numberline {4.7}Analyse Hypothese 4}{58}{subsection.193}%
-\contentsline {subsubsection}{\numberline {4.7.1}T-Test}{58}{subsubsection.194}%
-\contentsline {subsubsection}{\numberline {4.7.2}Mann-Whitney-U-Test}{58}{subsubsection.195}%
-\contentsline {subsection}{\numberline {4.8}Analyse Hypothese 5}{59}{subsection.196}%
-\contentsline {paragraph}{Aufstellen der generellen Vertrauenstabelle pro Team}{60}{table.caption.198}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{61}{section*.199}%
-\contentsline {paragraph}{Lineare-Regressionsanalyse}{61}{section*.200}%
-\contentsline {paragraph}{Kondition \ac {ik}}{61}{section*.201}%
-\contentsline {paragraph}{Kondition \ac {nik}}{61}{section*.202}%
-\contentsline {paragraph}{Hypothese 5a}{61}{section*.203}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{62}{section*.204}%
-\contentsline {paragraph}{Lineare-Regressionsanalyse}{62}{section*.205}%
-\contentsline {paragraph}{Analyse weiterer Variablen}{63}{section*.206}%
-\contentsline {paragraph}{Signifikante unterschiede des Medians}{63}{section*.207}%
-\contentsline {paragraph}{Signifikante Korrelationen}{63}{section*.210}%
-\contentsline {subsection}{\numberline {4.9}Berechnung der Werte für die Auswertung}{66}{subsection.214}%
-\contentsline {section}{\numberline {5}Analyse}{67}{section.215}%
-\contentsline {section}{\numberline {6}Diskussion}{68}{section.217}%
-\contentsline {subsection}{\numberline {6.1}Diskussion der Ergebnisse}{68}{subsection.218}%
-\contentsline {paragraph}{IDEEN}{69}{section*.219}%
-\contentsline {subsection}{\numberline {6.2}Diskussion der eingesetzten Methoden}{69}{subsection.220}%
-\contentsline {subsection}{\numberline {6.3}Auswirkungen auf die Gegenwart}{69}{subsection.221}%
-\contentsline {subsection}{\numberline {6.4}Vorschläge für zukünftige Untersuchungen}{69}{subsection.222}%
-\contentsline {section}{\numberline {7}Fazit}{69}{section.223}%
-\contentsline {section}{Anhang}{77}{section*.225}%
-\contentsline {section}{\numberline {A}Auswertungsergebnisse}{77}{appendix.226}%
-\contentsline {section}{\numberline {B}Demografieauswertung}{82}{appendix.238}%
-\contentsline {section}{\numberline {C}Pre-Questionnaire}{87}{appendix.246}%
-\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{92}{appendix.253}%
-\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{93}{appendix.255}%
-\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{97}{appendix.260}%
-\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{98}{appendix.263}%
-\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{99}{appendix.265}%
-\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{100}{appendix.267}%
-\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{106}{appendix.274}%
-\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{109}{appendix.278}%
-\contentsline {section}{\numberline {L}Other}{115}{appendix.285}%
+\contentsline {paragraph}{Hypothese 4}{25}{section*.74}%
+\contentsline {paragraph}{Hypothese 5}{25}{section*.75}%
+\contentsline {section}{\numberline {3}Vorgehensweise}{26}{section.79}%
+\contentsline {subsection}{\numberline {3.1}Der Versuch}{26}{subsection.80}%
+\contentsline {subsubsection}{\numberline {3.1.1}Untersuchungsmethode}{26}{subsubsection.81}%
+\contentsline {subsubsection}{\numberline {3.1.2}Teilnehmerfindung}{26}{subsubsection.82}%
+\contentsline {subsubsection}{\numberline {3.1.3}Versuchsablauf}{26}{subsubsection.83}%
+\contentsline {subsubsection}{\numberline {3.1.4}Allgemeiner Versuchsaufbau}{27}{subsubsection.84}%
+\contentsline {subsubsection}{\numberline {3.1.5}Detaillierter Versuchsablauf}{28}{subsubsection.86}%
+\contentsline {subsubsection}{\numberline {3.1.6}Die Avatare}{29}{subsubsection.88}%
+\contentsline {paragraph}{IK-Avatar}{30}{section*.90}%
+\contentsline {paragraph}{Non-IK-Avatar}{30}{section*.91}%
+\contentsline {subsection}{\numberline {3.2}Anforderungen an die Versuchsumgebung}{32}{subsection.96}%
+\contentsline {subsubsection}{\numberline {3.2.1}Technik der Versuchsumgebung}{33}{subsubsection.97}%
+\contentsline {paragraph}{Normcore Datastore / Sync Mechanismus}{33}{section*.99}%
+\contentsline {paragraph}{Verwendete Hardware}{33}{section*.100}%
+\contentsline {paragraph}{VR-Client}{33}{section*.101}%
+\contentsline {paragraph}{Spectator}{34}{section*.102}%
+\contentsline {paragraph}{GameManager}{34}{section*.104}%
+\contentsline {paragraph}{Audioübertragung}{35}{section*.106}%
+\contentsline {paragraph}{Normcore Variable-Sync}{36}{section*.108}%
+\contentsline {subsubsection}{\numberline {3.2.2}Optik der Versuchsumgebung}{38}{subsubsection.110}%
+\contentsline {paragraph}{Aussehen der Umgebung}{38}{section*.111}%
+\contentsline {paragraph}{Avatar Konditionen}{38}{section*.113}%
+\contentsline {paragraph}{Fade-to-Black und Positionsmanagement}{38}{section*.114}%
+\contentsline {paragraph}{Animationen, Shadergraph und VFX-Graph}{39}{section*.115}%
+\contentsline {subsubsection}{\numberline {3.2.3}Allgemeines der Versuchsumgebung}{39}{subsubsection.116}%
+\contentsline {paragraph}{Rundenschwierigkeit}{39}{section*.117}%
+\contentsline {paragraph}{CSV-Logwriting}{39}{section*.118}%
+\contentsline {paragraph}{Gametimer Funktionsweise}{40}{section*.119}%
+\contentsline {paragraph}{PlayerHeight/Position Change}{40}{section*.120}%
+\contentsline {paragraph}{Sounds}{40}{section*.121}%
+\contentsline {subsection}{\numberline {3.3}Methodik}{40}{subsection.122}%
+\contentsline {subsection}{\numberline {3.4}Datenerhebungsmethoden}{40}{subsection.123}%
+\contentsline {paragraph}{Fragenbogen}{40}{section*.124}%
+\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{40}{section*.125}%
+\contentsline {subsubsection}{\numberline {3.4.1}Unabhängige Variablen}{41}{subsubsection.126}%
+\contentsline {subsection}{\numberline {3.5}Abhängige Variablen}{41}{subsection.127}%
+\contentsline {paragraph}{Hang zum Vertrauen}{41}{section*.128}%
+\contentsline {paragraph}{Kommunikation}{41}{section*.129}%
+\contentsline {paragraph}{Kognitives Vertrauen}{41}{section*.130}%
+\contentsline {paragraph}{Anzahl der erledigten Aufgaben}{41}{section*.131}%
+\contentsline {paragraph}{Empfundene Team-Effektivität}{41}{section*.132}%
+\contentsline {paragraph}{Demografie-Fragebogen}{41}{section*.133}%
+\contentsline {paragraph}{Generalized-Trust-Scale}{41}{section*.134}%
+\contentsline {paragraph}{Cognitive-Trust-Scale}{41}{section*.135}%
+\contentsline {paragraph}{Communication-Scale}{42}{section*.136}%
+\contentsline {paragraph}{Team-Effectivness-Scale}{42}{section*.137}%
+\contentsline {paragraph}{NASA-TLX}{42}{section*.138}%
+\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{42}{section*.139}%
+\contentsline {paragraph}{Co-Presence-Questionnaire}{42}{section*.140}%
+\contentsline {subsection}{\numberline {3.6}Eventuelle Einflussfaktoren}{45}{subsection.142}%
+\contentsline {paragraph}{Bereinigte Fragen}{45}{section*.143}%
+\contentsline {section}{\numberline {4}Auswertung / Ergebnisse}{48}{section.145}%
+\contentsline {subsection}{\numberline {4.1}Teilnehmer und Demografie}{48}{subsection.146}%
+\contentsline {subsection}{\numberline {4.2}Analyse}{49}{subsection.147}%
+\contentsline {subsection}{\numberline {4.3}Voraussetzungen}{51}{subsection.165}%
+\contentsline {paragraph}{Test auf Normalverteilung der Daten}{51}{section*.166}%
+\contentsline {paragraph}{T-Test}{51}{section*.167}%
+\contentsline {paragraph}{Mann-Whitney-U-Test}{51}{section*.168}%
+\contentsline {subsection}{\numberline {4.4}Analyse Hypothese 1}{52}{subsection.169}%
+\contentsline {paragraph}{Ausreißer}{52}{section*.170}%
+\contentsline {paragraph}{Normalverteilung}{52}{section*.171}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{52}{section*.172}%
+\contentsline {paragraph}{Einfache Lineare-Regressionsanalyse}{52}{section*.173}%
+\contentsline {subsection}{\numberline {4.5}Analyse Hypothese 2}{53}{subsection.174}%
+\contentsline {paragraph}{Normalverteilung}{53}{section*.175}%
+\contentsline {paragraph}{Varianzgleichheit}{53}{section*.176}%
+\contentsline {paragraph}{Mittelswerte und Standardabweichungen}{53}{section*.177}%
+\contentsline {paragraph}{t-Test}{53}{section*.178}%
+\contentsline {paragraph}{Mann-Whitney-U-Test}{53}{section*.179}%
+\contentsline {subsection}{\numberline {4.6}Analyse Hypothese 3}{54}{subsection.180}%
+\contentsline {paragraph}{Vertrauenstabelle pro Team}{54}{section*.181}%
+\contentsline {paragraph}{Normalverteilung}{55}{section*.183}%
+\contentsline {paragraph}{Mittelwerte und Standardabweichungen}{55}{section*.184}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{56}{section*.185}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{56}{section*.186}%
+\contentsline {paragraph}{Kondition \ac {ik}}{56}{section*.187}%
+\contentsline {paragraph}{Kondition \ac {nik}}{56}{section*.188}%
+\contentsline {paragraph}{Hypothese 3a : Analyse ohne die Aufteilung in \ac {ik} und \ac {nik} }{56}{section*.189}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{57}{section*.190}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{57}{section*.191}%
+\contentsline {subsection}{\numberline {4.7}Analyse Hypothese 4}{58}{subsection.192}%
+\contentsline {subsubsection}{\numberline {4.7.1}T-Test}{58}{subsubsection.193}%
+\contentsline {subsubsection}{\numberline {4.7.2}Mann-Whitney-U-Test}{58}{subsubsection.194}%
+\contentsline {subsection}{\numberline {4.8}Analyse Hypothese 5}{59}{subsection.195}%
+\contentsline {paragraph}{Aufstellen der generellen Vertrauenstabelle pro Team}{60}{table.caption.197}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{60}{section*.198}%
+\contentsline {paragraph}{Lineare-Regressionsanalyse}{61}{section*.199}%
+\contentsline {paragraph}{Analyse weiterer Variablen}{62}{section*.200}%
+\contentsline {paragraph}{Signifikante unterschiede des Medians}{62}{section*.201}%
+\contentsline {paragraph}{Signifikante Korrelationen}{62}{section*.204}%
+\contentsline {subsection}{\numberline {4.9}Berechnung der Werte für die Auswertung}{65}{subsection.208}%
+\contentsline {section}{\numberline {5}Analyse}{66}{section.209}%
+\contentsline {section}{\numberline {6}TODO}{67}{section.211}%
+\contentsline {section}{\numberline {7}Diskussion}{68}{section.212}%
+\contentsline {subsection}{\numberline {7.1}Diskussion der Ergebnisse}{68}{subsection.213}%
+\contentsline {paragraph}{IDEEN}{68}{section*.214}%
+\contentsline {subsection}{\numberline {7.2}Diskussion der eingesetzten Methoden}{68}{subsection.215}%
+\contentsline {subsection}{\numberline {7.3}Auswirkungen auf die Gegenwart}{68}{subsection.216}%
+\contentsline {subsection}{\numberline {7.4}Vorschläge für zukünftige Untersuchungen}{68}{subsection.217}%
+\contentsline {section}{\numberline {8}Fazit}{68}{section.218}%
+\contentsline {section}{Anhang}{76}{section*.220}%
+\contentsline {section}{\numberline {A}Auswertungsergebnisse}{76}{appendix.221}%
+\contentsline {section}{\numberline {B}Demografieauswertung}{81}{appendix.233}%
+\contentsline {section}{\numberline {C}Pre-Questionnaire}{86}{appendix.241}%
+\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{91}{appendix.248}%
+\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{92}{appendix.250}%
+\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{96}{appendix.255}%
+\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{97}{appendix.258}%
+\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{98}{appendix.260}%
+\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{99}{appendix.262}%
+\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{105}{appendix.269}%
+\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{108}{appendix.273}%
+\contentsline {section}{\numberline {L}Other}{114}{appendix.280}%

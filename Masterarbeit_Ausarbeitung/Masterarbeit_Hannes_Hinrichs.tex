@@ -239,11 +239,11 @@ Es wird der Einfluss der verschiedenen Avatararten \ac{ik} und \ac{nik} auf das 
 
 Da die teilnehmenden Personen als Team arbeiten, sind einige Zusammenhänge auf Individualebene, einige auf Konditionsebene (\ac{ik} und \ac{nik}) sowie einige auf Teamebene zu betrachten.
 
-Die \textbf{Individualebene} sagt nur etwas über die einzelne Person aus. Es können alle teilnehmenden Personen individuell betrachtet werden. Die Betrachtung ist unabhängig vom Team oder den verschiedenen Avatarkonditionen. Wie viel Vertrauen bildet die einzelne Person während des Versuchs? Wie hoch ist die generelle Hang zum Vertrauen einzelner Personen? Wie immersiv ist die \ac{vr}-Erfahrung während des Experiments einer einzelnen Person?
+Die \textbf{Individualebene} sagt nur etwas über die einzelne Person aus. Es können alle teilnehmenden Personen individuell betrachtet werden. Die Betrachtung ist unabhängig vom Team oder den verschiedenen Avatar Konditionen. Wie viel Vertrauen bildet die einzelne Person während des Versuchs? Wie hoch ist die generelle Hang zum Vertrauen einzelner Personen? Wie immersiv ist die \ac{vr}-Erfahrung während des Experiments einer einzelnen Person?
 
 Die \textbf{Konditionsebene} unterscheidet zwischen den Konditionen \ac{ik} sowie \ac{nik}. Die Konditionsebene ordnet den einzelnen teilnehmenden Personen die Kondition zu, die diese in dem Versuch zugeteilt bekamen. Die Analyse der individuellen Personen kann im Bezug auf die verschiedenen erlebten Konditionen stattfinden und es ist möglich, zwei verschiedene Gruppen desselben Experiments miteinander zu vergleichen. Welche Kondition absolviert mehr Runden? Welche Kondition baut mehr kognitives Vertrauen auf? Welche Kondition schafft mehr Immersion?
 
-Die \textbf{Teamebene} betrachtet das gesamte Team als Einheit. Ein Team besteht aus drei Teammitgliedern. Jedes Teammitglied besitzt dieselben Konditionen. Wird das Team auf Teamebene betrachtet, ist es möglich Aussagen über das Team zu treffen. Bildet ein Team einer Kondition besonders viel kognitives Vertrauen? Unterscheidet sich die Anzahl der abgeschlossenen Runden pro Team durch die verschiedenen Avatarkonditionen?
+Die \textbf{Teamebene} betrachtet das gesamte Team als Einheit. Ein Team besteht aus drei Teammitgliedern. Jedes Teammitglied besitzt dieselben Konditionen. Wird das Team auf Teamebene betrachtet, ist es möglich Aussagen über das Team zu treffen. Bildet ein Team einer Kondition besonders viel kognitives Vertrauen? Unterscheidet sich die Anzahl der abgeschlossenen Runden pro Team durch die verschiedenen Avatar Konditionen?
 
 \textit{Abbildung \ref{DifferentLevels}} zeigt die Hierarchie der verschiedenen Ebenen.
 
@@ -775,66 +775,256 @@ Zum Messen der wahrgenommenen Teameffektivität der einzelnen Individuen, wird i
 
 %	Z.b. Aussehen, Kulturen, etc.	
 \newpage
+%Allgemein : 
+%Ausreißer bei ID1 vorhanden. Wie damit umgehen? Entfernen? Drin lassen?
+%Filtern? Filtern bei H1, H2, H4 möglich! Somit CT Werte größer 2.4 nutzen.
+%H3 und H5 benötigen alle Werte!
+
+%Die variablen MÜSSEN in IK und NIK aufgeteilt werden, da diese nicht gemeinsam betrachtet werden können. Grund : Der gebildete CT wert ist von den variablen abhängig. Eine vermischung der CT werte (CTI und CTN) würde die Datenanalyse unzulässig zulässig machen.
+% Ist dies der Fall bei H1, H5?
+
+%------------
+%Hypothese 1
+
+%HYPOTHESE KORRELATION
+%\textbf{H1$_{1}$} : Es besteht ein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) einer Person und dem Cognitive-Trust-Score (\ac{ct}) einer Person. \newline
+
+%KORRELATION
+%GT ordinalskaliert -> CT ordinalskaliert > SPEARMAN-Korrelation zulässig?
+
+%Voraussetzung für Pearson-Korrelationsanalyse: 
+%Die Variablen sind mindestens intervallskaliert -> Hier ordinalskaliert
+%Die Variablen sind normalverteilt -> JA
+%Der untersuchte Zusammenhang zwischen den Variablen muss linear sein -> JA (durch LOSSLES Punktdiagramm ) ( auch mit herausgefilterter variable ID1!)
+
+%Ab einer Likert Skala ab 6 können ordinale Skalenniveaus als metrische variablen interpretiert werden??? Könnte ich dann vielleicht trotz der ordinal skalierten Daten eine regression durchführen?
+
+%% HYPOTHESE REGRESSION
+%Daher wird die \textbf{Hypothese  H1a$_{1}$} definiert.\\
+%\textbf{H1a$_{1}$} : Die Höhe des Cognitive-Trust-Score \ac{ct} hängt von der höhe des General-Trust-Scores ab.
+
+%REGRESSION
+%GT ordinalskaliert -> CT ordinalskaliert > einfache lineare Regression zulässig? Eventuell ordinale regression? Wie analysiere ich sonst den kausalen zusammenhang von GT und CT?
+
+%-------------------
+%Hypothese 2
+
+%HYPOTHESE
+%\textbf{H2$_{1}$} : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
+
+%T-Test überhaupt zulässig? CT ist ordinalskaliert! Da CT Score anhand LIKERT-SCALE gemessen wurde.
+%Stattdessen Mann-Whitney-U-Test nutzen?
+
+% T TEST ZULÄSSIG, WENN :
+%Die beiden Gruppen bzw. Stichproben müssen unabhängig sein JA
+%Die Variablen müssen intervallskaliert sein NEIN
+%Die Variablen müssen normalverteilt sein JA
+%Die Varianz innerhalb der Gruppen sollte ähnlich sein JA
+
+% MANN-WHITNEY-U TEST ZULÄSSIG, WENN:
+%Unabhängigkeit der Messungen JA
+%Die unabhängige Variable ist nominalskaliert und hat zwei Ausprägungen. JA > IK, NIK
+%Die abhängige Variable ist mindestens ordinalskaliert. JA, da CT Likert Scale
+%Die Verteilungsform der beiden Gruppen ist (etwa) gleich. JA, DA CTI und CTN Normalverteilt ( auch mit herausgefilterter variable ID1!)
+
+%-------------------------
+
+%Hypothese 3
+%Allgemein hierzu :
+%Darf ich ordinalskalierte Daten addieren? Ich denke : Im Team ja, warum nicht?
+
+%Was denke ich denn? Ich denke : 
+%Teams mit der Kondition IK bilden einen höheren Cognitiven Trust Score und schließen dadurch mehr Runden erfolgreich ab als die Teams mit der Kondition NIK.
+
+%Skalenniveaus : 
+%CT ist ordinalskaliert
+%Anz. abgeschlossener Runden ist metrisch 
+%-> SPEARMAN UND PEARSON Korrelation NICHT möglich.
+% Kann man eventuell die metrische variable auf eine ordinale "downgraden"?
+
+%Wie ist es mir nun möglich, eine vermutete Kausalität CT > ROUNDS festzustellen?
+%Die variablen MÜSSEN in IK und NIK aufgeteilt werden, da diese nicht gemeinsam betrachtet werden können. Grund : Der gebildete CT  ist von den Konditionen abhängig. Eine vermischung der CT werte (CTI und CTN) würde die Datenanalyse unzulässig zulässig machen.
+
+%Korrelation IK, NIK -> Fischers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
+%Fischers Z-Transformation : 
+%https://blogs.gwu.edu/weissba/teaching/calculators/fishers-z-transformation/
+%Nur was habe ich dadurch gewonnen, wenn ich weiss, dass die beiden Korrelationen sich signifikant unterscheiden? Hypothese immernoch nicht bewiesen!
+
+%Eventuell Moderationsanalyse?
+
+%Eventuell Chi² Test?
+%Stichprobe > 50? NEIN
+%Variable ordinalskaliert? JA
+%Grupierung für Kreuztabelle? JA
+% Laut https://statistik-dresden.de/archives/6026 ist diese jedoch nur mit intervallskalierbaren daten möglich.. ist es nicht, da CT ordinal skaliert ...
+
+%Eventuell ANOVA?
+%Hypothese für zweifaktorieller Varianzanalyse
+%Es gibt einen Unterschied zwischen Teams mit hohen CT-Score und niedrigem CT-Score bei der anzahl abgeschlossener Runden in Abhängigkeit der Kondition IK und NIK.
+
+%------------------------------------
+
+%Hypothese 4
+%H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
+
+%T-Test überhaupt zulässig? RoundsDone ist metrisch!
+%Stattdessen Mann-Whitney-U-Test nutzen?
+
+% T TEST ZULÄSSIG, WENN :
+%Die beiden Gruppen bzw. Stichproben müssen unabhängig sein JA
+%Die Variablen müssen intervallskaliert sein NEIN
+%Die Variablen müssen normalverteilt sein JA
+%Die Varianz innerhalb der Gruppen sollte ähnlich sein JA
+
+% MANN-WHITNEY-U TEST ZULÄSSIG, WENN:
+%Unabhängigkeit der Messungen JA
+%Die unabhängige Variable ist nominalskaliert und hat zwei Ausprägungen. JA > IK, NIK
+%Die abhängige Variable ist mindestens ordinalskaliert. JA, da TE metrisch
+%Die Verteilungsform der beiden Gruppen ist (etwa) gleich. JA, DA TEI und TEN Normalverteilt ( auch mit herausgefilterter variable ID1!)
+
+%-------------------------------------------------
+
+%Hypothese 5
+%\textbf{H5$_{1}$} Es besteht ein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) eines Teams und der Anzahl der abgeschlossenen Runden eines Teams. \\
+
+%Gedanke : Ich MUSS ohne die Aufteilung in GT analysieren, weil GT unabhängig von IK und NIK.
+%Kann ich überhaupt H5 OHNE aufteilung in IK und NIK analysieren? Weil : GT ist zwar unabhängig von IK und NIK, aber TE hängt (eventuell) von CT und (eventuell) von IK ab.
+
+%KORRELATION
+%GT ordinalskaliert -> Rounds Done metrisch > SPEARMAN- Korrelation überhaupt zulässig? Ich denke nicht, da ordinalskaliert nicht mit metrisch gilt. Kann man hier metrische daten "abstufen" zu ordinalskalierten?
+
+%Was sind die Alternativen wenn ich einen Zusammenhang feststellen möchte? Ordinale Regression?
+
 \section{Versuchshypothesen}
 \label{VersuchshypothesenAuflistung}
-
 In diesem Kapitel werden auf Basis der vorherigen Grundlagen verschiedene Hypothesen definiert.
 Die \textit{Abbildung \ref{Versuchshypothesen}} verdeutlicht den Zusammenhang zwischen den verschiedenen Versuchshypothesen. Es ist zusätzlich die Aufteilung zwischen der Individual-, Konditions-, sowie Teamebene zu erkennen.
 \paragraph{Hypothese 1}:
-Der Hang zum Vertrauen ist Mindestvertrauen, dass eine Person einer anderen gewährt. Es wird davon ausgegangen, dass keine Vorkenntnisse zwischen den einzelnen Teammitgliedern bei der Neugründung eines \ac{vt} vorhanden sind. Der Hang zum Vertrauen kann daher als Hilfsmittel eingesetzt werden, um eine Zunahme oder Abnahme des Vertrauens in die Fähigkeiten eines Team zu analysieren.
-Es lässt sich vermuten, dass, wenn Personen ein hohes Grundvertrauen besitzen, diese auch ein hohes kognitives Vertrauen bilden. Besitzt eine Person ein niedriges Grundvertrauen, bildet es auch weniger kognitives Vertrauen (\textit{Siehe \nameref{Vertrauen als Zustand}}). 
+Der Hang zum Vertrauen ist das Mindestvertrauen, dass eine Person einer anderen gewährt. Es wird davon ausgegangen, dass einzelne Teammitglieder sich bei der Neugründung eines \ac{vt} nicht kennen. Der Hang zum Vertrauen kann daher als Hilfsmittel eingesetzt werden, um eine Zunahme oder Abnahme, des kognitiven Vertrauens eines Team, zu analysieren.
+Es lässt sich vermuten, dass, wenn Personen ein hohes Grundvertrauen besitzen, diese auch ein hohes kognitives Vertrauen bilden. Besitzt eine Person ein niedriges Grundvertrauen, bildet diese auch weniger kognitives Vertrauen (\textit{Siehe \nameref{Vertrauen als Zustand}}). \newline
+Da ein höheres kognitives Vertrauen in ein \ac{vt}, während der Neugründung im \ac{sve}, wünschenswert ist, wird aus der vorherigen Erkenntnis die \textbf{Hypothese H1$_{1}$} definiert.\\
+% HYPOTHESE KOLLERATION
+\textbf{H1$_{1}$} : Es besteht ein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) einer Person und dem Cognitive-Trust-Score (\ac{ct}) einer Person. \newline
 
-Da ein höheres kognitives Vertrauen in ein Team wünschenswert ist, wird aus der vorherigen Erkenntnis die Hypothese H1$_{0}$ definiert.\\
-H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cognitive-Trust-Score einer Person (\ac{ct}) nicht. \newline
-H1$_{1}$ : Steigt der General-Trust-Score einer Person(\ac{gt}), steigt auch der Cognitive-Trust-Score einer Person(\ac{ct}).)
+Es wird vermutet, dass die Höhe des Cognitive-Trust-Score \ac{ct} von der Höhe des General-Trust-Score \ac{gt} abhängt wird.
+% HYPOTHESE REGRESSION
+Daher wird die \textbf{Hypothese  H1a$_{1}$} definiert.\\
+\textbf{H1a$_{1}$} : Die Höhe des Cognitive-Trust-Score \ac{ct} hängt von der höhe des General-Trust-Scores \ac{gt} ab.
+%H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cognitive-Trust-Score einer Person (\ac{ct}) nicht. \newline
+%H1$_{1}$ : Steigt der General-Trust-Score einer Person(\ac{gt}), steigt auch der Cognitive-Trust-Score einer Person(\ac{ct}).) \\
 
-Es gibt keinen Zusammenhang zwischen dem General-Trust-Score und dem Cognitive-Trust-Score.
+%H1$_{0}$ : Je höher General-Trust-Score einer Person (\ac{gt}), desto höher der Cognitive-Trust-Score einer Person (\ac{ct}). \newline
 
-Je höher der General-Trust-Score eine Person ist, desto höher ist auch der erzielte Cognitive-Trust-Score.
-	
-Es wird davon ausgegangen, dass Personen, die leicht einen Vertrauensvorschuss gewähren, nicht immer gleichzeitig auch in die Fähigkeiten oder in die Zuverlässigkeit des Teams glauben.
+% HYPOTHESE ZUR LINEAREN REGRESSION AUFSTELLEN !!!!
+
+%------ALT
+%H1$_{0}$ : Es besteht kein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) einer Person und dem Cognitive-Trust-Score (\ac{ct}) einer Person. \newline
+%H1$_{1}$ : Je höher General-Trust-Score einer Person (\ac{gt}) ist, desto höher ist der Cognitive-Trust-Score einer Person (\ac{ct}). \newline
+%----
+
+%H1$_{0}$ : Ein hoher General-Trust-Score (\ac{gt}) wirkt sich \textbf{nicht positiv} auf den Cognitiven-Trust-Score (\ac{ct}) aus. \newline
+%H1$_{1}$ : Ein hoher General-Trust-Score (\ac{gt}) wirkt sich \textbf{positiv} auf den Cognitiven-Trust-Score (\ac{ct}) aus.
+%------
+%Es gibt keinen Zusammenhang zwischen dem General-Trust-Score und dem Cognitive-Trust-Score.
+%Je höher der General-Trust-Score eine Person ist, desto höher ist auch der erzielte Cognitive-Trust-Score.
+
+%H1$_{0}$ geht davon aus, dass Personen, die leicht einen Vertrauensvorschuss gewähren, nicht immer gleichzeitig auch in die Fähigkeiten oder in die Zuverlässigkeit des Teams glauben.
+%Dies kann sich natürlich aber während des Versuchs ändern! Schlechte Teams sollten auch ein schlechteres Cognitives Vertrauen besitzen!
 \paragraph{Hypothese 2}:
-In dieser Studie nehmen die Versuchsteilnehmer an einem 10-Minütigem teambasierten Aufgabe teil. Da affektives Vertrauen nur über einen längerfristigen Zeitraum gebildet wird, findet während der Versuchsdurchführung keine Messung des affektiven Vertrauens statt. 
-Kognitives Vertrauen ist hingegen in der Anfangsphase einer Teamgründung von Bedeutung und wird durch kognitive Entscheidungsprozesse frühzeitig gebildet. Durch die Analyse des kognitiven Vertrauens wird festgestellt, wie sehr sich unterschiedliche Avatarkonditionen auf die Wahrnehmung einer Person, in Kompetenzen, Fähigkeiten oder die Zuverlässigkeit des Team, auswirken.
-Auf diesen Grundlagen wird Hypothese 2 definiert :\\
-H2$_{0}$ : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} nicht.\newline
-H2$_{1}$ : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik}.
-
-In welcher Kondition eine Person im \ac{sve} die \dq{}anderen\dq{} teilnehmenden Personen wahrnimmt, hat keinen Einfluss auf das gebildete kognitive Vertrauen. Somit erscheint ein Team in seiner Leistungsfähigkeit und Zuverlässigkeit für eine Person immer gleich, egal ob die Avatare der \dq{}anderen\dq{} die Kondition \ac{ik} oder \ac{nik} besitzen.
+%In dieser Studie nehmen die Versuchsteilnehmer an einem 10-Minütigem teambasierten Aufgabe teil. 
+Wie im Kapitel \nameref{Vertrauen} beschrieben, bildet sich affektives Vertrauen nur über einen längerfristigen Zeitraum. Daher findet während der Versuchsdurchführung keine Messung des affektiven Vertrauens statt. 
+Kognitives Vertrauen ist hingegen in der Anfangsphase einer Teamgründung von Bedeutung und wird durch kognitive Entscheidungsprozesse frühzeitig gebildet.
+Durch die Analyse des kognitiven-Vertrauens nach unterschiedlichen Avatar Konditionen, wird festgestellt, ob sich unterschiedliche Avatar Konditionen auf die Wahrnehmung einer Person, in Kompetenzen, Fähigkeiten und Zuverlässigkeiten des \ac{vt}, im \ac{sve}, auswirken.
+Daher wird \textbf{Hypothese 2} wie folgt definiert:\\
+%H2$_{0}$ : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} nicht voneinander.\newline
+\textbf{H2$_{1}$} : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
+Es wird davon ausgegangen, dass durch unterschiedliche Avatar Konditionen signifikant unterschiedliche kognitive Vertrauenswerte im \ac{sve} gebildet werden. Somit würde eine Person mit der Avatarkondition \ac{ik} einen signifikant unterschiedlichen kognitiven Vertrauenswert, im Vergleich zu einer Person mit der Avatarkondition \ac{nik}, bilden.
+%H2$_{0}$ geht davon aus, dass die Kondition, in der eine Person im \ac{sve} die \dq{}anderen\dq{} teilnehmenden Personen wahrnimmt, ein Signifikant abweichenden Einfluss Somit erscheint ein \ac{vt} in seiner Leistungsfähigkeit und Zuverlässigkeit für eine Person immer gleich, egal ob die Avatare der \dq{}anderen\dq{} die Kondition \ac{ik} oder \ac{nik} besitzen.
 \paragraph{Hypothese 3}:
-Da starkes interpersonelles Vertrauen die Teamperformance in traditionell geformten Teams positiv beeinflusst, wird davon ausgegangen, dass dies auch auf \ac{vts} abgebildet werden kann. Es wird nur das kognitive Vertrauen analysiert, da das affektive Vertrauen vernachlässigt werden kann. Ist mehr kognitives Vertrauen vorhanden, können die Teammitglieder mehr Ressourcen in die positiven Aspekte der Teamarbeit einbringen und somit besser gemeinsam im Team arbeiten. Ist dies der Fall, werden keine defensiven Haltungen eingenommen werden, die darauf abzielen, sich vor möglichem Schaden durch andere zu schützen oder alleine gut dazustehen. Es kann sich auf die Erreichung des Ziels fokussiert werden. Besitzt das gesamte Team somit ein hohes wechselseitiges kognitives Vertrauen, könnte sich dies auf die erfolgreich abgeschlossenen Runden des Teams auswirken. Falls sich dieser Effekt bewahrheitet, kann analysiert werden, bei welcher Avatarkondition dieser Effekt stärker auftritt (\textit{Siehe \nameref{Vertrauen und virtuelle Teams}}). 
+Da starkes zwischenmenschliches Vertrauen die Teamperformance in traditionell geformten Teams positiv beeinflusst, wird davon ausgegangen, dass dies auch auf \ac{vts} zutrifft. 
+%Es wird das kognitive Vertrauen analysiert, da das affektive Vertrauen vernachlässigt werden kann. 
+Je größer das kognitive Vertrauen eines Teams ist ,desto mehr können die einzelnen Personen des Teams ihre Ressourcen in die positiven Aspekte der Teamarbeit einbringen und besser gemeinsam im Team arbeiten. Es werden keine defensiven Haltungen eingenommen, die darauf abzielen könnten, sich vor möglichem Schaden durch andere zu schützen und es kann sich auf die Erreichung des Ziels fokussiert werden. 
+Besitzt das gesamte Team ein hohes wechselseitiges kognitives Vertrauen, könnte sich dies auf die erfolgreich abgeschlossenen Runden des Teams auswirken. 
+%Was denke ich denn? Ich denke : 
+%Teams mit der Kondition IK bilden einen höheren Cognitiven Trust Score und schließen dadurch mehr Runden erfolgreich ab als mit der Kondition NIK.
+Es wird vermutet, dass ein Zusammenhang zwischen der Summe des gebildetem kognitiven Vertrauen der Teams sowie den erfolgreich abgeschlossenen Runden der Teams bei unterschiedlichen Avatar Konditionen besteht.
+
+Falls sich dieser Effekt bewahrheitet, kann analysiert werden, bei welcher Avatarkondition dieser Effekt stärker auftritt (\textit{Siehe \nameref{Vertrauen und virtuelle Teams}}).
+Es wird vermutet, dass die Teams mit der Kondition \ac{ik} 
+
+%Es gibt keinen Signifikanten unterschied in der stärke des Zusammenhangs der CT Werte und anzahl abgeschlossener Runden zwischen den Teams der verschiedenen Konditionen.
+
+Korrelation IK, NIK -> Fischers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
+Fischers Z-Transformation : 
+https://blogs.gwu.edu/weissba/teaching/calculators/fishers-z-transformation/
+H30 Der Zusammenhang des CTs der Teams und der Rounds der Teams unterscheidet sich nicht zwischen den Konditionen IK und NIK.
+
+H31 Der Zusammenhang des CTs der Teams und der Rounds der Teams ist Signifikanten stärker in den IK Kondition als in den NIK Kondition.
+
+%Gibt es unterschiede des CT der einzelen Teams zwischen den Konditionen IK und NIK.
+
+Hypothese für zweifaktorieller Varianzanalyse
+%Es gibt einen Unterschied zwischen Teams mit hohen CT-Score und niedrigem CT-Score bei der anzahl abgeschlossener Runden in Abhängigkeit der Kondition IK und NIK.
+
+% Der CT der IK Gruppe hängt mit der anzahl der Runden zusammen. Der CT der NIK Gruppe hängt nicht mit der anzahl der Runden zusammen. 
+% Es gibt ein Unterschied in dem Zusammenhang zwischen dem CT und Anzahl Runden zwischen den Gruppen. Ungerichtete Unterschiedshypothese.
+
 Daher wird folgende Hypothese definiert :\\
-	H3$_{0}$ : Ein hoher Cognitive-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}). \newline
-	H3$_{1}$ : Ein hoher Cognitive-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}).
-
-H3$_{0}$ : Je höher der Cognitive-Trust-Score im Team ist (\ac{teamCogIK} und \ac{teamCogNIK}), desto weniger Runden werden im Team erfolgreich abgeschlossen. 
-Es werden weniger oder gleich viele Runden im Team erfolgreich abgeschlossen, wenn der Cognitive-Trust-Score im Team steigt.
-Es werden mehr Runden im Team erfolgreich abgeschlossen, wenn der Cognitive-Trust-Score im Team steigt.
-
-H3$_{1}$ : Je höher der Cognitive-Trust-Score im Team ist (\ac{teamCogIK} und \ac{teamCogNIK}), desto mehr Runden werden im Team erfolgreich abgeschlossen.
-
- (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK})
- ---
-H3$_{0}$ : Teams mit einem hohen Cognitive-Trust-Score schließen weniger oder gleich viele Runden erfolgreich ab als Teams mit einem geringerem Cognitive-Trust-Score.
+H3$_{0}$ : Teams mit einem hohen Cognitive-Trust-Score \ac{ct} schließen weniger oder gleich viele Runden \ac{tRound} erfolgreich ab als Teams mit einem geringerem Cognitive-Trust-Score.
 H3$_{1}$ : Teams mit einem hohen Cognitive-Trust-Score schließen mehr Runden erfolgreich ab als Teams mit einem geringerem Cognitive-Trust-Score.
+
+H3a$_{0}$ : Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{ik} schließen weniger oder gleich viele Runden erfolgreich ab als Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{nik}.
+H3a$_{1}$ : Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{ik} schließen mehr Runden erfolgreich ab als Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{nik}.
+
+%---ALT
+%	H3$_{0}$ : Ein hoher Cognitive-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}). \newline
+%	H3$_{1}$ : Ein hoher Cognitive-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}).
+--------
+%Es werden weniger oder gleich viele Runden im Team erfolgreich abgeschlossen, wenn der Cognitive-Trust-Score im Team steigt.
+%Es werden mehr Runden im Team erfolgreich abgeschlossen, wenn der Cognitive-Trust-Score im Team steigt.
+
+ (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK})
+ 
+% ---
+%H3$_{0}$ : Teams mit einem hohen Cognitive-Trust-Score schließen weniger oder gleich viele Runden erfolgreich ab als Teams mit einem geringerem Cognitive-Trust-Score.
+%H3$_{1}$ : Teams mit einem hohen Cognitive-Trust-Score schließen mehr Runden erfolgreich ab als Teams mit einem geringerem Cognitive-Trust-Score.
 	
+	-----------------H3a
+H3a$_{0}$ : Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{ik} schließen weniger oder gleich viele Runden erfolgreich ab als Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{nik}.
+H3a$_{1}$ : Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{ik} schließen mehr Runden erfolgreich ab als Teams mit einem hohen Cognitive-Trust-Score und der Kondition \ac{nik}.
+
+Die Anzahl der abgeschlossenen Runden ist höher bei Teams mit der Kondition \ac{ik}
+
 Steigt der General-Trust-Score einer Person(\ac{gt}), steigt auch der Cognitive-Trust-Score einer Person(\ac{ct}).)	
 %	Es wird davon ausgegangen, dass wenn Personen oder Teams sich untereinander Leistungsfähig oder Zuverlässiger ansehen, dies keinen Einfluss auf die Team-Effektivität hat. 
+\newpage
 \paragraph{Hypothese 4}:
-Um zu analysieren, ob die verschiedenen Avatar Konditionen \ac{ik} sowie \ac{nik} einen Einfluss auf die Anzahl der Abgeschlossenen Runden eines Teams hat (\textit{Siehe \nameref{Teameffektivität}}), wurde \textbf{\textit{Hypothese 4} aufgestellt} :\\
-	H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.\newline
-	H4$_{1}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{einen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound}.
+Um zu analysieren, ob die unterschiedliche Avatar Konditionen \ac{ik} sowie \ac{nik} einen Einfluss auf die Anzahl der Abgeschlossenen Runden eines Teams haben (\textit{Siehe \nameref{Teameffektivität}}), wurde \textbf{\textit{Hypothese H4$_{1}$}} aufgestellt :\\
+H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
+%%----- ALT
+%	H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.\newline
+%	H4$_{1}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{einen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound}.
+%	
+%----
 %	\item{\underline{Hyothese 4} :\\ H$_{0}$ : Ein Torso, Head und Hand getrackter Avatar hat \textbf{keinen Einfluss} auf die Team-Effektivität. \newline
 %	H$_{1}$ : Ein Torso, Head und Hand getrackter Avatar hat \textbf{Einfluss} auf die Team-Effektivität.}	
-
-In dieser Hypothese wird sich mit der Frage beschäftigt, ob ein Team effektiver (mehr Runden abschließt) ist, je nachdem welche Avatar Kondition diesem zugeordnet wird. Es wird davon ausgegangen, dass die Team-Effektivität nicht aufgrund der Menschenähnlichkeit variiert.
+Es mit der Frage beschäftigt, ob ein Team effektiver (mehr Runden abschließt) ist, je nachdem welche Avatar Kondition diesem zugeordnet wird. Es wird davon ausgegangen, dass die Anzahl der abgeschlossenen Runden sich zwischen den beiden Konditionen unterscheidet.
+%Es wird davon ausgegangen, dass die Team-Effektivität  aufgrund der Menschenähnlichkeit variiert.
+%Es wird davon ausgegangen, dass die Anzahl der abgeschlossenen Runden sich zwischen den beiden Konditionen unterscheidet.
 \paragraph{Hypothese 5}:
 Zum Messen der Teameffektivität (\textit{Siehe \nameref{Teameffektivität}}) im Zusammenhang mit dem generellen Vertrauen wurde \textbf{\textit{Hypothese 5}} aufgestellt:\\
-	H5$_{0}$ : Teams, aufgeteilt nach Avatarverkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.\newline
-	H5$_{1}$ :  Teams, aufgeteilt nach Avatarverkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen mehr Runden ab} (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
+\textbf{H5$_{1}$} : Es besteht ein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) eines Teams und der Anzahl der abgeschlossenen Runden eines Teams \ac{tRounds}. \\
 
-Sind eventuell Teams in der \ac{vr} Effektiver, nur weil diese generell leichter einen Vertrauensvorschuss gewähren? Genau dieser Frage geht Hypothese 5 nach. Es wird jedoch davon ausgegangen, dass Teams keine höhere Teameffektivität erzielen, auch wenn diese einen höheren Hang zum Vertrauen haben.
-
+Es wird ein vermutet, dass die Höhe der abgeschlossenen Runden von der Höhe des General-Trust-Scores abhängt.
+\textbf{H5a$_{1}$} : Die höhe der abgeschlossenen Runden \ac{tRounds} hängt von der Höhe des General-Trust-Scores \ac{gt} ab.
+%-------- ALT
+%	H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.\newline
+%	H5$_{1}$ :  Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen mehr Runden ab} (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
+%--------
+%H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
+%	H5a$_{0}$ : FÜR REGRESSION
+Diese Hypothese beschäftigt sich somit mit der Frage, ob Teams in der \ac{vr} Effektiver sind wenn diese eher dazu bereit sind, anderen Personen Vertrauensvorschuss gewähren. Es wird davon ausgegangen, dass einen Zusammenhang zwischen dem General-Trust-Score Teams \ac{teamGen}  sowie der Anzahl der abgeschlossenen Runden \ac{tRound} eines Teams existiert.\\
+Weiterhin wird vermutet, dass die Höhe der abgeschlossenen Runden von der Höhe des General-Trust-Scores abhängt.
 \begin{figure}[H]
 		\begin{footnotesize}
 			\includegraphics[width=\textwidth]{Abbildungen/Versuchshypothesen_02.JPG}
@@ -944,14 +1134,14 @@ Damit die gesamten Bewegung möglichst realistisch wirken, wurden die Handbewegu
 Der \ac{nik}-Avatar besteht aus einem Kreis mit Mund sowie einer Repräsentation der linken sowie der rechten Hand. Er besitzt keine Augen, Haare, Beine, Hals, Torso sowie Ober- und Unterarme. Der Mund dieses Avatar ist als unauffälliger Orientierungspunkt des Kopfes erhalten geblieben. Der Mund des Non-IK-Avatars bewegt sich jedoch nicht. 
 \newpage
 
-Die \textit{Abbildung \ref{AvatareImEinsatz}} zeigt beide Avatarkonditionen \ac{ik} (a) und \ac{nik} (b) während der Versuchsdurchführung im Spectatorview.
+Die \textit{Abbildung \ref{AvatareImEinsatz}} zeigt beide Avatar Konditionen \ac{ik} (a) und \ac{nik} (b) während der Versuchsdurchführung im Spectatorview.
 
 \begin{figure}[h]
   \centering
   \subfloat[][]{\includegraphics[width=0.4\linewidth]{Abbildungen/Podeste_IK_Avatars.jpg}}
   \qquad
   \subfloat[][]{\includegraphics[width=0.4\linewidth]{Abbildungen/Podeste_Non_IK_Avatars.jpg}}
-  \caption{Avatarkonditionen während der Versuchsdurchführung im Spectatorview}
+  \caption{Avatar Konditionen während der Versuchsdurchführung im Spectatorview}
   \label{AvatareImEinsatz}
 \end{figure}
 
@@ -1572,9 +1762,9 @@ H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cog
 
 \paragraph{Ausreißer}
 \ac{gt} sowie \ac{ct} wurden auf Ausreißer überprüft. 
-Es sind bei \ac{ct} ein Ausreißer vorhanden. Um die Integrität der Daten beizubehalten, wurden diese vollständig in die Berechnungen mit einbezogen. 
+Es ist bei \ac{ct} ein Ausreißer vorhanden. Um die Integrität der Daten beizubehalten, wurden diese vollständig in die Berechnungen mit einbezogen. 
 %Siehe \textbf{\autoref{fig:boxplot_cognitive_trust_winsorisiert}}. 
-\ac{gt} ist unabhängig vom \ac{ct} der einzelnen Testperson. Daher muss eine Korrelation auf Individualebene mit $N=30$ Personen durchgeführt werden, bei der die einzelnen Teams und Teamzusammensetzungen sowie die Avatar Konditionen ignoriert werden. 
+\ac{gt} ist unabhängig vom \ac{ct} der einzelnen Testperson. Es muss eine Spearman-Korrelation auf Individualebene mit $N=30$ Personen durchgeführt werden, bei der die einzelnen Teams und Teamzusammensetzungen sowie die Avatar Konditionen ignoriert werden. 
 
 \paragraph{Normalverteilung}
 \ac{gt} ist laut Kolmogoroff-Smirnov-Test mit $p = .2 > \alpha = 0.05$ normalverteit. 
@@ -1582,8 +1772,30 @@ Es sind bei \ac{ct} ein Ausreißer vorhanden. Um die Integrität der Daten beizu
 %Für \ac{gt} ist $ z_{Skewness} = -0,985 $ und $z_{Kurtosis} = -.416$ und somit ist \ac{gt} normalverteilt.
 %Für \ac{ct} ist $ z_{Skewness} = -.257 $ und $z_{Kurtosis} = -1,764$ und somit ist \ac{ct} normalverteilt.
 
-\paragraph{Pearson-Korrelationsanalyse}
-Um diese Hypothese zu überprüfen, wurde eine Pearson- Korrelationsanalyse durchgeführt. 
+%Voraussetzung für Pearson-Korrelationsanalyse: 
+%Die Variablen sind mindestens intervallskaliert -> Hier ordinalskaliert
+%Die Variablen sind normalverteilt -> JA
+%Der untersuchte Zusammenhang zwischen den Variablen muss linear sein -> JA
+%Ab einer Likert Skala ab 6 können ordinale Skalenniveaus als metrische variablen interpretiert werden???
+
+%\paragraph{Pearson-Korrelationsanalyse}
+%Um diese Hypothese zu überprüfen, wurde eine Pearson- Korrelationsanalyse durchgeführt. 
+%
+%%\begin{figure}[H]
+%%\centering
+%%		\begin{footnotesize}
+%%			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/pearson_korrelation_general_cognitive}\\
+%%			\caption{Pearson-Korrelation}
+%%			\label{fig:pearson_korrelation}
+%%		\end{footnotesize}
+%%	\end{figure}	
+%	
+%Es ist eine \textbf{signifikant} ($p = .029 < \alpha = 0.05$) positive Korrelation moderaten Effektes mit dem Pearson-Korrelationskoeffizient ($r = .400$) zwischen \ac{gt} und \ac{ct} vorhanden. 
+%Das generelle Vertrauen einer Person korreliert  moderat positiv (laut Cohen \cite{cohen2013statistical}) mit dem kognitiven Vertrauen der Personen.
+%%Dies deutet darauf hin, die \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{Hypothese 1 / H$_{1}$} anzunehmen.
+
+\paragraph{Spearman-Korrelationsanalyse}
+Um diese Hypothese zu überprüfen, wurde eine Spearman-Korrelationsanalyse durchgeführt. 
 
 %\begin{figure}[H]
 %\centering
@@ -1594,12 +1806,12 @@ Um diese Hypothese zu überprüfen, wurde eine Pearson- Korrelationsanalyse durc
 %		\end{footnotesize}
 %	\end{figure}	
 	
-Es ist eine \textbf{signifikant} ($p = .029 < \alpha = 0.05$) positive Korrelation mittleren Effektes mit dem Pearson- Korrelationskoeffizient ($r = .400$) zwischen \ac{gt} und \ac{ct} vorhanden. 
-Das generelle Vertrauen einer Person korreliert stark positiv (laut Cohen \cite{cohen2013statistical}) mit dem kognitiven Vertrauen der Personen.
+Es ist eine \textbf{signifikant} ($p = .022 < \alpha = 0.05$) positive Korrelation mit dem Pearson-Korrelationskoeffizient ($r = .417$) zwischen \ac{gt} und \ac{ct} vorhanden. 
+Das generelle Vertrauen einer Person korreliert  moderat positiv (laut Cohen \cite{cohen2013statistical}) mit dem kognitiven Vertrauen der Personen.
 %Dies deutet darauf hin, die \textit{(Hypothese 1 / H$_{0}$)} zu verwerfen und die Alternativhypothese \textit{Hypothese 1 / H$_{1}$} anzunehmen.
 
-\paragraph{Lineare-Regressionsanalyse}
-Um die vermutete gerichtete Annahme der neutralen Auswirkung des \ac{gt} auf den \ac{ct} zu überprüfen, wurde eine Lineare-Regressionsanalyse durchgeführt. Dabei wurde als unabhängige Variable \ac{gt} und als abhängige Variable \ac{ct} gewählt wurde.
+\paragraph{Einfache Lineare-Regressionsanalyse}
+Um die vermutete gerichtete Annahme der neutralen Auswirkung des \ac{gt} auf den \ac{ct} zu überprüfen, wurde eine Einfache lineare-Regressionsanalyse durchgeführt. Dabei wurde als unabhängige Variable \ac{gt} und als abhängige Variable \ac{ct} gewählt wurde.
 %
 %\begin{figure}[H]
 %\centering
@@ -1613,7 +1825,7 @@ Um die vermutete gerichtete Annahme der neutralen Auswirkung des \ac{gt} auf den
 %		\end{footnotesize}
 %	\end{figure}	
 
-%Die Lineare-Regressionsanalyse ist mit \ac{ct} als abhängige und \ac{gt} als unabhängige Variable signifikant ($F(1,28) = 7,202; p = .012 < \alpha = 0.05$).
+%Die Einfache lineare-Regressionsanalyse ist mit \ac{ct} als abhängige und \ac{gt} als unabhängige Variable signifikant ($F(1,28) = 7,202; p = .012 < \alpha = 0.05$).
 
 Das Bestimmtheitsmaß ($R^{2} = .160$) deutet laut \citep{cohen2013statistical} auf eine geringe bis mittlere Varianzaufklärung des \ac{ct} durch \ac{gt} hin. Der \ac{gt} erklärt somit einen signifikanten Anteil der Varianz vom \ac{ct} ($R^{2} = .160; F(1,28) = 5,325; p = .029 < \alpha = 0.05$). Es lassen sich $16,0\%$ der Varianz unseres \ac{ct} durch den \ac{gt} erklären.
 
@@ -1659,9 +1871,16 @@ Als nächstes wird auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine
 Der Cognitive-Trust-Score (\ac{cti}) beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,200$) mit einer Standardabweichung von ($\sigma = .676$).\newline 
 Der Cognitive-Trust-Score (\ac{ctn}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 4,573$) mit einer Standardabweichung von ($\sigma = .406$).
 
+
+% T TEST ZULÄSSIG, WENN :
+%Die beiden Gruppen bzw. Stichproben müssen unabhängig sein JA
+%Die Variablen müssen intervallskaliert sein NEIN
+%Die Variablen müssen normalverteilt sein JA
+%Die Varianz innerhalb der Gruppen sollte ähnlich sein JA
+
 \paragraph{t-Test}
 Der T-Wert ist kleiner Null ($T = -1,833 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{cti} und \ac{ctn} hinweist. Der Mittelwert $\bar(x) = 4,200$ der Kondition \ac{ik} ist kleiner als der Mittelwert $\bar(x) = 4,573$ der Kondition \ac{nik}.
-Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,200; \sigma = .676$) und \ac{nik} ($\bar(x) = 4,5733; \sigma =.40614$) jedoch keine Signifikanz ($t(28) = -1,833; p = .077 > \alpha = 0.05$).
+Der T-Test zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,200; \sigma = .676$) und \ac{nik} ($\bar(x) = 4,5733; \sigma =.40614$) \textbf{keine Signifikanz} ($t(28) = -1,833; p = .077 > \alpha = 0.05$).
 
 \paragraph{Mann-Whitney-U-Test}
 Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
@@ -1671,7 +1890,9 @@ Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
 
 \newpage
 \subsection{Analyse Hypothese 3}
-H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}).
+DIESE HYPOTHESE?
+Es besteht kein Zusammenhang zwischen dem Cognitiver-Trust-Score im Team und der Anzahl der erfolgreich abgeschlossenen Runden im Team
+%H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}).
 
 \paragraph{Vertrauenstabelle pro Team}
 Es wird der Zusammenhang zwischen \ac{cti} und \ac{tRoundIK} sowie \ac{ctn} und \ac{tRoundNIK} auf Teamebene analysiert.
@@ -1755,12 +1976,12 @@ Es ist eine Korrelation mittlerem Effektes ($r = .316$) zwischen \ac{teamCogIK} 
 Es ist eine positive Korrelation starken Effektes ($r = .947$) zwischen \ac{teamCogNIK} und \ac{tRoundNIK} vorhanden. Diese Korrelation ist statistisch \textbf{signifikant} ($p = .014 < \alpha = 0.05$). 
 
 \paragraph{Lineare-Regressionsanalyse}
-Um die Vermutung zu überprüfen, dass ein hoher Cognitiver-Trust-Score im Team  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden bei unterschiedlichen Avatarverkörperungen hat, wurde eine Lineare Regressionsanalyse durchgeführt.
+Um die Vermutung zu überprüfen, dass ein hoher Cognitiver-Trust-Score im Team  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden bei unterschiedlichen Avatar Verkörperungen hat, wurde eine Lineare Regressionsanalyse durchgeführt.
 %Es wird angenommen, dass das \ac{teamCog} einen \underline{positiven Einfluss} auf die \ac{tRound} hat.
 \ac{teamCog} wird als unabhängige und \ac{tRound} als abhängige Variable definiert.
 
 \paragraph{Kondition \ac{ik}}
-Die Lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = .111; p = .761 > \alpha = 0.05$)).
+Die Einfache lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = .111; p = .761 > \alpha = 0.05$)).
 
 Das Bestimmtheitsmaß ($R^{2} = .036$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRoundIK} durch \ac{teamCogIK} hin. Somit lassen sich $3,6\%$ der Varianzen unserer \ac{tRoundIK} durch den \ac{teamCogNIK} erklären.
 
@@ -1772,7 +1993,7 @@ Der \ac{teamCogIK} eignet sich nicht als Prädiktor für die \ac{tRoundIK}.
 \textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{ik} nicht verwerfen.
 
 \paragraph{Kondition \ac{nik}}
-Die Lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = 5,363; p = .103 > \alpha = 0.05$)).
+Die Einfache lineare-Regressionsanalyse ist mit \ac{teamCogIK} als unabhängige und \ac{tRoundNIK} als abhängige Variable statistisch \textbf{nicht signifikant} (($F(1,3) = 5,363; p = .103 > \alpha = 0.05$)).
 
 Das Bestimmtheitsmaß ($R^{2} = .641$) deutet laut \citep{cohen2013statistical} auf eine starke Varianzaufklärung der \ac{tRoundNIK} durch \ac{teamCogNIK} hin. Somit lassen sich $64,1\%$ der Varianzen unserer \ac{tRoundNIK} durch den \ac{teamCogNIK} erklären.
 
@@ -1783,7 +2004,7 @@ Der \ac{teamCogNIK} eignet sich nicht als Prädiktor für die \ac{tRoundNIK}.
 \textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{nik} nicht verwerfen.
 
 \paragraph{Hypothese 3a : Analyse ohne die Aufteilung in \ac{ik} und \ac{nik} }
-Da die Stichprobe mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse zwischen \ac{teamCogIK} und \ac{tRoundIK} sowie \ac{teamCogNIK} und \ac{tRoundNIK} zu klein ist, wurde zusätzlich eine Spearman-Korrelationsanalyse sowie Lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt und somit folgende Hypothese aufgestellt :
+Da die Stichprobe mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse zwischen \ac{teamCogIK} und \ac{tRoundIK} sowie \ac{teamCogNIK} und \ac{tRoundNIK} zu klein ist, wurde zusätzlich eine Spearman-Korrelationsanalyse sowie Einfache lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt und somit folgende Hypothese aufgestellt :
 
 H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score des Teams, hat \textbf{keinen Einfluss} auf die Anzahl abgeschlossener Runden im Team (\ac{tRound}).
 
@@ -1797,7 +2018,7 @@ Es ist eine positive Korrelation mittlerem Effektes mit dem Spearman-Korrelation
 %Dies deutet darauf hin, dass die \textit{(Hypothese 3a / H3a$_{0}$)} nicht verworfen werden kann. Siehe \textbf{\autoref{fig:h3_both}}
 			
 			\paragraph{Lineare-Regressionsanalyse}
-Die Lineare-Regressionsanalyse ist mit \ac{teamCog} als unabhängige und \ac{tRound} als abhängige Variable statistisch \textbf{nicht signifikant} ($F(1,8) = .855; p = .382 > \alpha = 0.05$).
+Die Einfache lineare-Regressionsanalyse ist mit \ac{teamCog} als unabhängige und \ac{tRound} als abhängige Variable statistisch \textbf{nicht signifikant} ($F(1,8) = .855; p = .382 > \alpha = 0.05$).
 
 Das Bestimmtheitsmaß ($R^{2} = .097$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRound} durch \ac{teamCog} hin. Somit lassen sich $9,7\%$ der Varianzen unserer \ac{tRound} durch den \ac{teamCog} erklären.
 
@@ -1844,10 +2065,13 @@ Es wurde zusätzlich durch den Mann-Whitney-U-Test überprüft, ob sich \ac{tRou
 
 \newpage
 	\subsection{Analyse Hypothese 5}
-H5$_{0}$ : Teams, aufgeteilt nach Avatarverkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
+\textbf{H5$_{1}$} : Es besteht ein Zusammenhang zwischen dem General-Trust-Score (\ac{gt}) eines Teams und der Anzahl der abgeschlossenen Runden eines Teams. \\
 
-Um die Hypothese 5 auszuwerten, muss eine Tabelle wie in \textbf{Hypothese 3} aufgestellt werden, die die individuellen generellen Vertrauenswerte der Personen zu einem generellen Vertrauenswert des Teams zusammenfasst. Die durch die Tabelle erstellte Variable der Summe der individuellen generellen Vertrauenswerte wird \ac{teamGen} genannt.
-Anschließend wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} auf Teamebene durchgeführt. Darauf wird auf Individualebene eine Korrelation durchgeführt um die Stichprobengröße zu vergrößern. Es folgt eine Lineare-Regressionsanalyse zwischen \ac{tRound} und \ac{teamGen} um eine eventuelle Vorhersage des Zusammenhangs festzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
+% DIE HIER EVENTUELL BENUTZEN
+%Je höher der Hang zum Vertrauen der Personen im Team, desto höher ist die Anzahl der abgeschlossenen Runden des Teams.
+Um die Hypothese 5 auszuwerten, wird eine Tabelle aufgestellt, die die individuellen generellen Vertrauenswerte der Personen zu einem generellen Vertrauenswert des Teams zusammenfasst. Die durch die Tabelle erstellte Variable der Summe der individuellen generellen Vertrauenswerte wird \ac{teamGen} genannt.
+Anschließend wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} auf Teamebene durchgeführt, wobei die Konditionen \ac{ik} sowie \ac{nik} vernachlässigt werden können, da das gebildete generelle Vertrauen nie durch unterschiedliche Avatar Verkörperungen beeinflusst wird. 
+Darauffolgend wird auf Individualebene eine Korrelation durchgeführt um die Stichprobengröße zu vergrößern. Es folgt eine Einfache lineare-Regressionsanalyse zwischen \ac{tRound} und \ac{teamGen} um eine eventuelle Vorhersage des Zusammenhangs festzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
 
 		\paragraph{Aufstellen der generellen Vertrauenstabelle pro Team}
 \begin{table}[H]
@@ -1898,62 +2122,63 @@ Anschließend wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGe
 		30 & $4,38$ & 2 & 9 & & \\	
 	\end{tabularx}
 \end{table}
+%
+%Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen generellen Vertrauenswerte des Teams (\ac{teamGen} $p = .200 > \alpha = 0.05$), sowie die Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{tRound} $p = .200 > \alpha = 0.05$) Normalverteilt.
+%Zu dem selben Ergebnis kommt auch der Shapiro-Wilk-Test mit (\ac{teamGen} $p = .548 > \alpha = 0.05$) und (\ac{tRound} $p = .953 > \alpha = 0.05$).
+%
+%Für \ac{tRound} ist $ z_{Skewness} = -0,448 $ und $z_{Kurtosis} = 0.0217$. Somit ist tRound Normalverteilt.
+%Für \ac{teamGen} ist $ z_{Skewness} = 0,676 $ und $z_{Kurtosis} = -0.2653$. Somit ist teamGen Normalverteilt.
+%
+%Der General-Trust-Score pro Team (\ac{teamGenIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 14,998$) mit einer Standardabweichung von ($\sigma = 0,648$).\newline 
+%Der General-Trust-Score pro Team (\ac{teamGenNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 16,074$) mit einer Standardabweichung von ($\sigma = .830$). \newline 
+%Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 3,535$).\newline 
+% Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 1,870$). 
+%
+%		\paragraph{Spearman-Korrelationsanalyse}
+%Aufgrund der geringen Stichprobengröße von ($N=5$) wird eine Spearman-Korrelation zwischen den generellen Vertrauenswerten des Teams \ac{teamGen} und den erfolgreich abgeschlossenen Runden durchgeführt und in die unabhängigen Variablen \ac{ik} und \ac{nik} aufgeteilt.
+%%
+%%\begin{figure}[H]
+%%\centering
+%%		\begin{footnotesize}
+%%			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_spearman_ik}
+%%			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_spearman_nik}
+%%			\caption{Pearson-Korrelation zwischen den einzelnen Teams und dem \ac{te}}
+%%			\label{fig:Pearson_ik_nik_h3}
+%%		\end{footnotesize}
+%%	\end{figure}	
+%
+%Es ist eine negative Korrelation sehr starkem Effekt ($r = -.900$) zwischen \ac{teamGenIK} und \ac{tRoundIK} vorhanden. Diese Korrelation ist statistisch \textbf{signifikant} ($p = .037 < \alpha = 0.05$)
+%Weiterhin ist eine negative Korrelation schwachen Effekt ($r = -.103$) zwischen \ac{teamGenNIK} und \ac{tRoundNIK} vorhanden. Diese Korrelation ist statistisch \textbf{nicht signifikant} ($p = .870 > \alpha = 0.05$).
+%
+%		\paragraph{Lineare-Regressionsanalyse}
+%Um die statistische Signifikanz des Zusammenhangs zwischen \ac{tRoundIK} und \ac{teamGenIK} und die nicht statistische Signifikanz des Zusammenhangs der Kondition \ac{nik} zwischen \ac{tRoundNIK} und \ac{teamGenNIK} zu bestätigen, wird zusätzlich eine Einfache lineare-Regressionsanalyse durchgeführt.
+%\ac{teamGen} wird wurde als unabhängige und \ac{tRound} als abhängige Variable definiert.
+%
+%\paragraph{Kondition \ac{ik}}
+%Das Bestimmtheitsmaß ($R^{2} = .971$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{tRoundIK} durch \ac{teamGenIK} hin. Somit lassen sich $97,1\%$ der Varianzen unserer \ac{tRoundIK} durch den \ac{teamGenIK} erklären.
+%
+%Der Regressionskoeffizient der Variable \ac{teamGenIK} beträgt ($r = -.971$) und ist statistisch \textbf{signifikant} ($t(3) = -7,040; p = .006 < \alpha = 0.01$). \\
+%Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 49,568; p = .006 < \alpha = 0.01$) und es lässt sich \textit{(Hypothese 5 / H5$_{0}$)} zum Signifikanzniveau ($\alpha = 0.01$) für die Kondition \ac{ik} verwerfen.
+%
+%Der \ac{teamGenIK} eignet sich als Prädiktor für \ac{tRoundIK}. Die geschätzte Abnahme an \ac{tRoundIK} beläuft sich auf $-.971$ Punkte \ac{tRoundIK} pro \ac{teamGenIK} ($\beta = -.971; t(3) = -7,040; p = .006 < \alpha = 0.01$). Siehe \textbf{\autoref{fig:h5_regression}}
+%
+%\paragraph{Kondition \ac{nik}}
+%Das Bestimmtheitsmaß ($R^{2} = .187$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRoundNIK} durch \ac{teamGenNIK} hin. Somit lassen sich $18,7\%$ der Varianzen unserer \ac{tRoundNIK} durch den \ac{teamGenNIK} erklären.
+%
+%Der Regressionskoeffizient der Variable \ac{teamGenNIK} beträgt ($r = -.433$) und ist statistisch \textbf{nicht signifikant} ($t(3) = -.831; p = .467 > \alpha = 0.05$). \\
+%Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .691; p = .467 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 5 / H5$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{nik} nicht verwerfen.
+%
+%\ac{teamGenNIK} eignet sich nicht als Prädiktor für die \ac{tRoundNIK}. Siehe \textbf{\autoref{fig:h5_regression}}
+%
+%Die Hypothese \textit{(Hypothese 5 / H$_{0}$)} kann somit nicht angenommen werden, da ein abnehmender Effekt auf die \ac{tRound} pro Team durch die Konditionen \ac{ik} und \ac{nik} festgestellt wurde.
+%
+%\paragraph{Hypothese 5a} Analyse ohne die Aufteilung in \ac{ik} und \ac{nik}
+%H5a$_{0}$ : Teams mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab} (\ac{tRound} als die mit einem niedrigen General-Trust-Score \ac{gt}.
+%
+%Da die Stichprobengröße mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Einfache lineare-Regressionsanalyse zu wenig sind, wurde zusätzlich noch eine Korrelationsanalyse sowie Einfache lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt.
 
 Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen generellen Vertrauenswerte des Teams (\ac{teamGen} $p = .200 > \alpha = 0.05$), sowie die Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{tRound} $p = .200 > \alpha = 0.05$) Normalverteilt.
 Zu dem selben Ergebnis kommt auch der Shapiro-Wilk-Test mit (\ac{teamGen} $p = .548 > \alpha = 0.05$) und (\ac{tRound} $p = .953 > \alpha = 0.05$).
-
-Für \ac{tRound} ist $ z_{Skewness} = -0,448 $ und $z_{Kurtosis} = 0.0217$. Somit ist tRound Normalverteilt.
-Für \ac{teamGen} ist $ z_{Skewness} = 0,676 $ und $z_{Kurtosis} = -0.2653$. Somit ist teamGen Normalverteilt.
-
-Der General-Trust-Score pro Team (\ac{teamGenIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 14,998$) mit einer Standardabweichung von ($\sigma = 0,648$).\newline 
-Der General-Trust-Score pro Team (\ac{teamGenNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 16,074$) mit einer Standardabweichung von ($\sigma = .830$). \newline 
-Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundIK}) beträgt der Kondition \ac{ik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 3,535$).\newline 
- Die Anzahl der Abgeschlossenen Runden pro Team (\ac{tRoundNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 1,870$). 
-
-		\paragraph{Spearman-Korrelationsanalyse}
-Aufgrund der geringen Stichprobengröße von ($N=5$) wird eine Spearman-Korrelation zwischen den generellen Vertrauenswerten des Teams \ac{teamGen} und den erfolgreich abgeschlossenen Runden durchgeführt und in die unabhängigen Variablen \ac{ik} und \ac{nik} aufgeteilt.
-%
-%\begin{figure}[H]
-%\centering
-%		\begin{footnotesize}
-%			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_spearman_ik}
-%			\includegraphics[scale=0.8]{Abbildungen/Post_QuestionnaireStatistiks/h5_korr_spearman_nik}
-%			\caption{Pearson-Korrelation zwischen den einzelnen Teams und dem \ac{te}}
-%			\label{fig:Pearson_ik_nik_h3}
-%		\end{footnotesize}
-%	\end{figure}	
-
-Es ist eine negative Korrelation sehr starkem Effekt ($r = -.900$) zwischen \ac{teamGenIK} und \ac{tRoundIK} vorhanden. Diese Korrelation ist statistisch \textbf{signifikant} ($p = .037 < \alpha = 0.05$)
-Weiterhin ist eine negative Korrelation schwachen Effekt ($r = -.103$) zwischen \ac{teamGenNIK} und \ac{tRoundNIK} vorhanden. Diese Korrelation ist statistisch \textbf{nicht signifikant} ($p = .870 > \alpha = 0.05$).
-
-		\paragraph{Lineare-Regressionsanalyse}
-Um die statistische Signifikanz des Zusammenhangs zwischen \ac{tRoundIK} und \ac{teamGenIK} und die nicht statistische Signifikanz des Zusammenhangs der Kondition \ac{nik} zwischen \ac{tRoundNIK} und \ac{teamGenNIK} zu bestätigen, wird zusätzlich eine Lineare-Regressionsanalyse durchgeführt.
-\ac{teamGen} wird wurde als unabhängige und \ac{tRound} als abhängige Variable definiert.
-
-\paragraph{Kondition \ac{ik}}
-Das Bestimmtheitsmaß ($R^{2} = .971$) deutet laut \citep{cohen2013statistical} auf eine sehr starke Varianzaufklärung der \ac{tRoundIK} durch \ac{teamGenIK} hin. Somit lassen sich $97,1\%$ der Varianzen unserer \ac{tRoundIK} durch den \ac{teamGenIK} erklären.
-
-Der Regressionskoeffizient der Variable \ac{teamGenIK} beträgt ($r = -.971$) und ist statistisch \textbf{signifikant} ($t(3) = -7,040; p = .006 < \alpha = 0.01$). \\
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = 49,568; p = .006 < \alpha = 0.01$) und es lässt sich \textit{(Hypothese 5 / H5$_{0}$)} zum Signifikanzniveau ($\alpha = 0.01$) für die Kondition \ac{ik} verwerfen.
-
-Der \ac{teamGenIK} eignet sich als Prädiktor für \ac{tRoundIK}. Die geschätzte Abnahme an \ac{tRoundIK} beläuft sich auf $-.971$ Punkte \ac{tRoundIK} pro \ac{teamGenIK} ($\beta = -.971; t(3) = -7,040; p = .006 < \alpha = 0.01$). Siehe \textbf{\autoref{fig:h5_regression}}
-
-\paragraph{Kondition \ac{nik}}
-Das Bestimmtheitsmaß ($R^{2} = .187$) deutet laut \citep{cohen2013statistical} auf eine schwache Varianzaufklärung der \ac{tRoundNIK} durch \ac{teamGenNIK} hin. Somit lassen sich $18,7\%$ der Varianzen unserer \ac{tRoundNIK} durch den \ac{teamGenNIK} erklären.
-
-Der Regressionskoeffizient der Variable \ac{teamGenNIK} beträgt ($r = -.433$) und ist statistisch \textbf{nicht signifikant} ($t(3) = -.831; p = .467 > \alpha = 0.05$). \\
-Weiterhin ist das Ergebnis der ANOVA ($F(1,3) = .691; p = .467 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 5 / H5$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) für die Kondition \ac{nik} nicht verwerfen.
-
-\ac{teamGenNIK} eignet sich nicht als Prädiktor für die \ac{tRoundNIK}. Siehe \textbf{\autoref{fig:h5_regression}}
-
-Die Hypothese \textit{(Hypothese 5 / H$_{0}$)} kann somit nicht angenommen werden, da ein abnehmender Effekt auf die \ac{tRound} pro Team durch die Konditionen \ac{ik} und \ac{nik} festgestellt wurde.
-
-\paragraph{Hypothese 5a} Analyse ohne die Aufteilung in \ac{ik} und \ac{nik}
-H5a$_{0}$ : Teams mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab} (\ac{tRound} als die mit einem niedrigen General-Trust-Score \ac{gt}.
-
-Da die Stichprobengröße mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Lineare-Regressionsanalyse zu wenig sind, wurde zusätzlich noch eine Korrelationsanalyse sowie Lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt.
-
-Laut Kolmogoroff-Smirnoff-Test sind, ohne die Aufteilung in die Konditionen \ac{ik} und \ac{nik}, sowohl die Summe der individuellen generellen Vertrauenswerte des Teams \ac{teamGen} ($p = .200 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams \ac{tRound} ($p = .200 > \alpha = 0.05$) Normalverteilt.
 
 Der generelle Trust-Score der Teams (\ac{teamGen} beträgt im Mittel ($\tilde x = 15,536$) mit einer Standardabweichung von ($\sigma = .902$).
 Die Anzahl der Abgeschlossenen Runden (\ac{tRound} beträgt im Mittel ($\tilde x = 9$) mit einer Standardabweichung von ($\sigma = 2,666$). 
@@ -1967,8 +2192,6 @@ Das Bestimmtheitsmaß ($R^{2} = .286$) deutet laut \citep{cohen2013statistical} 
 Der Regressionskoeffizient der Variable \ac{teamGen} beträgt ($r = -.535$) und ist statistisch \textbf{nicht signifikant} ($t(8) = -1,791; p = .111 > \alpha = 0.05$). \\
 Weiterhin ist das Ergebnis der ANOVA ($F(1,8) = 3,206; p = .111 > \alpha = 0.05$) und es lässt sich \textit{(Hypothese 5a / H5a$_{0}$)} zum Signifikanzniveau ($\alpha = 0.05$) nicht verwerfen. \\
 Der \ac{teamGen} eignet sich nicht als Prädiktor für die \ac{tRound}.
-
-Siehe \textbf{\autoref{fig:h5_both}}
 
 \newpage
 \paragraph{Analyse weiterer Variablen}
@@ -2252,6 +2475,9 @@ In der folgenden Tabelle wird beschrieben, ob die einzelnen Hypothesen Signifika
 %	
 %Auch interessant : Team-Communication zur Rounds Done
 
+
+%AUch interessant :   Schlechte Teams sollten auch ein schlechteres Cognitives Vertrauen besitzen! Ist das der Fall??
+
 -------------------------------------------------------------------------------
 % WAR MEHR PRÄSENZ BEI IK ODER NIK AVATAR VORHANDEN?
 %KAPITEL : VR - Präsenz in Virtual Reality
@@ -2270,24 +2496,24 @@ Bspw. Wie wurde CT oder GT etc. berechnet? UND WARUM BENÖTIGE ICH DIESE? WARUM 
 \clearpage
 \newpage
 \section{Analyse}
-Die Ergebnisse zeigen insgesamt keine Anzeichen dafür, dass unterschiedliche Avatarkonditionen sich positiv oder negativ auf das Vertrauen ins Team auswirkt. Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatarkonditionen sich auf die Teameffektivität auswirken.
+Die Ergebnisse zeigen insgesamt keine Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich positiv oder negativ auf das Vertrauen ins Team auswirkt. Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf die Teameffektivität auswirken.
 
 %Es konnte ein Einfluss des generellen Vertrauen  \ac{gt} auf das kognitive Vertrauen \ac{ct} festgestellt werden. 
-Die Pearson-Korrelationsanalyse zwischen \ac{gt} und \ac{ct} zeigt einen signifikanten Zusammenhang der beiden Variablen. Der Zusammenhang ist mit $\beta = .452$ mittelmäßig stark ausgeprägt. Auch die Lineare-Regressionsanalyse zeigt einen signifikanten positiven Zusammenhang zwischen \ac{gt} und \ac{ct} mit $t(28) = 2,684; p = .012 < \alpha = 0.05$.
+Die Pearson-Korrelationsanalyse zwischen \ac{gt} und \ac{ct} zeigt einen signifikanten Zusammenhang der beiden Variablen. Der Zusammenhang ist mit $\beta = .452$ mittelmäßig stark ausgeprägt. Auch die Einfache lineare-Regressionsanalyse zeigt einen signifikanten positiven Zusammenhang zwischen \ac{gt} und \ac{ct} mit $t(28) = 2,684; p = .012 < \alpha = 0.05$.
 Die Annahme, dass das generelle Vertrauen \ac{gt} einen signifikanten Einfluss auf den \ac{ct} hat, kann somit bestätigt werden. Die \textbf{Hypothese H1$_{0}$}, die besagt, dass wenn der General-Trust-Score einer Person (\ac{gt}) steigt, der Cognitive-Trust-Score einer Person (\ac{ct}) nicht steigt, muss verworfen werden. Die Alternativhypothese \textbf{Hypothese H1$_{1}$}, die besagt, dass wenn der General-Trust-Score einer Person (\ac{gt}) steigt, der Cognitive-Trust-Score einer Person (\ac{ct}) ebenfalls steigt, wird angenommen.
 
-Personen mit einem hohem generellen Vertrauen erzielen somit einen hohen kognitiven Vertrauenswert. Dieser erhöhte kognitive Vertrauenswert wird nicht von unterschiedlichen Avatarkonditionen beeinflusst. Es konnte kein signifikanter Unterschied zwischen den Konditionen \ac{ik} und \ac{nik} im Bezug auf das gebildete \ac{ct} festgestellt werden. Somit kann \textbf{Hypothese H2$_{0}$}, die besagt, dass der erzielte Cognitive-Trust-Score (\ac{ct}) sich bei den Konditionen \ac{ik} und \ac{nik} nicht unterscheidet, nicht verworfen werden.
+Personen mit einem hohem generellen Vertrauen erzielen somit einen hohen kognitiven Vertrauenswert. Dieser erhöhte kognitive Vertrauenswert wird nicht von unterschiedlichen Avatar Konditionen beeinflusst. Es konnte kein signifikanter Unterschied zwischen den Konditionen \ac{ik} und \ac{nik} im Bezug auf das gebildete \ac{ct} festgestellt werden. Somit kann \textbf{Hypothese H2$_{0}$}, die besagt, dass der erzielte Cognitive-Trust-Score (\ac{ct}) sich bei den Konditionen \ac{ik} und \ac{nik} nicht unterscheidet, nicht verworfen werden.
 Es wurde jedoch ein signifikanter Mittelwertsunterschied bei dem \ac{tci} und dem \ac{tcn} festgestellt.
 
 Die Mittelwerte der abgeschlossenen Runden \ac{tRound} unterscheiden sich zwischen \ac{ik} und \ac{nik} nicht.
 Die Spearman Korrelationsanalyse zwischen den kognitiven Vertrauenswerten des Teams \ac{teamCog} sowie den erfolgreich abgeschlossenen Runden des Teams \ac{tRound} für die \textbf{Hypothese H3$_{0}$} zeigt keine Signifikanz.
-Auch die Lineare-Regressionsanalysen zwischen \ac{teamCogIK} sowie \ac{teamCogNIK} und \ac{tRoundIK} sowie \ac{tRoundNIK} zeigen keine Signifikanz. Auch nach einer Erhöhung der Stichprobengröße, indem die Teams nicht in unterschiedliche Konditionen eingeteilt wurden, zeigt sich bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse keine Signifikanz. Somit muss die H3$_{0}$, die besagt, dass ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK})  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}) hat, angenommen werden.
+Auch die Lineare-Regressionsanalysen zwischen \ac{teamCogIK} sowie \ac{teamCogNIK} und \ac{tRoundIK} sowie \ac{tRoundNIK} zeigen keine Signifikanz. Auch nach einer Erhöhung der Stichprobengröße, indem die Teams nicht in unterschiedliche Konditionen eingeteilt wurden, zeigt sich bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse keine Signifikanz. Somit muss die H3$_{0}$, die besagt, dass ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK})  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}) hat, angenommen werden.
 Weiterhin muss auch die \textbf{Hypothese H3a$_{0}$}, die besagt, dass ein hoher Cognitiver-Trust-Score des Teams, \textbf{keinen Einfluss} auf die Anzahl abgeschlossener Runden im Team (\ac{tRound}) hat, angenommen werden.
 
 Die Mittelwerte der abgeschlossenen Runden der Teams \ac{tRound} zwischen \ac{ik} und \ac{nik} unterscheiden sich nicht. Der T-Test zwischen den Konditionen \ac{ik} sowie \ac{nik} und \ac{tRound} konnte auf Konditions- sowie auf Teamebene keine signifikanten Mittelwertsunterschiede feststellen. Auch der Mann-Whitney-U-Test konnte keine signifikanten Unterschiede der Mediane auf Teamebene feststellen. Somit muss die \textbf{Hypothese H4$_{0}$}, die besagt, dass die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams hat, angenommen werden.
 
 
-H5$_{0}$ : Teams, aufgeteilt nach Avatarverkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
+H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}.
 
 Die \textit{Tabelle \ref{SignifikanzOverview} } zeigt eine Übersicht der einzelnen Hypothesen und deren Signifikanzen.
 
@@ -2307,7 +2533,7 @@ Die \textit{Tabelle \ref{SignifikanzOverview} } zeigt eine Übersicht der einzel
 		
 		\hline 	\\	
 		
-		H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatarverkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}). \\
+		H3$_{0}$ : Ein hoher Cognitiver-Trust-Score im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}). \\
 		& nicht signifikant \\		
 		
 		\hline 	\\	
@@ -2322,7 +2548,7 @@ Die \textit{Tabelle \ref{SignifikanzOverview} } zeigt eine Übersicht der einzel
 
 		\hline 	\\	
 		
-		H5$_{0}$ : Teams, aufgeteilt nach Avatarverkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}\\
+		H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}\\
 		& nicht signifikant \\
 		
 		\hline 	\\
@@ -2332,6 +2558,24 @@ Die \textit{Tabelle \ref{SignifikanzOverview} } zeigt eine Übersicht der einzel
 	\end{tabularx}
 \end{table}		
 
+\section{TODO}
+
+H1 : Korrelationshypothese
+H1a : Regressionshypothese
+
+H5 : 
+EINFACHE -Lineare Regression hinschreiben
+
+H1a für einfache -Lineare  Regression aufstellen -> 
+H1a1 Eine höhere Ausprägung von GT sagt eine höhere ausprägung von CT voraus.
+H1a1 Ein Anstieg der Ausprägung des GT sagt eine höhere ausprägung von CT voraus.
+Personen, die einen höheren GT erzielen, 
+
+Dass H2 nicht Signifikant ist, ist eventuell garnicht schlecht, da man sich so keine gedanken machen muss darüber welche Kondition man wählen sollte. Weil sonst eventuell auch ein geringerer CT gebildet werden könnte.
+
+H5 die Konditionen entfernen! Da das nicht Sinnvoll ist!
+
+H3 Mehrfaktorielle Varianzanalyse?
 \section{Diskussion}
 	\subsection{Diskussion der Ergebnisse}
 	Diese Studie trägt dazu bei, besser zu verstehen, durch welche Avatar Konditionen \ac{vts} in einem \ac{sve} effektiver Arbeiten. Durch die Berücksichtigung vom aktuellen Stand der Vertrauensforschung, wurde das aufgebaute Vertrauen der einzelnen Personen und des gesamtem Teams gemessen. Insgesamt wurde jedoch nur 1 der 5 aufgestellten Hypothesen unterstützt. 
