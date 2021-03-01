@@ -4,75 +4,74 @@
 \BOOKMARK [1][]{section*.13}{Einleitung}{}% 4
 \BOOKMARK [2][]{subsection.19}{0.1 Motivation}{section*.13}% 5
 \BOOKMARK [2][]{subsection.20}{0.2 Ziele der Arbeit}{section*.13}% 6
-\BOOKMARK [2][]{subsection.21}{0.3 Das Framework}{section*.13}% 7
-\BOOKMARK [1][]{section.33}{1 Theoretischer Rahmen}{}% 8
-\BOOKMARK [2][]{subsection.36}{1.1 Virtual Reality}{section.33}% 9
-\BOOKMARK [3][]{subsubsection.37}{1.1.1 Virtuelle 3D-Welten}{subsection.36}% 10
-\BOOKMARK [3][]{subsubsection.39}{1.1.2 Vorbedingungen f\374r Presence}{subsection.36}% 11
-\BOOKMARK [3][]{subsubsection.43}{1.1.3 Presence in Virtual Reality}{subsection.36}% 12
-\BOOKMARK [3][]{subsubsection.45}{1.1.4 Presence, Co-Presence und co.}{subsection.36}% 13
-\BOOKMARK [2][]{subsection.46}{1.2 Avatare}{section.33}% 14
-\BOOKMARK [3][]{subsubsection.47}{1.2.1 Repr\344sentationen von Avataren}{subsection.46}% 15
-\BOOKMARK [3][]{subsubsection.50}{1.2.2 Vorw\344rtskinematik vs Inverse-Kinematik}{subsection.46}% 16
-\BOOKMARK [3][]{subsubsection.51}{1.2.3 Selbst-Avatar und Nicht-Selbst-Avatare}{subsection.46}% 17
-\BOOKMARK [2][]{subsection.56}{1.3 Vertrauen}{section.33}% 18
-\BOOKMARK [3][]{subsubsection.57}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.56}% 19
-\BOOKMARK [3][]{subsubsection.58}{1.3.2 Vertrauen als Eigenschaft }{subsection.56}% 20
-\BOOKMARK [3][]{subsubsection.59}{1.3.3 Vertrauen als Zustand}{subsection.56}% 21
-\BOOKMARK [3][]{subsubsection.60}{1.3.4 Vertrauen und Avatare}{subsection.56}% 22
-\BOOKMARK [3][]{subsubsection.61}{1.3.5 Vertrauen und virtuelle Teams}{subsection.56}% 23
-\BOOKMARK [2][]{subsection.62}{1.4 Teams}{section.33}% 24
-\BOOKMARK [3][]{subsubsection.63}{1.4.1 Was ist ein Team?}{subsection.62}% 25
-\BOOKMARK [3][]{subsubsection.64}{1.4.2 Was ist ein virtuelles Team?}{subsection.62}% 26
-\BOOKMARK [3][]{subsubsection.65}{1.4.3 Virtuelle Teams und Teambuilding}{subsection.62}% 27
-\BOOKMARK [3][]{subsubsection.66}{1.4.4 Teameffektivit\344t}{subsection.62}% 28
-\BOOKMARK [1][]{section.67}{2 Versuchshypothesen}{}% 29
-\BOOKMARK [1][]{section.78}{3 Vorgehensweise}{}% 30
-\BOOKMARK [2][]{subsection.79}{3.1 Der Versuch}{section.78}% 31
-\BOOKMARK [3][]{subsubsection.80}{3.1.1 Untersuchungsmethode}{subsection.79}% 32
-\BOOKMARK [3][]{subsubsection.81}{3.1.2 Teilnehmerfindung}{subsection.79}% 33
-\BOOKMARK [3][]{subsubsection.82}{3.1.3 Versuchsablauf}{subsection.79}% 34
-\BOOKMARK [3][]{subsubsection.83}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.79}% 35
-\BOOKMARK [3][]{subsubsection.85}{3.1.5 Detaillierter Versuchsablauf}{subsection.79}% 36
-\BOOKMARK [3][]{subsubsection.87}{3.1.6 Die Avatare}{subsection.79}% 37
-\BOOKMARK [2][]{subsection.95}{3.2 Anforderungen an die Versuchsumgebung}{section.78}% 38
-\BOOKMARK [3][]{subsubsection.96}{3.2.1 Technik der Versuchsumgebung}{subsection.95}% 39
-\BOOKMARK [3][]{subsubsection.109}{3.2.2 Optik der Versuchsumgebung}{subsection.95}% 40
-\BOOKMARK [3][]{subsubsection.115}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.95}% 41
-\BOOKMARK [2][]{subsection.121}{3.3 Methodik}{section.78}% 42
-\BOOKMARK [3][]{subsubsection.122}{3.3.1 Allgemeines}{subsection.121}% 43
-\BOOKMARK [3][]{subsubsection.127}{3.3.2 Datenerhebungsmethoden}{subsection.121}% 44
-\BOOKMARK [1][]{section.140}{4 Auswertung / Ergebnisse}{}% 45
-\BOOKMARK [2][]{subsection.146}{4.1 Teilnehmer und Demografie}{section.140}% 46
-\BOOKMARK [2][]{subsection.171}{4.2 Voraussetzungen}{section.140}% 47
-\BOOKMARK [2][]{subsection.172}{4.3 Analyse Hypothese 1}{section.140}% 48
-\BOOKMARK [2][]{subsection.177}{4.4 Analyse Hypothese 2}{section.140}% 49
-\BOOKMARK [2][]{subsection.180}{4.5 Analyse Hypothese 3}{section.140}% 50
-\BOOKMARK [2][]{subsection.185}{4.6 Analyse Hypothese 4}{section.140}% 51
-\BOOKMARK [2][]{subsection.188}{4.7 Analyse Hypothese 5}{section.140}% 52
-\BOOKMARK [2][]{subsection.194}{4.8 Analyse subjektiver Daten}{section.140}% 53
-\BOOKMARK [2][]{subsection.232}{4.9 Berechnung der Werte f\374r die Auswertung}{section.140}% 54
-\BOOKMARK [1][]{section.233}{5 Analyse}{}% 55
-\BOOKMARK [2][]{subsection.234}{5.1 Analyse der Hypothesen}{section.233}% 56
-\BOOKMARK [2][]{subsection.235}{5.2 Analyse der technischen Anforderungen}{section.233}% 57
-\BOOKMARK [1][]{section.237}{6 TODO}{}% 58
-\BOOKMARK [1][]{section.238}{7 Diskussion}{}% 59
-\BOOKMARK [2][]{subsection.239}{7.1 Diskussion der Ergebnisse}{section.238}% 60
-\BOOKMARK [2][]{subsection.243}{7.2 Limitierungen}{section.238}% 61
-\BOOKMARK [2][]{subsection.245}{7.3 Diskussion der eingesetzten Methoden}{section.238}% 62
-\BOOKMARK [2][]{subsection.246}{7.4 Auswirkungen auf die Gegenwart}{section.238}% 63
-\BOOKMARK [2][]{subsection.247}{7.5 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.238}% 64
-\BOOKMARK [1][]{section.248}{8 Fazit}{}% 65
-\BOOKMARK [1][]{section*.250}{Anhang}{}% 66
-\BOOKMARK [1][]{appendix.251}{A Auswertungsergebnisse}{}% 67
-\BOOKMARK [1][]{appendix.259}{B Demografieauswertung}{}% 68
-\BOOKMARK [1][]{appendix.267}{C Pre-Questionnaire}{}% 69
-\BOOKMARK [1][]{appendix.274}{D Post-Questionnaire - Konditionsabfrage}{}% 70
-\BOOKMARK [1][]{appendix.276}{E Post-Questionnaire - Generelles Vertrauen}{}% 71
-\BOOKMARK [1][]{appendix.281}{F Post-Questionnaire - Kognitives Vertrauen}{}% 72
-\BOOKMARK [1][]{appendix.284}{G Post-Questionnaire - Teamkommunikation}{}% 73
-\BOOKMARK [1][]{appendix.286}{H Post-Questionnaire - Team-Effektivit\344t}{}% 74
-\BOOKMARK [1][]{appendix.288}{I Post-Questionnaire - NASA-TLX}{}% 75
-\BOOKMARK [1][]{appendix.295}{J Post-Questionnaire - IPQ}{}% 76
-\BOOKMARK [1][]{appendix.299}{K Post-Questionnaire - Co-Presence}{}% 77
-\BOOKMARK [1][]{appendix.306}{L Other}{}% 78
+\BOOKMARK [1][]{section.21}{1 Theoretischer Rahmen}{}% 7
+\BOOKMARK [2][]{subsection.24}{1.1 Virtual Reality}{section.21}% 8
+\BOOKMARK [3][]{subsubsection.25}{1.1.1 Virtuelle 3D-Welten}{subsection.24}% 9
+\BOOKMARK [3][]{subsubsection.27}{1.1.2 Vorbedingungen f\374r Presence}{subsection.24}% 10
+\BOOKMARK [3][]{subsubsection.31}{1.1.3 Presence in Virtual Reality}{subsection.24}% 11
+\BOOKMARK [3][]{subsubsection.33}{1.1.4 Presence, Co-Presence und co.}{subsection.24}% 12
+\BOOKMARK [2][]{subsection.34}{1.2 Avatare}{section.21}% 13
+\BOOKMARK [3][]{subsubsection.35}{1.2.1 Repr\344sentationen von Avataren}{subsection.34}% 14
+\BOOKMARK [3][]{subsubsection.38}{1.2.2 Vorw\344rtskinematik vs Inverse-Kinematik}{subsection.34}% 15
+\BOOKMARK [3][]{subsubsection.39}{1.2.3 Selbst-Avatar und Nicht-Selbst-Avatare}{subsection.34}% 16
+\BOOKMARK [2][]{subsection.44}{1.3 Vertrauen}{section.21}% 17
+\BOOKMARK [3][]{subsubsection.45}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.44}% 18
+\BOOKMARK [3][]{subsubsection.46}{1.3.2 Vertrauen als Eigenschaft }{subsection.44}% 19
+\BOOKMARK [3][]{subsubsection.47}{1.3.3 Vertrauen als Zustand}{subsection.44}% 20
+\BOOKMARK [3][]{subsubsection.48}{1.3.4 Vertrauen und Avatare}{subsection.44}% 21
+\BOOKMARK [3][]{subsubsection.49}{1.3.5 Vertrauen und virtuelle Teams}{subsection.44}% 22
+\BOOKMARK [2][]{subsection.50}{1.4 Teams}{section.21}% 23
+\BOOKMARK [3][]{subsubsection.51}{1.4.1 Teams}{subsection.50}% 24
+\BOOKMARK [3][]{subsubsection.52}{1.4.2 Virtuelle Teams}{subsection.50}% 25
+\BOOKMARK [3][]{subsubsection.53}{1.4.3 Virtuelle Teams und Teambuilding}{subsection.50}% 26
+\BOOKMARK [3][]{subsubsection.54}{1.4.4 Teameffektivit\344t}{subsection.50}% 27
+\BOOKMARK [1][]{section.57}{2 Versuchshypothesen}{}% 28
+\BOOKMARK [2][]{subsection.58}{2.1 Das Framework}{section.57}% 29
+\BOOKMARK [2][]{subsection.69}{2.2 Die Versuchshypothesen}{section.57}% 30
+\BOOKMARK [1][]{section.81}{3 Vorgehensweise}{}% 31
+\BOOKMARK [2][]{subsection.82}{3.1 Der Versuch}{section.81}% 32
+\BOOKMARK [3][]{subsubsection.83}{3.1.1 Untersuchungsmethode}{subsection.82}% 33
+\BOOKMARK [3][]{subsubsection.84}{3.1.2 Teilnehmerfindung}{subsection.82}% 34
+\BOOKMARK [3][]{subsubsection.85}{3.1.3 Versuchsablauf}{subsection.82}% 35
+\BOOKMARK [3][]{subsubsection.86}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.82}% 36
+\BOOKMARK [3][]{subsubsection.88}{3.1.5 Detaillierter Versuchsablauf}{subsection.82}% 37
+\BOOKMARK [3][]{subsubsection.90}{3.1.6 Die Avatare}{subsection.82}% 38
+\BOOKMARK [2][]{subsection.98}{3.2 Anforderungen an die Versuchsumgebung}{section.81}% 39
+\BOOKMARK [3][]{subsubsection.99}{3.2.1 Technik der Versuchsumgebung}{subsection.98}% 40
+\BOOKMARK [3][]{subsubsection.112}{3.2.2 Optik der Versuchsumgebung}{subsection.98}% 41
+\BOOKMARK [3][]{subsubsection.118}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.98}% 42
+\BOOKMARK [2][]{subsection.124}{3.3 Methodik}{section.81}% 43
+\BOOKMARK [3][]{subsubsection.125}{3.3.1 Allgemeines}{subsection.124}% 44
+\BOOKMARK [3][]{subsubsection.138}{3.3.2 Datenerhebungsmethoden}{subsection.124}% 45
+\BOOKMARK [1][]{section.150}{4 Auswertung / Ergebnisse}{}% 46
+\BOOKMARK [2][]{subsection.154}{4.1 Teilnehmer und Demografie}{section.150}% 47
+\BOOKMARK [2][]{subsection.178}{4.2 Analyse Hypothese 1}{section.150}% 48
+\BOOKMARK [2][]{subsection.183}{4.3 Analyse Hypothese 2}{section.150}% 49
+\BOOKMARK [2][]{subsection.186}{4.4 Analyse Hypothese 3}{section.150}% 50
+\BOOKMARK [2][]{subsection.191}{4.5 Analyse Hypothese 4}{section.150}% 51
+\BOOKMARK [2][]{subsection.194}{4.6 Analyse Hypothese 5}{section.150}% 52
+\BOOKMARK [2][]{subsection.200}{4.7 Analyse subjektiver Daten}{section.150}% 53
+\BOOKMARK [1][]{section.237}{5 Analyse}{}% 54
+\BOOKMARK [2][]{subsection.238}{5.1 Analyse der Hypothesen}{section.237}% 55
+\BOOKMARK [2][]{subsection.239}{5.2 Analyse der technischen Anforderungen}{section.237}% 56
+\BOOKMARK [1][]{section.241}{6 TODO}{}% 57
+\BOOKMARK [1][]{section.242}{7 Diskussion}{}% 58
+\BOOKMARK [2][]{subsection.243}{7.1 Diskussion der Ergebnisse}{section.242}% 59
+\BOOKMARK [2][]{subsection.247}{7.2 Limitierungen}{section.242}% 60
+\BOOKMARK [2][]{subsection.249}{7.3 Diskussion der eingesetzten Methoden}{section.242}% 61
+\BOOKMARK [2][]{subsection.250}{7.4 Auswirkungen auf die Gegenwart}{section.242}% 62
+\BOOKMARK [2][]{subsection.251}{7.5 Vorschl\344ge f\374r zuk\374nftige Untersuchungen}{section.242}% 63
+\BOOKMARK [1][]{section.252}{8 Fazit}{}% 64
+\BOOKMARK [1][]{section*.254}{Anhang}{}% 65
+\BOOKMARK [1][]{appendix.255}{A Auswertungsergebnisse}{}% 66
+\BOOKMARK [1][]{appendix.263}{B Demografieauswertung}{}% 67
+\BOOKMARK [1][]{appendix.271}{C Pre-Questionnaire}{}% 68
+\BOOKMARK [1][]{appendix.278}{D Post-Questionnaire - Konditionsabfrage}{}% 69
+\BOOKMARK [1][]{appendix.280}{E Post-Questionnaire - Generelles Vertrauen}{}% 70
+\BOOKMARK [1][]{appendix.285}{F Post-Questionnaire - Kognitives Vertrauen}{}% 71
+\BOOKMARK [1][]{appendix.288}{G Post-Questionnaire - Teamkommunikation}{}% 72
+\BOOKMARK [1][]{appendix.290}{H Post-Questionnaire - Team-Effektivit\344t}{}% 73
+\BOOKMARK [1][]{appendix.292}{I Post-Questionnaire - NASA-TLX}{}% 74
+\BOOKMARK [1][]{appendix.299}{J Post-Questionnaire - IPQ}{}% 75
+\BOOKMARK [1][]{appendix.303}{K Post-Questionnaire - Co-Presence}{}% 76
+\BOOKMARK [1][]{appendix.310}{L Other}{}% 77
