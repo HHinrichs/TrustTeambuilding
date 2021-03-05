@@ -41,7 +41,8 @@
 \usepackage{fancyhdr}
 \usepackage[authoryear]{natbib}
 \usepackage{relsize}
-\usepackage[printonlyused, smaller, footnote]{acronym}
+%\usepackage[printonlyused, smaller, footnote]{acronym}
+\usepackage[printonlyused, smaller]{acronym}
 %\usepackage[printonlyused, withpage, smaller, footnote]{acronym}
 \renewcommand{\\}{\vspace*{0.5\baselineskip} \newline}
 \renewcommand*\MakeUppercase[1]{#1}	
@@ -746,7 +747,7 @@ Auch das soziale Identitätsgefühl hängt davon ab, ob ein generelles Gruppenve
 	
 Ist gute Gruppenzugehörigkeit gegeben, stärkt dies die Gruppenproduktivität sowie die individuelle Leistungsfähigkeit. Weiterhin entstehen dadurch Effekte die zum besserem Zusammenhalt, mehr Vertrauen \citep{herbsleb2000distance}, besserer Kommunikation und Kooperation untereinander führen \citep[p. 510]{olson2003psychological}.
 
-Zum Messen der wahrgenommenen Teameffektivität der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Team-Effectiveness-Scale} \textit{Siehe Tabelle \ref{Post-Questionnaire - Team-Effektivität}} \citep[p.469]{gibson2003team} genutzt. Zum Messen der realen Teameffektivität wird in dieser die Anzahl der abgeschlossenen Runden \ac{tRound} des durchgeführten Experiments genutzt. Schafft ein Team eine Runde, hat dieses eine Teameffektivität von 1, schafft es 10 Runden, hat es eine Teameffektivität von 10.
+Zum Messen der \textit{wahrgenommenen Teameffektivität} der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Team-Effectiveness-Scale} \textit{Siehe Tabelle \ref{Post-Questionnaire - Team-Effektivität}} \citep[p.469]{gibson2003team} genutzt. Zum Messen der \textit{realen Teameffektivität} wird in dieser die Anzahl der abgeschlossenen Runden \ac{tRound} des durchgeführten Experiments genutzt. Schafft ein Team eine Runde, hat dieses eine reale Teameffektivität von 1, schafft es 10 Runden, hat es eine reale Teameffektivität von 10.
 %	
 %		\subsubsection{Teambuilding Komponenten}
 %	\textit{\textbf{HIER NOCHMAL KURZ ERKLÄREN WOZU DIE TEILBEREICHE EIGENTLICH DA}}
@@ -868,8 +869,8 @@ Zum Messen der wahrgenommenen Teameffektivität der einzelnen Individuen, wird i
 %Wie ist es mir nun möglich, eine vermutete Kausalität CT > ROUNDS festzustellen?
 %Die variablen MÜSSEN in IK und NIK aufgeteilt werden, da diese nicht gemeinsam betrachtet werden können. Grund : Der gebildete CT  ist von den Konditionen abhängig. Eine vermischung der CT werte (CTI und CTN) würde die Datenanalyse unzulässig zulässig machen.
 
-%Korrelation IK, NIK -> Fischers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
-%Fischers Z-Transformation : 
+%Korrelation IK, NIK -> Fishers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
+%Fishers Z-Transformation : 
 %https://blogs.gwu.edu/weissba/teaching/calculators/fishers-z-transformation/
 %Nur was habe ich dadurch gewonnen, wenn ich weiss, dass die beiden Korrelationen sich signifikant unterscheiden? Hypothese immernoch nicht bewiesen!
 
@@ -888,7 +889,7 @@ Zum Messen der wahrgenommenen Teameffektivität der einzelnen Individuen, wird i
 %------------------------------------
 
 %Hypothese 4
-%H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
+%H4$_{1}$ : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \\
 
 %T-Test überhaupt zulässig? RoundsDone ist metrisch!
 %Stattdessen Mann-Whitney-U-Test nutzen?
@@ -1047,18 +1048,18 @@ Da ein höheres kognitives Vertrauen in ein \ac{vt}, während der Neugründung i
 \paragraph{Hypothese 3}:
 %NEU NEU NEU!
 %Der Zusammenhang zwischen gebildetem kognitiven Vertrauen und abgeschlossenen Runden ist bei Personen mit der Avatarkondition IK größer als bei denen mit der Avatarkondition NIK.
-%Fischer Z- Transformation !
+%Fisher Z- Transformation !
 %Hier weil F(p) > F(p) gerichtete Korrelationsannahme. Daher mit Signifikanzniveau von 0.1 testen?
 %H0 : Die Korrelationen sind gleich ; H1 : Die Korrelationen unterscheiden sich.
 %
 % VGL : https://www.youtube.com/watch?v=SVuniaJXOoM&ab_channel=drfg2008
-Ein starkes zwischenmenschliches Vertrauen in traditionell geformten Teams beeinflusst die Teameffektivität zum positiven. Daher wird davon ausgegangen, dass dies auch auf \ac{vts} zutrifft. 
+Ein starkes zwischenmenschliches Vertrauen in traditionell geformten Teams beeinflusst die reale Teameffektivität zum positiven. Daher wird davon ausgegangen, dass dies auch auf \ac{vts} zutrifft. 
 %Es wird das kognitive Vertrauen analysiert, da das affektive Vertrauen vernachlässigt werden kann. 
 Je größer das kognitive Vertrauen eines Teams, desto mehr können die einzelnen Teammitglieder ihre Ressourcen in die positiven Aspekte der Teamarbeit einbringen. Es findet eine effektivere Teamarbeit statt. Es werden keine defensiven Haltungen eingenommen, die darauf abzielen könnten, sich vor möglichem Schaden durch andere zu schützen und es kann sich auf die Erreichung des Ziels fokussiert werden. 
 Das gesamte Team wird als Einheit betrachtet, da Gruppenzugehörigkeits und Identifikantionseffekte berücksichtigt werden müssen. Besitzt das Team ein hohes wechselseitiges kognitives Vertrauen, könnte sich dies auf die erfolgreich abgeschlossenen Runden eines Teams auswirken. 
 Es wird die \textbf{Hypothese 3} wie folgt aufgestellt:\\
-\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der Anzahl abgeschlossener Runden von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \newline
-\textbf{H3$_{0}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert nicht mit der Anzahl abgeschlossener Runden von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
+\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der realen Teameffektivität von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \newline
+\textbf{H3$_{0}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert nicht mit der realen Teameffektivität von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
 %
 %Was denke ich denn? Ich denke : 
 %Teams mit der Kondition IK bilden einen höheren Cognitiven Trust Score und schließen dadurch mehr Runden erfolgreich ab als mit der Kondition NIK.
@@ -1067,10 +1068,10 @@ Es wird die \textbf{Hypothese 3} wie folgt aufgestellt:\\
 %Falls sich dieser Effekt bewahrheitet, kann analysiert werden, bei welcher Avatarkondition dieser Effekt stärker auftritt (\textit{Siehe \nameref{Vertrauen und virtuelle Teams}}).
 %Es wird vermutet, dass die Teams mit der Kondition \ac{ik} 
 %
-%Es gibt keinen Signifikanten unterschied in der stärke des Zusammenhangs der CT Werte und anzahl abgeschlossener Runden zwischen den Teams der verschiedenen Konditionen.
+%Es gibt keinen Signifikanten unterschied in der stärke des Zusammenhangs der CT Werte und realen Teameffektivität zwischen den Teams der verschiedenen Konditionen.
 %
-%Korrelation IK, NIK -> Fischers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
-%Fischers Z-Transformation : 
+%Korrelation IK, NIK -> Fishers Z Transformation -> Konfidenzintervalle vergleichen; bei überschneidung nicht signifikanter unterschied
+%Fishers Z-Transformation : 
 %https://blogs.gwu.edu/weissba/teaching/calculators/fishers-z-transformation/
 %H30 Der Zusammenhang des CTs der Teams und der Rounds der Teams unterscheidet sich nicht zwischen den Konditionen IK und NIK.
 %
@@ -1079,7 +1080,7 @@ Es wird die \textbf{Hypothese 3} wie folgt aufgestellt:\\
 %Gibt es unterschiede des CT der einzelen Teams zwischen den Konditionen IK und NIK.
 %
 %Hypothese für zweifaktorieller Varianzanalyse
-%%Es gibt einen Unterschied zwischen Teams mit hohen CT-Score und niedrigem CT-Score bei der anzahl abgeschlossener Runden in Abhängigkeit der Kondition IK und NIK.
+%%Es gibt einen Unterschied zwischen Teams mit hohen CT-Score und niedrigem CT-Score bei der realen Teameffektivität in Abhängigkeit der Kondition IK und NIK.
 %
 %% Der CT der IK Gruppe hängt mit der anzahl der Runden zusammen. Der CT der NIK Gruppe hängt nicht mit der anzahl der Runden zusammen. 
 %% Es gibt ein Unterschied in dem Zusammenhang zwischen dem CT und Anzahl Runden zwischen den Gruppen. Ungerichtete Unterschiedshypothese.
@@ -1114,9 +1115,9 @@ Es wird die \textbf{Hypothese 3} wie folgt aufgestellt:\\
 %%	Es wird davon ausgegangen, dass wenn Personen oder Teams sich untereinander Leistungsfähig oder Zuverlässiger ansehen, dies keinen Einfluss auf die Team-Effektivität hat. 
 %\newpage
 \paragraph{Hypothese 4}:
-Die unterschiedlichen Avatarkonditionen könnten einen Einfluss auf die Anzahl der Abgeschlossenen Runden eines Teams - und somit auf die Teameffektivität - haben (\textit{Siehe \nameref{Teameffektivität}}). Um dies zu untersuchen, wurde \textbf{\textit{Hypothese H4$_{1}$}} aufgestellt :\\
-H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \newline
-H4$_{0}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} nicht voneinander. \\
+Die unterschiedlichen Avatarkonditionen könnten einen Einfluss auf die Anzahl der Abgeschlossenen Runden eines Teams - und somit auf die reale Teameffektivität - haben (\textit{Siehe \nameref{Teameffektivität}}). Um dies zu untersuchen, wurde \textbf{\textit{Hypothese H4$_{1}$}} aufgestellt :\\
+H4$_{1}$ : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \newline
+H4$_{0}$ : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} nicht voneinander. \\
 %%----- ALT
 %	H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.\newline
 %	H4$_{1}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{einen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound}.
@@ -1128,9 +1129,9 @@ H4$_{0}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheid
 %Es wird davon ausgegangen, dass die Team-Effektivität  aufgrund der Menschenähnlichkeit variiert.
 %Es wird davon ausgegangen, dass die Anzahl der abgeschlossenen Runden sich zwischen den beiden Konditionen unterscheidet.
 \paragraph{Hypothese 5}:
-Damit die der Teameffektivität (\textit{Siehe \nameref{Teameffektivität}}) im Zusammenhang mit dem generellen Vertrauen betrachtet werden kann, wurde \textbf{\textit{Hypothese 5}} aufgestellt:\\
-\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der Anzahl abgeschlossener Runden eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \newline
-\textbf{H5$_{0}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert nicht mit der Anzahl abgeschlossener Runden eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
+Damit die reale Teameffektivität (\textit{Siehe \nameref{Teameffektivität}}) im Zusammenhang mit dem generellen Vertrauen betrachtet werden kann, wurde \textbf{\textit{Hypothese 5}} aufgestellt:\\
+\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \newline
+\textbf{H5$_{0}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert nicht mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
 %\textbf{H5$_{1}$} : Es besteht ein Zusammenhang zwischen dem generellen Vertrauenswert (\ac{gt}) eines Teams und der Anzahl der abgeschlossenen Runden eines Teams \ac{tRound}. \\
 %
 %Es wird ein vermutet, dass die Höhe der abgeschlossenen Runden von der Höhe des General-Trust-Scores abhängt.
@@ -1158,7 +1159,7 @@ Damit die der Teameffektivität (\textit{Siehe \nameref{Teameffektivität}}) im 
 %
 %%NEU NEU NEU!
 %%Der Zusammenhang zwischen gebildetem kognitiven Vertrauen und abgeschlossenen Runden ist bei Personen mit der Avatarkondition IK größer als bei denen mit der Avatarkondition NIK.
-%%Fischer Z- Transformation !
+%%Fisher Z- Transformation !
 %%Hier weil F(p) > F(p) gerichtete Korrelationsannahme. Daher mit Signifikanzniveau von 0.1 testen?
 %%H0 : Die Korrelationen sind gleich ; H1 : Die Korrelationen unterscheiden sich.
 %% VGL : https://www.youtube.com/watch?v=SVuniaJXOoM&ab_channel=drfg2008
@@ -1297,7 +1298,7 @@ Die \textit{Abbildung \ref{AvatareImEinsatz}} zeigt beide Avatar Konditionen \ac
 \newpage
 	\subsection{Anforderungen an die Versuchsumgebung}
 \label{TechnischeAnforderungen}
-Das System besitzt einige \textbf{technische Anforderungen} die umgesetzt werden müssen :
+Das System besitzt folgende \textbf{technische Anforderungen} die umgesetzt werden müssen :
 \begin{itemize}
 \item \textbf{Online-Fähigkeit und Unterstützung mehrerer HMD's}: Da die Teilnehmer auch von zu Hause aus an dem Versuch teilnehmen können sollen, muss die gesamte Anwendung mehrere HMD's unterstützen sowie auf sehr vielen verschiedenen Computermodellen zum Einsatz kommen können. Die Gesamte Anwendung muss Online-Fähig sein. Alle relevanten Statuszustände (Runde, Bewegungen und Positionen der Avatare, Rundenzeit, Status des jeweiligen Zustands des Podests eines Spielers etc.) müssen Synchronisiert sein.
 \item \textbf{Geringe Latenz}: Das gesamte System muss Latenzfrei sein um die Bewegungen und Interaktionen der Avatare für die Nutzer nachvollziehbar zu machen.
@@ -1307,17 +1308,17 @@ Das System besitzt einige \textbf{technische Anforderungen} die umgesetzt werden
 \item \textbf{Avatararten}: Es müssen die beiden Avatararten \ac{ik} sowie \ac{nik} im System vorhanden sein.
 \end{itemize}
 
-Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
-
-\begin{itemize}
-\item \textbf{Teamfähigkeit} Das Team muss eine Aufgabe gemeinsam lösen. Jedes Teammitglied muss zu gleichen Teilen involviert sein. Fehlt ein Teammitglied, soll die Aufgabe nicht lösbar sein.
-\item \textbf{Inkrementelle Erhöhung der Schwierigkeit} Um einen Vergleich zwischen der Teameffektivität herzustellen, mussten die Runden inkrementell schwieriger werden. Dies wurde dadurch gelöst, dass die teilnehmenden Personen jede drei Runden ein Symbol mehr gestikulieren  oder erraten mussten.
-\item \textbf{Neutrale Avatare} Die Avatare sollen so neutral wie möglich gestaltet sein. 
-\item \textbf{Vermeidung von Bekanntheit} Um die gegenseitige Bekanntheit  teilnehmenden Personen auszuschließen, wurde jedem Teilnehmer zu beginn des Versuchs ein Zufälliger Name zugeordnet. Vor dem gesamten Versuch konnten sich die teilnehmenden Personen nicht sehen oder hören.
-Können die teilnehmenden Personen sich vor dem Versuch gesehen, würde sich ein Kognitives-Vertrauen oder Kognitives-Misstrauen zu der anderen Person aufbauen. 
-Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauensbildung in der \ac{vr} in Form von schon vorhandenem Affektiven-Vertrauen auf die Ergebnisse aus.
-\item \textbf{Keine verbale Kommunikation} Da die Stimme der teilnehmenden Personen ein Residuum ist, wurde die verbale Kommunikation von Versuchsteilnehmer zu Versuchsteilnehmer nicht gestattet. 
-\end{itemize}
+%Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
+%
+%\begin{itemize}
+%\item \textbf{Teamfähigkeit} Das Team muss eine Aufgabe gemeinsam lösen. Jedes Teammitglied muss zu gleichen Teilen involviert sein. Fehlt ein Teammitglied, soll die Aufgabe nicht lösbar sein.
+%\item \textbf{Inkrementelle Erhöhung der Schwierigkeit} Um einen Vergleich zwischen der realen Teameffektivität und der unterschiedlichen Gruppen herzustellen, mussten die Runden inkrementell schwieriger werden. Dies wurde dadurch gelöst, dass die teilnehmenden Personen jede drei Runden ein Symbol mehr gestikulieren  oder erraten mussten.
+%\item \textbf{Neutrale Avatare} Die Avatare sollen so neutral wie möglich gestaltet sein. 
+%\item \textbf{Vermeidung von Bekanntheit} Um die gegenseitige Bekanntheit  teilnehmenden Personen auszuschließen, wurde jedem Teilnehmer zu beginn des Versuchs ein Zufälliger Name zugeordnet. Vor dem gesamten Versuch konnten sich die teilnehmenden Personen nicht sehen oder hören.
+%Können die teilnehmenden Personen sich vor dem Versuch gesehen, würde sich ein Kognitives-Vertrauen oder Kognitives-Misstrauen zu der anderen Person aufbauen. 
+%Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauensbildung in der \ac{vr} in Form von schon vorhandenem Affektiven-Vertrauen auf die Ergebnisse aus.
+%\item \textbf{Keine verbale Kommunikation} Da die Stimme der teilnehmenden Personen ein Residuum ist, wurde die verbale Kommunikation von Versuchsteilnehmer zu Versuchsteilnehmer nicht gestattet. 
+%\end{itemize}
 
 \subsubsection{Technik der Versuchsumgebung}
 Um den Versuch durchzuführen, wurde ein \ac{sve} entwickelt, in dem sich die 3 Teammitglieder gegenseitig sehen und miteinander interagieren können. 
@@ -1500,23 +1501,25 @@ Alle Clients konnten mit dem Spectator sprechen. Dieser konnte alle Clients hör
 
 \subsubsection{Allgemeines}
 			\paragraph{Induktive Quantitative Forschungsmethodik}
-				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas "Vertrauen" wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet wurden.
+				Anhand der subjektiven Betrachtungsweise einzelner Personen des Themas Vertrauen, wurde ein quantitatives Forschungsdesign gewählt anhand die Ergebnisse induktiv interpretiert und ausgewertet werden.
 			\paragraph{Between-Subject Forschungsdesign}
-Wie groß das gebildete Vertrauen und die dadurch resultierende Teameffektivität ist, soll durch die beiden Avatarkonditionen \ac{ik} sowie \ac{nik} analysiert werden. Da der kognitive Vertrauensaufbau anhand eines inkrementell Schwieriger werdenden Spiels gemessen wird, können die Versuchsteilnehmer nicht mit beiden Avatarkonditionen an dem Versuch teilnehmen. Die teilnehmenden Personen würden bei dem zweiten Durchlauf schon wissen, wie das Spiel funktioniert und der kognitive Vertrauensaufbau sowie die Teameffektivität würden beeinflusst sein. Daher wurde sich für ein Betwee-Subject Forschungsdesign entschieden, bei dem jeder Versuchsteilnehmer nur einmal entweder mit der Kondition \ac{ik} oder \ac{nik} am Versuch teilnimmt.
+Wie groß das gebildete Vertrauen und die dadurch resultierende reale Teameffektivität ist, soll durch die beiden Avatarkonditionen \ac{ik} sowie \ac{nik} analysiert werden. Da der kognitive Vertrauensaufbau und die Teameffektivität anhand eines inkrementell Schwieriger werdenden Spiels gemessen wird, können die Versuchsteilnehmer nicht mit beiden Avatarkonditionen an dem Versuch teilnehmen. Die teilnehmenden Personen würden bei dem zweiten Durchlauf schon wissen, wie das Spiel funktioniert und die Messwerte der kognitive Vertrauensaufbau sowie die reale Teameffektivität beeinflussen. Daher wurde sich für ein Betwee-Subject Forschungsdesign entschieden, bei dem jeder Versuchsteilnehmer nur einmal entweder mit der Kondition \ac{ik} oder \ac{nik} am Versuch teilnimmt.
 			\paragraph{Unabhängige Variablen}
 %Die unabhängigen Variablen sind der \dq{}\ac{ik}-Avatar\dq{} sowie der \dq{}\ac{ik}-Avatar\dq{}. Durch diese beiden Variablen wurde im weiterem Versuchsverlauf versucht den Einfluss auf die abhängigen Variablen zu bestimmen.
-Die Hauptsächlichen unabhängigen Variablen sind die beiden Avatarkonditionen \ac{ik} und \ac{nik}. Es wird versucht, anhand dieser beiden Avatarkonditionen, den Einfluss auf das gebildete kognitive Vertrauen sowie die Teameffektivität zu messen.
+Für die \textbf{Hypothese 1} wurde als unabhängie Variable das \textit{generelle Vertrauen} und als abhängige Variable das \textit{kognitive Vertrauen gewählt.}
+%Für die \textbf{Hypothese 2} wurde als unabhängie Variable die \textit{Avatarkondition} und als abhängige Variable das \textit{kognitive Vertrauen gewählt.}
+%Für die \textbf{Hypothese 3} wurde als unabhängie Variable das \textit{kognitive Vertrauen im Team} und als abhängige Variable die \textit{reale Teameffektivität} gewählt.
+Für die \textbf{Hypothese 4} wurde als unabhängie Variable die \textit{Avatarkondition} und als abhängige Variable die \textit{reale Teameffektivität} gewählt.
+%Für die \textbf{Hypothese 5} wurde als unabhängie Variable das \textit{generelle Vertrauen} und als abhängige Variable die \textit{reale Teameffektivität} gewählt.
 
-	\paragraph{Abhängige Variablen}
+Die abhängigen Variablen werden wie folgt bezeichnet :
 \begin{itemize}
-\item \textbf{Hang zum Vertrauen} Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die teilnehmenden Personen  anderen Personen einen Vertrauensvorschuss gewähren. Der Hang zum Vertrauen wird auch als generelles Vertrauen \ac{gt} bezeichnet\citep[p.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
+\item \textbf{Hang zum Vertrauen} Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die teilnehmenden Personen  anderen Personen einen Vertrauensvorschuss gewähren. Der Hang zum Vertrauen wird auch als \textit{generelles Vertrauen} \ac{gt} bezeichnet\citep[p.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
 \item \textbf{Kognitives Vertrauen} Das kognitive Vertrauen \ac{ct} bezieht sich auf die \textit{Überzeugung in die Fähigkeiten oder in die Zuverlässigkeit eines anderen}. \citep[p.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
-\item \textbf{Team-Effektivität} Die Teameffektivität \ac{tRounds}wird anhand der Anzahl der abgeschlossenen Runden im Team gemessen (\textit{vgl. Kapitel \nameref{Avatare}}).
-\item \textbf{Wahrgenommene Teameffektivität} Die Wahrgenommene Teameffektivität \ac{te} kann von unterschiedlichen Avatarkonditionen beeinflusst werden (\textit{vgl. Kapitel \nameref{Teamwork}}).
-\item \textbf{Presence} Presence  kann durch unterschiedliche Avatarkonditionen beeinflusst werden (\textit{vgl. Kapitel \nameref{Virtual Reality}}).
-\item \textbf{Subjektiv wahrgenommene Arbeitsbelastung \ac{ntlx}} Für unterschiedliche Avatarkonditionen kann die \ac{vr}-Erfahrung unterschiedlich anstrengend sein (\textit{vgl. Kapitel \nameref{Avatare}}).
-\item \textbf{Team-Kommunikation \ac{tc}} Unterschiedliche Avatarkonditionen können einen unterschiedlichen Einfluss auf die Team-Kommunikation besitzen (\textit{vgl. Kapitel \nameref{Avatare}}).
+\item \textbf{Reale Team-Effektivität} Die Teameffektivität \ac{tRound} wird anhand der Anzahl der abgeschlossenen Runden im Team gemessen (\textit{vgl. Kapitel \nameref{Avatare}}).
 \end{itemize}
+
+Ein Unterschied der subjektiven Empfindungsdaten zwischen den folgenden abhängigen Variablen und der unabhängigen Variable der Avatarkondition analysiert : Wahrgenommene Teameffektivität (\ac{te}), Presence (\ac{ipq}), Subjektiv wahrgenommene Arbeitsbelastung (\ac{tlx}), Team-Kommunikation (\ac{tc}) sowie Co-Presence( \ac{cp})
 				
 %	\paragraph{Residuuen}
 %\begin{itemize}
@@ -1526,9 +1529,8 @@ Die Hauptsächlichen unabhängigen Variablen sind die beiden Avatarkonditionen \
 %\end{itemize}				
 
 			\subsubsection{Datenerhebungsmethoden}
-Es wurden zwei Fragenbögen an die teilnehmenden Personen verteilt. Der erste Fragenbogen wurde an die teilnehmenden Personen vor der eigentlichen Studie ausgefüllt. In diesem wurde die Datenschutzerklärung ausgefüllt sowie Fragen über die \dq{}Person\dq{}, über eventuelle \dq{}Gesundheitliche Beschwerden\dq{} sowie schon vorhandene \dq{}\ac{vr}-Erfahrung\dq{}, gestellt. Der Zweite Fragebogen wurde nach der Erfahrung im \ac{sve} ausgefüllt. In diesem wurden Fragen über das \dq{}generelles Vertrauen\dq{}, das \dq{}kognitive Vertrauen\dq{} die \dq{}Kommunikations-Qualität\dq{}, die wahrgenommene \dq{}Team-Effektivität\dq{}, die \dq{}Beanspruchung\dq{} sowie die \dq{}Presence\dq{}, gestellt.
+Es wurden zwei Fragenbögen an die teilnehmenden Personen verteilt. Der erste Fragenbogen wurde an die teilnehmenden Personen vor der eigentlichen Studie ausgefüllt. In diesem wurde die Datenschutzerklärung ausgefüllt sowie Fragen über die \dq{}Person\dq{}, über eventuelle \dq{}Gesundheitliche Beschwerden\dq{} sowie schon vorhandene \dq{}\ac{vr}-Erfahrung\dq{}, gestellt. Der Zweite Fragebogen wurde nach der Erfahrung im \ac{sve} ausgefüllt. In diesem wurden Fragen über das \dq{}generelles Vertrauen\dq{}, das \dq{}kognitive Vertrauen\dq{} die \dq{}Kommunikations-Qualität\dq{}, die wahrgenommene \dq{}Team-Effektivität\dq{}, die \dq{}Beanspruchung\dq{}, die \dq{}Presence\dq{}, sowie der \dq{}Co-Presence\dq{} gestellt.
 Es wurden nur vollständig Ausgefüllte Fragebögen zur Datenanalyse herangezogen.\\
-
 Die Fragen der Likert-Scales wurden als intervallskaliert angenommen, da nur so das subjektive empfinden der einzelnen Testpersonen hinreichend analysiert werden kann.
 				
 		\paragraph{Demografie-Fragebogen}
@@ -1794,7 +1796,7 @@ Ein Auszug des Co-Presence-Questionnaire befindet sich in \textbf{Anhang \ref{Po
 
 
 \clearpage
-\section{Auswertung / Ergebnisse}
+\section{Statistische Auswertung}
 Das folgende Kapitel beschäftigt sich mit der statistischen Analyse. Jede Hypothese besitzt ein eigenes Unterkapitel in der eine auf die Hypothese zugeschnittene Auswertung stattfindet.
 Alle Ergebnisse wurden mit \textit{IBM SPSS Statistics} und \textit{Microsoft Excel} statistisch ausgewertet. 
 Es wurde für alle hier aufgeführten Tests eine Irrtumswahrscheinlichkeit von $\alpha = 0.05$ festgelegt.
@@ -1803,8 +1805,8 @@ Die \textit{Tabelle \ref{VariableBreakdown1} und die Tabelle \ref{VariableBreakd
 
 Die \textit{Tabelle \ref{MittelwerteUndCo}} zeigt eine diskriptive Statistik der Hauptvariablen des Experiments.
 
-\paragraph{Extremwerte}
-Es wurde ein Extremwert bei einer Person mit der Kondition \ac{gti} erkannt. Dieser Extremwert wurde von einer teilnehmenden Person gebildet, die sich in dem Team mit der \textit{geringsten Anzahl} an abgeschlossenen Runden ($\ac{tRound} = 4$) befand. Weiterhin wurde bei dieser Person eine wahrgenommene Teameffektivität von ($\ac{te} = 1$) angegeben. Daher wird der Extremwert als plausibel betrachtet und nicht als Ausreißer definiert.
+%\paragraph{Extremwerte}
+%Es wurde ein Extremwert bei einer Person mit der Kondition \ac{gti} erkannt. Dieser Extremwert wurde von einer teilnehmenden Person gebildet, die sich in dem Team mit der \textit{geringsten Anzahl} an abgeschlossenen Runden ($\ac{tRound} = 4$) befand. Weiterhin wurde bei dieser Person eine wahrgenommene Teameffektivität von ($\ac{te} = 1$) angegeben. Daher wird der Extremwert als plausibel betrachtet und nicht als Ausreißer definiert.
 
 	\subsection{Teilnehmer und Demografie}
 Insgesamt haben 30 Teilnehmer an dem Versuch teilgenommen. Der Mittelwert betrug ($\bar{x}$ = 30,13) und die Standartabweichung ($\sigma$ = 7,44). Somit ergibt sich eine Spannweite von 38 Jahren. 
@@ -1833,49 +1835,60 @@ Mittels einer weiteren Likert-Skala von 1-7 (1 = wenig, 7= sehr viel) wurde dana
 	\centering\footnotesize\setstretch{0.8}
 	\caption{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
 	\label{MittelwerteUndCo}
-	\begin{tabularx}{\textwidth}{p{3cm} | p{3.5cm} p{1.5cm} p{2cm} p{2cm} p{2cm}} 
-		Was wurde gemessen? & Abkürzung & Angegeben Min/Max & Mittelwert & Std. Abweichung & $N$ \\
+	\begin{tabularx}{\textwidth}{p{3cm} | p{3.0cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
+		Was wurde gemessen? & Abkürzung & Min/Max & Erreicht Min/Max & Mittelwert & Std. Abweichung & $N$ \\
 		\hline \\
-		Genereller Hang zum Vertrauen &\ac{gt} & $3.9/5.7$ & $4.665$ & $.3371$ & $30$ \\ \\
-		Kognitives Vertrauen &\ac{ct} & $2.57/5.14$ & $4.357$ & $.6.252$ & $30$ \\ \\
-		Kognitives Vertrauen-IK &\ac{cti} & $2.57/5.00$ & $4.1238$ & $.6719$ & $15$ \\ \\
-		Kognitives Vertrauen-NIK &\ac{ctn} & $3.57/5.14$ & $4.590$ & $.4915$ & $15$ \\ \\
-		Team-Kommunikation &\ac{tcn} & $3/5$ & $4.2467$ & $.61629$ & $30$ \\ \\
-		Team-Kommunikation-IK &\ac{tci} & $3/5$ & $4.0133$ & $.66533$ & $15$ \\ \\
-		Team-Kommunikation-NIK &\ac{tcn} & $3.4/5$ & $4.48$ & $.47689$ & $15$ \\ \\
-		Wahrg.Team-Effektivität &\ac{te} & $2.2/6.6$ & $4.646$ & $.9722$ & $30$ \\ \\
-		Wahrg.Team-Effektivität-IK &\ac{tei} & $2.2/5.8$ & $4.4$ & $1.093$ & $15$ \\ \\
-		Wahrg.Team-Effektivität-NIK &\ac{ten} & $3.4/6.6$ & $4.853$ & $.8192$ & $15$ \\ \\
-		NASA-TLX &\ac{tlx} & $5.17/14$ & $8.6$ & $2.135$ & $30$ \\ \\
-		NASA-TLX-IK &\ac{tlxi} & $5.67/10.67$ & $8.166$ & $1.544$ & $15$ \\ \\
-		NASA-TLX-NIK&\ac{tlxn} & $5.17/14.00$ & $9.033$ & $2.581$ & $15$ \\ \\
-		IPQ & \ac{ipq} & $2.43/5.43$ & $4.216$ & $.6157$ & $30$ \\ \\
-		IPQ-IK & \ac{ipqi} & $2.43/4.93$ & $4.1571$ & $.7015$ & $30$ \\ \\
-		IPQ-NIK & \ac{ipqn} & $3.36/5.43$ & $4.276$ & $.5344$ & $30$ \\ \\
-		Self - Co-Presence &\ac{cp} & $2.5/4.17$ & $2.9722$ & $.3690$ & $30$ \\ \\
-		Self - Co-Presence-IK &\ac{cpi} & $2.5/4.17$ & $3.044$ & $.4733$ & $15$ \\ \\
-		Self - Co-Presence-NIK &\ac{cpn} & $2.5/3.33$ & $2.900$ & $.2163$ & $15$ \\ \\
-		Others - Co-Presence &\ac{cp} & $2.42/4.25$ & $3.055$ & $.3378$ & $30$ \\ \\
-		Others - Co-Presence-IK &\ac{cpi} & $2.42/3.58$ & $2.977$ & $.2928$ & $15$ \\ \\
-		Others - Co-Presence-NIK &\ac{cpn} & $2.83/4.25$ & $3.133$ & $.3710$ & $15$ \\ \\
-		Telepresence &\ac{cp} & $2.0/7.0$ & $5.286$ & $1.042$ & $30$ \\ \\
-		Telepresence-IK &\ac{cpi} & $2.0/7.0$ & $5.213$ & $1.265$ & $15$ \\ \\
-		Telepresence-NIK &\ac{cpn} & $3.4/6.8$ & $5.360$ & $.7971$ & $15$ \\ \\
-		Social Presence &\ac{cp} & $2.86/7.71$ & $4.590$ & $.1.693$ & $30$ \\ \\
-		Social Presence - IK &\ac{cpi} & $2.14/7.43$ & $4.685$ & $1.883$ & $15$ \\ \\
-		Social Presence - NIK &\ac{cpn} & $2.86/7.71$ & $4.495$ & $1.540$ & $15$ \\ \\
-		Anz. abg. Runden &\ac{tRound} & $4/13$ & $9$ & $2.5730$ & $10$ \\ \\
-		Anz. abg. Runden-IK Team &\ac{tRoundIK} & $4/13$ & $9$ & $3.273$ & $5$ \\ \\
-		Anz. abg. Runden-NIK Team &\ac{tRoundNIK} & $7/12$ & $9$ & $1.732$ & $5$ \\ \\	
-		Anz. abg. Runden Team &\ac{tRound} & $4/13$ & $9$ & $2.6667$ & $10$ \\ \\
-		Anz. abg. Runden Team-IK&\ac{tRoundIK} & $4/13$ & $9$ & $3.535$ & $5$ \\ \\
-		Anz. abg. Runden Team-NIK &\ac{tRoundNIK} & $7/12$ & $9$ & $1.870$ & $5$ \\ \\	
-		Kognitives Vertrauen im Team &\ac{teamCog} & $11.71/15.00$ & $13.068$ & $1.1838$ & $10$ \\ \\
-		Kognitives Vertrauen im Team-IK &\ac{teamCogIK} & $11.71/13.29$ & $12.36$ & $.839$ & $5$ \\ \\
-		Kognitives Vertrauen im Team-NIK &\ac{teamCogNIK} & $12.28/15.00$ & $13.76$ & $1.106$ & $5$ \\
-		Generelles Vertrauen im Team &\ac{teamGen} & $13.35/14.60$ & $13.99.53$ & $.3854$ & $10$ \\ \\
-		Generelles Vertrauen im Team-IK &\ac{teamGenIK} & $13.35/14.15$ & $13.74$ & $.3361$ & $5$ \\ \\
-		Generelles Vertrauen im Team-NIK &\ac{teamGenNIK} & $13.35/14.60$ & $14.25$ & $.2423$ & $5$ \\
+		Genereller Hang zum Vertrauen &\ac{gt} & $1/7$ & $3.9/5.7$ & $4.665$ & $.3371$ & $30$ \\ \\
+		Kognitives Vertrauen &\ac{ct} & $1/7$ & $2.57/5.14$ & $4.357$ & $.6.252$ & $30$ \\ \\
+		Kognitives Vertrauen-IK &\ac{cti} & $1/7$ & $2.57/5.00$ & $4.1238$ & $.6719$ & $15$ \\ \\
+		Kognitives Vertrauen-NIK &\ac{ctn} & $1/7$ & $3.57/5.14$ & $4.590$ & $.4915$ & $15$ \\ \\
+		Team-Kommunikation &\ac{tcn} & $1/5$ & $3/5$ & $4.2467$ & $.61629$ & $30$ \\ \\
+		Team-Kommunikation-IK &\ac{tci} & $1/5$ & $3/5$ & $4.0133$ & $.66533$ & $15$ \\ \\
+		Team-Kommunikation-NIK &\ac{tcn} &$1/5$ & $3.4/5$ & $4.48$ & $.47689$ & $15$ \\ \\
+		Wahrg.Team-Effektivität &\ac{te} & $1/7$ & $2.2/6.6$ & $4.646$ & $.9722$ & $30$ \\ \\
+		Wahrg.Team-Effektivität-IK &\ac{tei} & $1/7$ & $2.2/5.8$ & $4.4$ & $1.093$ & $15$ \\ \\
+		Wahrg.Team-Effektivität-NIK &\ac{ten} & $1/7$ & $3.4/6.6$ & $4.853$ & $.8192$ & $15$ \\ \\
+		NASA-TLX &\ac{tlx} & $1/21$ &$5.17/14$ & $8.6$ & $2.135$ & $30$ \\ \\
+		NASA-TLX-IK &\ac{tlxi} & $1/21$ & $5.67/10.67$ & $8.166$ & $1.544$ & $15$ \\ \\
+		NASA-TLX-NIK&\ac{tlxn} & $1/21$ & $5.17/14.00$ & $9.033$ & $2.581$ & $15$ \\ \\
+		IPQ & \ac{ipq} & $1/7$ & $2.43/5.43$ & $4.216$ & $.6157$ & $30$ \\ \\
+		IPQ-IK & \ac{ipqi} & $1/7$ & $2.43/4.93$ & $4.1571$ & $.7015$ & $30$ \\ \\
+		IPQ-NIK & \ac{ipqn} & $1/7$ & $3.36/5.43$ & $4.276$ & $.5344$ & $30$ \\ \\
+		Self - Co-Presence &\ac{cp} & $1/5$ & $2.5/4.17$ & $2.9722$ & $.3690$ & $30$ \\ \\
+		Self - Co-Presence-IK &\ac{cpi} & $1/5$ & $2.5/4.17$ & $3.044$ & $.4733$ & $15$ \\ \\
+		Self - Co-Presence-NIK &\ac{cpn} & $1/5$ & $2.5/3.33$ & $2.900$ & $.2163$ & $15$ \\ \\
+		Others - Co-Presence &\ac{cp} & $1/5$ & $2.42/4.25$ & $3.055$ & $.3378$ & $30$ \\ \\
+		Others - Co-Presence-IK &\ac{cpi} & $1/5$ & $2.42/3.58$ & $2.977$ & $.2928$ & $15$ \\ \\
+		Others - Co-Presence-NIK &\ac{cpn} & $1/5$ & $2.83/4.25$ & $3.133$ & $.3710$ & $15$ \\ \\
+		Telepresence &\ac{cp} & $1/7$ & $2.0/7.0$ & $5.286$ & $1.042$ & $30$ \\ \\
+		Telepresence-IK &\ac{cpi} & $1/7$ & $2.0/7.0$ & $5.213$ & $1.265$ & $15$ \\ \\
+		Telepresence-NIK &\ac{cpn} & $1/7$ & $3.4/6.8$ & $5.360$ & $.7971$ & $15$ \\ \\
+		Social Presence &\ac{cp} & $1/10$ & $2.86/7.71$ & $4.590$ & $1.693$ & $30$ \\ \\
+		Social Presence - IK &\ac{cpi} & $1/10$ & $2.14/7.43$ & $4.685$ & $1.883$ & $15$ \\ \\
+		Social Presence - NIK &\ac{cpn} & $1/10$ & $2.86/7.71$ & $4.495$ & $1.540$ & $15$ \\ \\
+	\end{tabularx}
+\end{table}
+\clearpage
+
+\begin{table}[H]
+	\centering\footnotesize\setstretch{0.8}
+	\caption{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
+	\label{MittelwerteUndCo2}
+	\begin{tabularx}{\textwidth}{p{3cm} | p{3.0cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
+		Was wurde gemessen? & Abkürzung & Min/Max &Angegeben Min/Max & Mittelwert & Std. Abweichung & $N$ \\
+		\hline \\
+		Anz. abg. Runden &\ac{tRound} & &$4/13$ & $9$ & $2.5730$ & $10$ \\ \\
+		Anz. abg. Runden-IK Team &\ac{tRoundIK} & & $4/13$ & $9$ & $3.273$ & $5$ \\ \\
+		Anz. abg. Runden-NIK Team &\ac{tRoundNIK} & & $7/12$ & $9$ & $1.732$ & $5$ \\ \\	
+		Anz. abg. Runden Team &\ac{tRound} & & $4/13$ & $9$ & $2.6667$ & $10$ \\ \\
+		Anz. abg. Runden Team-IK&\ac{tRoundIK} & & $4/13$ & $9$ & $3.535$ & $5$ \\ \\
+		Anz. abg. Runden Team-NIK &\ac{tRoundNIK} & & $7/12$ & $9$ & $1.870$ & $5$ \\ \\	
+		Kognitives Vertrauen im Team &\ac{teamCog} & 3/21 & $11.71/15.00$ & $13.068$ & $1.1838$ & $10$ \\ \\
+		Kognitives Vertrauen im Team-IK &\ac{teamCogIK} & 3/21& $11.71/13.29$ & $12.36$ & $.839$ & $5$ \\ \\
+		Kognitives Vertrauen im Team-NIK &\ac{teamCogNIK} & 3/21& $12.28/15.00$ & $13.76$ & $1.106$ & $5$ \\
+		Generelles Vertrauen im Team &\ac{teamGen} & 3/21& $13.35/14.60$ & $13.99.53$ & $.3854$ & $10$ \\ \\
+		Generelles Vertrauen im Team-IK &\ac{teamGenIK} & 3/21& $13.35/14.15$ & $13.74$ & $.3361$ & $5$ \\ \\
+		Generelles Vertrauen im Team-NIK &\ac{teamGenNIK} & 3/21& $13.35/14.60$ & $14.25$ & $.2423$ & $5$ \\
 	\end{tabularx}
 \end{table}
 \clearpage
@@ -1911,7 +1924,7 @@ Mittels einer weiteren Likert-Skala von 1-7 (1 = wenig, 7= sehr viel) wurde dana
 
 \newpage
 	
-	\subsection{Analyse Hypothese 1}
+	\subsection{Auswertung Hypothese 1}
 H1$_{1}$ : Der erzielte kognitive Vertrauenswert (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.
 
 \paragraph{Allgemeines}
@@ -1921,23 +1934,22 @@ Der \ac{ct} ist laut Shapiro-Wilk-Test mit ($p = .023 < \alpha = 0.05$) \textit{
 %\paragraph{Mittelswerte und Standardabweichungen}
 Der Cognitive-Trust-Score (\ac{cti}) beträgt im Mittel ($\tilde x = 4,1238$) mit einer Standardabweichung von ($\sigma = .67194$).\newline 
 Der Cognitive-Trust-Score (\ac{ctn}) beträgt  im Mittel ($\tilde x = 4,5905$) mit einer Standardabweichung von ($\sigma = .49152$).
-% T TEST ZULÄSSIG, WENN :
-%Die beiden Gruppen bzw. Stichproben müssen unabhängig sein JA
-%Die Variablen müssen intervallskaliert sein NEIN
-%Die Variablen müssen normalverteilt sein JA
-%Die Varianz innerhalb der Gruppen sollte ähnlich sein JA
-%\paragraph{T-Test für unabhängige Stichproben}
-%Der T-Wert für unabhängige Stichproben ist kleiner Null ($T = -1,495 < 0$), was auf einen Mittelwertsunterschied zwischen \ac{cti} und \ac{ctn} hinweist. Der Mittelwert $\bar(x) = 4,328$ der Kondition \ac{ik} ist kleiner als der Mittelwert $\bar(x) = 4,573$ der Kondition \ac{nik}.
-%Der T-Test für unabhängige Stichproben zeigt bei der Differenz des durchschnittlichen \ac{ct} bei der Kondition \ac{ik} ($\bar(x) = 4,328; \sigma = .676$) und \ac{nik} ($\bar(x) = 4,5733; \sigma =.40614$) \textbf{keine Signifikanz} ($t(27) = -1,495; p = .146 > \alpha = 0.05$).
 
 \paragraph{Mann-Whitney-U Test}
 %Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
-Die Verteilungsform der beiden Konditionen unterscheiden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} voneinander. Es gab \textbf{einen signifikanten Unterschied} der Mittelwerte des \ac{ct} zwischen ($\ac{ik} : \tilde x = 4,1238$) und ($\ac{nik} : \tilde x = 4,5905)$, ($U = 62,500 , Z = -2.083, p = .037 < \alpha = 0.05, r =-.3803$).
+Die Verteilungsform der beiden Konditionen unterscheiden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} voneinander. Es gab \textbf{einen signifikanten Unterschied} der Mittelwerte des \ac{ct} zwischen ($\ac{ik} : \tilde x = 4,1238$) und ($\ac{nik} : \tilde x = 4,5905)$, ($U = 62,500 , Z = -2.083, p = .037 < \alpha = 0.05, r =-.3803$). \\
 
-%Somit kann \textit{(Hypothese 2 / H$_{0}$)} nicht verworfen werden.
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png}
+			\caption[Abbildung 1]{Mittelwerte und Standardabweichung der kognitiven Vertrauenswerte. Links die Kondition \ac{ik} und Rechts die Kondition \ac{nik}}
+			\label{H1_Mittelwerte}
+		\end{footnotesize}
+	\end{figure}
 \newpage
 
-\subsection{Analyse Hypothese 2}
+\subsection{Auswertung Hypothese 2}
 %H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cognitive-Trust-Score einer Person (\ac{ct}) nicht.
 H2$_{1}$ : Es besteht ein Zusammenhang zwischen dem erzieltem generellen Vertrauenswert \ac{gt} einer Person und dem erzielten kognitiven Vertrauenswert \ac{ct} einer Person.
 
@@ -1962,7 +1974,20 @@ Das Lowess-Verfahren deutet Augenscheinlich auf keinen linearen Zusammenhang zwi
 Es ist eine positive Korrelation starken Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .441$) zwischen \textbf{\ac{gti} und \ac{cti}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .100 > \alpha = 0.05$).\\
 Es ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .378$) zwischen \textbf{\ac{gtn} und \ac{ctn}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .165 > \alpha = 0.05$).
 
-%Hier nun eventuell noch Fischers-Z-Transformation?
+\paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
+Es wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt.
+Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige Stichproben ($Z=.186$) \textbf{nicht signifikant} voneinander ($p = .426 > \alpha = 0.05$).
+
+
+\begin{figure}[h]
+  \centering
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/H_2_KorrIK.png}}
+  \qquad
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png}}
+  \caption{Korrelationen der generellen Vertrauenswerte mit den kognitiven Vertrauenswerten. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}}
+  \label{AvatareImEinsatz}
+\end{figure}
+%Hier nun eventuell noch Fishers-Z-Transformation?
 
 %Laut Pagan-Breusch liegt homoskedastizität vor.
 %Jedoch durch das augenscheinliche lowess verfahren liegt keine linearität vor..
@@ -2009,11 +2034,11 @@ Es ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statist
 %Aufgrund der Zunahme des \ac{ct} durch den \ac{gt} lässt sich \textit{Hypothese 1 / H$_{0}$} zum Signifikanzniveau $\alpha = 0.05$ verwerfen.
 
 \newpage
-\subsection{Analyse Hypothese 3}
-\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der Anzahl abgeschlossener Runden von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}.
+\subsection{Auswertung Hypothese 3}
+\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der realen Teameffektivität von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}.
 %NEU NEU NEU!
 %Der Zusammenhang zwischen gebildetem kognitiven Vertrauen und abgeschlossenen Runden ist bei Personen mit der Avatarkondition IK größer als bei denen mit der Avatarkondition NIK.
-%Fischer Z- Transformation !
+%Fisher Z- Transformation !
 %Hier weil F(p) > F(p) gerichtete Korrelationsannahme. Daher mit Signifikanzniveau von 0.1 testen?
 %H0 : Die Korrelationen sind gleich ; H1 : Die Korrelationen unterscheiden sich.
 %
@@ -2027,7 +2052,7 @@ Es ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statist
 %Es wird der Zusammenhang zwischen \ac{cti} und \ac{tRoundIK} sowie \ac{ctn} und \ac{tRoundNIK} auf Teamebene analysiert.
 Während jedem Versuchsdurchlauf sieht jedes der 3 Teammitglieder die gleiche Avatarkondition. Da die 3 Teammitglieder des Teams die gleiche Anzahl an Runden abgeschlossen haben, besitzen diese die gleiche Teameffektivität. Die Anzahl der abgeschlossenen Runden pro Team und pro Kondition wurde zu jeweils einer Variable für jedes Team zusammengefasst : \ac{tRoundIK} sowie \ac{tRoundNIK}. Für jedes Team wird eine gemeinsamer kognitiver Vertrauenswert berechnet. Dieser sagt aus, wie viel kognitives Vertrauen das gesamte Team untereinander besitzt. Dieser kognitive Vertrauenswert ergibt sich aus der Summe der kognitiven Vertrauenswerte der einzelnen Personen eines Teams. Die kognitiven Vertrauenswerte der Teams der unterschiedlichen Konditionen werden zu den Variablen \ac{teamCogIK} sowie \ac{teamCogNIK} für jedes Team zusammengefasst. Eine Übersicht dieser definierten Werte befindet sich auf \textbf{Tabelle \ref{TeamCogTabelle}})
 
-Es wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} auf textit{Teamebene} durchgeführt, wobei die Teams in verschiedenen Konditionen aufgeteilt werden. Damit anschließend überprüft werden kann, ob sich die beide Korrelationen signifikant voneinander unterscheiden, wird eine Fischer-Z-Transformation für unabhängige Stichproben durchgeführt.\\
+Es wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} auf textit{Teamebene} durchgeführt, wobei die Teams in verschiedenen Konditionen aufgeteilt werden. Damit anschließend überprüft werden kann, ob sich die beide Korrelationen signifikant voneinander unterscheiden, wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt.\\
 %Somit müssen die kognitiven Vertrauenswerte nicht winsorisiert werden. 
 %Alle Ergebnisse werden in \ac{ik} und \ac{nik} aufgeteilt um ein Vergleich der verschiedenen Konditionen darzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
 %
@@ -2043,9 +2068,9 @@ Aufgrund der geringen Stichprobenumfangs ($\ac{teamCogIK}, \ac{teamCogNIK} : N=5
 Es ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = -.205$) zwischen \textbf{\ac{teamCogIK} und \ac{tRoundIK}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .741 > \alpha = 0.05$).\\
 Weiterhin ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .462$) zwischen \textbf{\ac{teamCogNIK} und \ac{tRoundNIK}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .434 > \alpha = 0.05$).
 
-\paragraph{Fischer-Z-Transformation für unabhängige Stichproben}
-Es wird eine Fischer-Z-Transformation für unabhängige Stichproben durchgeführt, obwohl die Stichprobe mit ($N=5$) sehr klein ist.
-Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängige Stichproben ($Z=-0.708$) \textbf{nicht signifikant} voneinander ($p = .24 > \alpha = 0.05$).
+\paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
+Es wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt, obwohl die Stichprobe mit ($N=5$) sehr klein ist.
+Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige Stichproben ($Z=-0.708$) \textbf{nicht signifikant} voneinander ($p = .24 > \alpha = 0.05$).
 %
 %\paragraph{Normalverteilung}
 %Laut Kolmogoroff-Smirnoff-Test sind sowohl die Summe der individuellen kognitiven Vertrauenswerte des Teams (\ac{teamCogIK} $p = .149 > \alpha = 0.05$), (\ac{teamCogNIK} $p = .109 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams (\ac{tRoundIK} $p = .200 > \alpha = 0.05$), (\ac{tRoundNIK} $p = .161 > \alpha = 0.05$) Normalverteilt.
@@ -2105,7 +2130,7 @@ Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängig
 		\hline 
 		19 & $5,14$ & 2 & 12 & Team 7 & $14,71$ \\
 		20 & $4,71$ & 2 & 12 & & \\
-		21 & $34,86$ & 2 & 12 & & \\
+		21 & $4,86$ & 2 & 12 & & \\
 		\hline 
 		22 & $4,57$ & 2 & 8 & Team 8 & $12,28$ \\
 		23 & $4,00$ & 2 & 8 & & \\
@@ -2152,7 +2177,7 @@ Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängig
 %\paragraph{Hypothese 3a : Analyse ohne die Aufteilung in \ac{ik} und \ac{nik} }
 %Da die Stichprobe mit lediglich 5 Teams pro Kondition bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse zwischen \ac{teamCogIK} und \ac{tRoundIK} sowie \ac{teamCogNIK} und \ac{tRoundNIK} zu klein ist, wurde zusätzlich eine Spearman-Korrelationsanalyse sowie Einfache lineare-Regressionsanalyse \textit{ohne} die Aufteilung in die Konditionen \ac{ik} und \ac{nik} durchgeführt und somit folgende Hypothese aufgestellt :
 %
-%H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score des Teams, hat \textbf{keinen Einfluss} auf die Anzahl abgeschlossener Runden im Team (\ac{tRound}).
+%H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score des Teams, hat \textbf{keinen Einfluss} auf die realen Teameffektivität im Team (\ac{tRound}).
 %
 %Laut Kolmogoroff-Smirnoff-Test sind, ohne die Aufteilung in die Konditionen \ac{ik} und \ac{nik}, sowohl die Summe der individuellen kognitiven Vertrauenswerte des Teams \ac{teamCog} ($p = .200 > \alpha = 0.05$) sowie der Anzahl der erfolgreich abgeschlossenen Runden der Teams \ac{tRound} ($p = .200 > \alpha = 0.05$) Normalverteilt.
 %
@@ -2174,16 +2199,16 @@ Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängig
 %
 %\textit{(Hypothese 3 / H$_{0}$)} lässt sich zum Signifikanzniveau ($\alpha = 0.05$)  nicht verwerfen.
 \newpage
-	\subsection{Analyse Hypothese 4}
-H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.
+	\subsection{Auswertung Hypothese 4}
+H4$_{1}$ : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.
 
 \paragraph{Allgemeines}
 
 Es wird auf \textit{Konditionsebene} analysiert, ob die teilnehmenden Personen aufgrund der unterschiedlichen Avatarkonditionen eine unterschiedliche Teameffektivität besitzen.\\
-Die Anzahl abgeschlossener Runden \ac{tRound} ist laut Shapiro-Wilk-Test ($p = .113 > \alpha = 0.05$) normalverteit.\\
+Die reale Teameffektivität \ac{tRound} ist laut Shapiro-Wilk-Test ($p = .113 > \alpha = 0.05$) normalverteit.\\
 Es wurde auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine keine Varianzgleichheit zwischen \ac{tRoundIK} und \ac{tRoundNIK} ($L = 10,182; p=.003 < \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Varianzen sich \textbf{signifikant} voneinander unterscheiden. Es wird ein Mann-Whitney-U Test durchgeführt. \\
-Die Anzahl abgeschlossener Runden (\ac{tRoundIK}) beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 9,0000$) mit einer Standardabweichung von ($\sigma = 3,2732$).\newline 
-Die Anzahl abgeschlossener Runden(\ac{tRoundNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 9,000$) mit einer Standardabweichung von ($\sigma = 1,7320$).
+Die reale Teameffektivität (\ac{tRoundIK}) beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 9,0000$) mit einer Standardabweichung von ($\sigma = 3,2732$).\newline 
+Die reale Teameffektivität(\ac{tRoundNIK}) beträgt der Kondition \ac{nik} im Mittel ($\tilde x = 9,000$) mit einer Standardabweichung von ($\sigma = 1,7320$).
 
 %Aufgrund der Varianzgleichheit hier doch ein Mann-Whitney-U-Test?
 %\paragraph{T-Test für unabhängige Stichproben}
@@ -2191,7 +2216,16 @@ Die Anzahl abgeschlossener Runden(\ac{tRoundNIK}) beträgt der Kondition \ac{nik
 %Der T-Test für unabhängige Stichproben ergibt bei der Analyse der Differenz des durchschnittlichen \ac{tRound} bei der Kondition \ac{ik} ($\bar(x) = 9,000; \sigma =  3,2732$) und \ac{nik} ($\bar(x) = 9,000; \sigma = 1,7320$) \textbf{keine Signifikanz} ($t(21,270) = .00; p = 1.000 > \alpha = 0.05$).
 
 \paragraph{Mann-Whitney-U-Test}
-Die Verteilungen der beiden Gruppen \ac{tRoundIndIK} und \ac{tRoundIndNIK} unterschieden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} von einander. Es gab keinen signifikanten Unterschied der Mittelwerte des \ac{tRoundInd} zwischen ($\ac{tRoundIndIK} : \tilde x = 9$) und ($\ac{tRoundIndNIK} : \tilde x = 9)$, ($U = 103,500, Z = -.377, p = .706 > \alpha = 0.05, r = -,0602$).
+Die Verteilungen der beiden Gruppen \ac{tRoundIndIK} und \ac{tRoundIndNIK} unterschieden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} von einander. Es gab keinen signifikanten Unterschied der Mittelwerte des \ac{tRoundInd} zwischen ($\ac{tRoundIndIK} : \tilde x = 9$) und ($\ac{tRoundIndNIK} : \tilde x = 9)$, ($U = 103,500, Z = -.377, p = .706 > \alpha = 0.05, r = -,0602$). \\
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png}	
+			\caption[Abbildung 1]{Mittelwerte und Standardabweichung der Teameffektivität. Links die Kondition \ac{ik} und Rechts die Kondition \ac{nik}}
+			\label{H1_Mittelwerte}
+		\end{footnotesize}
+	\end{figure}
 
 %\paragraph{Mann-Whitney-U Test}
 %%Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
@@ -2236,7 +2270,7 @@ Die Verteilungen der beiden Gruppen \ac{tRoundIndIK} und \ac{tRoundIndNIK} unter
 %Es wurde zusätzlich durch den Mann-Whitney-U-Test überprüft, ob sich \ac{tRound} nach Konditionen \ac{ik} oder \ac{nik} unterscheidet. Die Verteilungen der beiden Gruppen \ac{tRoundIK} und \ac{tRoundNIK} unterschieden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} von einander. Es gab keinen signifikanten Unterschied der Mediane des \ac{tRound} zwischen ($\ac{tRoundIK} : \tilde x = 10$) und ($\ac{tRoundNIK} : \tilde x = 9)$, ($U = 103,500, Z = -.377, p = .734 > \alpha = 0.05, r = -0,068$).
 
 \newpage
-	\subsection{Analyse Hypothese 5}
+	\subsection{Auswertung Hypothese 5}
 % Die Grundgesamtheut Gt auf linearität und normalvertielung überprüfen
 % Die tRoundsIK auf normalvertielung und linearität überpürfen
 % Die tRoundsNIK auf normalverteilung und linearität überprüfen
@@ -2252,14 +2286,14 @@ Die Verteilungen der beiden Gruppen \ac{tRoundIndIK} und \ac{tRoundIndNIK} unter
 % Der generelle Trust Score v  der generelle trust score von teams korreliert mit der anzahl abgerschlossener runden von teams mit der kondition ik stärker als der generelle trust score von teams ohne die kondition ik.
 %Je höher der Hang zum Vertrauen der Personen im Team, desto höher ist die Anzahl der abgeschlossenen Runden des Teams.
 
-\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der Anzahl abgeschlossener Runden eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
+\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
 
-%Besitzt nun Korr. A eine signifikanz und Korr B. nicht, weiss ich, dass die Kondition einen Einfluss auf die anz. abg. Runden besitzt. (Trotzdem sollte ich Fischers-Z-Transformation machen.
-%Besitzt nun Korr. A eine signifikanz und Korr B. auch, kann ich schauen, ob diese sich signifikant unterscheiden. (Ich MUSS eine Fischer-Z-Transformation machen)
-%Besitzt nun Korr. A keine signifikanz und Korr B. auch nicht, hat der generelle Trust Score keine Auswirkung auf die anz. abgeschlossenen Runden und es ist egal welche Kondition ich laut dieser Hypothese nehme. ( Ich müsste keine Fischer-Z-Transformation machen)
+%Besitzt nun Korr. A eine signifikanz und Korr B. nicht, weiss ich, dass die Kondition einen Einfluss auf die anz. abg. Runden besitzt. (Trotzdem sollte ich Fishers-Z-Transformation machen.
+%Besitzt nun Korr. A eine signifikanz und Korr B. auch, kann ich schauen, ob diese sich signifikant unterscheiden. (Ich MUSS eine Fisher-Z-Transformation machen)
+%Besitzt nun Korr. A keine signifikanz und Korr B. auch nicht, hat der generelle Trust Score keine Auswirkung auf die anz. abgeschlossenen Runden und es ist egal welche Kondition ich laut dieser Hypothese nehme. ( Ich müsste keine Fisher-Z-Transformation machen)
 Um die Hypothese 5 wird auf \textit{Teamebene} analysiert. Dazu wird eine Tabelle (siehe \textbf{Tabelle \ref{TeamGenTabelle}}) aufgestellt, die den generellen Vertrauenswerte \ac{gt} der 3 Personen eines Versuchsdurchlauf zu einem generellen Vertrauenswert des Teams zusammenfasst. Diese Summe des generellen Vertrauenswert eines Teams wird im weiterem Verlauf \ac{teamGen} genannt.
 Jedes der 3 Teammitglieder des Teams hat die gleiche Anzahl an Runden abgeschlossen. Daher besitzt diese 3 Teammitglieder als Team die gleiche Teameffektivität. Die Anzahl der abgeschlossenen Runden pro Team und pro Kondition wurde zu jeweils einer Variable für jedes Team zusammengefasst : \ac{tRoundIK} sowie \ac{tRoundNIK}.
-Es wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} durchgeführt. Damit überprüft werden kann, ob sich die beide Korrelationen signifikant voneinander unterscheiden, wird eine Fischer-Z-Transformation für unabhängige Stichproben duchgeführt.\\
+Es wird eine Spearman-Korrelation zwischen \ac{tRound} und \ac{teamGen} durchgeführt. Damit überprüft werden kann, ob sich die beide Korrelationen signifikant voneinander unterscheiden, wird eine Fisher-Z-Transformation für unabhängige Stichproben duchgeführt.\\
 %Darauffolgend wird auf Konditionsebene eine Korrelation durchgeführt um die Stichprobengröße zu vergrößern. Es folgt eine Einfache lineare-Regressionsanalyse zwischen \ac{tRound} und \ac{teamGen} um eine eventuelle Vorhersage des Zusammenhangs festzustellen. Kondition 1 definiert die Kondition \ac{ik} und Kondition 2 definiert die Kondition \ac{nik}.
 %
 %Um die Hypothese 5 auszuwerten, wird eine Tabelle aufgestellt, die die individuellen generellen Vertrauenswerte  der Personen zu einem generellen Vertrauenswert des Teams zusammenfasst. Die durch die Tabelle erstellte Variable der Summe der individuellen generellen Vertrauenswerte wird im weiterem Verlauf \ac{teamGen} genannt.
@@ -2278,9 +2312,9 @@ Aufgrund der geringen Stichprobenumfangs ($tGenIK, tGenNIK : N=5$) und der nicht
 Es ist eine positive Korrelation schwachen Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .200$) zwischen \textbf{\ac{teamGenIK} und \ac{tRoundIK}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .747 > \alpha = 0.05$).\\
 Weiterhin ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .359$) zwischen \textbf{\ac{teamGenNIK} und \ac{tRoundNIK}} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .553 > \alpha = 0.05$).
 
-\paragraph{Fischer-Z-Transformation für unabhängige Stichproben}
-Es wird eine Fischer-Z-Transformation für unabhängige Stichproben durchgeführt, obwohl die Stichprobe mit ($N=5$) sehr klein ist.
-Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängige Stichproben ($Z=-.173$) \textbf{nicht signifikant} voneinander ($p = .431 > \alpha = 0.05$).
+\paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
+Es wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt, obwohl die Stichprobe mit ($N=5$) sehr klein ist.
+Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige Stichproben ($Z=-.173$) \textbf{nicht signifikant} voneinander ($p = .431 > \alpha = 0.05$).
 
 \begin{table}[H]
 	\centering\footnotesize\setstretch{1.2}
@@ -2548,7 +2582,7 @@ Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängig
 %		
 %		\hline 
 			
-		Fischers-Z-Transformation für unabh. Stichp.
+		Fishers-Z-Transformation für unabh. Stichp.
 		&
 %		& $R^{2}=.205$\newline$\beta=.452$\newline$t(28)=2,684$\newline$p=.012<\alpha=0.05$
 		&  
@@ -2638,7 +2672,7 @@ Die beiden Korrelationen unterscheiden sich laut Fischer-Z-Wert für unabhängig
 %		
 %		\hline 
 			
-		Fischers-Z-Transformation für unabh. Stichp.
+		Fishers-Z-Transformation für unabh. Stichp.
 		&
 %		& $R^{2}=.205$\newline$\beta=.452$\newline$t(28)=2,684$\newline$p=.012<\alpha=0.05$
 		&  $\underline{r=.200; N=5}$ und $\underline{r=.359; N=5} :$\newline
@@ -2821,48 +2855,159 @@ In der folgenden Tabelle wird beschrieben, ob die einzelnen Hypothesen Signifika
 %Jedoch wurde ein größeres Gefühl von Zusammenheit festgestellt, wenn mit einem Menschenähnlichem Avatar interagiert wurde. \citep{kerr1983motivation}
 %Dies auch evenntl überprüfen?
 \newpage
-\subsection{Analyse subjektiver Daten}
+\subsection{Auswertung subjektiver Daten}
 Im folgenden Werden die subjektiven Fragebögen im Bezug auf die beiden Avatarkonditionen ausgewertet.
 
+Die subjektiven Daten wurden auf Extremwerte überprüft. Jedoch lassen sich diese Extremwerte nicht pauschal als Ausreißer klassifizieren. Dies geht aus den jeweiligen Feedback der Nutzer hervor, sowie dem Vergleich anderer angegebener Werte der unterschiedlichen Fragebögen. Der milde Extremwert der \textit{Presence}, der \textit{Selbst wahrgenommenen Co-Presence}, der \textit{Wahrgenommenen Co-Presence des \dq{}anderen\dq{}}, sowie der \textit{Telepresence} werden als plausibel eingestuft.
+Der starke Extremwert (ID9) der \textit{Selbst wahrgenommenen Co-Presence} schrieb als Feedback \dq{}\textit{Es war eine spannende Erfahrung am VR-Experiment teilzunehmen und hat Spaß gemacht. Die Personen waren mir nah, obwohl sie eindeutig unreal wirkten}\dq{}, weshalb dieser starke Extremwert als plausibel eingestuft wird und nicht verworfen werden kann.
+Der starke Extremwert (ID25) der \textit{Wahrgenommenen Co-Presence des anderen} wird ebenfalls als plausibel eingestuft. Dieser erzielt in der \dq{}Social-Presence\dq{} sowie der \dq{}Telepresence\dq{} ebenfalls überdurchschnittlich hohe Werte. Daher wird auch dieser als Plausibel eingestuft und kann nicht verworfen werden.
+
 \paragraph{Presence}
-Die \acf{ipq} ist laut Shapiro-Wilk-Test mit ($p = .059 > \alpha = 0.05$) normalverteit. 
-Die \ac{ipqi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,369$) mit einer Standardabweichung von ($\sigma = 1,079$).
-Die \ac{ipqn} beträgt bei Kondition \ac{nik} im Mittel ($\tilde x = 4,497$) mit einer Standardabweichung von ($\sigma = .910$).
-Der T-Test für unabhängige Stichproben zeigt \textbf{keine Signifikante} Differenz der Mittelwerte  ($t(28) = -.349; p = ,730 > \alpha = 0.05$).
+Die \acf{ipq} ist laut Shapiro-Wilk-Test mit ($p = .150 > \alpha = 0.05$) normalverteit. 
+Die \ac{ipqi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4.1571$) mit einer Standardabweichung von ($\sigma = .70152$).
+Die \ac{ipqn} beträgt bei Kondition \ac{nik} im Mittel ($\tilde x = 4.2762$) mit einer Standardabweichung von ($\sigma = .53443$).
+Der T-Test für unabhängige Stichproben zeigt \textbf{keine signifikanten Unterschiede} der Mittelwerte  ($t(28) = -.523; p = .606 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_Presence.png}
+			\caption[Abbildung 1]{Boxplot der Wahrgenommenen Presence}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{Selbst wahrgenommene Co-Präsenz}
 Die \acf{scp} ist laut Shapiro-Wilk-Test mit ($p = .001 < \alpha = 0.05$) nicht normalverteit.
-Die \ac{scpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 3,044$) mit einer Standardabweichung von ($\sigma = .4733$).\newline 
-Der \ac{scpn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 2,9000$) mit einer Standardabweichung von ($\sigma = .21639$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.595, p = .552 > \alpha = 0.05$).
+Die \ac{scpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 3.044$) mit einer Standardabweichung von ($\sigma = .4733$).\newline 
+Der \ac{scpn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 2.9000$) mit einer Standardabweichung von ($\sigma = .21639$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.595;. p = .552 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png}
+			\caption[Abbildung 1]{Boxplot der selbst wahrgenommenen Co-Presence}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{Wahrgenommene Co-Präsenz des anderen}
 Die \acf{ocp} ist laut Shapiro-Wilk-Test mit ($p = .001 < \alpha = 0.05$) nicht normalverteit.
-Die \ac{ocpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 2,977$) mit einer Standardabweichung von ($\sigma = .2928$).
-Der \ac{ocpn} beträgt beider Kondition \ac{nik} im Mittel ($\tilde x =3,1333$) mit einer Standardabweichung von ($\sigma =.37108$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -1,092 , p = .275 > \alpha = 0.05$).
+Die \ac{ocpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 2.977$) mit einer Standardabweichung von ($\sigma = .2928$).
+Der \ac{ocpn} beträgt beider Kondition \ac{nik} im Mittel ($\tilde x =3.1333$) mit einer Standardabweichung von ($\sigma =.37108$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -1.092; p = .275 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png}
+			\caption[Abbildung 1]{Boxplot der wahrgenommenen Co-Presence der \dq{}anderen\dq{}}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{Telepresence} 
 Die \acf{tp} ist laut Shapiro-Wilk-Test mit ($p = .024 < \alpha = 0.05$) nicht normalverteit. 
-Die \ac{tpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 5,2133$) mit einer Standardabweichung von ($\sigma = 1,265$).
-Der \ac{tpn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 5,3600$) mit einer Standardabweichung von ($\sigma = .79714$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.021 , p = .983 > \alpha = 0.05$).
+Die \ac{tpi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 5.2133$) mit einer Standardabweichung von ($\sigma = 1.2659$).
+Der \ac{tpn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 5.3600$) mit einer Standardabweichung von ($\sigma = .7971$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.021; p = .983 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_Telepresence.png}
+			\caption[Abbildung 1]{Boxplot der wahrgenommenen Telepresence}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
+
 \paragraph{Social-Presence} 
 Die \acf{sp} ist laut Kolmogoroff-Smirnov-Test mit ($p = .031 < \alpha = 0.05$) nicht normalverteit. 
-Die \ac{spi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,685$) mit einer Standardabweichung von ($\sigma = 1,883$).
-Der \ac{spn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 4,4952$) mit einer Standardabweichung von ($\sigma = 1,54039$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.062 , p = .950 > \alpha = 0.05$).
+Die \ac{spi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4.685$) mit einer Standardabweichung von ($\sigma = 1.883$).
+Der \ac{spn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 4.4952$) mit einer Standardabweichung von ($\sigma = 1.54039$). Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.062; p = .950 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_SocialPresence.png}
+			\caption[Abbildung 1]{Boxplot der wahrgenommenen Social-Presence}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{NASA-TLX \dq{}Anstrengungsmaß\dq{}} 
-Der \acf{tlx} ist laut Kolmogoroff-Smirnov-Test mit ($p = .171 > \alpha = 0.05$) normalverteit. 
-Der \ac{tlxi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 6,840$) mit einer Standardabweichung von ($\sigma = 2,593$).
-Der \ac{tlxn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 7,4800$) mit einer Standardabweichung von ($\sigma = 3,10925$). Der T-Test für unabhängige Stichproben zeigt \textbf{keine Signifikanten Unterschied} der Mittelwerte ($t(28) = -,612; p = .545 > \alpha = 0.05$).
+Der \acf{tlx} ist laut Kolmogoroff-Smirnov-Test mit ($p = .337 > \alpha = 0.05$) normalverteit. 
+Der \ac{tlxi} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 8.1667$) mit einer Standardabweichung von ($\sigma = 1.5443$).
+Der \ac{tlxn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 9.033$) mit einer Standardabweichung von ($\sigma = 2.5813$). Der T-Test für unabhängige Stichproben zeigt \textbf{keine Signifikanten Unterschied} der Mittelwerte ($t(28) = -1.116; p = .276 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_Anstrengungsmaß.png}
+			\caption[Abbildung 1]{Boxplot des Anstrengungsmaßes}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{Team-Kommunikation} 
 Die \acf{tc} ist laut Kolmogoroff-Smirnov-Test mit ($p = .018 < \alpha = 0.05$) nicht normalverteit. 
-Die \ac{tci} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,013$) mit einer Standardabweichung von ($\sigma = .6653$).
-Der \ac{tcn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 4,4800$) mit einer Standardabweichung von ($\sigma = .47689$). Laut Mann-Whitney-U-Test gab es einen \textbf{signifikanten Unterschied} der Mittelwerte ($ Z = -2,062 , p = .039 < \alpha = 0.05*$).
+Die \ac{tci} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4.0133$) mit einer Standardabweichung von ($\sigma = .6653$).
+Der \ac{tcn} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 4.48$) mit einer Standardabweichung von ($\sigma = .47689$). Laut Mann-Whitney-U-Test gab es einen \textbf{signifikanten Unterschied} der Mittelwerte ($ Z = -2.062; p = .039 < \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.png}
+			\caption[Abbildung 1]{Boxplot der wahrgenommenen Teamkommunikation}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/TC_Mittelwerte.png}
+			\caption[Abbildung 1]{Mittelwerte und Standardabweichung der kognitiven Vertrauenswerte. Links die Kondition \ac{ik} und Rechts die Kondition \ac{nik}}
+			\label{H1_Mittelwerte}
+		\end{footnotesize}
+	\end{figure}
+\newpage
 
 \paragraph{Wahrgenommene Team-Effektivität}
-Die \acf{te} ist laut Kolmogoroff-Smirnov-Test mit ($p = .011 < \alpha = 0.05$) nicht normalverteit. 
-Die \ac{tei} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4,600$) mit einer Standardabweichung von ($\sigma = 1,638$).
-Die \ac{ten} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 5,3167$) mit einer Standardabweichung von ($\sigma = 1,04994$). Laut Mann-Whitney-U-Test gab es einen \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -1,291 , p = .197 > \alpha = 0.05$).
+Die \acf{te} ist laut Kolmogoroff-Smirnov-Test mit ($p = .065 < \alpha = 0.05$) normalverteit. 
+Die \ac{tei} beträgt bei Kondition \ac{ik} im Mittel ($\tilde x = 4.440$) mit einer Standardabweichung von ($\sigma = 1.0933$).
+Die \ac{ten} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 4.8533$) mit einer Standardabweichung von ($\sigma = .81929$). Laut Mann-Whitney-U-Test gab es einen \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -1.172; p = .251 > \alpha = 0.05$).
+
+	\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/BP_Teameffektivität.png}
+			\caption[Abbildung 1]{Boxplot der wahrgenommenen Teameffektivität}
+			\label{BP_Presence}
+		\end{footnotesize}
+	\end{figure}
+
+\paragraph{Weitere Analysen}
+Es ist eine positive Korrelation starken Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .729$) zwischen \textbf{\ac{ctn} und \ac{ten}} auf Konditionsebene zu erkennen. Die Spearman-Korrelation ist \textbf{signifikant} ($p = .002 < \alpha = 0.05$). Siehe \textbf{\textit{Abbildung \ref{SubSig1}}}\\
+
+\begin{figure}[h]
+  \centering
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png}}
+  \qquad
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png}}
+  \caption{Spearman-Korrelationen der kognitiven Vertrauenswerte auf Konditionslevel mit der subjektiven Teameffektivität. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}}
+  \label{SubSig1}
+\end{figure}
+
+Weiterhin ist eine positive Korrelation starken Effektes (vgl. \cite{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient ($r = .532$) zwischen \textbf{\ac{ctn} und \ac{tcn}} auf Konditionsebene zu erkennen. Die Spearman-Korrelation ist \textbf{signifikant} ($p = .041 < \alpha = 0.05$). Siehe \textbf{\textit{Abbildung \ref{SubSig2}}}\\
+
+\begin{figure}[h]
+  \centering
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png}}
+  \qquad
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png}}
+  \caption{Spearman-Korrelationen der kognitiven Vertrauenswerte mit der wahrgenommenen Teamkommunikation. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}}
+  \label{SubSig2}
+\end{figure}
+
 
 %\subsection{Berechnung der Werte für die Auswertung}
 %Bspw. Wie wurde CT oder GT etc. berechnet? UND WARUM BENÖTIGE ICH DIESE? WARUM Z.B. BESTANDENE TEAMRUNDEN ? -> WEIL NUR SO TEAMBUILDING ERFOLG GEMESSEN WERDEN KANN
@@ -2872,26 +3017,41 @@ Die \ac{ten} beträgt bei der Kondition \ac{nik} im Mittel ($\tilde x = 5,3167$)
 \newpage
 \section{Analyse}
 \subsection{Analyse der Hypothesen}
-Die Ergebnisse zeigen insgesamt keine Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich positiv oder negativ auf das Vertrauen ins Team auswirkt. Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf die Teameffektivität auswirken.
+Insgesamt zeigen die Ergebnisse Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf das gebildete kognitive Vertrauen der einzelnen Personen auswirkt. 
+Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf die Teameffektivität auswirken. Es gibt keine Anzeichen dafür, dass es einen Zusammenhang zwischen dem generellem Vertrauen einer Person und dem gebildeten kognitiven Vertrauen einer Person gibt. Es gibt ebenfalls keine Anzeichen dafür, dass der generelle Hang des Vertrauens im Team sich auf die Teameffektivität auswirkt. Weiterhin gibt es keine Anzeichen dafür, dass sich das gemeinsame Vertrauen im Team sich auf die Teameffektivität eines Teams auswirkt.
+
 Eine Übersicht der Hypothesen und ob diese als signifikant bewertet werden, befindet sich in \textbf{\textit{Tabelle \ref{SignifikanzOverview}}}
-%Es konnte ein Einfluss des generellen Vertrauen  \ac{gt} auf das kognitive Vertrauen \ac{ct} festgestellt werden. 
-Die Pearson-Korrelationsanalyse zwischen \ac{gt} und \ac{ct} zeigt einen signifikanten Zusammenhang der beiden Variablen. Der Zusammenhang ist mit $\beta = .452$ mittelmäßig stark ausgeprägt. Auch die Einfache lineare-Regressionsanalyse zeigt einen signifikanten positiven Zusammenhang zwischen \ac{gt} und \ac{ct} mit $t(28) = 2,684; p = .012 < \alpha = 0.05$.
-Die Annahme, dass das generelle Vertrauen \ac{gt} einen signifikanten Einfluss auf den \ac{ct} hat, kann somit bestätigt werden. Die \textbf{Hypothese H1$_{0}$}, die besagt, dass wenn der generelle Vertrauenswert einer Person (\ac{gt}) steigt, der kognitive Vertrauenswert einer Person (\ac{ct}) nicht steigt, muss verworfen werden. Die Alternativhypothese \textbf{Hypothese H1$_{1}$}, die besagt, dass wenn der generelle Vertrauenswert einer Person (\ac{gt}) steigt, der kognitive Vertrauenswert einer Person (\ac{ct}) ebenfalls steigt, wird angenommen.
 
-Personen mit einem hohem generellen Vertrauen erzielen somit einen hohen kognitiven Vertrauenswert. Dieser erhöhte kognitive Vertrauenswert wird nicht von unterschiedlichen Avatar Konditionen beeinflusst. Es konnte kein signifikanter Unterschied zwischen den Konditionen \ac{ik} und \ac{nik} im Bezug auf das gebildete \ac{ct} festgestellt werden. Somit kann \textbf{Hypothese H2$_{0}$}, die besagt, dass der erzielte kognitive Vertrauenswert (\ac{ct}) sich bei den Konditionen \ac{ik} und \ac{nik} nicht unterscheidet, nicht verworfen werden.
-Es wurde jedoch ein signifikanter Mittelwertsunterschied bei dem \ac{tci} und dem \ac{tcn} festgestellt.
+\paragraph{Auswirkungen auf das kognitive Vertrauen}
+Es konnte ein \textit{signifikanter Unterschied} in den Mittelwerten anhand eines durchgeführten Mann-Whitney-U Test zwischen dem gebildeten kognitiven Vertrauen in das Team der unterschiedlichen Avatarkonditionen festgestellt werden. Die \textbf{Hypothese 1 (H1$_{1}$)}, dass der erzielte kognitive Vertrauenswert sich bei den Konditionen \ac{ik} und \ac{nik}  \textit{signifikant} voneinander unterscheidet, wird angenommen.
 
-Die Mittelwerte der abgeschlossenen Runden \ac{tRound} unterscheiden sich zwischen \ac{ik} und \ac{nik} nicht.
-Die Spearman Korrelationsanalyse zwischen den kognitiven Vertrauenswerten des Teams \ac{teamCog} sowie den erfolgreich abgeschlossenen Runden des Teams \ac{tRound} für die \textbf{Hypothese H3$_{0}$} zeigt keine Signifikanz.
-Auch die Lineare-Regressionsanalysen zwischen \ac{teamCogIK} sowie \ac{teamCogNIK} und \ac{tRoundIK} sowie \ac{tRoundNIK} zeigen keine Signifikanz. Auch nach einer Erhöhung der Stichprobengröße, indem die Teams nicht in unterschiedliche Konditionen eingeteilt wurden, zeigt sich bei der Korrelationsanalyse sowie der Linearen-Regressionsanalyse keine Signifikanz. Somit muss die H3$_{0}$, die besagt, dass ein hoher kognitiver Vertrauenswert im Team (\ac{teamCogIK} und \ac{teamCogNIK})  \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}) hat, angenommen werden.
-Weiterhin muss auch die \textbf{Hypothese H3a$_{0}$}, die besagt, dass ein hoher kognitiver Vertrauenswert des Teams, \textbf{keinen Einfluss} auf die Anzahl abgeschlossener Runden im Team (\ac{tRound}) hat, angenommen werden.
+Durch die statistische Auswertung der \textbf{Hypothese 2$_{0}$} konnten \textit{keine signifikanten Zusammenhänge} anhand einer Spearman-Korrelation zwischen den erzielten generellen Vertrauenswerten einer Person und den erzielten kognitiven Vertrauenswerten einer Person, bei unterschiedlichen Avatarkonditionen, festgestellt werden. Weiterhin unterscheidet sich der Zusammenhang zwischen dem \ac{gt} und dem \ac{ct} bei unterschiedlichen Avatarkonditionen \textit{nicht signifikant voneinander}. \newline Die beiden durchgeführten Spearman-Korrelationen weisen positive Korrelationskoeffizienten moderaten bis starken Effektes auf. Es muss jedoch die Alternativhypothese (H2$_{0}$), dass kein Zusammenhang zwischen dem erzieltem generellen Vertrauenswert einer Person und dem erzielten kognitiven Vertrauenswert bei Unterschiedlichen Avatarkonditionen besteht, angenommen werden. Weiterhin zeigt eine durchgeführte Fisher-Z-Transformation \textit{keinen signifikanten Unterschied} der Verteilungsformen zwischen den Spearman-Korrelationen auf.
 
-Die Mittelwerte der abgeschlossenen Runden der Teams \ac{tRound} zwischen \ac{ik} und \ac{nik} unterscheiden sich nicht. Der T-Test zwischen den Konditionen \ac{ik} sowie \ac{nik} und \ac{tRound} konnte auf Konditions- sowie auf Teamebene keine signifikanten Mittelwertsunterschiede feststellen. Auch der Mann-Whitney-U-Test konnte keine signifikanten Unterschiede der Mediane auf Teamebene feststellen. Somit muss die \textbf{Hypothese H4$_{0}$}, die besagt, dass die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams hat, angenommen werden.
+\paragraph{Auswirkungen auf die Teameffektivität}
+Die Ergebnisse der statistischen Auswertung der \textbf{Hypothese 3$_{0}$} zeigen anhand einer durchgeführten Spearman-Korrelation \textit{keine signifikanten Zusammenhänge} der kognitiven Vertrauenswerte von Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen. Es konnte nicht gezeigt werden, dass der Zusammenhang der kognitive Vertrauenswert eines Teams mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker, als der von Teams mit der Kondition \ac{nik}, ist.
+Die beiden Verteilungsformen der Spearman-Korrelationen zwischen den kognitiven Vertrauenswerten im Team \ac{teamCog} und der Teameffektivität des Teams \ac{tRound} bei unterschiedlichen Avatarkonditionen unterscheiden sich anhand einer Fishers-Z-Transformation \textit{nicht signifikant} voneinander.
+Die Alternativhypothese  (H3$_{0}$), dass keine signifikanten Zusammenhänge der kognitiven Vertrauenswerte von Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen bestehen, wird angenommen. \newline
+
+Es wurde auf jedoch Konditionsebene ist zwischen dem kognitiven Vertrauenswert (\ac{ctn}) und der wahrgenommenen Teameffektivität (\ac{ten}) der Kondition \ac{nik} eine \textit{signifikante positive} Korrelation festgestellt. 
+
+Die Mittelwerte der realen Teameffektivität bei unterschiedlichen Avatarkonditionen sind gleich und unterscheiden sich \textit{nicht signifikant} voneinander. Die \textbf{Hypothese 4$_{0}$}, dass die reale Teameffektivität sich bei bei unterschiedlichen Avatarkonditionen signifikant voneinander unterscheidet, wird abgelehnt. Es muss die Alternativhypothese (H4$_{0}$) angenommen werden, die besagt, dass die reale Teameffektivität sich bei unterschiedlichen Avatarkonditionen nicht unterscheidet, angenommen.\newline
+
+Durch die Analyse der \textbf{Hypothese 5$_{0}$} konnten \textit{keine signifikanten} Zusammenhänge der generellen Vertrauenswerte eines Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen festgestellt werden. Durch diese nicht signifikanten Zusammenhänge und dadurch, dass eine durchgeführte Fishers-Z-Transformation keine Unterschiede der Zusammenhänge zeigt, muss die Hypothese 5 (H5$_{1}$) verworfen und die Alternativhypothese (H5$_{0}$) angenommen werden. Diese besagt, dass der generelle Vertrauenswert eines Teams nicht stärker mit der realen Teameffektivität eines Teams und der Kondition \ac{ik} korreliert als von Teams mit der Kondition \ac{nik}.
+
+\paragraph{Subjektive Daten}
+Eine Tabelle der einzelnen Werte der Variablen befindet sich in \textbf{Tabelle \ref{MittelwerteUndCo} }
+Die Nutzer des Systems zeigen anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unabhängig der Avatarkonditionen, ein überdurchschnittliches Gefühl der Presence  ($\bar(x)=4.21; \sigma=.615$). Auch die, \textit{der selbst wahrgenommenen Co-Presencen} ($\bar(x)=2.972; \sigma=.3690$), der \textit{wahrgenommenen Co-Presence des anderen} ($\bar(x)=3.055; \sigma=.3378$), der \textit{Telepresence} ($\bar(x)=5.286; \sigma=1.042$) und der \textit{Social-Presence} ($\bar(x)=4.590; \sigma=1.693$) sind überdurchschnittliche Werte erzielt worden.
+Es konnten jedoch \textit{keine signifikanten Unterschiede} bei den einzelnen Avatarkonditionen dieser subjektiven Daten festgestellt werden.
+
+Das \textit{wahrgenommene Anstrengungsmaß} ($\bar(x)=8.6; \sigma=2.135$) liegt, anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unter dem Durchschnitt, während die wahrgenommene Teameffektivität ($\bar(x)=4.646; \sigma=..972$) über dem Durschnitt liegt. Auch hier konnten jedoch \textit{keine signifikanten Unterschiede} bei den einzelnen Avatarkonditionen festgestellt werden.
+
+Anhand eines Mann-Whitney-U Test konnte bei der Teamkommunikation ein signifikanter unterschied der Mittelwerte bei unterschiedlichen Avatarkonditionen festgestellt. werden. Der Mittelwert der Teamkommunikation der Kondition \ac{nik} beträgt ($\bar(x) = 4.013$), während der Mittelwert der Teamkommunikation der Kondition \ac{ik} ($\bar(x) = 4.48$) beträgt. Somit ist die subjektiv empfundene Teamkommunikation bei der Kondition \ac{ik} höher als bei der Kondition \ac{nik}.
+
+\paragraph{Fazit der Analyse}
+Anhand der statistischen Analyse, lässt sich feststellen, dass unterschiedliche Avatarkonditionen einen \textit{signifikanten Einfluss} auf das gebildete kognitive Vertrauen eines Teams besitzen, dieses gebildete kognitive Vertrauen jedoch textit{keinen Einfluss} auf die Teameffektivität besitzt. 
+Es wurde ein signifikanter unterschied der Mittelwerte der Teamkommunikation auf Konditionsebene festgestellt. Es hat sich ein erhöhtes Presencegefühl (\ac{ipq}, \ac{tp}, \ac{scp}, \ac{ocp}, \ac{sp}) auf Konditionsebene während der Versuchsdurchführung gebildet. Das Anstrengungsmaß (\ac{tlx} lag unter dem Durchschnitt der möglichen Anzugebenden Werte und die wahrgenommene Teameffektivität war überdurchschnittlich hoch.
 
 
-H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem generelle Vertrauenswert (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigem generellen Vertrauenswert \ac{gt}.
-
-Die \textit{Tabelle \ref{SignifikanzOverview} } zeigt eine Übersicht der einzelnen Hypothesen und deren Signifikanzen.
 \subsection{Analyse der technischen Anforderungen}
 
 Schweizer \citep[p.270]{schweitzer2010conceptualizing} erläutert die 4 größten Kennzeichen eines \ac{vts} in der Literatur.
@@ -2909,23 +3069,23 @@ Die technischen Anforderungen, die im Kapitel \textit{\ref{TechnischeAnforderung
 \item \textbf{Geringe Latenz}: Es wurden zwei End-to-End Latenzmessungen durchgeführt. Die End-to-End Latenzmessung bezeichnet die Zeit, die benötigt wird, bis eine reale Aktion eines Nutzers von einem anderen Nutzers wahrgenommen wird. Die die erste Latenzmessung betraf die Geschwindigkeit der Audioübertragung des Netzwerks. Es wurde eine Durchschnittliche Latenz von \textbf{356ms} festgestellt.
 Die zweite Messung betraf die Geschwindigkeit, in der die Avatare ihre Körperpositionen verändern. Es wurde eine durchschnittliche Geschwindigkeit von 294ms festgestellt.
 Es wurden subjektiv keine störende Bewegungsverzögerung und Audioübertragung wahrgenommen, weshalb die Anfoderung als erfüllt angesehen wird.
-\item \textbf{Steuerung und Verwaltung der Anwendung durch einen Spectator}: Damit der Versuchsleiter so wenig wie möglich in den Versuch eingreift, muss die Anwendung von Außen über einen eigenen Client gesteuert werden können.
-\item \textbf{Interaktionsmöglichkeiten}: Es muss eine Übertragung der aktuellen Zustände der Knöpfe auf den Podesten zu allen Teilnehmern in dem \ac{sve} stattfinden.
-\item \textbf{Sprachübertragung}: Es muss eine Sprachübertragung vom einem Client zu allen Nutzern und von einem Nutzer zum Client stattfinden können.
-\item \textbf{Avatararten}: Es müssen die beiden Avatararten \ac{ik} sowie \ac{nik} im System vorhanden sein.
+\item \textbf{Steuerung und Verwaltung der Anwendung durch einen Spectator}: Durch einen eigenen Spectator-Client ist es möglich gewesen, die Anwendung von Außen zu steuern und zu überwachen.
+\item \textbf{Interaktionsmöglichkeiten}:  Durch das Verwendete Framework \textit{Normcore} und dessen globalen Datenspeicher für unterschiedliche Variablen, ist es möglich gewesen, alle Zustände und Informationen während der laufenden Versuchsdurchführung zwischen dem Client und Spectator zu synchronisieren.
+\item \textbf{Sprachübertragung}: Die Implementierung eines RCP-Basiertem Netzwerkhandlings ermöglichte, eine Sprachübertragung von Client zu Spectator und von Spectator zu Client.
+\item \textbf{Avatararten}: Der Spectator hatte bei dem verwendetem System die Möglichkeit zur Laufzeit zwei verschiedene Avatararten für die Clients auszuwählen. Es wurden zwei Avatararten (\ac{ik} und \ac{nik}) implementiert, anhand diesem Zusammenhänge und Unterschiede gemessen wurden.
 \end{itemize}
-
-Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
-
-\begin{itemize}
-\item \textbf{Teamfähigkeit} Das Team muss eine Aufgabe gemeinsam lösen. Jedes Teammitglied muss zu gleichen Teilen involviert sein. Fehlt ein Teammitglied, soll die Aufgabe nicht lösbar sein.
-\item \textbf{Inkrementelle Erhöhung der Schwierigkeit} Um einen Vergleich zwischen der Teameffektivität herzustellen, mussten die Runden inkrementell schwieriger werden. Dies wurde dadurch gelöst, dass die teilnehmenden Personen jede drei Runden ein Symbol mehr gestikulieren  oder erraten mussten.
-\item \textbf{Neutrale Avatare} Die Avatare sollen so neutral wie möglich gestaltet sein. 
-\item \textbf{Vermeidung von Bekanntheit} Um die gegenseitige Bekanntheit  teilnehmenden Personen auszuschließen, wurde jedem Teilnehmer zu beginn des Versuchs ein Zufälliger Name zugeordnet. Vor dem gesamten Versuch konnten sich die teilnehmenden Personen nicht sehen oder hören.
-Können die teilnehmenden Personen sich vor dem Versuch gesehen, würde sich ein Kognitives-Vertrauen oder Kognitives-Misstrauen zu der anderen Person aufbauen. 
-Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauensbildung in der \ac{vr} in Form von schon vorhandenem Affektiven-Vertrauen auf die Ergebnisse aus.
-\item \textbf{Keine verbale Kommunikation} Da die Stimme der teilnehmenden Personen ein Residuum ist, wurde die verbale Kommunikation von Versuchsteilnehmer zu Versuchsteilnehmer nicht gestattet. 
-\end{itemize}
+%
+%Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
+%
+%\begin{itemize}
+%\item \textbf{Teamfähigkeit} Das Team muss eine Aufgabe gemeinsam lösen. Jedes Teammitglied muss zu gleichen Teilen involviert sein. Fehlt ein Teammitglied, soll die Aufgabe nicht lösbar sein.
+%\item \textbf{Inkrementelle Erhöhung der Schwierigkeit} Um einen Vergleich zwischen der Teameffektivität herzustellen, mussten die Runden inkrementell schwieriger werden. Dies wurde dadurch gelöst, dass die teilnehmenden Personen jede drei Runden ein Symbol mehr gestikulieren  oder erraten mussten.
+%\item \textbf{Neutrale Avatare} Die Avatare sollen so neutral wie möglich gestaltet sein. 
+%\item \textbf{Vermeidung von Bekanntheit} Um die gegenseitige Bekanntheit  teilnehmenden Personen auszuschließen, wurde jedem Teilnehmer zu beginn des Versuchs ein Zufälliger Name zugeordnet. Vor dem gesamten Versuch konnten sich die teilnehmenden Personen nicht sehen oder hören.
+%Können die teilnehmenden Personen sich vor dem Versuch gesehen, würde sich ein Kognitives-Vertrauen oder Kognitives-Misstrauen zu der anderen Person aufbauen. 
+%Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauensbildung in der \ac{vr} in Form von schon vorhandenem Affektiven-Vertrauen auf die Ergebnisse aus.
+%\item \textbf{Keine verbale Kommunikation} Da die Stimme der teilnehmenden Personen ein Residuum ist, wurde die verbale Kommunikation von Versuchsteilnehmer zu Versuchsteilnehmer nicht gestattet. 
+%\end{itemize}
 
 \begin{table}[H]
 	\centering\footnotesize\setstretch{1.2}
@@ -2935,32 +3095,38 @@ Kennen sich die Personen untereinander schon, wirkt sich dies auf die Vertrauens
 		Hypothese & Signifikanz  \\
 		\hline \\
 %		H1$_{0}$ : Ein hoher General-Trust-Score (\ac{gt}) wirkt sich \textbf{nicht positiv} auf den Cognitiven-Trust-Score (\ac{ct}) aus.\\
-\textbf{H1$_{1}$} : Es besteht ein Zusammenhang zwischen dem erzielten generellen Vertrauenswert \ac{gt} einer Person und dem erzielten kognitiven Vertrauenswert \ac{ct} einer Person.
+\textbf{H1$_{1}$} : Der erzielte kognitive Vertrauenswert (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\ \\
+Alternative formulierung :
+\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitive Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
 		& nicht signifikant \\
 		\hline \\
 		
 %		H2$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf den Cognitive-Trust-Score (\ac{ct}). \\
-\textbf{H2$_{1}$} : Der erzielte kognitive Vertrauenswert (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
-		& nicht signifikant \\
+		\textbf{H2$_{1}$} : Es besteht ein Zusammenhang zwischen dem erzielten generellen Vertrauenswert \ac{gt} einer Person und dem erzielten kognitiven Vertrauenswert \ac{ct} einer Person.\\ \\
+		Alternative formulierung :
+				\textbf{H2$_{1}$} : Je höher die erzielten generelle Vertrauenswert \ac{gt} einer Person desto höher ist der erzielte kognitive Vertrauenswert \ac{ct} einer Person.
+		& \textbf{signifikant} \\
 		
 		\hline 	\\	
-		
-		\textbf{H3$_{1}$} : Ein hoher kognitiver Vertrauenswert im Team (\ac{teamCogIK} und \ac{teamCogNIK}) hat \textbf{keinen Einfluss} auf die auf die Anzahl der erfolgreich abgeschlossenen Runden (\ac{tRound}) bei unterschiedlichen Avatar Verkörperungen (\ac{tRoundIK} und \ac{tRoundNIK}). \\
-		& nicht signifikant \\		
-		
-		\hline 	\\	
-		\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der Anzahl abgeschlossener Runden von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
+
+		\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der realen Teameffektivität von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\ \\
 %		H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score hat \textbf{keinen Einfluss} auf die Team-Effektivität (\ac{tRound}).
+Alternative Formulierung :
+\textbf{H3$_{1}$} : Der Zusammenhang des kognitive Vertrauenswert von Teams \ac{teamCog} und der realen Teameffektivität von Teams \ac{tRound} mit der Kondition \ac{ik} ist stärker als der von Teams mit der Kondition \ac{nik}. \\
 		& nicht signifikant \\		
 		
 		\hline 	\\	
-		H4$_{1}$ : Die Anzahl erfolgreich abgeschlossener Runden \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
+		\textbf{H4$_{1}$} : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\ \\
 %		H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.\\
+Alternative Formulierung :
+		\textbf{H4$_{1}$} : Die Mittelwerte der realen Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
 		& nicht signifikant\\
 
 		\hline 	\\	
-		\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der Anzahl abgeschlossener Runden eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\
+		\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\ \\
 %		H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}\\
+Alternative Formulierung :
+			\textbf{H5$_{1}$} : Der Zusammenhang der generelle Vertrauenswert eines Teams \ac{teamGen} und der realen Teameffektivität eines Teams \ac{tRound} mit der Kondition \ac{ik} ist stärker als von Teams mit der Kondition \ac{nik}.
 		& nicht signifikant \\
 		
 		\hline 	\\
@@ -3050,6 +3216,9 @@ Die 3 Teammitglieder WUSSTEN, dass diese mit menschen interagieren. Vielleicht g
 
 Hätten die Runden kürzer sein können um einen positiven Teameffekt zu messen?
 
+Interessant : Es gibt eine Positive signifikante Korrelationzwischen CogTrust NIK und wahrg. Team Effek. NIK
+
+Auch auf virtuelle Teams eingehen ...! Wichtig!
 	\subsection{Diskussion der eingesetzten Methoden}
 	\subsection{Auswirkungen auf die Gegenwart}
 	\subsection{Vorschläge für zukünftige Untersuchungen}
@@ -3195,7 +3364,6 @@ Hätten die Runden kürzer sein können um einen positiven Teameffekt zu messen?
 	\end{figure}	
 	
 	\begin{figure}[H]
-	[scale=0.6]
 		\begin{footnotesize}
 			\includegraphics[scale=0.6]{Abbildungen/Pre_QuestionnaireStatistiks/teilnehmerVorexperimente}\\
 			\includegraphics[scale=0.5]{Abbildungen/Demographie/teilnehmerVorexperimente}\\
@@ -3480,14 +3648,14 @@ Hätten die Runden kürzer sein können um einen positiven Teameffekt zu messen?
 		\end{footnotesize}
 	\end{figure}	
 	
-	\begin{figure}[H]
-	\centering
-		\begin{footnotesize}
-			\includegraphics[scale=0.6]{Abbildungen/CouchEtAl_1996_TrustScale}\\
-			\caption[Abbildung 1]{Items of the Trust Inventory \citep[305-323]{couch1996assessment}}
-			\label{Trust-Inventory}
-		\end{footnotesize}
-	\end{figure}
+%	\begin{figure}[H]
+%	\centering
+%		\begin{footnotesize}
+%			\includegraphics[scale=0.6]{Abbildungen/CouchEtAl_1996_TrustScale}\\
+%			\caption[Abbildung 1]{Items of the Trust Inventory \citep[305-323]{couch1996assessment}}
+%			\label{Trust-Inventory}
+%		\end{footnotesize}
+%	\end{figure}
 	
 
 \end{document}
