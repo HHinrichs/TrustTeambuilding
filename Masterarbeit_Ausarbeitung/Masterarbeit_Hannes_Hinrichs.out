@@ -1,9 +1,9 @@
-\BOOKMARK [1][]{section*.3}{Erkl\344rung}{}% 1
-\BOOKMARK [1][]{section*.4}{Kurzfassung/Abstract}{}% 2
-\BOOKMARK [1][]{section*.9}{Abk\374rzungsverzeichnis}{}% 3
-\BOOKMARK [1][]{section*.10}{Einleitung}{}% 4
-\BOOKMARK [2][]{subsection.14}{0.1 Motivation}{section*.10}% 5
-\BOOKMARK [2][]{subsection.15}{0.2 Ziele der Arbeit}{section*.10}% 6
+\BOOKMARK [1][]{section*.1}{Erkl\344rung}{}% 1
+\BOOKMARK [1][]{section*.2}{Kurzfassung/Abstract}{}% 2
+\BOOKMARK [1][]{section*.6}{Abk\374rzungsverzeichnis}{}% 3
+\BOOKMARK [1][]{section*.7}{Einleitung}{}% 4
+\BOOKMARK [2][]{subsection.12}{0.1 Motivation}{section*.7}% 5
+\BOOKMARK [2][]{subsection.13}{0.2 Ziele der Arbeit}{section*.7}% 6
 \BOOKMARK [1][]{section.16}{1 Theoretischer Rahmen}{}% 7
 \BOOKMARK [2][]{subsection.19}{1.1 Virtual Reality}{section.16}% 8
 \BOOKMARK [3][]{subsubsection.20}{1.1.1 Virtuelle 3D-Welten}{subsection.19}% 9
@@ -13,65 +13,67 @@
 \BOOKMARK [2][]{subsection.28}{1.2 Avatare}{section.16}% 13
 \BOOKMARK [3][]{subsubsection.29}{1.2.1 Repr\344sentationen von Avataren}{subsection.28}% 14
 \BOOKMARK [3][]{subsubsection.32}{1.2.2 Vorw\344rtskinematik vs Inverse-Kinematik}{subsection.28}% 15
-\BOOKMARK [3][]{subsubsection.33}{1.2.3 Selbst-Avatar und Nicht-Selbst-Avatare}{subsection.28}% 16
-\BOOKMARK [2][]{subsection.39}{1.3 Vertrauen}{section.16}% 17
-\BOOKMARK [3][]{subsubsection.40}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.39}% 18
-\BOOKMARK [3][]{subsubsection.41}{1.3.2 Vertrauen als Eigenschaft }{subsection.39}% 19
-\BOOKMARK [3][]{subsubsection.42}{1.3.3 Vertrauen als Zustand}{subsection.39}% 20
-\BOOKMARK [3][]{subsubsection.43}{1.3.4 Vertrauen und Avatare}{subsection.39}% 21
-\BOOKMARK [3][]{subsubsection.44}{1.3.5 Vertrauen und virtuelle Teams}{subsection.39}% 22
-\BOOKMARK [2][]{subsection.45}{1.4 Teams}{section.16}% 23
-\BOOKMARK [3][]{subsubsection.46}{1.4.1 Teams}{subsection.45}% 24
-\BOOKMARK [3][]{subsubsection.47}{1.4.2 Virtuelle Teams}{subsection.45}% 25
-\BOOKMARK [3][]{subsubsection.48}{1.4.3 Virtuelle Teams und Teambuilding}{subsection.45}% 26
-\BOOKMARK [3][]{subsubsection.49}{1.4.4 Teameffektivit\344t}{subsection.45}% 27
-\BOOKMARK [1][]{section.51}{2 Versuchshypothesen}{}% 28
-\BOOKMARK [2][]{subsection.52}{2.1 Das Framework}{section.51}% 29
-\BOOKMARK [2][]{subsection.61}{2.2 Die Versuchshypothesen}{section.51}% 30
-\BOOKMARK [1][]{section.70}{3 Vorgehensweise}{}% 31
-\BOOKMARK [2][]{subsection.71}{3.1 Der Versuch}{section.70}% 32
-\BOOKMARK [3][]{subsubsection.72}{3.1.1 Untersuchungsmethode}{subsection.71}% 33
-\BOOKMARK [3][]{subsubsection.73}{3.1.2 Teilnehmerfindung}{subsection.71}% 34
-\BOOKMARK [3][]{subsubsection.74}{3.1.3 Versuchsablauf}{subsection.71}% 35
-\BOOKMARK [3][]{subsubsection.75}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.71}% 36
-\BOOKMARK [3][]{subsubsection.77}{3.1.5 Detaillierter Versuchsablauf}{subsection.71}% 37
-\BOOKMARK [3][]{subsubsection.79}{3.1.6 Die Avatare}{subsection.71}% 38
-\BOOKMARK [2][]{subsection.89}{3.2 Anforderungen an die Versuchsumgebung}{section.70}% 39
-\BOOKMARK [3][]{subsubsection.90}{3.2.1 Technik der Versuchsumgebung}{subsection.89}% 40
-\BOOKMARK [3][]{subsubsection.103}{3.2.2 Optik der Versuchsumgebung}{subsection.89}% 41
-\BOOKMARK [3][]{subsubsection.109}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.89}% 42
-\BOOKMARK [2][]{subsection.115}{3.3 Methodik}{section.70}% 43
-\BOOKMARK [3][]{subsubsection.116}{3.3.1 Allgemeines}{subsection.115}% 44
-\BOOKMARK [3][]{subsubsection.125}{3.3.2 Datenerhebungsmethoden}{subsection.115}% 45
-\BOOKMARK [1][]{section.135}{4 Statistische Auswertung}{}% 46
-\BOOKMARK [2][]{subsection.136}{4.1 Teilnehmer und Demografie}{section.135}% 47
-\BOOKMARK [2][]{subsection.137}{4.2 Auswertung Hypothese 1}{section.135}% 48
-\BOOKMARK [2][]{subsection.143}{4.3 Auswertung Hypothese 2}{section.135}% 49
-\BOOKMARK [2][]{subsection.152}{4.4 Auswertung Hypothese 3}{section.135}% 50
-\BOOKMARK [2][]{subsection.161}{4.5 Auswertung Hypothese 4}{section.135}% 51
-\BOOKMARK [2][]{subsection.168}{4.6 Auswertung Hypothese 5}{section.135}% 52
-\BOOKMARK [2][]{subsection.176}{4.7 Auswertung subjektiver Daten}{section.135}% 53
-\BOOKMARK [1][]{section.225}{5 Analyse}{}% 54
-\BOOKMARK [2][]{subsection.226}{5.1 Analyse der Hypothesen}{section.225}% 55
-\BOOKMARK [2][]{subsection.231}{5.2 Analyse der technischen Anforderungen}{section.225}% 56
-\BOOKMARK [1][]{section.233}{6 TODO}{}% 57
-\BOOKMARK [1][]{section.234}{7 Diskussion}{}% 58
-\BOOKMARK [2][]{subsection.236}{7.1 Diskussion des Experimentes}{section.234}% 59
-\BOOKMARK [2][]{subsection.239}{7.2 Effektivit\344t des Vertrauensaufbau zwischen den Avatarkonditionen}{section.234}% 60
-\BOOKMARK [2][]{subsection.240}{7.3 Einfluss des Vertrauens im Team auf die Teameffektivit\344t}{section.234}% 61
-\BOOKMARK [2][]{subsection.244}{7.4 Einfluss der subjektiven Daten}{section.234}% 62
-\BOOKMARK [2][]{subsection.245}{7.5 Limitierungen}{section.234}% 63
-\BOOKMARK [1][]{section.252}{8 Fazit}{}% 64
-\BOOKMARK [1][]{section*.254}{Anhang}{}% 65
-\BOOKMARK [1][]{appendix.255}{A Auswertungsergebnisse}{}% 66
-\BOOKMARK [1][]{appendix.263}{B Demografieauswertung}{}% 67
-\BOOKMARK [1][]{appendix.271}{C Pre-Questionnaire}{}% 68
-\BOOKMARK [1][]{appendix.278}{D Post-Questionnaire - Konditionsabfrage}{}% 69
-\BOOKMARK [1][]{appendix.280}{E Post-Questionnaire - Generelles Vertrauen}{}% 70
-\BOOKMARK [1][]{appendix.285}{F Post-Questionnaire - Kognitives Vertrauen}{}% 71
-\BOOKMARK [1][]{appendix.288}{G Post-Questionnaire - Teamkommunikation}{}% 72
-\BOOKMARK [1][]{appendix.290}{H Post-Questionnaire - Team-Effektivit\344t}{}% 73
-\BOOKMARK [1][]{appendix.292}{I Post-Questionnaire - NASA-TLX}{}% 74
-\BOOKMARK [1][]{appendix.299}{J Post-Questionnaire - IPQ}{}% 75
-\BOOKMARK [1][]{appendix.303}{K Post-Questionnaire - Co-Presence}{}% 76
-\BOOKMARK [1][]{appendix.310}{L Other}{}% 77
+\BOOKMARK [3][]{subsubsection.33}{1.2.3 Self-Avatar}{subsection.28}% 16
+\BOOKMARK [3][]{subsubsection.36}{1.2.4 Avatare und Kommunikation}{subsection.28}% 17
+\BOOKMARK [3][]{subsubsection.37}{1.2.5 Uncanny-Valley}{subsection.28}% 18
+\BOOKMARK [2][]{subsection.39}{1.3 Vertrauen}{section.16}% 19
+\BOOKMARK [3][]{subsubsection.40}{1.3.1 Zwischenmenschliches Vertrauen}{subsection.39}% 20
+\BOOKMARK [3][]{subsubsection.41}{1.3.2 Vertrauen als Eigenschaft }{subsection.39}% 21
+\BOOKMARK [3][]{subsubsection.42}{1.3.3 Vertrauen als Zustand}{subsection.39}% 22
+\BOOKMARK [3][]{subsubsection.43}{1.3.4 Vertrauen und Avatare}{subsection.39}% 23
+\BOOKMARK [3][]{subsubsection.44}{1.3.5 Vertrauen und virtuelle Teams}{subsection.39}% 24
+\BOOKMARK [2][]{subsection.45}{1.4 Teams}{section.16}% 25
+\BOOKMARK [3][]{subsubsection.46}{1.4.1 Teams}{subsection.45}% 26
+\BOOKMARK [3][]{subsubsection.47}{1.4.2 Virtuelle Teams}{subsection.45}% 27
+\BOOKMARK [3][]{subsubsection.48}{1.4.3 Virtuelle Teams und Teambuilding}{subsection.45}% 28
+\BOOKMARK [3][]{subsubsection.49}{1.4.4 Teameffektivit\344t}{subsection.45}% 29
+\BOOKMARK [1][]{section.51}{2 Versuchshypothesen}{}% 30
+\BOOKMARK [2][]{subsection.52}{2.1 Das Framework}{section.51}% 31
+\BOOKMARK [2][]{subsection.61}{2.2 Die Versuchshypothesen}{section.51}% 32
+\BOOKMARK [1][]{section.70}{3 Vorgehensweise}{}% 33
+\BOOKMARK [2][]{subsection.71}{3.1 Der Versuch}{section.70}% 34
+\BOOKMARK [3][]{subsubsection.72}{3.1.1 Untersuchungsmethode}{subsection.71}% 35
+\BOOKMARK [3][]{subsubsection.73}{3.1.2 Teilnehmerfindung}{subsection.71}% 36
+\BOOKMARK [3][]{subsubsection.74}{3.1.3 Versuchsablauf}{subsection.71}% 37
+\BOOKMARK [3][]{subsubsection.75}{3.1.4 Allgemeiner Versuchsaufbau}{subsection.71}% 38
+\BOOKMARK [3][]{subsubsection.77}{3.1.5 Detaillierter Versuchsablauf}{subsection.71}% 39
+\BOOKMARK [3][]{subsubsection.79}{3.1.6 Die Avatare}{subsection.71}% 40
+\BOOKMARK [2][]{subsection.89}{3.2 Anforderungen an die Versuchsumgebung}{section.70}% 41
+\BOOKMARK [3][]{subsubsection.90}{3.2.1 Technik der Versuchsumgebung}{subsection.89}% 42
+\BOOKMARK [3][]{subsubsection.103}{3.2.2 Optik der Versuchsumgebung}{subsection.89}% 43
+\BOOKMARK [3][]{subsubsection.109}{3.2.3 Allgemeines der Versuchsumgebung}{subsection.89}% 44
+\BOOKMARK [2][]{subsection.116}{3.3 Methodik}{section.70}% 45
+\BOOKMARK [3][]{subsubsection.117}{3.3.1 Allgemeines}{subsection.116}% 46
+\BOOKMARK [3][]{subsubsection.126}{3.3.2 Datenerhebungsmethoden}{subsection.116}% 47
+\BOOKMARK [1][]{section.136}{4 Statistische Auswertung}{}% 48
+\BOOKMARK [2][]{subsection.137}{4.1 Teilnehmer und Demografie}{section.136}% 49
+\BOOKMARK [2][]{subsection.138}{4.2 Auswertung Hypothese 1}{section.136}% 50
+\BOOKMARK [2][]{subsection.144}{4.3 Auswertung Hypothese 2}{section.136}% 51
+\BOOKMARK [2][]{subsection.153}{4.4 Auswertung Hypothese 3}{section.136}% 52
+\BOOKMARK [2][]{subsection.162}{4.5 Auswertung Hypothese 4}{section.136}% 53
+\BOOKMARK [2][]{subsection.169}{4.6 Auswertung Hypothese 5}{section.136}% 54
+\BOOKMARK [2][]{subsection.177}{4.7 Auswertung subjektiver Daten}{section.136}% 55
+\BOOKMARK [1][]{section.226}{5 Analyse}{}% 56
+\BOOKMARK [2][]{subsection.227}{5.1 Analyse der Hypothesen}{section.226}% 57
+\BOOKMARK [2][]{subsection.233}{5.2 Analyse der technischen Anforderungen}{section.226}% 58
+\BOOKMARK [1][]{section.234}{6 TODO}{}% 59
+\BOOKMARK [1][]{section.235}{7 Diskussion}{}% 60
+\BOOKMARK [2][]{subsection.237}{7.1 Diskussion des Experimentes}{section.235}% 61
+\BOOKMARK [2][]{subsection.240}{7.2 Effektivit\344t des Vertrauensaufbau zwischen den Avatarkonditionen}{section.235}% 62
+\BOOKMARK [2][]{subsection.241}{7.3 Einfluss des Vertrauens im Team auf die Teameffektivit\344t}{section.235}% 63
+\BOOKMARK [2][]{subsection.243}{7.4 Limitierungen}{section.235}% 64
+\BOOKMARK [2][]{subsection.244}{7.5 Ausblick und Implikationen f\374r zuk\374nftige Forschung}{section.235}% 65
+\BOOKMARK [1][]{section.245}{8 Zusammenfassung}{}% 66
+\BOOKMARK [1][]{section*.247}{Anhang}{}% 67
+\BOOKMARK [1][]{appendix.248}{A Auswertungsergebnisse}{}% 68
+\BOOKMARK [1][]{appendix.256}{B Demografieauswertung}{}% 69
+\BOOKMARK [1][]{appendix.264}{C Pre-Questionnaire}{}% 70
+\BOOKMARK [1][]{appendix.271}{D Post-Questionnaire - Konditionsabfrage}{}% 71
+\BOOKMARK [1][]{appendix.273}{E Post-Questionnaire - Generelles Vertrauen}{}% 72
+\BOOKMARK [1][]{appendix.278}{F Post-Questionnaire - Kognitives Vertrauen}{}% 73
+\BOOKMARK [1][]{appendix.281}{G Post-Questionnaire - Teamkommunikation}{}% 74
+\BOOKMARK [1][]{appendix.283}{H Post-Questionnaire - Team-Effektivit\344t}{}% 75
+\BOOKMARK [1][]{appendix.285}{I Post-Questionnaire - NASA-TLX}{}% 76
+\BOOKMARK [1][]{appendix.292}{J Post-Questionnaire - IPQ}{}% 77
+\BOOKMARK [1][]{appendix.296}{K Post-Questionnaire - Co-Presence}{}% 78
+\BOOKMARK [1][]{appendix.303}{L Other}{}% 79

@@ -13,6 +13,11 @@
 %Leseprobe senden!
 %Auswertungen nicht als Screenshot sondern als Tabelle
 %Gerichtete Hypothese überprüfen, schauen ob der p-Wert halbiert werden kann
+
+
+
+
+%Kennenlernphase KENNENLERNPHASE ABÄNDERN!
 \documentclass[a4paper,11pt]{article}%Schriftgröße
 
 \usepackage{booktabs}
@@ -82,7 +87,8 @@
 
 %Auswirkung von Vertrauen auf die Anfangsphase einer virtuellen Teamgrün
 \begin{huge}
-Einfluss des gebildeten Vertrauens von \ac{ik} und \ac{nik} Avataren auf die Teameffektivität in einem kurzzeitig zusammenarbeitenden virtuellem Team.
+%Einfluss des gebildeten Vertrauens von \ac{ik} und \ac{nik} Avataren auf die Teameffektivität in einem kurzzeitig zusammenarbeitenden virtuellem Team.
+Der Einfluss der Avatardarstellung auf das Vertrauen und die Effektivität in einem Team in einem Shared-Virtual-Environment.
 %Einfluss der Vertrauensbildung zwischen \ac{ik} und \ac{nik} Avataren auf die Team-Effektivität in einem kurzzeitig zusammenarbeitenden virtuellem Team.\\
 \end{huge}
 \vspace{2cm} 
@@ -112,16 +118,20 @@ Einfluss des gebildeten Vertrauens von \ac{ik} und \ac{nik} Avataren auf die Tea
 	\pagenumbering{Roman}
 	\pagestyle{fancy}
 	\newpage
-\section*{Erklärung}\markboth{Erklärung}{Erklärung}\addcontentsline{toc}{section}{Erklärung}
+\section*{Eidesstattliche Versicherung}\markboth{Erklärung}{Erklärung}\addcontentsline{toc}{section}{Erklärung}
 	Ich versichere, die von mir vorgelegte Arbeit selbstständig verfasst zu haben. Alle Stellen, die wörtlich oder sinngemäß aus veröffentlichten oder nicht veröffentlichten Arbeiten anderer oder der Verfasserin/des Verfassers selbst entnommen sind, habe ich als entnommen kenntlich gemacht. Sämtliche Quellen und Hilfsmittel, die ich für die Arbeit benutzt habe, sind angegeben. Die Arbeit hat mit gleichem Inhalt bzw. in wesentlichen Teilen noch keiner anderen Prüfungsbehörde vorgelegen.\\
-	Anmerkung: In einigen Studiengängen steht die Erklärung am Ende des Textes.\\
 	~\\
 	~\\
 	\rule{0.35\textwidth}{0.4pt} \hspace*{3cm} \rule{0.45\textwidth}{0.4pt} \newline
 	Ort, Datum	\hspace*{6.3cm}	Rechtsverbindliche Unterschrift
 	\newpage
 \section*{Kurzfassung/Abstract}\markboth{Kurzfassung/Abstract}{Kurzfassung/Abstract}\addcontentsline{toc}{section}{Kurzfassung/Abstract}
-	Virtual Reality \ac{vr} hat in den letzten Jahren aufgrund von verbesserter Technologie und sinkenden Kosten an Bedeutung gewonnen. Verschiedene Felder, wie Medizin, Wirtschaft, Training oder die Industrie greifen auf diese Technologie zurück. Voranschreitende Forschung in diesem Feld, ist aufgrund von wachsendem Interesse von großer Bedeutung. Vertrauensbildung sowie das gesamte Konstrukt von Vertrauen sind in vielen Forschungsbereichen eine wichtige Grundlage. Diese wurde im Zusammenhang mit \ac{vr} jedoch in den letzten Jahren wenig betrieben. Diese Arbeit zielt darauf ab, das Konstrukt des Vertrauens in der Virtuellen Welt besser zu verstehen und mit diesem umzugehen. Dafür wurde eine Studie der Technischen Hochschule zu Köln durchgeführt, um einen Zusammenhang der Vertrauensbildung in einer Teambuildingmaßnahme zwischen einem Menschenähnlichen Avatar und einem nicht-Menschenähnlichen Avatar, darzustellen.
+Das Ziel dieser Forschung ist es herauszufinden, ob unterschiedliche Avatardarstellungen einen Einfluss auf das gebildete Vertrauen in ein Team und die Effektivität eines Team besitzen.
+Die erste wichtige Frage dabei ist, ob eine Invers-Kinematisch menschenähnlicher Repräsentation oder eine abstrakte nicht-menschenähnliche Repräsentation effektiver ist, um Vertrauen in einem neu gegründetem virtuellem Team zu generieren. Die zweite Frage setzt sich damit auseinander, ob sich das durch die unterschiedlichen Repräsentationen gebildete Vertrauen auf die Effektivität des virtuellen Teams auswirkt.
+Um diese Fragen zu beantworten, wurde eine quantitative Studie durchgeführt, indem verschiedene Teilnehmer in einem 3 Personen Team eine kollaborative Aufgabe in einem Shared-Virtual-Environment durchgeführt haben.
+Die quantitative Studie hat gezeigt, dass in einem 3 Personen Team in einem Shared-Virtual-Environment signifikant mehr Vertrauen zu nicht-menschenähnlichen Repräsentationen aufgebaut wird. Es konnten keine signifikanten Unterschiede in der Effektivität eines Teams festgestellt werden.
+\textbf{DIES HIER HIN?}
+Dies zeigt, dass in einem neu gegründetem Team die Simplizität einer nicht-menschenähnlichen Repräsentation effektiver ist um anfänglich Vertrauen aufzubauen. Jedoch kann im Bezug auf die Effektivität dieses keine Aussage getroffen werden.
 	
 			\paragraph{Stichwörter}
 			Virtual-Reality, Vertrauen, Teamgründung,Virtuelles Team, Avatar
@@ -131,6 +141,11 @@ Einfluss des gebildeten Vertrauens von \ac{ik} und \ac{nik} Avataren auf die Tea
 	\newpage
 	\tableofcontents
 	\newpage
+	
+%\listoffigures% Abbildungsverzeichnis
+%\newpage
+%\listoftables% Tabellenverzeichnis
+%\newpage
 	
 \section*{Abkürzungsverzeichnis}\markboth{Abkürzungsverzeichnis}{Abkürzungsverzeichnis}\addcontentsline{toc}{section}{Abkürzungsverzeichnis}
 	\input{acronym.tex}
@@ -187,53 +202,77 @@ Einfluss des gebildeten Vertrauens von \ac{ik} und \ac{nik} Avataren auf die Tea
 %Was ist ein Team?
 %Was ist ein virtuelles Team?
 \section*{Einleitung}\markboth{Einleitung}{Einleitung}\addcontentsline{toc}{section}{Einleitung}
+
+Virtual Reality \ac{vr} hat in den letzten Jahren aufgrund von verbesserter Technologie und sinkenden Kosten an Bedeutung gewonnen. Verschiedene Felder, wie Medizin, Wirtschaft, Training oder die Industrie greifen auf diese Technologie zurück. Voranschreitende Forschung in diesem Feld, ist aufgrund von wachsendem Interesse von großer Bedeutung. Vertrauensbildung sowie das gesamte Konstrukt von Vertrauen sind in vielen Forschungsbereichen eine wichtige Grundlage. Diese wurde im Zusammenhang mit \ac{vr} jedoch in den letzten Jahren wenig betrieben. Diese Arbeit zielt darauf ab, das Konstrukt des Vertrauens in der Virtuellen Welt besser zu verstehen und mit diesem umzugehen. Dafür wurde eine Studie der Technischen Hochschule zu Köln durchgeführt, um einen Zusammenhang der Vertrauensbildung in einer Teambuildingmaßnahme zwischen einem Menschenähnlichen Avatar und einem nicht-Menschenähnlichen Avatar, darzustellen.
+
 	Mit voranschreitender technologischer Entwicklung, rückt die digitale Kommunikation immer mehr in den Mittelpunkt. Unternehmen weltweit setzen schon seit langem darauf, räumliche und zeitliche Grenzen zu überwinden. Begonnen mit der Implementierung eines Telegrafennetzes in den 1840er Jahren über das Telefon in den 1870er Jahren bis hin zur E-Mail 1970 und dem World-Wide-Web einige Jahre später.
 	Seit den 1990er Jahren ist die Kommunikation mittels Computer nicht mehr wegzudenken. Der Computer steht in jedem Büro, in nahezu jedem Haushalt. Chats, E-Mails, das World-Wide-Web sowie Video- und Sprachkommunikation sind zu Standartkommunikationsmittel der heutigen Zeit geworden \citep[p. 14-16]{thurlow2004computer}.
 	
 Neue Generationen von Sozialen-Netzwerksystemen werden mit der Prämisse erstellt, die Kommunikation zu entfernten Personen zu verbessern.
-Einsatzfelder sind dabei :
+Die Einsatzfelder werden im Folgenden beschrieben :
 \begin{itemize}
 	\item{\textbf{Gemeinsame Arbeitsumgebungen}: Gemeinsame Arbeitsumgebungen sind zunehmend auf digitale Kommunikation angewiesen.}
 	\item{\textbf{Die Mobil- und Internettelefonie:} Die Mobil- und Internettelefonie bieten zunehmend ständigen, von Raum und Zeit unabhängigen, sozialen Kontakt zu anderen Nutzern}
-	\item{\textbf{Agentenbasierte Schnittstellen:} Hilfsagenten auf Websites, Charaktere in \ac{sve}'s sowie Charaktere in Computerspielen bieten \dq{}quasi\dq{}-sozial Beziehungen. Diese \dq{}quasi\dq{}-sozialen Beziehungen bieten eine neue Form von Mensch-Maschinen-Kommunikation in \ac{sve}'s.} 
+	\item{\textbf{Agentenbasierte Schnittstellen:} Hilfsagenten auf Websites, Charaktere in \ac{sve}'s sowie Charaktere in Computerspielen bieten \textit{quasi}-sozial Beziehungen. Diese \textit{quasi}-sozialen Beziehungen bieten eine neue Form von Mensch-Maschinen-Kommunikation in \ac{sve}'s.} 
 	\item{\textbf{FOIP/VOIP-Telefonkonferenzen:} Telekonferenzen ermöglichen eine simulierte Kommunikation von Angesicht zu Angesicht und weitere Soziale-Interaktionsmöglichkeiten.}
 	\item{\textbf{Sprach-interfaces:} Simulationen von sozialen Interaktionen mit dem Computer durch die menschliche Sprache.}
 	\item{\textbf{Soziale virtuelle 3D-Umgebungen:} Ermöglichen eine soziale Interaktion mit vollständig dargestellten Avataren.}
 \end{itemize}
 
-All diese Technologien teilen dasselbe Ziel : \\ \dq{}Die Verbesserung der \dq{}Social-Presence\dq{}, so dass der Nutzer das Gefühl hat zu einem gewissen Grad Einblicke in die kognitiven und affektiven Zustände des anderen zu haben \dq{} \citep{biocca2002defining} \citep[p.407–447]{biocca2001plugging}.
+All diese Technologien teilen dasselbe Ziel : \\ \dq{}Die Verbesserung der\textit{Social-Presence}, so dass der Nutzer das Gefühl hat zu einem gewissen Grad Einblicke in die kognitiven und affektiven Zustände des anderen zu haben \dq{} \citep{biocca2002defining} \citep[p.407–447]{biocca2001plugging}.
 
-Teambuilding und Zusammenarbeit zwischen entfernten Personen wird heute immer wichtiger für die Effizienz von Unternehmen. Mitarbeiter befinden sich sehr häufig nicht am selben Ort, wobei viele Unternehmen sich trotzdem eine effektive Gestaltung ihrer Teams wünschen \citep[p.791-792]{jarvenpaa1999communication}. \ac{vts} können hierbei Abhilfe schaffen. 
+Zusammenarbeit zwischen entfernten Personen wird heute immer wichtiger für die Effizienz von Unternehmen. Mitarbeiter befinden sich sehr häufig nicht am selben Ort, wobei viele Unternehmen sich trotzdem eine effektive Gestaltung ihrer Teams wünschen \citep[p.791-792]{jarvenpaa1999communication}. \ac{vts} können hierbei Abhilfe schaffen. 
 	
-Erst seit ungefähr 10-15 Jahren sind \ac{vts} aus der bis dahin vorhandenen Nische in den Alltag von Unternehmen eingezogen \citep{gilson2015virtual}.
+Erst seit ungefähr 10-15 Jahren sind \ac{vts} in den Fokus von Unternehmen gerückt und in den Alltag von ihnen eingezogen \citep{gilson2015virtual}.
 
-Im Jahr 2020, vor der Corona Pandemie im 2. Quartal 2020, haben 40\% aller Angestellten in Deutschland von zu Hause im \dq{}Homeoffice\dq{} gearbeitet. Dieser Anteil ist im Laufe des Jahres - Stand 03.08.2020 - auf 60\% gestiegen und es könnten theoretisch 80\% der Belegschaften von zu Hause arbeiten.\citep{statistaCorona2020}. Durch diese Entwicklung, mussten Unternehmen sich zwangsläufig mit der Funktionsweise von \ac{vts} beschäftigen.
+Vor der Corona Pandemie, im 2. Quartal 2020, haben 40\% aller Angestellten in Deutschland von zu Hause im \dq{}Homeoffice\dq{} gearbeitet. Dieser Anteil ist im Laufe des Jahres - Stand 03.08.2020 - auf 60\% gestiegen und es könnten theoretisch 80\% der Belegschaften von zu Hause arbeiten \citep{statistaCorona2020}. Durch diese Entwicklung, mussten Unternehmen sich zwangsläufig mit der Funktionsweise von \ac{vts} beschäftigen.
 
 Trifft sich ein virtuelles Team in einer \ac{vr}, können Avatare \footnote{Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt \citep[p.1]{neustaedter2009presenting}.} zur Repräsentation des eigenen Individuums eingesetzt werden. Durch diese wird mit anderen Teilnehmern des \ac{sve} interagiert und kommuniziert.
 
 \newpage
 	\subsection{Motivation}
-	Um ein gutes Arbeitsklima für zukünftige Zusammenarbeiten in einem Team zu schaffen, ist die Anfangsphase einer Teamgründung von großer Bedeutung. In dieser Zeit werden wichtige Richtungsweisende Grundsteine gelegt, die den Erfolg oder Misserfolg eines Teams bestimmen können. Charakterzüge der Mitglieder werden kennengelernt und es werden Beziehungen untereinander aufgebaut.
+	Um ein gutes Arbeitsklima für zukünftige Zusammenarbeit in einem Team zu schaffen, ist die Anfangsphase einer Teamgründung von großer Bedeutung. In dieser Zeit werden wichtige richtungsweisende Grundsteine gelegt, die den Erfolg oder Misserfolg eines Teams bestimmen können. Charakterzüge der Mitglieder werden kennengelernt und es werden Beziehungen untereinander aufgebaut.
 	
-	Viele Unternehmen setzen, aufgrund der wachsenden Globalisierung, auf geografisch trennte Teams um Aufgaben effizient zu bearbeiten. Die Teambuilding in einem räumlich getrenntem Team spielt eine ebenso große Rolle wie in einem Team, das die Möglichkeit hat sich in Persona kennenzulernen.
+	Viele Unternehmen setzen aufgrund der wachsenden Globalisierung auf geografisch trennte Teams um Aufgaben effizient zu bearbeiten. Die Teamgründung in einem räumlich getrennten Team spielt eine ebenso große Rolle wie in einem Team, das die Möglichkeit hat, sich in Persona kennenzulernen.
 	
 	In einem räumlich getrennten Team zu arbeiten, das sich gegenseitig nicht Vertraut oder nicht richtig Zusammenarbeitet, hemmt die Performance dieses \citep[p. 98-107]{huang1998supporting} \citep[p. 399-417]{turoff1993distributed}.
 	
-	Teambuilding steht jedoch nicht nur in der Kennenlernphase eines Teams im Fokus, denn es wird unter anderem besonders dann benötigt, wenn ein Team beispielsweise zu langsam arbeitet, die individuelle Leistung eines Teammitglieds nicht genügt, Konflikte entstehen oder die Gruppendynamik nicht dem soll entspricht \citep[p. 1-3]{biech2007pfeiffer}.
+%	Teambuilding steht jedoch nicht nur in der Kennenlernphase eines Teams im Fokus, denn es wird unter anderem besonders dann benötigt, wenn ein Team beispielsweise zu langsam arbeitet, die individuelle Leistung eines Teammitglieds nicht genügt, Konflikte entstehen oder die Gruppendynamik nicht dem soll entspricht \citep[p. 1-3]{biech2007pfeiffer}.
 	
-	Durch voranschreitende Forschung, ist es heutzutage möglich, dass sich viele Personen gleichzeitig in einem \ac{sve} befinden. Dadurch ist es in \ac{sve}'s möglich, auch Teambuildingmaßnahmen durchzuführen, wenn sich Teams räumlich getrennt voneinander befinden.
+	Durch voranschreitende Forschung ist es heutzutage möglich, dass sich viele Personen gleichzeitig in einem \ac{sve} befinden. Dadurch können auch Teams gegründet werden, wenn sich diese räumlich getrennt voneinander befinden.
 	
-	Die Repräsentation eines Individuums innerhalb eines \ac{sve} kann sich von \ac{sve} zu \ac{sve} unterscheiden.
+	Die Repräsentation eines Individuums innerhalb eines \ac{sve} kann sich dabei von \ac{sve} zu \ac{sve} unterscheiden.
 	
 	\subsection{Ziele der Arbeit}
-Es gilt herauszufinden, welche Art von Repräsentation in einem \ac{sve}, in der \dq{}Kennenlernphase\dq{} eines virtuellen Teams, mehr zwischenmenschliches Vertrauen aufbaut. Dabei wird der Fokus auf die beiden Konditionen \ac{ik} sowie \ac{nik} gelegt um zu analysieren, bei welcher dieser Konditionen eine größere Effektivitätssteigerung, während der erstmaligen Zusammenarbeit, vorhanden ist.
-Weiterhin wird ein spezieller Fokus auf das kognitive Vertrauen in die Teammitglieder, den generellen Hang zum Vertrauen der einzelnen Personen sowie die daraus resultierende Team-Effektivität, im Hinblick auf die unterschiedlichen Konditionen, gelegt. Dazu bestreitet ein drei-Personen Team, welches sich noch nicht vorher kennt, in einem \ac{sve} eine kooperative Aufgabe.
+%Ist die Avatarkondition \ac{ik} oder die Avatarkondition \ac{nik} effektiver um Vertrauen in einem \ac{sve} zu bilden?
+%Falls es auswirkungen gibt :
+%Welche Avatarkondition sollte man nutzen um frühzeitig Vertrauen zu bilden?
+%Warum ist eine Avatarkondition effektiver?
+%Falls es keine Auswirkungen gibt :
+%Weshalb gibt es keine Auswirkungen?
+%Was hat der Versuchsaufbau mit den Ergebnissen zu tun?
+%
 
-	Durch diese Forschung soll es leichter möglich sein, eine Entscheidung über die Darstellungsweise der Repräsentation eines Avatars in einem \ac{sve} zu treffen, um die Zusammenarbeit eines virtuellen Teams über \ac{vr} Effektiver zu gestalten.
-	Es sind verschiedene Hypothesen aufgestellt, anhand denen es möglich ist, das kognitive Vertrauen in das Team, den generellen Hang zum Vertrauen einer Person, die Teameffektivität und deren Wechselwirkungen zu analysieren.
+%Wirkt sich das gebildete Vertrauen der verschiedenen Avatarkonditionen auf die Effektivität eines virtuellen Teams aus?
+%Wenn ja : Welche Avatarkondition ist effektiver?
+%Wie viel effektiver ist eine Avatarkonditione?
+%Wenn nein : Woran liegt es, dass die Teams gleich effektiv sind?	
+
+
+Es gilt herauszufinden, welche Art von Repräsentation in einem \ac{sve}, während der Neugründung eines virtuellen Teams, mehr zwischenmenschliches Vertrauen aufbaut. Dabei wird der Fokus auf die beiden Konditionen \ac{ik} sowie \ac{nik} gelegt, um zu analysieren, ob durch das gebildete Vertrauen der Konditionen eine größere Effektivitätssteigerung, während der erstmaligen Zusammenarbeit, entsteht.
+Weiterhin wird ein spezieller Fokus auf das kognitive Vertrauen in die Teammitglieder, den generellen Hang zum Vertrauen der einzelnen Personen sowie die daraus resultierende Team-Effektivität im Hinblick auf die unterschiedlichen Konditionen gelegt. Dazu bestreitet ein drei-Personen Team, welches sich noch nicht vorher kennt, in einem \ac{sve} eine kooperative Aufgabe.
+
+Der Titel der Masterarbeit kann somit in zwei Fragestellungen aufgeteilt werden :
+\begin{itemize}
+\item Ist die Avatarkondition \ac{ik} oder die Avatarkondition \ac{nik} effektiver um Vertrauen in einem \ac{sve} zu bilden?
+\item Wirkt sich das gebildete Vertrauen der verschiedenen Avatarkonditionen auf die Effektivität eines virtuellen Teams aus?
+\end{itemize}
+
+	Durch diese Forschung soll es einfacher möglich sein, eine Entscheidung über die Repräsentation eines Avatars in einem \ac{sve} zu treffen, um die Zusammenarbeit eines virtuellen Teams über \ac{vr} effektiver zu gestalten.
+Es werden verschiedene Hypothesen aufgestellt, anhand denen es möglich ist, das kognitive Vertrauen in das Team, den generellen Hang zum Vertrauen einer Person, die Teameffektivität und deren Wechselwirkungen zu analysieren.
 %	Anhand verschiedener Faktoren, die zum Erfolgreichem messen von Teambuildingmaßnahmen ausgewählt wurden, werden die zuvor definierten Hypothesen ausgewertet.
-	Diese Arbeit ist dem Gebiet der Virtuellen Realität und Sozialpsychologie zuzuordnen, speziell der virtuellen Teams in der Virtuellen Realität.
-	In diesem Bereich gibt es noch nicht viel Literatur, weshalb eine Zeitgemäße Betrachtung und Analyse der Kombination von virtueller Realität und Sozialpsychologie als Sinnvoll erachtet wird.
+Diese Arbeit ist dem Gebiet der virtuellen Realität und Sozialpsychologie zuzuordnen, speziell der virtuellen Teams in der virtuellen Realität.
+In diesem Bereich gibt es noch nicht viel Literatur, weshalb eine zeitgemäße Betrachtung und Analyse der Kombination von virtueller Realität und Sozialpsychologie als sinnvoll erachtet wird.
 
 %Repräsentationen in der virtuellen Welt haben einen großen Einfluss auf unterschiedliche Faktoren. Sie helfen dabei die andere Person in der \ac{vr} zu Lokalisieren, diese Wahrzunehmen, zu Identifizieren und zu verstehen, was eine andere Person aktuell tut. \citep[p.{pan2017impact} Daher gilt es herauszufinden, ob verschiedene Repräsentationen in einem \ac{sve} einen unterschiedlichen Einfluss auf die Team-Effektivität und das Vertrauen in das Team haben.\\
 
@@ -274,28 +313,28 @@ Weiterhin wird ein spezieller Fokus auf das kognitive Vertrauen in die Teammitgl
 \section{Theoretischer Rahmen}
 
 %\subsection{Team und Gruppen}
-In diesem Kapitel werden die einzelnen Teilbereiche \dq{}Virtual-Reality\dq{}, \dq{}Avatare\dq{}, \dq{}Vertrauen\dq{} und \dq{}Teamwork\dq{} in einem grundlegenden Umfang  erläutert.
+In diesem Kapitel werden die einzelnen Teilbereiche \textit{Virtual-Reality}, \textit{Avatare}, \textit{Vertrauen} und \textit{Teamwork} erläutert.
 
-Zu Beginn der Grundlagen und ohne Kapitel sollte jedoch als aller erstes die Begrifflichkeiten \dq{}Effizienz\dq{} und \dq{}Effektivität\dq{} in Bezug auf virtuelle Teams abgegrenzt werden.
+Zunächst sollte jedoch jedoch die Begrifflichkeiten \textit{Effizienz} und \textit{Effektivität} in Bezug auf virtuelle Teams voneinander abgegrenzt werden.
 
-Die Begriffe Effektivität und Effizienz werden häufig als Synonyme benutzt. Dies ist jedoch nicht korrekt. Es gibt eine eindeutige Abgrenzung dieser, wobei beide einen eindeutigen Schwerpunkt auf den zu Analysierenden Inhalt setzen.
+Die Begriffe \textit{Effektivität} und \textit{Effizienz} werden häufig als Synonyme benutzt. Dies ist jedoch nicht korrekt. Es gibt eine eindeutige Abgrenzung, wobei beide einen eindeutigen Schwerpunkt auf den zu Analysierenden Inhalt setzen.
 
 %Die Effizienz ist in dieser Arbeit nicht von bedeutung. Es geht nicht darum, herauszufinden, durch welche Avatarkondition effizienter in einem \ac{sve} eine gemeinsame Aufgabe erledigt werden kann.
 %Es geht darum, zu schauen, durch welche Avatarkondition Effektiv Vertrauen aufgebaut werden kann, um so eine eventuelle Effektive steigerung der Teameffektivität durch eine bestimmte Avatarkontion auszumachen.
 \paragraph{Effizienz}
-Bei der Effizienz geht es darum, sein Handeln so zu optimieren, dass ein Ziel möglichst schnell und mit möglichst geringem Aufwand erreicht wird. Die Wirtschaftlichkeit steht bei der Effizienz im Vordergrund. Ergebnis und eingesetzte Mittel müssen dabei immer in einem möglichst günstigen Kosten-Nutzen-Verhältnis stehen.\\
+Bei der \textit{Effizienz} geht es darum, sein Handeln so zu optimieren, dass ein Ziel möglichst schnell und mit möglichst geringem Aufwand erreicht wird. Die Wirtschaftlichkeit steht bei der \textit{Effizienz} im Vordergrund. Ergebnis und eingesetzte Mittel müssen dabei immer in einem möglichst günstigen Kosten-Nutzen-Verhältnis stehen.\\
 $Effizienz = \frac{Ergebnis}{Aufwand}$\\
 Ist ein Team effizient, wenn es sich nur über ein Telefon unterhalten würde, obwohl es sich auch in Persona treffen könnte?
 Nein wäre es nicht, da der wirtschaftliche Aspekt der Telefonkosten mit eingerechnet werden muss. Somit wäre es günstiger (effizienter) sich in Persona zu treffen. Ebenfalls ist es Aufwändiger das Telefon in der Hand zu halten, Nummern zu wählen, etc.
 
-Anders ausgedrückt : Effizienz beschreibt Mittel und Wege zur Erreichung der Effektivität.
+Anders ausgedrückt : \textit{Effizienz} beschreibt Mittel und Wege zur Erreichung der \textit{Effektivität}.
 
-Es müssen sich zur Erreichung von Effizienz immer folgende Fragen gestellt werden :
-Gehen wir den Weg des geringsten Aufwands, um unser Ziel zu erreichen?
-Tun wir die Dinge richtig?
+%Es müssen sich zur Erreichung von \textit{Effizienz} immer folgende Fragen gestellt werden :
+%Gehen wir den Weg des geringsten Aufwands, um unser Ziel zu erreichen?
+%Tun wir die Dinge richtig?
 
 \paragraph{Effektivität}
-Bei der Effektivität geht es darum, die Dinge zu tun, die einem dem Ziel näher bringen. 
+Bei der \textit{Effektivität} geht es darum, die Dinge zu tun, die einem dem Ziel näher bringen. 
 Somit arbeitet ein Team Effektiv, wenn es die richtigen Maßnahmen ergreift um dem zu erreichendem Ziel näher zu kommen.\\
 $Effektivität = \frac{Ergebnis}{Ziel}$ \\
 Ist ein Team effektiv, wenn es sich nur über ein Telefon unterhalten würde?
@@ -303,57 +342,55 @@ Effektiv ja, da eine Kommunikation zu den anderen Teammitgliedern stattfindet.
 Effektiv ist es auch, wenn es sich in Persona trifft.
 
 Anders ausgedrückt : Effektivität ist das Ausmaß der Erreichung angestrebter Ergebnisse/Ziele/Zwecke.
-
-Somit kann bei dem Begriff \dq{}Effektivität\dq{} auch immer der Grad der Wirksamkeit berücksichtigt werden.
-
-Somit stellen sich bei der Frage nach der Effektivität folgende Fragen: 
-Bringt uns die Maßnahme dem Ziel näher? 
-Tun wir die Dinge, die uns voranbringen?
-Gibt es eine Maßnahme, die einen höheren Grad an Zielerreichung mit sich bringt?
+Somit kann bei dem Begriff \textit{Effektivität} auch immer der Grad der Wirksamkeit berücksichtigt werden.
+%
+%Somit stellen sich bei der Frage nach der Effektivität folgende Fragen: 
+%Bringt uns die Maßnahme dem Ziel näher? 
+%Tun wir die Dinge, die uns voranbringen?
+%Gibt es eine Maßnahme, die einen höheren Grad an Zielerreichung mit sich bringt?
 
 %\paragraph{Abgrenzung zu dieser Ausarbeitung}
-In dieser Masterarbeit wird geschaut, in welchem Ausmaß Vertrauen bei unterschiedlichen Avatar Konditionen in einer Teambuildingmaßnahme gebildet wird und wie sich dieses auf die Teamleistung bezieht.
-
-Effizienz ist wichtig, aber unter uneffektiven Voraussetzungen Dinge effizient zu tun bringt dem Team in einer Teambuildingmaßnahme keinen Mehrwert.
-
-So muss sich in Bezug auf diese Masterarbeit die Frage gestellt werden, welches die richtige Kondition (\ac{ik} oder \ac{nik}) in einer Teambuildingmaßnahme ist um einen höheren Grad an Effektivität zu erzielen.
+%In dieser Masterarbeit wird geschaut, in welchem Ausmaß Vertrauen bei unterschiedlichen Avatar Konditionen in einer Teambuildingmaßnahme gebildet wird und wie sich dieses auf die Teamleistung bezieht.
+%
+%Effizienz ist wichtig, aber unter uneffektiven Voraussetzungen Dinge effizient zu bearbeiten bringt dem Team in einer Teambuildingmaßnahme keinen Mehrwert.
+%
+%So muss sich in Bezug auf diese Masterarbeit die Frage gestellt werden, welches die richtige Kondition (\ac{ik} oder \ac{nik}) in einer Teambuildingmaßnahme ist um einen höheren Grad an Effektivität zu erzielen.
+\newpage
 	\subsection{Virtual Reality}
 	\label{Virtual Reality}
 %		\subsubsection{VR - Wozu brauchen wir Virtual Realitky?}
 		\subsubsection{Virtuelle 3D-Welten}
-Virtual-Reality ist eine Realität, die durch den Computer, geschriebenen Computercode sowie erstellte 3D-Welten, abgebildet und zum Leben erweckt wird. Dabei Spielt der Nutzer, das umschließende Erlebnis sowie die Interaktivität in der \ac{vr}, eine zentrale Rolle \citep[p.6-12]{sherman2018understanding}.
-	Seit vielen Jahren sind \ac{sve}'s Forschungsgrundlage der Virtuellen Realität. Siehe \citep{shuffler2011there} \citep{steed1999leadership} und \citep{de2011level}.
+Virtual-Reality ist eine Realität, die durch den Computer, einen geschriebenen Computercode sowie erstellte 3D-Welten abgebildet und zum Leben erweckt wird. Dabei spielt der Nutzer, das umschließende Erlebnis sowie die Interaktivität in der \ac{vr}, eine zentrale Rolle \citep[p.6-12]{sherman2018understanding}.
+	Seit vielen Jahren sind \ac{sve}'s Forschungsgrundlage der virtuellen Realität. Siehe \citep{shuffler2011there} \citep{steed1999leadership} und \citep{de2011level}.
 
 \paragraph{Shared-Virtual-Environment}
-	\ac{sve}'s bieten die Möglichkeit, geographisch getrennte Personen in einer virtuellen Umgebung zu verbinden. Dadurch wird den Nutzern der virtuellen Realität die Möglichkeit bereitgestellt, durch ein Avatar miteinander kommunizieren und interagieren zu können \citep[p. 1-3]{pettifer1999designing}. Eine grundlegende und frühe Übersicht der Anwendungsgebiete eines \ac{sve} wurde von Richard Waters dargestellt. Siehe \citep{waters1997rise}. Die dort aufgeführten Anwendungsgebiete haben sich aufgrund der voranschreitenden Technologie weiterentwickelt und reichen heute von der Medizintechnik über die Konstruktion bis hin zur Lernsimulation.
-	Zur Durchführung und zur Datenerhebung dieser Studie wurde ein \ac{sve} entwickelt, welches den Nutzern ein \dq{}Hand- und Kopf getrackten Avatar\dq{} (\ac{ik}) oder ein \dq{}Hand-, Kopf und Inverskinematisch-simuliertem Torso getrackten Avatar\dq{} (\ac{nik}), je nach Anwendungsfall, zur Verfügung stellt. Innerhalb des \ac{sve} können sich die Nutzer frei bewegen, andere Avatare Wahrnehmen und mit diesen interagieren.
-	
-	
-		\subsubsection{Vorbedingungen für Presence}
-Um die bestmöglichste Umschlossenheit in einer \ac{vr} zu erreichen, wird eine Schnittstelle zur Interaktion zwischen den Sinnen und der Außenwelt benötigt. Dies kann ein \ac{hmd} sein, welches ein computergeneriertes Bild erzeugt, durch das die \ac{vr} wahrgenommen wird. Darüber hinaus muss das \ac{hmd} in der Lage sein, den Kopf des Benutzers frei im Raum zu verfolgen und die gewonnenen Positionsdaten auf die \ac{vr} abzubilden. Optimalerweise werden Controller benötigt, durch deren Einsatz es möglich ist, auch die Handbewegungen der realen Personen zu Verfolgen. Durch die gewonnenen Positionsdaten kann die Position der Hände des Nutzers in der \ac{vr} dargestellt werden. Das \ac{hmd}, die Controller, eventuelle zusätzliche Körpertracker, Kopfhörer, eventuell wahrgenommener Geruch etc. definieren, zu welchem Ausmaß Sinnesmodalitäten in der \ac{vr} angesprochen werden. Der Grad der Immersion hängt somit direkt mit der Anzahl der angesprochenen Sinnesmodalitäten zusammen. Je mehr Sinnesmodalitäten gleichzeitig angesprochen werden, desto mehr ist der Wahrnehmungsapparat in der Lage, die virtuelle Umgebung auf die reale Welt abzubilden.
+	\ac{sve}'s bieten die Möglichkeit, geographisch getrennte Personen in einer virtuellen Umgebung zu verbinden. Dadurch wird den Nutzern der virtuellen Realität die Möglichkeit gegeben, durch einen Avatar miteinander kommunizieren und interagieren zu können \citep[p. 1-3]{pettifer1999designing}. Eine grundlegende und frühe Übersicht der Anwendungsgebiete eines \ac{sve} wurde von Richard Waters \cite{waters1997rise} dargestellt. Die dort aufgeführten Anwendungsgebiete haben sich aufgrund der voranschreitenden Technologie weiterentwickelt und reichen heute von der Medizintechnik über die Architektur bis hin zur Lernsimulation.
+	Zur Durchführung und zur Datenerhebung dieser Studie wurde ein \ac{sve} entwickelt, welches den Nutzern ein \textit{Hand- und Kopf getrackten Avatar} (\ac{ik}) oder ein \textit{Hand-, Kopf getrackten Avatar mit Inverskinematisch dargestellten Torso und Armen} (\ac{nik}), zur Verfügung stellt. Innerhalb des \ac{sve} können sich die Nutzer frei bewegen, andere Avatare wahrnehmen und mit diesen interagieren.
 
-Somit lässt sich sagen, dass die Voraussetzungen für \dq Presence\dq{} in der \ac{vr} die Korrelation zwischen den Sinneseindrücken, der Propriozeption \footnote{die Wahrnehmung des eigenen Körpers nach dessen Lage im Raum} und dem Grad der wahrgenommenen Realität der Illusion, sich in einem stabilen räumlichen Ort zu befinden, darstellt. Sind diese Voraussetzungen gegeben, kann der Nutzer einen plausiblen Vergleich zwischen realen sensorischen und virtuellen, durch Illusion erzeugten Daten, aufstellen \citep{slater2009we}.
+		\subsubsection{Vorbedingungen für Presence}
+Um die bestmögliche \textit{Immersion} in einer \ac{vr} zu erreichen, wird eine Schnittstelle zur Interaktion zwischen den Sinnen und der Außenwelt benötigt. Dies kann ein \ac{hmd} sein, welches ein computergeneriertes Bild erzeugt, durch das die \ac{vr} wahrgenommen wird. Darüber hinaus muss das \ac{hmd} in der Lage sein, den Kopf des Benutzers frei im Raum zu verfolgen und die gewonnenen Positionsdaten auf die \ac{vr} abzubilden. Optimalerweise werden Controller benötigt, durch deren Einsatz es möglich ist, auch die Handbewegungen der realen Personen zu verfolgen. Durch die gewonnenen Positionsdaten kann die Position der Hände des Nutzers in der \ac{vr} dargestellt werden. Das \ac{hmd}, die Controller, eventuelle zusätzliche Körpertracker, Kopfhörer, eventuell wahrgenommener Geruch etc. definieren, zu welchem Ausmaß Sinnesmodalitäten in der \ac{vr} angesprochen werden. Der Grad der Immersion hängt somit direkt mit der Anzahl der angesprochenen Sinnesmodalitäten zusammen. Je mehr Sinnesmodalitäten gleichzeitig angesprochen werden, desto mehr ist der Wahrnehmungsapparat in der Lage, die virtuelle Umgebung auf die reale Welt abzubilden.
+
+Somit lässt sich sagen, dass die Voraussetzungen für \textit{Presence} in der \ac{vr} die Korrelation zwischen den Sinneseindrücken, der Propriozeption \footnote{die Wahrnehmung des eigenen Körpers nach dessen Lage im Raum} und dem Grad der wahrgenommenen Realität der Illusion, sich in einem stabilen räumlichen Ort zu befinden, darstellt. Sind diese Voraussetzungen gegeben, kann der Nutzer einen plausiblen Vergleich zwischen realen sensorischen und virtuellen, durch Illusion erzeugten Daten aufstellen \citep{slater2009we}.
 
 		\subsubsection{Presence in Virtual Reality}
 			
 %	Dank heutiger Technologien ist es uns möglich, zu jeder Zeit mit Personen an verschiedenen Orten zu interagieren und zu kommunizieren. Kommunikation nicht mehr nur auf die Personen in unserer unmittelbaren Umgebung beschränkt. 
-	Das Voranschreiten der Technologie ermöglicht es, uns nicht mehr nur auf soziale Interaktionen mit physischen Wesen zu beschränken, sondern erweitert diese auch auf Repräsentationen geschaffen aus Pixeln, die E-Mails, den Film oder durch das Telefon. Je nachdem, wie stark diese Repräsentation von uns Wahrgenommen wird, schafft Sie es, kraftvolle Emotionen in uns auszulösen \citep[p. 4-6]{biocca2002defining}.
-	
-Nur wenn eine gewisse \dq{}Presence\dq{} dieser Repräsentation besteht, kann \textbf{Vertrauensbildung} stattfinden. Somit definiert das Vorhandensein des Gefühls von \dq Presence \dq{} den Grundbaustein für alle weiteren Schritte zum Aufbau von Vertrauen.
+	Das Voranschreiten der Technologie ermöglicht es, uns nicht mehr nur auf soziale Interaktionen mit physischen anwesenden Personen zu beschränken, sondern erweitert diese auch auf Repräsentationen geschaffen aus Pixeln, auf die E-Mails, auf den Film oder auf das Telefon. Je nachdem, wie stark diese Repräsentation von uns wahrgenommen wird, schafft sie es, starke Emotionen in uns auszulösen \citep[p. 4-6]{biocca2002defining}.
+%	
+%Nur wenn eine gewisse \textit{Presence} dieser Repräsentation besteht, kann \textbf{Vertrauensbildung} stattfinden. Somit definiert das Vorhandensein des Gefühls von \dq Presence \dq{} den Grundbaustein für alle weiteren Schritte zum Aufbau von Vertrauen.
+Der Begriff  \textit{Presence}ist nicht genau definiert. Am ehesten trifft die Beschreibung zu, dass  \textit{Presence} das subjektive Empfinden beschreibt, an einem anderen Platz zu sein, obwohl man physikalisch eigentlich woanders ist \citep[p. 1]{witmer1998measuring}.
 
-Der Begriff \dq{}Presence\dq{} ist nicht genau definiert. Am ehesten trifft die Beschreibung zu, dass \dq{}Presence\dq{} das subjektive Empfinden ist, an einem anderen Platz zu sein, obwohl man physikalisch eigentlich woanders ist \citep[p. 1]{witmer1998measuring}.
+	Nimmt eine Person eine andere Person in einer \ac{vr} als präsent wahr, wird das Nervensyste in einen Zustand gebracht, der einem realen Zustand gleicht. Obwohl die betroffene Person weiß, dass sie sich nicht in einer realen Lebenssituation befindet, wird diese dazu neigen, sich so zu verhalten, als ob diese in realen Lebenssituation ist und ähnliche Gedanken und Gefühle haben \citep{slater2003note}.
 
-	Nimmt eine Person eine andere Person in einer \ac{vr} als Präsent wahr, werden die Wahrnehmenden, vestibulären, propriozeptiven und autonomen Nervensysteme in einen Zustand gebracht, der einem realen Zustand gleicht. Obwohl die betroffene Person weiß, dass Sie sich nicht in einer realen Lebenssituation befindet, wird diese dazu neigen, sich so zu verhalten, als ob diese in realen Lebenssituation ist und ähnliche Gedanken und Gefühle haben \citep{slater2003note}.
+Diesbezüglich kann \textit{Presence} als eine Art von Illusion angesehen werden, da die erzeugten Stimuli in der \ac{vr}, wie in der realen Welt auch auf unsere Rezeptoren angeregt werden.
 
-Diesbezüglich kann \dq{}Presence\dq{} als eine Art von Illusion angesehen werden, da die erzeugten Stimuli in der \ac{vr}, wie in der realen Welt auch auf unsere Rezeptoren projiziert werden.
-
-Somit lässt sich \dq{}Presence\dq{} in der \ac{vr} in 4 verschiedene Teilbereiche unterteilen.
+Somit lässt sich \textit{Presence} in der \ac{vr} in 4 verschiedene Teilbereiche unterteilen.
 
 \begin{itemize}
-	\item{\textbf{Die Illusion, sich in einem stabilen räumlichen Ort zu befinden}}, ist der wichtigste Aspekt um Presence zu erzeugen. Alle Stimuli zur räumlichen Wahrnehmung - wie zum Beispiel keine Restriktionen des \dq{}Field-of-View\dq{} \footnote{Sichtfeld}, keine Kabel am \ac{hmd} - sollten sich möglichst wie in der realen Welt verhalten \citep[p.47]{jerald2015vr}.
-	\item{\textbf{Die Illusion der Selbstverkörperung}} beschreibt das Gefühl einen Körper in der virtuellen Umgebung zu haben. Studien fanden heraus, dass durch einen v.irtuellen Körper die \dq{}Presence\dq{} in der \ac{vr} stark steigt, da der Mensch sein Leben lang sich an einen(seinen) Körper gewöhnt hat \citep[p.756]{botvinick1998rubber}. Der virtuelle Körper muss nicht unserem eigentlichen ähnlichsehen \citep[p.7]{maxwell1960psycho}.
-	\item{\textbf{Die Illusion von körperlichen Interaktionen}} beschreibt beispielsweise das vorhanden sein von Audio-Feedback, die Vibration des Controllers während etwas aufgehoben wird oder visuelle Highlights. Der Nutzer einer bekommt dadurch ein Gefühl mit der \ac{vr} zu interagieren. Diese Kleinigkeiten tragen eine große Menge dazu bei, \dq{}Presence \dq{} in der \ac{vr} zu steigern \citep[p.48]{jerald2015vr}.
-	\item{\textbf{Die Illusion von sozialer Kommunikation}} Sozialer-Realismus kann vom Physischen-Realismus abgetrennt werden. \dq{}Social-Presence\dq{} beschreibt das Gefühl, real mit jemandem in einem \ac{sve} zu kommunizieren. Dabei ist es irrelevant, ob der Kommunikationspartner Menschlich oder nicht menschlich ist. Sei es verbal oder durch Körpersprache. Je mehr Nutzer der virtuellen Welt sich so verhalten, als ob diese real wäre, desto mehr steigt auch die \dq{}Social-Presence\dq{} \citep[p.49]{jerald2015vr} \citep[p.12]{guadagno2007virtual}.
+	\item{\textbf{Die Illusion, sich in einem stabilen räumlichen Ort zu befinden}}, ist der wichtigste Aspekt, um \textit{Presence} zu erzeugen. Alle Stimuli zur räumlichen Wahrnehmung sollten sich möglichst wie in der realen Welt verhalten. Zum Beispiel sollten Restriktionen des  \textit{Field-of-View}\footnote{Sichtfeld} sowie Kabel am \ac{hmd} vermieden werden \citep[p.47]{jerald2015vr}.
+	\item{\textbf{Die Illusion der Selbstverkörperung}} beschreibt das Gefühl, einen Körper in der virtuellen Umgebung zu haben. Studien fanden heraus, dass durch einen virtuellen Körper die \textit{Presence} in der \ac{vr} stark steigt, da sich der Mensch sein Leben lang an einen (seinen) Körper gewöhnt hat \citep[p.756]{botvinick1998rubber}. Der virtuelle Körper muss unserem eigenen dabei nicht ähneln \citep[p.7]{maxwell1960psycho}.
+	\item{\textbf{Die Illusion von körperlichen Interaktionen}} beschreibt beispielsweise das Vorhandensein von Audio-Feedback, die Vibration des Controllers während etwas aufgehoben wird oder visuelle Highlights. Der Nutzer hat dadurch das Gefühl, mit der \ac{vr} zu interagieren. Diese Kleinigkeiten tragen eine große Menge dazu bei, \textit{Presence} in der \ac{vr} zu steigern \citep[p.48]{jerald2015vr}.
+	\item{\textbf{Die Illusion von sozialer Kommunikation}} Sozialer-Realismus kann vom Physischen-Realismus abgetrennt werden.  \textit{Social-Presence} beschreibt das Gefühl, real mit jemandem in einem \ac{sve} zu kommunizieren. Dabei ist es irrelevant, ob der Kommunikationspartner menschlich oder nicht menschlich ist. Sei es verbal oder durch Körpersprache. Je mehr der Kommunikationspartner sich so verhalten, als ob die virtuelle Welt real wäre, desto mehr steigt auch die \textit{Social-Presence} \citep[p.49]{jerald2015vr} \citep[p.12]{guadagno2007virtual}.
 \end{itemize}
 
 %\begin{figure}[H]
@@ -451,7 +488,7 @@ Die Vorwärtskinematik beschäftigt sich mit der Frage, wie aus bekannten Positi
 \label{inverseKinematik}
 Die Inverse-Kinematik beschäftigt sich damit, herausfinden, wie Gelenke eines Roboterarms bewegt und gedreht werden müssen, um Beispielsweise einen Gegenstand von Punkt A nach Punkt B zu bewegen. Es wird anhand der Position des Zielpunkts, alle Winkel der zugehörigen Gelenke approximiert um somit die zugehörigen Rotationen dieser zu bestimmen. \citep[p.299-300]{d2001learning} Inverse-Kinematische Berechnungen können auf Arme, auf den Torso, die Füße, den Kopf, die Beine, etc., eines Avatars angewand werden um diesen zu animieren. Benutzt eine Person in einem \ac{sve} einen Inverse-Kinematisch dargestellten Self-Avatar, kann dieser die Torsorotation, Armbewegungen oder Beinbewegungen seines eigenen Avatars sehen \citep[p.1]{kim2018real}
 
-\subsubsection{Selbst-Avatar und Nicht-Selbst-Avatare}
+\subsubsection{Self-Avatar}
 
 In der \ac{vr} und in einigen anderen computerbasierten Medien, kann der Nutzer sich Avatare erstellen und mit diesen interagieren. Ein Avatar bezeichnet eine Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt \citep[p.1]{neustaedter2009presenting}.
 
@@ -483,7 +520,7 @@ Somit lässt sich feststellen, dass ein höherer Grad an Realismus den Vertrauen
 Es wurde festgestellt, dass wenig kognitives Vertrauen während der Nutzung des \ac{sve} zu Avataren aufgebaut werden konnte, während Face-to-Face, Telefon und Chatkommunikationen besser abschnitten. Weiterhin wurde weniger affektives Vertrauen im \ac{sve}, als bei der Nutzung eines Telefons oder während der Face-to-Face Kommunikation, aufgebaut.
 Bente, Rüggenberg und Krämer \citep[p.54-59]{bente2004social} gehen davon aus, dass dies mit der Neuheit der Technologie zusammenhängt.
 
-\paragraph{Avatare und Kommunikation}
+\subsubsection{Avatare und Kommunikation}
 Allgemeine Kommunikation findet nicht nur mit Wörtern, sondern auch über Körpersprache wie Gestiken oder andere nonverbale Verhaltensmuster, statt. Durch \ac{sve}'s ist es nun möglich diese reine Text oder Bildbasierte Kommunikation durch Gestikulationen eines Avatars zu ersetzen. Durch diesen zusätzlichen visuellen Aspekt ist eine ganz neue Art und Weise der Kommunikation möglich, die auch gemessen werden kann. 
 Nichtverbale Kommunikation -Beispielsweise nur via Text- erzeugt keinen Mehrwert an Vertrauen, Zusammenhalt und erzielt keine ausreichend gute Kommunikation \citep[p.81]{haslam2003social}.
 Nonverbale Kommunikation kann Gesichtsausdrücke, Blicke, Bewegungen etc. umfassen. Kendon definiert im \dq{}Kendon Kontinuum\dq{} mit dem Begriff \dq{}Gestik\dq{} unwissende Gestiken (natürliche Körpersprache) bis hin zu \dq{} Zeichen\flqq, welche alle durch Gestikulation erzeugten Zeichen (z.B. O.K. Handzeichen ), beinhaltet \citep[37]{mcneill1992hand}.
@@ -496,7 +533,8 @@ Da in dieser Studie lediglich die beiden Controller sowie das \ac{hmd} getrackt 
 Die Avatare, die die \dq{}anderen\dq{} teilnehmenden Personen repräsentieren, können jedoch einen Körper besitzen.
 Welchen Einfluss in das Vertrauen in ein Team, das Aussehen der \dq{}anderen\dq{} Avatare auf eine Person im \ac{sve} besitzt, ist eine wesentliche Fragestellung dieser Arbeit. Auf das Aussehen und die Unterschiede der \dq{}anderen\dq{} Avatare wird im Kapitel \ref{IKNIK} genauer eingegangen.
 
-\paragraph{Uncanny-Valley}
+\subsubsection{Uncanny-Valley}
+\label{Uncanny-Valley}
 Je menschenähnlicher ein Roboter (u.a. auch ein Avatar) aussieht und je mehr menschenähnliche Bewegungen ein Roboter ausführt, desto mehr positive Gefühle bringt dieser den Personen entgegen, die mit diesem in Berührung kommen. Ab einem bestimmten Punkt des Realismus schlägt dieses Phänomen jedoch um und der Roboter wirkt viel mehr verstörend und ruft  Ablehnung, Verstörung und Angst hervor. Dieses Phänomen und dieser exakte Grad des Realismus wird als Uncanny-Valley Effekt bezeichnet. In \textbf{Abbildung \textit{\ref{UncannyValley}}} ist eine beschreibung dieses Effektes zu sehen \citep[p.352-353]{gast2011unheimliche}.
 
 \begin{figure}[H]
@@ -1012,10 +1050,10 @@ Da dieses Framework nicht validiert ist, kann es sein, dass die verschiedenen Fa
 %Wie im Kapitel \textbf{\nameref{Vertrauen}} beschrieben, bildet sich affektives Vertrauen nur über einen längerfristigen Zeitraum. Daher findet während der Versuchsdurchführung keine Messung des affektiven Vertrauens statt. 
 Kognitives Vertrauen wird in der Anfangsphase einer Teamgründung frühzeitig gebildet (vgl. Kapitel \ref{Vertrauen als Zustand}).
 Eine Analyse des kognitiven-Vertrauens auf Konditionseben, soll festgestellen, ob sich unterschiedliche Avatar Konditionen auf die Wahrnehmung einer Person, in Kompetenzen, Fähigkeiten und Zuverlässigkeiten des \ac{vt}, im \ac{sve}, auswirken.
-Daher wird \textbf{Hypothese 2} wie folgt definiert:\\
+Daher wird \textbf{Hypothese 1} wie folgt definiert:\\
 %H2$_{0}$ : Der erzielte Cognitive-Trust-Score (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} nicht voneinander.\newline
-\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitive Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \newline
-\textbf{H1$_{0}$} : Die Mittelwerte der erzielten kognitive Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} nicht voneinander. \\
+\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitiven Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander. \newline
+\textbf{H1$_{0}$} : Die Mittelwerte der erzielten kognitiven Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} nicht signifikant voneinander. \\
 
 %Es wird davon ausgegangen, dass durch unterschiedliche Avatar Konditionen signifikant unterschiedliche kognitive Vertrauenswerte im \ac{sve} gebildet werden. Somit würde eine Person mit der Avatarkondition \ac{ik} einen signifikant unterschiedlichen kognitiven Vertrauenswert, im Vergleich zu einer Person mit der Avatarkondition \ac{nik}, bilden.
 
@@ -1468,7 +1506,17 @@ Ist eine Runde noch nicht abgeschlossen, sehen die Teilnehmer zwischen den Podes
 \paragraph{Rundenschwierigkeit}
 Ein ScriptableObject beinhaltet die Regeln sowie den Ablauf der einzelnen Runden. 
 Durch diese Sammlung von Regeln und Abläufen, bekommt jedes Team jeweils in der selben Reihenfolge die selben Zeichen angezeigt um ein Vergleich der einzelnen Teams zu ermöglichen. Es beinhaltet somit die allgemeinen "Rundeneinstellungen" des Spiels. Es gibt vor, in welcher Runde die Spieler wie viele Symbole zu erklären und zu erraten haben, welche Knöpfe mit Symbolen gedrückt werden müssen und wer der Schwarze, Rote und Grüne Spieler der jeweiligen Runde ist. Die Regeln wurden so definiert, dass der erklärende Spieler spätestens jede 3. Runde wieder mit dem erklären an der Reihe ist. Die anderen Runden ist dieser der erratende Spieler. Jede 3. Runde wird die Anzahl der zu erratenden und dadurch auch der zu erklärenden Symbole um 1. erhöht. Somit mussten in Runde 1-3 1 Symbol, 4-6 2 Symbole, 7-9 3 Symbole, 10-12 4 Symbole und Runde 13-15 5 Symbole erraten und erklärt werden.
-Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt.
+Wer zu welcher Runde der Schwarze, Grüne oder Rote Spieler ist, und welche Symbole welche Runde gedrückt werden mussten, wurde einmalig Pseudozufällig festgelegt und in den "RoundRules" festgelegt. \textbf{\textit{Abbildung \ref{RoundDifficulty}}} zeigt die steigenden Schwierigkeitswerte, anhand in diesem Experiment die Teameffektivität gemessen wurde.
+
+\begin{figure}[H]
+		\begin{footnotesize}
+		\centering
+			\includegraphics[scale=0.4]{Abbildungen/RoundDifficulty.JPG}
+			
+			\caption[Abbildung 1]{Die steigende Schwierigkeit der zu drückenden Knöpfe der einzelnen Runden}
+			\label{RoundDifficulty}
+		\end{footnotesize}
+	\end{figure}
 
 \paragraph{CSV-Logwriting}
 Der GameManager des Spectator sammelt alle relevanten Daten über die Clients, während die einzelnen Runden von den Teilnehmern durchgeführt werden. Es wird inkrementell ein CSV-Log pro Durchgang fortgeschrieben. Dieses Log umfasst unter anderem das Startdatum, die Startzeit, die Spielzeit, die Rundenzeit, die Rundennummer %einen Effizienzwert berechnet durch $1-\frac{timeSinceGameStarts}{OverallGameTime}$ ( welcher jedoch nicht verwendet wurde ),
@@ -2772,7 +2820,7 @@ Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige
 %		
 %	\end{tabularx}
 %\end{table}
-In der folgenden Tabelle wird beschrieben, ob die einzelnen Hypothesen Signifikanz aufweisen.
+%In der folgenden Tabelle wird beschrieben, ob die einzelnen Hypothesen Signifikanz aufweisen.
 
 %\subsection{Analyse Hypothese 7}
 %
@@ -2963,7 +3011,7 @@ Weiterhin ist eine positive Korrelation starken Effektes (vgl. \cite{cohen2013st
   \caption{Spearman-Korrelationen der kognitiven Vertrauenswerte mit der wahrgenommenen Teamkommunikation. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}}
   \label{SubSig2}
 \end{figure}
-
+\clearpage
 \newpage
 
 \begin{table}[H]
@@ -3081,7 +3129,7 @@ Es wurde ein signifikanter unterschied der Mittelwerte der Teamkommunikation auf
 %		H1$_{0}$ : Ein hoher General-Trust-Score (\ac{gt}) wirkt sich \textbf{nicht positiv} auf den Cognitiven-Trust-Score (\ac{ct}) aus.\\
 %\textbf{H1$_{1}$} : Der erzielte kognitive Vertrauenswert (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\ \\
 %Alternative formulierung :
-\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitive Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
+\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitiven Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
 		& nicht signifikant \\
 		\hline \\
 		
@@ -3163,23 +3211,23 @@ H5 die Konditionen entfernen! Da das nicht Sinnvoll ist!
 \newpage
 \section{Diskussion}
 
-	Was habe ich gemacht?
-	Was habe ich gefunden? 
-	Was bedeutet das genau?
-	
-Die Ergebnisse werden interpretiert und Erkenntnisse werden erläutert.
-
-Die Beschränkungen der Forschung und deren Auswirkungen werden dargelegt.
-
-Es wird beschrieben, inwiefern die Erwartungen erfüllt worden sind.
-
-Eventuelle Ursachen und Folgen für die Ergebnisse werden besprochen.
-
-Vorschläge für eventuelle weiterführende Forschungen werden gemacht.
-
-Ergebnisse werden interpretiert.
-
-Es werden keine zu vagen Empfehlungen für weiterführende Forschungen gemacht.
+%	Was habe ich gemacht?
+%	Was habe ich gefunden? 
+%	Was bedeutet das genau?
+%	
+%Die Ergebnisse werden interpretiert und Erkenntnisse werden erläutert.
+%
+%Die Beschränkungen der Forschung und deren Auswirkungen werden dargelegt.
+%
+%Es wird beschrieben, inwiefern die Erwartungen erfüllt worden sind.
+%
+%Eventuelle Ursachen und Folgen für die Ergebnisse werden besprochen.
+%
+%Vorschläge für eventuelle weiterführende Forschungen werden gemacht.
+%
+%Ergebnisse werden interpretiert.
+%
+%Es werden keine zu vagen Empfehlungen für weiterführende Forschungen gemacht.
 	
 
 \paragraph{Allgemeines}
@@ -3187,37 +3235,13 @@ Es werden keine zu vagen Empfehlungen für weiterführende Forschungen gemacht.
 
 Die Stichprobengröße betrug in dem Experiment $N=30$, wobei, um Unterschiede und Zusammenhänge aufgeteilt nach Avatarkonditionen festzustellen, diese Stichprobengröße auf $N=15$ halbiert werden musste. Um Teameffekte zu messen, wurde das Team als Einheit gemessen. Dies führt dazu, dass bei $N=5$ Teams mit der Kondition \ac{ik} und $N=5$ Teams mit der Kondition \ac{nik} Zusammenhänge und Unterschiede gemessen werden konnten.
 
-Hier auf größe der Stichprobe eingehen. 
-Hier auf die Hauptfaktoren eingehen, weshalb die Hypothesen nicht signifikant wurden
-	-3er Teams zu groß
-	-Dadurch, dass die Personen wussten, dass diese mit 3 Lebendigen Personen arbeiten, wurde viel vertrauen gebildet
-	-Visualisierung der Avatare
-	-Komplexität der Aufgabe - Eventuell zu leicht? Eventuell nicht genügend Vertrauensaufbau vorhanden? Vertrauensaufbau eher im Sinne von "Wenn mein Team Versagt, dann Leite ich das Versagen auf mein gesamtes Team ab" "Wenn mein Team gut ist, dann denke ich, dass mein Team sehr Zuverlässig ist.
+%Hier auf größe der Stichprobe eingehen. 
+%Hier auf die Hauptfaktoren eingehen, weshalb die Hypothesen nicht signifikant wurden
+%	-3er Teams zu groß
+%	-Dadurch, dass die Personen wussten, dass diese mit 3 Lebendigen Personen arbeiten, wurde viel vertrauen gebildet
+%	-Visualisierung der Avatare
+%	-Komplexität der Aufgabe - Eventuell zu leicht? Eventuell nicht genügend Vertrauensaufbau vorhanden? Vertrauensaufbau eher im Sinne von "Wenn mein Team Versagt, dann Leite ich das Versagen auf mein gesamtes Team ab" "Wenn mein Team gut ist, dann denke ich, dass mein Team sehr Zuverlässig ist.
 
-\subsection{Diskussion des Experimentes}
-\paragraph{Avatarkonditionen}
-Es gibt keine unterschiede in der erzeugten Selbstpräsenz sowie der erzeugten Co-Präsenz der eingesetzten Avatare. Ein Grund diesbezüglich könnte das fehlende Selbst-Avatar der einzelnen Nutzer sein. Dies erhöht Laut Biocca ebenfalls die Selbstpräsenz der Avatare \citep[421-427]{construal2014connected}.
-Die teilnehmende Person (ID2) mit der Kondition \ac{ik} schrieb dazu : \newline
-\dq{}\textit{Ich wusste nicht genau wie meine Arme zu sehen sind, ob ich ein Buchstabe auch mit den Armen formen, statt mit den Händen schreiben konnte.}\dq{}\newline
-Diese Verwirrung der fehlenden Selbstpräsenz hat eventuelle Präsenzdefizite zur folge.
-Weiterhin hat sich die fehlende Geschlechtsunterscheidung der Avatare merklich gemacht. So schrieb die teilnehmende Person (ID4) mit der Kondition \ac{ik} dazu \newline 
-\dq{}\textit{Warum gab es keine Frauenfiguren? Das würde mehr Realität erzeugen}\dq{}.\newline
-
-\paragraph{Schwierigkeit des Experiments}
-Es ist möglich, dass das Experiment nicht komplex genug aufgebaut war, um einen Zusammenhang zwischen der Vertrauensbildung und der Teameffektivität zu messen.
-Dies ging besonders durch die statistisch unsignifikanten Ergebnisse der Analyse der Hypothese 3, 4 und 5 hervor. 
-So schrieb eine teilnehmende Person (ID17) mit der Kondition \ac{nik} dazu :\newline
-\dq{}\textit{Zu kurz - zu einfach - zu grau}\dq{} \newline
-Ähnliches schrieb die die teilnehmende Person mit der ID21 \newline 
-\dq{}\textit{Schwierigkeitsgrad hätte noch stärker sein dürfen}\dq{} 
-\newline
-Die Runden des Experiments hätten eventuell schneller abgearbeitet werden können, um eine größere Varianz der einzelnen Effektivitätswerte der Teams zu messen. 
-Diese Varianz der erzielten Teameffektivität könnte sich noch weiter erhöhen, wenn ein Team aus zwei statt aus drei Personen besteht. Einzelne Runden des Experiments würden schneller abgearbeitet werden und das gebildete kognitive Vertrauen könnte in einem direktem Vergleich gemessen werden.
-Durch diese Art des Kollaboration wäre allerdings die komplexe Komponente eines drei Personen Teams verloren gegangen.\newline
-
-Durch diese Einfachheit könnten innerhalb eines Teams schneller Lerneffekte durch Repetitivität entstanden sein, die die Teameffektivität untereinander angeglichen haben. 
-Eine teilnehmende Person (ID7) mit der Kondition \ac{ik} schreibt zu den Natürliche Lerneffekten : \newline 
-\dq{}\textit{Am Anfang habe ich ein wenig Druck verspürt, die richtigen Zeichen zu geben. Als ich gesehen habe, dass es gut funktioniert, hat es sehr viel Spaß gemacht.}\dq{} \newline
 
 %Der Titel dieser Masterarbeit lässt sich in 2 Fragestellungen unterteilen :
 
@@ -3232,106 +3256,175 @@ Eine teilnehmende Person (ID7) mit der Kondition \ac{ik} schreibt zu den Natürl
 %Wie viel effektiver ist eine Avatarkonditione?
 %Wenn nein : Woran liegt es, dass die Teams gleich effektiv sind?
 
+\subsection{Diskussion des Experimentes}
+\paragraph{Avatarkonditionen}
+Es gibt laut der statistischen Auswertung keine Unterschiede in der erzeugten selbst wahrgenommen Co-Presencen, Wahrgenommenen Co-Presence des anderen, Telepresence oder Social-Presence zwischen den eingesetzten Avatarkonditionen. 
+Ein Grund diesbezüglich könnte das fehlende Selbst-Avatar der einzelnen Nutzer sein. Dies erhöht Laut Biocca ebenfalls die Selbstpräsenz der Avatare \citep[421-427]{construal2014connected}.
+Eine teilnehmende Person (ID2) mit der Kondition \ac{ik} schrieb dazu : \\
+\dq{}\textit{Ich wusste nicht genau wie meine Arme zu sehen sind, ob ich ein Buchstabe auch mit den Armen formen, statt mit den Händen schreiben konnte.}\dq{}\\
+Diese Verwirrung der fehlenden Selbstpräsenz, hatte eventuell einen Präsenzdefizit zur folge.
+Weiterhin hat sich die fehlende Geschlechtsunterscheidung der Avatare bei einigen teilnehmenden Personen merklich gemacht. So schrieb die teilnehmende Person (ID4) mit der Kondition \ac{ik} dazu :\\
+\dq{}\textit{Warum gab es keine Frauenfiguren? Das würde mehr Realität erzeugen}\dq{}.\\
+Die Ähnlichkeit der erzeugten Präsenzen zwischen den beiden Avatarkondition könnte zustande gekommen sein, da durch die Art des Aufbaus des Experiments in dieser Studie, bei einem neu zusammenarbeitendem Team im \ac{sve}, der einzige Interaktionskanal die Nonverbale Kommunikation war. Die einzige Möglichkeit mit den Interaktionspartnern zu Kommunizieren, war der Fokus auf die Gestikulation. Da die teilnehmenden Personen während und vor dem Experiment zudem wussten, dass diese mit weiteren \dq{}realen\dq{} Personen zusammenarbeiten, konnte sich eventuell leichter eine reale Person hinter dem Avatar vorgestellt werden, was die Ähnlichkeit der Präsenzmessungen erklären könnte. Dies könnte ebenfalls das kognitive Vertrauen beeinflusst haben.
+Eine Teilnehmende Person (ID8) mit der Kondition \ac{ik} schrieb dazu : \\ 
+Dazu schreibt ID8 (\ac{ik}) : \dq{}\textit{Es war ein sehr interessantes Erlebnis. Ich bin gespannt zu Erfahren, wer die Teilnehmer waren}\dq{}\\
+
+\paragraph{Schwierigkeit des Experiments}
+\label{Schwierigkeit des Experiments}
+Es ist möglich, dass das Experiment nicht komplex genug aufgebaut war, um einen Zusammenhang zwischen der Vertrauensbildung und der Teameffektivität zu messen.
+Dies ging besonders durch die statistisch unsignifikanten Ergebnisse der Analyse der Hypothese 3, 4 und 5 hervor. 
+So schrieb eine teilnehmende Person (ID17) mit der Kondition \ac{nik} dazu :\\
+\dq{}\textit{Zu kurz - zu einfach - zu grau}\dq{} \\
+Ähnliches schrieb die die teilnehmende Person (ID21) mit der Kondition \ac{nik} : \\
+\dq{}\textit{Schwierigkeitsgrad hätte noch stärker sein dürfen}\dq{} \\
+Die Runden des Experiments hätten eventuell schneller abgearbeitet werden können, um eine größere Varianz der einzelnen Effektivitätswerte der Teams zu generieren. 
+Diese Varianz der erzielten Teameffektivität könnte sich noch weiter erhöhen, wenn ein Team aus zwei statt aus drei Personen besteht. Einzelne Runden des Experiments würden schneller abgearbeitet werden und das gebildete kognitive Vertrauen könnte in einem direktem Vergleich gemessen werden.
+Durch diese Art des Kollaboration wäre allerdings der komplexe Charakter eines drei Personen Teams verloren gegangen.\newline
+Durch diese empfundene Einfachheit einzelner Teilnehmer könnten innerhalb eines Teams auch schneller Lerneffekte durch Repetitivität entstanden sein, die die Teameffektivität beeinflusst haben.
+Eine teilnehmende Person (ID7) mit der Kondition \ac{ik} schreibt zu den Natürliche Lerneffekten : \\
+\dq{}\textit{Am Anfang habe ich ein wenig Druck verspürt, die richtigen Zeichen zu geben. Als ich gesehen habe, dass es gut funktioniert, hat es sehr viel Spaß gemacht.}\dq{} 
+
+
+
+%Das hier erklären?
+%\begin{figure}[H]
+%		\begin{footnotesize}
+%		\centering
+%			\includegraphics[scale=0.4]{Abbildungen/RoundDifficultyVariant.JPG}
+%			
+%			\caption[Abbildung 1]{Die steigende Schwierigkeit der zu drückenden Knöpfe der einzelnen Runden}
+%			\label{RoundDifficulty}
+%		\end{footnotesize}
+%	\end{figure}
+
+
 \subsection{Effektivität des Vertrauensaufbau zwischen den Avatarkonditionen}
 
-Die während der Analyse der Hypothese 1 wurde einen höheren Mittelwert der Kondition \ac{nik} als bei der Kondition \ac{ik} festgestellt. Diese Feststellung über den Vertrauensaufbau unter Avataren widerspricht der Untersuchung von Bente und Rüggen (vgl. \textbf{\textit{ Kapitel \ref{AvatarTrust}}}). Die Kondition \ac{ik} sieht menschenähnlich aus, weshalb sich hätte vermuten lassen, dass diese Kondition den teilnehmenden Personen ein größerer kognitiver Vertrauensaufbau stattfindet, als bei der Kondition \ac{nik}. Gründe für dieses Ergebnis könnte sein, dass der Avatar von dem \textit{Uncanny Valley} Effekt betroffen sind. Schon in der Studie von Waldow tendiert der in dieser Studie eingesetzte Avatar zum Unbehagen, was auch durch den Uncanny-Valley Effekt zu Stande kommen kann. Weiterhin kann es sein, dass die Gestukulation, während des Versuchs nicht eindeutig von den teilnehmenden Personen mit der Kondition \ac{ik} ausgewertet werden konnten. Die Inverse-Kinematik kann falsch interpretiert worden sein, oder es sind durch diese unnatürliche Bewegungsmuster der Avatare aufgetreten. Dadurch, dass die Avatare \dq{}anders als normale Menschen \dq{} waren, konnte diesen eventuell nicht all zu viel Vertrauen zugesprochen werden.
+Die während der Analyse der Hypothese 1 wurde einen höheren Mittelwert der Kondition \ac{nik} als bei der Kondition \ac{ik} festgestellt. Diese Feststellung über den Vertrauensaufbau unter Avataren widerspricht der Untersuchung von Bente und Rüggen (vgl. \textbf{\textit{ Kapitel \ref{AvatarTrust}}}). Die Kondition \ac{ik} sieht menschenähnlich aus, weshalb sich hätte vermuten lassen, dass bei dieser Kondition bei teilnehmenden Personen ein größerer kognitiver Vertrauensaufbau stattfindet, als bei der Kondition \ac{nik}  (vgl. \textbf{\textit{Vertrauen und virtuelle Teams}}). Jedoch ist laut der statistischen Analyse genau das Gegenteil der Fall. Gründe für dieses Ergebnis könnte sein, dass der Avatar von dem \textit{Uncanny Valley} Effekt betroffen sind (vgl. \textbf{\textit{Uncanny-Valley}}). Schon in der Studie von Waldow (\cite{waldow2019investigating}) tendiert der in dieser Studie eingesetzte Avatar(\ac{ik}) zum Unbehagen, was durch den Uncanny-Valley Effekt zu Stande kommen kann. Weiterhin kann es sein, dass die Gestukulation, während des Versuchs nicht eindeutig von den teilnehmenden Personen mit der Kondition \ac{ik} ausgewertet werden konnten. Die Inverse-Kinematik kann falsch interpretiert worden sein, oder es sind durch diese unnatürliche Bewegungsmuster der Avatare aufgetreten. Dadurch, dass die Avatare eventuell \dq{}anders als normale Menschen\dq{} wahrgenommen wurden, konnte diesen eventuell nicht all zu viel Vertrauen zugesprochen werden.
 Eine teilnehmende Person (ID9) mit der Kondition \ac{ik} schrieb im Feedback Teil des Fragebogens dazu : \newline
 \dq{}\textit{Es war eine spannende Erfahrung am VR-Experiment teilzunehmen und hat Spaß gemacht. Die Personen waren mir nah, obwohl sie eindeutig unreal wirkten; Vertrauen war nichtsdestotrotz vorhanden.}\dq{}
+Es wird vermutet, dass die Simplizität der nicht-menschenähnlichen Avatardarstellung einfacher angenommen werden kann.
 
 Dass kein signifikanter Zusammenhang des kognitiven Vertrauens mit dem generellem Vertrauen bei unterschiedlichen Avatarkonditionen besteht, kann auch als positiver Effekt gesehen werden. 
-So lässt sich vermuten, dass es nicht von relevanz ist, wie hoch oder niedrig das generelle Vertrauen einer Person im \ac{sve} ist. Das generelle Vertrauen einer Person, während der Kennenlernphase, besitzt keinen signifikanten Zusammenhang mit dem gebildeten kognitive Vertrauen. Dies ist auch im Zusammenhang mit der signifikant unterschiedlichen Bildung von kognitiven Vertrauen von Avatarkonditionen zu betrachten. Dadurch, dass nur die unterschiedlichen Avatarkonditionen einen signifikanten Einfluss auf die Bildung des kognitiven Vertrauens besitzten, kann davon ausgegangen werden, dass das generelle Vertrauen isoliert betrachtet werden kann und bei einer Kennenlernphase eines \ac{vt} keine größere Rolle spielt.
+So lässt sich vermuten, dass es nicht von Relevanz ist, wie hoch oder niedrig das generelle Vertrauen einer Person im \ac{sve} ist. Dies ist auch im Zusammenhang mit der signifikant unterschiedlichen Bildung von kognitiven Vertrauen von Avatarkonditionen zu betrachten. Dadurch, dass nur die unterschiedlichen Avatarkonditionen einen signifikanten Einfluss auf die Bildung des kognitiven Vertrauens besitzen, kann davon ausgegangen werden, dass das generelle Vertrauen isoliert betrachtet werden kann und bei einer Kennenlernphase eines \ac{vt} keine größere Rolle spielt.
 %Weshalb könnte es keine Auswirkungen gegeben haben?
-
 
 \subsection{Einfluss des Vertrauens im Team auf die Teameffektivität}
 \paragraph{Hypothese 3, Hypothese 4 und Hypothese 5}
-Während der Analyse der Hypothese 4 wurde festgestellt, dass es keinen Unterschied auf die Teameffektivität bei unterschiedlichen Avatarkonditionen gibt. Dies spiegelt sich auch in der Teameffektivität der Teams wieder. Bei beiden Teams ist die durchschnittliche Teameffektivität $x=9$.  
-Ein Team bestand aus 3 Personen, was die Stichprobengröße verkleinert hat. Somit nahmen 10 Teams mit insgesamt 30 Personen an dem Versuch teilnahmen. Diese Stichprobe ist sehr klein und könnte eine mögliche Ursache dafür sein, dass in Hypothese 3 und 5 keine signifikanten Ergebnisse erzielt wurden.
+Während der Analyse der Hypothese 4 wurde festgestellt, dass es keinen Unterschied auf die Teameffektivität bei unterschiedlichen Avatarkonditionen besteht. Dies spiegelt sich auch in der Teameffektivität der Teams wieder. Bei beiden Teams ist die durchschnittliche Teameffektivität $x=9$.  
+Ein Team bestand aus 3 Personen, was die Stichprobengröße verkleinerte. Somit nahmen 10 Teams mit insgesamt 30 Personen an dem Versuch teilnahmen. Diese Stichprobe ist sehr klein und könnte eine mögliche Ursache dafür sein, dass in Hypothese 3 und 5 keine signifikanten Ergebnisse erzielt wurden.
 
-Auch wenn kein Zusammenhang des kognitiven Vertrauens und der Teameffektivität vorliegt, lässt sich vermuten, dass nichts desto trotz zu einem bestimmten Grad Vertrauen durch eine erhöhte Teameffektivität zustande kommt.
+Diese ähnlichen Teameffektivitäte wirken sich ebenfalls auf Hypothese 3 aus. Durch ähnliche Teameffektivitätswerte konnte kein Zusammenhang zwischen diesen und dem kognitiven Vertrauen festgestellt werden. 
+Auch wenn kein Zusammenhang des kognitiven Vertrauens und der Teameffektivität vorliegt, lässt sich vermuten, dass nichts desto trotz zu einem bestimmten Grad kognitives Vertrauen durch eine erhöhte Teameffektivität gebildet wird.
 Eine teilnehmende Person (ID20) mit der Kondition \ac{nik} schrieb dazu : \newline
 \dq{}\textit{[...]Ohne Sprache ist die Kommunikation mit den anderen schon sehr schwierig. Trotzdem fand ich interessant, dass die Aufgabe überhaupt zu bewältigen war, und tatsächlich nach den ersten Erfolgen auch das Vertrauen zu den anderen entstand, dass sie in der Lage sind, die Aufgabe zu bewältigen, zu kommunizieren und das kommunizierte zu verstehen.}\dq{}
+Ebenso kann es sein, dass das Messverfahren (vgl. \textit{\ref{Schwierigkeit des Experiments}} mehr Varianzen der Teameffektivitätswerte hätte erzeugen müssen, um eine genauere Aussagen treffen zu können.
+Um die jedoch zu validieren, hätten mehr Teams an diesem Experiment teilnehmen müssen.
 	
-\paragraph{Einfluss des Experiments auf die Ergebnisse}
-
-Nochmal revué passieren lassen, ob das Teamwork-Spiel das richtige war. Hätte ich vielleicht etwas ändern können am Aufbau? Eventuell ein Social dillemma szenario? Hätte ich da eventuell validere informationen raus bekommejn?
-%Was hat der Versuchsaufbau mit den Ergebnissen zu tun?
-
-Rundenaufbau -> Werden schwerer
-Größere Stichproben der einzelnen Teams
-
-Die 3 Teammitglieder WUSSTEN, dass diese mit menschen interagieren. Vielleicht gab es daher keinen unterschied zum kognitiven Vertrauen - Wie wäre es, wenn man denen sagen würde, dass die anderen Teilnehmer Computerfiguren sind und KEINE Menschen? Super interessant!
-Dazu schreibt ID8 (\ac{ik}) : "Es war ein sehr interessantes Erlebnis. Ich bin gespannt zu Erfahren, wer die Teilnehmer waren"
-
-Hätten die Runden kürzer sein können um einen positiven Teameffekt zu messen?
-
-
-\paragraph{Diskussion der Hypothesen}
-
-Es könnte die gleiche Anzahl von abgeschlossenen Runden pro Team sein, weil :
--Das Teambuilding game wie ich es aufgebaut habe war ein schlechtes Messinstrument
--Game hat relativ wenig mit Vertrauen zu tun.
-
-Wie wäre das Spiel verlaufen, wenn nur 2 Avatare an dem Game teilgenommen hätten?
-Hätte sich was geändert? Was haben die aktuellen 3 Avatare für eine Auswirkungen und welche folgen hat dies auf die mögliche Teameffektivität und das gebildete Cognitive Vertrauen?
-
--3er Teams -> So nahe an der Realität wie möglich. Daher aber eventuell auch generell höheres Vertrauensgefühl, da man die Arbeit "von sich abdrängen kann", da eigentlich immer nur die erklärende Person zur Zeit unter druck steht.
-
-\subsection{Einfluss der subjektiven Daten}
-
-Keine Signifikanz von Social presence und co präsenz kann daher kommen, weil die testpersonen die ganze zeit miteinander interagiert haben. daher haben sich beide gruppen stark drin gefühlt oder stark dass der andere da ist
-Abh var : tRoundsIK mit unabh general-Trust score scheint Kubisch oder quadratisch
-
-Die subjektiven Daten alle in verbindung mit der Teambuldingmaßnahme setzen. Anstrengungsmaß z.B., weil man die Leute erst kennenlernen muss etc.
-
-Hürde : Fehlinterpretation der Gestikulationen
+%\paragraph{Einfluss des Experiments auf die Ergebnisse}
+%
+%Nochmal revué passieren lassen, ob das Teamwork-Spiel das richtige war. Hätte ich vielleicht etwas ändern können am Aufbau? Eventuell ein Social dillemma szenario? Hätte ich da eventuell validere informationen raus bekommejn?
+%%Was hat der Versuchsaufbau mit den Ergebnissen zu tun?
+%
+%Rundenaufbau -> Werden schwerer
+%Größere Stichproben der einzelnen Teams
+%
+%
+%
+%Hätten die Runden kürzer sein können um einen positiven Teameffekt zu messen?
+%
+%
+%\paragraph{Diskussion der Hypothesen}
+%
+%Es könnte die gleiche Anzahl von abgeschlossenen Runden pro Team sein, weil :
+%-Das Teambuilding game wie ich es aufgebaut habe war ein schlechtes Messinstrument
+%-Game hat relativ wenig mit Vertrauen zu tun.
+%
+%Wie wäre das Spiel verlaufen, wenn nur 2 Avatare an dem Game teilgenommen hätten?
+%Hätte sich was geändert? Was haben die aktuellen 3 Avatare für eine Auswirkungen und welche folgen hat dies auf die mögliche Teameffektivität und das gebildete Cognitive Vertrauen?
+%
+%-3er Teams -> So nahe an der Realität wie möglich. Daher aber eventuell auch generell höheres Vertrauensgefühl, da man die Arbeit "von sich abdrängen kann", da eigentlich immer nur die erklärende Person zur Zeit unter druck steht.
+%
+%\subsection{Einfluss der subjektiven Daten}
+%
+%Keine Signifikanz von Social presence und co präsenz kann daher kommen, weil die testpersonen die ganze zeit miteinander interagiert haben. daher haben sich beide gruppen stark drin gefühlt oder stark dass der andere da ist
+%Abh var : tRoundsIK mit unabh general-Trust score scheint Kubisch oder quadratisch
+%
+%Die subjektiven Daten alle in verbindung mit der Teambuldingmaßnahme setzen. Anstrengungsmaß z.B., weil man die Leute erst kennenlernen muss etc.
+%
+%Hürde : Fehlinterpretation der Gestikulationen
+%
+%
+%
+%Diese Arbeit behandelt XY nicht … .
+%Es würde über den Rahmen dieser Arbeit hinausgehen, … .
+%Es ist nicht das Ziel dieser Arbeit … .
+%Die LeserInnen sollten beachten, dass diese Arbeit auf … basiert.
+%Begrenzungen ergaben sich beim Durchführen der Interviews, da … .
+%Eine Limitation der Bachelorarbeit ist zum einen … .
+%Weiterer Forschungsbedarf ergibt sich aus … .
+%
+%Wo waren die Grenzen der Forschung?
+%Habe ich bestimmte Limitiationen stark zu spüren bekommen?
+%Sind Fragen offen geblieben?
+%Was kann ich auf Basis meiner Resultate für zukünftige Forschungen empfehlen?
+%
+%
+%Halte ebenfalls fest, inwiefern deine Resultate neue oder andere Erkenntnisse in Bezug auf dein Thema mit sich bringen. Gehe alle Möglichkeiten durch: Was genau hast du herausgefunden?
+%
+%Zukünftige Forschung über Kommunikationsmethoden und dem gebildeten Vertrauen.
+%
+%Social Identity und Teambuilding - Ein Avatar ist anders.
+%
+%Durch die Symbole ist das Experiment auch änderübergreifend einsetzbar gewesen.. pr eund post questionnaire haben das jedoch vehindert, da deutsch
 
 \subsection{Limitierungen}
-Wo waren die Grenzen der Forschung?
-Habe ich bestimmte Limitiationen stark zu spüren bekommen?
-Sind Fragen offen geblieben?
-Was kann ich auf Basis meiner Resultate für zukünftige Forschungen empfehlen?
+Eine technische Limitation dieser Arbeit ist die eingesetzte Technik der Gestikulationen. Die unterstützten \ac{hmd}'s, boten keine Möglichkeit, die Finger oder die gesamten Hände in der \ac{vr} abzubilden. Die Verständigung innerhalb des \ac{sve} kann durch diesen Einsatz intensiviert werden, da verschiedene Gestikulationen genauer wiedergegeben werden können. Dieses Finger- und Handtracking ist beispielsweise durch eine Oculus Quest, oder der neusten Version der Oculus Rift 2 möglich.
+Ein weiterer Ansatz um die Menschenähnlichkeit und den Realismus bei der Avatarkondition \ac{ik} zu erhöhen, wäre es, Mimik zum Gesicht des Avatars hinzuzufügen.
+Darüber hinaus, ist der Avatar mit der Kondition \ac{nik} nicht auf Menschenähnlichkeit, Realismus oder Ähnliches überprüft worden.
+Da sich diese Forschung hauptsächlich mit dem gebildeten kognitiven Vertrauen und der daraus resultierenden Teameffektivität beschäftigt, können keine Aussagen über den Einfluss verschiedener Avatarkonditionen auf das generelle Vertrauen einer Person getroffen werden. Um diesen Einfluss zu Messen, müssten längerfristige Forschungen durchgeführt werden. 
+Eine weitere Limitierung dieser Forschung war es, dass die teilnehmenden Personen bevor das Experiment startete wussten, dass diese in einem \ac{sve} mit 3 weiteren realen Personen arbeiten würden. Eine interessante Fragestellung wäre es nun, den teilnehmenden Personen im vorherein nicht zu erzählen, dass die Personen real sind und anschließend das gebildete kognitive Vertrauen und die Effektivität im Team zu messen.
 
-Diese Arbeit behandelt XY nicht … .
-Es würde über den Rahmen dieser Arbeit hinausgehen, … .
-Es ist nicht das Ziel dieser Arbeit … .
-Die LeserInnen sollten beachten, dass diese Arbeit auf … basiert.
-Begrenzungen ergaben sich beim Durchführen der Interviews, da … .
-Eine Limitation der Bachelorarbeit ist zum einen … .
-Weiterer Forschungsbedarf ergibt sich aus … .
+\subsection{Ausblick und Implikationen für zukünftige Forschung}
+\ac{sve}'s entwickeln sich aktuell sehr rasant. Die weltweite Coronapandemie im Jahr 2020 und aktuell im Jahr 2021 hat gezeigt, dass virtuelle Kollaborationsmaßnahmen einen großen Einfluss auf Unternehmen besitzt. Es ist mehr Forschung darüber nötig, wie Teams Effektiv in einem \ac{sve} zusammen arbeiten können. Nicht nur, welche Art eines Avatars in einem \ac{sve} mehr Vertrauen schafft, oder welche Art eines Avatars mehr Teameffektivität besitzt, sondern auch, wie die eingesetzte Sprache, die Mimik,die Gestik, die Größe, das Geschlecht, der vorherige Bekanntheitsgrad der Personen oder die Art und Dauer der Nutzung des \ac{hmd}'s, während ein Team zusammenarbeitet, sich auf das Vertrauen und die Teameffektivität auswirkt.
+Eine interessante weiterführende Forschung zu dieser Studie wäre es, zu untersuchen, zu welchem Grad sich der kognitive Vertrauensaufbau im Team ändert, je nachdem, ob die teilnehmenden Personen wissen, dass diese mit Menschen zusammenarbeiten oder nicht.
+Darüber hinaus, wäre es sehr interessant zu untersuchen, wie sehr sich der Unterschied der nonverbalen Kommunikation und aktiver Sprachkommunikation auf das gebildete Vertrauen im Team in einem \ac{sve} auswirkt. 
 
-\paragraph{Implikationen für Zukünftige Forschungen}
-Die teilnehmenden Personen wussten bevor das Experiment startete, dass diese in einem \ac{sve} mit 3 weiteren realen Personen arbeiten würden. Eine interessante Fragestellung wäre es nun, den teilnehmenden Personen im vorherein nicht zu erzählen, dass die Personen real sind und anschließend das gebildete kognitive Vertrauen und die Effektivität im Team zu messen.
+%\paragraph{Diskussion der eingesetzten Methoden}
+%\paragraph{Auswirkungen auf die Gegenwart}
+%\paragraph{Vorschläge für zukünftige Untersuchungen}
+%
+%\paragraph{IDEEN}
+%Warum sind die Ergebnisse so wie diese sind?
+%Haben die Probanten während der Anwendung Stress verspürt?
+%
+%
+%\paragraph{Was kann besser gemacht werden?}
+\clearpage
+\newpage
+\section{Zusammenfassung}
+Das Ziel dieser Studie war es, den Einfluss von verschiedenen Avatarkonditionen auf die Vertrauensbildung in ein Team und die daraus resultierende Teameffektivität zu untersuchen. 
+Anhand eines aufgestellten Versuchsdesign, wurden detaillierte Untersuchungen durchgeführt, die diese Zusammenhänge statistisch überprüft haben und eine anschließende Diskussion ermöglichten.
 
-Halte ebenfalls fest, inwiefern deine Resultate neue oder andere Erkenntnisse in Bezug auf dein Thema mit sich bringen. Gehe alle Möglichkeiten durch: Was genau hast du herausgefunden?
+Durch ein für diese Studie entwickeltes System, konnte eine empirische Studie durchgeführt werden, in der Räumlich getrennte Nutzer mithilfe einer von zwei möglichen Avatarkondition eine gemeinsame Aufgabe erledigen mussten. Die Nutzer des Systems sahen die Mitglieder des Teams als menschenähnliche oder nicht-menschenähnliche Avatare. Während der Durchführung dieser gemeinsamen Aufgabe, wurde die gemeinsame Teameffektivität ermittelt. Die anschließende Umfrage diente dazu, einen Einblick in das generelle Vertrauen und das gebildete kognitive Vertrauen, sowie subjektiver Empfindungen über die Arbeitsbelastung und das gebildete Gefühl von Presence einer Person und des Teams, zu bekommen.
 
-\paragraph{Diskussion der eingesetzten Methoden}
-\paragraph{Auswirkungen auf die Gegenwart}
-\paragraph{Vorschläge für zukünftige Untersuchungen}
-		Social Identity und Teambuilding - Ein Avatar ist anders.
+Dahingehend konnte ein signifikanter Unterschied auf das gebildete kognitive Vertrauen zwischen den beiden Avatarkonditionen festgestellt werden, wobei der nicht-menschenähnliche Avatar mehr kognitives Vertrauen bilden lies.
+Es konnte jedoch kein statistisch signifikanter Unterschied zwischen den Avatarkonditionen und der Teameffektivität festgestellt werden. Weiterhin zeigen die Ergebnisse keinen statistisch signifikanten Zusammenhang zwischen dem generellen Vertrauen und dem gebildeten kognitiven Vertrauen einer Person. Diesbezüglich konnte kein statistisch signifikanter Zusammenhang des kognitiven Vertrauen und der Effektivität eines Teams festgestellt werden.
 
-\paragraph{IDEEN}
-Warum sind die Ergebnisse so wie diese sind?
-Haben die Probanten während der Anwendung Stress verspürt?
+In einem virtuellen Team scheint die Avatarkondition somit kein Einfluss auf die Teameffektivität zu besitzen. Es kann jedoch Sinnvoll sein, den Avatar nicht all zu menschenähnlich zu gestalten, um mehr kognitives Vertrauen zu bilden.
+Es empfielt sich, diese Studie mit mehr Teilnehmern durchzuführen, um die in dieser Studie gewonnenen Erkenntnisse zu validieren.
 
-
-\paragraph{Was kann besser gemacht werden?}
-Durch die Symbole ist das Experiment auch änderübergreifend einsetzbar gewesen.. pr eund post questionnaire haben das jedoch vehindert, da deutsch
-
-	
-\section{Fazit}
-
-Welche Avatarkondition sollte man nutzen um frühzeitig Vertrauen zu bilden?
-Warum ist eine Avatarkondition effektiver?
-
-Steigern nun unterschiedliche Avatarkonditionen die Teameffektivität?
-Steigern unterschiedliche Avatararten das kognitive Kognitive Vertrauen?
-Gibt es einen Zusammenhang zwischen generellem Vertrauen und der gebildeten Teameffektivität?
-Gibt es einen Zusammenhang zwischen dem kognitiven Vertrauen und der gebildeten Teameffektivität?
-Gibt es einen Zusammenhang zwischen dem generellen Vertrauen und dem gebildeten kognitiven Vertrauen der unterschiedlichen Avatarkonditionen?
-
-Insgesamt nochmal auf die EFFEKTIVITÄT der Vertrauensbildung UND der Effektivität an sich eingehen.
-Auch auf virtuelle Teams eingehen ...! Wichtig!
+%Welche Avatarkondition sollte man nutzen um frühzeitig Vertrauen zu bilden?
+%Warum ist eine Avatarkondition effektiver?
+%
+%Steigern nun unterschiedliche Avatarkonditionen die Teameffektivität?
+%Steigern unterschiedliche Avatararten das kognitive Kognitive Vertrauen?
+%Gibt es einen Zusammenhang zwischen generellem Vertrauen und der gebildeten Teameffektivität?
+%Gibt es einen Zusammenhang zwischen dem kognitiven Vertrauen und der gebildeten Teameffektivität?
+%Gibt es einen Zusammenhang zwischen dem generellen Vertrauen und dem gebildeten kognitiven Vertrauen der unterschiedlichen Avatarkonditionen?
+%
+%Insgesamt nochmal auf die EFFEKTIVITÄT der Vertrauensbildung UND der Effektivität an sich eingehen.
+%Auch auf virtuelle Teams eingehen ...! Wichtig!
 \newpage
 
 \bibliographystyle{dcu}

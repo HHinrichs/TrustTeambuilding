@@ -1,27 +1,27 @@
 \babel@toc {ngerman}{}
-\contentsline {section}{Erklärung}{I}{section*.3}%
-\contentsline {section}{Kurzfassung/Abstract}{II}{section*.4}%
-\contentsline {paragraph}{Stichwörter}{II}{section*.6}%
-\contentsline {paragraph}{Datum}{II}{section*.7}%
-\contentsline {section}{Abkürzungsverzeichnis}{VI}{section*.9}%
-\contentsline {section}{Einleitung}{1}{section*.10}%
-\contentsline {subsection}{\numberline {0.1}Motivation}{3}{subsection.14}%
-\contentsline {subsection}{\numberline {0.2}Ziele der Arbeit}{3}{subsection.15}%
-\contentsline {section}{\numberline {1}Theoretischer Rahmen}{4}{section.16}%
-\contentsline {paragraph}{Effizienz}{4}{section*.17}%
-\contentsline {paragraph}{Effektivität}{4}{section*.18}%
-\contentsline {subsection}{\numberline {1.1}Virtual Reality}{5}{subsection.19}%
-\contentsline {subsubsection}{\numberline {1.1.1}Virtuelle 3D-Welten}{5}{subsubsection.20}%
-\contentsline {paragraph}{Shared-Virtual-Environment}{5}{section*.21}%
-\contentsline {subsubsection}{\numberline {1.1.2}Vorbedingungen für Presence}{5}{subsubsection.22}%
-\contentsline {subsubsection}{\numberline {1.1.3}Presence in Virtual Reality}{6}{subsubsection.25}%
-\contentsline {subsubsection}{\numberline {1.1.4}Presence, Co-Presence und co.}{7}{subsubsection.27}%
+\contentsline {section}{Erklärung}{I}{section*.1}%
+\contentsline {section}{Kurzfassung/Abstract}{II}{section*.2}%
+\contentsline {paragraph}{Stichwörter}{II}{section*.3}%
+\contentsline {paragraph}{Datum}{II}{section*.4}%
+\contentsline {section}{Abkürzungsverzeichnis}{VI}{section*.6}%
+\contentsline {section}{Einleitung}{1}{section*.7}%
+\contentsline {subsection}{\numberline {0.1}Motivation}{3}{subsection.12}%
+\contentsline {subsection}{\numberline {0.2}Ziele der Arbeit}{3}{subsection.13}%
+\contentsline {section}{\numberline {1}Theoretischer Rahmen}{5}{section.16}%
+\contentsline {paragraph}{Effizienz}{5}{section*.17}%
+\contentsline {paragraph}{Effektivität}{5}{section*.18}%
+\contentsline {subsection}{\numberline {1.1}Virtual Reality}{6}{subsection.19}%
+\contentsline {subsubsection}{\numberline {1.1.1}Virtuelle 3D-Welten}{6}{subsubsection.20}%
+\contentsline {paragraph}{Shared-Virtual-Environment}{6}{section*.21}%
+\contentsline {subsubsection}{\numberline {1.1.2}Vorbedingungen für Presence}{6}{subsubsection.22}%
+\contentsline {subsubsection}{\numberline {1.1.3}Presence in Virtual Reality}{7}{subsubsection.25}%
+\contentsline {subsubsection}{\numberline {1.1.4}Presence, Co-Presence und co.}{8}{subsubsection.27}%
 \contentsline {subsection}{\numberline {1.2}Avatare}{9}{subsection.28}%
 \contentsline {subsubsection}{\numberline {1.2.1}Repräsentationen von Avataren}{9}{subsubsection.29}%
 \contentsline {subsubsection}{\numberline {1.2.2}Vorwärtskinematik vs Inverse-Kinematik}{10}{subsubsection.32}%
-\contentsline {subsubsection}{\numberline {1.2.3}Selbst-Avatar und Nicht-Selbst-Avatare}{10}{subsubsection.33}%
-\contentsline {paragraph}{Avatare und Kommunikation}{12}{section*.36}%
-\contentsline {paragraph}{Uncanny-Valley}{13}{section*.37}%
+\contentsline {subsubsection}{\numberline {1.2.3}Self-Avatar}{10}{subsubsection.33}%
+\contentsline {subsubsection}{\numberline {1.2.4}Avatare und Kommunikation}{12}{subsubsection.36}%
+\contentsline {subsubsection}{\numberline {1.2.5}Uncanny-Valley}{13}{subsubsection.37}%
 \contentsline {subsection}{\numberline {1.3}Vertrauen}{14}{subsection.39}%
 \contentsline {subsubsection}{\numberline {1.3.1}Zwischenmenschliches Vertrauen}{15}{subsubsection.40}%
 \contentsline {subsubsection}{\numberline {1.3.2}Vertrauen als Eigenschaft }{15}{subsubsection.41}%
@@ -73,90 +73,82 @@
 \contentsline {paragraph}{Animationen, Shadergraph und VFX-Graph}{40}{section*.108}%
 \contentsline {subsubsection}{\numberline {3.2.3}Allgemeines der Versuchsumgebung}{40}{subsubsection.109}%
 \contentsline {paragraph}{Rundenschwierigkeit}{40}{section*.110}%
-\contentsline {paragraph}{CSV-Logwriting}{40}{section*.111}%
-\contentsline {paragraph}{Gametimer Funktionsweise}{41}{section*.112}%
-\contentsline {paragraph}{PlayerHeight/Position Change}{41}{section*.113}%
-\contentsline {paragraph}{Sounds}{41}{section*.114}%
-\contentsline {subsection}{\numberline {3.3}Methodik}{42}{subsection.115}%
-\contentsline {subsubsection}{\numberline {3.3.1}Allgemeines}{42}{subsubsection.116}%
-\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{42}{section*.117}%
-\contentsline {paragraph}{Between-Subject Forschungsdesign}{42}{section*.118}%
-\contentsline {paragraph}{Unabhängige Variablen}{42}{section*.119}%
-\contentsline {subsubsection}{\numberline {3.3.2}Datenerhebungsmethoden}{42}{subsubsection.125}%
-\contentsline {paragraph}{Demografie-Fragebogen}{43}{section*.126}%
-\contentsline {paragraph}{General-Trust-Scale}{43}{section*.127}%
-\contentsline {paragraph}{Cognitive-Trust-Scale}{43}{section*.128}%
-\contentsline {paragraph}{Communication-Scale}{43}{section*.129}%
-\contentsline {paragraph}{Team-Effectivness-Scale}{44}{section*.130}%
-\contentsline {paragraph}{NASA-TLX}{44}{section*.131}%
-\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{44}{section*.132}%
-\contentsline {paragraph}{Co-Presence-Questionnaire}{44}{section*.133}%
-\contentsline {section}{\numberline {4}Statistische Auswertung}{46}{section.135}%
-\contentsline {subsection}{\numberline {4.1}Teilnehmer und Demografie}{46}{subsection.136}%
-\contentsline {subsection}{\numberline {4.2}Auswertung Hypothese 1}{47}{subsection.137}%
-\contentsline {paragraph}{Allgemeines}{47}{section*.138}%
-\contentsline {paragraph}{Mann-Whitney-U Test}{47}{section*.141}%
-\contentsline {subsection}{\numberline {4.3}Auswertung Hypothese 2}{48}{subsection.143}%
-\contentsline {paragraph}{Allgemeines}{48}{section*.144}%
-\contentsline {paragraph}{Spearman-Korrelationsanalyse}{48}{section*.147}%
-\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{48}{section*.148}%
-\contentsline {subsection}{\numberline {4.4}Auswertung Hypothese 3}{49}{subsection.152}%
-\contentsline {paragraph}{Vertrauenstabelle pro Team}{49}{section*.153}%
-\contentsline {paragraph}{Spearman-Korrelation}{49}{section*.158}%
-\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{49}{section*.159}%
-\contentsline {subsection}{\numberline {4.5}Auswertung Hypothese 4}{51}{subsection.161}%
-\contentsline {paragraph}{Allgemeines}{51}{section*.162}%
-\contentsline {paragraph}{Mann-Whitney-U-Test}{51}{section*.163}%
-\contentsline {subsection}{\numberline {4.6}Auswertung Hypothese 5}{52}{subsection.168}%
-\contentsline {paragraph}{Spearman-Korrelation}{52}{section*.171}%
-\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{52}{section*.172}%
-\contentsline {subsection}{\numberline {4.7}Auswertung subjektiver Daten}{56}{subsection.176}%
-\contentsline {paragraph}{Presence}{56}{section*.177}%
-\contentsline {paragraph}{Selbst wahrgenommene Co-Präsenz}{56}{section*.181}%
-\contentsline {paragraph}{Wahrgenommene Co-Präsenz des anderen}{57}{section*.186}%
-\contentsline {paragraph}{Telepresence}{57}{section*.191}%
-\contentsline {paragraph}{Social-Presence}{58}{section*.196}%
-\contentsline {paragraph}{NASA-TLX "{}Anstrengungsmaß"{}}{58}{section*.201}%
-\contentsline {paragraph}{Team-Kommunikation}{59}{section*.205}%
-\contentsline {paragraph}{Wahrgenommene Team-Effektivität}{60}{section*.210}%
-\contentsline {paragraph}{Weitere Analysen}{60}{section*.214}%
-\contentsline {section}{\numberline {5}Analyse}{63}{section.225}%
-\contentsline {subsection}{\numberline {5.1}Analyse der Hypothesen}{63}{subsection.226}%
-\contentsline {paragraph}{Auswirkungen auf das kognitive Vertrauen}{63}{section*.227}%
-\contentsline {paragraph}{Auswirkungen auf die Teameffektivität}{63}{section*.228}%
-\contentsline {paragraph}{Subjektive Daten}{64}{section*.229}%
-\contentsline {paragraph}{Fazit der Analyse}{64}{section*.230}%
-\contentsline {subsection}{\numberline {5.2}Analyse der technischen Anforderungen}{65}{subsection.231}%
-\contentsline {section}{\numberline {6}TODO}{66}{section.233}%
-\contentsline {section}{\numberline {7}Diskussion}{67}{section.234}%
-\contentsline {paragraph}{Allgemeines}{67}{section*.235}%
-\contentsline {subsection}{\numberline {7.1}Diskussion des Experimentes}{67}{subsection.236}%
-\contentsline {paragraph}{Avatarkonditionen}{67}{section*.237}%
-\contentsline {paragraph}{Schwierigkeit des Experiments}{68}{section*.238}%
-\contentsline {subsection}{\numberline {7.2}Effektivität des Vertrauensaufbau zwischen den Avatarkonditionen}{68}{subsection.239}%
-\contentsline {subsection}{\numberline {7.3}Einfluss des Vertrauens im Team auf die Teameffektivität}{69}{subsection.240}%
-\contentsline {paragraph}{Hypothese 3, Hypothese 4 und Hypothese 5}{69}{section*.241}%
-\contentsline {paragraph}{Einfluss des Experiments auf die Ergebnisse}{69}{section*.242}%
-\contentsline {paragraph}{Diskussion der Hypothesen}{69}{section*.243}%
-\contentsline {subsection}{\numberline {7.4}Einfluss der subjektiven Daten}{70}{subsection.244}%
-\contentsline {subsection}{\numberline {7.5}Limitierungen}{70}{subsection.245}%
-\contentsline {paragraph}{Implikationen für Zukünftige Forschungen}{70}{section*.246}%
-\contentsline {paragraph}{Diskussion der eingesetzten Methoden}{70}{section*.247}%
-\contentsline {paragraph}{Auswirkungen auf die Gegenwart}{70}{section*.248}%
-\contentsline {paragraph}{Vorschläge für zukünftige Untersuchungen}{70}{section*.249}%
-\contentsline {paragraph}{IDEEN}{70}{section*.250}%
-\contentsline {paragraph}{Was kann besser gemacht werden?}{70}{section*.251}%
-\contentsline {section}{\numberline {8}Fazit}{71}{section.252}%
-\contentsline {section}{Anhang}{79}{section*.254}%
-\contentsline {section}{\numberline {A}Auswertungsergebnisse}{79}{appendix.255}%
-\contentsline {section}{\numberline {B}Demografieauswertung}{84}{appendix.263}%
-\contentsline {section}{\numberline {C}Pre-Questionnaire}{89}{appendix.271}%
-\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{94}{appendix.278}%
-\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{95}{appendix.280}%
-\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{99}{appendix.285}%
-\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{100}{appendix.288}%
-\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{101}{appendix.290}%
-\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{102}{appendix.292}%
-\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{108}{appendix.299}%
-\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{111}{appendix.303}%
-\contentsline {section}{\numberline {L}Other}{117}{appendix.310}%
+\contentsline {paragraph}{CSV-Logwriting}{41}{section*.112}%
+\contentsline {paragraph}{Gametimer Funktionsweise}{41}{section*.113}%
+\contentsline {paragraph}{PlayerHeight/Position Change}{41}{section*.114}%
+\contentsline {paragraph}{Sounds}{41}{section*.115}%
+\contentsline {subsection}{\numberline {3.3}Methodik}{42}{subsection.116}%
+\contentsline {subsubsection}{\numberline {3.3.1}Allgemeines}{42}{subsubsection.117}%
+\contentsline {paragraph}{Induktive Quantitative Forschungsmethodik}{42}{section*.118}%
+\contentsline {paragraph}{Between-Subject Forschungsdesign}{42}{section*.119}%
+\contentsline {paragraph}{Unabhängige Variablen}{42}{section*.120}%
+\contentsline {subsubsection}{\numberline {3.3.2}Datenerhebungsmethoden}{42}{subsubsection.126}%
+\contentsline {paragraph}{Demografie-Fragebogen}{43}{section*.127}%
+\contentsline {paragraph}{General-Trust-Scale}{43}{section*.128}%
+\contentsline {paragraph}{Cognitive-Trust-Scale}{43}{section*.129}%
+\contentsline {paragraph}{Communication-Scale}{43}{section*.130}%
+\contentsline {paragraph}{Team-Effectivness-Scale}{44}{section*.131}%
+\contentsline {paragraph}{NASA-TLX}{44}{section*.132}%
+\contentsline {paragraph}{Igroup Presence Questionnaire(IPQ)}{44}{section*.133}%
+\contentsline {paragraph}{Co-Presence-Questionnaire}{44}{section*.134}%
+\contentsline {section}{\numberline {4}Statistische Auswertung}{46}{section.136}%
+\contentsline {subsection}{\numberline {4.1}Teilnehmer und Demografie}{46}{subsection.137}%
+\contentsline {subsection}{\numberline {4.2}Auswertung Hypothese 1}{47}{subsection.138}%
+\contentsline {paragraph}{Allgemeines}{47}{section*.139}%
+\contentsline {paragraph}{Mann-Whitney-U Test}{47}{section*.142}%
+\contentsline {subsection}{\numberline {4.3}Auswertung Hypothese 2}{48}{subsection.144}%
+\contentsline {paragraph}{Allgemeines}{48}{section*.145}%
+\contentsline {paragraph}{Spearman-Korrelationsanalyse}{48}{section*.148}%
+\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{48}{section*.149}%
+\contentsline {subsection}{\numberline {4.4}Auswertung Hypothese 3}{49}{subsection.153}%
+\contentsline {paragraph}{Vertrauenstabelle pro Team}{49}{section*.154}%
+\contentsline {paragraph}{Spearman-Korrelation}{49}{section*.159}%
+\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{49}{section*.160}%
+\contentsline {subsection}{\numberline {4.5}Auswertung Hypothese 4}{51}{subsection.162}%
+\contentsline {paragraph}{Allgemeines}{51}{section*.163}%
+\contentsline {paragraph}{Mann-Whitney-U-Test}{51}{section*.164}%
+\contentsline {subsection}{\numberline {4.6}Auswertung Hypothese 5}{52}{subsection.169}%
+\contentsline {paragraph}{Spearman-Korrelation}{52}{section*.172}%
+\contentsline {paragraph}{Fisher-Z-Transformation für unabhängige Stichproben}{52}{section*.173}%
+\contentsline {subsection}{\numberline {4.7}Auswertung subjektiver Daten}{56}{subsection.177}%
+\contentsline {paragraph}{Presence}{56}{section*.178}%
+\contentsline {paragraph}{Selbst wahrgenommene Co-Präsenz}{56}{section*.182}%
+\contentsline {paragraph}{Wahrgenommene Co-Präsenz des anderen}{57}{section*.187}%
+\contentsline {paragraph}{Telepresence}{57}{section*.192}%
+\contentsline {paragraph}{Social-Presence}{58}{section*.197}%
+\contentsline {paragraph}{NASA-TLX "{}Anstrengungsmaß"{}}{58}{section*.202}%
+\contentsline {paragraph}{Team-Kommunikation}{59}{section*.206}%
+\contentsline {paragraph}{Wahrgenommene Team-Effektivität}{60}{section*.211}%
+\contentsline {paragraph}{Weitere Analysen}{60}{section*.215}%
+\contentsline {section}{\numberline {5}Analyse}{64}{section.226}%
+\contentsline {subsection}{\numberline {5.1}Analyse der Hypothesen}{64}{subsection.227}%
+\contentsline {paragraph}{Auswirkungen auf das kognitive Vertrauen}{64}{section*.228}%
+\contentsline {paragraph}{Auswirkungen auf die Teameffektivität}{64}{section*.229}%
+\contentsline {paragraph}{Subjektive Daten}{65}{section*.230}%
+\contentsline {paragraph}{Fazit der Analyse}{65}{section*.231}%
+\contentsline {subsection}{\numberline {5.2}Analyse der technischen Anforderungen}{66}{subsection.233}%
+\contentsline {section}{\numberline {6}TODO}{67}{section.234}%
+\contentsline {section}{\numberline {7}Diskussion}{68}{section.235}%
+\contentsline {paragraph}{Allgemeines}{68}{section*.236}%
+\contentsline {subsection}{\numberline {7.1}Diskussion des Experimentes}{68}{subsection.237}%
+\contentsline {paragraph}{Avatarkonditionen}{68}{section*.238}%
+\contentsline {paragraph}{Schwierigkeit des Experiments}{69}{section*.239}%
+\contentsline {subsection}{\numberline {7.2}Effektivität des Vertrauensaufbau zwischen den Avatarkonditionen}{69}{subsection.240}%
+\contentsline {subsection}{\numberline {7.3}Einfluss des Vertrauens im Team auf die Teameffektivität}{70}{subsection.241}%
+\contentsline {paragraph}{Hypothese 3, Hypothese 4 und Hypothese 5}{70}{section*.242}%
+\contentsline {subsection}{\numberline {7.4}Limitierungen}{70}{subsection.243}%
+\contentsline {subsection}{\numberline {7.5}Ausblick und Implikationen für zukünftige Forschung}{71}{subsection.244}%
+\contentsline {section}{\numberline {8}Zusammenfassung}{72}{section.245}%
+\contentsline {section}{Anhang}{80}{section*.247}%
+\contentsline {section}{\numberline {A}Auswertungsergebnisse}{80}{appendix.248}%
+\contentsline {section}{\numberline {B}Demografieauswertung}{85}{appendix.256}%
+\contentsline {section}{\numberline {C}Pre-Questionnaire}{90}{appendix.264}%
+\contentsline {section}{\numberline {D}Post-Questionnaire - Konditionsabfrage}{95}{appendix.271}%
+\contentsline {section}{\numberline {E}Post-Questionnaire - Generelles Vertrauen}{96}{appendix.273}%
+\contentsline {section}{\numberline {F}Post-Questionnaire - Kognitives Vertrauen}{100}{appendix.278}%
+\contentsline {section}{\numberline {G}Post-Questionnaire - Teamkommunikation}{101}{appendix.281}%
+\contentsline {section}{\numberline {H}Post-Questionnaire - Team-Effektivität}{102}{appendix.283}%
+\contentsline {section}{\numberline {I}Post-Questionnaire - NASA-TLX}{103}{appendix.285}%
+\contentsline {section}{\numberline {J}Post-Questionnaire - IPQ}{109}{appendix.292}%
+\contentsline {section}{\numberline {K}Post-Questionnaire - Co-Presence}{112}{appendix.296}%
+\contentsline {section}{\numberline {L}Other}{118}{appendix.303}%
