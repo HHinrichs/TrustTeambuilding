@@ -1,70 +1,51 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: Masterarbeit_Hannes_Hinrichs.aux
+Reallocating 'name_of_file' (item size: 1) to 4 items.
+The style file: dcu.bst
 Reallocating 'name_of_file' (item size: 1) to 8 items.
-The style file: apacite.bst
-Reallocating 'name_of_file' (item size: 1) to 7 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 9000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 10280 items.
-Database file #1: apabib.bib
-Warning--I didn't find a database entry for "nowak2004effect"
-apacite.bst [2013/07/21 v6.03 APA bibliography style]
-Warning--No journal in TrustAndTheVirtualOrganisation
-ptr=1, stack=
-
----the literal stack isn't empty for entry TrustAndTheVirtualOrganisation
-while executing---line 5079 of file apacite.bst
-Warning--No journal in herbsleb2000distance
-Warning--No journal in kling1994social
-Warning--`others' not consistent with 6th ed. of the APA Manual
-Warning--No journal in sutantovicious
-You've used 109 entries,
-            6951 wiz_defined-function locations,
-            1862 strings with 29804 characters,
-and the built_in function-call counts, 214766 in all, are:
-= -- 26744
-> -- 1868
-< -- 10372
-+ -- 10789
-- -- 224
-* -- 13567
-:= -- 38786
-add.period$ -- 465
-call.type$ -- 109
-change.case$ -- 1841
-chr.to.int$ -- 0
-cite$ -- 222
-duplicate$ -- 5915
-empty$ -- 8222
-format.name$ -- 3077
-if$ -- 40972
-int.to.chr$ -- 0
-int.to.str$ -- 327
-missing$ -- 0
-newline$ -- 2763
-num.names$ -- 872
-pop$ -- 3883
+Database file #1: bibfile.bib
+Warning--can't use both volume and number fields in gast2011unheimliche
+Warning--can't use both volume and number fields in mehrabian1971silent
+You've used 110 entries,
+            2921 wiz_defined-function locations,
+            1240 strings with 24124 characters,
+and the built_in function-call counts, 478555 in all, are:
+= -- 78197
+> -- 6472
+< -- 6
++ -- 37342
+- -- 1960
+* -- 41321
+:= -- 96002
+add.period$ -- 220
+call.type$ -- 110
+change.case$ -- 1525
+chr.to.int$ -- 110
+cite$ -- 112
+duplicate$ -- 1610
+empty$ -- 3438
+format.name$ -- 2359
+if$ -- 86005
+int.to.chr$ -- 5
+int.to.str$ -- 0
+missing$ -- 118
+newline$ -- 447
+num.names$ -- 1149
+pop$ -- 390
 preamble$ -- 1
-purify$ -- 434
+purify$ -- 1650
 quote$ -- 0
-skip$ -- 13701
+skip$ -- 1497
 stack$ -- 0
-substring$ -- 11813
-swap$ -- 3307
-text.length$ -- 296
+substring$ -- 110311
+swap$ -- 250
+text.length$ -- 1546
 text.prefix$ -- 0
-top$ -- 1
-type$ -- 9616
-warning$ -- 5
-while$ -- 1052
+top$ -- 0
+type$ -- 410
+warning$ -- 2
+while$ -- 2439
 width$ -- 0
-write$ -- 3522
-(There was 1 error message)
+write$ -- 1551
+(There were 2 warnings)
