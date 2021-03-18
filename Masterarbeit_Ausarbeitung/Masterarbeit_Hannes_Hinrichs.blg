@@ -7,45 +7,45 @@ Reallocating 'name_of_file' (item size: 1) to 8 items.
 Database file #1: bibfile.bib
 Warning--can't use both volume and number fields in gast2011unheimliche
 Warning--can't use both volume and number fields in mehrabian1971silent
-You've used 110 entries,
+You've used 111 entries,
             2921 wiz_defined-function locations,
-            1240 strings with 24124 characters,
-and the built_in function-call counts, 478555 in all, are:
-= -- 78197
-> -- 6472
+            1245 strings with 24332 characters,
+and the built_in function-call counts, 482444 in all, are:
+= -- 78818
+> -- 6542
 < -- 6
-+ -- 37342
-- -- 1960
-* -- 41321
-:= -- 96002
-add.period$ -- 220
-call.type$ -- 110
-change.case$ -- 1525
-chr.to.int$ -- 110
-cite$ -- 112
-duplicate$ -- 1610
-empty$ -- 3438
-format.name$ -- 2359
-if$ -- 86005
++ -- 37637
+- -- 1981
+* -- 41655
+:= -- 96793
+add.period$ -- 222
+call.type$ -- 111
+change.case$ -- 1539
+chr.to.int$ -- 111
+cite$ -- 113
+duplicate$ -- 1624
+empty$ -- 3470
+format.name$ -- 2383
+if$ -- 86704
 int.to.chr$ -- 5
 int.to.str$ -- 0
-missing$ -- 118
-newline$ -- 447
-num.names$ -- 1149
-pop$ -- 390
+missing$ -- 119
+newline$ -- 451
+num.names$ -- 1160
+pop$ -- 391
 preamble$ -- 1
-purify$ -- 1650
+purify$ -- 1665
 quote$ -- 0
-skip$ -- 1497
+skip$ -- 1511
 stack$ -- 0
-substring$ -- 110311
-swap$ -- 250
-text.length$ -- 1546
+substring$ -- 111176
+swap$ -- 252
+text.length$ -- 1560
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 410
+type$ -- 414
 warning$ -- 2
-while$ -- 2439
+while$ -- 2462
 width$ -- 0
-write$ -- 1551
+write$ -- 1566
 (There were 2 warnings)
