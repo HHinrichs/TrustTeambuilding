@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  18 MAR 2021 23:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  20 MAR 2021 02:44
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -359,13 +359,294 @@ s
 (B:\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2011/12/19 v6.7a set line spacing
 )
-(B:\MiKTeX\tex/latex/natbib\natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
-\bibhang=\skip87
-\bibsep=\skip88
-LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count279
+(B:\MiKTeX\tex/latex/biblatex\biblatex.sty
+Package: biblatex 2020/08/23 v3.15a programmable bibliographies (PK/MW)
+
+(B:\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
+
+(B:\MiKTeX\tex/generic/infwarerr\infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+(B:\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
+Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+(B:\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/08/24 v2.5j e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count279
+)
+(B:\MiKTeX\tex/latex/kvoptions\kvoptions.sty
+Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
+
+(B:\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
+Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
+))
+(B:\MiKTeX\tex/latex/logreq\logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count280
+ (B:\MiKTeX\tex/latex/logreq\logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+)) (B:\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+\c@tabx@nest=\count281
+\c@listtotal=\count282
+\c@listcount=\count283
+\c@liststart=\count284
+\c@liststop=\count285
+\c@citecount=\count286
+\c@citetotal=\count287
+\c@multicitecount=\count288
+\c@multicitetotal=\count289
+\c@instcount=\count290
+\c@maxnames=\count291
+\c@minnames=\count292
+\c@maxitems=\count293
+\c@minitems=\count294
+\c@citecounter=\count295
+\c@maxcitecounter=\count296
+\c@savedcitecounter=\count297
+\c@uniquelist=\count298
+\c@uniquename=\count299
+\c@refsection=\count300
+\c@refsegment=\count301
+\c@maxextratitle=\count302
+\c@maxextratitleyear=\count303
+\c@maxextraname=\count304
+\c@maxextradate=\count305
+\c@maxextraalpha=\count306
+\c@abbrvpenalty=\count307
+\c@highnamepenalty=\count308
+\c@lownamepenalty=\count309
+\c@maxparens=\count310
+\c@parenlevel=\count311
+\blx@tempcnta=\count312
+\blx@tempcntb=\count313
+\blx@tempcntc=\count314
+\blx@maxsection=\count315
+\blx@maxsegment@0=\count316
+\blx@notetype=\count317
+\blx@parenlevel@text=\count318
+\blx@parenlevel@foot=\count319
+\blx@sectionciteorder@0=\count320
+\blx@entrysetcounter=\count321
+\blx@biblioinstance=\count322
+\labelnumberwidth=\skip87
+\labelalphawidth=\skip88
+\biblabelsep=\skip89
+\bibitemsep=\skip90
+\bibnamesep=\skip91
+\bibinitsep=\skip92
+\bibparsep=\skip93
+\bibhang=\skip94
+\blx@bcfin=\read3
+\blx@bcfout=\write3
+\blx@langwohyphens=\language80
+\c@mincomprange=\count323
+\c@maxcomprange=\count324
+\c@mincompwidth=\count325
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+ (B:\MiKTeX\tex/latex/biblatex\blx-dm.def
+File: blx-dm.def 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'alphabetic.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count326
+\c@savedafterword=\count327
+\c@annotator=\count328
+\c@savedannotator=\count329
+\c@author=\count330
+\c@savedauthor=\count331
+\c@bookauthor=\count332
+\c@savedbookauthor=\count333
+\c@commentator=\count334
+\c@savedcommentator=\count335
+\c@editor=\count336
+\c@savededitor=\count337
+\c@editora=\count338
+\c@savededitora=\count339
+\c@editorb=\count340
+\c@savededitorb=\count341
+\c@editorc=\count342
+\c@savededitorc=\count343
+\c@foreword=\count344
+\c@savedforeword=\count345
+\c@holder=\count346
+\c@savedholder=\count347
+\c@introduction=\count348
+\c@savedintroduction=\count349
+\c@namea=\count350
+\c@savednamea=\count351
+\c@nameb=\count352
+\c@savednameb=\count353
+\c@namec=\count354
+\c@savednamec=\count355
+\c@translator=\count356
+\c@savedtranslator=\count357
+\c@shortauthor=\count358
+\c@savedshortauthor=\count359
+\c@shorteditor=\count360
+\c@savedshorteditor=\count361
+\c@labelname=\count362
+\c@savedlabelname=\count363
+\c@institution=\count364
+\c@savedinstitution=\count365
+\c@lista=\count366
+\c@savedlista=\count367
+\c@listb=\count368
+\c@savedlistb=\count369
+\c@listc=\count370
+\c@savedlistc=\count371
+\c@listd=\count372
+\c@savedlistd=\count373
+\c@liste=\count374
+\c@savedliste=\count375
+\c@listf=\count376
+\c@savedlistf=\count377
+\c@location=\count378
+\c@savedlocation=\count379
+\c@organization=\count380
+\c@savedorganization=\count381
+\c@origlocation=\count382
+\c@savedoriglocation=\count383
+\c@origpublisher=\count384
+\c@savedorigpublisher=\count385
+\c@publisher=\count386
+\c@savedpublisher=\count387
+\c@language=\count388
+\c@savedlanguage=\count389
+\c@origlanguage=\count390
+\c@savedoriglanguage=\count391
+\c@pageref=\count392
+\c@savedpageref=\count393
+\shorthandwidth=\skip95
+\shortjournalwidth=\skip96
+\shortserieswidth=\skip97
+\shorttitlewidth=\skip98
+\shortauthorwidth=\skip99
+\shorteditorwidth=\skip100
+\locallabelnumberwidth=\skip101
+\locallabelalphawidth=\skip102
+\localshorthandwidth=\skip103
+\localshortjournalwidth=\skip104
+\localshortserieswidth=\skip105
+\localshorttitlewidth=\skip106
+\localshortauthorwidth=\skip107
+\localshorteditorwidth=\skip108
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(B:\MiKTeX\tex/latex/biblatex\blx-compat.def
+File: blx-compat.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+)
+(B:\MiKTeX\tex/latex/l3kernel\expl3.sty
+Package: expl3 2020-09-03 L3 programming layer (loader) 
+
+(B:\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
+\l__kernel_color_stack_int=\count394
+\l__pdf_internal_box=\box54
+))
+Package biblatex Info: expl3
+(biblatex)             2020-09-03 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+Package biblatex Info: Trying to load expl3 case changing code...
+Package biblatex Info: ... file 'blx-case-expl3.def' found.
+
+(B:\MiKTeX\tex/latex/biblatex\blx-case-expl3.def
+(B:\MiKTeX\tex/latex/l3packages/xparse\xparse.sty
+Package: xparse 2020-05-15 L3 Experimental document command parser
+
+(B:\MiKTeX\tex/latex/l3packages/xparse\xparse-generic.tex
+\l__xparse_current_arg_int=\count395
+\g__xparse_grabber_int=\count396
+\l__xparse_m_args_int=\count397
+\l__xparse_v_nesting_int=\count398
+))
+File: blx-case-expl3 2020/08/23 v3.15a expl3 case changing code for biblatex
+)
+Package biblatex Info: Trying to load BibTeX backend compatibility...
+Package biblatex Info: ... file 'blx-bibtex.def' found.
+
+(B:\MiKTeX\tex/latex/biblatex\blx-bibtex.def
+File: blx-bibtex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+
+
+Package biblatex Warning: Using fall-back BibTeX(8) backend:
+(biblatex)                functionality may be reduced/unavailable.
+
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+ (B:\MiKTeX\tex/latex/biblatex\biblatex.def
+File: biblatex.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+\c@textcitecount=\count399
+\c@textcitetotal=\count400
+\c@textcitemaxnames=\count401
+\c@biburlbigbreakpenalty=\count402
+\c@biburlbreakpenalty=\count403
+\c@biburlnumpenalty=\count404
+\c@biburlucpenalty=\count405
+\c@biburllcpenalty=\count406
+\biburlbigskip=\muskip18
+\biburlnumskip=\muskip19
+\biburlucskip=\muskip20
+\biburllcskip=\muskip21
+\c@smartand=\count407
+)
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
+
+(B:\MiKTeX\tex/latex/biblatex\blx-natbib.def
+File: blx-natbib.def 2020/08/23 v3.15a biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
+Package biblatex Info: Trying to load bibliography style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.bbx' found.
+
+(B:\MiKTeX\tex/latex/biblatex/bbx\alphabetic.bbx
+File: alphabetic.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(B:\MiKTeX\tex/latex/biblatex/bbx\standard.bbx
+File: standard.bbx 2020/08/23 v3.15a biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count408
+\c@bbx:relatedtotal=\count409
+))
+Package biblatex Info: Trying to load citation style 'alphabetic'...
+Package biblatex Info: ... file 'alphabetic.cbx' found.
+
+(B:\MiKTeX\tex/latex/biblatex/cbx\alphabetic.cbx
+File: alphabetic.cbx 2020/08/23 v3.15a biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(B:\MiKTeX\tex/latex/biblatex\biblatex.cfg
+File: biblatex.cfg 
+))
 (B:\MiKTeX\tex/latex/relsize\relsize.sty
 Package: relsize 2013/03/29 ver 4.1
 )
@@ -377,8 +658,8 @@ Package: suffix 2006/07/15 1.5a Variant command support
 )
 (B:\MiKTeX\tex/latex/xstring\xstring.sty
 (B:\MiKTeX\tex/generic/xstring\xstring.tex
-\integerpart=\count280
-\decimalpart=\count281
+\integerpart=\count410
+\decimalpart=\count411
 )
 Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 )
@@ -387,23 +668,6 @@ Package: xstring 2019/02/06 v1.83 String manipulations (CT)
 (B:\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2020-05-15 v7.00e Hypertext links for LaTeX
 
-(B:\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
-Package: ltxcmds 2019/12/15 v1.24 LaTeX kernel commands for general use (HO)
-)
-(B:\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
-Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(B:\MiKTeX\tex/generic/infwarerr\infwarerr.sty
-Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
-)
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(B:\MiKTeX\tex/generic/kvsetkeys\kvsetkeys.sty
-Package: kvsetkeys 2019/12/15 v1.18 Key value parser (HO)
-)
 (B:\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.sty
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
 )
@@ -419,12 +683,9 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 (B:\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-(B:\MiKTeX\tex/latex/kvoptions\kvoptions.sty
-Package: kvoptions 2019/11/29 v3.13 Key value format for package options (HO)
-)
 \@linkdim=\dimen187
-\Hy@linkcounter=\count282
-\Hy@pagecounter=\count283
+\Hy@linkcounter=\count412
+\Hy@pagecounter=\count413
 
 (B:\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2020-05-15 v7.00e Hyperref: PDFDocEncoding definition (HO)
@@ -437,7 +698,7 @@ Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 (B:\MiKTeX\tex/generic/etexcmds\etexcmds.sty
 Package: etexcmds 2019/12/15 v1.7 Avoid name clashes with e-TeX commands (HO)
 )
-\Hy@SavedSpaceFactor=\count284
+\Hy@SavedSpaceFactor=\count414
 Package hyperref Info: Option `colorlinks' set `true' on input line 4338.
 Package hyperref Info: Option `pdfpagelabels' set `true' on input line 4338.
 Package hyperref Info: Option `bookmarksopen' set `true' on input line 4338.
@@ -452,13 +713,10 @@ Package hyperref Info: Plain pages OFF on input line 4479.
 Package hyperref Info: Backreferencing OFF on input line 4484.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4717.
-\c@Hy@tempcnt=\count285
- (B:\MiKTeX\tex/latex/url\url.sty
-\Urlmuskip=\muskip17
-Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
-)
+\c@Hy@tempcnt=\count415
 LaTeX Info: Redefining \url on input line 5076.
 \XeTeXLinkMargin=\dimen188
+
 (B:\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
@@ -466,7 +724,7 @@ Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count286
+\Fld@menulength=\count416
 \Field@Width=\dimen189
 \Fld@charsize=\dimen190
 Package hyperref Info: Hyper figures OFF on input line 6347.
@@ -482,9 +740,9 @@ LaTeX Info: Redefining \pageref on input line 6421.
 (B:\MiKTeX\tex/generic/atbegshi\atbegshi.sty
 Package: atbegshi 2019/12/05 v1.19 At begin shipout hook (HO)
 )
-\Hy@abspage=\count287
-\c@Item=\count288
-\c@Hfootnote=\count289
+\Hy@abspage=\count417
+\c@Item=\count418
+\c@Hfootnote=\count419
 )
 Package hyperref Info: Driver (autodetected): hpdftex.
 
@@ -493,10 +751,9 @@ File: hpdftex.def 2020-05-15 v7.00e Hyperref driver for pdfTeX
 
 (B:\MiKTeX\tex/latex/atveryend\atveryend.sty
 Package: atveryend 2019-12-11 v1.11 Hooks at the very end of document (HO)
-Package atveryend Info: \enddocument detected (standard20110627).
 )
-\Fld@listcount=\count290
-\c@bookmark@seq@number=\count291
+\Fld@listcount=\count420
+\c@bookmark@seq@number=\count421
 
 (B:\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.sty
 Package: rerunfilecheck 2019/12/05 v1.9 Rerun checks for auxiliary files (HO)
@@ -507,13 +764,14 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 86.
 )
-\Hy@SectionHShift=\skip89
+\Hy@SectionHShift=\skip109
 )
-(B:\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
-File: l3backend-pdftex.def 2020-09-01 L3 backend support: PDF output (pdfTeX)
-\l__kernel_color_stack_int=\count292
-\l__pdf_internal_box=\box54
-)
+
+Package biblatex Warning: 'babel/polyglossia' detected but 'csquotes' missing.
+(biblatex)                Loading 'csquotes' recommended.
+
+\@quotelevel=\count422
+\@quotereset=\count423
 (Masterarbeit_Hannes_Hinrichs.aux
 
 LaTeX Warning: Label `Uncanny-Valley' multiply defined.
@@ -521,45 +779,48 @@ LaTeX Warning: Label `Uncanny-Valley' multiply defined.
 
 LaTeX Warning: Label `SD_SelbstCoPresence_Mittelwerte' multiply defined.
 
+
+LaTeX Warning: Label `SD_TeameffektivitÃ¤tBP' multiply defined.
+
 )
 \openout1 = `Masterarbeit_Hannes_Hinrichs.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMS/pzccm/m/n on input line 62.
 LaTeX Font Info:    Trying to load font information for OMS+pzccm on input line
- 61.
+ 62.
  (B:\MiKTeX\tex/latex/psnfss\omspzccm.fd
 File: omspzccm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/pzccm.
 )
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 62.
+LaTeX Font Info:    ... okay on input line 62.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 9.85492pt on input line 61.
+(Font)              scaled to size 9.85492pt on input line 62.
 
 (B:\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count293
+\scratchcounter=\count424
 \scratchdimen=\dimen191
 \scratchbox=\box55
-\nofMPsegments=\count294
-\nofMParguments=\count295
+\nofMPsegments=\count425
+\nofMParguments=\count426
 \everyMPshowfont=\toks31
-\MPscratchCnt=\count296
+\MPscratchCnt=\count427
 \MPscratchDim=\dimen192
-\MPnumerator=\count297
-\makeMPintoPDFobject=\count298
+\MPnumerator=\count428
+\makeMPintoPDFobject=\count429
 \everyMPtoPDFconversion=\toks32
 ) (B:\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -573,7 +834,7 @@ Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 
 ABD: EverySelectfont initializing macros
-LaTeX Info: Redefining \selectfont on input line 61.
+LaTeX Info: Redefining \selectfont on input line 62.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -609,9 +870,39 @@ LaTeX Info: Redefining \selectfont on input line 61.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
+Package biblatex Info: Trying to load language 'ngerman'...
+Package biblatex Info: ... file 'ngerman.lbx' found.
+(B:\MiKTeX\tex/latex/biblatex/lbx\ngerman.lbx
+File: ngerman.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+
+(B:\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+)
+Package biblatex Info: Trying to load language 'german'...
+Package biblatex Info: ... file 'german.lbx' found.
+
+(B:\MiKTeX\tex/latex/biblatex/lbx\german.lbx
+File: german.lbx 2020/08/23 v3.15a biblatex localization (PK/MW)
+))
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+Package biblatex Info: Input encoding 'utf8' specified.
+Package biblatex Info: Data encoding 'utf8' specified.
+(biblatex)             No need to reencode data.
+\openout3 = `Masterarbeit_Hannes_Hinrichs-blx.bib'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'Masterarbeit_Hannes_Hinrichs.bbl' found.
+
+(Masterarbeit_Hannes_Hinrichs.bbl)
+Package biblatex Info: Reference section=0 on input line 62.
+Package biblatex Info: Reference segment=0 on input line 62.
 \AtBeginShipoutBox=\box56
-Package hyperref Info: Link coloring ON on input line 61.
-(B:\MiKTeX\tex/latex/hyperref\nameref.sty
+Package hyperref Info: Link coloring ON on input line 62.
+ (B:\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2019/09/16 v2.46 Cross-referencing by name of section
 
 (B:\MiKTeX\tex/latex/refcount\refcount.sty
@@ -620,308 +911,124 @@ Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 (B:\MiKTeX\tex/generic/gettitlestring\gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count299
+\c@section@level=\count430
 )
-LaTeX Info: Redefining \ref on input line 61.
-LaTeX Info: Redefining \pageref on input line 61.
-LaTeX Info: Redefining \nameref on input line 61.
+LaTeX Info: Redefining \ref on input line 62.
+LaTeX Info: Redefining \pageref on input line 62.
+LaTeX Info: Redefining \nameref on input line 62.
 
 (Masterarbeit_Hannes_Hinrichs.out) (Masterarbeit_Hannes_Hinrichs.out)
-\@outlinefile=\write3
-\openout3 = `Masterarbeit_Hannes_Hinrichs.out'.
+\@outlinefile=\write4
+\openout4 = `Masterarbeit_Hannes_Hinrichs.out'.
 
 <Abbildungen/TH.png, id=307, 451.6875pt x 18.0675pt>
 File: Abbildungen/TH.png Graphic file (type png)
 <use Abbildungen/TH.png>
-Package pdftex.def Info: Abbildungen/TH.png  used on input line 65.
+Package pdftex.def Info: Abbildungen/TH.png  used on input line 66.
 (pdftex.def)             Requested size: 451.68639pt x 18.06744pt.
 
-Overfull \hbox (24.89503pt too wide) in paragraph at lines 65--65
+Overfull \hbox (24.89503pt too wide) in paragraph at lines 66--66
 []  
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 18.66588pt on input line 86.
+(Font)              scaled to size 18.66588pt on input line 87.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 93.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 94.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 9.85492pt on input line 93.
+(Font)              scaled to size 9.85492pt on input line 94.
 LaTeX Font Info:    Trying to load font information for OT1+ptmcm on input line
- 100.
+ 101.
 (B:\MiKTeX\tex/latex/psnfss\ot1ptmcm.fd
 File: ot1ptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OML+ptmcm on input line
- 100.
+ 101.
 
 (B:\MiKTeX\tex/latex/psnfss\omlptmcm.fd
 File: omlptmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ptmcm.
 )
 LaTeX Font Info:    Trying to load font information for OMX+psycm on input line
- 100.
+ 101.
 
 (B:\MiKTeX\tex/latex/psnfss\omxpsycm.fd
 File: omxpsycm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/psycm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 100.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 101.
  [1
 
 {C:/Users/hanne/AppData/Local/MiKTeX/pdftex/config/pdftex.map} <./Abbildungen/T
 H.png>]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 12.9599pt on input line 118.
+(Font)              scaled to size 12.9599pt on input line 119.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 12.9599pt on input line 118.
+(Font)              scaled to size 12.9599pt on input line 119.
 
-Overfull \hbox (4.17975pt too wide) in paragraph at lines 119--124
+Overfull \hbox (4.17975pt too wide) in paragraph at lines 120--125
 [] |  [] 
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.09995pt on input line 124.
+(Font)              scaled to size 8.09995pt on input line 125.
 [1]
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 9.85492pt on input line 130.
+(Font)              scaled to size 9.85492pt on input line 131.
  [2] (Masterarbeit_Hannes_Hinrichs.toc [3]
-Overfull \hbox (1.16264pt too wide) detected at line 149
+Overfull \hbox (1.16264pt too wide) detected at line 298
  []\T1/phv/m/n/10.95 100
  []
 
 
-Overfull \hbox (1.16264pt too wide) detected at line 150
+Overfull \hbox (1.16264pt too wide) detected at line 300
  []\T1/phv/m/n/10.95 103
  []
 
 
-Overfull \hbox (1.16264pt too wide) detected at line 151
+Overfull \hbox (1.16264pt too wide) detected at line 302
  []\T1/phv/m/n/10.95 109
  []
 
 )
-\tf@toc=\write4
-\openout4 = `Masterarbeit_Hannes_Hinrichs.toc'.
+\tf@toc=\write5
+\openout5 = `Masterarbeit_Hannes_Hinrichs.toc'.
 
- [4] (Masterarbeit_Hannes_Hinrichs.lof
+ [4] (Masterarbeit_Hannes_Hinrichs.lof [5]
 Package acronym Info: Label `acro:vts' newly defined as it shall be overridden
-although it is yet undefined on input line 43.
+although it is yet undefined on input line 90.
 
-Overfull \hbox (1.16264pt too wide) detected at line 43
+Overfull \hbox (1.16264pt too wide) detected at line 90
  []\T1/phv/m/n/10.95 109
  []
 
 )
-\tf@lof=\write5
-\openout5 = `Masterarbeit_Hannes_Hinrichs.lof'.
+\tf@lof=\write6
+\openout6 = `Masterarbeit_Hannes_Hinrichs.lof'.
 
- [5] (Masterarbeit_Hannes_Hinrichs.lot)
-\tf@lot=\write6
-\openout6 = `Masterarbeit_Hannes_Hinrichs.lot'.
+ [6] (Masterarbeit_Hannes_Hinrichs.lot)
+\tf@lot=\write7
+\openout7 = `Masterarbeit_Hannes_Hinrichs.lot'.
 
- [6] (acronym.tex
+ [7] (acronym.tex
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 8.09995pt on input line 1.
-
-
-LaTeX Warning: Hyper reference `acro:gt' on page VII undefined on input line 10
-.
-
-
-LaTeX Warning: Hyper reference `acro:gt' on page VII undefined on input line 10
-.
-
-
-LaTeX Warning: Hyper reference `acro:tci' on page VII undefined on input line 1
-9.
-
-
-LaTeX Warning: Hyper reference `acro:tci' on page VII undefined on input line 1
-9.
-
-
-LaTeX Warning: Hyper reference `acro:tcn' on page VII undefined on input line 2
-0.
-
-
-LaTeX Warning: Hyper reference `acro:tcn' on page VII undefined on input line 2
-0.
-
-
-LaTeX Warning: Hyper reference `acro:tRoundIK' on page VII undefined on input l
-ine 27.
-
-
-LaTeX Warning: Hyper reference `acro:tRoundIK' on page VII undefined on input l
-ine 27.
-
-
-LaTeX Warning: Hyper reference `acro:tRoundNIK' on page VII undefined on input 
-line 28.
-
-
-LaTeX Warning: Hyper reference `acro:tRoundNIK' on page VII undefined on input 
-line 28.
-
-
-LaTeX Warning: Hyper reference `acro:te' on page VII undefined on input line 30
-.
-
-
-LaTeX Warning: Hyper reference `acro:te' on page VII undefined on input line 30
-.
-
-
-LaTeX Warning: Hyper reference `acro:tei' on page VII undefined on input line 3
-1.
-
-
-LaTeX Warning: Hyper reference `acro:tei' on page VII undefined on input line 3
-1.
-
-
-LaTeX Warning: Hyper reference `acro:ten' on page VII undefined on input line 3
-2.
-
-
-LaTeX Warning: Hyper reference `acro:ten' on page VII undefined on input line 3
-2.
-
-
-LaTeX Warning: Hyper reference `acro:cp' on page VII undefined on input line 34
-.
-
-
-LaTeX Warning: Hyper reference `acro:cp' on page VII undefined on input line 34
-.
-
-
-LaTeX Warning: Hyper reference `acro:cpi' on page VII undefined on input line 3
-5.
-
-
-LaTeX Warning: Hyper reference `acro:cpi' on page VII undefined on input line 3
-5.
-
-
-LaTeX Warning: Hyper reference `acro:cpn' on page VII undefined on input line 3
-6.
-
-
-LaTeX Warning: Hyper reference `acro:cpn' on page VII undefined on input line 3
-6.
-
-
-LaTeX Warning: Hyper reference `acro:tlx' on page VII undefined on input line 3
-8.
-
-
-LaTeX Warning: Hyper reference `acro:tlx' on page VII undefined on input line 3
-8.
-
-
-LaTeX Warning: Hyper reference `acro:tlxi' on page VII undefined on input line 
-39.
-
-
-LaTeX Warning: Hyper reference `acro:tlxi' on page VII undefined on input line 
-39.
-
-
-LaTeX Warning: Hyper reference `acro:tlxn' on page VII undefined on input line 
-40.
-
-
-LaTeX Warning: Hyper reference `acro:tlxn' on page VII undefined on input line 
-40.
-
-
-LaTeX Warning: Hyper reference `acro:teamCog' on page VII undefined on input li
-ne 42.
-
-
-LaTeX Warning: Hyper reference `acro:teamCog' on page VII undefined on input li
-ne 42.
-
-
-LaTeX Warning: Hyper reference `acro:teamCogIK' on page VII undefined on input 
-line 43.
-
-
-LaTeX Warning: Hyper reference `acro:teamCogIK' on page VII undefined on input 
-line 43.
-
-
-LaTeX Warning: Hyper reference `acro:teamCogNIK' on page VII undefined on input
- line 44.
-
-
-LaTeX Warning: Hyper reference `acro:teamCogNIK' on page VII undefined on input
- line 44.
-
-
-LaTeX Warning: Hyper reference `acro:teamGen' on page VII undefined on input li
-ne 46.
-
-
-LaTeX Warning: Hyper reference `acro:teamGen' on page VII undefined on input li
-ne 46.
-
-
-LaTeX Warning: Hyper reference `acro:teamGenIK' on page VII undefined on input 
-line 47.
-
-
-LaTeX Warning: Hyper reference `acro:teamGenIK' on page VII undefined on input 
-line 47.
-
-
-LaTeX Warning: Hyper reference `acro:teamGenNIK' on page VII undefined on input
- line 48.
-
-
-LaTeX Warning: Hyper reference `acro:teamGenNIK' on page VII undefined on input
- line 48.
-
-
-LaTeX Warning: Hyper reference `acro:ipq' on page VII undefined on input line 5
-8.
-
-
-LaTeX Warning: Hyper reference `acro:ipq' on page VII undefined on input line 5
-8.
-
-
-LaTeX Warning: Hyper reference `acro:ipqi' on page VII undefined on input line 
-59.
-
-
-LaTeX Warning: Hyper reference `acro:ipqi' on page VII undefined on input line 
-59.
-
-
-LaTeX Warning: Hyper reference `acro:ipqn' on page VII undefined on input line 
-60.
-
-
-LaTeX Warning: Hyper reference `acro:ipqn' on page VII undefined on input line 
-60.
-
-[7]) [8]
+) [8]
 Package acronym Info: Label `acro:vr' newly defined as it shall be overridden
-although it is yet undefined on input line 203.
+although it is yet undefined on input line 204.
 LaTeX Font Info:    Trying to load font information for TS1+phv on input line 2
-11.
- (B:\MiKTeX\tex/latex/psnfss\ts1phv.fd
+12.
+
+(B:\MiKTeX\tex/latex/psnfss\ts1phv.fd
 File: ts1phv.fd 2020/03/25 scalable font definitions for TS1/phv.
 )
 Package acronym Info: Label `acro:sve' newly defined as it shall be overridden
-although it is yet undefined on input line 213.
+although it is yet undefined on input line 214.
 
-Overfull \hbox (2.12195pt too wide) in paragraph at lines 213--214
+Overfull \hbox (2.12195pt too wide) in paragraph at lines 214--215
 \T1/phv/m/n/10.95 so-wie Cha-rak-tere in Com-pu-ter-spie-len bie-ten \T1/phv/m/
 sl/10.95 qua-si\T1/phv/m/n/10.95 -sozial Be-zie-hun-gen. Die-se \T1/phv/m/sl/10
 .95 qua-si\T1/phv/m/n/10.95 -sozialen
@@ -929,362 +1036,378 @@ sl/10.95 qua-si\T1/phv/m/n/10.95 -sozial Be-zie-hun-gen. Die-se \T1/phv/m/sl/10
 
 [1]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.19995pt on input line 227.
+(Font)              scaled to size 7.19995pt on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 227.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 228.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 6.29996pt on input line 227.
+(Font)              scaled to size 6.29996pt on input line 228.
  [2]
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.79993pt on input line 230.
+(Font)              scaled to size 10.79993pt on input line 231.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 10.79993pt on input line 230.
+(Font)              scaled to size 10.79993pt on input line 231.
 Package acronym Info: Label `acro:ik' newly defined as it shall be overridden
-although it is yet undefined on input line 259.
+although it is yet undefined on input line 260.
 Package acronym Info: Label `acro:nik' newly defined as it shall be overridden
-although it is yet undefined on input line 259.
+although it is yet undefined on input line 260.
  [3] [4]
 
-LaTeX Warning: Command \" invalid in math mode on input line 331.
+LaTeX Warning: Command \" invalid in math mode on input line 332.
 
 Missing character: There is no ä in font zptmcmr!
 [5]
 Package acronym Info: Label `acro:hmd' newly defined as it shall be overridden
-although it is yet undefined on input line 359.
- [6] [7]
+although it is yet undefined on input line 360.
+ [6]
 LaTeX Font Info:    Font shape `T1/phv/b/it' in size <10.95> not available
-(Font)              Font shape `T1/phv/b/sl' tried instead on input line 419.
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 420.
 LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
-(Font)              scaled to size 9.85492pt on input line 419.
- [8]
-<Abbildungen/Symmetry.JPG, id=828, 589.70313pt x 573.14125pt>
+(Font)              scaled to size 9.85492pt on input line 420.
+ [7] [8]
+<Abbildungen/Symmetry.JPG, id=749, 589.70313pt x 573.14125pt>
 File: Abbildungen/Symmetry.JPG Graphic file (type jpg)
 <use Abbildungen/Symmetry.JPG>
-Package pdftex.def Info: Abbildungen/Symmetry.JPG  used on input line 448.
+Package pdftex.def Info: Abbildungen/Symmetry.JPG  used on input line 449.
 (pdftex.def)             Requested size: 176.9123pt x 171.9437pt.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 8.99994pt on input line 449.
+(Font)              scaled to size 8.99994pt on input line 450.
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 449.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 450.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.99994pt on input line 449.
-<Abbildungen/moving_dots.JPG, id=840, 487.8225pt x 485.815pt>
+(Font)              scaled to size 8.99994pt on input line 450.
+<Abbildungen/moving_dots.JPG, id=756, 487.8225pt x 485.815pt>
 File: Abbildungen/moving_dots.JPG Graphic file (type jpg)
 <use Abbildungen/moving_dots.JPG>
-Package pdftex.def Info: Abbildungen/moving_dots.JPG  used on input line 460.
+Package pdftex.def Info: Abbildungen/moving_dots.JPG  used on input line 461.
 (pdftex.def)             Requested size: 243.91064pt x 242.9069pt.
  [9 <./Abbildungen/Symmetry.JPG>]
 Package acronym Info: Label `acro:bip' newly defined as it shall be overridden
-although it is yet undefined on input line 480.
+although it is yet undefined on input line 481.
  [10 <./Abbildungen/moving_dots.JPG>] [11]
 
-LaTeX Warning: Reference `UncannyValley' on page 12 undefined on input line 517
+LaTeX Warning: Reference `UncannyValley' on page 12 undefined on input line 518
 .
 
-<Abbildungen/Uncanny-Valley.JPG, id=951, 682.55pt x 534.49687pt>
+<Abbildungen/Uncanny-Valley.JPG, id=838, 682.55pt x 534.49687pt>
 File: Abbildungen/Uncanny-Valley.JPG Graphic file (type jpg)
 <use Abbildungen/Uncanny-Valley.JPG>
-Package pdftex.def Info: Abbildungen/Uncanny-Valley.JPG  used on input line 522
+Package pdftex.def Info: Abbildungen/Uncanny-Valley.JPG  used on input line 523
 .
 (pdftex.def)             Requested size: 204.76657pt x 160.3503pt.
-[12] [13 <./Abbildungen/Uncanny-Valley.JPG>] [14] [15] [16] [17] [18] [19]
-[20] [21]
-<Abbildungen/DifferentLevels.JPG, id=1219, 332.24126pt x 296.60812pt>
+[12] [13 <./Abbildungen/Uncanny-Valley.JPG>] [14] [15] [16]
+Overfull \hbox (8.8922pt too wide) in paragraph at lines 661--663
+\T1/phv/m/n/10.95 Effektivität un-ter-su-chen, ha-ben po-si-ti-ve Zu-sam-men-hä
+n-ge [[][]Dav+00[][]], kei-ne Zu-sam-men-hän-ge [[][]HKO04[][]]
+ []
+
+[17] [18] [19] [20] [21]
+<Abbildungen/DifferentLevels.JPG, id=1031, 332.24126pt x 296.60812pt>
 File: Abbildungen/DifferentLevels.JPG Graphic file (type jpg)
 <use Abbildungen/DifferentLevels.JPG>
 Package pdftex.def Info: Abbildungen/DifferentLevels.JPG  used on input line 99
-5.
+4.
 (pdftex.def)             Requested size: 132.89413pt x 118.64114pt.
  [22]
-<Abbildungen/Versuchshypothesen_02.JPG, id=1230, 1339.50438pt x 571.13374pt>
+<Abbildungen/Versuchshypothesen_02.JPG, id=1042, 1339.50438pt x 571.13374pt>
 File: Abbildungen/Versuchshypothesen_02.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchshypothesen_02.JPG>
 Package pdftex.def Info: Abbildungen/Versuchshypothesen_02.JPG  used on input l
-ine 1005.
+ine 1004.
 (pdftex.def)             Requested size: 426.79135pt x 181.97348pt.
  [23 <./Abbildungen/DifferentLevels.JPG> <./Abbildungen/Versuchshypothesen_02.J
 PG>]
 Package acronym Info: Label `acro:vt' newly defined as it shall be overridden
-although it is yet undefined on input line 1031.
+although it is yet undefined on input line 1030.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1031--1036
+Underfull \hbox (badness 10000) in paragraph at lines 1030--1035
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1077--1148
+Underfull \hbox (badness 10000) in paragraph at lines 1076--1147
 
  []
 
 [24]
-Overfull \hbox (25.12569pt too wide) in paragraph at lines 1148--1162
+Overfull \hbox (25.12569pt too wide) in paragraph at lines 1147--1161
 \T1/phv/m/n/10.95 H4$[]$: Die Mit-tel-wer-te der \T1/phv/m/sl/10.95 rea-len Tea
 -m-ef-fek-ti-vi-tät \T1/phv/m/n/10.95 un-ter-schei-det sich bei den Kon-di-tio-
 nen [][]
  []
 
 
-Overfull \hbox (25.12569pt too wide) in paragraph at lines 1148--1162
+Overfull \hbox (25.12569pt too wide) in paragraph at lines 1147--1161
 \T1/phv/m/n/10.95 H4$[]$: Die Mit-tel-wer-te der \T1/phv/m/sl/10.95 rea-len Tea
 -m-ef-fek-ti-vi-tät \T1/phv/m/n/10.95 un-ter-schei-det sich bei den Kon-di-tio-
 nen [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1148--1162
+Underfull \hbox (badness 10000) in paragraph at lines 1147--1161
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1162--1177
+Underfull \hbox (badness 10000) in paragraph at lines 1161--1176
 
  []
 
 [25] [26]
-<Abbildungen/Podeste.JPG, id=1287, 630.85687pt x 560.59438pt>
+<Abbildungen/Podeste.JPG, id=1098, 630.85687pt x 560.59438pt>
 File: Abbildungen/Podeste.JPG Graphic file (type jpg)
 <use Abbildungen/Podeste.JPG>
-Package pdftex.def Info: Abbildungen/Podeste.JPG  used on input line 1243.
+Package pdftex.def Info: Abbildungen/Podeste.JPG  used on input line 1242.
 (pdftex.def)             Requested size: 426.79135pt x 379.25737pt.
  [27 <./Abbildungen/Podeste.JPG>]
-<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1298, 1320.43312pt x 793.46437
+<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1109, 1320.43312pt x 793.46437
 pt>
 File: Abbildungen/DetaillierterVersuchsablauf.JPG Graphic file (type jpg)
 <use Abbildungen/DetaillierterVersuchsablauf.JPG>
 Package pdftex.def Info: Abbildungen/DetaillierterVersuchsablauf.JPG  used on i
-nput line 1274.
+nput line 1273.
 (pdftex.def)             Requested size: 396.133pt x 238.04114pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [28]
-<Abbildungen/Avatars.JPG, id=1311, 741.52031pt x 390.70969pt>
+<Abbildungen/Avatars.JPG, id=1121, 741.52031pt x 390.70969pt>
 File: Abbildungen/Avatars.JPG Graphic file (type jpg)
 <use Abbildungen/Avatars.JPG>
-Package pdftex.def Info: Abbildungen/Avatars.JPG  used on input line 1290.
+Package pdftex.def Info: Abbildungen/Avatars.JPG  used on input line 1289.
 (pdftex.def)             Requested size: 426.79135pt x 224.88286pt.
  [29 <./Abbildungen/DetaillierterVersuchsablauf.JPG>] [30 <./Abbildungen/Avatar
 s.JPG>]
-<Abbildungen/Podeste_IK_Avatars.jpg, id=1336, 744.28062pt x 593.71812pt>
+<Abbildungen/Podeste_IK_Avatars.jpg, id=1143, 744.28062pt x 593.71812pt>
 File: Abbildungen/Podeste_IK_Avatars.jpg Graphic file (type jpg)
 <use Abbildungen/Podeste_IK_Avatars.jpg>
 Package pdftex.def Info: Abbildungen/Podeste_IK_Avatars.jpg  used on input line
- 1307.
+ 1306.
 (pdftex.def)             Requested size: 170.71393pt x 136.18086pt.
-<Abbildungen/Podeste_Non_IK_Avatars.jpg, id=1337, 663.98062pt x 478.78876pt>
+<Abbildungen/Podeste_Non_IK_Avatars.jpg, id=1144, 663.98062pt x 478.78876pt>
 File: Abbildungen/Podeste_Non_IK_Avatars.jpg Graphic file (type jpg)
 <use Abbildungen/Podeste_Non_IK_Avatars.jpg>
 Package pdftex.def Info: Abbildungen/Podeste_Non_IK_Avatars.jpg  used on input 
-line 1309.
+line 1308.
 (pdftex.def)             Requested size: 170.71393pt x 123.10135pt.
-<Abbildungen/RoundSuccsessful.JPG, id=1338, 754.82pt x 717.68124pt>
+<Abbildungen/RoundSuccsessful.JPG, id=1145, 754.82pt x 717.68124pt>
 File: Abbildungen/RoundSuccsessful.JPG Graphic file (type jpg)
 <use Abbildungen/RoundSuccsessful.JPG>
 Package pdftex.def Info: Abbildungen/RoundSuccsessful.JPG  used on input line 1
-317.
+316.
 (pdftex.def)             Requested size: 150.96132pt x 143.5337pt.
 Package acronym Info: Label `acro:tRound' newly defined as it shall be overridd
 en
-although it is yet undefined on input line 1332.
+although it is yet undefined on input line 1331.
  [31 <./Abbildungen/Podeste_IK_Avatars.jpg> <./Abbildungen/Podeste_Non_IK_Avata
 rs.jpg> <./Abbildungen/RoundSuccsessful.JPG>] [32]
-<Abbildungen/Versuchsumgebung/SpectatorView.JPG, id=1381, 1177.39874pt x 806.51
+<Abbildungen/Versuchsumgebung/SpectatorView.JPG, id=1186, 1177.39874pt x 806.51
 312pt>
 File: Abbildungen/Versuchsumgebung/SpectatorView.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchsumgebung/SpectatorView.JPG>
 Package pdftex.def Info: Abbildungen/Versuchsumgebung/SpectatorView.JPG  used o
-n input line 1382.
+n input line 1381.
 (pdftex.def)             Requested size: 353.22235pt x 241.9558pt.
  [33 <./Abbildungen/Versuchsumgebung/SpectatorView.JPG>]
-<Abbildungen/GameManagerClientSpectator.jpg, id=1390, 1327.96124pt x 639.38875p
+<Abbildungen/GameManagerClientSpectator.jpg, id=1195, 1327.96124pt x 639.38875p
 t>
 File: Abbildungen/GameManagerClientSpectator.jpg Graphic file (type jpg)
 <use Abbildungen/GameManagerClientSpectator.jpg>
 Package pdftex.def Info: Abbildungen/GameManagerClientSpectator.jpg  used on in
-put line 1409.
+put line 1408.
 (pdftex.def)             Requested size: 426.79135pt x 205.48663pt.
  [34 <./Abbildungen/GameManagerClientSpectator.jpg>]
-<Abbildungen/ClientRCPMessageReceived.jpg, id=1400, 793.46437pt x 543.53062pt>
+<Abbildungen/ClientRCPMessageReceived.jpg, id=1205, 793.46437pt x 543.53062pt>
 File: Abbildungen/ClientRCPMessageReceived.jpg Graphic file (type jpg)
 <use Abbildungen/ClientRCPMessageReceived.jpg>
 Package pdftex.def Info: Abbildungen/ClientRCPMessageReceived.jpg  used on inpu
-t line 1424.
+t line 1423.
 (pdftex.def)             Requested size: 426.79135pt x 292.35764pt.
-<Abbildungen/boolValueChanged.jpg, id=1402, 456.20438pt x 601.4972pt>
+<Abbildungen/boolValueChanged.jpg, id=1207, 456.20438pt x 601.4972pt>
 File: Abbildungen/boolValueChanged.jpg Graphic file (type jpg)
 <use Abbildungen/boolValueChanged.jpg>
 Package pdftex.def Info: Abbildungen/boolValueChanged.jpg  used on input line 1
-435.
+434.
 (pdftex.def)             Requested size: 342.15244pt x 451.1218pt.
  [35 <./Abbildungen/ClientRCPMessageReceived.jpg>] [36 <./Abbildungen/boolValue
 Changed.jpg>]
-<Abbildungen/Versuchsumgebung/Raum.JPG, id=1414, 820.56563pt x 806.51312pt>
+<Abbildungen/Versuchsumgebung/Raum.JPG, id=1219, 820.56563pt x 806.51312pt>
 File: Abbildungen/Versuchsumgebung/Raum.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchsumgebung/Raum.JPG>
 Package pdftex.def Info: Abbildungen/Versuchsumgebung/Raum.JPG  used on input l
-ine 1452.
+ine 1451.
 (pdftex.def)             Requested size: 328.22043pt x 322.59953pt.
  [37 <./Abbildungen/Versuchsumgebung/Raum.JPG>]
-<Abbildungen/RoundDifficulty.JPG, id=1427, 629.35126pt x 351.81438pt>
+<Abbildungen/RoundDifficulty.JPG, id=1232, 629.35126pt x 351.81438pt>
 File: Abbildungen/RoundDifficulty.JPG Graphic file (type jpg)
 <use Abbildungen/RoundDifficulty.JPG>
 Package pdftex.def Info: Abbildungen/RoundDifficulty.JPG  used on input line 14
-80.
+79.
 (pdftex.def)             Requested size: 251.73604pt x 140.72325pt.
 
 [38]
-Overfull \hbox (5.97365pt too wide) in paragraph at lines 1497--1500
+Overfull \hbox (5.97365pt too wide) in paragraph at lines 1496--1499
  []\T1/phv/b/n/10.95 Sounds[] \T1/phv/m/n/10.95 Tritt ein Teil-neh-mer dem Raum
  bei, wird der selbst auf-ge-nom-me-ne Sound "Player Connec-
  []
 
 [39 <./Abbildungen/RoundDifficulty.JPG>]
-Overfull \hbox (28.36049pt too wide) in paragraph at lines 1535--1536
+Overfull \hbox (28.36049pt too wide) in paragraph at lines 1534--1535
 \T1/phv/m/n/10.95 da-durch re-sul-tie-ren-de \T1/phv/m/sl/10.95 rea-le Tea-m-ef
 -fek-ti-vi-tät \T1/phv/m/n/10.95 ist, soll durch die bei-den Avat-ar-kon-di-tio
 -nen [][]
  []
 
 
-Overfull \hbox (8.53683pt too wide) in paragraph at lines 1551--1552
+Overfull \hbox (3.05757pt too wide) in paragraph at lines 1550--1551
 \T1/phv/m/sl/10.95 ef-fek-ti-vi-tät\T1/phv/m/n/10.95 , der\T1/phv/m/sl/10.95 Pr
-esence\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 Sub-jek-tiv wahr-ge-nom-me-ne 
-Ar-beits-be-las-tung\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 Team-Kommunikati
-on
+äsenz\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 Sub-jek-tiv wahr-ge-nom-me-ne A
+r-beits-be-las-tung\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 Team-Kommunikatio
+n
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1561--1563
+Underfull \hbox (badness 10000) in paragraph at lines 1560--1562
 
  []
 
-[40] [41] [42]
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1675
+[40]
+Overfull \hbox (40.27744pt too wide) in paragraph at lines 1587--1590
+\T1/phv/m/n/10.95 die Kom-mu-ni-ka-ti-on zwi-schen Ih-nen und Ih-rem Team \T1/p
+hv/m/sl/10.95 " KLAR/EFFEKTIV/ABGESCHLOSSEN/FLÜSSIG/ZUM
+ []
+
+[41]
+
+LaTeX Warning: Reference `Post-Questionnaire - Co-PrÃ¤senz' on page 42 undefine
+d on input line 1614.
+
+[42]
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1674
 []|\T1/phv/m/n/9 Genereller Ver-trau-ens-vor-
  []
 
 LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
-(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1675.
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 1674.
 LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
-(Font)              scaled to size 8.09995pt on input line 1675.
+(Font)              scaled to size 8.09995pt on input line 1674.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1675
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1674
 []|\T1/phv/m/n/9 Teilauszug des Trust-
  []
 
 
-Underfull \hbox (badness 3713) in paragraph at lines 1675--1675
+Underfull \hbox (badness 3713) in paragraph at lines 1674--1674
 \T1/phv/m/n/9 Inventorys - \T1/phv/m/sl/9 Generalized-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1675--1676
+Underfull \hbox (badness 10000) in paragraph at lines 1674--1675
 []|\T1/phv/m/n/9 Couch, Adams, Jo-nes
  []
 
 
-Underfull \hbox (badness 1210) in paragraph at lines 1685--1685
+Underfull \hbox (badness 1210) in paragraph at lines 1684--1684
 []|\T1/phv/m/n/9 Wahrgenommene Kom-mu-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1685
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1684
 []|\T1/phv/m/sl/9 Communication-Quality-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1686
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1685
 []|\T1/phv/m/n/9 Gonzalez-Roma, Her-n-
  []
 
 
-Underfull \hbox (badness 5133) in paragraph at lines 1685--1686
-\T1/phv/m/n/9 an-dez (2014) ([][]González-
+Underfull \hbox (badness 10000) in paragraph at lines 1684--1685
+\T1/phv/m/n/9 an-dez (2014) [[][]GRH14[][],
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1685--1686
-\T1/phv/m/n/9 Romá and Hernán-dez[][];
- []
-
-
-Underfull \hbox (badness 1067) in paragraph at lines 1690--1690
+Underfull \hbox (badness 1067) in paragraph at lines 1689--1689
 \T1/phv/m/n/9 der Qua-li-tät der Auf-ga-be-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1690--1690
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1689
 []|\T1/phv/m/n/9 Teilauszug des \T1/phv/m/sl/9 Team-
  []
 
 
-Underfull \hbox (badness 1082) in paragraph at lines 1694--1694
+Underfull \hbox (badness 10000) in paragraph at lines 1689--1690
+[]|\T1/phv/m/n/9 Gibson et. al (2003)
+ []
+
+
+Underfull \hbox (badness 1082) in paragraph at lines 1693--1693
 []|\T1/phv/m/n/9 Messung der Ab-ge-schlos-
  []
 
 
-Overfull \vbox (13.19998pt too high) detected at line 1697
+Overfull \vbox (13.19998pt too high) detected at line 1696
  []
 
 
-Underfull \hbox (badness 1748) in paragraph at lines 1698--1698
+Underfull \hbox (badness 1748) in paragraph at lines 1697--1697
 []|\T1/phv/m/n/9 Der NASA-TLX misst die
  []
 
 
-Underfull \hbox (badness 1577) in paragraph at lines 1698--1698
+Underfull \hbox (badness 1577) in paragraph at lines 1697--1697
 \T1/phv/m/n/9 sub-jek-tiv wahr-ge-nom-me-ne
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1702--1702
+Underfull \hbox (badness 10000) in paragraph at lines 1701--1701
 []|\T1/phv/m/sl/9 Igroup Pre-sence Ques-
  []
 
 
-Overfull \vbox (92.39978pt too high) detected at line 1705
+Overfull \vbox (92.39978pt too high) detected at line 1704
  []
 
 
-Underfull \hbox (badness 2635) in paragraph at lines 1706--1706
+Underfull \hbox (badness 2635) in paragraph at lines 1705--1705
 \T1/phv/m/n/9 Bio-c-ca zum mes-sen von
  []
 
 
-Overfull \hbox (19.54721pt too wide) in paragraph at lines 1669--1709
+Overfull \hbox (19.54721pt too wide) in paragraph at lines 1668--1708
  [][] 
  []
 
 [43]
 
 LaTeX Warning: Reference `teilnehmerAlter' on page 44 undefined on input line 1
-824.
+823.
 
-<Abbildungen/Demographie/alter.JPG, id=1533, 673.51625pt x 388.95313pt>
+<Abbildungen/Demographie/alter.JPG, id=1319, 673.51625pt x 388.95313pt>
 File: Abbildungen/Demographie/alter.JPG Graphic file (type jpg)
 <use Abbildungen/Demographie/alter.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/alter.JPG  used on input line 
-1828.
+1827.
 (pdftex.def)             Requested size: 170.71393pt x 98.58527pt.
-<Abbildungen/Demographie/teilnehmerGeschlecht.JPG, id=1534, 438.63875pt x 322.7
+<Abbildungen/Demographie/teilnehmerGeschlecht.JPG, id=1320, 438.63875pt x 322.7
 0563pt>
 File: Abbildungen/Demographie/teilnehmerGeschlecht.JPG Graphic file (type jpg)
 <use Abbildungen/Demographie/teilnehmerGeschlecht.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerGeschlecht.JPG  used
- on input line 1830.
+ on input line 1829.
 (pdftex.def)             Requested size: 170.71393pt x 125.5937pt.
-<Abbildungen/Demographie/teilnehmerBildungsstand.JPG, id=1536, 574.64688pt x 37
+<Abbildungen/Demographie/teilnehmerBildungsstand.JPG, id=1322, 574.64688pt x 37
 8.41376pt>
 File: Abbildungen/Demographie/teilnehmerBildungsstand.JPG Graphic file (type jp
 g)
 <use Abbildungen/Demographie/teilnehmerBildungsstand.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerBildungsstand.JPG  u
-sed on input line 1841.
+sed on input line 1840.
 (pdftex.def)             Requested size: 229.85468pt x 151.36281pt.
 [44
 
@@ -1292,36 +1415,36 @@ sed on input line 1841.
 
  <./Abbildungen/Demographie/alter.JPG> <./Abbildungen/Demographie/teilnehmerGes
 chlecht.JPG>]
-<Abbildungen/Demographie/teilnehmerVRErfahrung.jpg, id=1546, 454.69875pt x 370.
+<Abbildungen/Demographie/teilnehmerVRErfahrung.jpg, id=1332, 454.69875pt x 370.
 38374pt>
 File: Abbildungen/Demographie/teilnehmerVRErfahrung.jpg Graphic file (type jpg)
 
 <use Abbildungen/Demographie/teilnehmerVRErfahrung.jpg>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerVRErfahrung.jpg  use
-d on input line 1851.
+d on input line 1850.
 (pdftex.def)             Requested size: 170.71393pt x 139.05745pt.
-<Abbildungen/Demographie/teilnehmerVorexperimente.jpg, id=1547, 468.75125pt x 3
+<Abbildungen/Demographie/teilnehmerVorexperimente.jpg, id=1333, 468.75125pt x 3
 64.86313pt>
 File: Abbildungen/Demographie/teilnehmerVorexperimente.jpg Graphic file (type j
 pg)
 <use Abbildungen/Demographie/teilnehmerVorexperimente.jpg>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerVorexperimente.jpg  
-used on input line 1853.
+used on input line 1852.
 (pdftex.def)             Requested size: 170.71393pt x 132.87607pt.
-<Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg, id=1549, 615.80063pt x 375
+<Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg, id=1335, 615.80063pt x 375
 .4025pt>
 File: Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg Graphic file (type jpg
 )
 <use Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg>
 Package pdftex.def Info: Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg  us
-ed on input line 1864.
+ed on input line 1863.
 (pdftex.def)             Requested size: 170.71393pt x 104.06944pt.
-<Abbildungen/Demographie/ausmaÃŸVideospiele.jpg, id=1550, 625.83812pt x 341.275
+<Abbildungen/Demographie/ausmaÃŸVideospiele.jpg, id=1336, 625.83812pt x 341.275
 pt>
 File: Abbildungen/Demographie/ausmaÃŸVideospiele.jpg Graphic file (type jpg)
 <use Abbildungen/Demographie/ausmaÃŸVideospiele.jpg>
 Package pdftex.def Info: Abbildungen/Demographie/ausmaÃŸVideospiele.jpg  used o
-n input line 1866.
+n input line 1865.
 (pdftex.def)             Requested size: 170.71393pt x 93.08801pt.
 
 
@@ -1332,53 +1455,67 @@ graphie/teilnehmerVRErfahrung.jpg> <./Abbildungen/Demographie/teilnehmerVorexpe
 rimente.jpg>] [46 <./Abbildungen/Demographie/ausmaÃŸInternetnutzung.jpg> <./Abb
 ildungen/Demographie/ausmaÃŸVideospiele.jpg>]
 Package acronym Info: Label `acro:cti' newly defined as it shall be overridden
-although it is yet undefined on input line 1909.
+although it is yet undefined on input line 1908.
 Package acronym Info: Label `acro:ctn' newly defined as it shall be overridden
-although it is yet undefined on input line 1910.
+although it is yet undefined on input line 1909.
 
 
-LaTeX Font Warning: Command \relsize invalid in math mode on input line 1914.
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 1913.
 
 
-LaTeX Font Warning: Command \relsize invalid in math mode on input line 1914.
+LaTeX Font Warning: Command \relsize invalid in math mode on input line 1913.
 
 
-Overfull \hbox (32.06714pt too wide) in paragraph at lines 1914--1915
+Overfull \hbox (32.06714pt too wide) in paragraph at lines 1913--1914
 \T1/phv/m/n/10.95 zwi-schen den Avat-ar-kon-di-tio-nen $[][]\OT1/ptmcm/m/n/10.9
 5 ([] = 4\OML/ptmcm/m/it/10.95 ; \OT1/ptmcm/m/n/10.95 1238)$ \T1/phv/m/n/10.95 
 und $[][]\OT1/ptmcm/m/n/10.95 ([] =
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1914--1915
+Underfull \hbox (badness 10000) in paragraph at lines 1913--1914
 
  []
 
-<Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png, id=1576, 605.76312pt x 347
+<Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen.png, id=1361, 606.76688
+pt x 368.37625pt>
+File: Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen.png Graphic file (
+type png)
+<use Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen
+.png  used on input line 1917.
+(pdftex.def)             Requested size: 213.39568pt x 129.55754pt.
+<Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png, id=1362, 605.76312pt x 347
 .2975pt>
 File: Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png Graphic file (type png
 )
 <use Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png  us
-ed on input line 1919.
-(pdftex.def)             Requested size: 302.88081pt x 173.64832pt.
+ed on input line 1923.
+(pdftex.def)             Requested size: 213.39568pt x 122.34554pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1920.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1924.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1920.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1924.
+
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 1916--1927
+[][]  [] 
+ []
+
 [47
 
- <./Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png>]
+ <./Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen.png> <./Abbildungen/
+AuswertungDiagramme/H1_Mittelwerte.png>]
 Package acronym Info: Label `acro:ct' newly defined as it shall be overridden
-although it is yet undefined on input line 1931.
+although it is yet undefined on input line 1935.
 
-Overfull \hbox (18.98924pt too wide) in paragraph at lines 1933--1934
+Overfull \hbox (18.98924pt too wide) in paragraph at lines 1937--1938
 []\T1/phv/m/n/10.95 Der Shapiro-Wilk-Test zeigt, dass das der \T1/phv/m/sl/10.9
 5 ge-ne-rel-le Ver-trau-ens-wert \T1/phv/m/n/10.95 der Kon-di-ti-on [][]
  []
 
 
-Overfull \hbox (50.60062pt too wide) in paragraph at lines 1933--1934
+Overfull \hbox (50.60062pt too wide) in paragraph at lines 1937--1938
 \T1/phv/m/n/10.95 mit $\OML/ptmcm/m/it/10.95 p \OT1/ptmcm/m/n/10.95 = \OML/ptmc
 m/m/it/10.95 :\OT1/ptmcm/m/n/10.95 078 \OML/ptmcm/m/it/10.95 >  \OT1/ptmcm/m/n
 /10.95 = 0\OML/ptmcm/m/it/10.95 :\OT1/ptmcm/m/n/10.95 05$ \T1/phv/m/sl/10.95 no
@@ -1386,21 +1523,32 @@ r-mal-ver-teilt \T1/phv/m/n/10.95 und der \T1/phv/m/sl/10.95 ge-ne-rel-le Ver-t
 rau-ens-wert \T1/phv/m/n/10.95 der Kon-di-ti-on [][]
  []
 
-
-Overfull \hbox (26.25801pt too wide) in paragraph at lines 1949--1950
-\T1/phv/m/sl/10.95 wert \T1/phv/m/n/10.95 der Kon-di-ti-on [][] und dem \T1/phv
-/m/sl/10.95 ko-gni-ti-ven Ver-trau-ens-wert \T1/phv/m/n/10.95 der Kon-di-ti-on 
-[][]
- []
-
-
-Overfull \hbox (19.47781pt too wide) in paragraph at lines 1951--1952
-[]\T1/phv/m/n/10.95 Weiterhin liegt ei-ne po-si-ti-ve Kor-re-la-ti-on mo-de-ra-
-ten Ef-fek-tes (vgl. ([][]Co-hen[][]; [][]2013[][])) mit dem Spearman-
- []
-
-
-Overfull \hbox (53.32971pt too wide) in paragraph at lines 1951--1952
+<Abbildungen/AuswertungDiagramme/H_2_KorrIK.png, id=1385, 853.1875pt x 501.875p
+t>
+File: Abbildungen/AuswertungDiagramme/H_2_KorrIK.png Graphic file (type png)
+<use Abbildungen/AuswertungDiagramme/H_2_KorrIK.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H_2_KorrIK.png  used o
+n input line 1955.
+(pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
+<Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png, id=1386, 853.1875pt x 501.875
+pt>
+File: Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png Graphic file (type png)
+<use Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png  used 
+on input line 1957.
+(pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
+<Abbildungen/AuswertungDiagramme/BP_generellesVertrauen.png, id=1387, 610.78188
+pt x 364.36125pt>
+File: Abbildungen/AuswertungDiagramme/BP_generellesVertrauen.png Graphic file (
+type png)
+<use Abbildungen/AuswertungDiagramme/BP_generellesVertrauen.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_generellesVertrauen
+.png  used on input line 1959.
+(pdftex.def)             Requested size: 192.0548pt x 114.56868pt.
+[48 <./Abbildungen/AuswertungDiagramme/H_2_KorrIK.png> <./Abbildungen/Auswertun
+gDiagramme/H_2_KorrNIK.png> <./Abbildungen/AuswertungDiagramme/BP_generellesVer
+trauen.png>]
+Overfull \hbox (53.32971pt too wide) in paragraph at lines 1967--1968
 \T1/phv/m/n/10.95 Korrelationskoeffizient $\OML/ptmcm/m/it/10.95 r \OT1/ptmcm/m
 /n/10.95 = \OML/ptmcm/m/it/10.95 :\OT1/ptmcm/m/n/10.95 378$ \T1/phv/m/n/10.95 z
 wi-schen dem \T1/phv/m/sl/10.95 ge-ne-rel-len Ver-trau-ens-wert \T1/phv/m/n/10.
@@ -1408,319 +1556,347 @@ wi-schen dem \T1/phv/m/sl/10.95 ge-ne-rel-len Ver-trau-ens-wert \T1/phv/m/n/10.
  []
 
 
-Overfull \hbox (0.93835pt too wide) in paragraph at lines 1954--1956
+Overfull \hbox (0.93835pt too wide) in paragraph at lines 1970--1972
  []\T1/phv/b/n/10.95 Fisher-Z-Transformation für un-ab-hän-gi-ge Stich-pro-ben[
 ] \T1/phv/m/n/10.95 Um her-aus-zu-fin-den, ob sich bei-de Kor-
  []
 
-<Abbildungen/AuswertungDiagramme/H_2_KorrIK.png, id=1607, 853.1875pt x 501.875p
-t>
-File: Abbildungen/AuswertungDiagramme/H_2_KorrIK.png Graphic file (type png)
-<use Abbildungen/AuswertungDiagramme/H_2_KorrIK.png>
-Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H_2_KorrIK.png  used o
-n input line 1959.
-(pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
-<Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png, id=1608, 853.1875pt x 501.875
-pt>
-File: Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png Graphic file (type png)
-<use Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png>
-Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png  used 
-on input line 1961.
-(pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
+[49]
+Overfull \hbox (52.05731pt too wide) in paragraph at lines 2054--2056
+\T1/phv/m/n/10.95 Wei-ter-hin ist ei-ne po-si-ti-ve Kor-re-la-ti-on mo-de-ra-te
+r stär-ke (vgl. [[][]Coh13[][]]) mit dem Spearman-Korrelationskoeffizient
+ []
 
-LaTeX Warning: `h' float specifier changed to `ht'.
 
-[48] [49 <./Abbildungen/AuswertungDiagramme/H_2_KorrIK.png> <./Abbildungen/Ausw
-ertungDiagramme/H_2_KorrNIK.png>] [50
+Overfull \hbox (23.0066pt too wide) in paragraph at lines 2054--2056
+\OML/ptmcm/m/it/10.95 r \OT1/ptmcm/m/n/10.95 = \OML/ptmcm/m/it/10.95 :\OT1/ptmc
+m/m/n/10.95 462$ \T1/phv/m/n/10.95 zwi-schen den \T1/phv/m/sl/10.95 ko-gni-ti-v
+en Ver-trau-ens-wer-ten der Teams \T1/phv/m/n/10.95 mit der Kon-di-ti-on [][]
+ []
+
+[50
 
 ]
-Underfull \hbox (badness 10000) in alignment at lines 2122--2122
+Underfull \hbox (badness 10000) in alignment at lines 2130--2130
 [][][][][][] 
  []
 
 [51]
-Overfull \hbox (27.21492pt too wide) in paragraph at lines 2181--2182
+Overfull \hbox (27.21492pt too wide) in paragraph at lines 2189--2190
 \T1/phv/m/n/10.95 H4$[]$ : Die Mit-tel-wer-te der \T1/phv/m/sl/10.95 rea-len Te
 a-m-ef-fek-ti-vi-tät \T1/phv/m/n/10.95 un-ter-schei-det sich bei den Kon-di-tio
 -nen [][]
  []
 
 
-Overfull \hbox (39.68839pt too wide) in paragraph at lines 2197--2198
+Overfull \hbox (39.68839pt too wide) in paragraph at lines 2204--2205
  []\T1/phv/b/n/10.95 Mann-Whitney-U-Test[] \T1/phv/m/n/10.95 Die Ver-tei-lun-ge
 n der \T1/phv/m/sl/10.95 rea-len Tea-m-ef-fek-ti-vi-täts-wer-te \T1/phv/m/n/10.
 95 der Kon-di-ti-on [][]
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2197--2198
+Underfull \hbox (badness 10000) in paragraph at lines 2204--2205
 
  []
 
-<Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png, id=1671, 596.2275pt x 354.
+<Abbildungen/AuswertungDiagramme/BP_realeTeameffektivitÃ¤t.png, id=1457, 602.75
+188pt x 370.38374pt>
+File: Abbildungen/AuswertungDiagramme/BP_realeTeameffektivitÃ¤t.png Graphic fil
+e (type png)
+<use Abbildungen/AuswertungDiagramme/BP_realeTeameffektivitÃ¤t.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_realeTeameffektivit
+Ã¤t.png  used on input line 2209.
+(pdftex.def)             Requested size: 213.39568pt x 131.12827pt.
+<Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png, id=1458, 596.2275pt x 354.
 32375pt>
 File: Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png Graphic file (type png
 )
 <use Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png  us
-ed on input line 2202.
-(pdftex.def)             Requested size: 178.86963pt x 106.29794pt.
-[52 <./Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2267--2268
+ed on input line 2215.
+(pdftex.def)             Requested size: 213.39568pt x 126.81575pt.
+
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2208--2219
+[][]  [] 
+ []
+
+[52 <./Abbildungen/AuswertungDiagramme/BP_realeTeameffektivitÃ¤t.png> <./Abbild
+ungen/AuswertungDiagramme/H4_Mittelwerte.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 2280--2281
 
  []
 
+
+Overfull \hbox (8.87401pt too wide) in paragraph at lines 2304--2306
+ []\T1/phv/b/n/10.95 Spearman-Korrelation[] \T1/phv/m/n/10.95 Es ist ei-ne schw
+a-che po-si-ti-ve Kor-re-la-ti-on (vgl. [[][]Coh13[][]]) mit dem Spearman-
+ []
+
+
+Overfull \hbox (52.05731pt too wide) in paragraph at lines 2304--2306
+\T1/phv/m/n/10.95 Wei-ter-hin ist ei-ne po-si-ti-ve Kor-re-la-ti-on mo-de-ra-te
+r stär-ke (vgl. [[][]Coh13[][]]) mit dem Spearman-Korrelationskoeffizient
+ []
+
+
+Overfull \hbox (25.09573pt too wide) in paragraph at lines 2304--2306
+\OML/ptmcm/m/it/10.95 r \OT1/ptmcm/m/n/10.95 = \OML/ptmcm/m/it/10.95 :\OT1/ptmc
+m/m/n/10.95 359$ \T1/phv/m/n/10.95 zwi-schen den \T1/phv/m/sl/10.95 ge-ne-rel-l
+en Ver-trau-ens-wer-ten der Teams \T1/phv/m/n/10.95 mit der Kon-di-ti-on [][]
+ []
+
 [53]
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2355
 []|\T1/phv/m/n/9 Individueller
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2355
 \T1/phv/m/n/9 ge-ne-rel-ler
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2355
 []|\T1/phv/m/n/9 Summe
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2355
 \T1/phv/m/n/9 ind. gen.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2342--2342
+Underfull \hbox (badness 10000) in paragraph at lines 2355--2355
 \T1/phv/m/n/9 Ver-trau-ens-
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2342--2342
+Underfull \hbox (badness 10000) in alignment at lines 2355--2355
 [][][][][][][][]
  []
 
 
-Overfull \hbox (14.31572pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (14.31572pt too wide) in paragraph at lines 2553--2553
 []|$[] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Overfull \hbox (20.16385pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (20.16385pt too wide) in paragraph at lines 2553--2553
 [] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 []|$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 \T1/phv/m/n/9 und
  []
 
 
-Overfull \hbox (10.31381pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (10.31381pt too wide) in paragraph at lines 2553--2553
 []|$[]$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 \T1/phv/m/n/9 und
  []
 
 
-Overfull \hbox (16.16194pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (16.16194pt too wide) in paragraph at lines 2553--2553
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 \T1/phv/m/n/9 und
  []
 
 
-Overfull \hbox (1.33171pt too wide) in paragraph at lines 2540--2540
+Overfull \hbox (1.33171pt too wide) in paragraph at lines 2553--2553
 [] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 []|\T1/phv/m/n/9 Fishers-Z-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 \T1/phv/m/n/9 Transformation für
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 []|$[]$ \T1/phv/m/n/9 und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2540--2540
+Underfull \hbox (badness 10000) in paragraph at lines 2553--2553
 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2540--2540
+Underfull \hbox (badness 10000) in alignment at lines 2553--2553
 [][][][] 
  []
 
 [54]
-Overfull \hbox (14.31572pt too wide) in paragraph at lines 2598--2598
+Overfull \hbox (14.31572pt too wide) in paragraph at lines 2611--2611
 []|$[] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Overfull \hbox (20.16385pt too wide) in paragraph at lines 2598--2598
+Overfull \hbox (20.16385pt too wide) in paragraph at lines 2611--2611
 [] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Overfull \hbox (1.33171pt too wide) in paragraph at lines 2598--2598
+Overfull \hbox (1.33171pt too wide) in paragraph at lines 2611--2611
 [] \OT1/ptmcm/m/n/9 :$ 
  []
 
 
-Overfull \hbox (12.0309pt too wide) in paragraph at lines 2598--2598
+Overfull \hbox (12.0309pt too wide) in paragraph at lines 2611--2611
 []|$[]$
  []
 
 
-Overfull \hbox (15.62733pt too wide) in paragraph at lines 2598--2598
+Overfull \hbox (15.62733pt too wide) in paragraph at lines 2611--2611
 []$
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2598
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2611
 \T1/phv/m/n/9 und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2598
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2611
 []|\T1/phv/m/n/9 Fishers-Z-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2598
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2611
 \T1/phv/m/n/9 Transformation für
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2598
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2611
 []|$[]$ \T1/phv/m/n/9 und
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2598--2598
+Underfull \hbox (badness 10000) in paragraph at lines 2611--2611
 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 2598--2598
+Underfull \hbox (badness 10000) in alignment at lines 2611--2611
 [][][] 
  []
 
 [55] [56]
-<Abbildungen/AuswertungDiagramme/BP_Presence.png, id=1724, 853.1875pt x 501.875
+<Abbildungen/AuswertungDiagramme/BP_Presence.png, id=1510, 634.37pt x 376.40625
 pt>
 File: Abbildungen/AuswertungDiagramme/BP_Presence.png Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/BP_Presence.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_Presence.png  used 
-on input line 2655.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwerte.png, id=1725, 591.2087
+on input line 2668.
+(pdftex.def)             Requested size: 213.39568pt x 126.62096pt.
+<Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwerte.png, id=1511, 591.2087
 6pt x 345.79187pt>
 File: Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwerte.png Graphic file 
 (type png)
 <use Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwert
-e.png  used on input line 2661.
+e.png  used on input line 2674.
 (pdftex.def)             Requested size: 213.39568pt x 124.8121pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2654--2665
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2667--2678
 [][]  [] 
  []
 
 
-Overfull \hbox (18.4309pt too wide) in paragraph at lines 2668--2672
+Overfull \hbox (18.4309pt too wide) in paragraph at lines 2681--2685
 \T1/phv/m/n/10.95 Wilk-Test mit $\OML/ptmcm/m/it/10.95 p \OT1/ptmcm/m/n/10.95 =
  \OML/ptmcm/m/it/10.95 :\OT1/ptmcm/m/n/10.95 001 \OML/ptmcm/m/it/10.95 <  \OT1
 /ptmcm/m/n/10.95 = 0\OML/ptmcm/m/it/10.95 :\OT1/ptmcm/m/n/10.95 05$ \T1/phv/m/n
 /10.95 nicht nor-mal-ver-teit. Die-se be-trägt bei der Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png, id=1730, 853.1875pt x 5
-01.875pt>
+<Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png, id=1516, 597.73312pt x 
+374.39874pt>
 File: Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png Graphic file (type 
 png)
 <use Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png 
- used on input line 2675.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_SelbstCoPresence_Mittelwerte.png, id=1731, 
+ used on input line 2688.
+(pdftex.def)             Requested size: 213.39568pt x 133.66371pt.
+<Abbildungen/AuswertungDiagramme/SD_SelbstCoPresence_Mittelwerte.png, id=1517, 
 590.70688pt x 371.3875pt>
 File: Abbildungen/AuswertungDiagramme/SD_SelbstCoPresence_Mittelwerte.png Graph
 ic file (type png)
 <use Abbildungen/AuswertungDiagramme/SD_SelbstCoPresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_SelbstCoPresence_Mi
-ttelwerte.png  used on input line 2681.
+ttelwerte.png  used on input line 2694.
 (pdftex.def)             Requested size: 213.39568pt x 134.16408pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2674--2685
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2687--2698
 [][]  [] 
  []
 
 [57 <./Abbildungen/AuswertungDiagramme/BP_Presence.png> <./Abbildungen/Auswertu
 ngDiagramme/SD_Presence_Mittelwerte.png>]
-<Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png, id=1744, 853.1875pt x 
-501.875pt>
+<Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png, id=1530, 600.2425pt x 
+344.78813pt>
 File: Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png Graphic file (type
  png)
 <use Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_OtherCoPresence.png
-  used on input line 2695.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_OtherCoPresence_Mittelwerte.png, id=1745, 5
+  used on input line 2708.
+(pdftex.def)             Requested size: 213.39568pt x 122.57687pt.
+<Abbildungen/AuswertungDiagramme/SD_OtherCoPresence_Mittelwerte.png, id=1531, 5
 90.70688pt x 350.81062pt>
 File: Abbildungen/AuswertungDiagramme/SD_OtherCoPresence_Mittelwerte.png Graphi
 c file (type png)
 <use Abbildungen/AuswertungDiagramme/SD_OtherCoPresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_OtherCoPresence_Mit
-telwerte.png  used on input line 2701.
+telwerte.png  used on input line 2714.
 (pdftex.def)             Requested size: 213.39568pt x 126.73065pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2694--2705
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2707--2718
 [][]  [] 
  []
 
-<Abbildungen/AuswertungDiagramme/BP_Telepresence.png, id=1750, 853.1875pt x 501
-.875pt>
+<Abbildungen/AuswertungDiagramme/BP_Telepresence.png, id=1536, 596.2275pt x 373
+.89688pt>
 File: Abbildungen/AuswertungDiagramme/BP_Telepresence.png Graphic file (type pn
 g)
 <use Abbildungen/AuswertungDiagramme/BP_Telepresence.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_Telepresence.png  u
-sed on input line 2715.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_Telepresence_Mittelwerte.png, id=1751, 590.
+sed on input line 2728.
+(pdftex.def)             Requested size: 213.39568pt x 133.82115pt.
+<Abbildungen/AuswertungDiagramme/SD_Telepresence_Mittelwerte.png, id=1537, 590.
 205pt x 354.32375pt>
 File: Abbildungen/AuswertungDiagramme/SD_Telepresence_Mittelwerte.png Graphic f
 ile (type png)
 <use Abbildungen/AuswertungDiagramme/SD_Telepresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_Telepresence_Mittel
-werte.png  used on input line 2721.
+werte.png  used on input line 2734.
 (pdftex.def)             Requested size: 213.39568pt x 128.10791pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2714--2725
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2727--2738
 [][]  [] 
  []
 
@@ -1728,159 +1904,172 @@ Overfull \hbox (10.62688pt too wide) in paragraph at lines 2714--2725
 swertungDiagramme/SD_SelbstCoPresence_Mittelwerte.png> <./Abbildungen/Auswertun
 gDiagramme/BP_OtherCoPresence.png> <./Abbildungen/AuswertungDiagramme/SD_OtherC
 oPresence_Mittelwerte.png>]
-File: Abbildungen/AuswertungDiagramme/BP_Telepresence.png Graphic file (type pn
-g)
-<use Abbildungen/AuswertungDiagramme/BP_Telepresence.png>
-Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_Telepresence.png  u
-sed on input line 2736.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_SocialPresence_Mittelwerte.png, id=1767, 59
+<Abbildungen/AuswertungDiagramme/BP_SocialPresence.png, id=1553, 579.66562pt x 
+369.38pt>
+File: Abbildungen/AuswertungDiagramme/BP_SocialPresence.png Graphic file (type 
+png)
+<use Abbildungen/AuswertungDiagramme/BP_SocialPresence.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_SocialPresence.png 
+ used on input line 2749.
+(pdftex.def)             Requested size: 213.39568pt x 135.98082pt.
+<Abbildungen/AuswertungDiagramme/SD_SocialPresence_Mittelwerte.png, id=1554, 59
 3.21625pt x 352.81813pt>
 File: Abbildungen/AuswertungDiagramme/SD_SocialPresence_Mittelwerte.png Graphic
  file (type png)
 <use Abbildungen/AuswertungDiagramme/SD_SocialPresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_SocialPresence_Mitt
-elwerte.png  used on input line 2742.
+elwerte.png  used on input line 2755.
 (pdftex.def)             Requested size: 213.39568pt x 126.91751pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2735--2746
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2748--2759
 [][]  [] 
  []
 
 
-Overfull \hbox (31.88278pt too wide) in paragraph at lines 2749--2753
+Overfull \hbox (31.88278pt too wide) in paragraph at lines 2762--2766
 \T1/phv/m/n/10.95 Mit-tel $[] \OT1/ptmcm/m/n/10.95 = 8\OML/ptmcm/m/it/10.95 :\O
 T1/ptmcm/m/n/10.95 1667$ \T1/phv/m/n/10.95 mit ei-ner Stan-dard-ab-wei-chung vo
 n $\OML/ptmcm/m/it/10.95  \OT1/ptmcm/m/n/10.95 = 1\OML/ptmcm/m/it/10.95 :\OT1/
 ptmcm/m/n/10.95 5443$\T1/phv/m/n/10.95 . Für die Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.png, id=1772, 853.1875pt x
- 501.875pt>
+<Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.png, id=1559, 550.055pt x 
+366.87062pt>
 File: Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.png Graphic file (typ
 e png)
 <use Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.pn
-g  used on input line 2756.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_NTLX_Mittelwerte.png, id=1773, 597.73312pt 
+g  used on input line 2769.
+(pdftex.def)             Requested size: 213.39568pt x 142.32883pt.
+<Abbildungen/AuswertungDiagramme/SD_NTLX_Mittelwerte.png, id=1560, 597.73312pt 
 x 343.2825pt>
 File: Abbildungen/AuswertungDiagramme/SD_NTLX_Mittelwerte.png Graphic file (typ
 e png)
 <use Abbildungen/AuswertungDiagramme/SD_NTLX_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_NTLX_Mittelwerte.pn
-g  used on input line 2762.
+g  used on input line 2775.
 (pdftex.def)             Requested size: 213.39568pt x 122.55493pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2755--2766
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2768--2779
 [][]  [] 
  []
 
 [59 <./Abbildungen/AuswertungDiagramme/BP_Telepresence.png> <./Abbildungen/Ausw
 ertungDiagramme/SD_Telepresence_Mittelwerte.png> <./Abbildungen/AuswertungDiagr
-amme/SD_SocialPresence_Mittelwerte.png>]
-Overfull \hbox (9.73389pt too wide) in paragraph at lines 2769--2773
+amme/BP_SocialPresence.png> <./Abbildungen/AuswertungDiagramme/SD_SocialPresenc
+e_Mittelwerte.png>]
+Overfull \hbox (9.73389pt too wide) in paragraph at lines 2782--2786
  []\T1/phv/b/n/10.95 Team-Kommunikation[] \T1/phv/m/n/10.95 Laut Kolmogoroff-Sm
 irnov-Test ist die Team-Kommunikation mit $\OML/ptmcm/m/it/10.95 p \OT1/ptmcm/m
 /n/10.95 = \OML/ptmcm/m/it/10.95 :\OT1/ptmcm/m/n/10.95 018 \OML/ptmcm/m/it/10.9
 5 <
  []
 
-File: Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png Graphic file (type 
-png)
-<use Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png>
-Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png 
- used on input line 2776.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_Teamkommunikation_Mittelwerte.png, id=1787,
+<Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.png, id=1575, 603.75563pt
+ x 369.88188pt>
+File: Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.png Graphic file (ty
+pe png)
+<use Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.png>
+Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.p
+ng  used on input line 2789.
+(pdftex.def)             Requested size: 213.39568pt x 130.73047pt.
+<Abbildungen/AuswertungDiagramme/SD_Teamkommunikation_Mittelwerte.png, id=1576,
  596.72937pt x 355.3275pt>
 File: Abbildungen/AuswertungDiagramme/SD_Teamkommunikation_Mittelwerte.png Grap
 hic file (type png)
 <use Abbildungen/AuswertungDiagramme/SD_Teamkommunikation_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_Teamkommunikation_M
-ittelwerte.png  used on input line 2782.
+ittelwerte.png  used on input line 2795.
 (pdftex.def)             Requested size: 213.39568pt x 127.06656pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2775--2786
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2788--2799
 [][]  [] 
  []
 
 
-Overfull \hbox (5.35228pt too wide) in paragraph at lines 2790--2793
+Overfull \hbox (5.35228pt too wide) in paragraph at lines 2803--2806
  []\T1/phv/b/n/10.95 Wahrgenommene Team-Effektivität[] \T1/phv/m/n/10.95 Die wa
 hr-ge-nomm-me-ne Tea-m-ef-fek-ti-vi-tät ist laut Kolmogoroff-
  []
 
-<Abbildungen/AuswertungDiagramme/BP_TeameffektivitÃ¤t.png, id=1792, 853.1875pt 
-x 501.875pt>
+<Abbildungen/AuswertungDiagramme/BP_TeameffektivitÃ¤t.png, id=1581, 612.78937pt
+ x 360.84813pt>
 File: Abbildungen/AuswertungDiagramme/BP_TeameffektivitÃ¤t.png Graphic file (ty
 pe png)
 <use Abbildungen/AuswertungDiagramme/BP_TeameffektivitÃ¤t.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/BP_TeameffektivitÃ¤t.p
-ng  used on input line 2796.
-(pdftex.def)             Requested size: 213.39568pt x 125.52203pt.
-<Abbildungen/AuswertungDiagramme/SD_TeameffektivitÃ¤t_Mittelwerte.png, id=1793,
+ng  used on input line 2809.
+(pdftex.def)             Requested size: 213.39568pt x 125.66002pt.
+<Abbildungen/AuswertungDiagramme/SD_TeameffektivitÃ¤t_Mittelwerte.png, id=1582,
  592.71437pt x 351.81438pt>
 File: Abbildungen/AuswertungDiagramme/SD_TeameffektivitÃ¤t_Mittelwerte.png Grap
 hic file (type png)
 <use Abbildungen/AuswertungDiagramme/SD_TeameffektivitÃ¤t_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/SD_TeameffektivitÃ¤t_M
-ittelwerte.png  used on input line 2802.
+ittelwerte.png  used on input line 2815.
 (pdftex.def)             Requested size: 213.39568pt x 126.6638pt.
 
-Overfull \hbox (10.62688pt too wide) in paragraph at lines 2795--2806
+Overfull \hbox (10.62688pt too wide) in paragraph at lines 2808--2819
 [][]  [] 
  []
 
 [60 <./Abbildungen/AuswertungDiagramme/BP_AnstrengungsmaÃŸ.png> <./Abbildungen/
 AuswertungDiagramme/SD_NTLX_Mittelwerte.png> <./Abbildungen/AuswertungDiagramme
-/SD_Teamkommunikation_Mittelwerte.png>]
-Overfull \hbox (43.08669pt too wide) in paragraph at lines 2810--2811
-\T1/phv/m/n/10.95 on [][] und \T1/phv/m/sl/10.95 der wahr-ge-nom-me-nen Tea-m-e
-f-fek-ti-vi-tät \T1/phv/m/n/10.95 der Kon-di-ti-on [][]
+/BP_Teamkommunikation.png> <./Abbildungen/AuswertungDiagramme/SD_Teamkommunikat
+ion_Mittelwerte.png>]
+Overfull \hbox (66.19923pt too wide) in paragraph at lines 2823--2824
+ []\T1/phv/b/n/10.95 Weitere Ana-ly-sen[] \T1/phv/m/n/10.95 Es ist ei-ne po-si-
+ti-ve star-ke Kor-re-la-ti-on (vgl. [[][]Coh13[][]]) mit dem Spearman-Korrelati
+onskoeffizient
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2810--2811
+Underfull \hbox (badness 10000) in paragraph at lines 2823--2824
 
  []
 
-<Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png, id=1808, 853.1875pt x 501.
+<Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png, id=1597, 853.1875pt x 501.
 875pt>
 File: Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png Graphic file (type png
 )
 <use Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/ctn_ten_KorrIK.png  us
-ed on input line 2814.
+ed on input line 2827.
 (pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
-<Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png, id=1809, 853.1875pt x 501
+<Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png, id=1598, 853.1875pt x 501
 .875pt>
 File: Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png Graphic file (type pn
 g)
 <use Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/ctn_ten_KorrNIK.png  u
-sed on input line 2816.
+sed on input line 2829.
 (pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 2821--2822
+Overfull \hbox (65.03667pt too wide) in paragraph at lines 2834--2835
+[]\T1/phv/m/n/10.95 Weiterhin ist ei-ne po-si-ti-ve Kor-re-la-ti-on star-ken Ef
+-fek-tes (vgl. [[][]Coh13[][]]) mit dem Spearman-Korrelationskoeffizient
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2834--2835
 
  []
 
-<Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png, id=1816, 853.1875pt x 501.
+<Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png, id=1604, 853.1875pt x 501.
 875pt>
 File: Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png Graphic file (type png
 )
 <use Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png  us
-ed on input line 2825.
+ed on input line 2838.
 (pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
-<Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png, id=1817, 853.1875pt x 501
+<Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png, id=1605, 853.1875pt x 501
 .875pt>
 File: Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png Graphic file (type pn
 g)
 <use Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png  u
-sed on input line 2827.
+sed on input line 2840.
 (pdftex.def)             Requested size: 192.0548pt x 112.9706pt.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1890,493 +2079,411 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 rtungDiagramme/ctn_ten_KorrIK.png> <./Abbildungen/AuswertungDiagramme/ctn_ten_K
 orrNIK.png>] [62 <./Abbildungen/AuswertungDiagramme/ctn_tcn_KorrIK.png> <./Abbi
 ldungen/AuswertungDiagramme/ctn_tcn_KorrNIK.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
+Overfull \hbox (2.14854pt too wide) in paragraph at lines 2882--2882
+[]|\T1/phv/m/n/9 Min/Max| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2882--2882
 []|\T1/phv/m/n/9 Erreicht
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Std.
+Underfull \hbox (badness 10000) in paragraph at lines 2882--2882
+[]|\T1/phv/m/n/9 Std. Ab-wei-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-\T1/phv/m/n/9 Ab-wei-
- []
-
-
-Underfull \hbox (badness 3029) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Genereller Hang zum
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Kognitives Vertrauen-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Team-Kommunikation-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Team-Kommunikation-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Wahrg.Team-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2869--2869
-[]|\T1/phv/m/n/9 Wahrg.Team-
- []
-
-
-Overfull \hbox (55.94716pt too wide) in alignment at lines 2869--2869
-[][][][][][][] 
+Underfull \hbox (badness 10000) in alignment at lines 2882--2882
+[][][][][][][]
  []
 
 [63
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
+Overfull \hbox (2.14854pt too wide) in paragraph at lines 2905--2905
+[]|\T1/phv/m/n/9 Min/Max| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2905--2905
 []|\T1/phv/m/n/9 Angegeben
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Std.
+Underfull \hbox (badness 10000) in paragraph at lines 2905--2905
+[]|\T1/phv/m/n/9 Std. Ab-wei-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-\T1/phv/m/n/9 Ab-wei-
- []
-
-
-Underfull \hbox (badness 5302) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Anz. abg. Runden-IK
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Anz. abg. Run-den
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Anz. abg. Run-den
- []
-
-
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 11\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 71\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 15\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 00$| 
  []
 
 
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 11\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 71\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 13\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 29$| 
  []
 
 
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 12\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 28\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 15\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 00$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Generelles Ver-trau-en
- []
-
-
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 13\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 35\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 14\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 60$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Generelles Ver-trau-en
- []
-
-
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 13\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 35\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 14\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 15$| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 2892--2892
-[]|\T1/phv/m/n/9 Generelles Ver-trau-en
- []
-
-
-Overfull \hbox (2.80669pt too wide) in paragraph at lines 2892--2892
+Overfull \hbox (2.80669pt too wide) in paragraph at lines 2905--2905
 []|$\OT1/ptmcm/m/n/9 13\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 35\OML/ptmcm/m/it/9 
 =\OT1/ptmcm/m/n/9 14\OML/ptmcm/m/it/9 :\OT1/ptmcm/m/n/9 60$| 
  []
 
 
-Overfull \hbox (55.94716pt too wide) in alignment at lines 2892--2892
-[][][][][][][] 
+Underfull \hbox (badness 10000) in alignment at lines 2905--2905
+[][][][][][][]
  []
 
 [64
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 2915--2918
+Underfull \hbox (badness 10000) in paragraph at lines 2935--2936
 
  []
 
 [65
 
 
-]
-Underfull \hbox (badness 10000) in paragraph at lines 2921--2922
-
- []
-
-Package acronym Info: Label `acro:tp' newly defined as it shall be overridden
-although it is yet undefined on input line 2936.
-Package acronym Info: Label `acro:scp' newly defined as it shall be overridden
-although it is yet undefined on input line 2936.
-Package acronym Info: Label `acro:ocp' newly defined as it shall be overridden
-although it is yet undefined on input line 2936.
-Package acronym Info: Label `acro:sp' newly defined as it shall be overridden
-although it is yet undefined on input line 2936.
-[66]
-Underfull \hbox (badness 6412) in paragraph at lines 2985--2985
-[]|\T1/phv/b/n/9 H5$[]$ \T1/phv/m/n/9 : Der Zu-sam-men-hang zwi-schen dem ge-ne
--rel-len Ver-trau-ens-wert ei-nes Teams
- []
-
-
-Overfull \hbox (38.62634pt too wide) in alignment at lines 2985--2985
+] [66]
+Overfull \hbox (38.62634pt too wide) in alignment at lines 3014--3014
 [][] 
  []
 
-[67]
-Overfull \hbox (2.76025pt too wide) in paragraph at lines 3008--3009
-[]\T1/phv/b/n/10.95 Sprachübertragung\T1/phv/m/n/10.95 : Die Im-ple-men-tie-run
-g ei-nes RCP-Basiertem Netz-werk-hand-lings er-mög-
- []
-
-[68]
-Underfull \hbox (badness 10000) in paragraph at lines 3074--3084
+[67] [68] [69]
+Underfull \hbox (badness 10000) in paragraph at lines 3102--3112
 
  []
 
 
-Overfull \hbox (16.87314pt too wide) in paragraph at lines 3087--3099
+Overfull \hbox (16.87314pt too wide) in paragraph at lines 3115--3127
 \T1/phv/m/n/10.95 Tea-m-ef-fek-ti-vi-tät be-ein-flusst ha-ben. Ei-ne teil-neh-m
 en-de Per-son (ID7) mit der Kon-di-ti-on [][]
  []
 
-[69] [70] [71] [72] [73
+[70] [71] [72] [73] [74
 
-] (Masterarbeit_Hannes_Hinrichs.bbl
-Underfull \hbox (badness 2293) in paragraph at lines 76--79
-[]\T1/phv/m/n/10.95 Botvinick, M. and Co-hen, J. (1998).  Rub-ber hands `feel't
-ouch that eyes see, \T1/phv/m/sl/10.95 Na-ture
+]
+Overfull \hbox (4.84792pt too wide) in paragraph at lines 3273--3273
+[]\T1/phv/m/n/10.95 Frank Bio-c-ca. ``The cy-borg's di-lem-ma: Pro-gres-si-ve e
+m-bo-di-ment in vir-tu-al en-vi-ron-ments''.
  []
 
-[74] [75] [76] [77] [78] [79]
-Underfull \hbox (badness 10000) in paragraph at lines 627--632
-\T1/phv/b/n/10.95 URL: \T1/phv/m/sl/10.95 https://de.statista.com/statistik/dat
-en/studie/1140049/umfrage/corona-krise-homeoffice-
+[75] [76]
+LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
+(Font)              scaled to size 9.85492pt on input line 3272.
+ [77] [78] [79]
+Overfull \hbox (25.83658pt too wide) in paragraph at lines 3273--3273
+[]\T1/phv/m/n/10.95 Nornadiah Mohd Ra-za-li, Yap Bee Wah u.a. ``Power com-pa-ri
+-sons of shapiro-wilk, kolmogorov-
  []
 
-) [80]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg, id=2170, 583.17876pt x 611.2
+[80] [81]
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg, id=1812, 583.17876pt x 611.2
 8375pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg  used
- on input line 3254.
+ on input line 3282.
 (pdftex.def)             Requested size: 349.90996pt x 366.77307pt.
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg, id=2171, 583.17876pt x 839.1
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg, id=1813, 583.17876pt x 839.1
 35pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg  used
- on input line 3261.
+ on input line 3289.
 (pdftex.def)             Requested size: 349.90996pt x 503.48488pt.
- [81 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg, id=2177, 583.68062pt x 247.4
+ [82 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg>]
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg, id=1820, 583.68062pt x 247.4
 2438pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg  used
- on input line 3268.
+ on input line 3296.
 (pdftex.def)             Requested size: 350.21107pt x 148.45576pt.
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg, id=2178, 584.1825pt x 476.78
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg, id=1821, 584.1825pt x 476.78
 125pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg  used
- on input line 3275.
+ on input line 3303.
 (pdftex.def)             Requested size: 350.51219pt x 286.07095pt.
- [82 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg> <./Abbildungen/Frageb
+ [83 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg> <./Abbildungen/Frageb
 ogen/Pre-Questionnaire/PQ3.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg, id=2186, 584.68437pt x 765.3
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg, id=1828, 584.68437pt x 765.3
 5938pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg  used
- on input line 3282.
+ on input line 3310.
 (pdftex.def)             Requested size: 350.81332pt x 459.21916pt.
- [83 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg, id=2192, 584.68437pt x 846.1
+ [84 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg>]
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg, id=1834, 584.68437pt x 846.1
 6125pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg  used
- on input line 3289.
+ on input line 3317.
 (pdftex.def)             Requested size: 350.81332pt x 507.70067pt.
 
-[84 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg, id=2198, 585.18625pt x 449
+[85 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg, id=1840, 585.18625pt x 449
 .17813pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg  us
-ed on input line 3300.
+ed on input line 3328.
 (pdftex.def)             Requested size: 351.11446pt x 269.50896pt.
- [85 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>] [86 <./Abbildungen/F
+ [86 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>] [87 <./Abbildungen/F
 ragebogen/Post-Questionnaire/PQM1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg, id=2209, 585.18625pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg, id=1851, 585.18625pt x 748
 .29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg  us
-ed on input line 3312.
+ed on input line 3340.
 (pdftex.def)             Requested size: 351.11446pt x 448.98083pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg, id=2210, 584.1825pt x 766.
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg, id=1852, 584.1825pt x 766.
 865pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg  us
-ed on input line 3319.
+ed on input line 3347.
 (pdftex.def)             Requested size: 350.51219pt x 460.12256pt.
- [87 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg, id=2216, 584.68437pt x 767
+ [88 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg, id=1859, 584.68437pt x 767
 .86874pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg  us
-ed on input line 3326.
+ed on input line 3354.
 (pdftex.def)             Requested size: 350.81332pt x 460.7248pt.
 
-[88 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg, id=2223, 584.1825pt x 749.
+[89 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg, id=1865, 584.1825pt x 749.
 29938pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg  us
-ed on input line 3333.
+ed on input line 3361.
 (pdftex.def)             Requested size: 350.51219pt x 449.5831pt.
- [89 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg>] [90 <./Abbildungen
+ [90 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg>] [91 <./Abbildungen
 /Fragebogen/Post-Questionnaire/PQG4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg, id=2234, 585.68813pt x 484
+<Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg, id=1876, 585.68813pt x 484
 .30937pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg  us
-ed on input line 3344.
+ed on input line 3372.
 (pdftex.def)             Requested size: 351.41559pt x 290.58786pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg, id=2235, 586.19pt x 502.37
+<Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg, id=1877, 586.19pt x 502.37
 688pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg  us
-ed on input line 3351.
+ed on input line 3379.
 (pdftex.def)             Requested size: 351.7167pt x 301.42844pt.
- [91 <./Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg> <./Abbildungen/Frag
+ [92 <./Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg> <./Abbildungen/Frag
 ebogen/Post-Questionnaire/PQC2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg, id=2242, 879.285pt x 1218
+<Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg, id=1884, 879.285pt x 1218
 .80344pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg  u
-sed on input line 3362.
+sed on input line 3390.
 (pdftex.def)             Requested size: 351.70778pt x 487.51274pt.
- [92 <./Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg, id=2248, 585.18625pt x 74
+ [93 <./Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg, id=1890, 585.18625pt x 74
 9.80125pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg  u
-sed on input line 3373.
+sed on input line 3401.
 (pdftex.def)             Requested size: 351.11446pt x 449.88422pt.
- [93 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg, id=2254, 525.965pt x 841
+ [94 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg, id=1897, 525.965pt x 841
 .64438pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg  
-used on input line 3384.
+used on input line 3412.
 (pdftex.def)             Requested size: 315.58142pt x 504.99052pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg, id=2255, 526.96875pt x 7
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg, id=1898, 526.96875pt x 7
 76.9025pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg  
-used on input line 3391.
+used on input line 3419.
 (pdftex.def)             Requested size: 316.18369pt x 466.14508pt.
- [94 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg, id=2262, 526.46687pt x 7
+ [95 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg, id=1904, 526.46687pt x 7
 75.89874pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg  
-used on input line 3398.
+used on input line 3426.
 (pdftex.def)             Requested size: 315.88255pt x 465.54283pt.
- [95 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg, id=2268, 525.965pt x 775
+ [96 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg, id=1910, 525.965pt x 775
 .39688pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg  
-used on input line 3405.
+used on input line 3433.
 (pdftex.def)             Requested size: 315.58142pt x 465.24171pt.
- [96 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg, id=2274, 525.965pt x 742
+ [97 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg, id=1916, 525.965pt x 742
 .775pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg  
-used on input line 3412.
+used on input line 3440.
 (pdftex.def)             Requested size: 315.58142pt x 445.66843pt.
- [97 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg, id=2280, 527.47063pt x 7
+ [98 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg, id=1922, 527.47063pt x 7
 60.34062pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg  
-used on input line 3419.
+used on input line 3447.
 (pdftex.def)             Requested size: 316.4848pt x 456.20789pt.
- [98 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>] [99 <./Abbildung
-en/Fragebogen/Post-Questionnaire/PQTLX6.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg, id=2291, 584.68437pt x 748
+ [99 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>] [100 <./Abbildun
+gen/Fragebogen/Post-Questionnaire/PQTLX6.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg, id=1934, 584.68437pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg  us
-ed on input line 3430.
+ed on input line 3458.
 (pdftex.def)             Requested size: 350.81332pt x 449.28197pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg, id=2292, 585.18625pt x 768
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg, id=1935, 585.18625pt x 768
 .37062pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg  us
-ed on input line 3437.
+ed on input line 3465.
 (pdftex.def)             Requested size: 351.11446pt x 461.02592pt.
 
-[100 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg, id=2299, 585.18625pt x 598
+[101 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg, id=1941, 585.18625pt x 598
 .235pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg  us
-ed on input line 3444.
+ed on input line 3472.
 (pdftex.def)             Requested size: 351.11446pt x 358.94377pt.
- [101 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg>] [102 <./Abbildung
+ [102 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg>] [103 <./Abbildung
 en/Fragebogen/Post-Questionnaire/PQP3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg, id=2310, 584.1825pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg, id=1952, 584.1825pt x 748
 .29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg  u
-sed on input line 3455.
+sed on input line 3483.
 (pdftex.def)             Requested size: 350.51219pt x 448.98083pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg, id=2311, 584.1825pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg, id=1953, 584.1825pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg  u
-sed on input line 3462.
+sed on input line 3490.
 (pdftex.def)             Requested size: 350.51219pt x 449.28197pt.
- [103 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg, id=2317, 583.68062pt x 74
+ [104 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg, id=1959, 583.68062pt x 74
 8.29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg  u
-sed on input line 3469.
+sed on input line 3497.
 (pdftex.def)             Requested size: 350.21107pt x 448.98083pt.
- [104 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg, id=2323, 584.1825pt x 748
+ [105 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg, id=1965, 584.1825pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg  u
-sed on input line 3476.
+sed on input line 3504.
 (pdftex.def)             Requested size: 350.51219pt x 449.28197pt.
- [105 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg, id=2329, 585.68813pt x 74
+ [106 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg, id=1972, 585.68813pt x 74
 9.29938pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg  u
-sed on input line 3483.
+sed on input line 3511.
 (pdftex.def)             Requested size: 351.41559pt x 449.5831pt.
- [106 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg, id=2336, 584.68437pt x 78
+ [107 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg, id=1978, 584.68437pt x 78
 4.9325pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg  u
-sed on input line 3490.
+sed on input line 3518.
 (pdftex.def)             Requested size: 350.81332pt x 470.96312pt.
- [107 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg>]
-<Abbildungen/criteriaForVirtualTeams.JPG, id=2342, 232.4685pt x 475.7775pt>
+ [108 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg>]
+<Abbildungen/criteriaForVirtualTeams.JPG, id=1984, 232.4685pt x 475.7775pt>
 File: Abbildungen/criteriaForVirtualTeams.JPG Graphic file (type jpg)
 <use Abbildungen/criteriaForVirtualTeams.JPG>
 Package pdftex.def Info: Abbildungen/criteriaForVirtualTeams.JPG  used on input
- line 3498.
+ line 3526.
 (pdftex.def)             Requested size: 232.46793pt x 475.77632pt.
- [108 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3514.
- [109 <./Abbildungen/criteriaForVirtualTeams.JPG>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 3514.
+ [109 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 3542.
+ [110 <./Abbildungen/criteriaForVirtualTeams.JPG>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 3542.
 
 (Masterarbeit_Hannes_Hinrichs.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3514.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3514.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 3542.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 3542.
 
 Package rerunfilecheck Info: File `Masterarbeit_Hannes_Hinrichs.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: FC3B808EC3029092E06934AEE6817AA9;5879.
+(rerunfilecheck)             Checksum: 099E1CF83A05F3237B1EE1596DCE216C;5889.
 
 
 LaTeX Warning: There were undefined references.
@@ -2384,26 +2491,30 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 3514.
+Package logreq Info: Writing requests to 'Masterarbeit_Hannes_Hinrichs.run.xml'
+.
+\openout1 = `Masterarbeit_Hannes_Hinrichs.run.xml'.
+
  ) 
 Here is how much of TeX's memory you used:
- 13120 strings out of 481199
- 213071 string characters out of 2921905
- 534960 words of memory out of 3000000
- 27819 multiletter control sequences out of 15000+200000
- 631127 words of font info for 146 fonts, out of 3000000 for 9000
- 1141 hyphenation exceptions out of 8191
- 48i,14n,49p,1570b,699s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 20212 strings out of 481199
+ 367815 string characters out of 2921905
+ 920875 words of memory out of 3000000
+ 34864 multiletter control sequences out of 15000+200000
+ 636906 words of font info for 150 fonts, out of 3000000 for 9000
+ 1143 hyphenation exceptions out of 8191
+ 48i,14n,54p,1864b,2229s stack positions out of 5000i,500n,10000p,200000b,50000s
 {B:/MiKTeX/fonts/enc/dvips/base/8r.enc}<B:/MiKTeX/fonts/type1/public/amsfonts
 /cm/cmmi10.pfb><B:/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><B:/MiKTeX/f
-onts/type1/public/amsfonts/cm/cmsy10.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uh
-vb8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvbo8a.pfb><B:/MiKTeX/fonts/type1
-/urw/helvetic/uhvr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><B:/Mi
-KTeX/fonts/type1/urw/symbol/usyr.pfb><B:/MiKTeX/fonts/type1/urw/times/utmr8a.pf
-b><B:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (118 pages, 7425454 bytes).
+onts/type1/public/amsfonts/cm/cmsy10.pfb><B:/MiKTeX/fonts/type1/urw/courier/ucr
+r8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><B:/MiKTeX/fonts/type1/u
+rw/helvetic/uhvbo8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvr8a.pfb><B:/MiKT
+eX/fonts/type1/urw/helvetic/uhvro8a.pfb><B:/MiKTeX/fonts/type1/urw/symbol/usyr.
+pfb><B:/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><B:/MiKTeX/fonts/type1/urw/time
+s/utmri8a.pfb>
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (119 pages, 7671485 bytes).
 PDF statistics:
- 2502 PDF objects out of 2984 (max. 8388607)
- 533 named destinations out of 1000 (max. 500000)
- 999 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2140 PDF objects out of 2487 (max. 8388607)
+ 504 named destinations out of 1000 (max. 500000)
+ 1024 words of extra memory for PDF output out of 10000 (max. 10000000)
 

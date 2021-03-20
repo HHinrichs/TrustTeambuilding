@@ -41,7 +41,7 @@
 \usepackage[onehalfspacing]{setspace}%Zeilenabstand
 \usepackage[onehalfspacing]{setspace}%Zeilenabstand
 \usepackage{fancyhdr}
-\usepackage[authoryear]{natbib}
+\usepackage[citestyle=authoryear,natbib=true, backend=bibtex, style=alphabetic]{biblatex}
 \usepackage{relsize}
 %\usepackage[printonlyused, smaller, footnote]{acronym}
 \usepackage[printonlyused, smaller]{acronym}
@@ -58,6 +58,7 @@
 \fancyfoot{}
 \usepackage[colorlinks,pdfpagelabels,pdfstartview = FitH,bookmarksopen = true,bookmarksnumbered = true,linkcolor = black,urlcolor = black,plainpages = false,hypertexnames = false,citecolor = black] {hyperref}
 
+\addbibresource{bibfile}
 \begin{document}
 	\begin{titlepage}
 		\begin{flushleft}
@@ -216,15 +217,15 @@ Die Einsatzfelder werden im Folgenden beschrieben :
 	\item{\textbf{Soziale virtuelle 3D-Umgebungen:} Ermöglichen eine soziale Interaktion mit vollständig dargestellten Avataren.}
 \end{itemize}
 
-All diese Technologien teilen dasselbe Ziel : \\ \dq{}Die Verbesserung der\textit{Social-Presence}, so dass der Nutzer das Gefühl hat zu einem gewissen Grad Einblicke in die kognitiven und affektiven Zustände des anderen zu haben \dq{} \citep{biocca2002defining} \citep[p.407–447]{biocca2001plugging}.
+All diese Technologien teilen dasselbe Ziel : \\ \dq{}Die Verbesserung der\textit{Sozialen-Präsenz}, so dass der Nutzer das Gefühl hat zu einem gewissen Grad Einblicke in die kognitiven und affektiven Zustände des anderen zu haben \dq{} \citep{biocca2002defining}, \citep[s.407–447]{biocca2001plugging}.
 
-Zusammenarbeit zwischen entfernten Personen wird heute immer wichtiger für die Effizienz von Unternehmen. Mitarbeiter befinden sich sehr häufig nicht am selben Ort, wobei viele Unternehmen sich trotzdem eine effektive Gestaltung ihrer Teams wünschen \citep[p.791-792]{jarvenpaa1999communication}. \ac{vts} können hierbei Abhilfe schaffen. 
+Zusammenarbeit zwischen entfernten Personen wird heute immer wichtiger für die Effizienz von Unternehmen. Mitarbeiter befinden sich sehr häufig nicht am selben Ort, wobei viele Unternehmen sich trotzdem eine effektive Gestaltung ihrer Teams wünschen \citep[s.791-792]{jarvenpaa1999communication}. \ac{vts} können hierbei Abhilfe schaffen. 
 	
 Erst seit ungefähr 10-15 Jahren sind \ac{vts} in den Fokus von Unternehmen gerückt und in den Alltag von ihnen eingezogen \citep{gilson2015virtual}.
 
 Vor der Corona Pandemie, im 2. Quartal 2020, haben 40\% aller Angestellten in Deutschland von zu Hause im \dq{}Homeoffice\dq{} gearbeitet. Dieser Anteil ist im Laufe des Jahres - Stand 03.08.2020 - auf 60\% gestiegen und es könnten theoretisch 80\% der Belegschaften von zu Hause arbeiten \citep{statistaCorona2020}. Durch diese Entwicklung, mussten Unternehmen sich zwangsläufig mit der Funktionsweise von \ac{vts} beschäftigen.
 
-Trifft sich ein virtuelles Team in einer \ac{vr}, können Avatare \footnote{Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt \citep[p.1]{neustaedter2009presenting}.} zur Repräsentation des eigenen Individuums eingesetzt werden. Durch diese wird mit anderen Teilnehmern des \ac{sve} interagiert und kommuniziert.
+Trifft sich ein virtuelles Team in einer \ac{vr}, können Avatare \footnote{Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt \citep[s.1]{neustaedter2009presenting}.} zur Repräsentation des eigenen Individuums eingesetzt werden. Durch diese wird mit anderen Teilnehmern des \ac{sve} interagiert und kommuniziert.
 
 \newpage
 	\subsection{Motivation}
@@ -232,9 +233,9 @@ Trifft sich ein virtuelles Team in einer \ac{vr}, können Avatare \footnote{Graf
 	
 	Viele Unternehmen setzen aufgrund der wachsenden Globalisierung auf geografisch trennte Teams um Aufgaben effizient zu bearbeiten. Die Teamgründung in einem räumlich getrennten Team spielt eine ebenso große Rolle wie in einem Team, das die Möglichkeit hat, sich in Persona kennenzulernen.
 	
-	In einem räumlich getrennten Team zu arbeiten, das sich gegenseitig nicht Vertraut oder nicht richtig Zusammenarbeitet, hemmt die Performance dieses \citep[p. 98-107]{huang1998supporting} \citep[p. 399-417]{turoff1993distributed}.
+	In einem räumlich getrennten Team zu arbeiten, das sich gegenseitig nicht Vertraut oder nicht richtig Zusammenarbeitet, hemmt die Performance dieses \citep[s. 98-107]{huang1998supporting} \citep[s. 399-417]{turoff1993distributed}.
 	
-%	Teambuilding steht jedoch nicht nur in der Kennenlernphase eines Teams im Fokus, denn es wird unter anderem besonders dann benötigt, wenn ein Team beispielsweise zu langsam arbeitet, die individuelle Leistung eines Teammitglieds nicht genügt, Konflikte entstehen oder die Gruppendynamik nicht dem soll entspricht \citep[p. 1-3]{biech2007pfeiffer}.
+%	Teambuilding steht jedoch nicht nur in der Kennenlernphase eines Teams im Fokus, denn es wird unter anderem besonders dann benötigt, wenn ein Team beispielsweise zu langsam arbeitet, die individuelle Leistung eines Teammitglieds nicht genügt, Konflikte entstehen oder die Gruppendynamik nicht dem soll entspricht \citep[s. 1-3]{biech2007pfeiffer}.
 	
 	Durch voranschreitende Forschung ist es heutzutage möglich, dass sich viele Personen gleichzeitig in einem \ac{sve} befinden. Dadurch können auch Teams gegründet werden, wenn sich diese räumlich getrennt voneinander befinden.
 	
@@ -271,7 +272,7 @@ Es werden verschiedene Hypothesen aufgestellt, anhand denen es möglich ist, das
 Diese Arbeit ist dem Gebiet der virtuellen Realität und Sozialpsychologie zuzuordnen, speziell der virtuellen Teams in der virtuellen Realität.
 In diesem Bereich gibt es noch nicht viel Literatur, weshalb eine zeitgemäße Betrachtung und Analyse der Kombination von virtueller Realität und Sozialpsychologie als sinnvoll erachtet wird.
 
-%Repräsentationen in der virtuellen Welt haben einen großen Einfluss auf unterschiedliche Faktoren. Sie helfen dabei die andere Person in der \ac{vr} zu Lokalisieren, diese Wahrzunehmen, zu Identifizieren und zu verstehen, was eine andere Person aktuell tut. \citep[p.{pan2017impact} Daher gilt es herauszufinden, ob verschiedene Repräsentationen in einem \ac{sve} einen unterschiedlichen Einfluss auf die Team-Effektivität und das Vertrauen in das Team haben.\\
+%Repräsentationen in der virtuellen Welt haben einen großen Einfluss auf unterschiedliche Faktoren. Sie helfen dabei die andere Person in der \ac{vr} zu Lokalisieren, diese Wahrzunehmen, zu Identifizieren und zu verstehen, was eine andere Person aktuell tut. \citep[s.{pan2017impact} Daher gilt es herauszufinden, ob verschiedene Repräsentationen in einem \ac{sve} einen unterschiedlichen Einfluss auf die Team-Effektivität und das Vertrauen in das Team haben.\\
 
 
 %	\subsection{Inhaltlicher Aufbau der Arbeit}
@@ -319,7 +320,7 @@ Die Begriffe \textit{Effektivität} und \textit{Effizienz} werden häufig als Sy
 %Die Effizienz ist in dieser Arbeit nicht von bedeutung. Es geht nicht darum, herauszufinden, durch welche Avatarkondition effizienter in einem \ac{sve} eine gemeinsame Aufgabe erledigt werden kann.
 %Es geht darum, zu schauen, durch welche Avatarkondition Effektiv Vertrauen aufgebaut werden kann, um so eine eventuelle Effektive steigerung der Teameffektivität durch eine bestimmte Avatarkontion auszumachen.
 \paragraph{Effizienz}
-Bei der \textit{Effizienz} geht es darum, sein Handeln so zu optimieren, dass ein Ziel möglichst schnell und mit möglichst geringem Aufwand erreicht wird. Die Wirtschaftlichkeit steht bei der \textit{Effizienz} im Vordergrund. Ergebnis und eingesetzte Mittel müssen dabei immer in einem möglichst günstigen Kosten-Nutzen-Verhältnis stehen (\citep{eichhorn2005prinzip}).\\
+Bei der \textit{Effizienz} geht es darum, sein Handeln so zu optimieren, dass ein Ziel möglichst schnell und mit möglichst geringem Aufwand erreicht wird. Die Wirtschaftlichkeit steht bei der \textit{Effizienz} im Vordergrund. Ergebnis und eingesetzte Mittel müssen dabei immer in einem möglichst günstigen Kosten-Nutzen-Verhältnis stehen \citep{eichhorn2005prinzip}.\\
 $Effizienz = \frac{Ergebnis}{Aufwand}$\\
 Ein Team in einem Unternehmen, dass sich nur über das Telefon unterhält ist nicht effizient, da es sich auch in Persona treffen kann.
 Der wirtschaftliche Aspekt der Telefonkosten muss mit eingerechnet werden. Somit wäre es günstiger (\textit{effizienter}) sich in Persona zu treffen.
@@ -331,7 +332,7 @@ Somit arbeitet ein Team Effektiv, wenn es die richtigen Maßnahmen ergreift um d
 $Effektivität = \frac{Ergebnis}{Ziel}$ \\
 Ein Team ist effektiv, wenn es sich nur durch ein Telefon unterhält, da eine Kommunikation mit den anderen Teammitgliedern stattfindet. Das Team ist jedoch auch effektiv, wenn es sich mit den anderen Teammitgliedern in Persona trifft.
 \textit{Effektivität} ist das Ausmaß der Erreichung angestrebter Ergebnisse, Ziele und Zwecke.
-\textit{Der Grad der Wirksamkeit} kann bei der \textit{Effektivität} somit immer berücksichtigt werden (\citep{eichhorn2005prinzip}).
+\textit{Der Grad der Wirksamkeit} kann bei der \textit{Effektivität} somit immer berücksichtigt werden \citep{eichhorn2005prinzip}.
 %Somit stellen sich bei der Frage nach der Effektivität folgende Fragen: 
 %Bringt uns die Maßnahme dem Ziel näher? 
 %Tun wir die Dinge, die uns voranbringen?
@@ -348,37 +349,37 @@ Ein Team ist effektiv, wenn es sich nur durch ein Telefon unterhält, da eine Ko
 	\label{Virtual Reality}
 %		\subsubsection{VR - Wozu brauchen wir Virtual Realitky?}
 		\subsubsection{Virtuelle 3D-Welten}
-Virtual-Reality ist eine Realität, die durch den Computer, einen geschriebenen Computercode sowie erstellte 3D-Welten abgebildet und zum Leben erweckt wird. Dabei spielt der Nutzer, das umschließende Erlebnis sowie die Interaktivität in der \ac{vr}, eine zentrale Rolle \citep[p.6-12]{sherman2018understanding}.
+Virtual-Reality ist eine Realität, die durch den Computer, einen geschriebenen Computercode sowie erstellte 3D-Welten abgebildet und zum Leben erweckt wird. Dabei spielt der Nutzer, das umschließende Erlebnis sowie die Interaktivität in der \ac{vr}, eine zentrale Rolle \citep[s.6-12]{sherman2018understanding}.
 	Seit vielen Jahren sind \ac{sve}'s Forschungsgrundlage der virtuellen Realität. Siehe \citep{shuffler2011there} \citep{steed1999leadership} und \citep{de2011level}.
 
 \paragraph{Shared-Virtual-Environment}
-	\ac{sve}'s bieten die Möglichkeit, geographisch getrennte Personen in einer virtuellen Umgebung zu verbinden. Dadurch wird den Nutzern der virtuellen Realität die Möglichkeit gegeben, durch einen Avatar miteinander kommunizieren und interagieren zu können \citep[p. 1-3]{pettifer1999designing}. Eine grundlegende und frühe Übersicht der Anwendungsgebiete eines \ac{sve} wurde von Richard Waters \citep{waters1997rise} dargestellt. Die dort aufgeführten Anwendungsgebiete haben sich aufgrund der voranschreitenden Technologie weiterentwickelt und reichen heute von der Medizintechnik über die Architektur bis hin zur Lernsimulation.
+	\ac{sve}'s bieten die Möglichkeit, geographisch getrennte Personen in einer virtuellen Umgebung zu verbinden. Dadurch wird den Nutzern der virtuellen Realität die Möglichkeit gegeben, durch einen Avatar miteinander kommunizieren und interagieren zu können \citep[s. 1-3]{pettifer1999designing}. Eine grundlegende und frühe Übersicht der Anwendungsgebiete eines \ac{sve} wurde von Richard Waters \citep{waters1997rise} dargestellt. Die dort aufgeführten Anwendungsgebiete haben sich aufgrund der voranschreitenden Technologie weiterentwickelt und reichen heute von der Medizintechnik über die Architektur bis hin zur Lernsimulation.
 	Zur Durchführung und zur Datenerhebung dieser Studie wurde ein \ac{sve} entwickelt, welches den Nutzern ein \textit{Hand- und Kopf getrackten Avatar} (\ac{ik}) oder ein \textit{Hand-, Kopf getrackten Avatar mit Inverskinematisch dargestellten Torso und Armen} (\ac{nik}), zur Verfügung stellt. Innerhalb des \ac{sve} können sich die Nutzer frei bewegen, andere Avatare wahrnehmen und mit diesen interagieren.
 
-		\subsubsection{Vorbedingungen für Presence}
+		\subsubsection{Vorbedingungen für Präsenz}
 Um die bestmögliche \textit{Immersion} in einer \ac{vr} zu erreichen, wird eine Schnittstelle zur Interaktion zwischen den Sinnen und der Außenwelt benötigt. Dies kann ein \ac{hmd} sein, welches ein computergeneriertes Bild erzeugt, durch das die \ac{vr} wahrgenommen wird. Darüber hinaus muss das \ac{hmd} in der Lage sein, den Kopf des Benutzers frei im Raum zu verfolgen und die gewonnenen Positionsdaten auf die \ac{vr} abzubilden. Optimalerweise werden Controller benötigt, durch deren Einsatz es möglich ist, auch die Handbewegungen der realen Personen zu verfolgen. Durch die gewonnenen Positionsdaten kann die Position der Hände des Nutzers in der \ac{vr} dargestellt werden. Das \ac{hmd}, die Controller, eventuelle zusätzliche Körpertracker, Kopfhörer, eventuell wahrgenommener Geruch etc. definieren, zu welchem Ausmaß Sinnesmodalitäten in der \ac{vr} angesprochen werden. Der Grad der Immersion hängt somit direkt mit der Anzahl der angesprochenen Sinnesmodalitäten zusammen. Je mehr Sinnesmodalitäten gleichzeitig angesprochen werden, desto mehr ist der Wahrnehmungsapparat in der Lage, die virtuelle Umgebung auf die reale Welt abzubilden.
 
-Somit lässt sich sagen, dass die Voraussetzungen für \textit{Presence} in der \ac{vr} die Korrelation zwischen den Sinneseindrücken, der Propriozeption \footnote{die Wahrnehmung des eigenen Körpers nach dessen Lage im Raum} und dem Grad der wahrgenommenen Realität der Illusion, sich in einem stabilen räumlichen Ort zu befinden, darstellt. Sind diese Voraussetzungen gegeben, kann der Nutzer einen plausiblen Vergleich zwischen realen sensorischen und virtuellen, durch Illusion erzeugten Daten aufstellen \citep{slater2009we}.
+Somit lässt sich sagen, dass die Voraussetzungen für \textit{Präsenz} in der \ac{vr} die Korrelation zwischen den Sinneseindrücken, der Propriozeption \footnote{die Wahrnehmung des eigenen Körpers nach dessen Lage im Raum} und dem Grad der wahrgenommenen Realität der Illusion, sich in einem stabilen räumlichen Ort zu befinden, darstellt. Sind diese Voraussetzungen gegeben, kann der Nutzer einen plausiblen Vergleich zwischen realen sensorischen und virtuellen, durch Illusion erzeugten Daten aufstellen \citep{slater2009we}.
 
-		\subsubsection{Presence in Virtual Reality}
+		\subsubsection{Präsenz in Virtual Reality}
 			
 %	Dank heutiger Technologien ist es uns möglich, zu jeder Zeit mit Personen an verschiedenen Orten zu interagieren und zu kommunizieren. Kommunikation nicht mehr nur auf die Personen in unserer unmittelbaren Umgebung beschränkt. 
-	Das Voranschreiten der Technologie ermöglicht es, uns nicht mehr nur auf soziale Interaktionen mit physischen anwesenden Personen zu beschränken, sondern erweitert diese auch auf Repräsentationen geschaffen aus Pixeln, auf die E-Mails, auf den Film oder auf das Telefon. Je nachdem, wie stark diese Repräsentation von uns wahrgenommen wird, schafft sie es, starke Emotionen in uns auszulösen \citep[p. 4-6]{biocca2002defining}.
+	Das Voranschreiten der Technologie ermöglicht es, uns nicht mehr nur auf soziale Interaktionen mit physischen anwesenden Personen zu beschränken, sondern erweitert diese auch auf Repräsentationen geschaffen aus Pixeln, auf die E-Mails, auf den Film oder auf das Telefon. Je nachdem, wie stark diese Repräsentation von uns wahrgenommen wird, schafft sie es, starke Emotionen in uns auszulösen \citep[s. 4-6]{biocca2002defining}.
 %	
-%Nur wenn eine gewisse \textit{Presence} dieser Repräsentation besteht, kann \textbf{Vertrauensbildung} stattfinden. Somit definiert das Vorhandensein des Gefühls von \dq Presence \dq{} den Grundbaustein für alle weiteren Schritte zum Aufbau von Vertrauen.
-Der Begriff  \textit{Presence}ist nicht genau definiert. Am ehesten trifft die Beschreibung zu, dass  \textit{Presence} das subjektive Empfinden beschreibt, an einem anderen Platz zu sein, obwohl man physikalisch eigentlich woanders ist \citep[p. 1]{witmer1998measuring}.
+%Nur wenn eine gewisse \textit{Präsenz} dieser Repräsentation besteht, kann \textbf{Vertrauensbildung} stattfinden. Somit definiert das Vorhandensein des Gefühls von \dq Presence \dq{} den Grundbaustein für alle weiteren Schritte zum Aufbau von Vertrauen.
+Der Begriff \textit{Präsenz}ist nicht genau definiert. Am ehesten trifft die Beschreibung zu, dass \textit{Präsenz} das subjektive Empfinden beschreibt, an einem anderen Platz zu sein, obwohl man physikalisch eigentlich woanders ist \citep[s. 1]{witmer1998measuring}.
 
 	Nimmt eine Person eine andere Person in einer \ac{vr} als präsent wahr, wird das Nervensyste in einen Zustand gebracht, der einem realen Zustand gleicht. Obwohl die betroffene Person weiß, dass sie sich nicht in einer realen Lebenssituation befindet, wird diese dazu neigen, sich so zu verhalten, als ob diese in realen Lebenssituation ist und ähnliche Gedanken und Gefühle haben \citep{slater2003note}.
 
-Diesbezüglich kann \textit{Presence} als eine Art von Illusion angesehen werden, da die erzeugten Stimuli in der \ac{vr}, wie in der realen Welt auch auf unsere Rezeptoren angeregt werden.
+Diesbezüglich kann \textit{Präsenz} als eine Art von Illusion angesehen werden, da die erzeugten Stimuli in der \ac{vr}, wie in der realen Welt auch auf unsere Rezeptoren angeregt werden.
 
-Somit lässt sich \textit{Presence} in der \ac{vr} in 4 verschiedene Teilbereiche unterteilen.
+Somit lässt sich \textit{Präsenz} in der \ac{vr} in 4 verschiedene Teilbereiche unterteilen.
 
 \begin{itemize}
-	\item{\textbf{Die Illusion, sich in einem stabilen räumlichen Ort zu befinden}}, ist der wichtigste Aspekt, um \textit{Presence} zu erzeugen. Alle Stimuli zur räumlichen Wahrnehmung sollten sich möglichst wie in der realen Welt verhalten. Zum Beispiel sollten Restriktionen des  \textit{Field-of-View}\footnote{Sichtfeld} sowie Kabel am \ac{hmd} vermieden werden \citep[p.47]{jerald2015vr}.
-	\item{\textbf{Die Illusion der Selbstverkörperung}} beschreibt das Gefühl, einen Körper in der virtuellen Umgebung zu haben. Studien fanden heraus, dass durch einen virtuellen Körper die \textit{Presence} in der \ac{vr} stark steigt, da sich der Mensch sein Leben lang an einen (seinen) Körper gewöhnt hat \citep[p.756]{botvinick1998rubber}. Der virtuelle Körper muss unserem eigenen dabei nicht ähneln \citep[p.7]{maxwell1960psycho}.
-	\item{\textbf{Die Illusion von körperlichen Interaktionen}} beschreibt beispielsweise das Vorhandensein von Audio-Feedback, die Vibration des Controllers während etwas aufgehoben wird oder visuelle Highlights. Der Nutzer hat dadurch das Gefühl, mit der \ac{vr} zu interagieren. Diese Kleinigkeiten tragen eine große Menge dazu bei, \textit{Presence} in der \ac{vr} zu steigern \citep[p.48]{jerald2015vr}.
-	\item{\textbf{Die Illusion von sozialer Kommunikation}} Sozialer-Realismus kann vom\newline Physischen-Realismus abgetrennt werden.  \textit{Social-Presence} beschreibt das Gefühl, real mit jemandem in einem \ac{sve} zu kommunizieren. Dabei ist es irrelevant, ob der Kommunikationspartner menschlich oder nicht menschlich ist. Sei es verbal oder durch Körpersprache. Je mehr der Kommunikationspartner sich so verhalten, als ob die virtuelle Welt real wäre, desto mehr steigt auch die \textit{Social-Presence} \citep[p.49]{jerald2015vr} \citep[p.12]{guadagno2007virtual}.
+	\item{\textbf{Die Illusion, sich in einem stabilen räumlichen Ort zu befinden}}, ist der wichtigste Aspekt, um \textit{Präsenz} zu erzeugen. Alle Stimuli zur räumlichen Wahrnehmung sollten sich möglichst wie in der realen Welt verhalten. Zum Beispiel sollten Restriktionen des  \textit{Field-of-View}\footnote{Sichtfeld} sowie Kabel am \ac{hmd} vermieden werden \citep[s.47]{jerald2015vr}.
+	\item{\textbf{Die Illusion der Selbstverkörperung}} beschreibt das Gefühl, einen Körper in der virtuellen Umgebung zu haben. Studien fanden heraus, dass durch einen virtuellen Körper die \textit{Präsenz} in der \ac{vr} stark steigt, da sich der Mensch sein Leben lang an einen (seinen) Körper gewöhnt hat \citep[s.756]{botvinick1998rubber}. Der virtuelle Körper muss unserem eigenen dabei nicht ähneln \citep[s.7]{maxwell1960psycho}.
+	\item{\textbf{Die Illusion von körperlichen Interaktionen}} beschreibt beispielsweise das Vorhandensein von Audio-Feedback, die Vibration des Controllers während etwas aufgehoben wird oder visuelle Highlights. Der Nutzer hat dadurch das Gefühl, mit der \ac{vr} zu interagieren. Diese Kleinigkeiten tragen eine große Menge dazu bei, \textit{Präsenz} in der \ac{vr} zu steigern \citep[s.48]{jerald2015vr}.
+	\item{\textbf{Die Illusion von sozialer Kommunikation}} Sozialer-Realismus kann vom\newline Physischen-Realismus abgetrennt werden.  \textit{Soziale-Präsenz} beschreibt das Gefühl, real mit jemandem in einem \ac{sve} zu kommunizieren. Dabei ist es irrelevant, ob der Kommunikationspartner menschlich oder nicht menschlich ist. Sei es verbal oder durch Körpersprache. Je mehr der Kommunikationspartner sich so verhalten, als ob die virtuelle Welt real wäre, desto mehr steigt auch die \textit{Soziale-Präsenz} \citep[s.49]{jerald2015vr} \citep[s.12]{guadagno2007virtual}.
 \end{itemize}
 
 %\begin{figure}[H]
@@ -413,23 +414,23 @@ Somit lässt sich \textit{Presence} in der \ac{vr} in 4 verschiedene Teilbereich
 
 %https://scihubtw.tw/10.1057/jit.2010.25
 
-		\subsubsection{Presence, Co-Presence und co.}
-Wenn Personen sich zusammen in der \ac{vr} befinden und sich gegenseitig wahrnehmen, wird dieses Gefühl mit \textit{Co-Presence} bzw. \textit{Social-Presence} bezeichnet. Aber auch die \textit{Telepresence} und die \textit{Selbstpräsenz} tragen einen wichtigen Teil zum Aufbau und Erhalt von Immersion bei \citep{schuemie2001research}.
+		\subsubsection{Präsenz, Co-Präsenz und co.}
+Wenn Personen sich zusammen in der \ac{vr} befinden und sich gegenseitig wahrnehmen, wird dieses Gefühl mit \textit{Co-Präsenz} bzw. \textit{Soziale-Präsenz} bezeichnet. Aber auch die \textit{Telepräsenz} und die \textit{Selbstpräsenz} tragen einen wichtigen Teil zum Aufbau und Erhalt von Immersion bei \citep{schuemie2001research}.
 
-\textbf{\textit{Co-Presence}} bezeichnet das Gefühl, mit einer anderen Person in Verbindung zu stehen.
+\textbf{\textit{Co-Präsenz}} bezeichnet das Gefühl, mit einer anderen Person in Verbindung zu stehen.
 Die Anwesenheit der anderen Person in der \ac{vr} wird gespürt und es wird wahrgenommen, dass die andere Person ebenfalls spürt, dass man selbst in der \ac{vr} anwesend ist. 
-Co-Presence kann dementsprechend als eine psychologische Verbindung \textit{zu und mit} dem anderem charakterisiert werden \citep[179-182]{ijsselsteijn2001presence}.
+Co-Präsenz kann dementsprechend als eine psychologische Verbindung \textit{zu und mit} dem anderem charakterisiert werden \citep[179-182]{ijsselsteijn2001presence}.
 
-Fühlt sich ein Nutzer der \ac{vr} \dq{}innerhalb\dq{} des Mediums \ac{vr}, so wird dies als \textit{Telepresence} bezeichnet. \textit{Telepresence} bezeichnet das Gefühl \dq{}da zu sein\dq{}. Je höher das Level wahrgenommener Telepresence ist, desto weniger fühlt sich der Nutzer an dem Ort seines physikalischen Körpers und mehr an einem anderen Ort \citep[p.482]{nowak2003effect}. Es beschreibt die Illusion, durch die \textbf{Tele}kommunikation, an einem anderen, weit entfernten, realen Platz, zu sein. Der Begriff Telepresence wird seit den Forschungen von Biocca \cite[p.12]{biocca1999cyborg} im Allgemeinem \ac{vr}-spezifischen Sprachgebrauch als die Illusion des \dq{}being there\dq{}, oder einfach als \dq{}Presence\dq{} genutzt.
+Fühlt sich ein Nutzer der \ac{vr} \dq{}innerhalb\dq{} des Mediums \ac{vr}, so wird dies als \textit{Telepräsenz} bezeichnet. \textit{Telepräsenz} bezeichnet das Gefühl \dq{}da zu sein\dq{}. Je höher das Level wahrgenommener \textit{Telepräsenz} ist, desto weniger fühlt sich der Nutzer an dem Ort seines physikalischen Körpers und mehr an einem anderen Ort \citep[s.482]{nowak2003effect}. Es beschreibt die Illusion, durch die \textbf{Tele}kommunikation, an einem anderen, weit entfernten, realen Platz, zu sein. Der Begriff Telepräsenz wird seit den Forschungen von Biocca \cite[p.12]{biocca1999cyborg} im Allgemeinem \ac{vr}-spezifischen Sprachgebrauch als die Illusion des \dq{}being there\dq{}, oder einfach als \dq{}Präsenz\dq{} genutzt.
 
-Der Begriff der \textit{Social-Presence} beschreibt, wie stark ein Nutzer eine Person, mit der dieser nur mittels Kommunikationstechnologie kommuniziert, als \dq{}real\dq{} bezeichnet. \textit{Social-Presence} wird dabei auf die Kommunikationstechnologie an sich bezogen. Je mehr \textit{Social-Presence} vorhanden ist, desto besser ist ein Kommunikationsmittel geeignet um Informationen über den Interaktionspartner zu vermitteln. So erzeugt ein Videochat durch die zusätzliche Übertragung eines Videos mehr \textit{Social-Presence} als eine Telefonkommunikation \citep[p.151]{gunawardena1995social}.
-Es wird davon ausgegangen, dass ein \ac{sve} mehr Social-Presence erweckt als beispielsweise ein Telefonat. Es wird damit begründet, dass \ac{sve} die Eigenschaften und Interaktionen des anderen besser einfängt und darstellt. Desto mehr Eigenschaften einer Person dargestellt werden können, desto höher ist der wahrgenommene Realitätsgrad des anderen \citep[p. 5-8]{biocca2002defining}.
+Der Begriff der \textit{Soziale-Präsenz} beschreibt, wie stark ein Nutzer eine Person, mit der dieser nur mittels Kommunikationstechnologie kommuniziert, als \dq{}real\dq{} bezeichnet. \textit{Soziale-Präsenz} wird dabei auf die Kommunikationstechnologie an sich bezogen. Je mehr \textit{Soziale-Präsenz} vorhanden ist, desto besser ist ein Kommunikationsmittel geeignet um Informationen über den Interaktionspartner zu vermitteln. So erzeugt ein Videochat durch die zusätzliche Übertragung eines Videos mehr \textit{Soziale-Präsenz} als eine Telefonkommunikation \citep[s.151]{gunawardena1995social}.
+Es wird davon ausgegangen, dass ein \ac{sve} mehr Soziale-Präsenz erweckt als beispielsweise ein Telefonat. Es wird damit begründet, dass \ac{sve} die Eigenschaften und Interaktionen des anderen besser einfängt und darstellt. Desto mehr Eigenschaften einer Person dargestellt werden können, desto höher ist der wahrgenommene Realitätsgrad des anderen \citep[s. 5-8]{biocca2002defining}.
 
-\textit{Selbstpräsenz} in der \ac{vr} leitet sich von der realen Wahrnehmung über unseren eigenen Körper im täglichen Leben ab. Das Gefühl der realen Selbstpräsenz kann auf den virtuellen Raum übertragen werden, wenn die Person in der \ac{vr} durch einen Avatar repräsentiert wird. Die Selbstpräsenz ist hoch, wenn ein Nutzer der \ac{vr} keinen Unterschied zwischen sich und seiner digitalen Repräsentation wahrnimmt \citep[p.439]{schultze2010embodiment}.
+\textit{Selbstpräsenz} in der \ac{vr} leitet sich von der realen Wahrnehmung über unseren eigenen Körper im täglichen Leben ab. Das Gefühl der realen Selbstpräsenz kann auf den virtuellen Raum übertragen werden, wenn die Person in der \ac{vr} durch einen Avatar repräsentiert wird. Die Selbstpräsenz ist hoch, wenn ein Nutzer der \ac{vr} keinen Unterschied zwischen sich und seiner digitalen Repräsentation wahrnimmt \citep[s.439]{schultze2010embodiment}.
 
-Somit reicht das gesamte Kontinuum der \textit{Presence} von der räumlichen Komponente bis hin zur starken psychologischen Beteiligung. Stärker wahrgenommene \textit{Presence} führt dazu, dass die Person sich mehr in der \ac{vr} engagieren kann. \citep{biocca2001criteria}.
+Somit reicht das gesamte Kontinuum der \textit{Präsenz} von der räumlichen Komponente bis hin zur starken psychologischen Beteiligung. Stärker wahrgenommene \textit{Präsenz} führt dazu, dass die Person sich mehr in der \ac{vr} engagieren kann. \citep{biocca2001criteria}.
 
-Um Vertrauen optimal aufbauen zu können, sollte das gesamte \ac{sve} so real wie möglich aufgebaut sein. Diesbezüglich richtet sich diese Arbeit an nahezu alle Arten der hier genannten\textit{Presence}.
+Um Vertrauen optimal aufbauen zu können, sollte das gesamte \ac{sve} so real wie möglich aufgebaut sein. Diesbezüglich richtet sich diese Arbeit an nahezu alle Arten der hier genannten\textit{Präsenz}.
 
 %\subsubsection{Presence und Teambuilding}
 
@@ -439,8 +440,8 @@ Um Vertrauen optimal aufbauen zu können, sollte das gesamte \ac{sve} so real wi
 \label{Avatare}
 \subsubsection{Repräsentationen von Avataren}
 
-Das menschliche Gehirn ist in der Lage, computergenerierte Darstellungen in \textit{lebend} und \textit{nicht lebend} zu kategorisieren. Studien gehen davon aus, dass das menschliche Gehirn semantische Unterschiede im Zusammenhang mit der \textit{Social-Presence} feststellen kann. So kann eine menschenähnliche Form als biologisch oder nicht-lebend erkannt werden. 
-Ein Avatar wird als eine Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt, definiert \citep[p.1]{neustaedter2009presenting}. In der \ac{vr} hilft er dabei, die andere Person zu lokalisieren, sie wahrzunehmen und zu verstehen, mit wem oder was die Person aktuell interagiert \citep[]{pan2017impact}.
+Das menschliche Gehirn ist in der Lage, computergenerierte Darstellungen in \textit{lebend} und \textit{nicht lebend} zu kategorisieren. Studien gehen davon aus, dass das menschliche Gehirn semantische Unterschiede im Zusammenhang mit der \textit{Sozialen-Präsenz} feststellen kann. So kann eine menschenähnliche Form als biologisch oder nicht-lebend erkannt werden. 
+Ein Avatar wird als eine Grafikfigur, die die Onlinerepräsentation eines Nutzers in einer virtuellen Umgebung darstellt, definiert \citep[s.1]{neustaedter2009presenting}. In der \ac{vr} hilft er dabei, die andere Person zu lokalisieren, sie wahrzunehmen und zu verstehen, mit wem oder was die Person aktuell interagiert \citep[]{pan2017impact}.
 
 	\begin{figure}[b!]
 		\begin{footnotesize}
@@ -451,30 +452,30 @@ Ein Avatar wird als eine Grafikfigur, die die Onlinerepräsentation eines Nutzer
 		\end{footnotesize}
 	\end{figure}
 
-In \autoref{vertical_horizontal} ist zu erkennen, dass eine menschenähnliche vertikale, bilateral symmetrische Repräsentation mehr \textit{Co-Presence} erweckt als die horizontale bilateral symmetrische Repräsentation \citep[p.546-551]{thornhill1998relative}.
-Bilateral-vertikale Symmetrie wird mit der körperlichen Gesundheit eines Menschen in Verbindung gebracht. Sogar Weibchen verschiedener Spezies neigen dazu, Partner mit einem höheren Grad an bilateraler Symmetrie für die Fortpflanzung auszuwählen \citep[p. 659–669]{rhodes1998facial} \citep{biocca2002defining} \citep[p.233–242]{grammer1994human}.
+In \autoref{vertical_horizontal} ist zu erkennen, dass eine menschenähnliche vertikale, bilateral symmetrische Repräsentation mehr \textit{Co-Präsenz} erweckt als die horizontale bilateral symmetrische Repräsentation \citep[s.546-551]{thornhill1998relative}.
+Bilateral-vertikale Symmetrie wird mit der körperlichen Gesundheit eines Menschen in Verbindung gebracht. Sogar Weibchen verschiedener Spezies neigen dazu, Partner mit einem höheren Grad an bilateraler Symmetrie für die Fortpflanzung auszuwählen \citep[s. 659–669]{rhodes1998facial} \citep{biocca2002defining} \citep[s.233–242]{grammer1994human}.
 
 \begin{figure}[b!]
 		\begin{footnotesize}
 		\centering
 			\includegraphics[scale= 0.5]{Abbildungen/moving_dots.JPG}
-			\caption[Moving dots]{\textit{Stationäre punkte, bei denen der Mensch eine lebendige Bewegung ausmachen kann, wenn diese Anfangen sich zu bewegen. Es ist sogar möglich einen Menschen zu erkennen sowie dessen Art der Aktivität und seinen emotionalen Zustand \citep{biocca2002defining} \citep[p.76-89]{johansson1975visual}.}}
+			\caption[Moving dots]{\textit{Stationäre punkte, bei denen der Mensch eine lebendige Bewegung ausmachen kann, wenn diese Anfangen sich zu bewegen. Es ist sogar möglich einen Menschen zu erkennen sowie dessen Art der Aktivität und seinen emotionalen Zustand \citep{biocca2002defining} \citep[s.76-89]{johansson1975visual}.}}
 			\label{moving_dots}
 		\end{footnotesize}
 	\end{figure}
 
-Sich bewegende Punkte können bereits als intelligente Wesen wahrgenommen werden. Johansson \citep[p.76-89]{johansson1975visual} führte eine Studie durch, in der die Teilnehmer dreizehn sich bewegende Punkte sahen (\autoref{moving_dots}) und sofort die Darstellung einer menschlichen Bewegung erkannten. Als die Teilnehmer Punkte sahen, die stationär waren, ist es ihnen nicht möglich gewesen, diese Punkte als menschliche Repräsentation zu erkennen. Wenige sich bewegende Punkte reichen aus, um Informationen zu erzeugen, die Aufschluss über die Aktivität, das Geschlecht, die Bewegung, den emotionalen Zustand oder die Anzahl der Personen geben.
+Sich bewegende Punkte können bereits als intelligente Wesen wahrgenommen werden. Johansson \citep[s.76-89]{johansson1975visual} führte eine Studie durch, in der die Teilnehmer dreizehn sich bewegende Punkte sahen (\autoref{moving_dots}) und sofort die Darstellung einer menschlichen Bewegung erkannten. Als die Teilnehmer Punkte sahen, die stationär waren, ist es ihnen nicht möglich gewesen, diese Punkte als menschliche Repräsentation zu erkennen. Wenige sich bewegende Punkte reichen aus, um Informationen zu erzeugen, die Aufschluss über die Aktivität, das Geschlecht, die Bewegung, den emotionalen Zustand oder die Anzahl der Personen geben.
 
 \subsubsection{Vorwärtskinematik vs Inverse-Kinematik}
-Die Kinematik beschäftigt sich mit der mathematischen Bewegung einzelner Gelenke, ohne dabei die physikalische Kraft zu berücksichtigen. \citep[p.1]{beggs1983kinematics}
+Die Kinematik beschäftigt sich mit der mathematischen Bewegung einzelner Gelenke, ohne dabei die physikalische Kraft zu berücksichtigen. \citep[s.1]{beggs1983kinematics}
 
-Die Vorwärtskinematik beschäftigt sich mit der Frage, wie aus bekannten Positionen und Winkeln einzelner Gelenke, ein Zielpunkt in einem bestimmten Koordinatensystem bestimmt werden kann. Damit ist die Vorwärtskinematik das Gegenstück zur Inversen-Kinematik. \citep[p.119]{kucuk2006robot}
+Die Vorwärtskinematik beschäftigt sich mit der Frage, wie aus bekannten Positionen und Winkeln einzelner Gelenke, ein Zielpunkt in einem bestimmten Koordinatensystem bestimmt werden kann. Damit ist die Vorwärtskinematik das Gegenstück zur Inversen-Kinematik. \citep[s.119]{kucuk2006robot}
 \label{inverseKinematik}
-Die Inverse-Kinematik beschäftigt sich damit, herausfinden, wie Gelenke eines Roboterarms bewegt und gedreht werden müssen, um Beispielsweise einen Gegenstand von Punkt A nach Punkt B zu bewegen. Es wird anhand der Position des Zielpunkts, alle Winkel der zugehörigen Gelenke approximiert um somit die zugehörigen Rotationen dieser zu bestimmen. \citep[p.299-300]{d2001learning} Inverse-Kinematische Berechnungen können auf Arme, auf den Torso, die Füße, den Kopf, die Beine, etc., eines Avatars angewand werden um diesen zu animieren. Benutzt eine Person in einem \ac{sve} einen Inverse-Kinematisch dargestellten Self-Avatar, kann dieser die Torsorotation, Armbewegungen oder Beinbewegungen seines eigenen Avatars sehen \citep[p.1]{kim2018real}
+Die Inverse-Kinematik beschäftigt sich damit, herausfinden, wie Gelenke eines Roboterarms bewegt und gedreht werden müssen, um Beispielsweise einen Gegenstand von Punkt A nach Punkt B zu bewegen. Es wird anhand der Position des Zielpunkts, alle Winkel der zugehörigen Gelenke approximiert um somit die zugehörigen Rotationen dieser zu bestimmen. \citep[s.299-300]{d2001learning} Inverse-Kinematische Berechnungen können auf Arme, auf den Torso, die Füße, den Kopf, die Beine, etc., eines Avatars angewand werden um diesen zu animieren. Benutzt eine Person in einem \ac{sve} einen Inverse-Kinematisch dargestellten Selbst-Avatar, kann dieser die Torsorotation, Armbewegungen oder Beinbewegungen seines eigenen Avatars sehen \citep[s.1]{kim2018real}
 
-\subsubsection{Self-Avatar}
+\subsubsection{Selbst-Avatar}
 
-In der \ac{vr} und in einigen anderen computerbasierten Medien, kann der Nutzer sich Avatare erstellen und mit diesen interagieren \citep[p.1]{neustaedter2009presenting}.
+In der \ac{vr} und in einigen anderen computerbasierten Medien, kann der Nutzer sich Avatare erstellen und mit diesen interagieren \citep[s.1]{neustaedter2009presenting}.
 
 \ac{hmd}'s beeinflussen das Sichtfeld des Nutzers so stark, dass diese ihren eigenen Körper nicht mehr sehen können. Um diesem Nachteil entgegenzuwirken, kann einem Nutzer ein virtueller Körper zur Verfügung gestellt werden. Dieser Körper wird \textit{Selbst-Avatar} genannt.
 Es ist schwierig einen \textit{Selbst-Avatar} hoher Qualität zu simulieren. Dazu wäre das Verfolgen und Animieren mehrerer Körperteile nötig. Ist der Selbst-Avatar schlecht animiert oder es entstehen während der Nutzung Trackingfehler, die der Nutzer erkennt, kann es sehr leicht zu einem \ac{bip} kommen. Bei diesem \ac{bip} bricht die gesamte Illusion der \ac{vr} für den Nutzer in sich zusammen. 
@@ -483,7 +484,7 @@ Sind jedoch genügend Körperteile getrackt und animiert, muss der Avatar nicht 
 
 Biocca forschte umfangreich über den Einfluss von \textit{Selbst-Avataren} auf den Nutzer in der \ac{vr} \citep[421-427]{construal2014connected}.
 \newline So beispielsweise, wie sich die Interaktion mit der Welt verändert, wie sich soziale Interaktionen verändern und wie Aufgaben wahrgenommen und bearbeitet werden \citep{benford1995user} \citep{bowers1996talk}.
-Biocca geht in seinen Studien davon aus, dass ein menschenähnlicher Körper als Avatar die \textit{Self-Presence} stark erhöht. Damit die \textit{Self-Presence} weiter erhöht wird, kann ein inverse-kinematisch simulierter Avatar als \textit{Selbst-Avatar} genutzt werden\citep[421-427]{construal2014connected}.
+Biocca geht in seinen Studien davon aus, dass ein menschenähnlicher Körper als Avatar die \textit{Selbst-Präsenz} stark erhöht. Damit die \textit{Selbst-Präsenz} weiter erhöht wird, kann ein inverse-kinematisch simulierter Avatar als \textit{Selbst-Avatar} genutzt werden\citep[421-427]{construal2014connected}.
 
 %Yee und Bailenson fanden heraus, dass die Selbst-Presence Einfluss auf den Proteus-Effekt hat. Je höher die Selbst-Presence einer Person in der \ac{vr}, desto stärker wirkt auch der Proteus-Effekt. Der Proteus-Effekt beeinflusst die Person so, dass sozialen Interaktionen der Person denen der sozialen Identifikation seines Avatars ähneln. So nimmt eine Person, das Verhaltensmuster entsprechend zu dem Aussehen des Avatars ein. Je nachdem, wie die Person glaubt, dass bestimmte Verhaltensweisen von dieser, aufgrund des Avatars, erwartet werden \citep{ratan2015leveling}.
 %Diese Abbildung der Verhaltensweisen lässt sich auch im Bezug auf Gruppen beobachten. Die Person wird sich in einer Gruppe so Verhalten, wie die Gruppenkonformität es vorgibt.
@@ -493,20 +494,20 @@ Es wurden zahlreiche weitere Studien durchgeführt, um den Einfluss von Avataren
 
 Es stellt sich die Frage, ob ein Avatar menschenähnlich aussehen sollte. Dieser Frage gingen George, Eiband, Hufnagel und Hussman \citep{george2018trusting} in ihrer Forschung nach und verglichen, ob sich mehr Vertrauen zwischen einem menschenähnlichen oder einem roboterartigen Avatar aufbauen lässt.
 Dazu schufen sie ein Szenario, in dem Personen mittels eines \ac{hmd}, ein Social-Dilemma-Scenario \footnote{Situationen, in denen - die rationale Verfolgung von Eigeninteressen zu einer kollektiven Katastrophe führen kann.} erlebten. Sie fanden keinen signifikanten Unterschied in der Vertrauenswürdigkeit zwischen menschenähnlichen und roboterartigen Avataren. Jedoch wurde ein größeres Gefühl von Gemeinsamkeit festgestellt, wenn mit einem menschenähnlichen Avatar interagiert wurde \citep{kerr1983motivation}.
-George, Eiband, Hufnagel und Hussman erwähnten weiterhin in ihrer Studie, dass gute Grafik und realistisches Verhalten durch beispielsweise Mikrogestikulationen und soziale Interaktionen den Aufbau von \textit{Co-Presence} unterstützen \citep{george2018trusting}.
+George, Eiband, Hufnagel und Hussman erwähnten weiterhin in ihrer Studie, dass gute Grafik und realistisches Verhalten durch beispielsweise Mikrogestikulationen und soziale Interaktionen den Aufbau von \textit{Co-Präsenz} unterstützen \citep{george2018trusting}.
 
 Dodds fand heraus, dass ein Selbst-Avatar einen wichtigen Faktor zur Erhöhung der Kommunikation in einem \ac{sve} darstellt \citep[1-11]{dodds2011talk}.
 \label{AvatarTrust}
-Um den Einfluss des Grades des Realismus unter Avataren zu erforschen, führten Riedl, Mohr und Kenning (\citep{riedl2014trusting}) eine Studie zum Vertrauensaufbau unter Menschen im Vergleich zu Avataren mit menschenähnlichen Gesichtern durch. Sie fanden heraus, dass es Personen leichter fällt einer realen Person, zu vertrauen als einem Avatar mit menschenähnlichem Gesicht. Es wurde der Frontalkortex - die Gehirnregion, die dafür verantwortlich ist, die Gedanken und Gefühle des Gegenübers zu erahnen - bei Interaktionen mit Menschen mehr angeregt als bei Interaktionen mit Avataren mit menschenähnlichen Gesichtern.
+Um den Einfluss des Grades des Realismus unter Avataren zu erforschen, führten Riedl, Mohr und Kenning \citep{riedl2014trusting} eine Studie zum Vertrauensaufbau unter Menschen im Vergleich zu Avataren mit menschenähnlichen Gesichtern durch. Sie fanden heraus, dass es Personen leichter fällt einer realen Person, zu vertrauen als einem Avatar mit menschenähnlichem Gesicht. Es wurde der Frontalkortex - die Gehirnregion, die dafür verantwortlich ist, die Gedanken und Gefühle des Gegenübers zu erahnen - bei Interaktionen mit Menschen mehr angeregt als bei Interaktionen mit Avataren mit menschenähnlichen Gesichtern.
 Vertrauen zwischen Menschen wird jedoch in der gleichen Geschwindigkeit aufgebaut wie zwischen Menschen und Avataren \citep{riedl2014trusting}.
 
-Somit lässt sich feststellen, dass ein höherer Grad an Realismus den Vertrauensaufbau fördert, jedoch kein signifikanter Unterschied in der Geschwindigkeit  des Vertrauensaufbau zwischen einem menschenähnlichen sowie roboterähnlichen Avatar besteht. Diese Vermutung bestätigten auch Bente, Rüggenberg und Krämer \citep[p.54-59]{bente2004social} indem sie eine Studie zur \textit{Social-Presence} von Avataren in einem \ac{sve} durchführten. Das \ac{sve} war ähnlich einer Videokonferenz aufgebaut. Es waren keine \ac{hmd}'s vorhanden und die Teilnehmer haben sich während des Experiments nicht gesehen. In der Studie wurden die Kommunikationsarten, Face-to-Face, Chat und auf Avataren basierende Kommunikationsmedien untereinander verglichen, um Unterschiede in der \textit{Social-Presence} sowie dem zwischenmenschlichen Vertrauen zu untersuchen.
+Somit lässt sich feststellen, dass ein höherer Grad an Realismus den Vertrauensaufbau fördert, jedoch kein signifikanter Unterschied in der Geschwindigkeit  des Vertrauensaufbau zwischen einem menschenähnlichen sowie roboterähnlichen Avatar besteht. Diese Vermutung bestätigten auch Bente, Rüggenberg und Krämer \citep[s.54-59]{bente2004social} indem sie eine Studie zur \textit{Sozialen-Präsenz} von Avataren in einem \ac{sve} durchführten. Das \ac{sve} war ähnlich einer Videokonferenz aufgebaut. Es waren keine \ac{hmd}'s vorhanden und die Teilnehmer haben sich während des Experiments nicht gesehen. In der Studie wurden die Kommunikationsarten, Face-to-Face, Chat und auf Avataren basierende Kommunikationsmedien untereinander verglichen, um Unterschiede in der \textit{Sozialen-Präsenz} sowie dem zwischenmenschlichen Vertrauen zu untersuchen.
 Es wurde festgestellt, dass wenig kognitives Vertrauen während der Nutzung des \ac{sve} zu Avataren aufgebaut werden konnte, während Face-to-Face, Telefon und Chatkommunikationen besser abschnitten. Weiterhin wurde weniger affektives Vertrauen im \ac{sve} als bei der Nutzung eines Telefons oder während der Face-to-Face Kommunikation aufgebaut.
-Bente, Rüggenberg und Krämer \citep[p.54-59]{bente2004social} gehen davon aus, dass dies mit der Neuheit der Technologie zusammenhängt.
+Bente, Rüggenberg und Krämer \citep[s.54-59]{bente2004social} gehen davon aus, dass dies mit der Neuheit der Technologie zusammenhängt.
 
 \subsubsection{Avatare und Kommunikation}
 Allgemeine Kommunikation findet nicht nur mit Wörtern, sondern auch über Körpersprache wie Gestiken oder andere nonverbale Verhaltensmuster, statt. Durch \ac{sve}'s ist es nun möglich diese reine Text oder Bildbasierte Kommunikation durch Gestikulationen eines Avatars zu ersetzen. Durch diesen zusätzlichen visuellen Aspekt ist eine ganz neue Art und Weise der Kommunikation möglich, die auch gemessen werden kann. 
-Nichtverbale Kommunikation -Beispielsweise nur via Text- erzeugt keinen Mehrwert an Vertrauen, Zusammenhalt und erzielt keine ausreichend gute Kommunikation \citep[p.81]{haslam2003social}.
+Nichtverbale Kommunikation -Beispielsweise nur via Text- erzeugt keinen Mehrwert an Vertrauen, Zusammenhalt und erzielt keine ausreichend gute Kommunikation \citep[s.81]{haslam2003social}.
 Nonverbale Kommunikation kann Gesichtsausdrücke, Blicke, Bewegungen etc. umfassen. Kendon definiert im \dq{}Kendon Kontinuum\dq{} mit dem Begriff \dq{}Gestik\dq{} unwissende Gestiken (natürliche Körpersprache) bis hin zu \dq{} Zeichen\flqq, welche alle durch Gestikulation erzeugten Zeichen (z.B. O.K. Handzeichen ), beinhaltet \citep[37]{mcneill1992hand}.
 Im Rahmen dieser Arbeit, ist mit Gestikulation jedoch die gesamte Körperbewegung des Avatars gemeint.
 Mehrabian zeigt in seiner Forschung, dass nonverbale Kommunikation zu 55\% dafür verantwortlich ist, ob ein gesprochenes Wort Positiv, Negativ oder Neutral interpretiert wird. Die Tonhöhe trägt zu 38\% und das eigentlich gesprochene Wort mit 7\% zur Interpretation bei \citep[43]{mehrabian1971silent}.
@@ -514,7 +515,7 @@ Da 7\% des gesprochenen Wortes und 38\% der Tonhöhe zu Interpretation der nonve
 
 \subsubsection{Uncanny-Valley}
 \label{Uncanny-Valley}
-Je menschenähnlicher ein Roboter (u.a. auch ein Avatar) aussieht und je mehr menschenähnliche Bewegungen ein Roboter ausführt, desto mehr positive Gefühle bringt dieser den Personen entgegen, die mit diesem in Berührung kommen. Ab einem bestimmten Punkt des Realismus schlägt dieses Phänomen jedoch um und der Roboter wirkt viel mehr verstörend und ruft  Ablehnung, Verstörung und Angst hervor. Dieses Phänomen und dieser exakte Grad des Realismus wird als Uncanny-Valley Effekt bezeichnet. In \textbf{Abbildung \textit{\ref{UncannyValley}}} ist eine beschreibung dieses Effektes zu sehen \citep[p.352-353]{gast2011unheimliche}.
+Je menschenähnlicher ein Roboter (u.a. auch ein Avatar) aussieht und je mehr menschenähnliche Bewegungen ein Roboter ausführt, desto mehr positive Gefühle bringt dieser den Personen entgegen, die mit diesem in Berührung kommen. Ab einem bestimmten Punkt des Realismus schlägt dieses Phänomen jedoch um und der Roboter wirkt viel mehr verstörend und ruft  Ablehnung, Verstörung und Angst hervor. Dieses Phänomen und dieser exakte Grad des Realismus wird als Uncanny-Valley Effekt bezeichnet. In \textbf{Abbildung \textit{\ref{UncannyValley}}} ist eine beschreibung dieses Effektes zu sehen \citep[s.352-353]{gast2011unheimliche}.
 
 \begin{figure}[H]
 		\begin{footnotesize}
@@ -560,7 +561,7 @@ Der Begriff \textbf{Vertrauen} beschreibt ein psychologisches Konzept, das jeden
 Ein Politiker wirbt um das Vertrauen seiner Wähler, Unternehmer beschreiben sich selbst als Geschäftspartner des Vertrauens oder es wird der \dq{}Arzt des Vertrauens\dq{} empfohlen.
 
 Vertrauen im Zusammenhang mit dem Begriff \dq{}\ac{vr}\dq{} kann auf zwei unterschiedliche Art und Weisen betrachtet werden. Das Vertrauen in die \ac{vr}-Technologie sowie das zwischenmenschliche Vertrauen, das in der \ac{vr} zwischen 2 oder mehreren Personen gebildet wird.
-%\citep[p.10]{trustInVRTechnology}
+%\citep[s.10]{trustInVRTechnology}
 %Mangelndes Vertrauen in eine Technologie, kann Nutzer dran hindern, diese zu Nutzen. \citep{trustInVRTechnology}
 
 Da sich diese Arbeit mit dem zwischenmenschlichen Vertrauen beschäftigt, wird das Vertrauen in die Akzeptanz der \ac{vr} nicht weiter behandelt.
@@ -569,23 +570,21 @@ Vertrauen wird in dieser Ausarbeitung als bilaterales Konstrukt zwischen einer v
 % https://sci-hub.ren/10.4337/9781847202819.00008
 Aufgrund der Vielseitigkeit von Vertrauen, gibt es unterschiedliche Definitionen. \newline
 Eine der ersten Definitionen von Vertrauen wurde 1967 von Rotter aufgestellt. Er definiert Vertrauen als 
-\\
-\dq{}die Erwartung eines Individuums oder einer Gruppe, dass man sich auf das Wort, das Versprechen, die mündliche oder schriftliche Aussage eines anderen Individuums oder einer Gruppe verlassen kann\dq{} \citep[p.651]{rotter1967new}.
-\\
-Die jedoch meist verbreitetste und akzeptierteste Definition stammt von Meyer \citep[p.712]{mayer1995integrative}. So definiert er Vertrauen als 
-\\ 
-\dq{}die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{}
-\\
+\begin{quote}
+\dq{}die Erwartung eines Individuums oder einer Gruppe, dass man sich auf das Wort, das Versprechen, die mündliche oder schriftliche Aussage eines anderen Individuums oder einer Gruppe verlassen kann\dq{} \citep[s.651]{rotter1967new}.
+\end{quote}
+Die jedoch meist verbreitetste und akzeptierteste Definition stammt von Meyer \citep[s.712]{mayer1995integrative}. So definiert er Vertrauen als 
+\begin{quote} \dq{}die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{} \end{quote}
 Jede zwischenmenschliche Beziehung beginnt mit einer frühen Phase der Vertrauensbildung. Diese frühe Phase kann von Unsicherheiten und Zweifel geprägt sein. Das gegenseitige Vertrauen, das man sich anschließend schenkt, muss anfänglich erst einmal ausgelotet werden. 
-%\citep[p.166-168]{meyerson1996swift}
+%\citep[s.166-168]{meyerson1996swift}
 
 Während der frühen Phase der Vertrauensbildung entscheidet sich, ob eine Beziehung aufrechterhalten wird oder nicht. Unterbewusst bildet sich ein Gefühl von Zuversicht und Sicherheit oder ein Gefühl von Spannung, Zweifel und Skepsis dem Interaktionspartner gegenüber. 
 Dabei ist es egal, ob sich dafür entschieden wird, jemandem zu vertrauen, oder nicht. Auf jeden Fall beeinflusst die Stärke des positiven oder negativen Vertrauensgefühls die Effektivität der Zusammenarbeit. Vertrauen kann es einfach oder schwierig machen, mit einer anderen Person zu arbeiten und Ziele in einer Gruppe oder einem Team zu erreichen.
-Früher Vertrauensaufbau ist daher der Schlüssel zur erfolgreichen Zusammenarbeit \citep[p.405-406]{bigley1998straining}.
-Die initiale Phase der Vertrauensbildung wirkt sich auf das kognitive und das affektive Vertrauen aus, welche einen starken Einfluss auf das sich entwickelnde Vertrauensmodell zu einer Person haben. In dieser Phase sind diese beiden Vertrauensarten anfällig für Veränderungen \citep[p.461-462]{baldwin1992relational}.
+Früher Vertrauensaufbau ist daher der Schlüssel zur erfolgreichen Zusammenarbeit \citep[s.405-406]{bigley1998straining}.
+Die initiale Phase der Vertrauensbildung wirkt sich auf das kognitive und das affektive Vertrauen aus, welche einen starken Einfluss auf das sich entwickelnde Vertrauensmodell zu einer Person haben. In dieser Phase sind diese beiden Vertrauensarten anfällig für Veränderungen \citep[s.461-462]{baldwin1992relational}.
 Meinungen und Annahmen, die sich frühzeitig bilden, prägen sich somit auch stark auch auf die zukünftige Meinung über die zu vertrauenden Personen aus.
 
-Auch im Unternehmertum muss sich mit dem Konzept des Vertrauens beschäftigt werden, um erfolgreich arbeiten zu können. Ohne Vertrauen in ein Team oder in unterschiedliche Personen, fällt es schwer, Risiken einzugehen. Ist Vertrauen vorhanden, wird man nicht mit der Angst konfrontiert, dass andere Personen einen ausnutzen könnten. Betrachtet man Vertrauen im Unternehmen auf der Ebene von Teams, setzen sich die vertrauenden Personen sowie die zu vertrauenden Personen aus mehreren Teammitgliedern zusammen. \citep[p.1152]{breuer2016does}.
+Auch im Unternehmertum muss sich mit dem Konzept des Vertrauens beschäftigt werden, um erfolgreich arbeiten zu können. Ohne Vertrauen in ein Team oder in unterschiedliche Personen, fällt es schwer, Risiken einzugehen. Ist Vertrauen vorhanden, wird man nicht mit der Angst konfrontiert, dass andere Personen einen ausnutzen könnten. Betrachtet man Vertrauen im Unternehmen auf der Ebene von Teams, setzen sich die vertrauenden Personen sowie die zu vertrauenden Personen aus mehreren Teammitgliedern zusammen. \citep[s.1152]{breuer2016does}.
 
  
 % "a willingness of a party to be vulnerable to the actions of another party based on the expectation that the other will perform a particular action important to the trustor, irrespective of the ability to monitor or control that party"
@@ -593,44 +592,44 @@ Auch im Unternehmertum muss sich mit dem Konzept des Vertrauens beschäftigt wer
 		\subsubsection{Zwischenmenschliches Vertrauen}
 %	https://sci-hub.tw/https://doi.org/10.1177/1046496408323569
 Während Vertrauen in die \ac{vr}-Technologie sich mit der Akzeptanz der Technologie an sich beschäftigt, beschäftigt sich zwischenmenschliches Vertrauen mit dem Vertrauen zwischen zwei oder mehreren Personen \citep{mcknight2011trust}.
-Vertrauen wird nicht statisch und einseitig betrachtet. Eine Person kann nicht nur \dq{}vertrauen\dq{} oder \dq{}nicht vertrauen\dq{}. Vertrauen ist ein dynamisches Konstrukt, welches sich mit der Zeit verändert. Es kann in eine Bildungs-, Stabilisierungs- und Abnehmphase unterteilt werden \citep[p.396]{rousseau1998not}.
+Vertrauen wird nicht statisch und einseitig betrachtet. Eine Person kann nicht nur \dq{}vertrauen\dq{} oder \dq{}nicht vertrauen\dq{}. Vertrauen ist ein dynamisches Konstrukt, welches sich mit der Zeit verändert. Es kann in eine Bildungs-, Stabilisierungs- und Abnehmphase unterteilt werden \citep[s.396]{rousseau1998not}.
 
-Viele Psychologen, die sich mit dem Thema Vertrauen beschäftigen, gehen heute davon aus, dass zwischenmenschliches Vertrauen aus einem zweidimensionalen Konstrukt besteht \citep{johnson2005cognitive} \citep{cook1980new}. So ist Mooradian der Ansicht, dass Vertrauen als \dq{}Eigenschaft\dq{} oder als \dq{}Zustand\dq{} gesehen wird \citep[p.524-525]{mooradian2006trusts}.
+Viele Psychologen, die sich mit dem Thema Vertrauen beschäftigen, gehen heute davon aus, dass zwischenmenschliches Vertrauen aus einem zweidimensionalen Konstrukt besteht \citep{johnson2005cognitive} \citep{cook1980new}. So ist Mooradian der Ansicht, dass Vertrauen als \dq{}Eigenschaft\dq{} oder als \dq{}Zustand\dq{} gesehen wird \citep[s.524-525]{mooradian2006trusts}.
 
 	\subsubsection{Vertrauen als Eigenschaft }
 \label{Vertrauen als Eigenschaft}
-Wird Vertrauen als Eigenschaft betrachtet, spiegelt dies die Einstellung zum Vertrauen einer Person wider. Diese Einstellung zum Vertrauen ist langlebig und wird nicht all zu schnell auf oder abgebaut. Unabhängig von einer Situation, in der sich diese Person befindet, wird davon ausgegangen, dass diese Eigenschaft aus dem Temperament oder der Lebenserfahrungeiner Person entsteht. Dieses Vertrauen ist das Grundlevel an Vertrauen, das eine Person in eine neue zwischenmenschliche Beziehung von Anfang an mitbringt. \citep[p.11]{couch1996assessment}. Es ist jedoch nicht all zu bekannt, wie generelles Vertrauen genau gebildet wird \citep[p.409]{stolle2002trusting}.
+Wird Vertrauen als Eigenschaft betrachtet, spiegelt dies die Einstellung zum Vertrauen einer Person wider. Diese Einstellung zum Vertrauen ist langlebig und wird nicht all zu schnell auf oder abgebaut. Unabhängig von einer Situation, in der sich diese Person befindet, wird davon ausgegangen, dass diese Eigenschaft aus dem Temperament oder der Lebenserfahrungeiner Person entsteht. Dieses Vertrauen ist das Grundlevel an Vertrauen, das eine Person in eine neue zwischenmenschliche Beziehung von Anfang an mitbringt. \citep[s.11]{couch1996assessment}. Es ist jedoch nicht all zu bekannt, wie generelles Vertrauen genau gebildet wird \citep[s.409]{stolle2002trusting}.
 
-Generelles Vertrauen impliziert, dass den meisten Personen vertraut werden kann, oder dass man im Fall von generellem Misstrauen, Personen nicht vertrauen kann. \citep[p.409]{stolle2002trusting}
+Generelles Vertrauen impliziert, dass den meisten Personen vertraut werden kann, oder dass man im Fall von generellem Misstrauen, Personen nicht vertrauen kann. \citep[s.409]{stolle2002trusting}
 
-Der \textit{generelle Hang zum Vertrauen} ist nicht situationsabhängig, sondern stellt eine längerfristige Konstante auf Basis des Grundvertrauens einer Person dar. Grundvertrauen setzt sich dabei aus der individuellen Eigenschaft des Hangs zum Vertrauen einer einzelnen Person sowie die Grundstimmung gegenüber Personen im Allgemeinen, zusammen \citep[p.11]{couch1996assessment}.
+Der \textit{generelle Hang zum Vertrauen} ist nicht situationsabhängig, sondern stellt eine längerfristige Konstante auf Basis des Grundvertrauens einer Person dar. Grundvertrauen setzt sich dabei aus der individuellen Eigenschaft des Hangs zum Vertrauen einer einzelnen Person sowie die Grundstimmung gegenüber Personen im Allgemeinen, zusammen \citep[s.11]{couch1996assessment}.
 %Da in dieser Studie mit einem Team von drei Leuten gearbeitet wird, spiegelt der Hang zum Vertrauen einer Person den generellen Vertrauensvorschuss wider, den eine Person dem Team gewährt.
 
 	\subsubsection{Vertrauen als Zustand}
 \label{Vertrauen als Zustand}
-Wird \textit{Vertrauen als Zustand} betrachtet, so kann sich dieses Vertrauen im Laufe der Zeit, z.B. durch Interaktion mit einer anderen Person, ändern. Dieser Zustand des Vertrauens spiegelt sich auch in Meyers \citep[p.712]{mayer1995integrative} vorher erwähnter Definition von Vertrauen wider:\\ \dq die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{} \\
+Wird \textit{Vertrauen als Zustand} betrachtet, so kann sich dieses Vertrauen im Laufe der Zeit, z.B. durch Interaktion mit einer anderen Person, ändern. Dieser Zustand des Vertrauens spiegelt sich auch in Meyers \citep[s.712]{mayer1995integrative} vorher erwähnter Definition von Vertrauen wider:
+\begin{quote}
+\dq{}die Bereitschaft einer Person, für die Handlungen einer anderen Person anfällig zu sein, basierend auf der Erwartung, dass die zu vertrauende Person eine bestimmte, für den Vertrauensgeber wichtige Handlung ausführen wird, unabhängig von der Möglichkeit, diese Person zu überwachen oder zu kontrollieren.\dq{}
+\end{quote}
 Es wird einer Person oder einem Team ein Vertrauensvorschuss gewährt, der sich jedoch jederzeit verändern kann, wenn dieser gebrochen wird.
 
-%Cook und Wall beschreiben diese Zwei Dimensionen als  \begin{itemize}
-%\item{ “faith in the trustworthy intentions of others”, sowie}
-%\item{“confidence in the ability of others, yielding ascriptions of capability and reliability”.}
-%\end{itemize}
-
-Das Konzept des Vertrauens als Zustand lässt sich laut Lewis \citep[p.970-971]{lewis1985trust} in zwei Teile unterteilen.\newline
-Laut seinen Forschungen basiert Vertrauen \dq{}auf einem kognitiven Prozess, der zwischen vertrauenswürdigen, misstrauischen und unbekannten Personen und Institutionen unterscheidet. In diesem Sinne wählen wir kognitiv aus, wem wir in welcher Hinsicht und unter welchen Umständen vertrauen, und wir stützen die Wahl auf das, was wir als \dq{}gute Gründe\dq{} ansehen, die einen Beweis für die Vertrauenswürdigkeit darstellen\dq{} \citep[p.970]{lewis1985trust}.
+Das Konzept des Vertrauens als Zustand lässt sich laut Lewis \citep[s.970-971]{lewis1985trust} in zwei Teile unterteilen.\newline
+Laut seinen Forschungen basiert Vertrauen \dq{}auf einem kognitiven Prozess, der zwischen vertrauenswürdigen, misstrauischen und unbekannten Personen und Institutionen unterscheidet. In diesem Sinne wählen wir kognitiv aus, wem wir in welcher Hinsicht und unter welchen Umständen vertrauen, und wir stützen die Wahl auf das, was wir als \dq{}gute Gründe\dq{} ansehen, die einen Beweis für die Vertrauenswürdigkeit darstellen\dq{} \citep[s.970]{lewis1985trust}.
 
 Somit basiert das \textbf{kognitiv aufgebaute Vertrauen} auf einer von uns definierten Logik statt auf einer emotionalen Komponente. Diese \dq{}guten Gründe\dq{} können auch leicht gebrochen werden, indem der Vertrauensvorschuss, den wir durch das kognitive Vertrauen unserem Interaktionspartner vorschießen, gebrochen wird.
-Das kognitive Vertrauen kann kurzfristig aufgebaut werden und ist leicht anfällig gegen äußerliche Einflüsse \citep[p.970]{lewis1985trust}. 
+Das kognitive Vertrauen kann kurzfristig aufgebaut werden und ist leicht anfällig gegen äußerliche Einflüsse \citep[s.970]{lewis1985trust}. 
 
-Weiterhin besitzt Vertrauen als \dq{}Zustand\dq{} noch eine affektive Komponente.\\ \dq{}Diese \textbf{affektive Komponente des Vertrauens} besteht in einer emotionalen Bindung zwischen allen, die an der Beziehung beteiligt sind. Wie die affektiven Bindungen der Freundschaft und der Liebe schafft Vertrauen eine soziale Situation, in der intensive emotionale Investitionen getätigt werden können, und deshalb weckt der Verrat eines persönlichen Vertrauens ein Gefühl der emotionalen Empörung bei dem Betrogenen. Der Vertrauensbruch trifft die Grundlage der Beziehung selbst, nicht nur den spezifischen Inhalt des Verrats. Diese emotionale Komponente ist bei allen Arten von Vertrauen vorhanden, aber normalerweise ist sie bei engem zwischenmenschlichem Vertrauen am intensivsten\dq{} \citep[p.971]{lewis1985trust}
-\\
+Weiterhin besitzt Vertrauen als \dq{}Zustand\dq{} noch eine affektive Komponente.
+\begin{quote}
+\dq{}Diese \textbf{affektive Komponente des Vertrauens} besteht in einer emotionalen Bindung zwischen allen, die an der Beziehung beteiligt sind. Wie die affektiven Bindungen der Freundschaft und der Liebe schafft Vertrauen eine soziale Situation, in der intensive emotionale Investitionen getätigt werden können, und deshalb weckt der Verrat eines persönlichen Vertrauens ein Gefühl der emotionalen Empörung bei dem Betrogenen. Der Vertrauensbruch trifft die Grundlage der Beziehung selbst, nicht nur den spezifischen Inhalt des Verrats. Diese emotionale Komponente ist bei allen Arten von Vertrauen vorhanden, aber normalerweise ist sie bei engem zwischenmenschlichem Vertrauen am intensivsten\dq{} \citep[s.971]{lewis1985trust}
+\end{quote}
 Ein Beispiel für affektives-Vertrauen ist die Liebesbeziehung zwischen zwei Personen. Das affektive Vertrauen baut sich mit der Zeit langsam auf und kann durch verschiedene Ereignisse erschüttert oder gestärkt werden. Es kann eher durch Emotionen statt durch Logik charakterisiert werden.
-\textbf{Affektives Vertrauen} ergibt sich aus \textit{zwischenmenschlichen emotionalen Verbindungen und gegenseitiger Fürsorge}, während individuelles \textbf{kognitives Vertrauen} auf der \textit{Überzeugung in die Fähigkeiten oder in die Zuverlässigkeit eines anderen basiert}. \citep[p.30]{mcallister1995affect}.
+\textbf{Affektives Vertrauen} ergibt sich aus \textit{zwischenmenschlichen emotionalen Verbindungen und gegenseitiger Fürsorge}, während individuelles \textbf{kognitives Vertrauen} auf der \textit{Überzeugung in die Fähigkeiten oder in die Zuverlässigkeit eines anderen basiert}. \citep[s.30]{mcallister1995affect}.
 
 Vertrauensaufbau zwischen verschiedenen Personen beinhaltet somit zwei Komponenten. Beide Komponenten sind bei der Teamgründung von großer Bedeutung. 
-McAllister schreibt diesbezüglich, dass die Grunderwartung der kognitiven Komponente erst einmal erfüllt werden müsse bevor mehr in die Beziehung zu den einzelnen Personen eines Teams investiert werden würde. Je mehr ein Team zusammenarbeitet und sich kennenlernt, umso wichtiger wird die affektive Komponente der Vertrauensbildung \citep[p.30]{mcallister1995affect}.
+McAllister schreibt diesbezüglich, dass die Grunderwartung der kognitiven Komponente erst einmal erfüllt werden müsse bevor mehr in die Beziehung zu den einzelnen Personen eines Teams investiert werden würde. Je mehr ein Team zusammenarbeitet und sich kennenlernt, umso wichtiger wird die affektive Komponente der Vertrauensbildung \citep[s.30]{mcallister1995affect}.
 
-Laut Studien von McKnight kann ein starkes Vertrauen in frühen Teamgründungsphasen entstehen. Empfinden Teammitglieder beispielsweise den Teamgründungsprozess als strukturiert, ergibt sich dadurch ein höheres kognitives Vertrauen und es folgt ein höheres Gesamtvertrauen in das Team \citep[p.478-479]{mcknight1998initial}.
+Laut Studien von McKnight kann ein starkes Vertrauen in frühen Teamgründungsphasen entstehen. Empfinden Teammitglieder beispielsweise den Teamgründungsprozess als strukturiert, ergibt sich dadurch ein höheres kognitives Vertrauen und es folgt ein höheres Gesamtvertrauen in das Team \citep[s.478-479]{mcknight1998initial}.
 %Ich glaube, ich habe die Aufgaben des Versuchsleiters gut erledigt -> Auf Kognitives Vertrauen analisieren Pro person! Hier ist einseitige Signifikanz in der Korrelation von Wie Erfolgreich haben Sie ihrer Meinung nach die vom Versuchleiter ... mit Cog_Trust_Windsorizing vorhanden!
 
 
@@ -656,16 +655,16 @@ Vertrauen wird in einer Gruppe im allgemeinen als Hoch angenommen. Weiterhin wir
 
 %Irgendwie ist das gesamte Kapitel sehr komisch ...
 Es wird angenommen, dass starkes interpersonelles Vertrauen die Teamperformance positiv beeinflusst \citep{mcallister1995affect} \citep{mayer1995integrative} \citep{dirks2002trust}.
-Kognitives Vertrauen in Teams lässt sich nur sehr schwierig aufrechterhalten. So könnte es sein, dass ein Team einen hohen kognitiven Vertrauenswert aufweist, dann jedoch mit einem Rückschlag bei der Bearbeitung einer Aufgabe konfrontiert wird und dies eine Verringerung des kognitiven Vertrauens Folge hat \citep[p.29-31]{mcallister1995affect}.
-Demgegenüber wird das affektive Vertrauen im Team durch gemeinsame Rückschläge nicht nachhaltig verringert. Es benötigt eine längerfristige emotionale Krise innerhalb des Teams, um eine Verringerung des affektiven Vertrauens zu verursachen. Es wird angenommen, dass das affektive Vertrauen eine längerfristige und stärkere Bindung als das kognitive Vertrauen schafft \citep[p.29-31]{mcallister1995affect}.
+Kognitives Vertrauen in Teams lässt sich nur sehr schwierig aufrechterhalten. So könnte es sein, dass ein Team einen hohen kognitiven Vertrauenswert aufweist, dann jedoch mit einem Rückschlag bei der Bearbeitung einer Aufgabe konfrontiert wird und dies eine Verringerung des kognitiven Vertrauens Folge hat \citep[s.29-31]{mcallister1995affect}.
+Demgegenüber wird das affektive Vertrauen im Team durch gemeinsame Rückschläge nicht nachhaltig verringert. Es benötigt eine längerfristige emotionale Krise innerhalb des Teams, um eine Verringerung des affektiven Vertrauens zu verursachen. Es wird angenommen, dass das affektive Vertrauen eine längerfristige und stärkere Bindung als das kognitive Vertrauen schafft \citep[s.29-31]{mcallister1995affect}.
 
-Aktuell gibt es nicht viele Studien, die Testen, sich Vertrauen in \ac{vts} aufbauen und halten lässt \citep[p.8-23]{duarte2006mastering}.
+Aktuell gibt es nicht viele Studien, die Testen, sich Vertrauen in \ac{vts} aufbauen und halten lässt \citep[s.8-23]{duarte2006mastering}.
 Bisherige Studien, die einen Zusammenhang zwischen Vertrauen und Team-Effektivität untersuchen, haben positive Zusammenhänge \citep{davis2000trusted}, keine Zusammenhänge \citep{hertel2004managing} sowie negative Zusammenhänge \citep{dirks1999effects} festgestellt.
 
 Vertrauen im Team wird meist nur eindimensional gemessen, obwohl es ein zweidimensionales Konstrukt ist.
-Polzer führte eine Studie über räumlich getrennte Teams und deren Vertrauensbildung mittels einer eindimensionalen affektiven Vertrauensmessung durch. Er fand heraus, dass geografisch getrennte Teams eher zu Konflikten neigen als nicht geografisch getrennte Teams. Die Distanz hat negative Auswirkungen auf das Vertrauen zwischen den einzelnen Teammitgliedern \citep[p.682]{polzer2006extending}.
-Prichard und Ashleigh führten 2007 eine Studie mit einer eindimensionalen kognitiven Vertrauensmessung durch und fanden heraus, dass Teambuildingmaßnahmen das Vertrauen der einzelnen Teammitglieder untereinander verstärkt \citep[p.704]{prichard2007effects}.
-In einer weiteren Studie (Dirks, 1999) wurde die multidimensionale Komponente der Vertrauensbildung aufgegriffen, jedoch stand für die Versuchsdurchführung nur ein 10-minütiges Zeitfenster zur Verfügung. In diesen 10-Minuten konnte festgestellt werden, dass die affektive Komponente nicht gebildet und dadurch nicht gemessen werden konnte \citep[p.445]{mayer1995integrative}. Daher wird diese Studie ebenfalls nur als eindimensional betrachtet.
+Polzer führte eine Studie über räumlich getrennte Teams und deren Vertrauensbildung mittels einer eindimensionalen affektiven Vertrauensmessung durch. Er fand heraus, dass geografisch getrennte Teams eher zu Konflikten neigen als nicht geografisch getrennte Teams. Die Distanz hat negative Auswirkungen auf das Vertrauen zwischen den einzelnen Teammitgliedern \citep[s.682]{polzer2006extending}.
+Prichard und Ashleigh führten 2007 eine Studie mit einer eindimensionalen kognitiven Vertrauensmessung durch und fanden heraus, dass Teambuildingmaßnahmen das Vertrauen der einzelnen Teammitglieder untereinander verstärkt \citep[s.704]{prichard2007effects}.
+In einer weiteren Studie (Dirks, 1999) wurde die multidimensionale Komponente der Vertrauensbildung aufgegriffen, jedoch stand für die Versuchsdurchführung nur ein 10-minütiges Zeitfenster zur Verfügung. In diesen 10-Minuten konnte festgestellt werden, dass die affektive Komponente nicht gebildet und dadurch nicht gemessen werden konnte \citep[s.445]{mayer1995integrative}. Daher wird diese Studie ebenfalls nur als eindimensional betrachtet.
 Mehrdimensionale und zuverlässige Vertrauensforschung ist im traditionellen Sinne nur mittels Langzeitstudien möglich, da das kognitive und besonders das affektive Vertrauen diese Zeitliche Komponente benötigt \citep{jones1998experience}.
 
 Vertrauensaufbau im Team nimmt eine wichtige Rolle in \ac{vts} ein, denn im Gegensatz zu traditionellen geformten Teams haben Teammitglieder eines virtuellen Team keine Möglichkeit durch geselliges Beisammensein oder durch physischen Kontakt Bindungen aufzubauen, um das gegenseitige Vertrauen zu stärken \citep{TrustAndTheVirtualOrganisation}.
@@ -676,7 +675,7 @@ Vertrauen in einem Team zu fördern ist somit eine Notwendigkeit um Wachstum und
 %\paragraph{Swift-Trust}
 %Swift Trust ist eine form von Vertrauen in kurzzeitig zusammenarbeitenden Teams oder Gruppen. Kurzzeitig aufgestellte Teams besitzen eine endliche Zeitspanne, haben ein klares Ziel welches diese verfolgen und ihr Erfolg wird von guter Koordination bestimmt.
 %Für solche Teams gibt es nicht genügend Zeit um ein langfristiges Vertrauensverhältnis durch zum Beispiel Teambuildingmaßnahmen aufzubauen, wie es traditionelle Teams in einer Unternehmensorganisation tun können.
-%Es unterscheidet sich dahingehend vom Kognitiven-Vertrauen dahingehend, dass Swift-Trust nur auf oberflächlichen Informationen über den anderen basiert. Es wird ein Vertrauensvorschuss in das Team gewährt, welcher sich zu einem späteren Zeitpunkt bestätigt oder nicht bestätigt \citep[p.141]{wildman2012trust}, wohingegen kognitives Vertrauen in andere Personen auf einer rationalen Grundlage, die auf der Wahrnehmung von Kompetenz oder Zuverlässigkeit beruht, basiert. \citep[p.970]{lewis1985trust}
+%Es unterscheidet sich dahingehend vom Kognitiven-Vertrauen dahingehend, dass Swift-Trust nur auf oberflächlichen Informationen über den anderen basiert. Es wird ein Vertrauensvorschuss in das Team gewährt, welcher sich zu einem späteren Zeitpunkt bestätigt oder nicht bestätigt \citep[s.141]{wildman2012trust}, wohingegen kognitives Vertrauen in andere Personen auf einer rationalen Grundlage, die auf der Wahrnehmung von Kompetenz oder Zuverlässigkeit beruht, basiert. \citep[s.970]{lewis1985trust}
 
 %Hier am besten noch mehr Schreiben ...
 % vielleicht das ? https://www.researchgate.net/publication/256018364_Trust_and_Team_Effectiveness_A_Meta-Analysis_of_Critical_Contingencies_and_Mediated_Mechanisms
@@ -688,19 +687,19 @@ Im folgenden Kapitel wird definiert, was unter einem Team, einem Virtuellen Team
 
 \subsubsection{Teams}
 \label{team}
-	Ein Team wird als eine \dq{}kleine Gruppe von Menschen mit gleichartigen Fähigkeiten, welche sich in gleicher Weise für das gleiche Ziel und gleiche Arbeitsweisen einsetzen und dies verfolgen\dq{} \citep[p.2]{zenun2007effects}, definiert.
+	Ein Team wird als eine \dq{}kleine Gruppe von Menschen mit gleichartigen Fähigkeiten, welche sich in gleicher Weise für das gleiche Ziel und gleiche Arbeitsweisen einsetzen und dies verfolgen\dq{} \citep[s.2]{zenun2007effects}, definiert.
 	
-Das Verhalten von Personen, die in einem Team arbeiten, lässt sich in \textit{Teamwork} und in  \textit{Taskwork} unterteilen. \citep[p. 541-542]{rousseau2006teamwork}
+Das Verhalten von Personen, die in einem Team arbeiten, lässt sich in \textit{Teamwork} und in  \textit{Taskwork} unterteilen. \citep[s. 541-542]{rousseau2006teamwork}
  \textit{Taskwork} beschreibt dabei, wie die Ausführung von Kernkompetenzen in einem bestimmten Bereich aussieht sowie welche Aufgabe ein Team ausführt.
- \textit{Teamwork} beschreibt beschreibt die gemeinsame Arbeitsleistung um eine Aufgabe zu erreichen.\citep[p. 357]{marks2001temporally}.
+ \textit{Teamwork} beschreibt beschreibt die gemeinsame Arbeitsleistung um eine Aufgabe zu erreichen.\citep[s. 357]{marks2001temporally}.
  
-Die wirtschaftliche Leistung von Unternehmen hängt häufig stark von der Arbeitseffizienz gut funktionierender Teams ab. Gut funktionierende Teams können dabei helfen, die wirtschaftliche Leistung zu verbessern, indem Mitgliedern eines Teams weniger Fehler durch bessere Entscheidungen erzeugen \citep[p. 1-6]{biech2007pfeiffer}. 
+Die wirtschaftliche Leistung von Unternehmen hängt häufig stark von der Arbeitseffizienz gut funktionierender Teams ab. Gut funktionierende Teams können dabei helfen, die wirtschaftliche Leistung zu verbessern, indem Mitgliedern eines Teams weniger Fehler durch bessere Entscheidungen erzeugen \citep[s. 1-6]{biech2007pfeiffer}. 
  
-%Cohen und Bailey \citep[p.557]{cohen1997makes} definieren ein Team als \dq{}eine Ansammlung von Individuen, die in ihren Aufgaben voneinander abhängig sind, die die Verantwortung für die Ergebnisse teilen, die von sich selbst und von anderen als eine intakte soziale Einheit gesehen werden."
+%Cohen und Bailey \citep[s.557]{cohen1997makes} definieren ein Team als \dq{}eine Ansammlung von Individuen, die in ihren Aufgaben voneinander abhängig sind, die die Verantwortung für die Ergebnisse teilen, die von sich selbst und von anderen als eine intakte soziale Einheit gesehen werden."
 %
-%Sala \citep[p.541]{salas2008teams} definiert ein Team als "die voneinander abhängigen Leistungskomponenten, die erforderlich sind, um die Leistung mehrerer Personen effektiv zu koordinieren".
+%Sala \citep[s.541]{salas2008teams} definiert ein Team als "die voneinander abhängigen Leistungskomponenten, die erforderlich sind, um die Leistung mehrerer Personen effektiv zu koordinieren".
 
-%\textbf{Teambuilding} zielt dabei darauf ab, die Haltung oder Einstellung der Personen innerhalb und untereinander eines Teams zu verbessern um das gesamte Team zu verbessern, während \textbf{Teamtraining} drauf abzielt, spezielle Fähigkeiten einzelner Personen zu fördern um das gesamte Team punktuell zu stärken \citep[p. 367-369]{shuffler2011there}.
+%\textbf{Teambuilding} zielt dabei darauf ab, die Haltung oder Einstellung der Personen innerhalb und untereinander eines Teams zu verbessern um das gesamte Team zu verbessern, während \textbf{Teamtraining} drauf abzielt, spezielle Fähigkeiten einzelner Personen zu fördern um das gesamte Team punktuell zu stärken \citep[s. 367-369]{shuffler2011there}.
 		
 
 
@@ -710,7 +709,7 @@ Die wirtschaftliche Leistung von Unternehmen hängt häufig stark von der Arbeit
 
 \ac{vts} teilen viele Eigenschaften herkömmlicher Teams. Es muss jedoch unterschieden werden, wie die virtuelle Komponente des Teams definiert wird und weshalb diese Komponente ein herkömmliches Team zu einem virtuellen Team machen kann. 
 \label{AnforderungenLautSchweitzer}
-Schweizer und Duxbury \citep[p.270]{schweitzer2010conceptualizing}\footnote{Die vollständige Liste von Schweizer und Duxbury findet sich in \textbf{\autoref{criteriaForVirtualTeams}}.} erläutert die 4 größten Kennzeichen eines \ac{vts} in der Literatur.
+Schweizer und Duxbury \citep[s.270]{schweitzer2010conceptualizing}\footnote{Die vollständige Liste von Schweizer und Duxbury findet sich in \textbf{\autoref{criteriaForVirtualTeams}}.} erläutert die 4 größten Kennzeichen eines \ac{vts} in der Literatur.
 \ac{vts} sind :
 \begin{itemize}
 \item Zustande gekommen mit Hilfe von Kommunikationstechnologie. Durch technische Hilfsmittel wird kommuniziert, es werden Entscheidungen getroffen oder Informationen ausgetauscht.
@@ -719,12 +718,12 @@ Schweizer und Duxbury \citep[p.270]{schweitzer2010conceptualizing}\footnote{Die 
 \item Asynchron. \ac{vts} arbeiten zu unterschiedlichen Zeiten/Zeitzonen oder in der selben Zeitzone in unterschiedlichen Schichten.
 \end{itemize}
 
-Einige Autoren nehmen in ihre Definition eines \ac{vts} den Aspekt der zeitlichen Limitierung oder der kulturellen Diversität auf. So besteht ein virtuelles Team für Jarvenpaa und Leidner\citep[p.1-2]{jarvenpaa1999communication} nur für einen bestimmten Zeitraum und es ist zusätzlich kulturell divers. 
+Einige Autoren nehmen in ihre Definition eines \ac{vts} den Aspekt der zeitlichen Limitierung oder der kulturellen Diversität auf. So besteht ein virtuelles Team für Jarvenpaa und Leidner\citep[s.1-2]{jarvenpaa1999communication} nur für einen bestimmten Zeitraum und es ist zusätzlich kulturell divers. 
 
 Wird jedoch aus heutiger Sicht über die Definition von Schweizer oder Jarvenpaa nachgedacht, muss ein virtuelles Team nicht zwangsläufig aus verschiedenen Organisationen bestehen oder asynchron arbeiten. In vielen Unternehmen ist es auch möglich, dass ein virtuelles Team in derselben Zeitzone und ohne kulturelle Diversität oder zeitliche Limitierung zusammen arbeitet.
 Somit bleiben nur noch die Komponenten des Zusammenfindens mithilfe von Kommunikationstechnologie sowie der räumlichen Trennung.
 
-Wird nun die Definition eines Teams von Zenun \citep[p.2]{zenun2007effects} herangezogen, und die virtuelle Komponente in diese mit eingebracht, kann ein virtuelles Team als \\
+Wird nun die Definition eines Teams von Zenun \citep[s.2]{zenun2007effects} herangezogen, und die virtuelle Komponente in diese mit eingebracht, kann ein virtuelles Team als \\
 \dq{}eine kleine, auf Kommunikationstechnologie basierende, räumlich getrennte Gruppe, von Menschen mit gleichartigen Fähigkeiten, welche sich in gleicher Weise für das gleiche Ziel und gleiche Arbeitsweisen einsetzen und dies verfolgen\dq{} \\
 definiert werden.
 
@@ -732,44 +731,44 @@ Laut obiger Definition kann fast jedes Team mittlerweile als virtuelles Team bez
 \subsubsection{Virtuelle Teams und Teambuilding}
 %	https://sci-hub.tw/https://doi.org/10.1108/13527590110395621
 
-Seit einigen Jahren wird die Wichtigkeit von effektiven Teambuildingmaßnahmen in der strategischen Organisationsentwicklung erkannt. Dabei spielt der Wandel hin zu einer globalen, auf Wissen basierten Wirtschaft eine zentrale Rolle \citep{belbin2011management} \citep[p.7]{katzenbach2015wisdom}.
+Seit einigen Jahren wird die Wichtigkeit von effektiven Teambuildingmaßnahmen in der strategischen Organisationsentwicklung erkannt. Dabei spielt der Wandel hin zu einer globalen, auf Wissen basierten Wirtschaft eine zentrale Rolle \citep{belbin2011management} \citep[s.7]{katzenbach2015wisdom}.
 Wirtschaftlicher Erfolg korreliert direkt mit der Fähigkeit eines Unternehmens, Teams organisieren, strukturieren und managen zu können \citep{pasmore1993designing}.
-Der Erfolg eines \ac{vts} ist somit als Nebenprodukt der organisatorischen Fähigkeiten eines Unternehmens zu verstehen \citep[p.5]{kling1994social}.
+Der Erfolg eines \ac{vts} ist somit als Nebenprodukt der organisatorischen Fähigkeiten eines Unternehmens zu verstehen \citep[s.5]{kling1994social}.
 
 Erfolgreiches Teambuilding kann die Effektivität eines \ac{vts} steigern und dazu führen, dass Personen sich mehr mit dem Team identifizieren \citep{kaiser2000student}.
 
-\ac{vts} werden häufig gebildet, um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben mittels computergestützter Kommunikation, im Team koordinieren können \citep[p. 117-119]{peters2007identifying} \citep[p. 1-2]{cascio2003leadership}.
-Das virtuelle Team zu gründen, stellt nicht die Herausforderung dar. Die eigentliche Herausforderung ergibt sich aus den Unterschiedlichen Kulturen, Entfernungen und Zeitzonen, die ein virtuelles Team mitbringt. Wird es geschafft, Vertrauen in das virtuelle Team zu bringen, kann der eigentliche Nachteil der verschiedenen Kulturen, Entfernungen und der Zeitzonen auch zum Vorteil werden. Es wird die kulturelle Diversität gefordert und neue Verhaltensmuster erworben, wodurch neue, kreative Sichtweisen gefördert werden. Durch diese Faktoren ist es letztendlich möglich, Innovativer zu Arbeiten und zu denken \citep{dyer1995team} \citep[p.405-416]{milliken1996searching}.
+\ac{vts} werden häufig gebildet, um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben mittels computergestützter Kommunikation, im Team koordinieren können \citep[s. 117-119]{peters2007identifying} \citep[s. 1-2]{cascio2003leadership}.
+Das virtuelle Team zu gründen, stellt nicht die Herausforderung dar. Die eigentliche Herausforderung ergibt sich aus den Unterschiedlichen Kulturen, Entfernungen und Zeitzonen, die ein virtuelles Team mitbringt. Wird es geschafft, Vertrauen in das virtuelle Team zu bringen, kann der eigentliche Nachteil der verschiedenen Kulturen, Entfernungen und der Zeitzonen auch zum Vorteil werden. Es wird die kulturelle Diversität gefordert und neue Verhaltensmuster erworben, wodurch neue, kreative Sichtweisen gefördert werden. Durch diese Faktoren ist es letztendlich möglich, Innovativer zu Arbeiten und zu denken \citep{dyer1995team} \citep[s.405-416]{milliken1996searching}.
 
 %Die Arbeit kann Länderübergreifend stattfinden, was ein größeres Innovationspotential für Unternehmen zur folge hat.	
-%\ac{vts} haben den Ruf teuer zu sein, die Ziele nicht verfolgen zu können, nie pünktlich und schwierig zu managen zu sein. \citep[p.243-244]{gassmann2003trends}
+%\ac{vts} haben den Ruf teuer zu sein, die Ziele nicht verfolgen zu können, nie pünktlich und schwierig zu managen zu sein. \citep[s.243-244]{gassmann2003trends}
 
 Gerade für \ac{vts} ist die Anfangsphase der Teamgründung von entscheidender Bedeutung. 
-Die Kommunikation in \ac{vts} ist in dieser Phase sehr ergebnisorientiert in der Art und Weise \textit{wie} kommuniziert wird. Dieses Defizit in der sozialen Kommunikation kann die Schlüsselfaktoren eines erfolgreichen Teams beeinträchtigen - soziale und emotionale Beziehungsbildung sowie den Aufbau von Vertrauen \citep[p.378]{ren2007applying}.
+Die Kommunikation in \ac{vts} ist in dieser Phase sehr ergebnisorientiert in der Art und Weise \textit{wie} kommuniziert wird. Dieses Defizit in der sozialen Kommunikation kann die Schlüsselfaktoren eines erfolgreichen Teams beeinträchtigen - soziale und emotionale Beziehungsbildung sowie den Aufbau von Vertrauen \citep[s.378]{ren2007applying}.
 
 Mitglieder von \ac{vts} haben im Gegensatz zu traditionell geformten Teams weniger Möglichkeiten sich zu sehen, zu interagieren oder Konflikte zu lösen. 
-Respekt und gegenseitiges Verständnis sind die Grundbausteine, um Kreativität und Innovation innerhalb eines Teams zu fördern. Die Effektivität eines Teams ist eine direkte Konsequenz daraus. \citep[p.378]{ren2007applying}.
+Respekt und gegenseitiges Verständnis sind die Grundbausteine, um Kreativität und Innovation innerhalb eines Teams zu fördern. Die Effektivität eines Teams ist eine direkte Konsequenz daraus. \citep[s.378]{ren2007applying}.
 
 Eine ideale Teamgründung ist daher in \ac{vts} nicht möglich. 
 %\textbf{(Cianni andWnuck, 1997) ( Hier einfügen oder doch als eigenen Satz stehenlassen? )}
-Für eine optimale Situation würde in einem schon bestehenden Team eine virtuelle Komponente hinzugefügt werden, um auf die Vorteile von schon vorhandenen sozialen Bindungen zugreifen zu können \citep[p.36-37]{holton2001building}.
+Für eine optimale Situation würde in einem schon bestehenden Team eine virtuelle Komponente hinzugefügt werden, um auf die Vorteile von schon vorhandenen sozialen Bindungen zugreifen zu können \citep[s.36-37]{holton2001building}.
 Es sollte folglich sichergestellt werden, dass \ac{vts} während ihres Bestehens bestmöglich in ihrem Aufbau von Vertrauen und sozialen Beziehungen unterstützt werden, um den Erfolg des Teams zu gewährleisten.
 %		\subsubsection{Aktuelle Teambuildingmaßnahmen in virtuellen Teams}
 %		\subsubsection{Kooperativ vs Kompetitive}
 		\subsubsection{Teameffektivität}
 \label{Teameffektivität}
-\textit{Teameffektivität} ist die Fähigkeit eines Teams, so miteinander zu interagieren und sich so zu unterstützen, dass ein zuvor definiertes Ziel des Teams erreicht wird. Da viele externe Faktoren zum Erreichen eines zuvor definierten Ziels beitragen können, ist es wichtig, dass das Team immer einen Fokus auf seine Teameffektivität hat \citep[p.557]{salas2005there}.
-	Es gibt keinen einheitlichen Standard, um die Effektivität eines Teams zu messen. Es wird davon ausgegangen, dass die Effektivität in Gruppen anhand der von der Gruppe produzierten Ergebnissen (Quantität, Qualität, Geschwindigkeit, Kundenzufriedenheit) gemessen werden kann. Der Effekt, dass eine Gruppe Einfluss auf die Produktivität der einzelnen Mitglieder hat, trägt dabei zur Verbesserung der Gesamteffektivität bei \citep[p.309]{guzzo1996teams}.
+\textit{Teameffektivität} ist die Fähigkeit eines Teams, so miteinander zu interagieren und sich so zu unterstützen, dass ein zuvor definiertes Ziel des Teams erreicht wird. Da viele externe Faktoren zum Erreichen eines zuvor definierten Ziels beitragen können, ist es wichtig, dass das Team immer einen Fokus auf seine Teameffektivität hat \citep[s.557]{salas2005there}.
+	Es gibt keinen einheitlichen Standard, um die Effektivität eines Teams zu messen. Es wird davon ausgegangen, dass die Effektivität in Gruppen anhand der von der Gruppe produzierten Ergebnissen (Quantität, Qualität, Geschwindigkeit, Kundenzufriedenheit) gemessen werden kann. Der Effekt, dass eine Gruppe Einfluss auf die Produktivität der einzelnen Mitglieder hat, trägt dabei zur Verbesserung der Gesamteffektivität bei \citep[s.309]{guzzo1996teams}.
 	
 Das Trainieren eines Teams kann die gesamte Effektivität dieses steigern. Dies scheint am effektivsten, wenn mehrere Charakteristika des Teamworks auf einmal angesprochen werden. Diese sollten auch experimentelle Aktivitäten beinhalten, um aktiv lernen und üben zu können \citep[19]{mcewan2017effectiveness}.
 Gemeinsames Training führt zu einer Steigerung der Qualität der Ideen und Entscheidungen sowie der gesamten Teamleistung.
 Die Kommunikation untereinander wird gefördert, da die einzelnen Teammitglieder gegenseitig ihre Aufgaben kennen und dadurch eher bereit sind sich untereinander zu helfen.
 Training im Team geht mit einem besseren Verständnis über das Wissen der anderen Teammitglieder einher, denn somit können auch individuelle Stärken gefördert, und Schwächen durch andere Teammitglieder kompensiert werden.
-Ein solches Team bringt ein Gefühl von Sicherheit mit sich, was zu einer erhöhten Risikobereitschaft führt. Dies kann die Kreativität der eingebrachten Ideen stärken und Teammitglieder können an der Möglichkeit größere Risiken einzugehen wachsen \citep[p. 2-4]{biech2007pfeiffer}.
+Ein solches Team bringt ein Gefühl von Sicherheit mit sich, was zu einer erhöhten Risikobereitschaft führt. Dies kann die Kreativität der eingebrachten Ideen stärken und Teammitglieder können an der Möglichkeit größere Risiken einzugehen wachsen \citep[s. 2-4]{biech2007pfeiffer}.
 Dies führt zu einer Steigerung der Qualität der Ideen und Entscheidungen sowie der gesamten Teamleistung.
 Auch das soziale Identitätsgefühl hängt davon ab, ob ein generelles Gruppenverständnis besteht, eine Person sich der Gruppe zugehörig fühlt und ob man sich als Gruppe mit anderen Gruppen vergleicht. Gruppenzugehörigkeit ist ein wichtiger Bestandteil des Selbstverständnisses eines Individuums \citep{sutantovicious}.
 	
-Ist ein Gefühl von Gruppenzugehörigkeit gegeben, stärkt dies die Gruppenproduktivität sowie die individuelle Leistungsfähigkeit. Weiterhin führt es zu einem besseren Zusammenhalt, mehr Vertrauen \citep{herbsleb2000distance}, besserer Kommunikation und Kooperation untereinander \citep[p. 510]{olson2003psychological}.
+Ist ein Gefühl von Gruppenzugehörigkeit gegeben, stärkt dies die Gruppenproduktivität sowie die individuelle Leistungsfähigkeit. Weiterhin führt es zu einem besseren Zusammenhalt, mehr Vertrauen \citep{herbsleb2000distance}, besserer Kommunikation und Kooperation untereinander \citep[s. 510]{olson2003psychological}.
 
 %	
 %		\subsubsection{Teambuilding Komponenten}
@@ -778,14 +777,14 @@ Ist ein Gefühl von Gruppenzugehörigkeit gegeben, stärkt dies die Gruppenprodu
 %	\begin{figure}[H]
 %		\begin{footnotesize}
 %			\includegraphics[width=\textwidth]{Abbildungen/Ten_Characteristics.JPG}
-%			\caption[Abbildung 1]{Ten Characteristics of a High Performance Team \citep[p. 27]{biech2007pfeiffer}}
+%			\caption[Abbildung 1]{Ten Characteristics of a High Performance Team \citep[s. 27]{biech2007pfeiffer}}
 %			\label{ten_characteristics}
 %		\end{footnotesize}
 %	\end{figure}
 %	Die einzelnen Teilbereiche bauen aufeinander auf. Der untere Teilbereich mit den Komponenten \textit{Clear Goals"}, \textit{Defined Roles}, \textit{Open and Clear Communication} sowie \textit{Effective Decision Making} sind die Basis des gesamten Models. Diese Komponenten sollten am Anfang des Teambuildingprozesses definiert und immer als Basis der gesamten Teamarbeit gesehen werden.\\
 %	Der Teilbereich mit den Komponenten \textit{Balanced Participation}, \textit{Valued Diversity} und \textit{Managed Conflict} baut auf diese auf.\\
 %	\textit{Positive Atmosphere} und \textit{Cooperative Relationships} ist der dritte Teilbereich. In diesem geht es hauptsächlich um die Zufriedenheit und die Bereicherung eines einzelnen in einem Team zu arbeiten. Jedoch ist dieser Bereich nicht mehr Ausschlaggebend um eine Aufgabe zu erledigen. Für viele Teammitglieder ist dieser Teilbereich jedoch wichtigste Ziel während der Teamarbeit.\\
-%	\textit{Participative Leadership} ist der einzige Bereich der aus dem Gesamtgebilde ohne Beeinflussung der anderen Komponenten entfernt werden kann. Dies sagt uns, dass ein Teamm auch ohne einen einzelnen Teamleiter existieren kann. Vgl. \citep[p. 13-16]{biech2007pfeiffer}\\
+%	\textit{Participative Leadership} ist der einzige Bereich der aus dem Gesamtgebilde ohne Beeinflussung der anderen Komponenten entfernt werden kann. Dies sagt uns, dass ein Teamm auch ohne einen einzelnen Teamleiter existieren kann. Vgl. \citep[s. 13-16]{biech2007pfeiffer}\\
 %	Aufgrund der vielen Komponenten die ein Team erfüllen muss um effizient zu sein und ein Gestärktes Teamgefühl zu bilden, wird in dieser Ausarbeitung nur auf einen Teilbereich eingegangen.
 %	
 %			\paragraph{Positive Atmosphere}
@@ -800,12 +799,12 @@ Ist ein Gefühl von Gruppenzugehörigkeit gegeben, stärkt dies die Gruppenprodu
 %			\paragraph{Allgemeines}
 
 %EINGEFÜGT BEI DEFINITION EINES VIRTUELLEM TEAMS
-%		\ac{vts} werden häufig gebildet um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben, mittels computergestützter Kommunikation, im Team koordinieren können. \citep[p. 117-119]{peters2007identifying} \citep[p. 1-2]{cascio2003leadership}
+%		\ac{vts} werden häufig gebildet um räumliche oder kurzzeitige Trennungen eines Teams zu umgehen. Dabei werden computergestützte Technologien so verwendet, dass räumlich getrennte Teammitglieder ihre Aufgaben, mittels computergestützter Kommunikation, im Team koordinieren können. \citep[s. 117-119]{peters2007identifying} \citep[s. 1-2]{cascio2003leadership}
 %		
 %		Es kann effizient Länderübergreifend gearbeitet werden, was ein größeres Innovationspotential für Unternehmen zur folge hat.	
-%		\ac{vts} haben den Ruf teuer zu sein, die Ziele nicht verfolgen zu können, nie pünktlich und schwierig zu managen zu sein. \citep[p.243-244]{gassmann2003trends}
+%		\ac{vts} haben den Ruf teuer zu sein, die Ziele nicht verfolgen zu können, nie pünktlich und schwierig zu managen zu sein. \citep[s.243-244]{gassmann2003trends}
 %		
-%		\ac{vts} sind häufig gerade in der Anfangsphase sehr Ergebnisorientiert in der Art und Weise \textit{wie} kommuniziert wird. Dieses Defizit in der Sozialen Kommunikation untereinander kann die Schlüsselfaktoren eines Erfolgreichen Teams beeinträchtigen - Soziale und Emotionale Beziehungsbildung sowie den Aufbau von Vertrauen. \citep[p.378]{ren2007applying} \\
+%		\ac{vts} sind häufig gerade in der Anfangsphase sehr Ergebnisorientiert in der Art und Weise \textit{wie} kommuniziert wird. Dieses Defizit in der Sozialen Kommunikation untereinander kann die Schlüsselfaktoren eines Erfolgreichen Teams beeinträchtigen - Soziale und Emotionale Beziehungsbildung sowie den Aufbau von Vertrauen. \citep[s.378]{ren2007applying} \\
 %		Um die Wahrscheinlichkeit zu erhöhen, dass auch in der Anfangsphase des Teambuildings eine \glqq Soziale\grqq und keine \glqq Arbeitsnahe, Ergebnisorientierte\grqq Kommunikation stattfindet, wurde eine spielerische Umgebung geschaffen, in der sich das Team das erste mal kennenlernen kann. 
 %		
 %\ac{vts} werden in dieser Arbeit als temporär, divers und räumlich gerennt, beschrieben. Die Kommunikation untereinander nur durch das World-Wide-Web statt. Weiterhin impliziert die temporäre Eigenschaft der Definition, dass sich die Teammitglieder nicht kennen.
@@ -1279,7 +1278,7 @@ Die Abbildung \textit{Abbildung \ref{DetaillierterVersuchsablauf}} zeigt eine de
 
 	\subsubsection{Die Avatare}
 \label{IKNIK}
-Die Avatare sind in dieser Studie als \dq{}IK-Avatar\dq{} und \dq{}Non-IK-Avatar\dq{} (siehe \textit{Abbildung \ref{AvatareAussehen}}) implementiert. Als Grundlage der Visualisierung der Avatare dient eine Studie von Kristoffer Waldow (\citep{waldow2019investigating}),in der der Einfluss des Aussehens von Avataren in einem Augmented-Reality \ac{sve} untersucht wurde.  Für die vorliegende Studie wurde lediglich die Farbe der Avatare von Grün auf Schwarz geändert. 
+Die Avatare sind in dieser Studie als \dq{}IK-Avatar\dq{} und \dq{}Non-IK-Avatar\dq{} (siehe \textit{Abbildung \ref{AvatareAussehen}}) implementiert. Als Grundlage der Visualisierung der Avatare dient eine Studie von Kristoffer Waldow \citep{waldow2019investigating},in der der Einfluss des Aussehens von Avataren in einem Augmented-Reality \ac{sve} untersucht wurde.  Für die vorliegende Studie wurde lediglich die Farbe der Avatare von Grün auf Schwarz geändert. 
 Mehr zu Avataren befindet sich im Kapitel \ref{inverseKinematik}.
 %In dieser Studie wurde für die beide Avatararten die Farbe Schwarz gewählt. Die teilnehmenden Personen hatten keinen Einfluss auf die Farbwahl der Avatare. Dies dient dazu die Störvariable der eventuell vorhandenen Vorurteile der teilnehmenden Personen aufgrund der Farbe des Avatars, auszuschalten.
 Die Teams hatten entweder die Kondition \dq{}IK-Avatar\dq{} oder \dq{}Non-IK-Avatar\dq{}, sodass das Aussehen der Avatare innerhalb eines Teams immer identisch war. Zur besseren Interaktion mit den Knöpfen sowie zur Vermeidung eines \ac{bip}, wurde der eigene Avatar nicht sichtbar für die teilnehmenden Personen dargestellt. Jede teilnehmende Person sah somit (unabhängig von der zugewiesenen Kondition) nur eine Repräsentation von menschlich wirkenden Händen ohne einen Körper. Die teilnehmende Person konnte somit nur von dem Aussehen ihrer Teammitglieder auf die eigene Avatar-Darstellung schließen. \textit{Abbildung \ref{AvatareAussehen}} zeigt das Aussehen der Avatare dieser Studie.
@@ -1293,8 +1292,8 @@ Die Teams hatten entweder die Kondition \dq{}IK-Avatar\dq{} oder \dq{}Non-IK-Ava
 		\end{footnotesize}
 	\end{figure}
 		\paragraph{IK-Avatar}
-Der invers-kinematisch dargestellte Avatar besitzt laut der Studie von Waldow \citep[p.251]{waldow2019investigating} ein neutrales Erscheinungsbild. Der Avatar hat keine Augen, Mund, Haare oder Beine. Lediglich der Oberkörper, der Kopf sowie die Arme sind zu erkennen. Dieser Avatar besitzt somit keine Beine und schwebt mit dem Torso über den Boden.
-Die Handbewegungen, die Unterarmbewegungen, die Oberarmbewegungen sowie die Kopf- und Torsorotation des \ac{ik}-Avatar werden invers-kinematisch dargestellt. Die Positions- und Rotationsdaten für den Kopf und den Oberkörper werden über das \ac{hmd} gewonnen. Die Positions- und Rotationsdaten der Arme werden über die beiden Controller gewonnen. Der Kopf des Avatars besitzt einen horizontalen Bewegungsbereich von 90$^\circ$. Wenn der Kopf diesen Bereich verlässt, rotiert der Oberkörper in Richtung der aktuellen Blickrichtung des Avatars. Der Oberkörper des Avatars folgt der Rotation des Kopfes also nicht simultan. Zusammen mit menschlichen Motion-Capture-Daten einer Leerlaufanimation, wurde so eine plausible menschliche Bewegung erzeugt \citep[p.251]{waldow2019investigating}.
+Der invers-kinematisch dargestellte Avatar besitzt laut der Studie von Waldow \citep[s.251]{waldow2019investigating} ein neutrales Erscheinungsbild. Der Avatar hat keine Augen, Mund, Haare oder Beine. Lediglich der Oberkörper, der Kopf sowie die Arme sind zu erkennen. Dieser Avatar besitzt somit keine Beine und schwebt mit dem Torso über den Boden.
+Die Handbewegungen, die Unterarmbewegungen, die Oberarmbewegungen sowie die Kopf- und Torsorotation des \ac{ik}-Avatar werden invers-kinematisch dargestellt. Die Positions- und Rotationsdaten für den Kopf und den Oberkörper werden über das \ac{hmd} gewonnen. Die Positions- und Rotationsdaten der Arme werden über die beiden Controller gewonnen. Der Kopf des Avatars besitzt einen horizontalen Bewegungsbereich von 90$^\circ$. Wenn der Kopf diesen Bereich verlässt, rotiert der Oberkörper in Richtung der aktuellen Blickrichtung des Avatars. Der Oberkörper des Avatars folgt der Rotation des Kopfes also nicht simultan. Zusammen mit menschlichen Motion-Capture-Daten einer Leerlaufanimation, wurde so eine plausible menschliche Bewegung erzeugt \citep[s.251]{waldow2019investigating}.
 
 		\paragraph{Non-IK-Avatar}
 Der \ac{nik}-Avatar besteht aus einer Kugel mit Mund sowie einer Repräsentation der linken und der rechten Hand. Durch den fehlenden Oberkörper und den fehlenden Beinen, schwebt der Avatar über dem Boden. Der Kopf ist frei beweglich und unabhängig von den Händen. Der Mund des Avatars bewegt sich nicht, sondern dient am Kopf als Orientierungspunkt. Dadurch kann ausgemacht werden, in welche Richtung der Kopf des Avatars gedreht ist. Die Positions- und Rotationsdaten für den Kopf werden über das \ac{hmd} gewonnen. Die Positions- und Rotationsdaten für die Hände werden über die beiden Controller gewonnen.
@@ -1323,12 +1322,12 @@ Der \ac{nik}-Avatar besteht aus einer Kugel mit Mund sowie einer Repräsentation
 \paragraph{Erwarteter Vertrauensaufbau}
 Der zu erwartende Vertrauensaufbau des erklärenden Spielers einer Runde, bezieht sich darauf, dass er seinen Mitspielern vertraut, die Symbol zuverlässig und ohne größere Probleme zu erraten. Der zu erwartende Vertrauensaufbau der Mitspieler bezieht sich darauf, dass diese dem erklärenden Spieler zutrauen, die Symbole zuverlässig zu erklären.
 
-Zum Messen des \textit{kognitiven Vertrauens} der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Cognitive-Trust-Scale} (\citep[p.37]{mcallister1995affect}) \textbf{Anhang \ref{Post-Questionnaire - Kognitives Vertrauen}} genutzt.
+Zum Messen des \textit{kognitiven Vertrauens} der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Cognitive-Trust-Scale} \citep[s.37]{mcallister1995affect} \textbf{Anhang \ref{Post-Questionnaire - Kognitives Vertrauen}} genutzt.
 
 \paragraph{Erwartete Teameffektivität}
 Je mehr \textit{kognitives Vertrauen} sich durch die einzelnen Runden aufbaut, desto leichter fällt es den teilnehmenden Personen, eine größere Anzahl an Runden abzuschließen. Und je weniger kognitives Vertrauen sich durch die einzelnen Runden aufbaut, desto schwerer fällt es den teilnehmenden Personen, eine größere Anzahl an Runden abzuschließen.
 
-Zum Messen der \textit{wahrgenommenen Teameffektivität} der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Team-Effectiveness-Scale} \textit{Siehe Anhang \ref{Post-Questionnaire - Team-Effektivität}} \citep[p.469]{gibson2003team} genutzt. 
+Zum Messen der \textit{wahrgenommenen Teameffektivität} der einzelnen Individuen, wird in dieser Studie ein Teilauszug des \textit{Team-Effectiveness-Scale} \textit{Siehe Anhang \ref{Post-Questionnaire - Team-Effektivität}} \citep[s.469]{gibson2003team} genutzt. 
 Zum Messen der \textit{realen Teameffektivität} wird in dieser die Anzahl der abgeschlossenen Runden \ac{tRound} des durchgeführten Experiments genutzt. Schafft ein Team eine Runde, hat dieses eine \textit{reale Teameffektivität} von 1, schafft es 10 Runden, hat es eine \textit{reale Teameffektivität} von 10.
 
 \newpage
@@ -1505,7 +1504,7 @@ Disconnected“ abgespielt. Beim erfolgreichen Drücken eines Buttons ist ein Kl
 %			\paragraph{Sprache} $~$ \\	
 %			
 %Allgemeine Kommunikation findet nicht nur mit Wörtern, sondern über Körpersprache wie Gestiken oder andere nonverbale Verhaltensmuster, statt. Durch \ac{sve}'s ist es nun möglich diese reine Text oder Bildbasierte Kommunikation durch Gestikulationen eines Avatars zu ersetzen. Durch diesen zusätzlichen visuellen Aspekt ist eine ganz neue Art und Weise der Kommunikation möglich, die nun gemessen werden kann. 
-%Nichtverbale Kommunikation -Beispielsweise nur via Text- erzeugt keinen Mehrwert an Vertrauen, Zusammenhalt und erzielt keine ausreichend gute Kommunikation. \citep[p.81]{haslam2003social}			
+%Nichtverbale Kommunikation -Beispielsweise nur via Text- erzeugt keinen Mehrwert an Vertrauen, Zusammenhalt und erzielt keine ausreichend gute Kommunikation. \citep[s.81]{haslam2003social}			
 %
 %Nonverbale Kommunikation kann Gesichtsausdrücke, Blicke, Bewegungen etc. umfassen. Kendon definiert im \dq{}Kendon Kontinuum\dq{} mit dem Begriff \dq{}Gestik\dq{} unwissende Gestiken (natürliche Körpersprache) bis hin zu \dq{} Zeichen\flqq, welche alle durch Gestikulation erzeugten Zeichen ( z.B. O.K. Handzeichen ), beinhaltet. \citep[37]{mcneill1992hand} 
 %Im Rahmen dieser Arbeit, ist mit Gestikulation jedoch die gesamte Körperbewegung des Avatars gemeint.
@@ -1543,12 +1542,12 @@ Für \textbf{Hypothese 5} wurde als unabhängie Variable das \textit{generelle V
 
 Die abhängigen Variablen werden im Folgenden aufgeführt:
 \begin{itemize}
-\item \textbf{Hang zum Vertrauen} Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die teilnehmenden Personen dazu neigen, anderen Personen einen Vertrauensvorschuss zu gewähren. Der Hang zum Vertrauen wird auch als \textit{generelles Vertrauen} bezeichnet \citep[p.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
-\item \textbf{Kognitives Vertrauen} Das \textit{kognitive Vertrauen} bezieht sich auf die \textit{Überzeugung in die Fähigkeiten oder in die Zuverlässigkeit eines anderen}. \citep[p.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
+\item \textbf{Hang zum Vertrauen} Der Hang zum Vertrauen bezieht sich in dieser Studie darauf, wie sehr die teilnehmenden Personen dazu neigen, anderen Personen einen Vertrauensvorschuss zu gewähren. Der Hang zum Vertrauen wird auch als \textit{generelles Vertrauen} bezeichnet \citep[s.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
+\item \textbf{Kognitives Vertrauen} Das \textit{kognitive Vertrauen} bezieht sich auf die \textit{Überzeugung in die Fähigkeiten oder in die Zuverlässigkeit eines anderen}. \citep[s.30]{mcallister1995affect} (\textit{vgl. Kapitel \nameref{Vertrauen}}).
 \item \textbf{Reale Team-Effektivität} Die reale Teameffektivität \ac{tRound} wird anhand der Anzahl der abgeschlossenen Runden im Team gemessen (\textit{vgl. Kapitel \nameref{Avatare}}).
 \end{itemize}
 
-Zusätzlich zu den 5 Hypothese, wurde noch der Unterschied zwischen folgenden abhängigen Variablen und der unabhängigen Variable \textit{Avatarkondition} analysiert : Der \textit{Wahrgenommene Teameffektivität}, der\textit{Presence}, der \textit{Subjektiv wahrgenommene Arbeitsbelastung}, der \textit{Team-Kommunikation} sowie der \textit{Co-Presence}.
+Zusätzlich zu den 5 Hypothese, wurde noch der Unterschied zwischen folgenden abhängigen Variablen und der unabhängigen Variable \textit{Avatarkondition} analysiert : Der \textit{Wahrgenommene Teameffektivität}, der\textit{Präsenz}, der \textit{Subjektiv wahrgenommene Arbeitsbelastung}, der \textit{Team-Kommunikation} sowie der \textit{Co-Präsenz}.
 				
 %	\paragraph{Residuuen}
 %\begin{itemize}
@@ -1558,7 +1557,7 @@ Zusätzlich zu den 5 Hypothese, wurde noch der Unterschied zwischen folgenden ab
 %\end{itemize}				
 
 			\subsubsection{Datenerhebungsmethoden}
-Es wurden zwei Fragenbögen an die teilnehmenden Personen verteilt. Der erste Fragenbogen (siehe \textbf{Anhang \ref{Pre-Questionnaire}}) wurde vor dem Experiment ausgefüllt. In diesem wurden allgemeine demografische Fragen über \textit{die Person} sowie über eventuelle \textit{gesundheitliche Beschwerden} und die schon vorhandene \textit{VR-Erfahrungen} gestellt. Der Zweite Fragebogen (siehe \textbf{Anhang \ref{Post-Questionnaire}}) wurde nach der Durchführung des Experiments im \ac{sve} ausgefüllt. Er beinhaltet Fragen über das \textit{generelle Vertrauen}, das \textit{kognitive Vertrauen}, die \textit{Kommunikations-Qualität}, \textit{die wahrgenommene Team-Effektivität}, die \textit{Beanspruchung}, die \textit{Presence} sowie die \textit{Co-Presence}. 
+Es wurden zwei Fragenbögen an die teilnehmenden Personen verteilt. Der erste Fragenbogen (siehe \textbf{Anhang \ref{Pre-Questionnaire}}) wurde vor dem Experiment ausgefüllt. In diesem wurden allgemeine demografische Fragen über \textit{die Person} sowie über eventuelle \textit{gesundheitliche Beschwerden} und die schon vorhandene \textit{VR-Erfahrungen} gestellt. Der Zweite Fragebogen (siehe \textbf{Anhang \ref{Post-Questionnaire}}) wurde nach der Durchführung des Experiments im \ac{sve} ausgefüllt. Er beinhaltet Fragen über das \textit{generelle Vertrauen}, das \textit{kognitive Vertrauen}, die \textit{Kommunikations-Qualität}, \textit{die wahrgenommene Team-Effektivität}, die \textit{Beanspruchung}, die \textit{Präsenz} sowie die \textit{Co-Präsenz}. 
 Es wurden nur vollständig ausgefüllte Fragebögen zur Datenanalyse herangezogen. \\
 				
 		\paragraph{Demografie-Fragebogen}
@@ -1579,18 +1578,18 @@ Der General-Trust-Scale \citep{couch1996assessment} wurde eingesetzt, um den gen
 %\citep{couch1996assessment}
 
 		\paragraph{Cognitive-Trust-Scale}
-Der Cognitive-Trust-Scale Fragebogen ist ein Auszug des von McAllister und Daniel J \citep[p.37]{mcallister1995affect} entwickelten Fragebogens. Er überprüft, wie viel kognitives Vertrauen die teilnehmenden Personen während des Versuchs aufbauen. Die Messgröße wird als kognitiver Vertrauenswert bezeichnet. Der Cognitive-Trust Fragebogen umfasst fünf Items. Dazu zählen beispielsweise beispielsweise \dq{}Diese Person geht an ihre Arbeit mit Professionalität und Hingabe heran\dq{} oder \dq{}Andere Personen, die mit diesen Personen interagieren müssen, halten ihn/sie für vertrauenswürdig\dq{}. Die Antwortmöglichkeiten der bei dem Fragebogen verwendeten 5-Point-Likert-Scale erstrecken sich von 1: \dq{}Ich stimme gar nicht zu \dq{} bis 5: \dq{}Ich stimme voll zu (siehe \textbf{Anhang \ref{Post-Questionnaire - Kognitives Vertrauen}}).
+Der Cognitive-Trust-Scale Fragebogen ist ein Auszug des von McAllister und Daniel J \citep[s.37]{mcallister1995affect} entwickelten Fragebogens. Er überprüft, wie viel kognitives Vertrauen die teilnehmenden Personen während des Versuchs aufbauen. Die Messgröße wird als kognitiver Vertrauenswert bezeichnet. Der Cognitive-Trust Fragebogen umfasst fünf Items. Dazu zählen beispielsweise beispielsweise \dq{}Diese Person geht an ihre Arbeit mit Professionalität und Hingabe heran\dq{} oder \dq{}Andere Personen, die mit diesen Personen interagieren müssen, halten ihn/sie für vertrauenswürdig\dq{}. Die Antwortmöglichkeiten der bei dem Fragebogen verwendeten 5-Point-Likert-Scale erstrecken sich von 1: \dq{}Ich stimme gar nicht zu \dq{} bis 5: \dq{}Ich stimme voll zu (siehe \textbf{Anhang \ref{Post-Questionnaire - Kognitives Vertrauen}}).
 
 %			\textbf{After each bomb was completed (successfully or not), participants filled out a cognitive trust scale developed by Wildman et al. (2009) and based on the trust theory of Lewicki, McAllister, & Bies (1998). This 8-item scale taps into participants’ trust attitudes and each item is rated on a 5-point scale from “not at all” to “very much so”. While this measure has not yet been published, it has been validated in both lab and field samples and has shown utility in prior teamwork research Lazzara, 2013; Wildman, 2011. Appendix C contains the full scale}
 %\citep{mcallister1995affect}
 
 		\paragraph{Communication-Scale}
-Gonzales-Rom et al. \citep[p.1049]{gonzalez2014climate} entwickelten 2004 einen Fragebogen um die  \textit{Qualität von Teamkommunikation} zu messen. Dieser Fragebogen umfasst fünf Items mit dem 5-Point-Likert-Scale von 1: \dq{}Gar nicht\dq{} bis 5: \dq{}Sehr\dq{}. Die Fragen sind alle nach demselben Prinzip aufgebaut, sodass jeweils nur das Ende einer Frage abgeändert wird: \dq{}In welchem Umfang war die Kommunikation zwischen Ihnen und Ihrem Team \textit{\dq{} KLAR/EFFEKTIV/ABGESCHLOSSEN/FLÜSSIG/ZUM RICHTIGEN ZEITPUNKT\dq{}} (siehe \textbf{Anhang \ref{Post-Questionnaire - Teamkommunikation}})?
+Gonzales-Rom et al. \citep[s.1049]{gonzalez2014climate} entwickelten 2004 einen Fragebogen um die  \textit{Qualität von Teamkommunikation} zu messen. Dieser Fragebogen umfasst fünf Items mit dem 5-Point-Likert-Scale von 1: \dq{}Gar nicht\dq{} bis 5: \dq{}Sehr\dq{}. Die Fragen sind alle nach demselben Prinzip aufgebaut, sodass jeweils nur das Ende einer Frage abgeändert wird: \dq{}In welchem Umfang war die Kommunikation zwischen Ihnen und Ihrem Team \textit{\dq{} KLAR/EFFEKTIV/ABGESCHLOSSEN/FLÜSSIG/ZUM RICHTIGEN ZEITPUNKT\dq{}} (siehe \textbf{Anhang \ref{Post-Questionnaire - Teamkommunikation}})?
 %			After the experimental portion was completed, participants completed another set of measures. First, participants completed the Communication Quality Scale developed by Gonzalez-Roma & Hernandez 2014. This scale contains 5 items that assess participants perceptions of their teams communication quality, rated on a 1 to 5 scale. The full measure is available in Appendix D
-%\citep[p.1049]{gonzalez2014climate}
+%\citep[s.1049]{gonzalez2014climate}
 
 		\paragraph{Team-Effectivness-Scale}
-Gibson et al. \citep[p.469]{gibson2003team} entwickelten 2003 einen Fragebogen, der die \textit{wahrgenommene Teameffektivität} misst. In dieser Studie wurde ein Auszug des Fragebogens verwendet. Er misst das \textit{subjektive Ausmaß der wahrgenommenen Teameffektivität} und umfasst fünf Items die mit einer 7-Point-Likert-Scale( 1: \dq{}Ich stimme gar nicht zu \dq{} bis 7: \dq{}Ich stimme voll zu \dq{} (siehe \textbf{Anhang \ref{Post-Questionnaire - Team-Effektivität}}.
+Gibson et al. \citep[s.469]{gibson2003team} entwickelten 2003 einen Fragebogen, der die \textit{wahrgenommene Teameffektivität} misst. In dieser Studie wurde ein Auszug des Fragebogens verwendet. Er misst das \textit{subjektive Ausmaß der wahrgenommenen Teameffektivität} und umfasst fünf Items die mit einer 7-Point-Likert-Scale( 1: \dq{}Ich stimme gar nicht zu \dq{} bis 7: \dq{}Ich stimme voll zu \dq{} (siehe \textbf{Anhang \ref{Post-Questionnaire - Team-Effektivität}}.
 
 %quality dimension is the extent to which the team produces error-free work.
 %			\textbf{Next, participants completed a 5-item team effectiveness measure. This measure is
@@ -1601,18 +1600,18 @@ Gibson et al. \citep[p.469]{gibson2003team} entwickelten 2003 einen Fragebogen, 
 %teammate. If so, they were also asked to indicate approximately how many years they had known
 %their teammate, and how often they communicated with the teammate. Finally, teams were
 %prompted to write a few sentences about why they thought their team performed the way it did.
-%Effectiveness Measures} \citep[p.469]{gibson2003team}
+%Effectiveness Measures} \citep[s.469]{gibson2003team}
 
 		\paragraph{NASA-TLX}
-Der NASA-TLX erfragt die allgemeine Belastung der Probanden, die sie während des Experiments empfunden haben. Dafür werden sechs Belastungsbereiche auf einer 21-Punkte Skala abgefragt. Diese beinhalten die mentale Anforderung, die physische Anforderung, die zeitliche Anforderung, die Leistung, die Anstrengung, und die Frustration des Probanden (\citep{NASATLX}).
+Der NASA-TLX erfragt die allgemeine Belastung der Probanden, die sie während des Experiments empfunden haben. Dafür werden sechs Belastungsbereiche auf einer 21-Punkte Skala abgefragt. Diese beinhalten die mentale Anforderung, die physische Anforderung, die zeitliche Anforderung, die Leistung, die Anstrengung, und die Frustration des Probanden \citep{NASATLX}.
 Der originale NASA-TLX Fragebogen besitzt eine kontinuierliche Skala. Dies war über einen Online-Fragebogen jedoch nicht realisierbar, weshalb die Werteskala für die Onlineversion angepasst wurde. Diese Werteskala umfasst im abgeänderten Fragebogen 1: \dq{}Wenig \dq{} über 11: \dq{}Mittel \dq{} bis 21: \dq{}Viel \dq{} (siehe \textbf{Anhang \ref{Post-Questionnaire - NASA-TLX}}).
 
 		\paragraph{Igroup Presence Questionnaire(IPQ)}
-Der IPQ dient zur \textit{Messung des Presence-Gefühls} in einer virtuellen Umgebung. Er misst, inwieweit sich der Nutzer in der virtuellen Umgebung anwesend fühlt, inwieweit der Nutzer seine Aufmerksamkeit der virtuellen Umgebung schenkt und wie real die virtuelle Umgebung dem Nutzer erschien. Der IPQ umfasst 14 Items mit einer 7-Point-Likert-Scale (siehe \textbf{Anhang \ref{Post-Questionnaire - IPQ}}).
+Der IPQ dient zur \textit{Messung des Präsenz-Gefühls} in einer virtuellen Umgebung. Er misst, inwieweit sich der Nutzer in der virtuellen Umgebung anwesend fühlt, inwieweit der Nutzer seine Aufmerksamkeit der virtuellen Umgebung schenkt und wie real die virtuelle Umgebung dem Nutzer erschien. Der IPQ umfasst 14 Items mit einer 7-Point-Likert-Scale (siehe \textbf{Anhang \ref{Post-Questionnaire - IPQ}}).
 		
 		\paragraph{Co-Presence-Questionnaire}
-Mithilfe des \textit{Co-Presence-Fragebogens} können die \textit{selbst gemeldete Co-Presence}, die \textit{wahrgenommene Presence des \dq{}anderen\dq{}}, die \textit{Telepresence} sowie die \textit{SocialPresence} ermittelt werden. Die \textit{selbst gemeldete Co-Presence} sowie die \textit{wahrgenommene Presence des \dq{}anderen\dq{}} werden mittels einer 5-Point-Likert-Skala gemessen. Die \textit{Telepresence} wird mit einer 7-Point-Likert-Scale ermittelt. Die \textit{Social-Presence} wird im originalen Fragebogen von Nowak und Biocca mittels einer kontinuierlichen Skala gemessen. Da dies mit dem Online-
-Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis 10 verwendet (vgl. \citep[p.487]{nowak2003effect}) (siehe \textbf{Anhang \ref{Post-Questionnaire - Co-Presence}}).
+Mithilfe des \textit{Co-Präsenz-Fragebogens} können die \textit{selbst gemeldete Co-Präsenz}, die \textit{wahrgenommene Präsenz des \dq{}anderen\dq{}}, die \textit{Telepräsenz} sowie die \textit{Soziale-Präsenz} ermittelt werden. Die \textit{selbst gemeldete Co-Präsenz} sowie die \textit{wahrgenommene Präsenz des \dq{}anderen\dq{}} werden mittels einer 5-Point-Likert-Skala gemessen. Die \textit{Telepräsenz} wird mit einer 7-Point-Likert-Scale ermittelt. Die \textit{Soziale-Präsenz} wird im originalen Fragebogen von Nowak und Biocca mittels einer kontinuierlichen Skala gemessen. Da dies mit dem Online-
+Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis 10 verwendet (vgl. \citep[s.487]{nowak2003effect}) (siehe \textbf{Anhang \ref{Post-Questionnaire - Co-Präsenz}}).
 %\newpage
 %
 %\begin{table}
@@ -1631,11 +1630,11 @@ Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis
 %\hline
 %
 %\hline
-%\textbf{Team-Kommunikation} & Wahrgenommene Kommunikationsqualität des Teams & \textit{Communication-Quality-Scale}\newline 5-Point-Likert-Scale & Gonzalez-Roma, Hernandez (2014) \citep[p.1049]{gonzalez2014climate} \\
+%\textbf{Team-Kommunikation} & Wahrgenommene Kommunikationsqualität des Teams & \textit{Communication-Quality-Scale}\newline 5-Point-Likert-Scale & Gonzalez-Roma, Hernandez (2014) \citep[s.1049]{gonzalez2014climate} \\
 %\hline
 %
 %\hline
-%\textbf{Team-Effektivität} & Wahrgenommenes ausmaß der Qualität der Aufgabenerledigung des Teams & Teilauszug des \textit{Team-Effectiveness-Scale}\newline 7-Point-Likert-Scale & Gibson et. al (2003) \citep[p.469]{gibson2003team} \\
+%\textbf{Team-Effektivität} & Wahrgenommenes ausmaß der Qualität der Aufgabenerledigung des Teams & Teilauszug des \textit{Team-Effectiveness-Scale}\newline 7-Point-Likert-Scale & Gibson et. al (2003) \citep[s.469]{gibson2003team} \\
 %\hline
 %
 %\hline
@@ -1654,7 +1653,7 @@ Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis
 %	die wahrgenommene Präsenz des \dq{}anderen \dq{} \newline \newline
 %	Telepresence \newline \newline
 %	Social-Presence
-%	} & Fragebogen von Nowak und Biocca zum messen von Co-Präsenz & \textit{Presence-Questionnaire} & Nowak und Biocca (2004) \citep[p.487]{nowak2003effect}  \\
+%	} & Fragebogen von Nowak und Biocca zum messen von Co-Präsenz & \textit{Presence-Questionnaire} & Nowak und Biocca (2004) \citep[s.487]{nowak2003effect}  \\
 %\hline
 %
 %\end{tabular}
@@ -1682,12 +1681,12 @@ Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis
     
     \hline
 \multirow{2}{3.5cm}{Team-Kommunikation}
-	&Wahrgenommene Kommunikationsqualität des Teams & \textit{Communication-Quality-Scale} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Teamkommunikation}} & Gonzalez-Roma, Hernandez (2014) \citep[p.1049]{gonzalez2014climate}\\
+	&Wahrgenommene Kommunikationsqualität des Teams & \textit{Communication-Quality-Scale} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Teamkommunikation}} & Gonzalez-Roma, Hernandez (2014) \citep[s.1049]{gonzalez2014climate}\\
 	&\,& 5-Point-Likert-Scale & \, \\
     
     \hline
 \multirow{2}{3.5cm}{Wahrgenommene Team-Effektivität}
-	&Wahrgenommenes ausmaß der Qualität der Aufgabenerledigung des Teams & Teilauszug des \textit{Team-Effectiveness-Scale} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Team-Effektivität}} & Gibson et. al (2003) \citep[p.469]{gibson2003team}\\
+	&Wahrgenommenes ausmaß der Qualität der Aufgabenerledigung des Teams & Teilauszug des \textit{Team-Effectiveness-Scale} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Team-Effektivität}} & Gibson et. al (2003) \citep[s.469]{gibson2003team}\\
 	&\,& 7-Point-Likert-Scale & \, \\
     
     \hline
@@ -1698,12 +1697,12 @@ Fragebogen nicht realisierbar war, wurde stattdessen eine Likert-Skala von 1 bis
 	&Der NASA-TLX misst die subjektiv wahrgenommene Arbeitsbelastung sowie Effektivität & \textit{NASA-TLX} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - NASA-TLX}} & \citep{NASATLX}\\
     
     \hline
-\multirow{2}{3.5cm}{Gefühl der Presence}
-	&Der IPQ dient zu Messung des Presence Gefühls in einer virtuellen Umgebung & \textit{Igroup Presence Questionnaire(IPQ)} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - IPQ}} & \citep{IPQ}\\
+\multirow{2}{3.5cm}{Gefühl der Präsenz}
+	&Der IPQ dient zu Messung des Präsenz Gefühls in einer virtuellen Umgebung & \textit{Igroup Presence Questionnaire(IPQ)} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - IPQ}} & \citep{IPQ}\\
     
     \hline
-\multirow{2}{3.5cm}{Selbst wahrgenommene Co-Presence \newline \newline Wahrgenommene Presence des \dq{}anderen\dq{} \newline \newline Telepresence \newline \newline Social-Presence}
-	&Fragebogen von Nowak und Biocca zum messen von Co-Presence & \textit{Presence-Questionnaire} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Co-Presence}} & Nowak und Biocca (2003) \citep[p.487]{nowak2003effect}\\
+\multirow{2}{3.5cm}{Selbst wahrgenommene Co-Präsenz \newline \newline Wahrgenommene Präsenz des \dq{}anderen\dq{} \newline \newline Telepräsenz \newline \newline Soziale-Präsenz}
+	&Fragebogen von Nowak und Biocca zum messen von Co-Präsenz & \textit{Presence-Questionnaire} \newline \textit{Siehe Tabelle \ref{Post-Questionnaire - Co-Presence}} & Nowak und Biocca (2003) \citep[s.487]{nowak2003effect}\\
 	
 	\end{tabular}
 \end{table}
@@ -1887,7 +1886,7 @@ Mittels einer weiteren Likert-Skala von 1-7 (1 = wenig, 7= sehr viel) wurde dana
 %Für kleine Stichproben (n < 50) : ($z < |+/-1.96|$) ist \textbf{signifikant} mit $p<0.05$. \newline
 %Für mittlere Stichproben (50 < n < 100) : ($z < |+/-2.58|$) ist \textbf{signifikant} mit $p<0.01$. \newline
 %Für mittlere Stichproben (n > 100) : ($z < |+/-3.29|$) ist \textbf{signifikant} mit $p<0.001$. \newline
-%Ist der jeweilige z-Wert größer als dieser Grenzwert muss die Nullhypothese verworfen werden und von nicht normalverteilen Daten ausgegangen werden \citep[p.184]{field2013discovering}.
+%Ist der jeweilige z-Wert größer als dieser Grenzwert muss die Nullhypothese verworfen werden und von nicht normalverteilen Daten ausgegangen werden \citep[s.184]{field2013discovering}.
 %
 %\paragraph{T-Test}
 %Um zu überprüfen, ob sich zwei  Gruppen unterscheiden, muss ein t-Test für unabhängige Variablen durchgeführt werden.
@@ -1903,7 +1902,7 @@ H1$_{0}$ : Die Mittelwerte der erzielten \textit{kognitiven Vertrauenswerte} unt
 
 \paragraph{Allgemeines}
 Auf \textit{Konditionsebene} wird analysiert, ob die teilnehmenden Personen aufgrund der unterschiedlichen Avatarkonditionen einen unterschiedliches \textit{kognitives Vertrauen} bilden. Dazu wird der Mann-Whitney-U-Test durchgeführt.\\
-Das \textit{kognitive Vertrauen} ist laut dem Shapiro-Wilk-Test\footnote{Der Shapiro-Wilk-Test ist ein Signifikanztest, der überprüft, ob eine Grundgesamtheit Normalverteilt ist \citep[p.25]{razali2011power}.} mit $p = .023 < \alpha = 0.05$ \textit{nicht normalverteit}.
+Das \textit{kognitive Vertrauen} ist laut dem Shapiro-Wilk-Test\footnote{Der Shapiro-Wilk-Test ist ein Signifikanztest, der überprüft, ob eine Grundgesamtheit Normalverteilt ist \citep[s.25]{razali2011power}.} mit $p = .023 < \alpha = 0.05$ \textit{nicht normalverteit}.
 %Es wurde auf Varianzgleichheit überprüft. Der Levene-Test zeigt eine Varianzgleichheit zwischen \ac{cti} und \ac{ctn} ($L = .889; p=.354 > \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Varianzen sich \textbf{nicht signifikant} voneinander unterscheiden.\\
 %\paragraph{Mittelswerte und Standardabweichungen}
 Der angegebene \textit{kognitive Vertrauenswert} der Kondition \ac{ik} (\ac{cti}) beträgt im Mittel $\tilde x = 4,1238$ mit einer Standardabweichung von $\sigma = .67194$.\newline 
@@ -1914,15 +1913,20 @@ Der angegebene \textit{kognitive Vertrauenswert} der Kondition \ac{ik} (\ac{ctn}
 Die Verteilungsformen der beiden Konditionen unterscheiden sich laut\newline Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} voneinander. Es gab laut Mann-Whitney-U-Test \textbf{einen signifikanten Unterschied} der Mittelwerte der \textit{kognitiven Vertrauenswertte} zwischen den Avatarkonditionen $\ac{ik} (\tilde x = 4,1238)$ und  $\ac{nik} (\tilde x = 4,5905)$ mit $U = 62,500 , Z = -2.083, p = .037 < \alpha = 0.05, r =-.3803$. \\
 
 	\begin{figure}[H]
-		\begin{footnotesize}
-		\centering
-			\includegraphics[scale=0.5]{Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png}
-			\caption[Mittelwerte und der Standardfehler der kognitiven Vertrauenswerte]{Die Durchschnittlichen Ergebnisse des wahrgenommenen kognitiven Vertrauens der Avatarkonditionen. Die Fehlerbalken zeigen die Standardfehler. Links die Kondition \ac{ik} und rechts die Kondition \ac{nik}. $** : p < \alpha = 0.05$}
-			\label{H1_Mittelwerte_Auswertung}
-		\end{footnotesize}
-	\end{figure}
-\newpage
+   \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
+      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_kognitivesVertrauen.png}
+      \caption[Boxplot der kognitiven Vertrauenswerte der Versuchsteilnehmer]{Boxplot der kognitiven Vertrauenswerte der Versuchsteilnehmer.}
+            \label{SD_kognitivesVertrauenBP}
+   \end{minipage}
+   \hspace{.02\linewidth}% Abstand zwischen Bilder
+   \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
+     \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/H1_Mittelwerte.png}
+      \caption[Mittelwerte und der Standardfehler der kognitiven Vertrauenswerte]{Die Durchschnittlichen Ergebnisse des wahrgenommenen kognitiven Vertrauens der Avatarkonditionen. Die Fehlerbalken zeigen die Standardfehler. Links die Kondition \ac{ik} und rechts die Kondition \ac{nik}. $** : p < \alpha = 0.05$}
+       \label{H1_Mittelwerte_Auswertung}
+   \end{minipage}
+\end{figure}
 
+\newpage
 \subsection{Auswertung Hypothese 2}
 %H1$_{0}$ : Steigt der General-Trust-Score einer Person (\ac{gt}), steigt der Cognitive-Trust-Score einer Person (\ac{ct}) nicht.
 H2$_{0}$ : Es besteht kein signifikanter Zusammenhang zwischen dem erzielten \textit{generellen Vertrauenswert} einer Person und dem erzielten \textit{kognitiven Vertrauenswert} einer Person.
@@ -1932,7 +1936,7 @@ Der kognitive Vertrauenswert muss für \textit{Hypothese 1} auf \textit{Konditio
 
 Der Shapiro-Wilk-Test zeigt, dass das der \textit{generelle Vertrauenswert} der Kondition \ac{ik} mit  $p = .078 > \alpha = 0.05$ \textit{normalverteilt} und der \textit{generelle Vertrauenswert} der Kondition \ac{nik} mit $p = .020 < \alpha = 0.05$ \textit{nicht normalverteilt} ist.
 
-Aus einem weiteren Shapiro-Wilk-Test geht hervor, dass der \textit{kognitive Vertrausnwert} der Kondition \ac{ik} mit  $p = .356 > \alpha = 0.05$ \textit{normalverteilt} und der \textit{kognitive Vertrauenswert} der Kondition \ac{nik} mit $p = .054 > \alpha = 0.05$ \textit{normalverteilt} ist.
+Aus einem weiteren Shapiro-Wilk-Test geht hervor, dass der \textit{kognitive Vertrauenswert} der Kondition \ac{ik} mit  $p = .356 > \alpha = 0.05$ \textit{normalverteilt} und der \textit{kognitive Vertrauenswert} der Kondition \ac{nik} mit $p = .054 > \alpha = 0.05$ \textit{normalverteilt} ist.
 Das Lowess-Verfahren \footnote{Das Lowess-Verfahren (LOcally-WEighted Scatterplot Smoother) ist ein Verfahren, dass mittels einer lokal gewichteten Regressionsfunktion den Zusammenhang zweier oder mehrerer Variablen visuell ermöglicht.} deutet Augenscheinlich auf keinen linearen Zusammenhang zwischen dem \textit{generellen Vertrauenswert} der Kondition \ac{ik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{ik} sowie dem \textit{generellen Vertrauenswert} der Kondition \ac{nik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{nik} hin. Daher wird die \textit{Linearitätsannahme nicht angenommen}.
 
 %Für \ac{gt} ist $ z_{Skewness} = -0,985 $ und $z_{Kurtosis} = -.416$ und somit ist \ac{gt} normalverteilt.
@@ -1945,23 +1949,27 @@ Das Lowess-Verfahren \footnote{Das Lowess-Verfahren (LOcally-WEighted Scatterplo
 %\paragraph{Pearson-Korrelationsanalyse}
 %Es ist eine positive Korrelation starken Effektes (vgl. \cite{cohen2013statistical}) mit dem Pearson-Korrelationskoeffizient ($r = .522$) zwischen \ac{gti} und \ac{cti} vorhanden. Die Pearson-Korrelation ist \textbf{nicht signifikant} ($p = .055 > \alpha = 0.05$).\\
 %Weiterhin ist eine positive Korrelation moderaten Effektes (vgl. \cite{cohen2013statistical}) mit dem Pearson-Korrelationskoeffizient ($r = .306$) zwischen \ac{gtn} und \ac{ctn} vorhanden. Die Pearson-Korrelation ist \textbf{nicht signifikant} ($p = .267 > \alpha = 0.05$).
-\paragraph{Spearman-Korrelationsanalyse}
-Es ist eine positive Korrelation starken Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .441$ zwischen dem \textit{generellen Vertrauenswert} der Kondition \ac{ik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{ik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .100 > \alpha = 0.05$).
-
-Weiterhin liegt eine positive Korrelation moderaten Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .378$ zwischen dem \textit{generellen Vertrauenswert} der Kondition \ac{nik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{nik} vor. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .165 > \alpha = 0.05$) (siehe \textbf{\textit{Abbildung \ref{H2_Korrelation_Auswertung}}}).
-
-\paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
-Um herauszufinden, ob sich beide Korrelationen signifikant voneinander unterscheiden, wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt.
-Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige Stichproben ($Z= .186$) \textbf{nicht signifikant} voneinander ($p = .426 > \alpha = 0.05$).
 
 \begin{figure}[h]
   \centering
   \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/H_2_KorrIK.png}}
   \qquad
   \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/H_2_KorrNIK.png}}
-  \caption[Korrelationen der generellen Vertrauenswerte mit den kognitiven Vertrauenswerten]{Korrelationen der generellen Vertrauenswerte mit den kognitiven Vertrauenswerten. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}}
+    \qquad
+  \subfloat[][]{\includegraphics[width=0.45\linewidth]{Abbildungen/AuswertungDiagramme/BP_generellesVertrauen.png}}
+  \caption[Korrelationen der generellen Vertrauenswerte mit den kognitiven Vertrauenswerten]{Korrelationen der generellen Vertrauenswerte mit den kognitiven Vertrauenswerten. Links (a) für die Kondition \ac{ik} und Rechts (b) für die Kondition \ac{nik}. (c) stellt den Boxplot der generellen Vertrauenswerte der individuellen Personen dar.}
   \label{H2_Korrelation_Auswertung}
 \end{figure}
+
+\paragraph{Spearman-Korrelationsanalyse}
+Es ist eine positive starke Korrelation (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .441$ zwischen dem \textit{generellen Vertrauenswert} der Kondition \ac{ik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{ik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .100 > \alpha = 0.05$).
+
+Weiterhin liegt eine positive Korrelation moderater stärke (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .378$ zwischen dem \textit{generellen Vertrauenswert} der Kondition \ac{nik} und dem \textit{kognitiven Vertrauenswert} der Kondition \ac{nik} vor. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .165 > \alpha = 0.05$) (siehe \textbf{\textit{Abbildung \ref{H2_Korrelation_Auswertung}}}).
+
+\paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
+Um herauszufinden, ob sich beide Korrelationen signifikant voneinander unterscheiden, wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt.
+Die beiden Korrelationen unterscheiden sich laut Fisher-Z-Wert für unabhängige Stichproben ($Z= .186$) \textbf{nicht signifikant} voneinander ($p = .426 > \alpha = 0.05$).
+
 %Hier nun eventuell noch Fishers-Z-Transformation?
 
 %Laut Pagan-Breusch liegt homoskedastizität vor.
@@ -2043,8 +2051,8 @@ Aufgrund der geringen Stichprobenumfangs der einzelnen Teams der verschiedenen A
 
 \paragraph{Spearman-Korrelation}
 
-Der Spearman-Korrelationskoeffizient zwischen den \textit{kognitiven Vertrauenswerten der Teams} mit der Kondition \ac{ik} und der \textit{realen Teameffektivität der Teams} mit der Kondition \ac{ik} beträgt $r = -.205$. Diese Korrelation ist positiv moderaten Effektes (vgl. \citep{cohen2013statistical}) und ist \textbf{nicht signifikant} ($p = .741 > \alpha = 0.05$). \\
-Weiterhin ist eine positive Korrelation moderaten Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .462$ zwischen den \textit{kognitiven Vertrauenswerten der Teams} mit der Kondition \ac{nik} und der \textit{realen Teameffektivität der Teams} mit der Kondition \ac{nik} vorhanden. Diese Spearman-Korrelation ist ebenfalls \textbf{nicht signifikant} ($p = .434 > \alpha = 0.05$).
+Der Spearman-Korrelationskoeffizient zwischen den \textit{kognitiven Vertrauenswerten der Teams} mit der Kondition \ac{ik} und der \textit{realen Teameffektivität der Teams} mit der Kondition \ac{ik} beträgt $r = -.205$. Diese Korrelation moderater stärke ist positiv (vgl. \citep{cohen2013statistical}) und ist \textbf{nicht signifikant} ($p = .741 > \alpha = 0.05$). \\
+Weiterhin ist eine positive Korrelation moderater stärke (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .462$ zwischen den \textit{kognitiven Vertrauenswerten der Teams} mit der Kondition \ac{nik} und der \textit{realen Teameffektivität der Teams} mit der Kondition \ac{nik} vorhanden. Diese Spearman-Korrelation ist ebenfalls \textbf{nicht signifikant} ($p = .434 > \alpha = 0.05$).
 
 \paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
 Obwohl die Stichprobe mit $N=5$ sehr klein ist, wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt um zu überprüfen, ob die beiden Spearman-Korrelationen sich signifikant voneinander unterscheiden.
@@ -2183,8 +2191,7 @@ H4$_{0}$ : Die Mittelwerte der \textit{realen Teameffektivität} unterscheidet s
 \paragraph{Allgemeines}
 
 Auf \textit{Konditionsebene} wird analysiert, ob die teilnehmenden Personen aufgrund unterschiedlicher Avatarkonditionen eine unterschiedliche \textit{reale Teameffektivität} besitzen.\\
-Die \textit{reale Teameffektivität} ist laut Shapiro-Wilk-Test ($p = .113 > \alpha = 0.05$) normalverteit.\\
-Im folgenden wurde auf Varianzgleichheit der \textit{realen Teameffektivitätswerte} der unterschiedlichen Avatarkonditionen überprüft. Der Levene-Test zeigt keine Varianzgleichheit zwischen den \textit{realen Teameffektivitätswerten} der Kondition \ac{ik} und den \textit{realen Teameffektivitätswerten} der Kondition \ac{nik} ($L = 10,182; p=.003 < \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Varianzen sich \textbf{signifikant} voneinander unterscheiden. \\
+Die \textit{reale Teameffektivität} ist laut Shapiro-Wilk-Test ($p = .113 > \alpha = 0.05$) normalverteit, daher wurde auf Varianzgleichheit der \textit{realen Teameffektivitätswerte} der unterschiedlichen Avatarkonditionen geprüft. Der Levene-Test zeigt keine Varianzgleichheit zwischen den \textit{realen Teameffektivitätswerten} der Kondition \ac{ik} und den \textit{realen Teameffektivitätswerten} der Kondition \ac{nik} ($L = 10,182; p=.003 < \alpha = 0.05$). Damit kann davon ausgegangen werden, dass die Varianzen sich \textbf{signifikant} voneinander unterscheiden. \\
 Die \textit{reale Teameffektivität} beträgt für die Kondition \ac{ik} im Durchschnitt $\tilde x = 9,0000$ mit einer Standardabweichung von $\sigma = 3,2732$.\newline 
 Die \textit{reale Teameffektivität} beträgt für die Kondition \ac{nik} im Durchschnitt $\tilde x = 9,000$ mit einer Standardabweichung von($\sigma = 1,7320$ (siehe \textbf{\textit{Abbildung \ref{H4_Mittelwerte_Auswertung}}})
 
@@ -2196,14 +2203,20 @@ Die \textit{reale Teameffektivität} beträgt für die Kondition \ac{nik} im Dur
 \paragraph{Mann-Whitney-U-Test}
 Die Verteilungen der \textit{realen Teameffektivitätswerte} der Kondition \ac{ik} und der \textit{realen Teameffektivitätswerte} der Kondition \ac{nik} unterschieden sich laut Kolmogorov-Smirnov ($p = .181 > \alpha = 0.05$) \textbf{nicht signifikant} von einander. Es gab \textbf{keinen signifikanten Unterschied} der Mittelwerte der realen Teameffektivität zwischen der Kondition \ac{ik} $(\tilde x = 9$) und der Kondition \ac{nik} $(\tilde x = 9)$ mit $U = 103,500, Z = -.377, p = .706 > \alpha = 0.05, r = -,0602$. \\
 
+
 	\begin{figure}[H]
-		\begin{footnotesize}
-		\centering
-			\includegraphics[scale=0.3]{Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png}	
-			\caption[Mittelwerte und der Standardfehler der realen Teameffektivität]{Die Durchschnittlichen realen Teameffektivität unterschiedlichen Avatarkonditionen. Die Fehlerbalken zeigen den Standardfehler. Links die Kondition \ac{ik} und rechts die Kondition \ac{nik}}
-			\label{H4_Mittelwerte_Auswertung}
-		\end{footnotesize}
-	\end{figure}
+   \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
+      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_realeTeameffektivität.png}
+      \caption[Boxplot der realen Teameffektivitätswerte]{Boxplot der realen Teameffektivitätswerte.}
+            \label{SD_TeameffektivitätBP}
+   \end{minipage}
+   \hspace{.02\linewidth}% Abstand zwischen Bilder
+   \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
+     \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/H4_Mittelwerte.png}
+      \caption[Mittelwerte und der Standardfehler der realen Teameffektivität]{Die Durchschnittlichen realen Teameffektivität unterschiedlichen Avatarkonditionen. Die Fehlerbalken zeigen den Standardfehler. Links die Kondition \ac{ik} und rechts die Kondition \ac{nik}}
+       \label{H4_Mittelwerte_Auswertung}
+   \end{minipage}
+\end{figure}
 
 %\paragraph{Mann-Whitney-U Test}
 %%Aufgrund des geringen p-Wertes des \ac{cti} im Kolmogoroff-Smirnov-Test mit ($p = .185 > \alpha = 0.05$) wurde zusätzlich noch der Mann-Whitney-U-Test durchgeführt.
@@ -2288,8 +2301,8 @@ Das Lowess-Verfahren deutet Augenscheinlich auf keinen linearen Zusammenhang zwi
 Aufgrund des geringen Stichprobenumfangs der Teams pro Avatarkondition ($N=5$) und der nicht eindeutigen Linearität durch das Lowess-Verfahren, wurde sich für eine Spearman-Korrelation entschieden.
 
 \paragraph{Spearman-Korrelation}
-Es ist eine positive Korrelation schwachen Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .200$ zwischen den \textit{generellen Vertrauenswerten der Teams} mit der Kondition \ac{ik} und den \textit{realen Teameffektivitätswerten der Teams} mit der Kondition \ac{ik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .747 > \alpha = 0.05$).\\
-Weiterhin ist eine positive Korrelation moderaten Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .359$ zwischen den \textit{generellen Vertrauenswerten der Teams} mit der Kondition \ac{nik} und den \textit{realen Teameffektivitätswerten der Teams} mit der Kondition \ac{nik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .553 > \alpha = 0.05$).
+Es ist eine schwache positive Korrelation (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .200$ zwischen den \textit{generellen Vertrauenswerten der Teams} mit der Kondition \ac{ik} und den \textit{realen Teameffektivitätswerten der Teams} mit der Kondition \ac{ik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .747 > \alpha = 0.05$).\\
+Weiterhin ist eine positive Korrelation moderater stärke (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .359$ zwischen den \textit{generellen Vertrauenswerten der Teams} mit der Kondition \ac{nik} und den \textit{realen Teameffektivitätswerten der Teams} mit der Kondition \ac{nik} vorhanden. Die Spearman-Korrelation ist \textbf{nicht signifikant} ($p = .553 > \alpha = 0.05$).
 
 \paragraph{Fisher-Z-Transformation für unabhängige Stichproben}
 Es wird eine Fisher-Z-Transformation für unabhängige Stichproben durchgeführt, obwohl die Stichprobe mit ($N=5$) sehr klein ist.
@@ -2640,12 +2653,12 @@ Die beiden Spearman-Korrelationen unterscheiden sich laut Fisher-Z-Wert für una
 \subsection{Auswertung subjektiver Daten}
 Im folgenden Werden die subjektiven Fragebögen im Bezug auf die beiden Avatarkonditionen ausgewertet.
 
-Die subjektiven Daten wurden auf Extremwerte überprüft. Jedoch lassen sich diese Extremwerte nicht pauschal als Ausreißer klassifizieren. Dies geht aus den jeweiligen Feedback der Nutzer hervor, sowie dem Vergleich anderer angegebener Werte der unterschiedlichen Fragebögen. Der milde Extremwert der \textit{Presence}, der \textit{Selbst wahrgenommenen Co-Presence}, der \textit{Wahrgenommenen Co-Presence des \dq{}anderen\dq{}}, sowie der \textit{Telepresence} werden als plausibel eingestuft.
-Der starke Extremwert (ID9) der \textit{Selbst wahrgenommenen Co-Presence} schrieb als Feedback \dq{}\textit{Es war eine spannende Erfahrung am VR-Experiment teilzunehmen und hat Spaß gemacht. Die Personen waren mir nah, obwohl sie eindeutig unreal wirkten}\dq{}, weshalb dieser starke Extremwert als plausibel eingestuft wird und nicht verworfen werden kann.
-Der starke Extremwert (ID25) der \textit{Wahrgenommenen Co-Presence des anderen} wird ebenfalls als plausibel eingestuft. Dieser erzielt in der \dq{}Social-Presence\dq{} sowie der \dq{}Telepresence\dq{} ebenfalls überdurchschnittlich hohe Werte. Daher wird auch dieser als Plausibel eingestuft und kann nicht verworfen werden.
+Die subjektiven Daten wurden auf Extremwerte überprüft. Jedoch lassen sich diese Extremwerte nicht pauschal als Ausreißer klassifizieren. Dies geht aus den jeweiligen Feedback der Nutzer hervor, sowie dem Vergleich anderer angegebener Werte der unterschiedlichen Fragebögen. Der milde Extremwert der \textit{Präsenz}, der \textit{Selbst wahrgenommenen Co-Präsenz}, der \textit{Wahrgenommenen Co-Präsenz des \dq{}anderen\dq{}}, sowie der \textit{Telepräsenz} werden als plausibel eingestuft.
+Der starke Extremwert (ID9) der \textit{Selbst wahrgenommenen Co-Präsenz} schrieb als Feedback \dq{}\textit{Es war eine spannende Erfahrung am VR-Experiment teilzunehmen und hat Spaß gemacht. Die Personen waren mir nah, obwohl sie eindeutig unreal wirkten}\dq{}, weshalb dieser starke Extremwert als plausibel eingestuft wird und nicht verworfen werden kann.
+Der starke Extremwert (ID25) der \textit{Wahrgenommenen Co-Präsenz des anderen} wird ebenfalls als plausibel eingestuft. Dieser erzielt in der \dq{}Sozialen-Präsenz\dq{} sowie der \dq{}Telepäsenz\dq{} ebenfalls überdurchschnittlich hohe Werte. Daher wird auch dieser als Plausibel eingestuft und kann nicht verworfen werden.
 
-\paragraph{Presence}
-Das Gefühl der \textit{Presence} ist laut Shapiro-Wilk-Test mit $p = .150 > \alpha = 0.05$ normalverteit. 
+\paragraph{Präsenz}
+Das Gefühl der \textit{Präsenz} ist laut Shapiro-Wilk-Test mit $p = .150 > \alpha = 0.05$ normalverteit. 
 Dies beträgt bei der Kondition \ac{ik} im Durchschnitt $\tilde x = 4.1571$ mit einer Standardabweichung von $\sigma = .70152$.
 Bei der Kondition \ac{nik} beträgt dies im Durchschnitt $\tilde x = 4.2762$ mit einer Standardabweichung von $\sigma = .53443$.
 Der T-Test für unabhängige Stichproben zeigt \textbf{keine signifikanten Unterschiede} der Mittelwerte ($t(28) = -.523; p = .606 > \alpha = 0.05$) (siehe \textbf{\textit{Abbildung \ref{SD_PresenceBP}}} und \textbf{\textit{Abbildung \ref{SD_Presence_Mittel}}}).
@@ -2653,13 +2666,13 @@ Der T-Test für unabhängige Stichproben zeigt \textbf{keine signifikanten Unter
 \begin{figure}[H]
    \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
       \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_Presence.png}
-      \caption[Boxplot der wahrgenommenen Presence]{Boxplot der wahrgenommenen Presence.}
+      \caption[Boxplot der wahrgenommenen Präsenz]{Boxplot der wahrgenommenen Präsenz.}
       \label{SD_PresenceBP}
    \end{minipage}
    \hspace{.02\linewidth}% Abstand zwischen Bilder
    \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/SD_Presence_Mittelwerte.png}
-      \caption[Durchschnittlich wahrgenommene Presence der Konditionen]{Die Durchschnittlich wahrgenommene Presence. Der vertikale Fehler beschreibt den Standardfehler.}
+      \caption[Durchschnittlich wahrgenommene Präsenz der Konditionen]{Die Durchschnittlich wahrgenommene Präsenz. Der vertikale Fehler beschreibt den Standardfehler.}
        \label{SD_Presence_Mittel}
    \end{minipage}
 \end{figure}
@@ -2704,8 +2717,8 @@ Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mi
    \end{minipage}
 \end{figure}
 
-\paragraph{Telepresence} 
-Die Telepresence ist laut Shapiro-Wilk-Test mit $p = .024 < \alpha = 0.05$ nicht normalverteit. 
+\paragraph{Telepräsenz} 
+Die Telepräsenz ist laut Shapiro-Wilk-Test mit $p = .024 < \alpha = 0.05$ nicht normalverteit. 
 Sie beträgt bei der Kondition \ac{ik} im Durchschnitt $\tilde x = 5.2133$ mit einer Standardabweichung von $\sigma = 1.2659$.
 Weiterhin beträgt diese bei der Kondition \ac{nik} im Mittel $\tilde x = 5.3600$ mit einer Standardabweichung von $\sigma = .7971$. 
 Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mittelwerte ($ Z = -.021; p = .983 > \alpha = 0.05$) (siehe \textbf{\textit{Abbildung \ref{SD_Telepresence}}} und \textbf{\textit{Abbildung \ref{SD_Telepresence_Mittelwerte}}}).
@@ -2713,7 +2726,7 @@ Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mi
 	\begin{figure}[H]
    \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
       \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_Telepresence.png}
-      \caption[Boxplot der wahrgenommenen Telepresence]{Diese Abbildung zeigt den Boxplot der wahrgenommenen Telepresence.}
+      \caption[Boxplot der wahrgenommenen Telepräsenz]{Diese Abbildung zeigt den Boxplot der wahrgenommenen Telepräsenz.}
             \label{SD_Telepresence}
    \end{minipage}
    \hspace{.02\linewidth}% Abstand zwischen Bilder
@@ -2725,7 +2738,7 @@ Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mi
 \end{figure}
 
 
-\paragraph{Social-Presence} 
+\paragraph{Soziale-Präsenz} 
 Laut Kolmogoroff-Smirnov-Test ist die Soziale-Präsenz mit $p = .031 < \alpha = 0.05$ nicht normalverteit. 
 Diese beträgt bei der Kondition\newline \ac{ik} im Mittel $\tilde x = 4.685$ mit einer Standardabweichung von $\sigma = 1.883$ und
 bei der Kondition \ac{nik} im Mittel $\tilde x = 4.4952$ mit einer Standardabweichung von $\sigma = 1.54039$. 
@@ -2733,7 +2746,7 @@ Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mi
 	
 		\begin{figure}[H]
    \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
-      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_Telepresence.png}
+      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_SocialPresence.png}
       \caption[Boxplot der wahrgenommenen Sozialen-Präsenz]{Diese Abbildung zeigt den Boxplot der wahrgenommenen Sozialen-Präsenz.}
             \label{BP_SocialPresence}
    \end{minipage}
@@ -2745,10 +2758,10 @@ Laut Mann-Whitney-U-Test gab es \textbf{keinen signifikanten Unterschied} der Mi
    \end{minipage}
 \end{figure}
 
-\paragraph{NASA-TLX \dq{}Anstrengungsmaß\dq{}} 
-Das Anstrengungsmaß ist laut\newline Kolmogoroff-Smirnov-Test mit $p = .337 > \alpha = 0.05$ normalverteit. 
-Es beträgt \ac{ik} im Mittel $\tilde x = 8.1667$ mit einer Standardabweichung von $\sigma = 1.5443$.
-Für die Kondition \ac{nik} beträgt dieses im Mittel $\tilde x = 9.033$ mit einer Standardabweichung von $\sigma = 2.5813$. 
+\paragraph{NASA-TLX \dq{}Allgemeine Belastung\dq{}} 
+Die Allgemeine Belastung ist laut\newline Kolmogoroff-Smirnov-Test mit $p = .337 > \alpha = 0.05$ normalverteit. 
+Sie beträgt \ac{ik} im Mittel $\tilde x = 8.1667$ mit einer Standardabweichung von $\sigma = 1.5443$.
+Für die Kondition \ac{nik} beträgt sie im Mittel $\tilde x = 9.033$ mit einer Standardabweichung von $\sigma = 2.5813$. 
 Der T-Test für unabhängige Stichproben zeigt \textbf{keine Signifikanten Unterschied} der Mittelwerte ($t(28) = -1.116; p = .276 > \alpha = 0.05$) (siehe \textbf{\textit{Abbildung \ref{BP_NTLX}}} und \textbf{\textit{Abbildung \ref{SD_NTLX_Mittelwerte}}}).
 
 	\begin{figure}[H]
@@ -2773,7 +2786,7 @@ Laut Mann-Whitney-U-Test gab es einen \textbf{signifikanten Unterschied} der Mit
 
 	\begin{figure}[H]
    \begin{minipage}[t]{.5\linewidth} % [b] => Ausrichtung an \caption
-      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_SelfCoPresence.png}
+      \includegraphics[width=\linewidth]{Abbildungen/AuswertungDiagramme/BP_Teamkommunikation.png}
       \caption[Boxplot der wahrgenommenen Teamkommunikation]{Boxplot der wahrgenommenen Teamkommunikation.}
             \label{SD_TeamkommunikationBP}
    \end{minipage}
@@ -2807,7 +2820,7 @@ Laut Mann-Whitney-U-Test gab es einen \textbf{keinen signifikanten Unterschied} 
 
 
 \paragraph{Weitere Analysen}
-Es ist eine positive Korrelation starken Effektes (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .729$ zwischen den \textit{kognitiven Vertrauenswerten} der Kondition \ac{nik} und \textit{der wahrgenommenen Teameffektivität} der Kondition \ac{nik} auf Konditionsebene zu erkennen. Die Spearman-Korrelation ist \textbf{signifikant} ($p = .002 < \alpha = 0.05$). Siehe \textbf{\textit{Abbildung \ref{SubSig1}}}\\
+Es ist eine positive starke Korrelation (vgl. \citep{cohen2013statistical}) mit dem Spearman-Korrelationskoeffizient $r = .729$ zwischen den \textit{kognitiven Vertrauenswerten} der Kondition \ac{nik} und \textit{der wahrgenommenen Teameffektivität} der Kondition \ac{nik} auf Konditionsebene zu erkennen. Die Spearman-Korrelation ist \textbf{signifikant} ($p = .002 < \alpha = 0.05$). Siehe \textbf{\textit{Abbildung \ref{SubSig1}}}\\
 
 \begin{figure}[h]
   \centering
@@ -2835,37 +2848,37 @@ Weiterhin ist eine positive Korrelation starken Effektes (vgl. \citep{cohen2013s
 	\centering\footnotesize\setstretch{0.8}
 	\caption[Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer]{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
 	\label{MittelwerteUndCo}
-	\begin{tabularx}{\textwidth}{p{3cm} | p{3.0cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
-		Was wurde gemessen? & Abkürzung & Min/Max & Erreicht Min/Max & Mittelwert & Std. Abweichung & $N$ \\
+	\begin{tabularx}{\textwidth}{p{5cm} | p{1cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
+		Was wurde gemessen? & Min/Max & Erreicht Min/Max & Mittelwert & Std. Abweichung & $N$ \\
 		\hline \\
-		Genereller Hang zum Vertrauen &\ac{gt} & $1/7$ & $3.9/5.7$ & $4.665$ & $.3371$ & $30$ \\ \\
-		Kognitives Vertrauen &\ac{ct} & $1/7$ & $2.57/5.14$ & $4.357$ & $.6.252$ & $30$ \\ \\
-		Kognitives Vertrauen-IK &\ac{cti} & $1/7$ & $2.57/5.00$ & $4.1238$ & $.6719$ & $15$ \\ \\
-		Kognitives Vertrauen-NIK &\ac{ctn} & $1/7$ & $3.57/5.14$ & $4.590$ & $.4915$ & $15$ \\ \\
-		Team-Kommunikation &\ac{tcn} & $1/5$ & $3/5$ & $4.2467$ & $.61629$ & $30$ \\ \\
-		Team-Kommunikation-IK &\ac{tci} & $1/5$ & $3/5$ & $4.0133$ & $.66533$ & $15$ \\ \\
-		Team-Kommunikation-NIK &\ac{tcn} &$1/5$ & $3.4/5$ & $4.48$ & $.47689$ & $15$ \\ \\
-		Wahrg.Team-Effektivität &\ac{te} & $1/7$ & $2.2/6.6$ & $4.646$ & $.9722$ & $30$ \\ \\
-		Wahrg.Team-Effektivität-IK &\ac{tei} & $1/7$ & $2.2/5.8$ & $4.4$ & $1.093$ & $15$ \\ \\
-		Wahrg.Team-Effektivität-NIK &\ac{ten} & $1/7$ & $3.4/6.6$ & $4.853$ & $.8192$ & $15$ \\ \\
-		NASA-TLX &\ac{tlx} & $1/21$ &$5.17/14$ & $8.6$ & $2.135$ & $30$ \\ \\
-		NASA-TLX-IK &\ac{tlxi} & $1/21$ & $5.67/10.67$ & $8.166$ & $1.544$ & $15$ \\ \\
-		NASA-TLX-NIK&\ac{tlxn} & $1/21$ & $5.17/14.00$ & $9.033$ & $2.581$ & $15$ \\ \\
-		IPQ & \ac{ipq} & $1/7$ & $2.43/5.43$ & $4.216$ & $.6157$ & $30$ \\ \\
-		IPQ-IK & \ac{ipqi} & $1/7$ & $2.43/4.93$ & $4.1571$ & $.7015$ & $30$ \\ \\
-		IPQ-NIK & \ac{ipqn} & $1/7$ & $3.36/5.43$ & $4.276$ & $.5344$ & $30$ \\ \\
-		Self - Co-Presence &\ac{cp} & $1/5$ & $2.5/4.17$ & $2.9722$ & $.3690$ & $30$ \\ \\
-		Self - Co-Presence-IK &\ac{cpi} & $1/5$ & $2.5/4.17$ & $3.044$ & $.4733$ & $15$ \\ \\
-		Self - Co-Presence-NIK &\ac{cpn} & $1/5$ & $2.5/3.33$ & $2.900$ & $.2163$ & $15$ \\ \\
-		Others - Co-Presence &\ac{cp} & $1/5$ & $2.42/4.25$ & $3.055$ & $.3378$ & $30$ \\ \\
-		Others - Co-Presence-IK &\ac{cpi} & $1/5$ & $2.42/3.58$ & $2.977$ & $.2928$ & $15$ \\ \\
-		Others - Co-Presence-NIK &\ac{cpn} & $1/5$ & $2.83/4.25$ & $3.133$ & $.3710$ & $15$ \\ \\
-		Telepresence &\ac{cp} & $1/7$ & $2.0/7.0$ & $5.286$ & $1.042$ & $30$ \\ \\
-		Telepresence-IK &\ac{cpi} & $1/7$ & $2.0/7.0$ & $5.213$ & $1.265$ & $15$ \\ \\
-		Telepresence-NIK &\ac{cpn} & $1/7$ & $3.4/6.8$ & $5.360$ & $.7971$ & $15$ \\ \\
-		Social Presence &\ac{cp} & $1/10$ & $2.86/7.71$ & $4.590$ & $1.693$ & $30$ \\ \\
-		Social Presence - IK &\ac{cpi} & $1/10$ & $2.14/7.43$ & $4.685$ & $1.883$ & $15$ \\ \\
-		Social Presence - NIK &\ac{cpn} & $1/10$ & $2.86/7.71$ & $4.495$ & $1.540$ & $15$ \\ \\
+		Genereller Hang zum Vertrauen  & $1/7$ & $3.9/5.7$ & $4.665$ & $.3371$ & $30$ \\ \\
+		Kognitives Vertrauen  & $1/7$ & $2.57/5.14$ & $4.357$ & $.6.252$ & $30$ \\ \\
+		Kognitives Vertrauen-IK  & $1/7$ & $2.57/5.00$ & $4.1238$ & $.6719$ & $15$ \\ \\
+		Kognitives Vertrauen-NIK  & $1/7$ & $3.57/5.14$ & $4.590$ & $.4915$ & $15$ \\ \\
+		Team-Kommunikation & $1/5$ & $3/5$ & $4.2467$ & $.61629$ & $30$ \\ \\
+		Team-Kommunikation-IK & $1/5$ & $3/5$ & $4.0133$ & $.66533$ & $15$ \\ \\
+		Team-Kommunikation-NIK &$1/5$ & $3.4/5$ & $4.48$ & $.47689$ & $15$ \\ \\
+		Wahrg.Team-Effektivität & $1/7$ & $2.2/6.6$ & $4.646$ & $.9722$ & $30$ \\ \\
+		Wahrg.Team-Effektivität-IK & $1/7$ & $2.2/5.8$ & $4.4$ & $1.093$ & $15$ \\ \\
+		Wahrg.Team-Effektivität-NIK  & $1/7$ & $3.4/6.6$ & $4.853$ & $.8192$ & $15$ \\ \\
+		Allgemeine Belastung & $1/21$ &$5.17/14$ & $8.6$ & $2.135$ & $30$ \\ \\
+		Allgemeine Belastung-IK & $1/21$ & $5.67/10.67$ & $8.166$ & $1.544$ & $15$ \\ \\
+		Allgemeine Belastung-NIK & $1/21$ & $5.17/14.00$ & $9.033$ & $2.581$ & $15$ \\ \\
+		Präsenz & $1/7$ & $2.43/5.43$ & $4.216$ & $.6157$ & $30$ \\ \\
+		Präsenz-IK  & $1/7$ & $2.43/4.93$ & $4.1571$ & $.7015$ & $30$ \\ \\
+		Präsenz-NIK  & $1/7$ & $3.36/5.43$ & $4.276$ & $.5344$ & $30$ \\ \\
+		Selbst - Co-Präsenz & $1/5$ & $2.5/4.17$ & $2.9722$ & $.3690$ & $30$ \\ \\
+		Selbst - Co-Präsenz-IK  & $1/5$ & $2.5/4.17$ & $3.044$ & $.4733$ & $15$ \\ \\
+		Selbst - Co-Präsenz-NIK  & $1/5$ & $2.5/3.33$ & $2.900$ & $.2163$ & $15$ \\ \\
+		Others - Co-Präsenz  & $1/5$ & $2.42/4.25$ & $3.055$ & $.3378$ & $30$ \\ \\
+		Others - Co-Präsenz-IK  & $1/5$ & $2.42/3.58$ & $2.977$ & $.2928$ & $15$ \\ \\
+		Others - Co-Präsenz-NIK  & $1/5$ & $2.83/4.25$ & $3.133$ & $.3710$ & $15$ \\ \\
+		Telepräsenz  & $1/7$ & $2.0/7.0$ & $5.286$ & $1.042$ & $30$ \\ \\
+		Telepräsenz-IK  & $1/7$ & $2.0/7.0$ & $5.213$ & $1.265$ & $15$ \\ \\
+		Telepräsenz-NIK  & $1/7$ & $3.4/6.8$ & $5.360$ & $.7971$ & $15$ \\ \\
+		Soziale Präsenz  & $1/10$ & $2.86/7.71$ & $4.590$ & $1.693$ & $30$ \\ \\
+		Soziale Präsenz - IK  & $1/10$ & $2.14/7.43$ & $4.685$ & $1.883$ & $15$ \\ \\
+		Soziale Präsenz - NIK  & $1/10$ & $2.86/7.71$ & $4.495$ & $1.540$ & $15$ \\ \\
 	\end{tabularx}
 \end{table}
 \clearpage
@@ -2874,21 +2887,21 @@ Weiterhin ist eine positive Korrelation starken Effektes (vgl. \citep{cohen2013s
 	\centering\footnotesize\setstretch{0.8}
 	\caption[Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer]{Variablen, Mittelwerte, Standartabweichungen und Anzahl der Teilnehmer}
 	\label{MittelwerteUndCo2}
-	\begin{tabularx}{\textwidth}{p{3cm} | p{3.0cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
-		Was wurde gemessen? & Abkürzung & Min/Max &Angegeben Min/Max & Mittelwert & Std. Abweichung & $N$ \\
+	\begin{tabularx}{\textwidth}{p{5cm} | p{1cm} p{1.5cm} p{1.5cm} p{2cm} p{1cm} p{2cm}} 
+		Was wurde gemessen?  & Min/Max &Angegeben Min/Max & Mittelwert & Std. Abweichung & $N$ \\
 		\hline \\
-		Anz. abg. Runden &\ac{tRound} & &$4/13$ & $9$ & $2.5730$ & $10$ \\ \\
-		Anz. abg. Runden-IK Team &\ac{tRoundIK} & & $4/13$ & $9$ & $3.273$ & $5$ \\ \\
-		Anz. abg. Runden-NIK Team &\ac{tRoundNIK} & & $7/12$ & $9$ & $1.732$ & $5$ \\ \\	
-		Anz. abg. Runden Team &\ac{tRound} & & $4/13$ & $9$ & $2.6667$ & $10$ \\ \\
-		Anz. abg. Runden Team-IK&\ac{tRoundIK} & & $4/13$ & $9$ & $3.535$ & $5$ \\ \\
-		Anz. abg. Runden Team-NIK &\ac{tRoundNIK} & & $7/12$ & $9$ & $1.870$ & $5$ \\ \\	
-		Kognitives Vertrauen im Team &\ac{teamCog} & 3/21 & $11.71/15.00$ & $13.068$ & $1.1838$ & $10$ \\ \\
-		Kognitives Vertrauen im Team-IK &\ac{teamCogIK} & 3/21& $11.71/13.29$ & $12.36$ & $.839$ & $5$ \\ \\
-		Kognitives Vertrauen im Team-NIK &\ac{teamCogNIK} & 3/21& $12.28/15.00$ & $13.76$ & $1.106$ & $5$ \\
-		Generelles Vertrauen im Team &\ac{teamGen} & 3/21& $13.35/14.60$ & $13.99.53$ & $.3854$ & $10$ \\ \\
-		Generelles Vertrauen im Team-IK &\ac{teamGenIK} & 3/21& $13.35/14.15$ & $13.74$ & $.3361$ & $5$ \\ \\
-		Generelles Vertrauen im Team-NIK &\ac{teamGenNIK} & 3/21& $13.35/14.60$ & $14.25$ & $.2423$ & $5$ \\
+		Anz. abg. Runden  &$4/13$ & $9$ & $2.5730$ & $10$ \\ \\
+		Anz. abg. Runden-IK Team  & $4/13$ & $9$ & $3.273$ & $5$ \\ \\
+		Anz. abg. Runden-NIK Team  & $7/12$ & $9$ & $1.732$ & $5$ \\ \\	
+		Anz. abg. Runden Team  & $4/13$ & $9$ & $2.6667$ & $10$ \\ \\
+		Anz. abg. Runden Team-IK & $4/13$ & $9$ & $3.535$ & $5$ \\ \\
+		Anz. abg. Runden Team-NIK  & $7/12$ & $9$ & $1.870$ & $5$ \\ \\	
+		Kognitives Vertrauen im Team  & 3/21 & $11.71/15.00$ & $13.068$ & $1.1838$ & $10$ \\ \\
+		Kognitives Vertrauen im Team-IK  & 3/21& $11.71/13.29$ & $12.36$ & $.839$ & $5$ \\ \\
+		Kognitives Vertrauen im Team-NIK  & 3/21& $12.28/15.00$ & $13.76$ & $1.106$ & $5$ \\ \\
+		Generelles Vertrauen im Team & 3/21& $13.35/14.60$ & $13.99.53$ & $.3854$ & $10$ \\ \\
+		Generelles Vertrauen im Team-IK  & 3/21& $13.35/14.15$ & $13.74$ & $.3361$ & $5$ \\ \\
+		Generelles Vertrauen im Team-NIK & 3/21& $13.35/14.60$ & $14.25$ & $.2423$ & $5$ \\
 	\end{tabularx}
 \end{table}
 \clearpage
@@ -2901,40 +2914,56 @@ Weiterhin ist eine positive Korrelation starken Effektes (vgl. \citep{cohen2013s
 \newpage
 \section{Analyse}
 \subsection{Analyse der Hypothesen}
-Insgesamt zeigen die Ergebnisse Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf das gebildete kognitive Vertrauen der einzelnen Personen auswirkt. 
-Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf die reale Teameffektivität auswirken. Es gibt keine Anzeichen dafür, dass es einen Zusammenhang zwischen dem generellem Vertrauen einer Person und dem gebildeten kognitiven Vertrauen einer Person gibt. Es gibt ebenfalls keine Anzeichen dafür, dass der generelle Hang des Vertrauens im Team sich auf die reale Teameffektivität auswirkt. Weiterhin gibt es keine Anzeichen dafür, dass sich das gemeinsame Vertrauen im Team sich auf die reale Teameffektivität eines Teams auswirkt.
-
-Eine Übersicht der Hypothesen und ob diese als signifikant bewertet werden, befindet sich in \textbf{\textit{Tabelle \ref{SignifikanzOverview}}}
+%Insgesamt zeigen die Ergebnisse Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf das gebildete kognitive Vertrauen der einzelnen Personen auswirkt. 
+%Weiterhin zeigen die Ergebnisse kein Anzeichen dafür, dass unterschiedliche Avatar Konditionen sich auf die reale Teameffektivität auswirken. Es gibt keine Anzeichen dafür, dass es einen Zusammenhang zwischen dem generellem Vertrauen einer Person und dem gebildeten kognitiven Vertrauen einer Person gibt. Es gibt ebenfalls keine Anzeichen dafür, dass der generelle Hang des Vertrauens im Team sich auf die reale Teameffektivität auswirkt. Weiterhin gibt es keine Anzeichen dafür, dass sich das gemeinsame Vertrauen im Team sich auf die reale Teameffektivität eines Teams auswirkt.
 
 \paragraph{Auswirkungen auf das kognitive Vertrauen}
-Es konnte ein \textit{signifikanter Unterschied} in den Mittelwerten anhand eines durchgeführten Mann-Whitney-U Test zwischen dem gebildeten kognitiven Vertrauen in das Team der unterschiedlichen Avatarkonditionen festgestellt werden. Die \textbf{Hypothese 1 (H1$_{1}$)}, dass der erzielte kognitive Vertrauenswert sich bei den Konditionen \ac{ik} und \ac{nik}  \textit{signifikant} voneinander unterscheidet, wird angenommen. Es ist ein höheres durchschnittliches kognitives Vertrauen bei der Kondition \ac{nik} ($\bar(x)=4.590$) als bei der Kondition \ac{ik} ($\bar(x)= 4.123$) gebildet worden.
+Es konnte ein \textit{signifikanter Unterschied} der Mittelwerte anhand eines durchgeführten Mann-Whitney-U Test zwischen den gebildeten kognitiven Vertrauenswerten, bei unterschiedlichen Avatarkonditionen, festgestellt werden. 
+Die \textbf{Hypothese 1 (H1$_{1}$)}, dass der erzielte \textit{kognitive Vertrauenswert} sich bei den Konditionen \ac{ik} und \ac{nik} \textit{signifikant} voneinander unterscheidet, wird angenommen. Es ist ein durchschnittlich höheres \textit{kognitives Vertrauen} bei der Kondition \ac{nik} ($\bar(x)=4.590$) als bei der Kondition \ac{ik} ($\bar(x)= 4.123$) gebildet worden.
 
-Durch die statistische Auswertung der \textbf{Hypothese 2$_{0}$} konnten \textit{keine signifikanten Zusammenhänge} anhand einer Spearman-Korrelation zwischen den erzielten generellen Vertrauenswerten einer Person und den erzielten kognitiven Vertrauenswerten einer Person, bei unterschiedlichen Avatarkonditionen, festgestellt werden. Weiterhin unterscheidet sich der Zusammenhang zwischen dem \ac{gt} und dem \ac{ct} bei unterschiedlichen Avatarkonditionen \textit{nicht signifikant voneinander}. \newline Die beiden durchgeführten Spearman-Korrelationen weisen positive Korrelationskoeffizienten moderaten bis starken Effektes auf. Weiterhin zeigt eine durchgeführte Fisher-Z-Transformation \textit{keinen signifikanten Unterschied} der Verteilungsformen zwischen den Spearman-Korrelationen auf. Es muss jedoch die Alternativhypothese (H2$_{0}$), dass kein Zusammenhang zwischen dem erzieltem generellen Vertrauenswert einer Person und dem erzielten kognitiven Vertrauenswert bei Unterschiedlichen Avatarkonditionen besteht, angenommen werden.
+Durch die statistische Auswertung der \textbf{Hypothese 2$_{0}$} konnten \textit{keine signifikanten Zusammenhänge} anhand einer Spearman-Korrelation zwischen den erzielten \textit{generellen Vertrauenswert} einer Person und den erzielten \textit{kognitiven Vertrauenswert} einer Person, bei unterschiedlichen Avatarkonditionen, festgestellt werden. Zudem zeigt eine durchgeführte Fisher-Z-Transformation \textit{keinen signifikanten Unterschied} der Verteilungsformen zwischen den Spearman-Korrelationen auf. \newline 
+Die beiden durchgeführten Spearman-Korrelationen korrelieren moderat positiv miteinander. 
+Die Alternativhypothese (H2$_{0}$), dass kein Zusammenhang zwischen dem erzieltem generellen Vertrauenswert einer Person und dem erzielten kognitiven Vertrauenswert bei Unterschiedlichen Avatarkonditionen besteht, angenommen werden.
 
 \paragraph{Auswirkungen auf die Teameffektivität}
-Die Ergebnisse der statistischen Auswertung der \textbf{Hypothese 3$_{0}$} zeigen anhand einer durchgeführten Spearman-Korrelation \textit{keine signifikanten Zusammenhänge} der kognitiven Vertrauenswerte von Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen. Es konnte nicht gezeigt werden, dass der Zusammenhang der kognitive Vertrauenswert eines Teams mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker, als der von Teams mit der Kondition\newline \ac{nik}, ist.
-Die beiden Verteilungsformen der Spearman-Korrelationen zwischen den kognitiven Vertrauenswerten im Team \ac{teamCog} und der realen Teameffektivität des Teams\newline \ac{tRound} bei unterschiedlichen Avatarkonditionen unterscheiden sich anhand einer Fishers-Z-Transformation \textit{nicht signifikant} voneinander.
-Die Alternativhypothese  (H3$_{0}$), dass keine signifikanten Zusammenhänge der kognitiven Vertrauenswerte von Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen bestehen, wird angenommen. \newline
+Die Ergebnisse der statistischen Auswertung der \textbf{Hypothese 3$_{0}$} zeigen anhand einer durchgeführten Spearman-Korrelation \textit{keine signifikanten Zusammenhänge} der kognitiven Vertrauenswerte von Teams und der realen Teameffektivität von Teams bei unterschiedlichen Avatarkonditionen. Es konnte nicht festgestellt werden, dass der Zusammenhang der kognitiven Vertrauenswerte eines Teams mit der realen Teameffektivität eines Teams und der Kondition \ac{ik} stärker, als der von Teams mit der Kondition\newline \ac{nik}, ist. Die beiden Verteilungsformen der Spearman-Korrelationen zwischen den kognitiven Vertrauenswerten eines Teams und der realen Teameffektivität eines Teams bei unterschiedlichen Avatarkonditionen unterscheiden sich anhand einer Fishers-Z-Transformation \textit{nicht signifikant} voneinander.
+Die Alternativhypothese (H3$_{0}$) wird folglich angenommen.
+Somit wird davon ausgegangen, dass der Zusammenhang zwischen dem \textit{kognitiven Vertrauenswert von Teams} und der \textit{realen Teameffektivität von Teams} mit der Kondition \ac{ik} sich nicht signifikant von den Teams mit der Kondition \ac{nik} unterscheidet.
 
-Auf Konditionsebene ist zwischen dem kognitiven Vertrauenswert\newline (\ac{ctn}) und der wahrgenommenen Teameffektivität (\ac{ten}) der Kondition\newline \ac{nik} eine \textit{signifikante positive} Korrelation festgestellt worden. 
+Auf Konditionsebene kann zwischen dem kognitiven Vertrauenswert und der wahrgenommenen Teameffektivität der Kondition \ac{nik} eine \textit{signifikante positive} Korrelation festgestellt werden. 
 
-Die Mittelwerte der realen Teameffektivität bei unterschiedlichen Avatarkonditionen sind gleich und unterscheiden sich \textit{nicht signifikant} voneinander. Die \textbf{Hypothese 4$_{0}$}, dass die reale Teameffektivität sich bei bei unterschiedlichen Avatarkonditionen signifikant voneinander unterscheidet, wird abgelehnt. Es muss die Alternativhypothese (H4$_{0}$) angenommen werden, die besagt, dass die reale Teameffektivität sich bei unterschiedlichen Avatarkonditionen nicht unterscheidet, angenommen.\newline
+Die Mittelwerte der realen Teameffektivität bei unterschiedlichen Avatarkonditionen sind identisch und unterscheiden sich somit \textit{nicht signifikant} voneinander. Die \textbf{Hypothese 4$_{1}$}, dass die reale Teameffektivität sich bei bei unterschiedlichen Avatarkonditionen signifikant voneinander unterscheidet, kann nicht angenommen werden. Die Alternativhypothese (H4$_{0}$), die besagt, dass die reale Teameffektivität sich bei unterschiedlichen Avatarkonditionen nicht signifikant unterscheidet, wird angenommen.\newline
 
-Durch die Analyse der \textbf{Hypothese 5$_{0}$} konnten \textit{keine signifikanten} Zusammenhänge der generellen Vertrauenswerte eines Teams und der realen Teameffektivität bei unterschiedlichen Avatarkonditionen festgestellt werden. Durch diese nicht signifikanten Zusammenhänge und dadurch, dass eine durchgeführte Fishers-Z-Transformation keine Unterschiede der Zusammenhänge zeigt, muss die Hypothese 5 (H5$_{1}$) verworfen und die Alternativhypothese (H5$_{0}$) angenommen werden. Diese besagt, dass der generelle Vertrauenswert eines Teams nicht stärker mit der realen Teameffektivität eines Teams und der Kondition \ac{ik} korreliert als von Teams mit der Kondition \ac{nik}.
+Die Analyse der \textbf{Hypothese 5$_{0}$} zeigt, dass \textit{keine signifikanten} Zusammenhänge der generellen Vertrauenswerte eines Teams und der realen Teameffektivität eines Teams bei unterschiedlichen Avatarkonditionen festgestellt bestehen. Da die Zusammenhänge nicht signifikant sind und die durchgeführte Fishers-Z-Transformation keine Unterschiede der Zusammenhänge aufzeigt, muss die Hypothese 5 (H5$_{1}$) verworfen und die Alternativhypothese (H5$_{0}$) angenommen werden. Diese besagt, dass der Zusammenhang zwischen dem \textit{generellen Vertrauenswert} eines Teams und der \textit{realen Teameffektivität} eines Teams mit der Kondition 
 
 \paragraph{Subjektive Daten}
 Eine Tabelle der einzelnen Werte der Variablen befindet sich in \textbf{Tabelle \ref{MittelwerteUndCo} }
-Die Nutzer des Systems zeigen anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unabhängig der Avatarkonditionen, ein überdurchschnittliches Gefühl der Presence  ($\bar(x)=4.21; \sigma=.615$). Auch die, \textit{der selbst wahrgenommenen Co-Presencen} ($\bar(x)=2.972; \sigma=.3690$), der \textit{wahrgenommenen Co-Presence des anderen} ($\bar(x)=3.055; \sigma=.3378$), der \textit{Telepresence} ($\bar(x)=5.286; \sigma=1.042$) und der \textit{Social-Presence} ($\bar(x)=4.590; \sigma=1.693$) sind überdurchschnittliche Werte erzielt worden.
+Die Nutzer des Systems zeigen anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unabhängig der Avatarkonditionen, ein überdurchschnittliches Gefühl der Präsenz  ($\bar(x)=4.21; \sigma=.615$). Auch die, \textit{der selbst wahrgenommenen Co-Präsenz} ($\bar(x)=2.972; \sigma=.3690$), der \textit{wahrgenommenen Co-Präsenz des anderen} ($\bar(x)=3.055; \sigma=.3378$), der \textit{Telepräsenz} ($\bar(x)=5.286; \sigma=1.042$) und der \textit{Sozialen-Präsenz} ($\bar(x)=4.590; \sigma=1.693$) sind überdurchschnittliche Werte erzielt worden.
 Es konnten jedoch \textit{keine signifikanten Unterschiede} bei den einzelnen Avatarkonditionen dieser subjektiven Daten festgestellt werden.
 
-Das \textit{wahrgenommene Anstrengungsmaß} ($\bar(x)=8.6; \sigma=2.135$) liegt, anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unter dem Durchschnitt, während die wahrgenommene Teameffektivität ($\bar(x)=4.646; \sigma=..972$) über dem Durschnitt liegt. Auch hier konnten jedoch \textit{keine signifikanten Unterschiede} bei den einzelnen Avatarkonditionen festgestellt werden.
+Das \textit{wahrgenommene Belastung} ($\bar(x)=8.6; \sigma=2.135$) liegt, anhand der Minimal und Maximal anzugebenden Werte im jeweiligen Fragebogen, unter dem Durchschnitt, während die wahrgenommene Teameffektivität ($\bar(x)=4.646; \sigma=..972$) über dem Durschnitt liegt. Auch hier konnten jedoch \textit{keine signifikanten Unterschiede} bei den einzelnen Avatarkonditionen festgestellt werden.
 
 Anhand eines Mann-Whitney-U Test konnte bei der Teamkommunikation ein signifikanter unterschied der Mittelwerte bei unterschiedlichen Avatarkonditionen festgestellt. werden. Der Mittelwert der Teamkommunikation der Kondition \ac{nik} beträgt ($\bar(x) = 4.013$), während der Mittelwert der Teamkommunikation der Kondition \ac{ik} ($\bar(x) = 4.48$) beträgt. Somit ist die subjektiv empfundene Teamkommunikation bei der Kondition \ac{ik} höher als bei der Kondition \ac{nik}.
 
-\paragraph{Fazit der Analyse}
-Anhand der statistischen Analyse, lässt sich feststellen, dass unterschiedliche Avatarkonditionen einen \textit{signifikanten Einfluss} auf das gebildete kognitive Vertrauen eines Teams besitzen, dieses gebildete kognitive Vertrauen jedoch textit{keinen Einfluss} auf die reale Teameffektivität besitzt. 
-Es wurde ein signifikanter unterschied der Mittelwerte der Teamkommunikation auf Konditionsebene festgestellt. Es hat sich ein erhöhtes Presencegefühl (\ac{ipq}, \ac{tp}, \ac{scp}, \ac{ocp}, \ac{sp}) auf Konditionsebene während der Versuchsdurchführung gebildet. Das Anstrengungsmaß (\ac{tlx} lag unter dem Durchschnitt der möglichen Anzugebenden Werte und die wahrgenommene Teameffektivität war überdurchschnittlich hoch.
 
+--
+
+Da nur bei einer Kategorie der subjektiven Daten signifikante Unterschiede zwischen beiden Avatarkonditionen festgestellt werden konnten, werden die übrigen Daten der Teilnehmer im Folgenden zusammen analysiert.
+
+Anhand eines Mann-Whitney-U-Test konnte bei der Kategorie \textit{Teamkommunikation} ein \textit{signifikanter Unterschied} der Mittelwerte beider Avatarkonditionen festgestellt werden. Der Mittelwert der \textit{Teamkommunikation} der Kondition \ac{nik} beträgt $\bar(x) = 4.013$, während der Mittelwert der Teamkommunikation der Kondition \ac{nik} $\bar(x) = 4.48$ beträgt. Somit ist die subjektiv empfundene Teamkommunikation bei der Kondition \ac{ik} höher als bei
+der Kondition \ac{nik} und bei beiden Konditionen ist die Tendenz einer hohen Teamkommunikation ersichtlich ($\bar(x) = 4.013$; $\bar(x) = 4.48$ $ > 2.5$).
+
+Das von allen Teilnehmern durchschnittlich angegebene \textit{Gefühl der Präsenz} kann mit dem Wert $\bar(x) = 4.21$ als stark interpretiert werden ($\bar(x) > 3.5$). Die \textit{Telepräsenz} wird mit dem Wert $\bar(x) = 5.286$ etwas stärker als Durchschnittlich empfunden. Auch die \textit{selbst wahrgenommene Co-Präsenz} sowie die \textit{wahrgenommene Co-Präsenz des anderen} liegen mit den Werten $\bar(x) = 4.21$ und $\bar(x) = 2.972$ über dem Mittelwert der Antwortmöglichkeiten ($\bar(x) > 2.5$) und weisen somit eine Tendenz zur starken \textit{Co-Präsenz} auf.
+
+Die Werte der \textit{Sozialen-Präsenz} ($\bar(x) > 4.590$) deuten hingegen auf ein geringer empfundenes Gefühl der Nähe zwischen den Teilnehmern hin ($\bar(x) < 5$).
+Daneben liegt die durchschnittlich \textit{wahrgenommene Teameffektivität} mit dem Wert $\bar(x) > 4.646$ über dem Wert 3,5 und lässt sich somit im Bereich der als eher stark empfundenen Teameffektivität ($3.5 - 7$) verordnen.
+Die Werte des NASA-TLX ($\bar(x) > 8.6$) zeigen, dass das VR-Experiment als mittelmäßig bis wenig anstrengend wahrgenommen wurde ($\bar(x) < 11$ ).
+
+\paragraph{Zusammenfassung der Analyse}
+Anhand der statistischen Analyse lässt sich feststellen, dass unterschiedliche Avatarkonditionen einen \textit{signifikanten Einfluss} auf das gebildete kognitive Vertrauen eines Teams besitzen, das kognitive Vertrauen jedoch textit{keinen Einfluss} auf die reale Teameffektivität hat. 
+Es wurde ein signifikanter Unterschied der Mittelwerte der Teamkommunikation auf Konditionsebene festgestellt. Zudem kann festgehalten werden, dass sich ein erhöhtes Präsenz-Gefühl (Präsenz, Telepräsenz, Selbst-Präsenz, Selbst wahrgenommene Co-Präsenz, wahrgenommene Co-Präsenz des anderen) auf Konditionsebene während der Versuchsdurchführung gebildet hat. Die Allgemeine Belastung sowie die Soziale-Präsenz lag unter dem Durchschnitt der möglichen Anzugebenden Werte und die wahrgenommene Teameffektivität war überdurchschnittlich hoch.
+
+Eine Übersicht der Hypothesen und ob diese als signifikant bewertet werden, befindet sich in \textbf{\textit{Tabelle \ref{SignifikanzOverview}}}
 
 \begin{table}[H]
 	\centering\footnotesize\setstretch{1.2}
@@ -2946,36 +2975,36 @@ Es wurde ein signifikanter unterschied der Mittelwerte der Teamkommunikation auf
 %		H1$_{0}$ : Ein hoher General-Trust-Score (\ac{gt}) wirkt sich \textbf{nicht positiv} auf den Cognitiven-Trust-Score (\ac{ct}) aus.\\
 %\textbf{H1$_{1}$} : Der erzielte kognitive Vertrauenswert (\ac{ct}) unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\ \\
 %Alternative formulierung :
-\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitiven Vertrauenswerte (\ac{ct}) unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
-		& nicht signifikant \\
+\textbf{H1$_{1}$} : Die Mittelwerte der erzielten kognitiven Vertrauenswerte unterscheiden sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
+		& \textbf{signifikant} \\
 		\hline \\
 		
 %		H2$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf den Cognitive-Trust-Score (\ac{ct}). \\
 %		\textbf{H2$_{1}$} : Es besteht ein Zusammenhang zwischen dem erzielten generellen Vertrauenswert \ac{gt} einer Person und dem erzielten kognitiven Vertrauenswert \ac{ct} einer Person.\\ \\
 %		Alternative formulierung :
-				\textbf{H2$_{1}$} : Je höher der erzielte generelle Vertrauenswerte \ac{gt} einer Person desto höher ist der erzielte kognitive Vertrauenswert \ac{ct} einer Person.
-		& \textbf{signifikant} \\
+				\textbf{H2$_{1}$} : Je höher der erzielte generelle Vertrauenswert einer Person desto höher ist der erzielte kognitive Vertrauenswert einer Person. \\
+		& nicht signifikant \\
 		
 		\hline 	\\	
 %
 %		\textbf{H3$_{1}$} : Der kognitive Vertrauenswert von Teams \ac{teamCog} korreliert mit der realen Teameffektivität von Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\ \\
 %		H3a$_{0}$ : Ein hoher Cognitiver-Trust-Score hat \textbf{keinen Einfluss} auf die Team-Effektivität (\ac{tRound}).
 %Alternative Formulierung :
-\textbf{H3$_{1}$} : Der Zusammenhang zwischen dem kognitiven Vertrauenswert von Teams \ac{teamCog} und der realen Teameffektivität von Teams \ac{tRound} mit der Kondition \ac{ik} ist stärker als der von Teams mit der Kondition \ac{nik}. \\
+\textbf{H3$_{1}$} : Der Zusammenhang zwischen dem kognitiven Vertrauenswert von Teams und der realen Teameffektivität von Teams mit der Kondition \ac{ik} ist stärker als der von Teams mit der Kondition \ac{nik}. \\
 		& nicht signifikant \\		
 		
 		\hline 	\\	
 %		\textbf{H4$_{1}$} : Die reale Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\ \\
 %%		H4$_{0}$ : Die Konditionen \ac{ik} oder \ac{nik} haben \textbf{keinen signifikant abweichenden Einfluss} auf die Anzahl der erfolgreich abgeschlossenen Runden \ac{tRound} eines Teams.\\
 %Alternative Formulierung :
-		\textbf{H4$_{1}$} : Die Mittelwerte der realen Teameffektivität \ac{tRound} unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
+		\textbf{H4$_{1}$} : Die Mittelwerte der realen Teameffektivität unterscheidet sich bei den Konditionen \ac{ik} und \ac{nik} signifikant voneinander.\\
 		& nicht signifikant\\
 
 		\hline 	\\	
 %		\textbf{H5$_{1}$} : Der generelle Vertrauenswert eines Teams \ac{teamGen} korreliert mit der realen Teameffektivität eines Teams \ac{tRound} und der Kondition \ac{ik} stärker als von Teams mit der Kondition \ac{nik}. \\ \\
 %%		H5$_{0}$ : Teams, aufgeteilt nach Avatar Verkörperungen (\ac{ik}, \ac{nik}), mit einem hohem General-Trust-Score (\ac{gt}) \textbf{schließen nicht mehr Runden ab}, (\ac{tRound}) als die mit einem niedrigen General-Trust-Score \ac{gt}\\
 %Alternative Formulierung :
-			\textbf{H5$_{1}$} : Der Zusammenhang zwischen dem generellen Vertrauenswert eines Teams \ac{teamGen} und der realen Teameffektivität eines Teams \ac{tRound} mit der Kondition \ac{ik} ist stärker als der von Teams mit der Kondition \ac{nik}.
+			\textbf{H5$_{1}$} : Der Zusammenhang zwischen dem generellen Vertrauenswert eines Teams und der realen Teameffektivität eines Teams mit der Kondition \ac{ik} ist stärker als der von Teams mit der Kondition \ac{nik}. \\
 		& nicht signifikant \\
 		
 		\hline 	\\
@@ -2988,25 +3017,24 @@ Es wurde ein signifikanter unterschied der Mittelwerte der Teamkommunikation auf
 
 \subsection{Analyse der technischen Anforderungen}
 
-Schweizer \citep[p.270]{schweitzer2010conceptualizing} erläutert die 4 größten Kennzeichen eines \ac{vts} in der Literatur.
-\ac{vts} sind :
+Schweizer \citep[s.270]{schweitzer2010conceptualizing} erläutert die 4 größten Kennzeichen eines \ac{vts} in der Literatur (siehe Kapitel \textbf{\ref{AnforderungenLautSchweitzer}}. Diese konnten in dieser Studie durch die entwickelte Versuchsumgebung erfüllt werden und das \ac{sve} bot folgende Eigenschaften :
 \begin{itemize}
-\item Zustandegekommen aufgrund von Kommunikationstechnologie.Durch technische Hilfsmittel wird Kommuniziert, es werden Entscheidungen getroffen oder Informationen ausgetauscht.
-\item Räumlich getrennt. \ac{vts} arbeiten \textit{nicht} am selben Arbeitsplatz
-\item Grenzübergreifend. Es gibt Zusammenarbeit der Teammitglieder aus verschiedenen Organisationen oder Organisationseinheiten.
-\item Asynchron. \ac{vts} arbeiten zu unterschiedlichen Zeiten/Zeitzonen oder in der selben Zeitzone in unterschiedlichen
+\item \textit{Zustandegekommen aufgrund von Kommunikationstechnologie.} Durch das \ac{hmd} sowie das genutzte Framework, konnte Kommuniziert werden, Entscheidungen getroffen und Informationen ausgetauscht werden.
+\item \textit{Räumlich getrennt} Durch die Online-Fähigkeit der entwickelten Versuchsumgebung, konnten die Teilnehmer von überall an dem Versuch teilnehmen.
+\item \textit{Grenzübergreifend} Die Online-Fähigkeit erlaubte eine Zusammenarbeit von verschiedenen Regionen aus.
+\item Asynchron. Die Teilnehmer haben nicht direkt asynchron an dieser Studie teilgenommen, jedoch, falls ein Teilnehmer die Versuchsumgebung verlassen hätte, hätten die anderen Versuchsteilnehmer mit ihrer aktuellen Aufgabe teilweise weiterarbeiten können.
 \end{itemize}
 
 Die technischen Anforderungen, die im Kapitel \textit{\ref{TechnischeAnforderungen}} aufgestellt werden, konnten hinreichend umgesetzt werden.
 \begin{itemize}
-\item \textbf{Online-Fähigkeit und Unterstützung mehrerer HMD's}: Durch das verwendete Framework \textit{Normcore} ist es mehreren Nutzern gleichzeitig möglich gewesen, von jedem beliebigen Ort an dem Experiment teilzunehmen. Die einzige Voraussetzung war, dass die teilnehmenden Personen ein \ac{hmd}, einen Internetanschluss sowie einen Computer besitzen. Es ist möglich gewesen, die Anforderungen eines virtuellen Teams laut Schweitzer \citep[p.270]{schweitzer2010conceptualizing} (vgl. Kapitel \textit{AnforderungenLautSchweitzer}) zu erfüllen. 
-\item \textbf{Geringe Latenz}: Es wurden zwei End-to-End Latenzmessungen durchgeführt. Die End-to-End Latenzmessung bezeichnet die Zeit, die benötigt wird, bis eine reale Aktion eines Nutzers von einem anderen Nutzers wahrgenommen wird. Die die erste Latenzmessung betraf die Geschwindigkeit der Audioübertragung des Netzwerks. Es wurde eine Durchschnittliche Latenz von \textbf{356ms} festgestellt.
-Die zweite Messung betraf die Geschwindigkeit, in der die Avatare ihre Körperpositionen verändern. Es wurde eine durchschnittliche Geschwindigkeit von 294ms festgestellt.
-Es wurden subjektiv keine störende Bewegungsverzögerung und Audioübertragung wahrgenommen, weshalb die Anfoderung als erfüllt angesehen wird.
+\item \textbf{Online-Fähigkeit und Unterstützung mehrerer HMD's}: Durch das verwendete Framework \textit{Normcore} ist es mehreren Nutzern gleichzeitig möglich gewesen, von jedem beliebigen Ort an dem Experiment teilzunehmen. Die einzige Voraussetzung war, dass die teilnehmenden Personen ein \ac{hmd}, einen Internetanschluss sowie einen Computer besitzen. Es ist somit möglich gewesen, die Anforderungen eines virtuellen Teams laut Schweitzer \citep[s.270]{schweitzer2010conceptualizing} (vgl. Kapitel \textit{AnforderungenLautSchweitzer}) zu erfüllen. 
+\item \textbf{Geringe Latenz}: Es wurden zwei End-to-End Latenzmessungen durchgeführt. Die End-to-End Latenzmessung bezeichnet die Zeit, die benötigt wird, bis eine reale Aktion eines Nutzers von einem anderem Nutzer wahrgenommen wird. Die erste Latenzmessung betraf die Geschwindigkeit der Audioübertragung des Netzwerks. Es wurde eine Durchschnittliche Latenz von \textbf{356ms} festgestellt.
+Die zweite Messung betraf die Geschwindigkeit, in der die Avatare ihre Körperpositionen verändern. Dabei wurde eine durchschnittliche Geschwindigkeit von 294ms festgestellt.
+Es wurden während des Experiments keine störende Bewegungsverzögerung und Audioübertragung wahrgenommen, weshalb die Anforderung als erfüllt angesehen wird.
 \item \textbf{Steuerung und Verwaltung der Anwendung durch einen Spectator}: Durch einen eigenen Spectator-Client ist es möglich gewesen, die Anwendung von Außen zu steuern und zu überwachen.
-\item \textbf{Interaktionsmöglichkeiten}:  Durch das Verwendete Framework \textit{Normcore} und dessen globalen Datenspeicher für unterschiedliche Variablen, ist es möglich gewesen, alle Zustände und Informationen während der laufenden Versuchsdurchführung zwischen dem Client und Spectator zu synchronisieren. Durch Nutzerfeedback wurde ebenfalls die intuitive Steuerung bestätigt.
-\item \textbf{Sprachübertragung}: Die Implementierung eines RCP-Basiertem Netzwerkhandlings ermöglichte, eine Sprachübertragung von Client zu Spectator und von Spectator zu Client.
-\item \textbf{Avatararten}: Der Spectator hatte bei dem verwendetem System die Möglichkeit zur Laufzeit zwei verschiedene Avatararten für die Clients auszuwählen. Es wurden zwei Avatararten (\ac{ik} und \ac{nik}) implementiert, anhand diesem Zusammenhänge und Unterschiede gemessen wurden.
+\item \textbf{Interaktionsmöglichkeiten}:  Durch das verwendete Framework \textit{Normcore} und dessen globalen Datenspeicher für unterschiedliche Variablen ist es möglich gewesen, alle Zustände und Informationen während der laufenden Versuchsdurchführung zwischen dem Client und Spectator zu synchronisieren. Durch das Nutzerfeedback wurde ebenfalls die intuitive Steuerung bestätigt.
+\item \textbf{Sprachübertragung}: Die Implementierung eines RCP-basierten Netzwerkhandlings ermöglichte eine Sprachübertragung von Client zu Spectator und von Spectator zu Client.
+\item \textbf{Avatararten}: Der Spectator hatte bei dem verwendeten System die Möglichkeit, zur Laufzeit zwei verschiedene Avatararten (\ac{ik} und \ac{nik}) für die Clients auszuwählen.
 \end{itemize}
 %
 %Weiterhin besitzt das System noch \textbf{zusätzliche Anforderungen} :
@@ -3071,7 +3099,7 @@ Die Stichprobengröße betrug in dem Experiment $N=30$, wobei, um Unterschiede u
 
 \subsection{Diskussion des Experimentes}
 \paragraph{Avatarkonditionen}
-Es gibt laut der statistischen Auswertung keine Unterschiede in der erzeugten selbst wahrgenommen Co-Presencen, Wahrgenommenen Co-Presence des anderen, Telepresence oder Social-Presence zwischen den eingesetzten Avatarkonditionen. 
+Es gibt laut der statistischen Auswertung keine Unterschiede in der erzeugten selbst wahrgenommen Co-Präsenz, Wahrgenommenen Co-Präsenz des anderen, Telepräsenz oder der Sozialen-Präsenz zwischen den eingesetzten Avatarkonditionen. 
 Ein Grund diesbezüglich könnte das fehlende Selbst-Avatar der einzelnen Nutzer sein. Dies erhöht Laut Biocca ebenfalls die Selbstpräsenz der Avatare \citep[421-427]{construal2014connected}.
 Eine teilnehmende Person (ID2) mit der Kondition \ac{ik} schrieb dazu : \\
 \dq{}\textit{Ich wusste nicht genau wie meine Arme zu sehen sind, ob ich ein Buchstabe auch mit den Armen formen, statt mit den Händen schreiben konnte.}\dq{}\\
@@ -3113,7 +3141,7 @@ Eine teilnehmende Person (ID7) mit der Kondition \ac{ik} schreibt zu den Natürl
 
 \subsection{Effektivität des Vertrauensaufbau zwischen den Avatarkonditionen}
 
-Die während der Analyse der Hypothese 1 wurde einen höheren Mittelwert der Kondition\newline \ac{nik} als bei der Kondition \ac{ik} festgestellt. Diese Feststellung über den Vertrauensaufbau unter Avataren widerspricht der Untersuchung von Bente und Rüggen (vgl. \textbf{\textit{ Kapitel \ref{AvatarTrust}}}). Die Kondition \ac{ik} sieht menschenähnlich aus, weshalb sich hätte vermuten lassen, dass bei dieser Kondition bei teilnehmenden Personen ein größerer kognitiver Vertrauensaufbau stattfindet, als bei der Kondition \ac{nik}  (vgl. \textbf{\textit{Vertrauen und virtuelle Teams}}). Jedoch ist laut der statistischen Analyse genau das Gegenteil der Fall. Gründe für dieses Ergebnis könnte sein, dass der Avatar von dem \textit{Uncanny Valley} Effekt betroffen sind (vgl. \textbf{\textit{Uncanny-Valley}}). Schon in der Studie von Waldow (\citep{waldow2019investigating}) tendiert der in dieser Studie eingesetzte Avatar(\ac{ik}) zum Unbehagen, was durch den Uncanny-Valley Effekt zu Stande kommen kann. Weiterhin kann es sein, dass die Gestukulation, während des Versuchs nicht eindeutig von den teilnehmenden Personen mit der Kondition \ac{ik} ausgewertet werden konnten. Die Inverse-Kinematik kann falsch interpretiert worden sein, oder es sind durch diese unnatürliche Bewegungsmuster der Avatare aufgetreten. Dadurch, dass die Avatare eventuell \dq{}anders als normale Menschen\dq{} wahrgenommen wurden, konnte diesen eventuell nicht all zu viel Vertrauen zugesprochen werden.
+Die während der Analyse der Hypothese 1 wurde einen höheren Mittelwert der Kondition\newline \ac{nik} als bei der Kondition \ac{ik} festgestellt. Diese Feststellung über den Vertrauensaufbau unter Avataren widerspricht der Untersuchung von Bente und Rüggen (vgl. \textbf{\textit{ Kapitel \ref{AvatarTrust}}}). Die Kondition \ac{ik} sieht menschenähnlich aus, weshalb sich hätte vermuten lassen, dass bei dieser Kondition bei teilnehmenden Personen ein größerer kognitiver Vertrauensaufbau stattfindet, als bei der Kondition \ac{nik}  (vgl. \textbf{\textit{Vertrauen und virtuelle Teams}}). Jedoch ist laut der statistischen Analyse genau das Gegenteil der Fall. Gründe für dieses Ergebnis könnte sein, dass der Avatar von dem \textit{Uncanny Valley} Effekt betroffen sind (vgl. \textbf{\textit{Uncanny-Valley}}). Schon in der Studie von Waldow \citep{waldow2019investigating} tendiert der in dieser Studie eingesetzte Avatar(\ac{ik}) zum Unbehagen, was durch den Uncanny-Valley Effekt zu Stande kommen kann. Weiterhin kann es sein, dass die Gestukulation, während des Versuchs nicht eindeutig von den teilnehmenden Personen mit der Kondition \ac{ik} ausgewertet werden konnten. Die Inverse-Kinematik kann falsch interpretiert worden sein, oder es sind durch diese unnatürliche Bewegungsmuster der Avatare aufgetreten. Dadurch, dass die Avatare eventuell \dq{}anders als normale Menschen\dq{} wahrgenommen wurden, konnte diesen eventuell nicht all zu viel Vertrauen zugesprochen werden.
 Eine teilnehmende Person (ID9) mit der Kondition \ac{ik} schrieb im Feedback Teil des Fragebogens dazu : \newline
 \dq{}\textit{Es war eine spannende Erfahrung am VR-Experiment teilzunehmen und hat Spaß gemacht. Die Personen waren mir nah, obwohl sie eindeutig unreal wirkten; Vertrauen war nichtsdestotrotz vorhanden.}\dq{}
 Es wird vermutet, dass die Simplizität der nicht-menschenähnlichen Avatardarstellung einfacher angenommen werden kann.
@@ -3219,7 +3247,7 @@ Darüber hinaus, wäre es sehr interessant zu untersuchen, wie sehr sich der Unt
 Das Ziel dieser Studie war es, den Einfluss von verschiedenen Avatarkonditionen auf die Vertrauensbildung in ein Team und die daraus resultierende Teameffektivität zu untersuchen. 
 Anhand eines aufgestellten Versuchsdesign, wurden detaillierte Untersuchungen durchgeführt, die diese Zusammenhänge statistisch überprüft haben und eine anschließende Diskussion ermöglichten.
 
-Durch ein für diese Studie entwickeltes System, konnte eine empirische Studie durchgeführt werden, in der Räumlich getrennte Nutzer mithilfe einer von zwei möglichen Avatarkondition eine gemeinsame Aufgabe erledigen mussten. Die Nutzer des Systems sahen die Mitglieder des Teams als menschenähnliche oder nicht-menschenähnliche Avatare. Während der Durchführung dieser gemeinsamen Aufgabe, wurde die gemeinsame Teameffektivität ermittelt. Die anschließende Umfrage diente dazu, einen Einblick in das generelle Vertrauen und das gebildete kognitive Vertrauen, sowie subjektiver Empfindungen über die Arbeitsbelastung und das gebildete Gefühl von Presence einer Person und des Teams, zu bekommen.
+Durch ein für diese Studie entwickeltes System, konnte eine empirische Studie durchgeführt werden, in der Räumlich getrennte Nutzer mithilfe einer von zwei möglichen Avatarkondition eine gemeinsame Aufgabe erledigen mussten. Die Nutzer des Systems sahen die Mitglieder des Teams als menschenähnliche oder nicht-menschenähnliche Avatare. Während der Durchführung dieser gemeinsamen Aufgabe, wurde die gemeinsame Teameffektivität ermittelt. Die anschließende Umfrage diente dazu, einen Einblick in das generelle Vertrauen und das gebildete kognitive Vertrauen, sowie subjektiver Empfindungen über die Arbeitsbelastung und das gebildete Gefühl von Präsenz einer Person und des Teams, zu bekommen.
 
 Dahingehend konnte ein signifikanter Unterschied auf das gebildete kognitive Vertrauen zwischen den beiden Avatarkonditionen festgestellt werden, wobei der nicht-menschenähnliche Avatar mehr kognitives Vertrauen bilden lies.
 Es konnte jedoch kein statistisch signifikanter Unterschied zwischen den Avatarkonditionen und der Teameffektivität festgestellt werden. Weiterhin zeigen die Ergebnisse keinen statistisch signifikanten Zusammenhang zwischen dem generellen Vertrauen und dem gebildeten kognitiven Vertrauen einer Person. Diesbezüglich konnte kein statistisch signifikanter Zusammenhang des kognitiven Vertrauen und der Effektivität eines Teams festgestellt werden.
@@ -3240,8 +3268,8 @@ Es empfielt sich, diese Studie mit mehr Teilnehmern durchzuführen, um die in di
 %Auch auf virtuelle Teams eingehen ...! Wichtig!
 \newpage
 
-\bibliographystyle{dcu}
-\bibliography{bibfile}
+%\bibliographystyle{dcu}
+\printbibliography
 	\newpage
 	\appendix	
 \section*{Anhang}\markboth{Anhang}{Anhang}\addcontentsline{toc}{section}{Anhang}
@@ -3496,7 +3524,7 @@ Es empfielt sich, diese Studie mit mehr Teilnehmern durchzuführen, um die in di
 \begin{figure}[H]
 		\begin{footnotesize}
 			\includegraphics[scale=1]{Abbildungen/criteriaForVirtualTeams.JPG}
-			\caption[Kriterien für \ac{vts}]{Kriterien für \ac{vts} von \citep[p. 27]{schweitzer2010conceptualizing}}
+			\caption[Kriterien für \ac{vts}]{Kriterien für \ac{vts} von \citep[s. 27]{schweitzer2010conceptualizing}}
 			\label{criteriaForVirtualTeams}
 		\end{footnotesize}
 	\end{figure}	

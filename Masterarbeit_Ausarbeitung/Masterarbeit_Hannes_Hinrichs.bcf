@@ -163,7 +163,7 @@
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortingtemplatename</bcf:key>
-      <bcf:value>nyt</bcf:value>
+      <bcf:value>nty</bcf:value>
     </bcf:option>
     <bcf:option type="singlevalued">
       <bcf:key>sortsets</bcf:key>
@@ -626,8 +626,7 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">dashed</bcf:option>
-    <bcf:option datatype="boolean">mergedate</bcf:option>
+    <bcf:option datatype="boolean">subentry</bcf:option>
     <bcf:option datatype="integer">mincrossrefs</bcf:option>
     <bcf:option datatype="integer">minxrefs</bcf:option>
     <bcf:option datatype="integer">maxnames</bcf:option>
@@ -709,7 +708,7 @@
     <bcf:option datatype="boolean">doi</bcf:option>
     <bcf:option datatype="boolean">eprint</bcf:option>
     <bcf:option datatype="boolean">related</bcf:option>
-    <bcf:option datatype="boolean">mergedate</bcf:option>
+    <bcf:option datatype="boolean">subentry</bcf:option>
     <bcf:option datatype="xml">labelalphatemplate</bcf:option>
     <bcf:option datatype="xml">translit</bcf:option>
     <bcf:option datatype="xml">sortexclusion</bcf:option>
@@ -796,7 +795,7 @@
     <bcf:option datatype="boolean" backendout="1">doi</bcf:option>
     <bcf:option datatype="boolean" backendout="1">eprint</bcf:option>
     <bcf:option datatype="boolean" backendout="1">related</bcf:option>
-    <bcf:option datatype="boolean" backendout="1">mergedate</bcf:option>
+    <bcf:option datatype="boolean" backendout="1">subentry</bcf:option>
     <bcf:option datatype="integer" backendin="maxcitenames,maxbibnames,maxsortnames">maxnames</bcf:option>
     <bcf:option datatype="integer" backendin="mincitenames,minbibnames,minsortnames">minnames</bcf:option>
     <bcf:option datatype="integer" backendout="1">maxbibnames</bcf:option>
@@ -2348,36 +2347,184 @@
   <!-- CITATION DATA -->
   <!-- SECTION 0 -->
   <bcf:bibdata section="0">
+    <bcf:datasource type="file" datatype="bibtex" glob="false">bibfile</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">eichhorn2005prinzip</bcf:citekey>
-    <bcf:citekey order="2">eichhorn2005prinzip</bcf:citekey>
-    <bcf:citekey order="3">waters1997rise</bcf:citekey>
-    <bcf:citekey order="4">biocca1999cyborg</bcf:citekey>
-    <bcf:citekey order="5">slater2010first</bcf:citekey>
-    <bcf:citekey order="6">peck2013putting</bcf:citekey>
-    <bcf:citekey order="7">roth2016avatar</bcf:citekey>
-    <bcf:citekey order="8">george2018trusting</bcf:citekey>
-    <bcf:citekey order="9">riedl2014trusting</bcf:citekey>
-    <bcf:citekey order="10">riedl2014trusting</bcf:citekey>
-    <bcf:citekey order="11">martins2004virtual</bcf:citekey>
-    <bcf:citekey order="12">riedl2014trusting</bcf:citekey>
-    <bcf:citekey order="13">waldow2019investigating</bcf:citekey>
-    <bcf:citekey order="14">NASATLX</bcf:citekey>
-    <bcf:citekey order="15">NASATLX</bcf:citekey>
-    <bcf:citekey order="16">IPQ</bcf:citekey>
-    <bcf:citekey order="17">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="18">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="19">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="20">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="21">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="22">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="23">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="24">cohen2013statistical</bcf:citekey>
-    <bcf:citekey order="25">waldow2019investigating</bcf:citekey>
+    <bcf:citekey order="1">thurlow2004computer</bcf:citekey>
+    <bcf:citekey order="2">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="3">biocca2001plugging</bcf:citekey>
+    <bcf:citekey order="4">jarvenpaa1999communication</bcf:citekey>
+    <bcf:citekey order="5">gilson2015virtual</bcf:citekey>
+    <bcf:citekey order="6">statistaCorona2020</bcf:citekey>
+    <bcf:citekey order="7">neustaedter2009presenting</bcf:citekey>
+    <bcf:citekey order="8">huang1998supporting</bcf:citekey>
+    <bcf:citekey order="9">turoff1993distributed</bcf:citekey>
+    <bcf:citekey order="10">eichhorn2005prinzip</bcf:citekey>
+    <bcf:citekey order="11">eichhorn2005prinzip</bcf:citekey>
+    <bcf:citekey order="12">sherman2018understanding</bcf:citekey>
+    <bcf:citekey order="13">shuffler2011there</bcf:citekey>
+    <bcf:citekey order="14">steed1999leadership</bcf:citekey>
+    <bcf:citekey order="15">de2011level</bcf:citekey>
+    <bcf:citekey order="16">pettifer1999designing</bcf:citekey>
+    <bcf:citekey order="17">waters1997rise</bcf:citekey>
+    <bcf:citekey order="18">slater2009we</bcf:citekey>
+    <bcf:citekey order="19">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="20">witmer1998measuring</bcf:citekey>
+    <bcf:citekey order="21">slater2003note</bcf:citekey>
+    <bcf:citekey order="22">jerald2015vr</bcf:citekey>
+    <bcf:citekey order="23">botvinick1998rubber</bcf:citekey>
+    <bcf:citekey order="24">maxwell1960psycho</bcf:citekey>
+    <bcf:citekey order="25">jerald2015vr</bcf:citekey>
+    <bcf:citekey order="26">jerald2015vr</bcf:citekey>
+    <bcf:citekey order="27">guadagno2007virtual</bcf:citekey>
+    <bcf:citekey order="28">schuemie2001research</bcf:citekey>
+    <bcf:citekey order="29">ijsselsteijn2001presence</bcf:citekey>
+    <bcf:citekey order="30">nowak2003effect</bcf:citekey>
+    <bcf:citekey order="31">biocca1999cyborg</bcf:citekey>
+    <bcf:citekey order="32">gunawardena1995social</bcf:citekey>
+    <bcf:citekey order="33">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="34">schultze2010embodiment</bcf:citekey>
+    <bcf:citekey order="35">biocca2001criteria</bcf:citekey>
+    <bcf:citekey order="36">neustaedter2009presenting</bcf:citekey>
+    <bcf:citekey order="37">pan2017impact</bcf:citekey>
+    <bcf:citekey order="38">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="39">thornhill1998relative</bcf:citekey>
+    <bcf:citekey order="40">rhodes1998facial</bcf:citekey>
+    <bcf:citekey order="41">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="42">grammer1994human</bcf:citekey>
+    <bcf:citekey order="43">biocca2002defining</bcf:citekey>
+    <bcf:citekey order="44">johansson1975visual</bcf:citekey>
+    <bcf:citekey order="45">johansson1975visual</bcf:citekey>
+    <bcf:citekey order="46">beggs1983kinematics</bcf:citekey>
+    <bcf:citekey order="47">kucuk2006robot</bcf:citekey>
+    <bcf:citekey order="48">d2001learning</bcf:citekey>
+    <bcf:citekey order="49">kim2018real</bcf:citekey>
+    <bcf:citekey order="50">neustaedter2009presenting</bcf:citekey>
+    <bcf:citekey order="51">lok2003effects</bcf:citekey>
+    <bcf:citekey order="52">construal2014connected</bcf:citekey>
+    <bcf:citekey order="53">benford1995user</bcf:citekey>
+    <bcf:citekey order="54">bowers1996talk</bcf:citekey>
+    <bcf:citekey order="55">construal2014connected</bcf:citekey>
+    <bcf:citekey order="56">slater2010first</bcf:citekey>
+    <bcf:citekey order="57">peck2013putting</bcf:citekey>
+    <bcf:citekey order="58">roth2016avatar</bcf:citekey>
+    <bcf:citekey order="59">george2018trusting</bcf:citekey>
+    <bcf:citekey order="60">kerr1983motivation</bcf:citekey>
+    <bcf:citekey order="61">george2018trusting</bcf:citekey>
+    <bcf:citekey order="62">dodds2011talk</bcf:citekey>
+    <bcf:citekey order="63">riedl2014trusting</bcf:citekey>
+    <bcf:citekey order="64">riedl2014trusting</bcf:citekey>
+    <bcf:citekey order="65">bente2004social</bcf:citekey>
+    <bcf:citekey order="66">bente2004social</bcf:citekey>
+    <bcf:citekey order="67">haslam2003social</bcf:citekey>
+    <bcf:citekey order="68">mcneill1992hand</bcf:citekey>
+    <bcf:citekey order="69">mehrabian1971silent</bcf:citekey>
+    <bcf:citekey order="70">gast2011unheimliche</bcf:citekey>
+    <bcf:citekey order="71">rotter1967new</bcf:citekey>
+    <bcf:citekey order="72">mayer1995integrative</bcf:citekey>
+    <bcf:citekey order="73">bigley1998straining</bcf:citekey>
+    <bcf:citekey order="74">baldwin1992relational</bcf:citekey>
+    <bcf:citekey order="75">breuer2016does</bcf:citekey>
+    <bcf:citekey order="76">mcknight2011trust</bcf:citekey>
+    <bcf:citekey order="77">rousseau1998not</bcf:citekey>
+    <bcf:citekey order="78">johnson2005cognitive</bcf:citekey>
+    <bcf:citekey order="79">cook1980new</bcf:citekey>
+    <bcf:citekey order="80">mooradian2006trusts</bcf:citekey>
+    <bcf:citekey order="81">couch1996assessment</bcf:citekey>
+    <bcf:citekey order="82">stolle2002trusting</bcf:citekey>
+    <bcf:citekey order="83">stolle2002trusting</bcf:citekey>
+    <bcf:citekey order="84">couch1996assessment</bcf:citekey>
+    <bcf:citekey order="85">mayer1995integrative</bcf:citekey>
+    <bcf:citekey order="86">lewis1985trust</bcf:citekey>
+    <bcf:citekey order="87">lewis1985trust</bcf:citekey>
+    <bcf:citekey order="88">lewis1985trust</bcf:citekey>
+    <bcf:citekey order="89">lewis1985trust</bcf:citekey>
+    <bcf:citekey order="90">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="91">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="92">mcknight1998initial</bcf:citekey>
+    <bcf:citekey order="93">stolle2002trusting</bcf:citekey>
+    <bcf:citekey order="94">brewer1981</bcf:citekey>
+    <bcf:citekey order="95">stolle2002trusting</bcf:citekey>
+    <bcf:citekey order="96">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="97">mayer1995integrative</bcf:citekey>
+    <bcf:citekey order="98">dirks2002trust</bcf:citekey>
+    <bcf:citekey order="99">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="100">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="101">duarte2006mastering</bcf:citekey>
+    <bcf:citekey order="102">davis2000trusted</bcf:citekey>
+    <bcf:citekey order="103">hertel2004managing</bcf:citekey>
+    <bcf:citekey order="104">dirks1999effects</bcf:citekey>
+    <bcf:citekey order="105">polzer2006extending</bcf:citekey>
+    <bcf:citekey order="106">prichard2007effects</bcf:citekey>
+    <bcf:citekey order="107">mayer1995integrative</bcf:citekey>
+    <bcf:citekey order="108">jones1998experience</bcf:citekey>
+    <bcf:citekey order="109">TrustAndTheVirtualOrganisation</bcf:citekey>
+    <bcf:citekey order="110">glacel1997teamwork</bcf:citekey>
+    <bcf:citekey order="111">zenun2007effects</bcf:citekey>
+    <bcf:citekey order="112">rousseau2006teamwork</bcf:citekey>
+    <bcf:citekey order="113">marks2001temporally</bcf:citekey>
+    <bcf:citekey order="114">biech2007pfeiffer</bcf:citekey>
+    <bcf:citekey order="115">schweitzer2010conceptualizing</bcf:citekey>
+    <bcf:citekey order="116">jarvenpaa1999communication</bcf:citekey>
+    <bcf:citekey order="117">zenun2007effects</bcf:citekey>
+    <bcf:citekey order="118">martins2004virtual</bcf:citekey>
+    <bcf:citekey order="119">belbin2011management</bcf:citekey>
+    <bcf:citekey order="120">katzenbach2015wisdom</bcf:citekey>
+    <bcf:citekey order="121">pasmore1993designing</bcf:citekey>
+    <bcf:citekey order="122">kling1994social</bcf:citekey>
+    <bcf:citekey order="123">kaiser2000student</bcf:citekey>
+    <bcf:citekey order="124">peters2007identifying</bcf:citekey>
+    <bcf:citekey order="125">cascio2003leadership</bcf:citekey>
+    <bcf:citekey order="126">dyer1995team</bcf:citekey>
+    <bcf:citekey order="127">milliken1996searching</bcf:citekey>
+    <bcf:citekey order="128">ren2007applying</bcf:citekey>
+    <bcf:citekey order="129">ren2007applying</bcf:citekey>
+    <bcf:citekey order="130">holton2001building</bcf:citekey>
+    <bcf:citekey order="131">salas2005there</bcf:citekey>
+    <bcf:citekey order="132">guzzo1996teams</bcf:citekey>
+    <bcf:citekey order="133">mcewan2017effectiveness</bcf:citekey>
+    <bcf:citekey order="134">biech2007pfeiffer</bcf:citekey>
+    <bcf:citekey order="135">sutantovicious</bcf:citekey>
+    <bcf:citekey order="136">herbsleb2000distance</bcf:citekey>
+    <bcf:citekey order="137">olson2003psychological</bcf:citekey>
+    <bcf:citekey order="138">riedl2014trusting</bcf:citekey>
+    <bcf:citekey order="139">waldow2019investigating</bcf:citekey>
+    <bcf:citekey order="140">waldow2019investigating</bcf:citekey>
+    <bcf:citekey order="141">waldow2019investigating</bcf:citekey>
+    <bcf:citekey order="142">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="143">gibson2003team</bcf:citekey>
+    <bcf:citekey order="144">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="145">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="146">couch1996assessment</bcf:citekey>
+    <bcf:citekey order="147">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="148">gonzalez2014climate</bcf:citekey>
+    <bcf:citekey order="149">gibson2003team</bcf:citekey>
+    <bcf:citekey order="150">NASATLX</bcf:citekey>
+    <bcf:citekey order="151">nowak2003effect</bcf:citekey>
+    <bcf:citekey order="152">couch1996assessment</bcf:citekey>
+    <bcf:citekey order="153">mcallister1995affect</bcf:citekey>
+    <bcf:citekey order="154">gonzalez2014climate</bcf:citekey>
+    <bcf:citekey order="155">gibson2003team</bcf:citekey>
+    <bcf:citekey order="156">NASATLX</bcf:citekey>
+    <bcf:citekey order="157">IPQ</bcf:citekey>
+    <bcf:citekey order="158">nowak2003effect</bcf:citekey>
+    <bcf:citekey order="159">razali2011power</bcf:citekey>
+    <bcf:citekey order="160">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="161">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="162">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="163">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="164">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="165">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="166">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="167">cohen2013statistical</bcf:citekey>
+    <bcf:citekey order="168">schweitzer2010conceptualizing</bcf:citekey>
+    <bcf:citekey order="169">schweitzer2010conceptualizing</bcf:citekey>
+    <bcf:citekey order="170">construal2014connected</bcf:citekey>
+    <bcf:citekey order="171">waldow2019investigating</bcf:citekey>
+    <bcf:citekey order="172">schweitzer2010conceptualizing</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
-  <bcf:sortingtemplate name="nyt">
+  <bcf:sortingtemplate name="nty">
     <bcf:sort order="1">
       <bcf:sortitem order="1">presort</bcf:sortitem>
     </bcf:sort>
@@ -2393,12 +2540,12 @@
       <bcf:sortitem order="6">title</bcf:sortitem>
     </bcf:sort>
     <bcf:sort order="4">
-      <bcf:sortitem order="1">sortyear</bcf:sortitem>
-      <bcf:sortitem order="2">year</bcf:sortitem>
-    </bcf:sort>
-    <bcf:sort order="5">
       <bcf:sortitem order="1">sorttitle</bcf:sortitem>
       <bcf:sortitem order="2">title</bcf:sortitem>
+    </bcf:sort>
+    <bcf:sort order="5">
+      <bcf:sortitem order="1">sortyear</bcf:sortitem>
+      <bcf:sortitem order="2">year</bcf:sortitem>
     </bcf:sort>
     <bcf:sort order="6">
       <bcf:sortitem order="1">volume</bcf:sortitem>
