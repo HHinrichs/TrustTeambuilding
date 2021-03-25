@@ -1532,6 +1532,35 @@
     \field{year}{2001}
   \endentry
 
+  \entry{hafelinger2013koordinationstherapie}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HU}{%
+         family={H{\"a}felinger},
+         familyi={H\bibinitperiod},
+         given={Ulla},
+         giveni={U\bibinitperiod},
+      }}%
+      {{hash=SV}{%
+         family={Schuba},
+         familyi={S\bibinitperiod},
+         given={Violetta},
+         giveni={V\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Meyer \& Meyer Verlag}%
+    }
+    \strng{namehash}{HUSV1}
+    \strng{fullhash}{HUSV1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HS13}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{title}{Koordinationstherapie: Propriozeptives Training}
+    \field{year}{2013}
+  \endentry
+
   \entry{huang1998supporting}{inproceedings}{}
     \name{author}{5}{}{%
       {{hash=HW}{%
@@ -1795,34 +1824,6 @@
     \field{sortinithash}{K}
     \field{title}{Robot kinematics: Forward and inverse kinematics}
     \field{year}{2006}
-  \endentry
-
-  \entry{kerr1983motivation}{article}{}
-    \name{author}{1}{}{%
-      {{hash=KNL}{%
-         family={Kerr},
-         familyi={K\bibinitperiod},
-         given={Norbert\bibnamedelima L},
-         giveni={N\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Psychological Association}%
-    }
-    \strng{namehash}{KNL1}
-    \strng{fullhash}{KNL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Ker83}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{number}{4}
-    \field{pages}{819}
-    \field{title}{Motivation losses in small groups: A social dilemma
-  analysis.}
-    \field{volume}{45}
-    \field{journaltitle}{Journal of Personality and Social Psychology}
-    \field{year}{1983}
   \endentry
 
   \entry{kim2018real}{misc}{}
@@ -2292,33 +2293,6 @@
     \field{year}{1995}
   \endentry
 
-  \entry{mehrabian1971silent}{book}{}
-    \true{moreauthor}
-    \true{morelabelname}
-    \name{author}{1}{}{%
-      {{hash=MA}{%
-         family={Mehrabian},
-         familyi={M\bibinitperiod},
-         given={Albert},
-         giveni={A\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Wadsworth Belmont, CA}%
-    }
-    \strng{namehash}{MA+1}
-    \strng{fullhash}{MA+1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Meh+71}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{number}{152}
-    \field{title}{Silent messages}
-    \field{volume}{8}
-    \field{year}{1971}
-  \endentry
-
   \entry{martins2004virtual}{article}{}
     \name{author}{3}{}{%
       {{hash=MLL}{%
@@ -2467,6 +2441,44 @@
     \field{volume}{37}
     \field{journaltitle}{Management learning}
     \field{year}{2006}
+  \endentry
+
+  \entry{meyerson1996swift}{article}{}
+    \true{moreauthor}
+    \true{morelabelname}
+    \name{author}{3}{}{%
+      {{hash=MD}{%
+         family={Meyerson},
+         familyi={M\bibinitperiod},
+         given={Debra},
+         giveni={D\bibinitperiod},
+      }}%
+      {{hash=WKE}{%
+         family={Weick},
+         familyi={W\bibinitperiod},
+         given={Karl\bibnamedelima E},
+         giveni={K\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+      {{hash=KRM}{%
+         family={Kramer},
+         familyi={K\bibinitperiod},
+         given={Roderick\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MDWKEKRM+1}
+    \strng{fullhash}{MDWKEKRM+1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{MWK+96}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{pages}{195}
+    \field{title}{Swift trust and temporary groups}
+    \field{volume}{166}
+    \field{journaltitle}{Trust in organizations: Frontiers of theory and
+  research}
+    \field{year}{1996}
   \endentry
 
   \entry{nowak2003effect}{article}{}
@@ -3515,8 +3527,8 @@
   arbeitete, aktuell arbeitet oder theoretisch arbeiten könnte in Deutschland
   im 2. Quartal 2020}
     \verb{url}
-    \verb https://de.statista.com/statistik/daten/studie/1140049/umfrage/corona
-    \verb -krise-homeoffice-nutzung-und-potenzial/
+    \verb https://de.statista.com/statistik/daten/studie/1204173/umfrage/befrag
+    \verb ung-zur-homeoffice-nutzung-in-der-corona-pandemie/
     \endverb
     \field{year}{2020}
   \endentry
