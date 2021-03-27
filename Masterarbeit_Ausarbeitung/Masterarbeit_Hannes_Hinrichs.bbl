@@ -17,6 +17,42 @@
 \endgroup
 
 \datalist[entry]{anyt/global//global/global}
+  \entry{ale2009virtual}{article}{}
+    \name{author}{3}{}{%
+      {{hash=AEN}{%
+         family={Ale\bibnamedelima Ebrahim},
+         familyi={A\bibinitperiod\bibinitdelim E\bibinitperiod},
+         given={Nader},
+         giveni={N\bibinitperiod},
+      }}%
+      {{hash=AS}{%
+         family={Ahmed},
+         familyi={A\bibinitperiod},
+         given={Shamsuddin},
+         giveni={S\bibinitperiod},
+      }}%
+      {{hash=TZ}{%
+         family={Taha},
+         familyi={T\bibinitperiod},
+         given={Zahari},
+         giveni={Z\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{AENASTZ1}
+    \strng{fullhash}{AENASTZ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{AEAT09}
+    \field{sortinit}{A}
+    \field{sortinithash}{A}
+    \field{number}{3}
+    \field{pages}{2653\bibrangedash 2669}
+    \field{title}{Virtual teams: A literature review}
+    \field{volume}{3}
+    \field{journaltitle}{Australian journal of basic and applied sciences}
+    \field{year}{2009}
+  \endentry
+
   \entry{baldwin1992relational}{article}{}
     \name{author}{1}{}{%
       {{hash=BMW}{%
@@ -98,30 +134,6 @@
     \field{sortinithash}{B}
     \field{title}{Kinematics}
     \field{year}{1983}
-  \endentry
-
-  \entry{belbin2011management}{article}{}
-    \name{author}{1}{}{%
-      {{hash=BRM}{%
-         family={Belbin},
-         familyi={B\bibinitperiod},
-         given={R\bibnamedelima Meredith},
-         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Emerald Group Publishing Limited}%
-    }
-    \strng{namehash}{BRM1}
-    \strng{fullhash}{BRM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Bel11}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{title}{Management teams: Why they succeed or fail}
-    \field{journaltitle}{Human Resource Management International Digest}
-    \field{year}{2011}
   \endentry
 
   \entry{benford1995user}{inproceedings}{}
@@ -693,40 +705,6 @@
     \field{year}{2000}
   \endentry
 
-  \entry{dirks2002trust}{article}{}
-    \name{author}{2}{}{%
-      {{hash=DKT}{%
-         family={Dirks},
-         familyi={D\bibinitperiod},
-         given={Kurt\bibnamedelima T},
-         giveni={K\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=FDL}{%
-         family={Ferrin},
-         familyi={F\bibinitperiod},
-         given={Donald\bibnamedelima L},
-         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Psychological Association}%
-    }
-    \strng{namehash}{DKTFDL1}
-    \strng{fullhash}{DKTFDL1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{DF02}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{number}{4}
-    \field{pages}{611}
-    \field{title}{Trust in leadership: Meta-analytic findings and implications
-  for research and practice.}
-    \field{volume}{87}
-    \field{journaltitle}{Journal of applied psychology}
-    \field{year}{2002}
-  \endentry
-
   \entry{dirks1999effects}{article}{}
     \name{author}{1}{}{%
       {{hash=DKT}{%
@@ -1118,33 +1096,6 @@
     \field{year}{2015}
   \endentry
 
-  \entry{glacel1997teamwork}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GBP}{%
-         family={Glacel},
-         familyi={G\bibinitperiod},
-         given={Barbara\bibnamedelima Pate},
-         giveni={B\bibinitperiod\bibinitdelim P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Society for Quality}%
-    }
-    \strng{namehash}{GBP1}
-    \strng{fullhash}{GBP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Gla97}
-    \field{sortinit}{G}
-    \field{sortinithash}{G}
-    \field{number}{1}
-    \field{pages}{12}
-    \field{title}{Teamwork's top ten lead to quality}
-    \field{volume}{20}
-    \field{journaltitle}{The Journal for Quality and Participation}
-    \field{year}{1997}
-  \endentry
-
   \entry{gonzalez2014climate}{article}{}
     \name{author}{2}{}{%
       {{hash=GRV}{%
@@ -1426,45 +1377,6 @@
     \field{title}{Social Identity at Work: Developing Theory for Organizational
   Practice}
     \field{year}{2003}
-  \endentry
-
-  \entry{herbsleb2000distance}{article}{}
-    \name{author}{4}{}{%
-      {{hash=HJD}{%
-         family={Herbsleb},
-         familyi={H\bibinitperiod},
-         given={James\bibnamedelima D},
-         giveni={J\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=MA}{%
-         family={Mockus},
-         familyi={M\bibinitperiod},
-         given={Audris},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=FTA}{%
-         family={Finholt},
-         familyi={F\bibinitperiod},
-         given={Thomas\bibnamedelima A},
-         giveni={T\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=GRE}{%
-         family={Grinter},
-         familyi={G\bibinitperiod},
-         given={Rebecca\bibnamedelima E},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{HJD+1}
-    \strng{fullhash}{HJDMAFTAGRE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Her+00}
-    \field{sortinit}{H}
-    \field{sortinithash}{H}
-    \field{title}{Distance, Dependencies, and Delay in a Global Collaboration}
-    \field{journaltitle}{CSWC: Computer Supported Cooperative Work}
-    \field{year}{2000}
   \endentry
 
   \entry{hertel2004managing}{article}{}
@@ -1865,104 +1777,6 @@
     \field{year}{2018}
   \endentry
 
-  \entry{kling1994social}{article}{}
-    \name{author}{2}{}{%
-      {{hash=KR}{%
-         family={Kling},
-         familyi={K\bibinitperiod},
-         given={Rob},
-         giveni={R\bibinitperiod},
-      }}%
-      {{hash=JT}{%
-         family={Jewett},
-         familyi={J\bibinitperiod},
-         given={Tom},
-         giveni={T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{KRJT1}
-    \strng{fullhash}{KRJT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{KJ94}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{title}{The social design of worklife with computers and networks: an
-  open natural systems perspective}
-    \field{volume}{118}
-    \field{journaltitle}{Advances in Computers}
-    \field{year}{1994}
-  \endentry
-
-  \entry{katzenbach2015wisdom}{book}{}
-    \name{author}{2}{}{%
-      {{hash=KJR}{%
-         family={Katzenbach},
-         familyi={K\bibinitperiod},
-         given={Jon\bibnamedelima R},
-         giveni={J\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=SDK}{%
-         family={Smith},
-         familyi={S\bibinitperiod},
-         given={Douglas\bibnamedelima K},
-         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Harvard Business Review Press}%
-    }
-    \strng{namehash}{KJRSDK1}
-    \strng{fullhash}{KJRSDK1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{KS15}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{title}{The wisdom of teams: Creating the high-performance
-  organization}
-    \field{year}{2015}
-  \endentry
-
-  \entry{kaiser2000student}{article}{}
-    \name{author}{3}{}{%
-      {{hash=KPR}{%
-         family={Kaiser},
-         familyi={K\bibinitperiod},
-         given={Paula\bibnamedelima R},
-         giveni={P\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=TWL}{%
-         family={Tullar},
-         familyi={T\bibinitperiod},
-         given={William\bibnamedelima L},
-         giveni={W\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=MD}{%
-         family={McKowen},
-         familyi={M\bibinitperiod},
-         given={Diana},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Association for Business Communication}%
-    }
-    \strng{namehash}{KPRTWLMD1}
-    \strng{fullhash}{KPRTWLMD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{KTM00}
-    \field{sortinit}{K}
-    \field{sortinithash}{K}
-    \field{number}{4}
-    \field{pages}{75}
-    \field{title}{Student Team Projects by Internet}
-    \field{volume}{63}
-    \field{journaltitle}{Business Communication Quarterly}
-    \field{year}{2000}
-  \endentry
-
   \entry{lok2003effects}{article}{}
     \name{author}{4}{}{%
       {{hash=LB}{%
@@ -2007,6 +1821,45 @@
     \field{volume}{12}
     \field{journaltitle}{Presence: Teleoperators \& Virtual Environments}
     \field{year}{2003}
+  \endentry
+
+  \entry{lin2008model}{article}{}
+    \name{author}{3}{}{%
+      {{hash=LC}{%
+         family={Lin},
+         familyi={L\bibinitperiod},
+         given={Chad},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=SC}{%
+         family={Standing},
+         familyi={S\bibinitperiod},
+         given={Craig},
+         giveni={C\bibinitperiod},
+      }}%
+      {{hash=LYC}{%
+         family={Liu},
+         familyi={L\bibinitperiod},
+         given={Ying-Chieh},
+         giveni={Y\bibinithyphendelim C\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Elsevier}%
+    }
+    \strng{namehash}{LCSCLYC1}
+    \strng{fullhash}{LCSCLYC1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LSL08}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{number}{4}
+    \field{pages}{1031\bibrangedash 1045}
+    \field{title}{A model to develop effective virtual teams}
+    \field{volume}{45}
+    \field{journaltitle}{Decision support systems}
+    \field{year}{2008}
   \endentry
 
   \entry{lewis1985trust}{article}{}
@@ -2132,58 +1985,6 @@
     \field{year}{1998}
   \endentry
 
-  \entry{mcewan2017effectiveness}{article}{}
-    \name{author}{5}{}{%
-      {{hash=MD}{%
-         family={McEwan},
-         familyi={M\bibinitperiod},
-         given={Desmond},
-         giveni={D\bibinitperiod},
-      }}%
-      {{hash=RGR}{%
-         family={Ruissen},
-         familyi={R\bibinitperiod},
-         given={Geralyn\bibnamedelima R},
-         giveni={G\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-      {{hash=EMA}{%
-         family={Eys},
-         familyi={E\bibinitperiod},
-         given={Mark\bibnamedelima A},
-         giveni={M\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=ZBD}{%
-         family={Zumbo},
-         familyi={Z\bibinitperiod},
-         given={Bruno\bibnamedelima D},
-         giveni={B\bibinitperiod\bibinitdelim D\bibinitperiod},
-      }}%
-      {{hash=BMR}{%
-         family={Beauchamp},
-         familyi={B\bibinitperiod},
-         given={Mark\bibnamedelima R},
-         giveni={M\bibinitperiod\bibinitdelim R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Public Library of Science}%
-    }
-    \strng{namehash}{MD+1}
-    \strng{fullhash}{MDRGREMAZBDBMR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{McE+17}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{number}{1}
-    \field{title}{The effectiveness of teamwork training on teamwork behaviors
-  and team performance: a systematic review and meta-analysis of controlled
-  interventions}
-    \field{volume}{12}
-    \field{journaltitle}{PloS one}
-    \field{year}{2017}
-  \endentry
-
   \entry{mcknight2011trust}{article}{}
     \name{author}{4}{}{%
       {{hash=MDH}{%
@@ -2229,29 +2030,6 @@
     \field{journaltitle}{ACM Transactions on management information systems
   (TMIS)}
     \field{year}{2011}
-  \endentry
-
-  \entry{mcneill1992hand}{book}{}
-    \name{author}{1}{}{%
-      {{hash=MD}{%
-         family={McNeill},
-         familyi={M\bibinitperiod},
-         given={David},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {University of Chicago press}%
-    }
-    \strng{namehash}{MD1}
-    \strng{fullhash}{MD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{McN92}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{title}{Hand and mind: What gestures reveal about thought}
-    \field{year}{1992}
   \endentry
 
   \entry{mayer1995integrative}{article}{}
@@ -2547,35 +2325,6 @@
     \field{year}{2009}
   \endentry
 
-  \entry{olson2003psychological}{article}{}
-    \name{author}{2}{}{%
-      {{hash=OGM}{%
-         family={Olson},
-         familyi={O\bibinitperiod},
-         given={Gary\bibnamedelima M},
-         giveni={G\bibinitperiod\bibinitdelim M\bibinitperiod},
-      }}%
-      {{hash=OJS}{%
-         family={Olson},
-         familyi={O\bibinitperiod},
-         given={Judith\bibnamedelima S},
-         giveni={J\bibinitperiod\bibinitdelim S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{OGMOJS1}
-    \strng{fullhash}{OGMOJS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{OO03}
-    \field{sortinit}{O}
-    \field{sortinithash}{O}
-    \field{pages}{491\bibrangedash 516}
-    \field{title}{Psychological Aspects of the Human Use of Computing}
-    \field{volume}{54}
-    \field{journaltitle}{Annu. Rev. Psychol}
-    \field{year}{2003}
-  \endentry
-
   \entry{prichard2007effects}{article}{}
     \name{author}{2}{}{%
       {{hash=PJS}{%
@@ -2724,85 +2473,6 @@
     \field{title}{Identifying antecedents of virtual team collaboration}
     \field{journaltitle}{Team Performance Management: An International Journal}
     \field{year}{2007}
-  \endentry
-
-  \entry{polzer2006extending}{article}{}
-    \name{author}{4}{}{%
-      {{hash=PJT}{%
-         family={Polzer},
-         familyi={P\bibinitperiod},
-         given={Jeffrey\bibnamedelima T},
-         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-      {{hash=CCB}{%
-         family={Crisp},
-         familyi={C\bibinitperiod},
-         given={C\bibnamedelima Brad},
-         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
-      }}%
-      {{hash=JSL}{%
-         family={Jarvenpaa},
-         familyi={J\bibinitperiod},
-         given={Sirkka\bibnamedelima L},
-         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=KJW}{%
-         family={Kim},
-         familyi={K\bibinitperiod},
-         given={Jerry\bibnamedelima W},
-         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Academy of Management Briarcliff Manor, NY 10510}%
-    }
-    \strng{namehash}{PJT+1}
-    \strng{fullhash}{PJTCCBJSLKJW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Pol+06}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{number}{4}
-    \field{pages}{679\bibrangedash 692}
-    \field{title}{Extending the faultline model to geographically dispersed
-  teams: How colocated subgroups can impair group functioning}
-    \field{volume}{49}
-    \field{journaltitle}{Academy of management Journal}
-    \field{year}{2006}
-  \endentry
-
-  \entry{pasmore1993designing}{article}{}
-    \name{author}{2}{}{%
-      {{hash=PWA}{%
-         family={Pasmore},
-         familyi={P\bibinitperiod},
-         given={William\bibnamedelima A},
-         giveni={W\bibinitperiod\bibinitdelim A\bibinitperiod},
-      }}%
-      {{hash=PRE}{%
-         family={Purser},
-         familyi={P\bibinitperiod},
-         given={Ronald\bibnamedelima E},
-         giveni={R\bibinitperiod\bibinitdelim E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {American Society for Quality}%
-    }
-    \strng{namehash}{PWAPRE1}
-    \strng{fullhash}{PWAPRE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{PP93}
-    \field{sortinit}{P}
-    \field{sortinithash}{P}
-    \field{number}{4}
-    \field{pages}{78}
-    \field{title}{Designing work systems for knowledge workers}
-    \field{volume}{16}
-    \field{journaltitle}{The Journal for Quality and Participation}
-    \field{year}{1993}
   \endentry
 
   \entry{pan2017impact}{article}{}
@@ -3607,51 +3277,6 @@
     \field{year}{2002}
   \endentry
 
-  \entry{sutantovicious}{article}{}
-    \name{author}{5}{}{%
-      {{hash=SJ}{%
-         family={SUTANTO},
-         familyi={S\bibinitperiod},
-         given={Juliana},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=PCW}{%
-         family={PHANG},
-         familyi={P\bibinitperiod},
-         given={Chee\bibnamedelima Wei},
-         giveni={C\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-      {{hash=KHH}{%
-         family={KUAN},
-         familyi={K\bibinitperiod},
-         given={Huei\bibnamedelima Huang},
-         giveni={H\bibinitperiod\bibinitdelim H\bibinitperiod},
-      }}%
-      {{hash=KA}{%
-         family={KANKANHALLI},
-         familyi={K\bibinitperiod},
-         given={Atreyi},
-         giveni={A\bibinitperiod},
-      }}%
-      {{hash=BCYT}{%
-         family={Bernard},
-         familyi={B\bibinitperiod},
-         given={Cheng Yian\bibnamedelima TAN},
-         giveni={C\bibinitperiod\bibinitdelim Y\bibinitperiod\bibinitdelim
-  T\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{SJ+1}
-    \strng{fullhash}{SJPCWKHHKABCYT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{SUT+}
-    \field{sortinit}{S}
-    \field{sortinithash}{S}
-    \field{title}{Vicious and Virtuous Cycles in Global Virtual Team Role
-  Coordination}
-  \endentry
-
   \entry{thurlow2004computer}{book}{}
     \name{author}{3}{}{%
       {{hash=TC}{%
@@ -3761,6 +3386,40 @@
     \field{title}{Distributed group support systems}
     \field{journaltitle}{MIS quarterly}
     \field{year}{1993}
+  \endentry
+
+  \entry{wong2000virtual}{article}{}
+    \name{author}{2}{}{%
+      {{hash=WSS}{%
+         family={Wong},
+         familyi={W\bibinitperiod},
+         given={Sze-Sze},
+         giveni={S\bibinithyphendelim S\bibinitperiod},
+      }}%
+      {{hash=BRM}{%
+         family={Burton},
+         familyi={B\bibinitperiod},
+         given={Richard\bibnamedelima M},
+         giveni={R\bibinitperiod\bibinitdelim M\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{WSSBRM1}
+    \strng{fullhash}{WSSBRM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{WB00}
+    \field{sortinit}{W}
+    \field{sortinithash}{W}
+    \field{number}{4}
+    \field{pages}{339\bibrangedash 360}
+    \field{title}{Virtual teams: what are their characteristics, and impact on
+  team performance?}
+    \field{volume}{6}
+    \field{journaltitle}{Computational \& Mathematical organization theory}
+    \field{year}{2000}
   \endentry
 
   \entry{waters1997rise}{article}{}

@@ -20,50 +20,57 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 20680 items.
+Reallocating 'field_info' (item size: 4) to 20120 items.
 Database file #1: Masterarbeit_Hannes_Hinrichs-blx.bib
 Database file #2: bibfile.bib
+Warning--I didn't find a database entry for "handke2019alles"
+Warning--I didn't find a database entry for "becker2002fuhrung"
+Warning--I didn't find a database entry for "dufner2002asynchronous"
+Warning--I didn't find a database entry for "de2016trust"
+Warning--I didn't find a database entry for "de2010does"
+Warning--I didn't find a database entry for "."
 Biblatex version: 3.15
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 112 entries,
+You've used 102 entries,
             6393 wiz_defined-function locations,
-            1796 strings with 28609 characters,
-and the built_in function-call counts, 846774 in all, are:
-= -- 63898
-> -- 14839
-< -- 5809
-+ -- 18372
-- -- 5083
-* -- 63038
-:= -- 85549
+            1759 strings with 27028 characters,
+and the built_in function-call counts, 762202 in all, are:
+= -- 57047
+> -- 13558
+< -- 5243
++ -- 16648
+- -- 4710
+* -- 56860
+:= -- 77095
 add.period$ -- 0
-call.type$ -- 112
-change.case$ -- 3689
+call.type$ -- 102
+change.case$ -- 3282
 chr.to.int$ -- 44
-cite$ -- 222
-duplicate$ -- 81722
-empty$ -- 77353
-format.name$ -- 8405
-if$ -- 178857
+cite$ -- 202
+duplicate$ -- 74140
+empty$ -- 69503
+format.name$ -- 7695
+if$ -- 160797
 int.to.chr$ -- 0
-int.to.str$ -- 317
+int.to.str$ -- 290
 missing$ -- 0
-newline$ -- 3850
-num.names$ -- 7413
-pop$ -- 39712
+newline$ -- 3516
+num.names$ -- 6670
+pop$ -- 36111
 preamble$ -- 1
-purify$ -- 4337
+purify$ -- 3876
 quote$ -- 0
-skip$ -- 26364
+skip$ -- 23842
 stack$ -- 0
-substring$ -- 116012
-swap$ -- 19826
-text.length$ -- 3648
-text.prefix$ -- 166
+substring$ -- 102889
+swap$ -- 18052
+text.length$ -- 3358
+text.prefix$ -- 149
 top$ -- 1
-type$ -- 3796
+type$ -- 3456
 warning$ -- 0
-while$ -- 10600
+while$ -- 9650
 width$ -- 0
-write$ -- 3739
+write$ -- 3415
+(There were 6 warnings)
