@@ -113,6 +113,52 @@
     \field{year}{1998}
   \endentry
 
+  \entry{becker2002fuhrung}{article}{}
+    \name{author}{5}{}{%
+      {{hash=BM}{%
+         family={Becker},
+         familyi={B\bibinitperiod},
+         given={Martin},
+         giveni={M\bibinitperiod},
+      }}%
+      {{hash=HG}{%
+         family={Hess},
+         familyi={H\bibinitperiod},
+         given={GABRIELA},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=SF}{%
+         family={STOLL},
+         familyi={S\bibinitperiod},
+         given={FRAN{\c{C}}OIS},
+         giveni={F\bibinitperiod},
+      }}%
+      {{hash=GG}{%
+         family={GROTE},
+         familyi={G\bibinitperiod},
+         given={GUDELA},
+         giveni={G\bibinitperiod},
+      }}%
+      {{hash=MSS}{%
+         family={MANCHEN-SP{\"O}RRI},
+         familyi={M\bibinithyphendelim S\bibinitperiod},
+         given={SYLVIA},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BM+1}
+    \strng{fullhash}{BMHGSFGGMSS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Bec+02}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{title}{F{\"u}hrung virtueller Teams: Kognitive Modelle der
+  F{\"u}hrungskraft, Teamprozesse und Teameffektivit{\"a}t}
+    \field{journaltitle}{Z{\"u} rich}
+    \field{year}{2002}
+  \endentry
+
   \entry{beggs1983kinematics}{book}{}
     \name{author}{1}{}{%
       {{hash=BJS}{%
@@ -733,6 +779,76 @@
     \field{year}{1999}
   \endentry
 
+  \entry{de2016trust}{article}{}
+    \name{author}{3}{}{%
+      {{hash=DJB}{%
+         family={De\bibnamedelima Jong},
+         familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={BA},
+         giveni={B\bibinitperiod},
+      }}%
+      {{hash=DK}{%
+         family={Dirks},
+         familyi={D\bibinitperiod},
+         given={KT},
+         giveni={K\bibinitperiod},
+      }}%
+      {{hash=GN}{%
+         family={Gillespie},
+         familyi={G\bibinitperiod},
+         given={N},
+         giveni={N},
+      }}%
+    }
+    \strng{namehash}{DJBDKGN1}
+    \strng{fullhash}{DJBDKGN1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DJDG16}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{1134\bibrangedash 1150}
+    \field{title}{Trust and team effectiveness: a meta-analysis of critical
+  contingencies and mediating mechanisms}
+    \field{volume}{101}
+    \field{journaltitle}{J Appl Psychol}
+    \field{year}{2016}
+  \endentry
+
+  \entry{de2010does}{article}{}
+    \name{author}{2}{}{%
+      {{hash=DJBA}{%
+         family={De\bibnamedelima Jong},
+         familyi={D\bibinitperiod\bibinitdelim J\bibinitperiod},
+         given={Bart\bibnamedelima A},
+         giveni={B\bibinitperiod\bibinitdelim A\bibinitperiod},
+      }}%
+      {{hash=ET}{%
+         family={Elfring},
+         familyi={E\bibinitperiod},
+         given={Tom},
+         giveni={T\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academy of Management Briarcliff Manor, NY}%
+    }
+    \strng{namehash}{DJBAET1}
+    \strng{fullhash}{DJBAET1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{DJE10}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{number}{3}
+    \field{pages}{535\bibrangedash 549}
+    \field{title}{How does trust affect the performance of ongoing teams? The
+  mediating role of reflexivity, monitoring, and effort}
+    \field{volume}{53}
+    \field{journaltitle}{Academy of Management Journal}
+    \field{year}{2010}
+  \endentry
+
   \entry{de2011level}{article}{}
     \name{author}{5}{}{%
       {{hash=DLG}{%
@@ -847,6 +963,51 @@
     \field{title}{Mastering virtual teams: Strategies, tools, and techniques
   that succeed}
     \field{year}{2006}
+  \endentry
+
+  \entry{dufner2002asynchronous}{inproceedings}{}
+    \name{author}{4}{}{%
+      {{hash=DDK}{%
+         family={Dufner},
+         familyi={D\bibinitperiod},
+         given={Donna\bibnamedelima K},
+         giveni={D\bibinitperiod\bibinitdelim K\bibinitperiod},
+      }}%
+      {{hash=PYT}{%
+         family={Park},
+         familyi={P\bibinitperiod},
+         given={Yong-Tae},
+         giveni={Y\bibinithyphendelim T\bibinitperiod},
+      }}%
+      {{hash=KO}{%
+         family={Kwon},
+         familyi={K\bibinitperiod},
+         given={Ojoung},
+         giveni={O\bibinitperiod},
+      }}%
+      {{hash=PQ}{%
+         family={Peng},
+         familyi={P\bibinitperiod},
+         given={Qing},
+         giveni={Q\bibinitperiod},
+      }}%
+    }
+    \list{organization}{1}{%
+      {IEEE}%
+    }
+    \strng{namehash}{DDK+1}
+    \strng{fullhash}{DDKPYTKOPQ1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Duf+02}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{booktitle}{Proceedings of the 35th Annual Hawaii International
+  Conference on System Sciences}
+    \field{pages}{12\bibrangedash 20}
+    \field{title}{Asynchronous team support: perceptions of the group problem
+  solving process when using a cybercollaboratory}
+    \field{year}{2002}
   \endentry
 
   \entry{d2001learning}{inproceedings}{}
@@ -1377,6 +1538,41 @@
     \field{title}{Social Identity at Work: Developing Theory for Organizational
   Practice}
     \field{year}{2003}
+  \endentry
+
+  \entry{handke2019alles}{article}{}
+    \name{author}{2}{}{%
+      {{hash=HL}{%
+         family={Handke},
+         familyi={H\bibinitperiod},
+         given={Lisa},
+         giveni={L\bibinitperiod},
+      }}%
+      {{hash=KS}{%
+         family={Kauffeld},
+         familyi={K\bibinitperiod},
+         given={Simone},
+         giveni={S\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Springer}%
+    }
+    \strng{namehash}{HLKS1}
+    \strng{fullhash}{HLKS1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{HK19}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{number}{1}
+    \field{pages}{33\bibrangedash 41}
+    \field{title}{Alles eine Frage der Zeit? Herausforderungen virtueller Teams
+  und deren Bew{\"a}ltigung am Beispiel der Softwareentwicklung}
+    \field{volume}{50}
+    \field{journaltitle}{Gruppe. Interaktion. Organisation. Zeitschrift f{\"u}r
+  Angewandte Organisationspsychologie (GIO)}
+    \field{year}{2019}
   \endentry
 
   \entry{hertel2004managing}{article}{}
@@ -3025,6 +3221,40 @@
     \field{year}{2011}
   \endentry
 
+  \entry{IPQ}{misc}{}
+    \name{author}{3}{}{%
+      {{hash=ST}{%
+         family={Schubert},
+         familyi={S\bibinitperiod},
+         given={T},
+         giveni={T},
+      }}%
+      {{hash=FF}{%
+         family={Friedmann},
+         familyi={F\bibinitperiod},
+         given={F},
+         giveni={F},
+      }}%
+      {{hash=RH}{%
+         family={Regenbrecht},
+         familyi={R\bibinitperiod},
+         given={H},
+         giveni={H},
+      }}%
+    }
+    \strng{namehash}{STFFRH1}
+    \strng{fullhash}{STFFRH1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{SFR}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
+    \field{title}{igroup presence questionnaire (IPQ) overview}
+    \verb{url}
+    \verb http://www.igroup.org/pq/ipq/index.php
+    \endverb
+  \endentry
+
   \entry{slater2003note}{article}{}
     \name{author}{1}{}{%
       {{hash=SM}{%
@@ -3525,26 +3755,6 @@
     \field{volume}{7}
     \field{journaltitle}{Presence}
     \field{year}{1998}
-  \endentry
-
-  \entry{IPQ}{misc}{}
-    \name{author}{1}{}{%
-      {{hash=w}{%
-         family={www.igroup.org},
-         familyi={w\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{w1}
-    \strng{fullhash}{w1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{www}
-    \field{sortinit}{W}
-    \field{sortinithash}{W}
-    \field{title}{igroup presence questionnaire (IPQ) overview}
-    \verb{url}
-    \verb http://www.igroup.org/pq/ipq/index.php
-    \endverb
   \endentry
 
   \entry{zenun2007effects}{incollection}{}
