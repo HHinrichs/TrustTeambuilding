@@ -2671,6 +2671,52 @@
     \field{year}{2007}
   \endentry
 
+  \entry{polzer2006extending}{article}{}
+    \name{author}{4}{}{%
+      {{hash=PJT}{%
+         family={Polzer},
+         familyi={P\bibinitperiod},
+         given={Jeffrey\bibnamedelima T},
+         giveni={J\bibinitperiod\bibinitdelim T\bibinitperiod},
+      }}%
+      {{hash=CCB}{%
+         family={Crisp},
+         familyi={C\bibinitperiod},
+         given={C\bibnamedelima Brad},
+         giveni={C\bibinitperiod\bibinitdelim B\bibinitperiod},
+      }}%
+      {{hash=JSL}{%
+         family={Jarvenpaa},
+         familyi={J\bibinitperiod},
+         given={Sirkka\bibnamedelima L},
+         giveni={S\bibinitperiod\bibinitdelim L\bibinitperiod},
+      }}%
+      {{hash=KJW}{%
+         family={Kim},
+         familyi={K\bibinitperiod},
+         given={Jerry\bibnamedelima W},
+         giveni={J\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Academy of Management Briarcliff Manor, NY 10510}%
+    }
+    \strng{namehash}{PJT+1}
+    \strng{fullhash}{PJTCCBJSLKJW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Pol+06}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{number}{4}
+    \field{pages}{679\bibrangedash 692}
+    \field{title}{Extending the faultline model to geographically dispersed
+  teams: How colocated subgroups can impair group functioning}
+    \field{volume}{49}
+    \field{journaltitle}{Academy of management Journal}
+    \field{year}{2006}
+  \endentry
+
   \entry{pan2017impact}{article}{}
     \name{author}{2}{}{%
       {{hash=PY}{%
