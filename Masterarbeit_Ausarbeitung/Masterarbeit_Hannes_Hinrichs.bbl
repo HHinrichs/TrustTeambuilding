@@ -927,7 +927,6 @@
     \field{sortinit}{D}
     \field{sortinithash}{D}
     \field{number}{10}
-    \field{pages}{e25759}
     \field{title}{Talk to the virtual hands: Self-animated avatars improve
   communication in head-mounted display virtual environments}
     \field{volume}{6}
@@ -1867,7 +1866,7 @@
     \strng{fullhash}{JSLLDE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
-    \field{labelalpha}{JL99}
+    \field{labelalpha}{JL98}
     \field{sortinit}{J}
     \field{sortinithash}{J}
     \field{number}{6}
@@ -1875,7 +1874,7 @@
     \field{title}{Communication and trust in global virtual teams}
     \field{volume}{10}
     \field{journaltitle}{Organization science}
-    \field{year}{1999}
+    \field{year}{1998}
   \endentry
 
   \entry{johansson1975visual}{article}{}
@@ -2487,6 +2486,29 @@
     \field{volume}{12}
     \field{journaltitle}{Presence: Teleoperators \& Virtual Environments}
     \field{year}{2003}
+  \endentry
+
+  \entry{neitzel2010bin}{article}{}
+    \name{author}{1}{}{%
+      {{hash=NB}{%
+         family={Neitzel},
+         familyi={N\bibinitperiod},
+         given={Britta},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {LIT}%
+    }
+    \strng{namehash}{NB1}
+    \strng{fullhash}{NB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{Nei10}
+    \field{sortinit}{N}
+    \field{sortinithash}{N}
+    \field{title}{Wer bin ich? Thesen zur Avatar-Spieler Bindung}
+    \field{year}{2010}
   \endentry
 
   \entry{neustaedter2009presenting}{inproceedings}{}
