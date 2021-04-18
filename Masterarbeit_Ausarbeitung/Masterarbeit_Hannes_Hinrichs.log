@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  18 APR 2021 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (MiKTeX 20.7) (preloaded format=pdflatex 2020.9.16)  18 APR 2021 16:07
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -2014,13 +2014,13 @@ File: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_IK.png Graphic file
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_I
 K.png  used on input line 2145.
 (pdftex.def)             Requested size: 192.0548pt x 114.92517pt.
-<Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK.png, id=1582, 628.347
-5pt x 379.4175pt>
-File: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK.png Graphic file
- (type png)
-<use Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK.png>
+<Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png, id=158
+2, 628.3475pt x 379.4175pt>
+File: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png Gr
+aphic file (type png)
+<use Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_N
-IK.png  used on input line 2147.
+IK_withStars.png  used on input line 2147.
 (pdftex.def)             Requested size: 192.0548pt x 115.96822pt.
 
 Underfull \hbox (badness 10000) in paragraph at lines 2154--2155
@@ -2035,18 +2035,18 @@ type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_IK
 .png  used on input line 2158.
 (pdftex.def)             Requested size: 192.0548pt x 115.0467pt.
-<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK.png, id=1589, 640.8943
-8pt x 374.39874pt>
-File: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK.png Graphic file 
-(type png)
-<use Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK.png>
+<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png, id=1589
+, 640.89438pt x 374.39874pt>
+File: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png Gra
+phic file (type png)
+<use Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NI
-K.png  used on input line 2160.
+K_withStars.png  used on input line 2160.
 (pdftex.def)             Requested size: 192.0548pt x 112.1948pt.
 [64 <./Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_IK.png> <./Abbildun
-gen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK.png> <./Abbildungen/Auswertung
-Diagramme/Final/SubSig2_CT_TC_IK.png> <./Abbildungen/AuswertungDiagramme/Final/
-SubSig2_CT_TC_NIK.png>]
+gen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png> <./Abbildungen/
+AuswertungDiagramme/Final/SubSig2_CT_TC_IK.png> <./Abbildungen/AuswertungDiagra
+mme/Final/SubSig2_CT_TC_NIK_withStars.png>]
 Overfull \hbox (2.14854pt too wide) in paragraph at lines 2204--2204
 []|\T1/phv/m/n/9 Min/Max
  []
@@ -2127,16 +2127,23 @@ Underfull \hbox (badness 10000) in alignment at lines 2224--2224
 [66
 
 ]
-Overfull \hbox (10.772pt too wide) in paragraph at lines 2243--2250
-\T1/phv/m/n/10.95 Whitney-U Tests zwi-schen dem ge-bil-de-ten \T1/phv/m/sl/10.9
-5 ko-gni-ti-ven Ver-trau-ens-wer-ten\T1/phv/m/n/10.95 , bei un-ter-schied-li-ch
-en Avatar-
+Overfull \hbox (6.12502pt too wide) in paragraph at lines 2243--2250
+\T1/phv/m/n/10.95 Es konn-te ein \T1/phv/m/sl/10.95 si-gni-fi-kan-ter Un-ter-sc
+hied \T1/phv/m/n/10.95 der Mit-tel-wer-te an-hand ei-nes durch-ge-führ-ten Mann
+-Whitney-
  []
 
 [67
 
 
-] [68] [69]
+]
+Overfull \hbox (31.58755pt too wide) in paragraph at lines 2255--2259
+\T1/phv/m/sl/10.95 ko-gni-ti-ven Ver-trau-en \T1/phv/m/n/10.95 und der \T1/phv/
+m/sl/10.95 wahr-ge-nom-me-nen Tea-m-ef-fek-ti-vi-tät \T1/phv/m/n/10.95 bei der 
+Kon-di-ti-on [][]
+ []
+
+[68] [69]
 Overfull \hbox (13.08344pt too wide) in paragraph at lines 2295--2296
 \T1/phv/m/n/10.95 Lauf-zeit zwei ver-schie-de-ne Avatar-Konditionen ([][] und [
 ][])
@@ -2492,8 +2499,8 @@ Package logreq Info: Writing requests to 'Masterarbeit_Hannes_Hinrichs.run.xml'
 ### bottom level 
 Here is how much of TeX's memory you used:
  20224 strings out of 481199
- 369822 string characters out of 2921905
- 929788 words of memory out of 3000000
+ 369942 string characters out of 2921905
+ 929791 words of memory out of 3000000
  34868 multiletter control sequences out of 15000+200000
  636906 words of font info for 150 fonts, out of 3000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -2506,7 +2513,7 @@ rw/courier/ucrr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><B:/MiKTeX
 a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvro8a.pfb><B:/MiKTeX/fonts/type1/ur
 w/symbol/usyr.pfb><B:/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><B:/MiKTeX/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8509082 bytes).
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8509568 bytes).
 PDF statistics:
  2147 PDF objects out of 2487 (max. 8388607)
  505 named destinations out of 1000 (max. 500000)
