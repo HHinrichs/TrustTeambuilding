@@ -130,7 +130,7 @@
       {{hash=SF}{%
          family={STOLL},
          familyi={S\bibinitperiod},
-         given={FRAN{\c{C}}OIS},
+         given={FRANCOIS},
          giveni={F\bibinitperiod},
       }}%
       {{hash=GG}{%
@@ -140,7 +140,7 @@
          giveni={G\bibinitperiod},
       }}%
       {{hash=MSS}{%
-         family={MANCHEN-SP{\"O}RRI},
+         family={MANCHEN-SPORRI},
          familyi={M\bibinithyphendelim S\bibinitperiod},
          given={SYLVIA},
          giveni={S\bibinitperiod},
@@ -153,9 +153,9 @@
     \field{labelalpha}{Bec+02}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \field{title}{F{\"u}hrung virtueller Teams: Kognitive Modelle der
-  F{\"u}hrungskraft, Teamprozesse und Teameffektivit{\"a}t}
-    \field{journaltitle}{Z{\"u} rich}
+    \field{title}{Führung virtueller Teams: Kognitive Modelle der
+  Führungskraft, Teamprozesse und Teameffektivität}
+    \field{journaltitle}{Zürich}
     \field{year}{2002}
   \endentry
 
@@ -918,7 +918,7 @@
     \field{sortinithash}{D}
     \field{title}{Level of presence in team-building activities: Gaming
   component in virtual environments}
-    \field{journaltitle}{arXiv preprint arXiv:1105.6020}
+    \field{journaltitle}{arXiv}
     \field{year}{2011}
   \endentry
 
@@ -1069,7 +1069,7 @@
     \field{sortinithash}{D}
     \field{booktitle}{Proceedings 2001 IEEE/RSJ International Conference on
   Intelligent Robots and Systems. Expanding the Societal Role of Robotics in
-  the the Next Millennium (Cat. No. 01CH37180)}
+  the the Next Millennium}
     \field{pages}{298\bibrangedash 303}
     \field{title}{Learning inverse kinematics}
     \field{volume}{1}
@@ -1594,9 +1594,9 @@
     \field{number}{1}
     \field{pages}{33\bibrangedash 41}
     \field{title}{Alles eine Frage der Zeit? Herausforderungen virtueller Teams
-  und deren Bew{\"a}ltigung am Beispiel der Softwareentwicklung}
+  und deren Bewältigung am Beispiel der Softwareentwicklung}
     \field{volume}{50}
-    \field{journaltitle}{Gruppe. Interaktion. Organisation. Zeitschrift f{\"u}r
+    \field{journaltitle}{Gruppe. Interaktion. Organisation. Zeitschrift für
   Angewandte Organisationspsychologie (GIO)}
     \field{year}{2019}
   \endentry
@@ -1669,7 +1669,7 @@
   \entry{hafelinger2013koordinationstherapie}{book}{}
     \name{author}{2}{}{%
       {{hash=HU}{%
-         family={H{\"a}felinger},
+         family={Häfelinger},
          familyi={H\bibinitperiod},
          given={Ulla},
          giveni={U\bibinitperiod},
@@ -2792,7 +2792,6 @@
     \field{sortinit}{P}
     \field{sortinithash}{P}
     \field{number}{12}
-    \field{pages}{e0189078}
     \field{title}{The impact of self-avatars on trust and collaboration in
   shared virtual environments}
     \field{volume}{12}
@@ -3414,9 +3413,11 @@
     \field{labelalpha}{Sla+09}
     \field{sortinit}{S}
     \field{sortinithash}{S}
+    \field{pages}{193\bibrangedash 210}
     \field{title}{How we experience immersive virtual environments: the concept
   of presence and its measurement}
-    \field{journaltitle}{Anuario de Psicolog{\'\i}a, 2009, vol. 40, p. 193-210}
+    \field{volume}{40}
+    \field{journaltitle}{Anuario de Psicolog{\'\i}a}
     \field{year}{2009}
   \endentry
 
@@ -3571,7 +3572,7 @@
     \field{labelalpha}{Ste+99}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \field{booktitle}{Proceedings IEEE Virtual Reality (Cat. No. 99CB36316)}
+    \field{booktitle}{Proceedings IEEE Virtual Reality}
     \field{title}{Leadership and collaboration in shared virtual environments}
     \field{year}{1999}
   \endentry
@@ -3597,8 +3598,7 @@
     \field{title}{Trusting strangers--the concept of generalized trust in
   perspective}
     \field{volume}{31}
-    \field{journaltitle}{{\"O}sterreichische Zeitschrift f{\"u}r
-  Politikwissenschaft}
+    \field{journaltitle}{Österreichische Zeitschrift für Politikwissenschaft}
     \field{year}{2002}
   \endentry
 
@@ -3794,7 +3794,7 @@
          giveni={A\bibinitperiod},
       }}%
       {{hash=GSM}{%
-         family={Gr{\"u}nvogel},
+         family={Grünvogel},
          familyi={G\bibinitperiod},
          given={Stefan\bibnamedelima M},
          giveni={S\bibinitperiod\bibinitdelim M\bibinitperiod},
@@ -3857,7 +3857,7 @@
       {{hash=ZMMN}{%
          family={Zenun},
          familyi={Z\bibinitperiod},
-         given={Marina Mendon{\c{c}}a\bibnamedelima Natalino},
+         given={Marina Mendonca\bibnamedelima Natalino},
          giveni={M\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
   N\bibinitperiod},
       }}%
