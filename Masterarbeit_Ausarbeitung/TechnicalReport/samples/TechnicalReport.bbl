@@ -1,0 +1,514 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{38}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{}, \showDOI{}, and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showDOI}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showDOI #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showDOI      \undefined \def \showDOI       #1{#1}\fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[\protect\citeauthoryear{Baldwin}{Baldwin}{1992}]%
+        {baldwin1992relational}
+\bibfield{author}{\bibinfo{person}{Mark~W Baldwin}.}
+  \bibinfo{year}{1992}\natexlab{}.
+\newblock \showarticletitle{Relational schemas and the processing of social
+  information.}
+\newblock \bibinfo{journal}{\emph{Psychological bulletin}}
+  \bibinfo{volume}{112}, \bibinfo{number}{3} (\bibinfo{year}{1992}),
+  \bibinfo{pages}{461}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Becker, Hess, STOLL, GROTE, and
+  MANCHEN-SPORRI}{Becker et~al\mbox{.}}{2002}]%
+        {becker2002fuhrung}
+\bibfield{author}{\bibinfo{person}{Martin Becker}, \bibinfo{person}{GABRIELA
+  Hess}, \bibinfo{person}{FRANCOIS STOLL}, \bibinfo{person}{GUDELA GROTE},
+  {and} \bibinfo{person}{SYLVIA MANCHEN-SPORRI}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Führung virtueller Teams: Kognitive Modelle der
+  Führungskraft, Teamprozesse und Teameffektivität}.
+\newblock \bibinfo{journal}{\emph{Zürich}} (\bibinfo{year}{2002}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bente, R{\"u}ggenberg, and Kr{\"a}mer}{Bente
+  et~al\mbox{.}}{2004}]%
+        {bente2004social}
+\bibfield{author}{\bibinfo{person}{Gary Bente}, \bibinfo{person}{Sabine
+  R{\"u}ggenberg}, {and} \bibinfo{person}{Nicole~C Kr{\"a}mer}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Social presence and interpersonal trust in
+  avatar-based, collaborative net-communications}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the Seventh Annual International
+  Workshop on Presence}}. \bibinfo{pages}{54--61}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Bigley and Pearce}{Bigley and Pearce}{1998}]%
+        {bigley1998straining}
+\bibfield{author}{\bibinfo{person}{Gregory~A Bigley} {and}
+  \bibinfo{person}{Jone~L Pearce}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Straining for shared meaning in organization
+  science: Problems of trust and distrust}.
+\newblock \bibinfo{journal}{\emph{Academy of management review}}
+  \bibinfo{volume}{23}, \bibinfo{number}{3} (\bibinfo{year}{1998}),
+  \bibinfo{pages}{405--421}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Biocca and Harms}{Biocca and Harms}{2002}]%
+        {biocca2002defining}
+\bibfield{author}{\bibinfo{person}{Frank Biocca} {and} \bibinfo{person}{Chad
+  Harms}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Defining and measuring social presence:
+  Contribution to the networked minds theory and measure}.
+\newblock \bibinfo{journal}{\emph{Proceedings of PRESENCE}}
+  \bibinfo{volume}{2002} (\bibinfo{year}{2002}), \bibinfo{pages}{1--36}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Biocca and Nowak}{Biocca and Nowak}{2001}]%
+        {biocca2001plugging}
+\bibfield{author}{\bibinfo{person}{Frank Biocca} {and}
+  \bibinfo{person}{Kristine Nowak}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Plugging your body into the telecommunication
+  system: Mediated embodiment, media interfaces, and social virtual
+  environments}.
+\newblock \bibinfo{journal}{\emph{Communication technology and society}}
+  (\bibinfo{year}{2001}), \bibinfo{pages}{407--447}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cohen}{Cohen}{2013}]%
+        {cohen2013statistical}
+\bibfield{author}{\bibinfo{person}{Jacob Cohen}.}
+  \bibinfo{year}{2013}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Statistical power analysis for the
+  behavioral sciences}}.
+\newblock \bibinfo{publisher}{Academic press}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Cook and Wall}{Cook and Wall}{1980}]%
+        {cook1980new}
+\bibfield{author}{\bibinfo{person}{John Cook} {and} \bibinfo{person}{Toby
+  Wall}.} \bibinfo{year}{1980}\natexlab{}.
+\newblock \showarticletitle{New work attitude measures of trust, organizational
+  commitment and personal need non-fulfilment}.
+\newblock \bibinfo{journal}{\emph{Journal of occupational psychology}}
+  \bibinfo{volume}{53}, \bibinfo{number}{1} (\bibinfo{year}{1980}),
+  \bibinfo{pages}{39--52}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Couch, Adams, and Jones}{Couch
+  et~al\mbox{.}}{1996}]%
+        {couch1996assessment}
+\bibfield{author}{\bibinfo{person}{Lauri~L Couch}, \bibinfo{person}{Jeffrey~M
+  Adams}, {and} \bibinfo{person}{Warren~H Jones}.}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{The assessment of trust orientation}.
+\newblock \bibinfo{journal}{\emph{Journal of personality assessment}}
+  \bibinfo{volume}{67}, \bibinfo{number}{2} (\bibinfo{year}{1996}),
+  \bibinfo{pages}{305--323}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Davis, Schoorman, Mayer, and Tan}{Davis
+  et~al\mbox{.}}{2000}]%
+        {davis2000trusted}
+\bibfield{author}{\bibinfo{person}{James~H Davis}, \bibinfo{person}{F~David
+  Schoorman}, \bibinfo{person}{Roger~C Mayer}, {and} \bibinfo{person}{Hwee~Hoon
+  Tan}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{The trusted general manager and business unit
+  performance: Empirical evidence of a competitive advantage}.
+\newblock \bibinfo{journal}{\emph{Strategic management journal}}
+  \bibinfo{volume}{21}, \bibinfo{number}{5} (\bibinfo{year}{2000}),
+  \bibinfo{pages}{563--576}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{De~Jong, Dirks, and Gillespie}{De~Jong
+  et~al\mbox{.}}{2016}]%
+        {de2016trust}
+\bibfield{author}{\bibinfo{person}{BA De~Jong}, \bibinfo{person}{KT Dirks},
+  {and} \bibinfo{person}{N Gillespie}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Trust and team effectiveness: a meta-analysis of
+  critical contingencies and mediating mechanisms}.
+\newblock \bibinfo{journal}{\emph{J Appl Psychol}}  \bibinfo{volume}{101}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{1134--1150}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{De~Jong and Elfring}{De~Jong and
+  Elfring}{2010}]%
+        {de2010does}
+\bibfield{author}{\bibinfo{person}{Bart~A De~Jong} {and} \bibinfo{person}{Tom
+  Elfring}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{How does trust affect the performance of ongoing
+  teams? The mediating role of reflexivity, monitoring, and effort}.
+\newblock \bibinfo{journal}{\emph{Academy of Management Journal}}
+  \bibinfo{volume}{53}, \bibinfo{number}{3} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{535--549}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dirks}{Dirks}{1999}]%
+        {dirks1999effects}
+\bibfield{author}{\bibinfo{person}{Kurt~T Dirks}.}
+  \bibinfo{year}{1999}\natexlab{}.
+\newblock \showarticletitle{The effects of interpersonal trust on work group
+  performance.}
+\newblock \bibinfo{journal}{\emph{Journal of applied psychology}}
+  \bibinfo{volume}{84}, \bibinfo{number}{3} (\bibinfo{year}{1999}),
+  \bibinfo{pages}{445}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dufner, Park, Kwon, and Peng}{Dufner
+  et~al\mbox{.}}{2002}]%
+        {dufner2002asynchronous}
+\bibfield{author}{\bibinfo{person}{Donna~K Dufner}, \bibinfo{person}{Yong-Tae
+  Park}, \bibinfo{person}{Ojoung Kwon}, {and} \bibinfo{person}{Qing Peng}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Asynchronous team support: perceptions of the group
+  problem solving process when using a cybercollaboratory}. In
+  \bibinfo{booktitle}{\emph{Proceedings of the 35th Annual Hawaii International
+  Conference on System Sciences}}. IEEE, \bibinfo{pages}{12--20}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Dyer}{Dyer}{1995}]%
+        {dyer1995team}
+\bibfield{author}{\bibinfo{person}{William~G Dyer}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Team building: Current issues and new
+  alternatives}}. Vol.~\bibinfo{volume}{62882}.
+\newblock \bibinfo{publisher}{Prentice Hall}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{George, Eiband, Hufnagel, and Hussmann}{George
+  et~al\mbox{.}}{2018}]%
+        {george2018trusting}
+\bibfield{author}{\bibinfo{person}{Ceenu George}, \bibinfo{person}{Malin
+  Eiband}, \bibinfo{person}{Michael Hufnagel}, {and} \bibinfo{person}{Heinrich
+  Hussmann}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Trusting Strangers in Immersive Virtual Reality}.
+  In \bibinfo{booktitle}{\emph{Proceedings of the 23rd International Conference
+  on Intelligent User Interfaces Companion}}. \bibinfo{pages}{1--2}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gibson, Zellmer-Bruhn, and Schwab}{Gibson
+  et~al\mbox{.}}{2003}]%
+        {gibson2003team}
+\bibfield{author}{\bibinfo{person}{Cristina~B Gibson}, \bibinfo{person}{Mary~E
+  Zellmer-Bruhn}, {and} \bibinfo{person}{Donald~P Schwab}.}
+  \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Team effectiveness in multinational organizations:
+  Evaluation across contexts}.
+\newblock \bibinfo{journal}{\emph{Group \& Organization Management}}
+  \bibinfo{volume}{28}, \bibinfo{number}{4} (\bibinfo{year}{2003}),
+  \bibinfo{pages}{444--474}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Gonz{\'a}lez-Rom{\'a} and
+  Hern{\'a}ndez}{Gonz{\'a}lez-Rom{\'a} and Hern{\'a}ndez}{2014}]%
+        {gonzalez2014climate}
+\bibfield{author}{\bibinfo{person}{Vicente Gonz{\'a}lez-Rom{\'a}} {and}
+  \bibinfo{person}{Ana Hern{\'a}ndez}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Climate uniformity: Its influence on team
+  communication quality, task conflict, and team performance.}
+\newblock \bibinfo{journal}{\emph{Journal of Applied Psychology}}
+  \bibinfo{volume}{99}, \bibinfo{number}{6} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{1042}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Hertel, Konradt, and Orlikowski}{Hertel
+  et~al\mbox{.}}{2004}]%
+        {hertel2004managing}
+\bibfield{author}{\bibinfo{person}{Guido Hertel}, \bibinfo{person}{Udo
+  Konradt}, {and} \bibinfo{person}{Borris Orlikowski}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Managing distance by interdependence: Goal setting,
+  task interdependence, and team-based rewards in virtual teams}.
+\newblock \bibinfo{journal}{\emph{European Journal of work and organizational
+  psychology}} \bibinfo{volume}{13}, \bibinfo{number}{1}
+  (\bibinfo{year}{2004}), \bibinfo{pages}{1--28}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Huang, Wei, Bostrom, Lim, and Watson}{Huang
+  et~al\mbox{.}}{1998}]%
+        {huang1998supporting}
+\bibfield{author}{\bibinfo{person}{W Huang}, \bibinfo{person}{Kwok~Kee Wei},
+  \bibinfo{person}{Bob Bostrom}, \bibinfo{person}{Lai-Huat Lim}, {and}
+  \bibinfo{person}{Richard~T Watson}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Supporting distributed team-building using GSS: A
+  dialogue theory-based framework}. In \bibinfo{booktitle}{\emph{Proceedings of
+  the Thirty-First Hawaii International Conference on System Sciences}},
+  Vol.~\bibinfo{volume}{1}. IEEE.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Jarvenpaa and Leidner}{Jarvenpaa and
+  Leidner}{1998}]%
+        {jarvenpaa1999communication}
+\bibfield{author}{\bibinfo{person}{Sirkka~L Jarvenpaa} {and}
+  \bibinfo{person}{Dorothy~E Leidner}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Communication and trust in global virtual teams}.
+\newblock \bibinfo{journal}{\emph{Organization science}} \bibinfo{volume}{10},
+  \bibinfo{number}{6} (\bibinfo{year}{1998}), \bibinfo{pages}{791--815}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Johnson and Grayson}{Johnson and
+  Grayson}{2005}]%
+        {johnson2005cognitive}
+\bibfield{author}{\bibinfo{person}{Devon Johnson} {and} \bibinfo{person}{Kent
+  Grayson}.} \bibinfo{year}{2005}\natexlab{}.
+\newblock \showarticletitle{Cognitive and affective trust in service
+  relationships}.
+\newblock \bibinfo{journal}{\emph{Journal of Business research}}
+  \bibinfo{volume}{58}, \bibinfo{number}{4} (\bibinfo{year}{2005}),
+  \bibinfo{pages}{500--507}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Lewis and Weigert}{Lewis and Weigert}{1985}]%
+        {lewis1985trust}
+\bibfield{author}{\bibinfo{person}{J~David Lewis} {and} \bibinfo{person}{Andrew
+  Weigert}.} \bibinfo{year}{1985}\natexlab{}.
+\newblock \showarticletitle{Trust as a social reality}.
+\newblock \bibinfo{journal}{\emph{Social forces}} \bibinfo{volume}{63},
+  \bibinfo{number}{4} (\bibinfo{year}{1985}), \bibinfo{pages}{967--985}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Martins, Gilson, and Maynard}{Martins
+  et~al\mbox{.}}{2004}]%
+        {martins2004virtual}
+\bibfield{author}{\bibinfo{person}{Luis~L Martins}, \bibinfo{person}{Lucy~L
+  Gilson}, {and} \bibinfo{person}{M~Travis Maynard}.}
+  \bibinfo{year}{2004}\natexlab{}.
+\newblock \showarticletitle{Virtual teams: What do we know and where do we go
+  from here?}
+\newblock \bibinfo{journal}{\emph{Journal of management}} \bibinfo{volume}{30},
+  \bibinfo{number}{6} (\bibinfo{year}{2004}), \bibinfo{pages}{805--835}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mayer, Davis, and Schoorman}{Mayer
+  et~al\mbox{.}}{1995}]%
+        {mayer1995integrative}
+\bibfield{author}{\bibinfo{person}{Roger~C Mayer}, \bibinfo{person}{James~H
+  Davis}, {and} \bibinfo{person}{F~David Schoorman}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{An integrative model of organizational trust}.
+\newblock \bibinfo{journal}{\emph{Academy of management review}}
+  \bibinfo{volume}{20}, \bibinfo{number}{3} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{709--734}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{McAllister}{McAllister}{1995}]%
+        {mcallister1995affect}
+\bibfield{author}{\bibinfo{person}{Daniel~J McAllister}.}
+  \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Affect-and cognition-based trust as foundations for
+  interpersonal cooperation in organizations}.
+\newblock \bibinfo{journal}{\emph{Academy of management journal}}
+  \bibinfo{volume}{38}, \bibinfo{number}{1} (\bibinfo{year}{1995}),
+  \bibinfo{pages}{24--59}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Meyerson, Weick, Kramer,
+  et~al\mbox{.}}{Meyerson et~al\mbox{.}}{1996}]%
+        {meyerson1996swift}
+\bibfield{author}{\bibinfo{person}{Debra Meyerson}, \bibinfo{person}{Karl~E
+  Weick}, \bibinfo{person}{Roderick~M Kramer}, {et~al\mbox{.}}}
+  \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Swift trust and temporary groups}.
+\newblock \bibinfo{journal}{\emph{Trust in organizations: Frontiers of theory
+  and research}}  \bibinfo{volume}{166} (\bibinfo{year}{1996}),
+  \bibinfo{pages}{195}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Milliken and Martins}{Milliken and
+  Martins}{1996}]%
+        {milliken1996searching}
+\bibfield{author}{\bibinfo{person}{Frances~J Milliken} {and}
+  \bibinfo{person}{Luis~L Martins}.} \bibinfo{year}{1996}\natexlab{}.
+\newblock \showarticletitle{Searching for common threads: Understanding the
+  multiple effects of diversity in organizational groups}.
+\newblock \bibinfo{journal}{\emph{Academy of management review}}
+  \bibinfo{volume}{21}, \bibinfo{number}{2} (\bibinfo{year}{1996}),
+  \bibinfo{pages}{402--433}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Mooradian, Renzl, and Matzler}{Mooradian
+  et~al\mbox{.}}{2006}]%
+        {mooradian2006trusts}
+\bibfield{author}{\bibinfo{person}{Todd Mooradian}, \bibinfo{person}{Birgit
+  Renzl}, {and} \bibinfo{person}{Kurt Matzler}.}
+  \bibinfo{year}{2006}\natexlab{}.
+\newblock \showarticletitle{Who trusts? Personality, trust and knowledge
+  sharing}.
+\newblock \bibinfo{journal}{\emph{Management learning}} \bibinfo{volume}{37},
+  \bibinfo{number}{4} (\bibinfo{year}{2006}), \bibinfo{pages}{523--540}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Ren, Kraut, and Kiesler}{Ren
+  et~al\mbox{.}}{2007}]%
+        {ren2007applying}
+\bibfield{author}{\bibinfo{person}{Yuqing Ren}, \bibinfo{person}{Robert Kraut},
+  {and} \bibinfo{person}{Sara Kiesler}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{Applying common identity and bond theory to design
+  of online communities}.
+\newblock \bibinfo{journal}{\emph{Organization studies}} \bibinfo{volume}{28},
+  \bibinfo{number}{3} (\bibinfo{year}{2007}), \bibinfo{pages}{377--408}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Riedl, Mohr, Kenning, Davis, and
+  Heekeren}{Riedl et~al\mbox{.}}{2014}]%
+        {riedl2014trusting}
+\bibfield{author}{\bibinfo{person}{Ren{\'e} Riedl}, \bibinfo{person}{Peter~NC
+  Mohr}, \bibinfo{person}{Peter~H Kenning}, \bibinfo{person}{Fred~D Davis},
+  {and} \bibinfo{person}{Hauke~R Heekeren}.} \bibinfo{year}{2014}\natexlab{}.
+\newblock \showarticletitle{Trusting humans and avatars: A brain imaging study
+  based on evolution theory}.
+\newblock \bibinfo{journal}{\emph{Journal of Management Information Systems}}
+  \bibinfo{volume}{30}, \bibinfo{number}{4} (\bibinfo{year}{2014}),
+  \bibinfo{pages}{83--114}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Rousseau, Sitkin, Burt, and Camerer}{Rousseau
+  et~al\mbox{.}}{1998}]%
+        {rousseau1998not}
+\bibfield{author}{\bibinfo{person}{Denise~M Rousseau}, \bibinfo{person}{Sim~B
+  Sitkin}, \bibinfo{person}{Ronald~S Burt}, {and} \bibinfo{person}{Colin
+  Camerer}.} \bibinfo{year}{1998}\natexlab{}.
+\newblock \showarticletitle{Not so different after all: A cross-discipline view
+  of trust}.
+\newblock \bibinfo{journal}{\emph{Academy of management review}}
+  \bibinfo{volume}{23}, \bibinfo{number}{3} (\bibinfo{year}{1998}),
+  \bibinfo{pages}{393--404}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Schweitzer and Duxbury}{Schweitzer and
+  Duxbury}{2010}]%
+        {schweitzer2010conceptualizing}
+\bibfield{author}{\bibinfo{person}{Linda Schweitzer} {and}
+  \bibinfo{person}{Linda Duxbury}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{Conceptualizing and measuring the virtuality of
+  teams}.
+\newblock \bibinfo{journal}{\emph{Information systems journal}}
+  \bibinfo{volume}{20}, \bibinfo{number}{3} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{267--295}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{statista}{statista}{2020}]%
+        {statistaCorona2020}
+\bibfield{author}{\bibinfo{person}{statista}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \bibinfo{title}{Corona-Krise: Anteil der Belegschaft, der im
+  Homeoffice arbeitete, aktuell arbeitet oder theoretisch arbeiten könnte in
+  Deutschland im 2. Quartal 2020}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://de.statista.com/statistik/daten/studie/1204173/umfrage/befragung-zur-homeoffice-nutzung-in-der-corona-pandemie/}
+\showURL{%
+\tempurl}
+
+
+\bibitem[\protect\citeauthoryear{Stolle}{Stolle}{2002}]%
+        {stolle2002trusting}
+\bibfield{author}{\bibinfo{person}{Dietlind Stolle}.}
+  \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Trusting strangers--the concept of generalized
+  trust in perspective}.
+\newblock \bibinfo{journal}{\emph{Österreichische Zeitschrift für
+  Politikwissenschaft}} \bibinfo{volume}{31}, \bibinfo{number}{4}
+  (\bibinfo{year}{2002}), \bibinfo{pages}{397--412}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Turoff, Hiltz, Bahgat, and Rana}{Turoff
+  et~al\mbox{.}}{1993}]%
+        {turoff1993distributed}
+\bibfield{author}{\bibinfo{person}{Murray Turoff},
+  \bibinfo{person}{Starr~Roxanne Hiltz}, \bibinfo{person}{Ahmed~NF Bahgat},
+  {and} \bibinfo{person}{Ajaz~R Rana}.} \bibinfo{year}{1993}\natexlab{}.
+\newblock \showarticletitle{Distributed group support systems}.
+\newblock \bibinfo{journal}{\emph{MIS quarterly}} (\bibinfo{year}{1993}).
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Wong and Burton}{Wong and Burton}{2000}]%
+        {wong2000virtual}
+\bibfield{author}{\bibinfo{person}{Sze-Sze Wong} {and}
+  \bibinfo{person}{Richard~M Burton}.} \bibinfo{year}{2000}\natexlab{}.
+\newblock \showarticletitle{Virtual teams: what are their characteristics, and
+  impact on team performance?}
+\newblock \bibinfo{journal}{\emph{Computational \& Mathematical organization
+  theory}} \bibinfo{volume}{6}, \bibinfo{number}{4} (\bibinfo{year}{2000}),
+  \bibinfo{pages}{339--360}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{Zenun, Loureiro, and Araujo}{Zenun
+  et~al\mbox{.}}{2007}]%
+        {zenun2007effects}
+\bibfield{author}{\bibinfo{person}{Marina Mendonca~Natalino Zenun},
+  \bibinfo{person}{Geilson Loureiro}, {and} \bibinfo{person}{Claudiano~Sales
+  Araujo}.} \bibinfo{year}{2007}\natexlab{}.
+\newblock \showarticletitle{The Effects of Teams’ Co-location on Project
+  Performance}.
+\newblock In \bibinfo{booktitle}{\emph{Complex systems concurrent
+  engineering}}. \bibinfo{publisher}{Springer}.
+\newblock
+
+
+\end{thebibliography}
