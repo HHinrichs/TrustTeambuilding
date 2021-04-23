@@ -2,7 +2,7 @@
 %%% Do NOT edit. File created by BibTeX with style
 %%% ACM-Reference-Format-Journals [18-Jan-2012].
 
-\begin{thebibliography}{33}
+\begin{thebibliography}{36}
 
 %%% ====================================================================
 %%% NOTE TO THE USER: you can override these defaults by providing
@@ -99,16 +99,6 @@
 \newblock
 
 
-\bibitem[\protect\citeauthoryear{Cohen}{Cohen}{2013}]%
-        {cohen2013statistical}
-\bibfield{author}{\bibinfo{person}{Jacob Cohen}.}
-  \bibinfo{year}{2013}\natexlab{}.
-\newblock \bibinfo{booktitle}{\emph{Statistical power analysis for the
-  behavioral sciences}}.
-\newblock \bibinfo{publisher}{Academic press}.
-\newblock
-
-
 \bibitem[\protect\citeauthoryear{Cook and Wall}{Cook and Wall}{1980}]%
         {cook1980new}
 \bibfield{author}{\bibinfo{person}{John Cook} {and} \bibinfo{person}{Toby
@@ -145,6 +135,19 @@
 \newblock \bibinfo{journal}{\emph{Strategic management journal}}
   \bibinfo{volume}{21}, \bibinfo{number}{5} (\bibinfo{year}{2000}),
   \bibinfo{pages}{563--576}.
+\newblock
+
+
+\bibitem[\protect\citeauthoryear{De~Jong and Elfring}{De~Jong and
+  Elfring}{2010}]%
+        {de2010does}
+\bibfield{author}{\bibinfo{person}{Bart~A De~Jong} {and} \bibinfo{person}{Tom
+  Elfring}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \showarticletitle{How does trust affect the performance of ongoing
+  teams? The mediating role of reflexivity, monitoring, and effort}.
+\newblock \bibinfo{journal}{\emph{Academy of Management Journal}}
+  \bibinfo{volume}{53}, \bibinfo{number}{3} (\bibinfo{year}{2010}),
+  \bibinfo{pages}{535--549}.
 \newblock
 
 
@@ -217,6 +220,19 @@
   \bibinfo{volume}{99}, \bibinfo{number}{6} (\bibinfo{year}{2014}),
   \bibinfo{pages}{1042}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Hart}{Hart}{1980}]%
+        {NASATLX}
+\bibfield{author}{\bibinfo{person}{Sandra Hart}.}
+  \bibinfo{year}{1980}\natexlab{}.
+\newblock \bibinfo{title}{NASA-TLX: Task Load Index}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{https://humansystems.arc.nasa.gov/groups/tlx/index.php}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Hertel, Konradt, and Orlikowski}{Hertel
@@ -344,6 +360,19 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{Nowak and Biocca}{Nowak and Biocca}{2003}]%
+        {nowak2003effect}
+\bibfield{author}{\bibinfo{person}{Kristine~L Nowak} {and}
+  \bibinfo{person}{Frank Biocca}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{The effect of the agency and anthropomorphism on
+  users' sense of telepresence, copresence, and social presence in virtual
+  environments}.
+\newblock \bibinfo{journal}{\emph{Presence: Teleoperators \& Virtual
+  Environments}} \bibinfo{volume}{12}, \bibinfo{number}{5}
+  (\bibinfo{year}{2003}), \bibinfo{pages}{481--494}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{Ren, Kraut, and Kiesler}{Ren
   et~al\mbox{.}}{2007}]%
         {ren2007applying}
@@ -382,6 +411,20 @@
   \bibinfo{volume}{23}, \bibinfo{number}{3} (\bibinfo{year}{1998}),
   \bibinfo{pages}{393--404}.
 \newblock
+
+
+\bibitem[\protect\citeauthoryear{Schubert, Friedmann, and Regenbrecht}{Schubert
+  et~al\mbox{.}}{[n.d.]}]%
+        {IPQ}
+\bibfield{author}{\bibinfo{person}{T Schubert}, \bibinfo{person}{F Friedmann},
+  {and} \bibinfo{person}{H Regenbrecht}.} \bibinfo{year}{[n.d.]}\natexlab{}.
+\newblock \bibinfo{title}{igroup presence questionnaire (IPQ) overview}.
+\newblock
+\newblock
+\urldef\tempurl%
+\url{http://www.igroup.org/pq/ipq/index.php}
+\showURL{%
+\tempurl}
 
 
 \bibitem[\protect\citeauthoryear{Schweitzer and Duxbury}{Schweitzer and
