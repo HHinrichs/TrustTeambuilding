@@ -1,0 +1,77 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TechnicalReport_english.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: sample-base.bib
+Warning--I didn't find a database entry for "en2016trust"
+Warning--I didn't find a database entry for "en2010does"
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--no number and no volume in becker2002fuhrung
+Warning--page numbers missing in both pages and numpages fields in becker2002fuhrung
+Warning--empty publisher in bente2004social
+Warning--empty address in bente2004social
+Warning--no number and no volume in biocca2001plugging
+Warning--empty address in cohen2013statistical
+Warning--empty address in dyer1995team
+Warning--can't use both volume and number fields in gast2011unheimliche
+Warning--empty publisher in gast2011unheimliche
+Warning--empty address in gast2011unheimliche
+Warning--empty publisher in george2018trusting
+Warning--empty address in george2018trusting
+Warning--empty publisher in huang1998supporting
+Warning--empty address in huang1998supporting
+Warning--page numbers missing in both pages and numpages fields in huang1998supporting
+Warning--no number and no volume in turoff1993distributed
+Warning--page numbers missing in both pages and numpages fields in turoff1993distributed
+Warning--empty address in zenun2007effects
+You've used 33 entries,
+            5959 wiz_defined-function locations,
+            1832 strings with 26074 characters,
+and the built_in function-call counts, 39625 in all, are:
+= -- 5811
+> -- 1268
+< -- 0
++ -- 415
+- -- 440
+* -- 2654
+:= -- 3828
+add.period$ -- 169
+call.type$ -- 33
+change.case$ -- 216
+chr.to.int$ -- 33
+cite$ -- 51
+duplicate$ -- 3351
+empty$ -- 2367
+format.name$ -- 540
+if$ -- 10090
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 125
+newline$ -- 304
+num.names$ -- 264
+pop$ -- 1178
+preamble$ -- 1
+purify$ -- 513
+quote$ -- 0
+skip$ -- 1137
+stack$ -- 0
+substring$ -- 2970
+swap$ -- 364
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 610
+warning$ -- 18
+while$ -- 271
+width$ -- 0
+write$ -- 601
+(There were 20 warnings)
