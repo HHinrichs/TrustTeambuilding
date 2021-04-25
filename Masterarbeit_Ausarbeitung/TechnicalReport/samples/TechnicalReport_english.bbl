@@ -138,6 +138,18 @@
 \newblock
 
 
+\bibitem[\protect\citeauthoryear{De~Jong, Dirks, and Gillespie}{De~Jong
+  et~al\mbox{.}}{2016}]%
+        {de2016trust}
+\bibfield{author}{\bibinfo{person}{BA De~Jong}, \bibinfo{person}{KT Dirks},
+  {and} \bibinfo{person}{N Gillespie}.} \bibinfo{year}{2016}\natexlab{}.
+\newblock \showarticletitle{Trust and team effectiveness: a meta-analysis of
+  critical contingencies and mediating mechanisms}.
+\newblock \bibinfo{journal}{\emph{J Appl Psychol}}  \bibinfo{volume}{101}
+  (\bibinfo{year}{2016}), \bibinfo{pages}{1134--1150}.
+\newblock
+
+
 \bibitem[\protect\citeauthoryear{De~Jong and Elfring}{De~Jong and
   Elfring}{2010}]%
         {de2010does}
@@ -170,16 +182,6 @@
 \newblock \bibinfo{booktitle}{\emph{Team building: Current issues and new
   alternatives}}. Vol.~\bibinfo{volume}{62882}.
 \newblock \bibinfo{publisher}{Prentice Hall}.
-\newblock
-
-
-\bibitem[\protect\citeauthoryear{Gast}{Gast}{2011}]%
-        {gast2011unheimliche}
-\bibfield{author}{\bibinfo{person}{Lilli Gast}.}
-  \bibinfo{year}{2011}\natexlab{}.
-\newblock \showarticletitle{Das Unheimliche der Ambivalenz}. In
-  \bibinfo{booktitle}{\emph{Forum der Psychoanalyse}},
-  Vol.~\bibinfo{volume}{27}. Springer, \bibinfo{pages}{349--358}.
 \newblock
 
 
