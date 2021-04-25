@@ -20,50 +20,53 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 20400 items.
+Reallocating 'field_info' (item size: 4) to 19980 items.
 Database file #1: Masterarbeit_Hannes_Hinrichs-blx.bib
 Database file #2: bibfile.bib
+Warning--I didn't find a database entry for "sherman2018understanding"
+Warning--I didn't find a database entry for "de2010does"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 110 entries,
+You've used 105 entries,
             6393 wiz_defined-function locations,
-            1793 strings with 28461 characters,
-and the built_in function-call counts, 824395 in all, are:
-= -- 61719
-> -- 14634
-< -- 5618
-+ -- 18135
-- -- 5098
-* -- 61487
-:= -- 83672
+            1846 strings with 29264 characters,
+and the built_in function-call counts, 793512 in all, are:
+= -- 59304
+> -- 14016
+< -- 5412
++ -- 17354
+- -- 5011
+* -- 59491
+:= -- 80267
 add.period$ -- 0
-call.type$ -- 110
-change.case$ -- 3519
+call.type$ -- 105
+change.case$ -- 3415
 chr.to.int$ -- 44
-cite$ -- 218
-duplicate$ -- 80479
-empty$ -- 75066
-format.name$ -- 8348
-if$ -- 173694
+cite$ -- 208
+duplicate$ -- 77283
+empty$ -- 72433
+format.name$ -- 7967
+if$ -- 167123
 int.to.chr$ -- 0
-int.to.str$ -- 314
+int.to.str$ -- 303
 missing$ -- 0
-newline$ -- 3814
-num.names$ -- 7177
-pop$ -- 39036
+newline$ -- 3877
+num.names$ -- 6908
+pop$ -- 37071
 preamble$ -- 1
-purify$ -- 4167
+purify$ -- 4033
 quote$ -- 0
-skip$ -- 25661
+skip$ -- 24644
 stack$ -- 0
-substring$ -- 111146
-swap$ -- 19497
-text.length$ -- 3614
-text.prefix$ -- 165
+substring$ -- 107092
+swap$ -- 19088
+text.length$ -- 3451
+text.prefix$ -- 158
 top$ -- 1
-type$ -- 3728
+type$ -- 3558
 warning$ -- 0
-while$ -- 10528
+while$ -- 10121
 width$ -- 0
-write$ -- 3705
+write$ -- 3773
+(There were 2 warnings)
