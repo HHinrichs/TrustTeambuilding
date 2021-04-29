@@ -45,9 +45,6 @@
     \field{labelalpha}{AEAT09}
     \field{sortinit}{A}
     \field{sortinithash}{A}
-    \verb{doi}
-    \verb 10.6084/M9.FIGSHARE.1067906
-    \endverb
     \field{number}{3}
     \field{pages}{2653\bibrangedash 2669}
     \field{title}{Virtual teams: A literature review}
@@ -75,9 +72,6 @@
     \field{labelalpha}{Bal92}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1037/0033-2909.112.3.461
-    \endverb
     \field{number}{3}
     \field{pages}{461}
     \field{title}{Relational schemas and the processing of social information.}
@@ -142,9 +136,6 @@
     \field{labelalpha}{BC98}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb https://doi.org/10.1038/35784
-    \endverb
     \field{number}{6669}
     \field{pages}{756\bibrangedash 756}
     \field{title}{Rubber hands ‘feel’touch that eyes see}
@@ -164,25 +155,25 @@
       {{hash=HG}{%
          family={Hess},
          familyi={H\bibinitperiod},
-         given={GABRIELA},
+         given={Gabriela},
          giveni={G\bibinitperiod},
       }}%
       {{hash=SF}{%
-         family={STOLL},
+         family={Stoll},
          familyi={S\bibinitperiod},
-         given={FRANCOIS},
+         given={Francois},
          giveni={F\bibinitperiod},
       }}%
       {{hash=GG}{%
-         family={GROTE},
+         family={Grote},
          familyi={G\bibinitperiod},
-         given={GUDELA},
+         given={Gudela},
          giveni={G\bibinitperiod},
       }}%
       {{hash=MSS}{%
-         family={MANCHEN-SPORRI},
+         family={Manchen-Sporri},
          familyi={M\bibinithyphendelim S\bibinitperiod},
-         given={SYLVIA},
+         given={Sylvia},
          giveni={S\bibinitperiod},
       }}%
     }
@@ -283,9 +274,6 @@
     \field{labelalpha}{BHH16}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1037/apl0000113
-    \endverb
     \field{number}{8}
     \field{pages}{1151}
     \field{title}{Does trust matter more in virtual teams? A meta-analysis of
@@ -408,9 +396,6 @@
     \field{labelalpha}{Bio92}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1111/j.1460-2466.1992.tb00811.x
-    \endverb
     \field{number}{4}
     \field{pages}{23\bibrangedash 72}
     \field{title}{Virtual reality technology: A tutorial}
@@ -438,9 +423,6 @@
     \field{labelalpha}{Bio99}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.1111/j.1083-6101.1997.tb00070.x
-    \endverb
     \field{pages}{113\bibrangedash 144}
     \field{title}{The cyborg's dilemma: Progressive embodiment in virtual
   environments}
@@ -474,9 +456,6 @@
     \field{labelalpha}{BP98}
     \field{sortinit}{B}
     \field{sortinithash}{B}
-    \verb{doi}
-    \verb 10.2307/259286
-    \endverb
     \field{number}{3}
     \field{pages}{405\bibrangedash 421}
     \field{title}{Straining for shared meaning in organization science:
@@ -553,15 +532,46 @@
     \field{labelalpha}{CAJ96}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1207/s15327752jpa6702_7
-    \endverb
     \field{number}{2}
     \field{pages}{305\bibrangedash 323}
     \field{title}{The assessment of trust orientation}
     \field{volume}{67}
     \field{journaltitle}{Journal of personality assessment}
     \field{year}{1996}
+  \endentry
+
+  \entry{cohen1997makes}{article}{}
+    \name{author}{2}{}{%
+      {{hash=CSG}{%
+         family={Cohen},
+         familyi={C\bibinitperiod},
+         given={Susan\bibnamedelima G},
+         giveni={S\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+      {{hash=BDE}{%
+         family={Bailey},
+         familyi={B\bibinitperiod},
+         given={Diane\bibnamedelima E},
+         giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Sage Publications Sage CA: Thousand Oaks, CA}%
+    }
+    \strng{namehash}{CSGBDE1}
+    \strng{fullhash}{CSGBDE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{CB97}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \field{number}{3}
+    \field{pages}{239\bibrangedash 290}
+    \field{title}{What makes teams work: Group effectiveness research from the
+  shop floor to the executive suite}
+    \field{volume}{23}
+    \field{journaltitle}{Journal of management}
+    \field{year}{1997}
   \endentry
 
   \entry{cohen2013statistical}{book}{}
@@ -612,9 +622,6 @@
     \field{labelalpha}{CS03}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1109/EMR.2008.4490142
-    \endverb
     \field{title}{E-leadership and virtual teams.}
     \field{journaltitle}{Organizational dynamics}
     \field{year}{2003}
@@ -645,9 +652,6 @@
     \field{labelalpha}{CW80}
     \field{sortinit}{C}
     \field{sortinithash}{C}
-    \verb{doi}
-    \verb 10.1111/j.2044-8325.1980.tb00005.x
-    \endverb
     \field{number}{1}
     \field{pages}{39\bibrangedash 52}
     \field{title}{New work attitude measures of trust, organizational
@@ -722,9 +726,6 @@
     \field{labelalpha}{Dir99}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1037/0021-9010.84.3.445
-    \endverb
     \field{number}{3}
     \field{pages}{445}
     \field{title}{The effects of interpersonal trust on work group
@@ -810,9 +811,6 @@
     \field{labelalpha}{DL+11}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.5121/ijma.2011.3201
-    \endverb
     \field{title}{Level of presence in team-building activities: Gaming
   component in virtual environments}
     \field{journaltitle}{arXiv}
@@ -850,9 +848,6 @@
     \field{labelalpha}{DMB11}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1371/journal.pone.0025759
-    \endverb
     \field{number}{10}
     \field{title}{Talk to the virtual hands: Self-animated avatars improve
   communication in head-mounted display virtual environments}
@@ -886,9 +881,6 @@
     \field{labelalpha}{DS06}
     \field{sortinit}{D}
     \field{sortinithash}{D}
-    \verb{doi}
-    \verb 10.1016/S1096-7516(01)00040-9
-    \endverb
     \field{title}{Mastering virtual teams: Strategies, tools, and techniques
   that succeed}
     \field{year}{2006}
@@ -973,9 +965,6 @@
     \field{booktitle}{Proceedings 2001 IEEE/RSJ International Conference on
   Intelligent Robots and Systems. Expanding the Societal Role of Robotics in
   the the Next Millennium}
-    \verb{doi}
-    \verb 10.1109/IROS.2001.973374
-    \endverb
     \field{pages}{298\bibrangedash 303}
     \field{title}{Learning inverse kinematics}
     \field{volume}{1}
@@ -1056,9 +1045,6 @@
     \field{sortinit}{G}
     \field{sortinithash}{G}
     \field{booktitle}{Forum der Psychoanalyse}
-    \verb{doi}
-    \verb 10.1007/s00451-011-0084-6
-    \endverb
     \field{number}{4}
     \field{pages}{349\bibrangedash 358}
     \field{title}{Das Unheimliche der Ambivalenz}
@@ -1091,9 +1077,6 @@
     \field{labelalpha}{GD96}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1146/annurev.psych.47.1.307
-    \endverb
     \field{number}{1}
     \field{pages}{307\bibrangedash 338}
     \field{title}{Teams in organizations: Recent research on performance and
@@ -1139,9 +1122,6 @@
     \field{sortinithash}{G}
     \field{booktitle}{Proceedings of the 23rd International Conference on
   Intelligent User Interfaces Companion}
-    \verb{doi}
-    \verb 10.1145/3180308.3180355
-    \endverb
     \field{pages}{1\bibrangedash 2}
     \field{title}{Trusting Strangers in Immersive Virtual Reality}
     \field{year}{2018}
@@ -1190,9 +1170,6 @@
     \field{labelalpha}{Gil+15}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1177/0149206314559946
-    \endverb
     \field{number}{5}
     \field{pages}{1313\bibrangedash 1337}
     \field{title}{Virtual teams research: 10 years, 10 themes, and 10
@@ -1227,9 +1204,6 @@
     \field{labelalpha}{GRH14}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1037/a0037868
-    \endverb
     \field{number}{6}
     \field{pages}{1042\bibrangedash 1058}
     \field{title}{Climate uniformity: Its influence on team communication
@@ -1264,9 +1238,6 @@
     \field{labelalpha}{GT94}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1037/0735-7036.108.3.233
-    \endverb
     \field{number}{3}
     \field{pages}{233}
     \field{title}{Human (Homo sapiens) facial attractiveness and sexual
@@ -1313,9 +1284,6 @@
     \field{labelalpha}{Gua+07}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1080/15213260701300865
-    \endverb
     \field{number}{1}
     \field{pages}{1\bibrangedash 22}
     \field{title}{Virtual humans and persuasion: The effects of agency and
@@ -1385,9 +1353,6 @@
     \field{labelalpha}{GZBS03}
     \field{sortinit}{G}
     \field{sortinithash}{G}
-    \verb{doi}
-    \verb 10.1177/1059601103251685
-    \endverb
     \field{number}{4}
     \field{pages}{444\bibrangedash 474}
     \field{title}{Team effectiveness in multinational organizations: Evaluation
@@ -1524,9 +1489,6 @@
     \field{labelalpha}{HK19}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.1007/s11612-019-00445-5
-    \endverb
     \field{number}{1}
     \field{pages}{33\bibrangedash 41}
     \field{title}{Alles eine Frage der Zeit? Herausforderungen virtueller Teams
@@ -1568,9 +1530,6 @@
     \field{labelalpha}{HKO04}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.1080/13594320344000228
-    \endverb
     \field{number}{1}
     \field{pages}{1\bibrangedash 28}
     \field{title}{Managing distance by interdependence: Goal setting, task
@@ -1600,9 +1559,6 @@
     \field{labelalpha}{Hol01}
     \field{sortinit}{H}
     \field{sortinithash}{H}
-    \verb{doi}
-    \verb 10.1108/13527590110395621
-    \endverb
     \field{title}{Building trust and collaboration in a virtual team}
     \field{journaltitle}{Team performance management: an international journal}
     \field{year}{2001}
@@ -1683,9 +1639,6 @@
     \field{sortinithash}{H}
     \field{booktitle}{Proceedings of the Thirty-First Hawaii International
   Conference on System Sciences}
-    \verb{doi}
-    \verb 10.1109/HICSS.1998.653089
-    \endverb
     \field{title}{Supporting distributed team-building using GSS: A dialogue
   theory-based framework}
     \field{volume}{1}
@@ -1723,9 +1676,6 @@
     \field{labelalpha}{IFDR01}
     \field{sortinit}{I}
     \field{sortinithash}{I}
-    \verb{doi}
-    \verb 10.1089/109493101300117875
-    \endverb
     \field{title}{Presence: Where are we?}
     \field{year}{2001}
   \endentry
@@ -1778,9 +1728,6 @@
     \field{labelalpha}{JG05}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \verb{doi}
-    \verb 10.1016/S0148-2963(03)00140-1
-    \endverb
     \field{number}{4}
     \field{pages}{500\bibrangedash 507}
     \field{title}{Cognitive and affective trust in service relationships}
@@ -1814,9 +1761,6 @@
     \field{labelalpha}{JG98}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \verb{doi}
-    \verb 10.2307/259293
-    \endverb
     \field{number}{3}
     \field{pages}{531\bibrangedash 546}
     \field{title}{The experience and evolution of trust: Implications for
@@ -1851,9 +1795,6 @@
     \field{labelalpha}{JL98}
     \field{sortinit}{J}
     \field{sortinithash}{J}
-    \verb{doi}
-    \verb 10.1111/j.1083-6101.1998.tb00080.x
-    \endverb
     \field{number}{6}
     \field{pages}{791\bibrangedash 815}
     \field{title}{Communication and trust in global virtual teams}
@@ -1914,9 +1855,6 @@
     \field{labelalpha}{KB06}
     \field{sortinit}{K}
     \field{sortinithash}{K}
-    \verb{doi}
-    \verb 10.5772/5015
-    \endverb
     \field{title}{Robot kinematics: Forward and inverse kinematics}
     \field{year}{2006}
   \endentry
@@ -1997,9 +1935,6 @@
     \field{labelalpha}{Lok+03}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.1162/105474603322955914
-    \endverb
     \field{number}{6}
     \field{pages}{615\bibrangedash 628}
     \field{title}{Effects of handling real objects and self-avatar fidelity on
@@ -2040,9 +1975,6 @@
     \field{labelalpha}{LSL08}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.1016/j.dss.2008.04.002
-    \endverb
     \field{number}{4}
     \field{pages}{1031\bibrangedash 1045}
     \field{title}{A model to develop effective virtual teams}
@@ -2076,9 +2008,6 @@
     \field{labelalpha}{LW85}
     \field{sortinit}{L}
     \field{sortinithash}{L}
-    \verb{doi}
-    \verb 10.2307/2578601
-    \endverb
     \field{number}{4}
     \field{pages}{967\bibrangedash 985}
     \field{title}{Trust as a social reality}
@@ -2129,9 +2058,6 @@
     \field{labelalpha}{McA95}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.2307/256727
-    \endverb
     \field{number}{1}
     \field{pages}{24\bibrangedash 59}
     \field{title}{Affect-and cognition-based trust as foundations for
@@ -2172,9 +2098,6 @@
     \field{labelalpha}{MCC98}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.2307/259290
-    \endverb
     \field{number}{3}
     \field{pages}{473\bibrangedash 490}
     \field{title}{Initial trust formation in new organizational relationships}
@@ -2220,9 +2143,6 @@
     \field{labelalpha}{Mck+11}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1145/1985347.1985353
-    \endverb
     \field{number}{2}
     \field{pages}{1\bibrangedash 25}
     \field{title}{Trust in a specific technology: An investigation of its
@@ -2264,9 +2184,6 @@
     \field{labelalpha}{MDS95}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.2307/258792
-    \endverb
     \field{number}{3}
     \field{pages}{709\bibrangedash 734}
     \field{title}{An integrative model of organizational trust}
@@ -2306,9 +2223,6 @@
     \field{labelalpha}{MGM04}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1016/j.jm.2004.05.002
-    \endverb
     \field{number}{6}
     \field{pages}{805\bibrangedash 835}
     \field{title}{Virtual teams: What do we know and where do we go from here?}
@@ -2342,9 +2256,6 @@
     \field{labelalpha}{MM96}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.5465/amr.1996.9605060217
-    \endverb
     \field{number}{2}
     \field{pages}{402\bibrangedash 433}
     \field{title}{Searching for common threads: Understanding the multiple
@@ -2385,9 +2296,6 @@
     \field{labelalpha}{MMZ01}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.2307/259182
-    \endverb
     \field{number}{3}
     \field{title}{A temporally based framework and taxonomy of team processes}
     \field{volume}{26}
@@ -2426,9 +2334,6 @@
     \field{labelalpha}{MRM06}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.1177/1350507606073424
-    \endverb
     \field{number}{4}
     \field{pages}{523\bibrangedash 540}
     \field{title}{Who trusts? Personality, trust and knowledge sharing}
@@ -2470,9 +2375,6 @@
     \field{labelalpha}{MWK+96}
     \field{sortinit}{M}
     \field{sortinithash}{M}
-    \verb{doi}
-    \verb 10.4135/9781452243610.n9
-    \endverb
     \field{pages}{195}
     \field{title}{Swift trust and temporary groups}
     \field{volume}{166}
@@ -2506,9 +2408,6 @@
     \field{labelalpha}{NB03}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \verb{doi}
-    \verb 10.1162/105474603322761289
-    \endverb
     \field{number}{5}
     \field{pages}{481\bibrangedash 494}
     \field{title}{The effect of the agency and anthropomorphism on users' sense
@@ -2537,9 +2436,6 @@
     \field{labelalpha}{Nei10}
     \field{sortinit}{N}
     \field{sortinithash}{N}
-    \verb{doi}
-    \verb 10.25969/mediarep/1195.
-    \endverb
     \field{title}{Wer bin ich? Thesen zur Avatar-Spieler Bindung}
     \field{year}{2010}
   \endentry
@@ -2601,9 +2497,6 @@
     \field{labelalpha}{PA07}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1177/1046496407304923
-    \endverb
     \field{number}{6}
     \field{pages}{696\bibrangedash 726}
     \field{title}{The effects of team-skills training on transactive memory and
@@ -2650,9 +2543,6 @@
     \field{labelalpha}{Pec+13}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \verb{doi}
-    \verb doi.org/10.1016/j.concog.2013.04.016
-    \endverb
     \field{number}{3}
     \field{pages}{779\bibrangedash 787}
     \field{title}{Putting yourself in the skin of a black avatar reduces
@@ -2727,12 +2617,49 @@
     \field{labelalpha}{PM07}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1108/13527590710759865
-    \endverb
     \field{title}{Identifying antecedents of virtual team collaboration}
     \field{journaltitle}{Team Performance Management: An International Journal}
     \field{year}{2007}
+  \endentry
+
+  \entry{pina2008teams}{article}{}
+    \name{author}{3}{}{%
+      {{hash=PMID}{%
+         family={Pi{\~n}a},
+         familyi={P\bibinitperiod},
+         given={Mar{\'\i}a Isabel\bibnamedelima Delgado},
+         giveni={M\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim
+  D\bibinitperiod},
+      }}%
+      {{hash=MAMR}{%
+         family={Mart{\'\i}nez},
+         familyi={M\bibinitperiod},
+         given={Ana Mar{\'\i}a\bibnamedelima Romero},
+         giveni={A\bibinitperiod\bibinitdelim M\bibinitperiod\bibinitdelim
+  R\bibinitperiod},
+      }}%
+      {{hash=MLG}{%
+         family={Mart{\'\i}nez},
+         familyi={M\bibinitperiod},
+         given={Luis\bibnamedelima G{\'o}mez},
+         giveni={L\bibinitperiod\bibinitdelim G\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Emerald Group Publishing Limited}%
+    }
+    \strng{namehash}{PMIDMAMRMLG1}
+    \strng{fullhash}{PMIDMAMRMLG1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{PMM08}
+    \field{sortinit}{P}
+    \field{sortinithash}{P}
+    \field{pages}{7\bibrangedash 21}
+    \field{title}{Teams in organizations: a review on team effectiveness}
+    \field{volume}{Vol. 14 (1/2)}
+    \field{journaltitle}{Team Performance Management: An International Journal}
+    \field{year}{2008}
   \endentry
 
   \entry{polzer2006extending}{article}{}
@@ -2772,9 +2699,6 @@
     \field{labelalpha}{Pol+06}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.2307/20159792
-    \endverb
     \field{number}{4}
     \field{pages}{679\bibrangedash 692}
     \field{title}{Extending the faultline model to geographically dispersed
@@ -2809,9 +2733,6 @@
     \field{labelalpha}{PS17}
     \field{sortinit}{P}
     \field{sortinithash}{P}
-    \verb{doi}
-    \verb 10.1371/journal.pone.0189078
-    \endverb
     \field{number}{12}
     \field{title}{The impact of self-avatars on trust and collaboration in
   shared virtual environments}
@@ -2851,9 +2772,6 @@
     \field{labelalpha}{RAS06}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.1177/1046496406293125
-    \endverb
     \field{number}{5}
     \field{title}{Teamwork behaviors: A review and an integration of
   frameworks}
@@ -2899,9 +2817,6 @@
     \field{labelalpha}{Rho+98}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.3758/BF03208842
-    \endverb
     \field{number}{4}
     \field{pages}{659\bibrangedash 669}
     \field{title}{Facial symmetry and the perception of beauty}
@@ -2953,9 +2868,6 @@
     \field{labelalpha}{Rie+14}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.2753/MIS0742-1222300404
-    \endverb
     \field{number}{4}
     \field{pages}{83\bibrangedash 114}
     \field{title}{Trusting humans and avatars: A brain imaging study based on
@@ -2996,9 +2908,6 @@
     \field{labelalpha}{RKK07}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.1177/0170840607076007
-    \endverb
     \field{number}{3}
     \field{pages}{377\bibrangedash 408}
     \field{title}{Applying common identity and bond theory to design of online
@@ -3064,9 +2973,6 @@
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{booktitle}{2016 IEEE Virtual Reality (VR)}
-    \verb{doi}
-    \verb 10.1109/VR.2016.7504761
-    \endverb
     \field{pages}{277\bibrangedash 278}
     \field{title}{Avatar realism and social interaction quality in virtual
   reality}
@@ -3092,9 +2998,6 @@
     \field{labelalpha}{Rot67}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.1111/j.1467-6494.1967.tb01454.x
-    \endverb
     \field{title}{A new scale for the measurement of interpersonal trust.}
     \field{journaltitle}{Journal of personality}
     \field{year}{1967}
@@ -3137,9 +3040,6 @@
     \field{labelalpha}{Rou+98}
     \field{sortinit}{R}
     \field{sortinithash}{R}
-    \verb{doi}
-    \verb 10.5465/AMR.1998.926617
-    \endverb
     \field{number}{3}
     \field{pages}{393\bibrangedash 404}
     \field{title}{Not so different after all: A cross-discipline view of trust}
@@ -3220,9 +3120,6 @@
     \field{labelalpha}{Sch+01}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1089/109493101300117884
-    \endverb
     \field{number}{2}
     \field{pages}{183\bibrangedash 201}
     \field{title}{Research on presence in virtual reality: A survey}
@@ -3250,9 +3147,6 @@
     \field{labelalpha}{Sch10}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1057/jit.2009.25
-    \endverb
     \field{number}{4}
     \field{pages}{434\bibrangedash 449}
     \field{title}{Embodiment and presence in virtual worlds: a review}
@@ -3286,9 +3180,6 @@
     \field{labelalpha}{SD10}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1111/j.1365-2575.2009.00326.x
-    \endverb
     \field{number}{3}
     \field{pages}{267\bibrangedash 295}
     \field{title}{Conceptualizing and measuring the virtuality of teams}
@@ -3328,9 +3219,6 @@
     \field{labelalpha}{SDS11}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1177/0963721411422054
-    \endverb
     \field{number}{6}
     \field{title}{There’sa science for that: Team development interventions
   in organizations}
@@ -3483,9 +3371,6 @@
     \field{labelalpha}{Sla+10}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1371/journal.pone.0010564
-    \endverb
     \field{number}{5}
     \field{title}{First person experience of body transfer in virtual reality}
     \field{volume}{5}
@@ -3524,9 +3409,6 @@
     \field{labelalpha}{SSB05}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.1177/1046496405277134
-    \endverb
     \field{number}{5}
     \field{pages}{555\bibrangedash 599}
     \field{title}{Is there a “big five” in teamwork?}
@@ -3604,9 +3486,6 @@
     \field{sortinit}{S}
     \field{sortinithash}{S}
     \field{booktitle}{Proceedings IEEE Virtual Reality}
-    \verb{doi}
-    \verb 10.1109/VR.1999.756941
-    \endverb
     \field{title}{Leadership and collaboration in shared virtual environments}
     \field{year}{1999}
   \endentry
@@ -3627,9 +3506,6 @@
     \field{labelalpha}{Sto02}
     \field{sortinit}{S}
     \field{sortinithash}{S}
-    \verb{doi}
-    \verb 10.15203/ozp.814.vol31iss4
-    \endverb
     \field{number}{4}
     \field{pages}{397\bibrangedash 412}
     \field{title}{Trusting strangers - The concept of generalized trust in
@@ -3699,9 +3575,6 @@
     \field{labelalpha}{TM98}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \verb{doi}
-    \verb 10.1093/beheco/9.6.546
-    \endverb
     \field{number}{6}
     \field{pages}{546\bibrangedash 551}
     \field{title}{The relative importance of size and asymmetry in sexual
@@ -3748,9 +3621,6 @@
     \field{labelalpha}{Tur+93}
     \field{sortinit}{T}
     \field{sortinithash}{T}
-    \verb{doi}
-    \verb 10.2307/249585
-    \endverb
     \field{title}{Distributed group support systems}
     \field{journaltitle}{MIS quarterly}
     \field{year}{1993}
@@ -3781,9 +3651,6 @@
     \field{labelalpha}{WB00}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1023/A:1009654229352
-    \endverb
     \field{number}{4}
     \field{pages}{339\bibrangedash 360}
     \field{title}{Virtual teams: what are their characteristics, and impact on
@@ -3818,9 +3685,6 @@
     \field{labelalpha}{WB97}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1109/6.576004
-    \endverb
     \field{number}{3}
     \field{title}{The rise of shared virtual environments}
     \field{volume}{34}
@@ -3860,9 +3724,6 @@
     \field{sortinit}{W}
     \field{sortinithash}{W}
     \field{booktitle}{Virtual Reality and Augmented Reality}
-    \verb{doi}
-    \verb 10.1007/978-3-030-31908-3_15
-    \endverb
     \field{pages}{246\bibrangedash 262}
     \field{title}{Investigating the effect of embodied visualization in remote
   collaborative augmented reality}
@@ -3894,9 +3755,6 @@
     \field{labelalpha}{WS98}
     \field{sortinit}{W}
     \field{sortinithash}{W}
-    \verb{doi}
-    \verb 10.1145/985921.985934
-    \endverb
     \field{number}{3}
     \field{pages}{225\bibrangedash 240}
     \field{title}{Measuring presence in virtual environments: A presence
@@ -3939,9 +3797,6 @@
     \field{sortinit}{Z}
     \field{sortinithash}{Z}
     \field{booktitle}{Complex systems concurrent engineering}
-    \verb{doi}
-    \verb 10.1007/978-1-84628-976-7_79
-    \endverb
     \field{title}{The Effects of Teams’ Co-location on Project Performance}
     \field{year}{2007}
   \endentry

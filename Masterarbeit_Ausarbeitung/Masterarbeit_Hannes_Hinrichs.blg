@@ -4,7 +4,7 @@ The top-level auxiliary file: Masterarbeit_Hannes_Hinrichs.aux
 Reallocating 'name_of_file' (item size: 1) to 9 items.
 The style file: biblatex.bst
 Reallocating 'name_of_file' (item size: 1) to 33 items.
-Reallocating 'name_of_file' (item size: 1) to 8 items.
+Reallocating 'name_of_file' (item size: 1) to 14 items.
 Reallocating 'glb_str_end' (item size: 4) to 20 items.
 Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
 Reallocating 'global_strs' (item size: 1) to 4000000 items.
@@ -20,53 +20,53 @@ Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'field_info' (item size: 4) to 19980 items.
+Reallocating 'field_info' (item size: 4) to 20260 items.
 Database file #1: Masterarbeit_Hannes_Hinrichs-blx.bib
-Database file #2: bibfile.bib
+Database file #2: bibfile_noDOI.bib
 Warning--I didn't find a database entry for "sherman2018understanding"
 Warning--I didn't find a database entry for "de2010does"
 Biblatex version: 3.16
 Reallocating 'wiz_functions' (item size: 4) to 9000 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
-You've used 105 entries,
+You've used 107 entries,
             6393 wiz_defined-function locations,
-            1846 strings with 29264 characters,
-and the built_in function-call counts, 793512 in all, are:
-= -- 59304
-> -- 14016
-< -- 5412
-+ -- 17354
-- -- 5011
-* -- 59491
-:= -- 80267
+            1782 strings with 27861 characters,
+and the built_in function-call counts, 811592 in all, are:
+= -- 61059
+> -- 14356
+< -- 5551
++ -- 17739
+- -- 4979
+* -- 60642
+:= -- 82180
 add.period$ -- 0
-call.type$ -- 105
-change.case$ -- 3415
+call.type$ -- 107
+change.case$ -- 3519
 chr.to.int$ -- 44
-cite$ -- 208
-duplicate$ -- 77283
-empty$ -- 72433
-format.name$ -- 7967
-if$ -- 167123
+cite$ -- 212
+duplicate$ -- 78566
+empty$ -- 73933
+format.name$ -- 8132
+if$ -- 171237
 int.to.chr$ -- 0
-int.to.str$ -- 303
+int.to.str$ -- 309
 missing$ -- 0
-newline$ -- 3877
-num.names$ -- 6908
-pop$ -- 37071
+newline$ -- 3729
+num.names$ -- 7078
+pop$ -- 37922
 preamble$ -- 1
-purify$ -- 4033
+purify$ -- 4150
 quote$ -- 0
-skip$ -- 24644
+skip$ -- 25256
 stack$ -- 0
-substring$ -- 107092
-swap$ -- 19088
-text.length$ -- 3451
-text.prefix$ -- 158
+substring$ -- 110602
+swap$ -- 19126
+text.length$ -- 3515
+text.prefix$ -- 160
 top$ -- 1
-type$ -- 3558
+type$ -- 3626
 warning$ -- 0
-while$ -- 10121
+while$ -- 10238
 width$ -- 0
-write$ -- 3773
+write$ -- 3623
 (There were 2 warnings)

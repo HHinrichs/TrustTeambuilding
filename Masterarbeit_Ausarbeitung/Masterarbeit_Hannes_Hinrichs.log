@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.21)  29 APR 2021 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.21)  30 APR 2021 01:24
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -990,22 +990,22 @@ LaTeX Font Info:    Font shape `T1/phv/m/n' will be
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
 (Font)              scaled to size 9.85492pt on input line 130.
  [2] [3] (Masterarbeit_Hannes_Hinrichs.toc [4]
-Overfull \hbox (1.16264pt too wide) detected at line 312
+Overfull \hbox (1.16264pt too wide) detected at line 314
  []\T1/phv/m/n/10.95 104
  []
 
 
-Overfull \hbox (1.16264pt too wide) detected at line 314
+Overfull \hbox (1.16264pt too wide) detected at line 316
  []\T1/phv/m/n/10.95 107
  []
 
 
-Overfull \hbox (1.16264pt too wide) detected at line 316
+Overfull \hbox (1.16264pt too wide) detected at line 318
  []\T1/phv/m/n/10.95 112
  []
 
 
-Overfull \hbox (1.16264pt too wide) detected at line 322
+Overfull \hbox (1.16264pt too wide) detected at line 324
  []\T1/phv/m/n/10.95 113
  []
 
@@ -1119,16 +1119,7 @@ File: Abbildungen/Global-Virtual-Team.jpg Graphic file (type jpg)
 Package pdftex.def Info: Abbildungen/Global-Virtual-Team.jpg  used on input lin
 e 539.
 (pdftex.def)             Requested size: 305.53607pt x 168.02477pt.
- [13 <./Abbildungen/Global-Virtual-Team.jpg>]
-
-LaTeX Warning: Citation 'cohen1997makes' on page 14 undefined on input line 579
-.
-
-
-LaTeX Warning: Citation 'pina2008teams' on page 14 undefined on input line 587.
-
-
-[14]
+ [13 <./Abbildungen/Global-Virtual-Team.jpg>] [14]
 
 LaTeX Warning: Citation 'de2010does' on page 15 undefined on input line 603.
 
@@ -1140,13 +1131,13 @@ itzt [[][]DJDG16[][]].
  []
 
 [15] [16] [17] [18] [19] [20]
-<Abbildungen/DifferentLevels.JPG, id=983, 332.24126pt x 296.60812pt>
+<Abbildungen/DifferentLevels.JPG, id=987, 332.24126pt x 296.60812pt>
 File: Abbildungen/DifferentLevels.JPG Graphic file (type jpg)
 <use Abbildungen/DifferentLevels.JPG>
 Package pdftex.def Info: Abbildungen/DifferentLevels.JPG  used on input line 90
 5.
 (pdftex.def)             Requested size: 132.89413pt x 118.64114pt.
-<Abbildungen/Versuchshypothesen_02.JPG, id=985, 1339.50438pt x 571.13374pt>
+<Abbildungen/Versuchshypothesen_02.JPG, id=989, 1339.50438pt x 571.13374pt>
 File: Abbildungen/Versuchshypothesen_02.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchshypothesen_02.JPG>
 Package pdftex.def Info: Abbildungen/Versuchshypothesen_02.JPG  used on input l
@@ -1154,6 +1145,14 @@ ine 926.
 (pdftex.def)             Requested size: 426.79135pt x 181.97348pt.
  [21 <./Abbildungen/DifferentLevels.JPG>] [22 <./Abbildungen/Versuchshypothesen
 _02.JPG>] [23] [24]
+Overfull \hbox (32.98679pt too wide) in paragraph at lines 1020--1021
+\T1/phv/m/sl/10.95 Tea-m-ef-fek-ti-vi-t�t\T1/phv/m/n/10.95 , der \T1/phv/m/sl/1
+0.95 Pr�-senz\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 sub-jek-tiv wahr-ge-nom
+-me-nen Ar-beits-be-las-tung\T1/phv/m/n/10.95 , der \T1/phv/m/sl/10.95 Team-Kom
+munikation
+ []
+
+
 Underfull \hbox (badness 10000) in paragraph at lines 1030--1032
 
  []
@@ -1391,7 +1390,7 @@ Overfull \hbox (25.41124pt too wide) in paragraph at lines 1090--1132
  []
 
 [28]
-<Abbildungen/Podeste.JPG, id=1115, 630.85687pt x 560.59438pt>
+<Abbildungen/Podeste.JPG, id=1119, 630.85687pt x 560.59438pt>
 File: Abbildungen/Podeste.JPG Graphic file (type jpg)
 <use Abbildungen/Podeste.JPG>
 Package pdftex.def Info: Abbildungen/Podeste.JPG  used on input line 1156.
@@ -1400,7 +1399,7 @@ Package pdftex.def Info: Abbildungen/Podeste.JPG  used on input line 1156.
 
 
 ] [30 <./Abbildungen/Podeste.JPG>]
-<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1131, 1320.43312pt x 793.46437
+<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1135, 1320.43312pt x 793.46437
 pt>
 File: Abbildungen/DetaillierterVersuchsablauf.JPG Graphic file (type jpg)
 <use Abbildungen/DetaillierterVersuchsablauf.JPG>
@@ -1412,26 +1411,26 @@ nput line 1183.
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 [31]
-<Abbildungen/Avatars.JPG, id=1148, 741.52031pt x 390.70969pt>
+<Abbildungen/Avatars.JPG, id=1152, 741.52031pt x 390.70969pt>
 File: Abbildungen/Avatars.JPG Graphic file (type jpg)
 <use Abbildungen/Avatars.JPG>
 Package pdftex.def Info: Abbildungen/Avatars.JPG  used on input line 1199.
 (pdftex.def)             Requested size: 426.79135pt x 224.88286pt.
  [32 <./Abbildungen/DetaillierterVersuchsablauf.JPG> <./Abbildungen/Avatars.JPG
 >] [33]
-<Abbildungen/Podeste_IK_Avatars.jpg, id=1169, 744.28062pt x 593.71812pt>
+<Abbildungen/Podeste_IK_Avatars.jpg, id=1173, 744.28062pt x 593.71812pt>
 File: Abbildungen/Podeste_IK_Avatars.jpg Graphic file (type jpg)
 <use Abbildungen/Podeste_IK_Avatars.jpg>
 Package pdftex.def Info: Abbildungen/Podeste_IK_Avatars.jpg  used on input line
  1216.
 (pdftex.def)             Requested size: 170.71393pt x 136.18086pt.
-<Abbildungen/Podeste_Non_IK_Avatars.jpg, id=1170, 663.98062pt x 478.78876pt>
+<Abbildungen/Podeste_Non_IK_Avatars.jpg, id=1174, 663.98062pt x 478.78876pt>
 File: Abbildungen/Podeste_Non_IK_Avatars.jpg Graphic file (type jpg)
 <use Abbildungen/Podeste_Non_IK_Avatars.jpg>
 Package pdftex.def Info: Abbildungen/Podeste_Non_IK_Avatars.jpg  used on input 
 line 1218.
 (pdftex.def)             Requested size: 188.64235pt x 136.02516pt.
-<Abbildungen/RoundSuccsessful.JPG, id=1173, 754.82pt x 717.68124pt>
+<Abbildungen/RoundSuccsessful.JPG, id=1177, 754.82pt x 717.68124pt>
 File: Abbildungen/RoundSuccsessful.JPG Graphic file (type jpg)
 <use Abbildungen/RoundSuccsessful.JPG>
 Package pdftex.def Info: Abbildungen/RoundSuccsessful.JPG  used on input line 1
@@ -1439,14 +1438,14 @@ Package pdftex.def Info: Abbildungen/RoundSuccsessful.JPG  used on input line 1
 (pdftex.def)             Requested size: 150.96132pt x 143.5337pt.
  [34 <./Abbildungen/Podeste_IK_Avatars.jpg> <./Abbildungen/Podeste_Non_IK_Avata
 rs.jpg> <./Abbildungen/RoundSuccsessful.JPG>] [35]
-<Abbildungen/Versuchsumgebung/SpectatorView.JPG, id=1211, 1177.39874pt x 806.51
+<Abbildungen/Versuchsumgebung/SpectatorView.JPG, id=1215, 1177.39874pt x 806.51
 312pt>
 File: Abbildungen/Versuchsumgebung/SpectatorView.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchsumgebung/SpectatorView.JPG>
 Package pdftex.def Info: Abbildungen/Versuchsumgebung/SpectatorView.JPG  used o
 n input line 1298.
 (pdftex.def)             Requested size: 298.75264pt x 204.64284pt.
-<Abbildungen/Versuchsumgebung/SpectatorView_OnLaptop.JPG, id=1212, 1057.45062pt
+<Abbildungen/Versuchsumgebung/SpectatorView_OnLaptop.JPG, id=1216, 1057.45062pt
  x 593.21625pt>
 File: Abbildungen/Versuchsumgebung/SpectatorView_OnLaptop.JPG Graphic file (typ
 e jpg)
@@ -1456,7 +1455,7 @@ G  used on input line 1300.
 (pdftex.def)             Requested size: 298.75264pt x 167.59294pt.
  [36] [37 <./Abbildungen/Versuchsumgebung/SpectatorView.JPG> <./Abbildungen/Ver
 suchsumgebung/SpectatorView_OnLaptop.JPG>]
-<Abbildungen/GameManagerClientSpectator.jpg, id=1230, 1350.04375pt x 655.44875p
+<Abbildungen/GameManagerClientSpectator.jpg, id=1234, 1350.04375pt x 655.44875p
 t>
 File: Abbildungen/GameManagerClientSpectator.jpg Graphic file (type jpg)
 <use Abbildungen/GameManagerClientSpectator.jpg>
@@ -1464,13 +1463,13 @@ Package pdftex.def Info: Abbildungen/GameManagerClientSpectator.jpg  used on in
 put line 1326.
 (pdftex.def)             Requested size: 426.79135pt x 207.20753pt.
  [38 <./Abbildungen/GameManagerClientSpectator.jpg>]
-<Abbildungen/ClientRCPMessageReceived.jpg, id=1240, 793.46437pt x 543.53062pt>
+<Abbildungen/ClientRCPMessageReceived.jpg, id=1244, 793.46437pt x 543.53062pt>
 File: Abbildungen/ClientRCPMessageReceived.jpg Graphic file (type jpg)
 <use Abbildungen/ClientRCPMessageReceived.jpg>
 Package pdftex.def Info: Abbildungen/ClientRCPMessageReceived.jpg  used on inpu
 t line 1341.
 (pdftex.def)             Requested size: 426.79135pt x 292.35764pt.
-<Abbildungen/boolValueChanged.jpg, id=1242, 456.20438pt x 601.4972pt>
+<Abbildungen/boolValueChanged.jpg, id=1246, 456.20438pt x 601.4972pt>
 File: Abbildungen/boolValueChanged.jpg Graphic file (type jpg)
 <use Abbildungen/boolValueChanged.jpg>
 Package pdftex.def Info: Abbildungen/boolValueChanged.jpg  used on input line 1
@@ -1478,7 +1477,7 @@ Package pdftex.def Info: Abbildungen/boolValueChanged.jpg  used on input line 1
 (pdftex.def)             Requested size: 342.15244pt x 451.1218pt.
 
 [39 <./Abbildungen/ClientRCPMessageReceived.jpg>]
-<Abbildungen/RoundDifficulty.JPG, id=1250, 624.3325pt x 376.90813pt>
+<Abbildungen/RoundDifficulty.JPG, id=1254, 624.3325pt x 376.90813pt>
 File: Abbildungen/RoundDifficulty.JPG Graphic file (type jpg)
 <use Abbildungen/RoundDifficulty.JPG>
 Package pdftex.def Info: Abbildungen/RoundDifficulty.JPG  used on input line 13
@@ -1491,33 +1490,33 @@ Overfull \hbox (5.97365pt too wide) in paragraph at lines 1380--1383
  []
 
 [41 <./Abbildungen/RoundDifficulty.JPG>]
-<Abbildungen/Versuchsumgebung/Raum.JPG, id=1265, 820.56563pt x 806.51312pt>
+<Abbildungen/Versuchsumgebung/Raum.JPG, id=1269, 820.56563pt x 806.51312pt>
 File: Abbildungen/Versuchsumgebung/Raum.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchsumgebung/Raum.JPG>
 Package pdftex.def Info: Abbildungen/Versuchsumgebung/Raum.JPG  used on input l
 ine 1395.
 (pdftex.def)             Requested size: 328.22043pt x 322.59953pt.
  [42 <./Abbildungen/Versuchsumgebung/Raum.JPG>] [43]
-<Abbildungen/Demographie/alter.JPG, id=1289, 623.32875pt x 358.84062pt>
+<Abbildungen/Demographie/alter.JPG, id=1293, 623.32875pt x 358.84062pt>
 File: Abbildungen/Demographie/alter.JPG Graphic file (type jpg)
 <use Abbildungen/Demographie/alter.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/alter.JPG  used on input line 
 1431.
 (pdftex.def)             Requested size: 200.59245pt x 115.47745pt.
-<Abbildungen/Demographie/Boxplot_Alter.JPG, id=1290, 624.3325pt x 370.88562pt>
+<Abbildungen/Demographie/Boxplot_Alter.JPG, id=1294, 624.3325pt x 370.88562pt>
 File: Abbildungen/Demographie/Boxplot_Alter.JPG Graphic file (type jpg)
 <use Abbildungen/Demographie/Boxplot_Alter.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/Boxplot_Alter.JPG  used on inp
 ut line 1433.
 (pdftex.def)             Requested size: 200.59245pt x 119.1612pt.
-<Abbildungen/Demographie/teilnehmerGeschlecht.JPG, id=1291, 488.82625pt x 362.8
+<Abbildungen/Demographie/teilnehmerGeschlecht.JPG, id=1295, 488.82625pt x 362.8
 5562pt>
 File: Abbildungen/Demographie/teilnehmerGeschlecht.JPG Graphic file (type jpg)
 <use Abbildungen/Demographie/teilnehmerGeschlecht.JPG>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerGeschlecht.JPG  used
  on input line 1435.
 (pdftex.def)             Requested size: 170.71393pt x 126.719pt.
-<Abbildungen/Demographie/teilnehmerBildungsstand.JPG, id=1293, 546.04pt x 364.8
+<Abbildungen/Demographie/teilnehmerBildungsstand.JPG, id=1297, 546.04pt x 364.8
 6313pt>
 File: Abbildungen/Demographie/teilnehmerBildungsstand.JPG Graphic file (type jp
 g)
@@ -1527,7 +1526,7 @@ sed on input line 1445.
 (pdftex.def)             Requested size: 218.41212pt x 145.94266pt.
  [44 <./Abbildungen/Demographie/alter.JPG> <./Abbildungen/Demographie/Boxplot_A
 lter.JPG> <./Abbildungen/Demographie/teilnehmerGeschlecht.JPG>]
-<Abbildungen/Demographie/teilnehmerVRErfahrung.jpg, id=1305, 465.23813pt x 360.
+<Abbildungen/Demographie/teilnehmerVRErfahrung.jpg, id=1309, 465.23813pt x 360.
 34625pt>
 File: Abbildungen/Demographie/teilnehmerVRErfahrung.jpg Graphic file (type jpg)
 
@@ -1535,7 +1534,7 @@ File: Abbildungen/Demographie/teilnehmerVRErfahrung.jpg Graphic file (type jpg)
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerVRErfahrung.jpg  use
 d on input line 1455.
 (pdftex.def)             Requested size: 170.71393pt x 132.22084pt.
-<Abbildungen/Demographie/teilnehmerVorexperimente.jpg, id=1306, 467.7475pt x 36
+<Abbildungen/Demographie/teilnehmerVorexperimente.jpg, id=1310, 467.7475pt x 36
 0.84813pt>
 File: Abbildungen/Demographie/teilnehmerVorexperimente.jpg Graphic file (type j
 pg)
@@ -1543,14 +1542,14 @@ pg)
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerVorexperimente.jpg  
 used on input line 1457.
 (pdftex.def)             Requested size: 170.71393pt x 131.70021pt.
-<Abbildungen/Demographie/teilnehmerPCAußmaß.jpg, id=1308, 622.82687pt x 363.3
+<Abbildungen/Demographie/teilnehmerPCAußmaß.jpg, id=1312, 622.82687pt x 363.3
 575pt>
 File: Abbildungen/Demographie/teilnehmerPCAußmaß.jpg Graphic file (type jpg)
 <use Abbildungen/Demographie/teilnehmerPCAußmaß.jpg>
 Package pdftex.def Info: Abbildungen/Demographie/teilnehmerPCAußmaß.jpg  used
  on input line 1468.
 (pdftex.def)             Requested size: 256.07741pt x 149.39336pt.
-<Abbildungen/Demographie/teilnehmerVideospieleAußmaß.jpg, id=1309, 623.83063p
+<Abbildungen/Demographie/teilnehmerVideospieleAußmaß.jpg, id=1313, 623.83063p
 t x 354.82562pt>
 File: Abbildungen/Demographie/teilnehmerVideospieleAußmaß.jpg Graphic file (t
 ype jpg)
@@ -1586,7 +1585,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png, id=1331, 632
+<Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png, id=1335, 632
 .3625pt x 382.93062pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png Graphic 
 file (type png)
@@ -1594,7 +1593,7 @@ file (type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVer
 trauen.png  used on input line 1523.
 (pdftex.def)             Requested size: 213.39568pt x 129.21889pt.
-<Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png, id=1332, 632.86438pt
+<Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png, id=1336, 632.86438pt
  x 375.90437pt>
 File: Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png Graphic file (ty
 pe png)
@@ -1620,7 +1619,7 @@ Overfull \hbox (1.45958pt too wide) in paragraph at lines 1545--1546
 -ne-rel-le Ver-trau-ens-wert \T1/phv/m/n/10.95 der Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png, id=1354, 633.86812pt x 3
+<Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png, id=1358, 633.86812pt x 3
 75.4025pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png Graphic file (type p
 ng)
@@ -1628,7 +1627,7 @@ ng)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png  
 used on input line 1564.
 (pdftex.def)             Requested size: 192.0548pt x 113.7386pt.
-<Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png, id=1355, 625.83812pt x 
+<Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png, id=1359, 625.83812pt x 
 379.91937pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png Graphic file (type 
 png)
@@ -1636,7 +1635,7 @@ png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png 
  used on input line 1566.
 (pdftex.def)             Requested size: 192.0548pt x 116.58537pt.
-<Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png, id=1356, 627
+<Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png, id=1360, 627
 .84563pt x 379.91937pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png Graphic 
 file (type png)
@@ -1661,7 +1660,7 @@ ams \T1/phv/m/n/10.95 mit der Kon-di-ti-on [][]
 [50
 
 ]
-<Abbildungen/AuswertungDiagramme/Final/H_3_Korr_IK.png, id=1409, 628.84938pt x 
+<Abbildungen/AuswertungDiagramme/Final/H_3_Korr_IK.png, id=1413, 628.84938pt x 
 378.91562pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_3_Korr_IK.png Graphic file (type 
 png)
@@ -1669,7 +1668,7 @@ png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_3_Korr_IK.png 
  used on input line 1619.
 (pdftex.def)             Requested size: 192.0548pt x 115.7223pt.
-<Abbildungen/AuswertungDiagramme/Final/H_3_Korr_NIK.png, id=1410, 630.355pt x 3
+<Abbildungen/AuswertungDiagramme/Final/H_3_Korr_NIK.png, id=1414, 630.355pt x 3
 82.42876pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_3_Korr_NIK.png Graphic file (type
  png)
@@ -1706,7 +1705,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 1692--1693
 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_realeTeameffektivität.png, id=1439, 
+<Abbildungen/AuswertungDiagramme/Final/BP_realeTeameffektivität.png, id=1443, 
 624.3325pt x 383.93437pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_realeTeameffektivität.png Graph
 ic file (type png)
@@ -1714,7 +1713,7 @@ ic file (type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_realeTeameffe
 ktivität.png  used on input line 1696.
 (pdftex.def)             Requested size: 213.39568pt x 131.22723pt.
-<Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png, id=1440, 636.87938pt
+<Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png, id=1444, 636.87938pt
  x 376.90813pt>
 File: Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png Graphic file (ty
 pe png)
@@ -1743,7 +1742,7 @@ er-trau-ens-wer-ten der Teams
  []
 
 [54]
-<Abbildungen/AuswertungDiagramme/Final/H_5_Korr_IK.png, id=1474, 633.36626pt x 
+<Abbildungen/AuswertungDiagramme/Final/H_5_Korr_IK.png, id=1478, 633.36626pt x 
 378.41376pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_5_Korr_IK.png Graphic file (type 
 png)
@@ -1751,7 +1750,7 @@ png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_5_Korr_IK.png 
  used on input line 1740.
 (pdftex.def)             Requested size: 192.0548pt x 114.74333pt.
-<Abbildungen/AuswertungDiagramme/Final/H_5_Korr_NIK.png, id=1475, 632.3625pt x 
+<Abbildungen/AuswertungDiagramme/Final/H_5_Korr_NIK.png, id=1479, 632.3625pt x 
 379.91937pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_5_Korr_NIK.png Graphic file (type
  png)
@@ -1882,7 +1881,7 @@ Overfull \hbox (0.61128pt too wide) in alignment at lines 1915--1915
  []
 
 [57] [58]
-<Abbildungen/AuswertungDiagramme/Final/BP_Presence.png, id=1507, 627.84563pt x 
+<Abbildungen/AuswertungDiagramme/Final/BP_Presence.png, id=1511, 627.84563pt x 
 382.42876pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_Presence.png Graphic file (type 
 png)
@@ -1890,7 +1889,7 @@ png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Presence.png 
  used on input line 1972.
 (pdftex.def)             Requested size: 213.39568pt x 129.97737pt.
-<Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png, id=1508, 63
+<Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png, id=1512, 63
 9.38875pt x 381.92688pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png Graphic
  file (type png)
@@ -1912,7 +1911,7 @@ Overfull \hbox (3.42378pt too wide) in paragraph at lines 1987--1991
 10.95 nicht nor-mal-ver-teilt. Sie be-tr�gt bei der Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_SelfCoPresence.png, id=1520, 634.37pt
+<Abbildungen/AuswertungDiagramme/Final/BP_SelfCoPresence.png, id=1524, 634.37pt
  x 384.93813pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_SelfCoPresence.png Graphic file 
 (type png)
@@ -1921,7 +1920,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_SelfCoPresenc
 e.png  used on input line 1994.
 (pdftex.def)             Requested size: 213.39568pt x 129.49104pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png, id=
-1521, 631.35875pt x 378.91562pt>
+1525, 631.35875pt x 378.91562pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png
  Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png>
@@ -1934,7 +1933,7 @@ Overfull \hbox (10.62688pt too wide) in paragraph at lines 1993--2004
 [][]  [] 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_OtherCoPresence.png, id=1526, 627.845
+<Abbildungen/AuswertungDiagramme/Final/BP_OtherCoPresence.png, id=1530, 627.845
 63pt x 383.93437pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_OtherCoPresence.png Graphic file
  (type png)
@@ -1943,7 +1942,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_OtherCoPresen
 ce.png  used on input line 2014.
 (pdftex.def)             Requested size: 213.39568pt x 130.48909pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png, id=1
-527, 624.83438pt x 379.4175pt>
+531, 624.83438pt x 379.4175pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png 
 Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png>
@@ -1965,7 +1964,7 @@ Overfull \hbox (19.67416pt too wide) in paragraph at lines 2029--2033
 er-hin be-tr�gt die Te-le-pr�-senz bei der Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_Telepresence.png, id=1542, 632.3625pt
+<Abbildungen/AuswertungDiagramme/Final/BP_Telepresence.png, id=1546, 632.3625pt
  x 382.93062pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_Telepresence.png Graphic file (t
 ype png)
@@ -1973,7 +1972,7 @@ ype png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Telepresence.
 png  used on input line 2036.
 (pdftex.def)             Requested size: 213.39568pt x 129.21889pt.
-<Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png, id=1543
+<Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png, id=1547
 , 625.83812pt x 373.89688pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png Gra
 phic file (type png)
@@ -1986,7 +1985,7 @@ Overfull \hbox (10.62688pt too wide) in paragraph at lines 2035--2046
 [][]  [] 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_SocialPresence.png, id=1548, 628.8493
+<Abbildungen/AuswertungDiagramme/Final/BP_SocialPresence.png, id=1552, 628.8493
 8pt x 380.42125pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_SocialPresence.png Graphic file 
 (type png)
@@ -1995,7 +1994,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_SocialPresenc
 e.png  used on input line 2057.
 (pdftex.def)             Requested size: 213.39568pt x 129.0919pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png, id=15
-49, 626.34pt x 372.89313pt>
+53, 626.34pt x 372.89313pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png G
 raphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png>
@@ -2011,7 +2010,21 @@ Overfull \hbox (10.62688pt too wide) in paragraph at lines 2056--2067
 n/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png> <./Abbildungen/Aus
 wertungDiagramme/Final/BP_SocialPresence.png> <./Abbildungen/AuswertungDiagramm
 e/Final/SD_SocialPresence_Mittelwerte.png>]
-<Abbildungen/AuswertungDiagramme/Final/BP_Anstrengungsmaß.png, id=1564, 633.86
+Overfull \hbox (17.2068pt too wide) in paragraph at lines 2073--2077
+ []\T1/phv/b/n/10.95 NASA-TLX - emp-fun-de-ne Ar-beits-be-las-tung[] \T1/phv/m/
+n/10.95 Die \T1/phv/m/sl/10.95 emp-fun-de-ne Ar-beits-be-las-tung \T1/phv/m/n/1
+0.95 ist laut Kolmogoroff-
+ []
+
+
+Overfull \hbox (36.29774pt too wide) in paragraph at lines 2073--2077
+\T1/phv/m/n/10.95 im Mit-tel $[] \OT1/ptmcm/m/n/10.95 = 6\OML/ptmcm/m/it/10.95 
+; \OT1/ptmcm/m/n/10.95 900$ \T1/phv/m/n/10.95 mit ei-ner Stan-dard-ab-wei-chung
+ von $\OML/ptmcm/m/it/10.95  \OT1/ptmcm/m/n/10.95 = 2\OML/ptmcm/m/it/10.95 ; \
+OT1/ptmcm/m/n/10.95 907$\T1/phv/m/n/10.95 . F�r die Kon-di-ti-on [][]
+ []
+
+<Abbildungen/AuswertungDiagramme/Final/BP_Anstrengungsmaß.png, id=1568, 633.86
 812pt x 379.91937pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_Anstrengungsmaß.png Graphic fil
 e (type png)
@@ -2019,7 +2032,7 @@ e (type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Anstrengungsm
 aß.png  used on input line 2080.
 (pdftex.def)             Requested size: 213.39568pt x 127.9013pt.
-<Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png, id=1565, 626.34
+<Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png, id=1569, 626.34
 pt x 372.89313pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png Graphic fil
 e (type png)
@@ -2040,7 +2053,7 @@ $\OML/ptmcm/m/it/10.95 p \OT1/ptmcm/m/n/10.95 =\OML/ptmcm/m/it/10.95 ; \OT1/ptm
 cm/m/n/10.95 018 \OML/ptmcm/m/it/10.95 <
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_Teamkommunikation.png, id=1570, 630.3
+<Abbildungen/AuswertungDiagramme/Final/BP_Teamkommunikation.png, id=1574, 630.3
 55pt x 379.91937pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_Teamkommunikation.png Graphic fi
 le (type png)
@@ -2049,7 +2062,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Teamkommunika
 tion.png  used on input line 2100.
 (pdftex.def)             Requested size: 213.39568pt x 128.61435pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.png, id
-=1571, 629.35126pt x 376.40625pt>
+=1575, 629.35126pt x 376.40625pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.pn
 g Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.png
@@ -2066,7 +2079,7 @@ Overfull \hbox (10.62688pt too wide) in paragraph at lines 2099--2110
 ungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png> <./Abbildungen/Auswert
 ungDiagramme/Final/BP_Teamkommunikation.png> <./Abbildungen/AuswertungDiagramme
 /Final/SD_Teamkommunikation_Mittelwerte.png>]
-<Abbildungen/AuswertungDiagramme/Final/BP_Teameffektivität.png, id=1586, 628.3
+<Abbildungen/AuswertungDiagramme/Final/BP_Teameffektivität.png, id=1590, 628.3
 475pt x 379.4175pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_Teameffektivität.png Graphic fi
 le (type png)
@@ -2075,7 +2088,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Teameffektivi
 tät.png  used on input line 2122.
 (pdftex.def)             Requested size: 213.39568pt x 128.8555pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.png, id
-=1587, 630.355pt x 382.42876pt>
+=1591, 630.355pt x 382.42876pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.pn
 g Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.png
@@ -2094,7 +2107,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2173--2174
 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_IK.png, id=1599, 629.8531
+<Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_IK.png, id=1603, 629.8531
 2pt x 376.90813pt>
 File: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_IK.png Graphic file 
 (type png)
@@ -2103,7 +2116,7 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_I
 K.png  used on input line 2177.
 (pdftex.def)             Requested size: 192.0548pt x 114.92517pt.
 <Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png, id=160
-0, 628.3475pt x 379.4175pt>
+4, 628.3475pt x 379.4175pt>
 File: Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png Gr
 aphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SubSig1_CT_WTE_NIK_withStars.png>
@@ -2115,7 +2128,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 2186--2187
 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_IK.png, id=1606, 630.85687
+<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_IK.png, id=1610, 630.85687
 pt x 377.91188pt>
 File: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_IK.png Graphic file (
 type png)
@@ -2123,7 +2136,7 @@ type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_IK
 .png  used on input line 2190.
 (pdftex.def)             Requested size: 192.0548pt x 115.0467pt.
-<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png, id=1607
+<Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png, id=1611
 , 640.89438pt x 374.39874pt>
 File: Abbildungen/AuswertungDiagramme/Final/SubSig2_CT_TC_NIK_withStars.png Gra
 phic file (type png)
@@ -2222,7 +2235,14 @@ hied \T1/phv/m/n/10.95 der Mit-tel-wer-te an-hand ei-nes durch-ge-f�hr-ten Mann
  []
 
 
-Overfull \hbox (3.30606pt too wide) in paragraph at lines 2288--2296
+Overfull \hbox (1.12498pt too wide) in paragraph at lines 2275--2282
+\T1/phv/m/n/10.95 durch-schnitt-lich h�-he-res \T1/phv/m/sl/10.95 ko-gni-ti-ves
+ Ver-trau-en \T1/phv/m/n/10.95 bei der Kon-di-ti-on [][] ($[] \OT1/ptmcm/m/n/10
+.95 = 4\OML/ptmcm/m/it/10.95 ; \OT1/ptmcm/m/n/10.95 622$\T1/phv/m/n/10.95 )
+ []
+
+
+Overfull \hbox (3.30606pt too wide) in paragraph at lines 2288--2292
 \T1/phv/m/n/10.95 un-ter-schei-den sich laut Mann-Whitney-U ($\OML/ptmcm/m/it/1
 0.95 U \OT1/ptmcm/m/n/10.95 = 103\OML/ptmcm/m/it/10.95 ; \OT1/ptmcm/m/n/10.95 5
 00; \OML/ptmcm/m/it/10.95 Z \OT1/ptmcm/m/n/10.95 = \OMS/pzccm/m/n/10.95  \OML/p
@@ -2233,8 +2253,11 @@ OML/ptmcm/m/it/10.95 r \OT1/ptmcm/m/n/10.95 = \OMS/pzccm/m/n/10.95  \OML/ptmcm/
 m/it/10.95 ; \OT1/ptmcm/m/n/10.95 060$\T1/phv/m/n/10.95 )
  []
 
+[67
 
-Overfull \hbox (4.93716pt too wide) in paragraph at lines 2288--2296
+
+]
+Overfull \hbox (4.93716pt too wide) in paragraph at lines 2293--2296
 [][] \T1/phv/m/n/10.95 un-ter-schei-det sich \T1/phv/m/sl/10.95 nicht si-gni-fi
 -kant \T1/phv/m/n/10.95 von-ein-an-der ($\OML/ptmcm/m/it/10.95 t\OT1/ptmcm/m/n/
 10.95 (28) = \OMS/pzccm/m/n/10.95  \OML/ptmcm/m/it/10.95 ; \OT1/ptmcm/m/n/10.95
@@ -2242,348 +2265,315 @@ Overfull \hbox (4.93716pt too wide) in paragraph at lines 2288--2296
 1/ptmcm/m/n/10.95 848 \OML/ptmcm/m/it/10.95 >
  []
 
-[67
 
+Underfull \hbox (badness 10000) in paragraph at lines 2293--2296
 
-]
-Overfull \hbox (3.69096pt too wide) in paragraph at lines 2300--2301
-\T1/phv/m/sl/10.95 kan-ter Un-ter-schied \T1/phv/m/n/10.95 zwi-schen den Mit-te
-l-wer-ten bei-der Avatar-Konditionen fest-ge-stellt wer-den (Mann-
  []
 
 [68] [69]
-Overfull \hbox (13.08344pt too wide) in paragraph at lines 2327--2328
+Overfull \hbox (13.08344pt too wide) in paragraph at lines 2323--2324
 \T1/phv/m/n/10.95 Lauf-zeit zwei ver-schie-de-ne Avatar-Konditionen ([][] und [
 ][])
  []
 
-
-Overfull \hbox (10.62627pt too wide) in paragraph at lines 2353--2357
-\T1/phv/m/sl/10.95 fek-ti-vi-t�t \T1/phv/m/n/10.95 und der \T1/phv/m/sl/10.95 T
-eam-kom-mu-ni-ka-ti-on \T1/phv/m/n/10.95 auf Kon-di-ti-ons-ebe-ne bei der Kon-d
-i-ti-on [][].
- []
-
 [70]
-Underfull \hbox (badness 10000) in paragraph at lines 2404--2404
+Underfull \hbox (badness 10000) in paragraph at lines 2400--2400
 []|\T1/phv/b/n/9 H4$[]$\T1/phv/m/n/9 : Die Mit-tel-wer-te der Tea-m-ef-fek-ti-v
 i-t�t un-ter-schei-den sich bei den Kon-di-tio-nen
  []
 
 
-Overfull \hbox (39.02634pt too wide) in alignment at lines 2404--2404
+Overfull \hbox (39.02634pt too wide) in alignment at lines 2400--2400
 [][] 
  []
 
 [71] [72] [73] [74]
-Overfull \hbox (31.33287pt too wide) in paragraph at lines 2668--2670
+Overfull \hbox (31.33287pt too wide) in paragraph at lines 2664--2666
 \T1/phv/m/n/10.95 wer-den. W�h-rend dem Ex-pe-ri-ment ist auf-ge-fal-len, dass 
 die Teil-neh-mer mit der Kon-di-ti-on [][]
  []
 
 [75] [76] [77
 
-]
+] [78] [79]
 LaTeX Font Info:    Font shape `T1/phv/m/sc' will be
-(Font)              scaled to size 9.85492pt on input line 2725.
- [78] [79]
-Overfull \hbox (22.23805pt too wide) in paragraph at lines 2726--2726
-\T1/phv/m/sl/10.95 man-ce ma-na-ge-ment: an in-ter-na-tio-nal jour-nal \T1/phv/
-m/n/10.95 (2001). \T1/phv/m/sc/10.95 doi\T1/phv/m/n/10.95 : [][]$\T1/pcr/m/n/10
-.95 10 . 1108 / 13527590110395621$[][]\T1/phv/m/n/10.95 . 
- []
-
-[80] [81] [82]
-Overfull \hbox (19.4462pt too wide) in paragraph at lines 2726--2726
-\T1/phv/m/sl/10.95 berPsy-cho-lo-gy & Be-ha-vi-or \T1/phv/m/n/10.95 4.2 (2001),
- S. 183201. \T1/phv/m/sc/10.95 doi\T1/phv/m/n/10.95 : [][]$\T1/pcr/m/n/10.95 1
-0 . 1089 / 109493101300117884$[][]\T1/phv/m/n/10.95 . 
- []
-
-[83]
-Overfull \hbox (4.04262pt too wide) in paragraph at lines 2726--2726
-\T1/phv/m/n/10.95 In: \T1/phv/m/sl/10.95 Small group re-se-arch \T1/phv/m/n/10.
-95 36.5 (2005), S. 555599. \T1/phv/m/sc/10.95 doi\T1/phv/m/n/10.95 : [][]$\T1/
-pcr/m/n/10.95 10 . 1177 / 1046496405277134$[][]\T1/phv/m/n/10.95 . 
- []
-
-[84]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg, id=1940, 583.17876pt x 611.2
+(Font)              scaled to size 9.85492pt on input line 2721.
+ [80] [81] [82] [83] [84]
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg, id=1858, 583.17876pt x 611.2
 8375pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg  used
- on input line 2737.
+ on input line 2733.
 (pdftex.def)             Requested size: 349.90996pt x 366.77307pt.
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg, id=1941, 583.17876pt x 839.1
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg, id=1859, 583.17876pt x 839.1
 35pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg  used
- on input line 2744.
+ on input line 2740.
 (pdftex.def)             Requested size: 349.90996pt x 503.48488pt.
  [85 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ1.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg, id=1947, 583.68062pt x 247.4
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg, id=1865, 583.68062pt x 247.4
 2438pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ3.jpg  used
- on input line 2751.
+ on input line 2747.
 (pdftex.def)             Requested size: 350.21107pt x 148.45576pt.
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg, id=1948, 584.1825pt x 476.78
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg, id=1866, 584.1825pt x 476.78
 125pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg  used
- on input line 2758.
+ on input line 2754.
 (pdftex.def)             Requested size: 350.51219pt x 286.07095pt.
  [86 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ2.jpg> <./Abbildungen/Frageb
 ogen/Pre-Questionnaire/PQ3.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg, id=1955, 584.68437pt x 765.3
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg, id=1873, 584.68437pt x 765.3
 5938pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg  used
- on input line 2765.
+ on input line 2761.
 (pdftex.def)             Requested size: 350.81332pt x 459.21916pt.
  [87 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ4.jpg>]
-<Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg, id=1962, 584.68437pt x 846.1
+<Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg, id=1880, 584.68437pt x 846.1
 6125pt>
 File: Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg Graphic file (type jpg)
 <use Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg  used
- on input line 2772.
+ on input line 2768.
 (pdftex.def)             Requested size: 350.81332pt x 507.70067pt.
-
-[88 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg, id=1968, 585.18625pt x 449
+ [88 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ5.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg, id=1886, 585.18625pt x 449
 .17813pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg  us
-ed on input line 2783.
+ed on input line 2779.
 (pdftex.def)             Requested size: 351.11446pt x 269.50896pt.
- [89 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>] [90 <./Abbildungen/F
-ragebogen/Post-Questionnaire/PQM1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg, id=1979, 585.18625pt x 748
+ [89 <./Abbildungen/Fragebogen/Pre-Questionnaire/PQ6.jpg>]
+[90 <./Abbildungen/Fragebogen/Post-Questionnaire/PQM1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg, id=1897, 585.18625pt x 748
 .29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg  us
-ed on input line 2795.
+ed on input line 2791.
 (pdftex.def)             Requested size: 351.11446pt x 448.98083pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg, id=1980, 584.1825pt x 766.
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg, id=1898, 584.1825pt x 766.
 865pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg  us
-ed on input line 2802.
+ed on input line 2798.
 (pdftex.def)             Requested size: 350.51219pt x 460.12256pt.
  [91 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg, id=1986, 584.68437pt x 767
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg, id=1904, 584.68437pt x 767
 .86874pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg  us
-ed on input line 2809.
+ed on input line 2805.
 (pdftex.def)             Requested size: 350.81332pt x 460.7248pt.
-
-[92 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg, id=1992, 584.1825pt x 749.
+ [92 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG2.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg, id=1910, 584.1825pt x 749.
 29938pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQG4.jpg  us
-ed on input line 2816.
+ed on input line 2812.
 (pdftex.def)             Requested size: 350.51219pt x 449.5831pt.
  [93 <./Abbildungen/Fragebogen/Post-Questionnaire/PQG3.jpg>] [94 <./Abbildungen
 /Fragebogen/Post-Questionnaire/PQG4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg, id=2004, 585.68813pt x 484
+<Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg, id=1922, 585.68813pt x 484
 .30937pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg  us
-ed on input line 2827.
+ed on input line 2823.
 (pdftex.def)             Requested size: 351.41559pt x 290.58786pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg, id=2005, 586.19pt x 502.37
+<Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg, id=1923, 586.19pt x 502.37
 688pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQC2.jpg  us
-ed on input line 2834.
+ed on input line 2830.
 (pdftex.def)             Requested size: 351.7167pt x 301.42844pt.
  [95 <./Abbildungen/Fragebogen/Post-Questionnaire/PQC1.jpg> <./Abbildungen/Frag
 ebogen/Post-Questionnaire/PQC2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg, id=2012, 879.285pt x 1218
+<Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg, id=1930, 879.285pt x 1218
 .80344pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg  u
-sed on input line 2845.
+sed on input line 2841.
 (pdftex.def)             Requested size: 351.70778pt x 487.51274pt.
  [96 <./Abbildungen/Fragebogen/Post-Questionnaire/PQKQ1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg, id=2018, 585.18625pt x 74
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg, id=1936, 585.18625pt x 74
 9.80125pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg  u
-sed on input line 2856.
+sed on input line 2852.
 (pdftex.def)             Requested size: 351.11446pt x 449.88422pt.
  [97 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTE1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg, id=2024, 525.965pt x 841
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg, id=1942, 525.965pt x 841
 .64438pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg  
-used on input line 2867.
+used on input line 2863.
 (pdftex.def)             Requested size: 315.58142pt x 504.99052pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg, id=2025, 526.96875pt x 7
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg, id=1943, 526.96875pt x 7
 76.9025pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg  
-used on input line 2874.
+used on input line 2870.
 (pdftex.def)             Requested size: 316.18369pt x 466.14508pt.
  [98 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg, id=2031, 526.46687pt x 7
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg, id=1949, 526.46687pt x 7
 75.89874pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg  
-used on input line 2881.
+used on input line 2877.
 (pdftex.def)             Requested size: 315.88255pt x 465.54283pt.
  [99 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg, id=2038, 525.965pt x 775
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg, id=1956, 525.965pt x 775
 .39688pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg  
-used on input line 2888.
+used on input line 2884.
 (pdftex.def)             Requested size: 315.58142pt x 465.24171pt.
  [100 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg, id=2044, 525.965pt x 742
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg, id=1962, 525.965pt x 742
 .775pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg  
-used on input line 2895.
+used on input line 2891.
 (pdftex.def)             Requested size: 315.58142pt x 445.66843pt.
  [101 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg, id=2050, 527.47063pt x 7
+<Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg, id=1968, 527.47063pt x 7
 60.34062pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg Graphic file (type j
 pg)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQTLX6.jpg  
-used on input line 2902.
+used on input line 2898.
 (pdftex.def)             Requested size: 316.4848pt x 456.20789pt.
- [102 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>] [103 <./Abbildu
-ngen/Fragebogen/Post-Questionnaire/PQTLX6.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg, id=2061, 584.68437pt x 748
+
+[102 <./Abbildungen/Fragebogen/Post-Questionnaire/PQTLX5.jpg>] [103 <./Abbildun
+gen/Fragebogen/Post-Questionnaire/PQTLX6.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg, id=1979, 584.68437pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg  us
-ed on input line 2913.
+ed on input line 2909.
 (pdftex.def)             Requested size: 350.81332pt x 449.28197pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg, id=2062, 585.18625pt x 768
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg, id=1980, 585.18625pt x 768
 .37062pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg  us
-ed on input line 2920.
+ed on input line 2916.
 (pdftex.def)             Requested size: 351.11446pt x 461.02592pt.
  [104 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg, id=2068, 585.18625pt x 598
+<Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg, id=1986, 585.18625pt x 598
 .235pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg Graphic file (type jpg
 )
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQP3.jpg  us
-ed on input line 2927.
+ed on input line 2923.
 (pdftex.def)             Requested size: 351.11446pt x 358.94377pt.
  [105 <./Abbildungen/Fragebogen/Post-Questionnaire/PQP2.jpg>] [106 <./Abbildung
 en/Fragebogen/Post-Questionnaire/PQP3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg, id=2080, 584.1825pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg, id=1998, 584.1825pt x 748
 .29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg  u
-sed on input line 2938.
+sed on input line 2934.
 (pdftex.def)             Requested size: 350.51219pt x 448.98083pt.
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg, id=2081, 584.1825pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg, id=1999, 584.1825pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg  u
-sed on input line 2945.
+sed on input line 2941.
 (pdftex.def)             Requested size: 350.51219pt x 449.28197pt.
- [107 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg, id=2087, 583.68062pt x 74
+
+[107 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP1.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg, id=2005, 583.68062pt x 74
 8.29562pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg  u
-sed on input line 2952.
+sed on input line 2948.
 (pdftex.def)             Requested size: 350.21107pt x 448.98083pt.
  [108 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP2.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg, id=2093, 584.1825pt x 748
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg, id=2011, 584.1825pt x 748
 .7975pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg  u
-sed on input line 2959.
+sed on input line 2955.
 (pdftex.def)             Requested size: 350.51219pt x 449.28197pt.
-
-[109 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg, id=2099, 585.68813pt x 74
+ [109 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP3.jpg>]
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg, id=2017, 585.68813pt x 74
 9.29938pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg  u
-sed on input line 2966.
+sed on input line 2962.
 (pdftex.def)             Requested size: 351.41559pt x 449.5831pt.
  [110 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP4.jpg>]
-<Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg, id=2105, 584.68437pt x 78
+<Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg, id=2023, 584.68437pt x 78
 4.9325pt>
 File: Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg Graphic file (type jp
 g)
 <use Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg>
 Package pdftex.def Info: Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg  u
-sed on input line 2973.
+sed on input line 2969.
 (pdftex.def)             Requested size: 350.81332pt x 470.96312pt.
  [111 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP5.jpg>]
-Overfull \hbox (3.16275pt too wide) in paragraph at lines 2980--2981
+Overfull \hbox (3.16275pt too wide) in paragraph at lines 2976--2977
  []\T1/phv/b/n/10.95 Erkl�rvideo[] \T1/phv/m/n/10.95 [...]/Mas-ter-ar-beit elek
 -tro-ni-scher An-hang/Masterarbeit_Anleitung_und_Erkl�rung.mp4 
  []
 
-<Abbildungen/criteriaForVirtualTeams.JPG, id=2112, 232.4685pt x 475.7775pt>
+<Abbildungen/criteriaForVirtualTeams.JPG, id=2030, 232.4685pt x 475.7775pt>
 File: Abbildungen/criteriaForVirtualTeams.JPG Graphic file (type jpg)
 <use Abbildungen/criteriaForVirtualTeams.JPG>
 Package pdftex.def Info: Abbildungen/criteriaForVirtualTeams.JPG  used on input
- line 2993.
+ line 2989.
 (pdftex.def)             Requested size: 232.46793pt x 475.77632pt.
 [112 <./Abbildungen/Fragebogen/Post-Questionnaire/PQCP6.jpg>] [113 <./Abbildung
 en/criteriaForVirtualTeams.JPG>] (Masterarbeit_Hannes_Hinrichs.aux)
@@ -2595,7 +2585,7 @@ LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Masterarbeit_Hannes_Hinrichs.out' has not ch
 anged.
-(rerunfilecheck)             Checksum: 4F0B1C5DDA78822416F0F94F3EF214B2;14518.
+(rerunfilecheck)             Checksum: 54F7FEC3C345C0D845E9162A75159056;14518.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                Masterarbeit_Hannes_Hinrichs
@@ -2612,10 +2602,10 @@ Package logreq Info: Writing requests to 'Masterarbeit_Hannes_Hinrichs.run.xml'
 ### simple group (level 1) entered at line 1440 ({)
 ### bottom level 
 Here is how much of TeX's memory you used:
- 22677 strings out of 479321
- 399330 string characters out of 2873173
- 994535 words of memory out of 3000000
- 39167 multiletter control sequences out of 15000+600000
+ 22688 strings out of 479321
+ 399697 string characters out of 2873173
+ 993570 words of memory out of 3000000
+ 39174 multiletter control sequences out of 15000+600000
  502392 words of font info for 146 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
  83i,16n,88p,1864b,2241s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -2626,9 +2616,9 @@ rw/courier/ucrr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><B:/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvro8
 a.pfb><B:/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><B:/MiKTeX/fonts/type1/urw/tim
 es/utmr8a.pfb><B:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8825777 bytes).
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8801391 bytes).
 PDF statistics:
- 2266 PDF objects out of 2487 (max. 8388607)
- 510 named destinations out of 1000 (max. 500000)
+ 2185 PDF objects out of 2487 (max. 8388607)
+ 514 named destinations out of 1000 (max. 500000)
  1043 words of extra memory for PDF output out of 10000 (max. 10000000)
 

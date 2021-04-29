@@ -85,7 +85,7 @@
       <file>Masterarbeit_Hannes_Hinrichs-blx.bib</file>
     </requires>
     <requires type="editable">
-      <file>bibfile</file>
+      <file>bibfile_noDOI</file>
     </requires>
     <requires type="static">
       <file>biblatex.bst</file>
