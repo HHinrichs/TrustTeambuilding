@@ -1,72 +1,53 @@
 This is BibTeX, Version 0.99d
 Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: TechnicalReport_english.aux
-Reallocating 'name_of_file' (item size: 1) to 21 items.
-The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 2 items.
+I couldn't open style file [.bst
+---line 127 of file TechnicalReport_english.aux
+ : \bibstyle{[
+ :            }
+I'm skipping whatever remains of this command
 Reallocating 'name_of_file' (item size: 1) to 12 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Database file #1: sample-base.bib
-Warning--I didn't find a database entry for "de2010does"
-Warning--I didn't find a database entry for "guest2011uncanny"
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Reallocating 'glb_str_end' (item size: 4) to 20 items.
-Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
-Reallocating 'global_strs' (item size: 1) to 4000000 items.
-Reallocating 'singl_function' (item size: 4) to 100 items.
-Warning--empty publisher in bente2004social
-Warning--empty address in bente2004social
-Warning--empty address in cohen2013statistical
-Warning--empty address in dyer1995team
-Warning--empty publisher in george2018trusting
-Warning--empty address in george2018trusting
-Warning--empty publisher in huang1998supporting
-Warning--empty address in huang1998supporting
-Warning--page numbers missing in both pages and numpages fields in huang1998supporting
-Warning--empty year in IPQ
-Warning--no number and no volume in turoff1993distributed
-Warning--page numbers missing in both pages and numpages fields in turoff1993distributed
-Warning--empty address in zenun2007effects
-You've used 36 entries,
-            5959 wiz_defined-function locations,
-            1880 strings with 27355 characters,
-and the built_in function-call counts, 43109 in all, are:
-= -- 6403
-> -- 1363
-< -- 1
-+ -- 448
-- -- 476
-* -- 2922
-:= -- 4160
-add.period$ -- 188
-call.type$ -- 36
-change.case$ -- 233
-chr.to.int$ -- 36
-cite$ -- 49
-duplicate$ -- 3570
-empty$ -- 2523
-format.name$ -- 588
-if$ -- 10874
-int.to.chr$ -- 2
-int.to.str$ -- 1
-missing$ -- 128
-newline$ -- 421
-num.names$ -- 288
-pop$ -- 1167
-preamble$ -- 1
-purify$ -- 551
+I found no style file---while reading file TechnicalReport_english.aux
+You've used 42 entries,
+            0 wiz_defined-function locations,
+            130 strings with 1254 characters,
+and the built_in function-call counts, 0 in all, are:
+= -- 0
+> -- 0
+< -- 0
++ -- 0
+- -- 0
+* -- 0
+:= -- 0
+add.period$ -- 0
+call.type$ -- 0
+change.case$ -- 0
+chr.to.int$ -- 0
+cite$ -- 0
+duplicate$ -- 0
+empty$ -- 0
+format.name$ -- 0
+if$ -- 0
+int.to.chr$ -- 0
+int.to.str$ -- 0
+missing$ -- 0
+newline$ -- 0
+num.names$ -- 0
+pop$ -- 0
+preamble$ -- 0
+purify$ -- 0
 quote$ -- 0
-skip$ -- 1223
+skip$ -- 0
 stack$ -- 0
-substring$ -- 3336
-swap$ -- 392
-text.length$ -- 1
+substring$ -- 0
+swap$ -- 0
+text.length$ -- 0
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 672
-warning$ -- 13
-while$ -- 300
+type$ -- 0
+warning$ -- 0
+while$ -- 0
 width$ -- 0
-write$ -- 743
-(There were 15 warnings)
+write$ -- 0
+(There were 2 error messages)
