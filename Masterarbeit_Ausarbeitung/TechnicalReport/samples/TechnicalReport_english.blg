@@ -3,11 +3,11 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: TechnicalReport_english.aux
 Reallocating 'name_of_file' (item size: 1) to 21 items.
 The style file: ACM-Reference-Format.bst
-Reallocating 'name_of_file' (item size: 1) to 12 items.
+Reallocating 'name_of_file' (item size: 1) to 18 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'singl_function' (item size: 4) to 100 items.
 Reallocating 'wiz_functions' (item size: 4) to 6000 items.
-Database file #1: sample-base.bib
+Database file #1: sample-base-noDOI.bib
 Warning--I didn't find a database entry for "de2010does"
 Warning--I didn't find a database entry for "guest2011uncanny"
 Reallocating 'singl_function' (item size: 4) to 100 items.
@@ -30,36 +30,36 @@ Warning--page numbers missing in both pages and numpages fields in turoff1993dis
 Warning--empty address in zenun2007effects
 You've used 40 entries,
             5959 wiz_defined-function locations,
-            1908 strings with 28157 characters,
-and the built_in function-call counts, 48244 in all, are:
-= -- 7225
+            1880 strings with 27493 characters,
+and the built_in function-call counts, 48020 in all, are:
+= -- 7141
 > -- 1521
 < -- 1
 + -- 500
 - -- 532
-* -- 3267
+* -- 3211
 := -- 4638
 add.period$ -- 208
 call.type$ -- 40
 change.case$ -- 259
 chr.to.int$ -- 40
 cite$ -- 53
-duplicate$ -- 3983
-empty$ -- 2816
+duplicate$ -- 4011
+empty$ -- 2844
 format.name$ -- 660
-if$ -- 12217
+if$ -- 12245
 int.to.chr$ -- 2
 int.to.str$ -- 1
 missing$ -- 144
-newline$ -- 459
+newline$ -- 375
 num.names$ -- 320
-pop$ -- 1296
+pop$ -- 1380
 preamble$ -- 1
 purify$ -- 613
 quote$ -- 0
 skip$ -- 1363
 stack$ -- 0
-substring$ -- 3743
+substring$ -- 3659
 swap$ -- 440
 text.length$ -- 1
 text.prefix$ -- 0
@@ -68,5 +68,5 @@ type$ -- 736
 warning$ -- 13
 while$ -- 335
 width$ -- 0
-write$ -- 817
+write$ -- 733
 (There were 15 warnings)
