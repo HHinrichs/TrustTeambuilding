@@ -107,6 +107,7 @@
     \field{sortinithash}{B}
     \field{pages}{345\bibrangedash 360}
     \field{title}{Scientific inquiry and the social sciences}
+    \field{volume}{1}
     \field{journaltitle}{Scientific inquiry and the social sciences}
     \field{year}{1981}
   \endentry
@@ -593,7 +594,7 @@
       }}%
     }
     \list{publisher}{1}{%
-      {Erlbaum}%
+      {Lawrence Erlbaum Associates}%
     }
     \strng{namehash}{CJ1}
     \strng{fullhash}{CJ1}
@@ -603,6 +604,7 @@
     \field{sortinit}{C}
     \field{sortinithash}{C}
     \field{title}{Statistical power analysis for the behavioral sciences}
+    \field{volume}{2}
     \field{year}{1988}
   \endentry
 
@@ -899,36 +901,6 @@
     \field{volume}{6}
     \field{journaltitle}{PloS one}
     \field{year}{2011}
-  \endentry
-
-  \entry{duarte2006mastering}{book}{}
-    \name{author}{2}{}{%
-      {{hash=DDL}{%
-         family={Duarte},
-         familyi={D\bibinitperiod},
-         given={Deborah\bibnamedelima L},
-         giveni={D\bibinitperiod\bibinitdelim L\bibinitperiod},
-      }}%
-      {{hash=SNT}{%
-         family={Snyder},
-         familyi={S\bibinitperiod},
-         given={Nancy\bibnamedelima Tennant},
-         giveni={N\bibinitperiod\bibinitdelim T\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {John Wiley \& Sons}%
-    }
-    \strng{namehash}{DDLSNT1}
-    \strng{fullhash}{DDLSNT1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{DS06}
-    \field{sortinit}{D}
-    \field{sortinithash}{D}
-    \field{title}{Mastering virtual teams: Strategies, tools, and techniques
-  that succeed}
-    \field{year}{2006}
   \endentry
 
   \entry{dufner2002asynchronous}{inproceedings}{}
@@ -3113,7 +3085,7 @@
     \field{sortinit}{R}
     \field{sortinithash}{R}
     \field{number}{1}
-    \field{pages}{23}
+    \field{pages}{21\bibrangedash 33}
     \field{title}{Power comparisons of shapiro-wilk, kolmogorov-smirnov,
   lilliefors and anderson-darling tests}
     \field{volume}{2}

@@ -1,0 +1,70 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: TechnicalReport_english_noPages.aux
+Reallocating 'name_of_file' (item size: 1) to 21 items.
+The style file: ACM-Reference-Format.bst
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'wiz_functions' (item size: 4) to 6000 items.
+Database file #1: sample-base-noDOI.bib
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Reallocating 'glb_str_end' (item size: 4) to 20 items.
+Reallocating 'glb_str_ptr' (item size: 4) to 20 items.
+Reallocating 'global_strs' (item size: 1) to 4000000 items.
+Reallocating 'singl_function' (item size: 4) to 100 items.
+Warning--empty publisher in bente2004social
+Warning--empty address in bente2004social
+Warning--empty address in cohen2013statistical
+Warning--empty address in dyer1995team
+Warning--can't use both volume and number fields in gast2011unheimliche
+Warning--empty publisher in gast2011unheimliche
+Warning--empty address in gast2011unheimliche
+Warning--empty publisher in george2018trusting
+Warning--empty address in george2018trusting
+Warning--empty publisher in huang1998supporting
+Warning--empty address in huang1998supporting
+Warning--empty year in IPQ
+Warning--empty address in zenun2007effects
+You've used 42 entries,
+            5959 wiz_defined-function locations,
+            1896 strings with 27865 characters,
+and the built_in function-call counts, 51505 in all, are:
+= -- 7637
+> -- 1579
+< -- 1
++ -- 518
+- -- 556
+* -- 3412
+:= -- 4931
+add.period$ -- 218
+call.type$ -- 42
+change.case$ -- 270
+chr.to.int$ -- 42
+cite$ -- 55
+duplicate$ -- 4348
+empty$ -- 3079
+format.name$ -- 688
+if$ -- 13135
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 157
+newline$ -- 389
+num.names$ -- 336
+pop$ -- 1469
+preamble$ -- 1
+purify$ -- 642
+quote$ -- 0
+skip$ -- 1496
+stack$ -- 0
+substring$ -- 4072
+swap$ -- 494
+text.length$ -- 1
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 782
+warning$ -- 13
+while$ -- 368
+width$ -- 0
+write$ -- 771
+(There were 13 warnings)
