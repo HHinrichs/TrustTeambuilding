@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.21)  2 MAY 2021 22:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.21)  5 MAY 2021 22:33
 entering extended mode
 **./Masterarbeit_Hannes_Hinrichs.tex
 (Masterarbeit_Hannes_Hinrichs.tex
@@ -1118,13 +1118,6 @@ e 540.
 
 LaTeX Warning: Citation 'en2010does' on page 15 undefined on input line 604.
 
-
-Overfull \hbox (6.79068pt too wide) in paragraph at lines 602--606
-\T1/phv/m/n/10.95 Mei-nung ver-tre-ten, dass Ver-trau-en einen po-si-ti-ven Ein
--fluss auf die \T1/phv/m/sl/10.95 Tea-m-ef-fek-ti-vi-t�t \T1/phv/m/n/10.95 be-s
-itzt [[][]DJDG16[][]].
- []
-
 [15] [16] [17] [18] [19] [20]
 <Abbildungen/DifferentLevels.JPG, id=988, 332.24126pt x 296.60812pt>
 File: Abbildungen/DifferentLevels.JPG Graphic file (type jpg)
@@ -1132,12 +1125,12 @@ File: Abbildungen/DifferentLevels.JPG Graphic file (type jpg)
 Package pdftex.def Info: Abbildungen/DifferentLevels.JPG  used on input line 90
 6.
 (pdftex.def)             Requested size: 132.89413pt x 118.64114pt.
-<Abbildungen/Versuchshypothesen_02.JPG, id=990, 1339.50438pt x 571.13374pt>
+<Abbildungen/Versuchshypothesen_02.JPG, id=990, 1254.18562pt x 527.9725pt>
 File: Abbildungen/Versuchshypothesen_02.JPG Graphic file (type jpg)
 <use Abbildungen/Versuchshypothesen_02.JPG>
 Package pdftex.def Info: Abbildungen/Versuchshypothesen_02.JPG  used on input l
 ine 927.
-(pdftex.def)             Requested size: 426.79135pt x 181.97348pt.
+(pdftex.def)             Requested size: 426.79135pt x 179.66939pt.
  [21 <./Abbildungen/DifferentLevels.JPG>] [22 <./Abbildungen/Versuchshypothesen
 _02.JPG>] [23] [24]
 Overfull \hbox (32.98679pt too wide) in paragraph at lines 1021--1022
@@ -1394,13 +1387,12 @@ Package pdftex.def Info: Abbildungen/Podeste.JPG  used on input line 1157.
 
 
 ] [30 <./Abbildungen/Podeste.JPG>]
-<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1135, 1320.43312pt x 793.46437
-pt>
+<Abbildungen/DetaillierterVersuchsablauf.JPG, id=1135, 1343.0175pt x 811.03pt>
 File: Abbildungen/DetaillierterVersuchsablauf.JPG Graphic file (type jpg)
 <use Abbildungen/DetaillierterVersuchsablauf.JPG>
 Package pdftex.def Info: Abbildungen/DetaillierterVersuchsablauf.JPG  used on i
 nput line 1184.
-(pdftex.def)             Requested size: 396.133pt x 238.04114pt.
+(pdftex.def)             Requested size: 402.90836pt x 243.31087pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
@@ -1580,22 +1572,22 @@ Underfull \hbox (badness 10000) in paragraph at lines 1520--1521
 
  []
 
-<Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png, id=1335, 632
-.3625pt x 382.93062pt>
+<Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png, id=1335, 626
+.34pt x 378.91562pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png Graphic 
 file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVertrauen.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_kognitivesVer
 trauen.png  used on input line 1524.
-(pdftex.def)             Requested size: 213.39568pt x 129.21889pt.
-<Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png, id=1336, 632.86438pt
- x 375.90437pt>
+(pdftex.def)             Requested size: 213.39568pt x 129.09557pt.
+<Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png, id=1336, 622.82687pt
+ x 372.89313pt>
 File: Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png Graphic file (ty
 pe png)
 <use Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H1_Mittelwerte.p
 ng  used on input line 1530.
-(pdftex.def)             Requested size: 213.39568pt x 126.7504pt.
+(pdftex.def)             Requested size: 213.39568pt x 127.76064pt.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1531.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
@@ -1614,30 +1606,30 @@ Overfull \hbox (1.45958pt too wide) in paragraph at lines 1546--1547
 -ne-rel-le Ver-trau-ens-wert \T1/phv/m/n/10.95 der Kon-di-ti-on [][]
  []
 
-<Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png, id=1358, 633.86812pt x 3
-75.4025pt>
+<Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png, id=1358, 625.83812pt x 3
+71.88937pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png Graphic file (type p
 ng)
 <use Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png  
 used on input line 1565.
-(pdftex.def)             Requested size: 192.0548pt x 113.7386pt.
-<Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png, id=1359, 625.83812pt x 
-379.91937pt>
+(pdftex.def)             Requested size: 192.0548pt x 114.12122pt.
+<Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png, id=1359, 625.33624pt x 
+370.88562pt>
 File: Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png Graphic file (type 
 png)
 <use Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H_2_KorrNIK.png 
  used on input line 1567.
-(pdftex.def)             Requested size: 192.0548pt x 116.58537pt.
-<Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png, id=1360, 627
-.84563pt x 379.91937pt>
+(pdftex.def)             Requested size: 192.0548pt x 113.90375pt.
+<Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png, id=1360, 621
+.32124pt x 378.41376pt>
 File: Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png Graphic 
 file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/BP_generellesVertrauen.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_generellesVer
 trauen.png  used on input line 1569.
-(pdftex.def)             Requested size: 192.0548pt x 116.21436pt.
+(pdftex.def)             Requested size: 192.0548pt x 116.96637pt.
 [48 <./Abbildungen/AuswertungDiagramme/Final/H_2_KorrIK.png> <./Abbildungen/Aus
 wertungDiagramme/Final/H_2_KorrNIK.png> <./Abbildungen/AuswertungDiagramme/Fina
 l/BP_generellesVertrauen.png>]
@@ -1708,14 +1700,14 @@ ic file (type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_realeTeameffe
 ktivität.png  used on input line 1697.
 (pdftex.def)             Requested size: 213.39568pt x 131.22723pt.
-<Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png, id=1444, 636.87938pt
- x 376.90813pt>
+<Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png, id=1444, 625.33624pt
+ x 373.89688pt>
 File: Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png Graphic file (ty
 pe png)
 <use Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/H4_Mittelwerte.p
 ng  used on input line 1703.
-(pdftex.def)             Requested size: 213.39568pt x 126.28369pt.
+(pdftex.def)             Requested size: 213.39568pt x 127.59108pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 1696--1707
 [][]  [] 
@@ -1884,14 +1876,14 @@ png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Presence.png 
  used on input line 1973.
 (pdftex.def)             Requested size: 213.39568pt x 129.97737pt.
-<Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png, id=1512, 63
-9.38875pt x 381.92688pt>
+<Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png, id=1512, 62
+2.82687pt x 372.39125pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png Graphic
  file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_Presence_Mitt
 elwerte.png  used on input line 1979.
-(pdftex.def)             Requested size: 213.39568pt x 127.46986pt.
+(pdftex.def)             Requested size: 213.39568pt x 127.58868pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 1972--1983
 [][]  [] 
@@ -1915,14 +1907,14 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_SelfCoPresenc
 e.png  used on input line 1995.
 (pdftex.def)             Requested size: 213.39568pt x 129.49104pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png, id=
-1525, 631.35875pt x 378.91562pt>
+1525, 625.83812pt x 368.37625pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png
  Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPresence_Mittelwerte.png>
 
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_SelbstCoPrese
 nce_Mittelwerte.png  used on input line 2001.
-(pdftex.def)             Requested size: 213.39568pt x 128.07219pt.
+(pdftex.def)             Requested size: 213.39568pt x 125.606pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 1994--2005
 [][]  [] 
@@ -1937,13 +1929,13 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_OtherCoPresen
 ce.png  used on input line 2015.
 (pdftex.def)             Requested size: 213.39568pt x 130.48909pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png, id=1
-531, 624.83438pt x 379.4175pt>
+531, 605.76312pt x 366.87062pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png 
 Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_OtherCoPresen
 ce_Mittelwerte.png  used on input line 2021.
-(pdftex.def)             Requested size: 213.39568pt x 129.57918pt.
+(pdftex.def)             Requested size: 213.39568pt x 129.24074pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2014--2025
 [][]  [] 
@@ -1968,13 +1960,13 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Telepresence.
 png  used on input line 2037.
 (pdftex.def)             Requested size: 213.39568pt x 129.21889pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png, id=1547
-, 625.83812pt x 373.89688pt>
+, 599.74063pt x 365.365pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png Gra
 phic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_Telepresence_
 Mittelwerte.png  used on input line 2043.
-(pdftex.def)             Requested size: 213.39568pt x 127.48839pt.
+(pdftex.def)             Requested size: 213.39568pt x 129.99817pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2036--2047
 [][]  [] 
@@ -1989,13 +1981,13 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_SocialPresenc
 e.png  used on input line 2058.
 (pdftex.def)             Requested size: 213.39568pt x 129.0919pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png, id=15
-53, 626.34pt x 372.89313pt>
+53, 599.23875pt x 364.86313pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png G
 raphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_SocialPresence_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_SocialPresenc
 e_Mittelwerte.png  used on input line 2064.
-(pdftex.def)             Requested size: 213.39568pt x 127.04372pt.
+(pdftex.def)             Requested size: 213.39568pt x 129.93094pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2057--2068
 [][]  [] 
@@ -2027,14 +2019,14 @@ e (type png)
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Anstrengungsm
 aß.png  used on input line 2081.
 (pdftex.def)             Requested size: 213.39568pt x 127.9013pt.
-<Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png, id=1569, 626.34
-pt x 372.89313pt>
+<Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png, id=1569, 608.27
+25pt x 361.85187pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png Graphic fil
 e (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwerte.png>
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_NTLX_Mittelwe
 rte.png  used on input line 2087.
-(pdftex.def)             Requested size: 213.39568pt x 127.04372pt.
+(pdftex.def)             Requested size: 213.39568pt x 126.94267pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2080--2091
 [][]  [] 
@@ -2057,14 +2049,14 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Teamkommunika
 tion.png  used on input line 2101.
 (pdftex.def)             Requested size: 213.39568pt x 128.61435pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.png, id
-=1575, 629.35126pt x 376.40625pt>
+=1575, 606.265pt x 364.86313pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.pn
 g Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunikation_Mittelwerte.png
 >
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_Teamkommunika
 tion_Mittelwerte.png  used on input line 2107.
-(pdftex.def)             Requested size: 213.39568pt x 127.62607pt.
+(pdftex.def)             Requested size: 213.39568pt x 128.42775pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2100--2111
 [][]  [] 
@@ -2083,14 +2075,14 @@ Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/BP_Teameffektivi
 tät.png  used on input line 2123.
 (pdftex.def)             Requested size: 213.39568pt x 128.8555pt.
 <Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.png, id
-=1591, 630.355pt x 382.42876pt>
+=1591, 595.22375pt x 365.365pt>
 File: Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.pn
 g Graphic file (type png)
 <use Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivität_Mittelwerte.png
 >
 Package pdftex.def Info: Abbildungen/AuswertungDiagramme/Final/SD_Teameffektivi
 tät_Mittelwerte.png  used on input line 2129.
-(pdftex.def)             Requested size: 213.39568pt x 129.46385pt.
+(pdftex.def)             Requested size: 213.39568pt x 130.98494pt.
 
 Overfull \hbox (10.62688pt too wide) in paragraph at lines 2122--2133
 [][]  [] 
@@ -2611,7 +2603,7 @@ Package logreq Info: Writing requests to 'Masterarbeit_Hannes_Hinrichs.run.xml'
 Here is how much of TeX's memory you used:
  22690 strings out of 479321
  399732 string characters out of 2873173
- 993628 words of memory out of 3000000
+ 993624 words of memory out of 3000000
  39175 multiletter control sequences out of 15000+600000
  502392 words of font info for 146 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
@@ -2623,7 +2615,7 @@ rw/courier/ucrr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvb8a.pfb><B:/MiKTeX
 /fonts/type1/urw/helvetic/uhvr8a.pfb><B:/MiKTeX/fonts/type1/urw/helvetic/uhvro8
 a.pfb><B:/MiKTeX/fonts/type1/urw/symbol/usyr.pfb><B:/MiKTeX/fonts/type1/urw/tim
 es/utmr8a.pfb><B:/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8804209 bytes).
+Output written on Masterarbeit_Hannes_Hinrichs.pdf (123 pages, 8979525 bytes).
 PDF statistics:
  2198 PDF objects out of 2487 (max. 8388607)
  515 named destinations out of 1000 (max. 500000)

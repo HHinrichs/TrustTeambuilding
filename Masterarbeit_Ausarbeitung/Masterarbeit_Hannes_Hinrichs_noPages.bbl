@@ -145,56 +145,6 @@
     \field{year}{1998}
   \endentry
 
-  \entry{becker2002fuhrung}{misc}{}
-    \name{author}{5}{}{%
-      {{hash=BM}{%
-         family={Becker},
-         familyi={B\bibinitperiod},
-         given={Martin},
-         giveni={M\bibinitperiod},
-      }}%
-      {{hash=HG}{%
-         family={Hess},
-         familyi={H\bibinitperiod},
-         given={Gabriela},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=SF}{%
-         family={Stoll},
-         familyi={S\bibinitperiod},
-         given={Francois},
-         giveni={F\bibinitperiod},
-      }}%
-      {{hash=GG}{%
-         family={Grote},
-         familyi={G\bibinitperiod},
-         given={Gudela},
-         giveni={G\bibinitperiod},
-      }}%
-      {{hash=MSS}{%
-         family={Manchen-Sporri},
-         familyi={M\bibinithyphendelim S\bibinitperiod},
-         given={Sylvia},
-         giveni={S\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BM+1}
-    \strng{fullhash}{BMHGSFGGMSS1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Bec+02}
-    \field{sortinit}{B}
-    \field{sortinithash}{B}
-    \field{note}{Abgerufen am 22.02.2021}
-    \field{title}{Führung virtueller Teams: Kognitive Modelle der
-  Führungskraft, Teamprozesse und Teameffektivität}
-    \verb{url}
-    \verb http://www.tm.ifap.bepr.ethz.ch/lizteam/LizFinal2.pdf
-    \endverb
-    \field{journaltitle}{Zürich}
-    \field{year}{2002}
-  \endentry
-
   \entry{beggs1983kinematics}{book}{}
     \name{author}{1}{}{%
       {{hash=BJS}{%
@@ -343,7 +293,7 @@
     \list{publisher}{1}{%
       {Media Interface & Network Design Lab}%
     }
-    \strng{namehash}{BF+1}
+    \strng{namehash}{BFBJHC+1}
     \strng{fullhash}{BFBJHCSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -703,7 +653,7 @@
     \list{publisher}{1}{%
       {Wiley Online Library}%
     }
-    \strng{namehash}{DJH+1}
+    \strng{namehash}{DJHSFDMRC+1}
     \strng{fullhash}{DJHSFDMRCTHH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -850,7 +800,7 @@
          giveni={T\bibinitperiod\bibinitdelim W\bibinitperiod},
       }}%
     }
-    \strng{namehash}{DLG+1}
+    \strng{namehash}{DLGGKSRE+1}
     \strng{fullhash}{DLGGKSRESSRMTW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -933,7 +883,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{DDK+1}
+    \strng{namehash}{DDKPYTKO+1}
     \strng{fullhash}{DDKPYTKOPQ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1131,7 +1081,7 @@
          giveni={H\bibinitperiod},
       }}%
     }
-    \strng{namehash}{GC+1}
+    \strng{namehash}{GCEMHM+1}
     \strng{fullhash}{GCEMHMHH1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1181,7 +1131,7 @@
     \list{publisher}{1}{%
       {Sage Publications Sage CA: Los Angeles, CA}%
     }
-    \strng{namehash}{GLL+1}
+    \strng{namehash}{GLLMMTJYNC+1}
     \strng{fullhash}{GLLMMTJYNCVMHM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1424,7 +1374,7 @@
     \list{publisher}{1}{%
       {Taylor \& Francis Group}%
     }
-    \strng{namehash}{HSA+1}
+    \strng{namehash}{HSAHSAEN+1}
     \strng{fullhash}{HSAHSAENVKDPMJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1605,7 +1555,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{HW+1}
+    \strng{namehash}{HWWKKBB+1}
     \strng{fullhash}{HWWKKBBLLHWRT1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1866,7 +1816,7 @@
          giveni={J\bibinitperiod},
       }}%
     }
-    \strng{namehash}{KS+1}
+    \strng{namehash}{KSKJBJH+1}
     \strng{fullhash}{KSKJBJHPJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -1877,6 +1827,39 @@
     \field{title}{Real-time Inverse Kinematics Technique for Controlling
   Redundant Avatar Arm}
     \field{year}{2018}
+  \endentry
+
+  \entry{fisherZ}{misc}{}
+    \name{author}{2}{}{%
+      {{hash=LW}{%
+         family={Lenhard},
+         familyi={L\bibinitperiod},
+         given={W.},
+         giveni={W\bibinitperiod},
+      }}%
+      {{hash=LA}{%
+         family={Lenhard},
+         familyi={L\bibinitperiod},
+         given={A.},
+         giveni={A\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Psychometrica}%
+    }
+    \strng{namehash}{LWLA1}
+    \strng{fullhash}{LWLA1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{LL14}
+    \field{sortinit}{L}
+    \field{sortinithash}{L}
+    \field{note}{Abgerufen am 15.02.2021}
+    \field{title}{Hypothesis Tests for Comparing Correlations}
+    \verb{url}
+    \verb https://www.psychometrica.de/correlation.html
+    \endverb
+    \field{year}{2014}
   \endentry
 
   \entry{lok2003effects}{article}{}
@@ -1909,7 +1892,7 @@
     \list{publisher}{1}{%
       {MIT Press}%
     }
-    \strng{namehash}{LB+1}
+    \strng{namehash}{LBNSWM+1}
     \strng{fullhash}{LBNSWMBFP1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2117,7 +2100,7 @@
     \list{publisher}{1}{%
       {ACM New York, NY, USA}%
     }
-    \strng{namehash}{MDH+1}
+    \strng{namehash}{MDHCMTJB+1}
     \strng{fullhash}{MDHCMTJBCPF1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2440,6 +2423,7 @@
     \field{sortinithash}{N}
     \field{pages}{193–212}
     \field{title}{Wer bin ich? Thesen zur Avatar-Spieler Bindung}
+    \field{journaltitle}{See? I’m real...}
     \field{year}{2010}
   \endentry
 
@@ -2539,7 +2523,7 @@
     \list{publisher}{1}{%
       {Elsevier}%
     }
-    \strng{namehash}{PTC+1}
+    \strng{namehash}{PTCSSASM+1}
     \strng{fullhash}{PTCSSASMSM1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2582,7 +2566,7 @@
          giveni={C\bibinitperiod},
       }}%
     }
-    \strng{namehash}{PS+1}
+    \strng{namehash}{PSWACA+1}
     \strng{fullhash}{PSWACAMC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2699,7 +2683,7 @@
     \list{publisher}{1}{%
       {Academy of Management Briarcliff Manor, NY 10510}%
     }
-    \strng{namehash}{PJT+1}
+    \strng{namehash}{PJTCCBJSL+1}
     \strng{fullhash}{PJTCCBJSLKJW1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2819,7 +2803,7 @@
     \list{publisher}{1}{%
       {Springer}%
     }
-    \strng{namehash}{RG+1}
+    \strng{namehash}{RGPFGJM+1}
     \strng{fullhash}{RGPFGJMSA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2870,7 +2854,7 @@
     \list{publisher}{1}{%
       {Taylor \& Francis Group}%
     }
-    \strng{namehash}{RR+1}
+    \strng{namehash}{RRMPNKPH+1}
     \strng{fullhash}{RRMPNKPHDFDHHR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -2974,7 +2958,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{RD+1}
+    \strng{namehash}{RDLJLGD+1}
     \strng{fullhash}{RDLJLGDHABGLMEFA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3045,7 +3029,7 @@
     \list{publisher}{1}{%
       {Academy of Management Briarcliff Manor, NY 10510}%
     }
-    \strng{namehash}{RDM+1}
+    \strng{namehash}{RDMSSBBRS+1}
     \strng{fullhash}{RDMSSBBRSCC1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3156,7 +3140,7 @@
     \list{publisher}{1}{%
       {Mary Ann Liebert, Inc.}%
     }
-    \strng{namehash}{SMJ+1}
+    \strng{namehash}{SMJVDSPKM+1}
     \strng{fullhash}{SMJVDSPKMVDMCA1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3363,7 +3347,7 @@
     \list{publisher}{1}{%
       {Universitat de Barcelona}%
     }
-    \strng{namehash}{SM+1}
+    \strng{namehash}{SMLBAMM+1}
     \strng{fullhash}{SMLBAMMSVMV1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3408,7 +3392,7 @@
     \list{publisher}{1}{%
       {Public Library of Science}%
     }
-    \strng{namehash}{SM+1}
+    \strng{namehash}{SMSBSVMV+1}
     \strng{fullhash}{SMSBSVMVBO1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3523,7 +3507,7 @@
     \list{organization}{1}{%
       {IEEE}%
     }
-    \strng{namehash}{SA+1}
+    \strng{namehash}{SASMSA+1}
     \strng{fullhash}{SASMSABATJ1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
@@ -3593,6 +3577,7 @@
     \field{sortinit}{T}
     \field{sortinithash}{T}
     \field{title}{Computer mediated communication}
+    \field{volume}{1}
     \field{year}{2004}
   \endentry
 
@@ -3660,7 +3645,7 @@
     \list{publisher}{1}{%
       {JSTOR}%
     }
-    \strng{namehash}{TM+1}
+    \strng{namehash}{TMHSRBAN+1}
     \strng{fullhash}{TMHSRBANRAR1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
